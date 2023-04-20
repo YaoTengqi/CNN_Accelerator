@@ -3,9 +3,9 @@
 ================================================================
 == Vitis HLS Report for 'convolution_7'
 ================================================================
-* Date:           Wed Apr 19 17:48:56 2023
+* Date:           Thu Apr 20 15:58:35 2023
 
-* Version:        2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
 * Project:        Project
 * Solution:       solution1 (Vivado IP Flow Target)
 * Product family: artix7
@@ -29,7 +29,7 @@
     |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
     |   min   |   max   |    min    |    max    |  min |  max |   Type  |
     +---------+---------+-----------+-----------+------+------+---------+
-    |     4003|     4003|  40.030 us|  40.030 us|  4003|  4003|       no|
+    |     4009|     4009|  40.090 us|  40.090 us|  4009|  4009|       no|
     +---------+---------+-----------+-----------+------+------+---------+
 
     + Detail: 
@@ -65,7 +65,7 @@ IsGatedGlobalClock: 0
 ============================================================
 + Verbose Summary: Schedule
 ============================================================
-* Number of FSM states : 7
+* Number of FSM states : 13
 * Pipeline : 0
 * Dataflow Pipeline: 0
 
@@ -76,56 +76,134 @@ IsGatedGlobalClock: 0
 4 --> 5 
 5 --> 6 
 6 --> 7 
-7 --> 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 
 
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 2.15>
-ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%weight_buf_addr_1 = getelementptr i32 %weight_buf, i64 0, i64 0"   --->   Operation 8 'getelementptr' 'weight_buf_addr_1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 9 [2/2] (2.15ns)   --->   "%weight_buf_load = load i4 %weight_buf_addr_1"   --->   Operation 9 'load' 'weight_buf_load' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%weight_buf_addr_1 = getelementptr i32 %weight_buf, i64 0, i64 0"   --->   Operation 14 'getelementptr' 'weight_buf_addr_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [2/2] (2.15ns)   --->   "%weight_buf_load = load i4 %weight_buf_addr_1"   --->   Operation 15 'load' 'weight_buf_load' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
 
 State 2 <SV = 1> <Delay = 2.15>
-ST_2 : Operation 10 [1/1] (0.00ns)   --->   "%weight_buf_addr_2 = getelementptr i32 %weight_buf, i64 0, i64 1"   --->   Operation 10 'getelementptr' 'weight_buf_addr_2' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 11 [1/1] (0.00ns)   --->   "%weight_buf_addr_3 = getelementptr i32 %weight_buf, i64 0, i64 2"   --->   Operation 11 'getelementptr' 'weight_buf_addr_3' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 12 [1/2] (2.15ns)   --->   "%weight_buf_load = load i4 %weight_buf_addr_1"   --->   Operation 12 'load' 'weight_buf_load' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
-ST_2 : Operation 13 [2/2] (2.15ns)   --->   "%weight_buf_load_1 = load i4 %weight_buf_addr_2"   --->   Operation 13 'load' 'weight_buf_load_1' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
-ST_2 : Operation 14 [2/2] (2.15ns)   --->   "%weight_buf_load_2 = load i4 %weight_buf_addr_3"   --->   Operation 14 'load' 'weight_buf_load_2' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%weight_buf_addr_2 = getelementptr i32 %weight_buf, i64 0, i64 1"   --->   Operation 16 'getelementptr' 'weight_buf_addr_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%weight_buf_addr_3 = getelementptr i32 %weight_buf, i64 0, i64 2"   --->   Operation 17 'getelementptr' 'weight_buf_addr_3' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 18 [1/2] (2.15ns)   --->   "%weight_buf_load = load i4 %weight_buf_addr_1"   --->   Operation 18 'load' 'weight_buf_load' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
+ST_2 : Operation 19 [2/2] (2.15ns)   --->   "%weight_buf_load_1 = load i4 %weight_buf_addr_2"   --->   Operation 19 'load' 'weight_buf_load_1' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
+ST_2 : Operation 20 [2/2] (2.15ns)   --->   "%weight_buf_load_2 = load i4 %weight_buf_addr_3"   --->   Operation 20 'load' 'weight_buf_load_2' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
 
 State 3 <SV = 2> <Delay = 2.15>
-ST_3 : Operation 15 [1/1] (0.00ns)   --->   "%weight_buf_addr_4 = getelementptr i32 %weight_buf, i64 0, i64 3"   --->   Operation 15 'getelementptr' 'weight_buf_addr_4' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 16 [1/1] (0.00ns)   --->   "%weight_buf_addr_5 = getelementptr i32 %weight_buf, i64 0, i64 4"   --->   Operation 16 'getelementptr' 'weight_buf_addr_5' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 17 [1/2] (2.15ns)   --->   "%weight_buf_load_1 = load i4 %weight_buf_addr_2"   --->   Operation 17 'load' 'weight_buf_load_1' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
-ST_3 : Operation 18 [1/2] (2.15ns)   --->   "%weight_buf_load_2 = load i4 %weight_buf_addr_3"   --->   Operation 18 'load' 'weight_buf_load_2' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
-ST_3 : Operation 19 [2/2] (2.15ns)   --->   "%weight_buf_load_3 = load i4 %weight_buf_addr_4"   --->   Operation 19 'load' 'weight_buf_load_3' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
-ST_3 : Operation 20 [2/2] (2.15ns)   --->   "%weight_buf_load_4 = load i4 %weight_buf_addr_5"   --->   Operation 20 'load' 'weight_buf_load_4' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
+ST_3 : Operation 21 [1/1] (0.00ns)   --->   "%weight_buf_addr_4 = getelementptr i32 %weight_buf, i64 0, i64 3"   --->   Operation 21 'getelementptr' 'weight_buf_addr_4' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 22 [1/1] (0.00ns)   --->   "%weight_buf_addr_5 = getelementptr i32 %weight_buf, i64 0, i64 4"   --->   Operation 22 'getelementptr' 'weight_buf_addr_5' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 23 [1/2] (2.15ns)   --->   "%weight_buf_load_1 = load i4 %weight_buf_addr_2"   --->   Operation 23 'load' 'weight_buf_load_1' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
+ST_3 : Operation 24 [1/2] (2.15ns)   --->   "%weight_buf_load_2 = load i4 %weight_buf_addr_3"   --->   Operation 24 'load' 'weight_buf_load_2' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
+ST_3 : Operation 25 [2/2] (2.15ns)   --->   "%weight_buf_load_3 = load i4 %weight_buf_addr_4"   --->   Operation 25 'load' 'weight_buf_load_3' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
+ST_3 : Operation 26 [2/2] (2.15ns)   --->   "%weight_buf_load_4 = load i4 %weight_buf_addr_5"   --->   Operation 26 'load' 'weight_buf_load_4' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
 
 State 4 <SV = 3> <Delay = 2.15>
-ST_4 : Operation 21 [1/1] (0.00ns)   --->   "%weight_buf_addr = getelementptr i32 %weight_buf, i64 0, i64 6"   --->   Operation 21 'getelementptr' 'weight_buf_addr' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 22 [1/1] (0.00ns)   --->   "%weight_buf_addr_6 = getelementptr i32 %weight_buf, i64 0, i64 5"   --->   Operation 22 'getelementptr' 'weight_buf_addr_6' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 23 [1/2] (2.15ns)   --->   "%weight_buf_load_3 = load i4 %weight_buf_addr_4"   --->   Operation 23 'load' 'weight_buf_load_3' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
-ST_4 : Operation 24 [1/2] (2.15ns)   --->   "%weight_buf_load_4 = load i4 %weight_buf_addr_5"   --->   Operation 24 'load' 'weight_buf_load_4' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
-ST_4 : Operation 25 [2/2] (2.15ns)   --->   "%weight_buf_load_5 = load i4 %weight_buf_addr_6"   --->   Operation 25 'load' 'weight_buf_load_5' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
-ST_4 : Operation 26 [2/2] (2.15ns)   --->   "%weight_buf_load_6 = load i4 %weight_buf_addr"   --->   Operation 26 'load' 'weight_buf_load_6' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
+ST_4 : Operation 27 [1/1] (0.00ns)   --->   "%weight_buf_addr = getelementptr i32 %weight_buf, i64 0, i64 6"   --->   Operation 27 'getelementptr' 'weight_buf_addr' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 28 [1/1] (0.00ns)   --->   "%weight_buf_addr_6 = getelementptr i32 %weight_buf, i64 0, i64 5"   --->   Operation 28 'getelementptr' 'weight_buf_addr_6' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 29 [1/2] (2.15ns)   --->   "%weight_buf_load_3 = load i4 %weight_buf_addr_4"   --->   Operation 29 'load' 'weight_buf_load_3' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
+ST_4 : Operation 30 [1/2] (2.15ns)   --->   "%weight_buf_load_4 = load i4 %weight_buf_addr_5"   --->   Operation 30 'load' 'weight_buf_load_4' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
+ST_4 : Operation 31 [2/2] (2.15ns)   --->   "%weight_buf_load_5 = load i4 %weight_buf_addr_6"   --->   Operation 31 'load' 'weight_buf_load_5' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
+ST_4 : Operation 32 [2/2] (2.15ns)   --->   "%weight_buf_load_6 = load i4 %weight_buf_addr"   --->   Operation 32 'load' 'weight_buf_load_6' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
 
 State 5 <SV = 4> <Delay = 2.15>
-ST_5 : Operation 27 [1/1] (0.00ns)   --->   "%biases_buf_read = read i32 @_ssdm_op_Read.ap_auto.float, i32 %biases_buf"   --->   Operation 27 'read' 'biases_buf_read' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 28 [1/1] (0.00ns)   --->   "%weight_buf_addr_7 = getelementptr i32 %weight_buf, i64 0, i64 7"   --->   Operation 28 'getelementptr' 'weight_buf_addr_7' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 29 [1/1] (0.00ns)   --->   "%weight_buf_addr_8 = getelementptr i32 %weight_buf, i64 0, i64 8"   --->   Operation 29 'getelementptr' 'weight_buf_addr_8' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 30 [1/2] (2.15ns)   --->   "%weight_buf_load_5 = load i4 %weight_buf_addr_6"   --->   Operation 30 'load' 'weight_buf_load_5' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
-ST_5 : Operation 31 [1/2] (2.15ns)   --->   "%weight_buf_load_6 = load i4 %weight_buf_addr"   --->   Operation 31 'load' 'weight_buf_load_6' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
-ST_5 : Operation 32 [2/2] (2.15ns)   --->   "%weight_buf_load_7 = load i4 %weight_buf_addr_7"   --->   Operation 32 'load' 'weight_buf_load_7' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
-ST_5 : Operation 33 [2/2] (2.15ns)   --->   "%weight_buf_load_8 = load i4 %weight_buf_addr_8"   --->   Operation 33 'load' 'weight_buf_load_8' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
+ST_5 : Operation 33 [1/1] (0.00ns)   --->   "%weight_buf_addr_7 = getelementptr i32 %weight_buf, i64 0, i64 7"   --->   Operation 33 'getelementptr' 'weight_buf_addr_7' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 34 [1/1] (0.00ns)   --->   "%weight_buf_addr_8 = getelementptr i32 %weight_buf, i64 0, i64 8"   --->   Operation 34 'getelementptr' 'weight_buf_addr_8' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 35 [1/2] (2.15ns)   --->   "%weight_buf_load_5 = load i4 %weight_buf_addr_6"   --->   Operation 35 'load' 'weight_buf_load_5' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
+ST_5 : Operation 36 [1/2] (2.15ns)   --->   "%weight_buf_load_6 = load i4 %weight_buf_addr"   --->   Operation 36 'load' 'weight_buf_load_6' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
+ST_5 : Operation 37 [2/2] (2.15ns)   --->   "%weight_buf_load_7 = load i4 %weight_buf_addr_7"   --->   Operation 37 'load' 'weight_buf_load_7' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
+ST_5 : Operation 38 [2/2] (2.15ns)   --->   "%weight_buf_load_8 = load i4 %weight_buf_addr_8"   --->   Operation 38 'load' 'weight_buf_load_8' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
 
 State 6 <SV = 5> <Delay = 2.15>
-ST_6 : Operation 34 [1/2] (2.15ns)   --->   "%weight_buf_load_7 = load i4 %weight_buf_addr_7"   --->   Operation 34 'load' 'weight_buf_load_7' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
-ST_6 : Operation 35 [1/2] (2.15ns)   --->   "%weight_buf_load_8 = load i4 %weight_buf_addr_8"   --->   Operation 35 'load' 'weight_buf_load_8' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
-ST_6 : Operation 36 [1/1] (0.00ns)   --->   "%empty = wait i32 @_ssdm_op_Wait"   --->   Operation 36 'wait' 'empty' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 37 [2/2] (0.00ns)   --->   "%call_ln0 = call void @convolution.7_Pipeline_conv_for_rows_win_for_rows_win_for_cols, i32 %pad_img, i32 %weight_buf_load, i32 %weight_buf_load_1, i32 %weight_buf_load_2, i32 %weight_buf_load_3, i32 %weight_buf_load_4, i32 %weight_buf_load_5, i32 %weight_buf_load_6, i32 %weight_buf_load_7, i32 %weight_buf_load_8, i32 %biases_buf_read, i32 %conv_to_pool_streams_7"   --->   Operation 37 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_6 : Operation 39 [1/2] (2.15ns)   --->   "%weight_buf_load_7 = load i4 %weight_buf_addr_7"   --->   Operation 39 'load' 'weight_buf_load_7' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
+ST_6 : Operation 40 [1/2] (2.15ns)   --->   "%weight_buf_load_8 = load i4 %weight_buf_addr_8"   --->   Operation 40 'load' 'weight_buf_load_8' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
 
-State 7 <SV = 6> <Delay = 0.00>
-ST_7 : Operation 38 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %conv_to_pool_streams_7, void @empty, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6"   --->   Operation 38 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 39 [1/2] (0.00ns)   --->   "%call_ln0 = call void @convolution.7_Pipeline_conv_for_rows_win_for_rows_win_for_cols, i32 %pad_img, i32 %weight_buf_load, i32 %weight_buf_load_1, i32 %weight_buf_load_2, i32 %weight_buf_load_3, i32 %weight_buf_load_4, i32 %weight_buf_load_5, i32 %weight_buf_load_6, i32 %weight_buf_load_7, i32 %weight_buf_load_8, i32 %biases_buf_read, i32 %conv_to_pool_streams_7"   --->   Operation 39 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_7 : Operation 40 [1/1] (0.00ns)   --->   "%ret_ln81 = ret" [conv.cc:81]   --->   Operation 40 'ret' 'ret_ln81' <Predicate = true> <Delay = 0.00>
+State 7 <SV = 6> <Delay = 6.18>
+ST_7 : Operation 41 [1/1] (0.00ns)   --->   "%biases_buf_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %biases_buf"   --->   Operation 41 'read' 'biases_buf_read' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 42 [6/6] (6.18ns)   --->   "%conv1 = sitofp i32 %biases_buf_read"   --->   Operation 42 'sitofp' 'conv1' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_7 : Operation 43 [6/6] (6.18ns)   --->   "%w = sitofp i32 %weight_buf_load"   --->   Operation 43 'sitofp' 'w' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_7 : Operation 44 [6/6] (6.18ns)   --->   "%w_1 = sitofp i32 %weight_buf_load_1"   --->   Operation 44 'sitofp' 'w_1' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_7 : Operation 45 [6/6] (6.18ns)   --->   "%w_2 = sitofp i32 %weight_buf_load_2"   --->   Operation 45 'sitofp' 'w_2' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_7 : Operation 46 [6/6] (6.18ns)   --->   "%w_3 = sitofp i32 %weight_buf_load_3"   --->   Operation 46 'sitofp' 'w_3' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_7 : Operation 47 [6/6] (6.18ns)   --->   "%w_4 = sitofp i32 %weight_buf_load_4"   --->   Operation 47 'sitofp' 'w_4' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_7 : Operation 48 [6/6] (6.18ns)   --->   "%w_5 = sitofp i32 %weight_buf_load_5"   --->   Operation 48 'sitofp' 'w_5' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_7 : Operation 49 [6/6] (6.18ns)   --->   "%w_6 = sitofp i32 %weight_buf_load_6"   --->   Operation 49 'sitofp' 'w_6' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_7 : Operation 50 [6/6] (6.18ns)   --->   "%w_7 = sitofp i32 %weight_buf_load_7"   --->   Operation 50 'sitofp' 'w_7' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_7 : Operation 51 [6/6] (6.18ns)   --->   "%w_8 = sitofp i32 %weight_buf_load_8"   --->   Operation 51 'sitofp' 'w_8' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+
+State 8 <SV = 7> <Delay = 6.18>
+ST_8 : Operation 52 [5/6] (6.18ns)   --->   "%conv1 = sitofp i32 %biases_buf_read"   --->   Operation 52 'sitofp' 'conv1' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_8 : Operation 53 [5/6] (6.18ns)   --->   "%w = sitofp i32 %weight_buf_load"   --->   Operation 53 'sitofp' 'w' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_8 : Operation 54 [5/6] (6.18ns)   --->   "%w_1 = sitofp i32 %weight_buf_load_1"   --->   Operation 54 'sitofp' 'w_1' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_8 : Operation 55 [5/6] (6.18ns)   --->   "%w_2 = sitofp i32 %weight_buf_load_2"   --->   Operation 55 'sitofp' 'w_2' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_8 : Operation 56 [5/6] (6.18ns)   --->   "%w_3 = sitofp i32 %weight_buf_load_3"   --->   Operation 56 'sitofp' 'w_3' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_8 : Operation 57 [5/6] (6.18ns)   --->   "%w_4 = sitofp i32 %weight_buf_load_4"   --->   Operation 57 'sitofp' 'w_4' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_8 : Operation 58 [5/6] (6.18ns)   --->   "%w_5 = sitofp i32 %weight_buf_load_5"   --->   Operation 58 'sitofp' 'w_5' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_8 : Operation 59 [5/6] (6.18ns)   --->   "%w_6 = sitofp i32 %weight_buf_load_6"   --->   Operation 59 'sitofp' 'w_6' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_8 : Operation 60 [5/6] (6.18ns)   --->   "%w_7 = sitofp i32 %weight_buf_load_7"   --->   Operation 60 'sitofp' 'w_7' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_8 : Operation 61 [5/6] (6.18ns)   --->   "%w_8 = sitofp i32 %weight_buf_load_8"   --->   Operation 61 'sitofp' 'w_8' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_8 : Operation 62 [1/1] (0.00ns)   --->   "%empty = wait i32 @_ssdm_op_Wait"   --->   Operation 62 'wait' 'empty' <Predicate = true> <Delay = 0.00>
+
+State 9 <SV = 8> <Delay = 6.18>
+ST_9 : Operation 63 [4/6] (6.18ns)   --->   "%conv1 = sitofp i32 %biases_buf_read"   --->   Operation 63 'sitofp' 'conv1' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_9 : Operation 64 [4/6] (6.18ns)   --->   "%w = sitofp i32 %weight_buf_load"   --->   Operation 64 'sitofp' 'w' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_9 : Operation 65 [4/6] (6.18ns)   --->   "%w_1 = sitofp i32 %weight_buf_load_1"   --->   Operation 65 'sitofp' 'w_1' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_9 : Operation 66 [4/6] (6.18ns)   --->   "%w_2 = sitofp i32 %weight_buf_load_2"   --->   Operation 66 'sitofp' 'w_2' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_9 : Operation 67 [4/6] (6.18ns)   --->   "%w_3 = sitofp i32 %weight_buf_load_3"   --->   Operation 67 'sitofp' 'w_3' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_9 : Operation 68 [4/6] (6.18ns)   --->   "%w_4 = sitofp i32 %weight_buf_load_4"   --->   Operation 68 'sitofp' 'w_4' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_9 : Operation 69 [4/6] (6.18ns)   --->   "%w_5 = sitofp i32 %weight_buf_load_5"   --->   Operation 69 'sitofp' 'w_5' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_9 : Operation 70 [4/6] (6.18ns)   --->   "%w_6 = sitofp i32 %weight_buf_load_6"   --->   Operation 70 'sitofp' 'w_6' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_9 : Operation 71 [4/6] (6.18ns)   --->   "%w_7 = sitofp i32 %weight_buf_load_7"   --->   Operation 71 'sitofp' 'w_7' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_9 : Operation 72 [4/6] (6.18ns)   --->   "%w_8 = sitofp i32 %weight_buf_load_8"   --->   Operation 72 'sitofp' 'w_8' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+
+State 10 <SV = 9> <Delay = 6.18>
+ST_10 : Operation 73 [3/6] (6.18ns)   --->   "%conv1 = sitofp i32 %biases_buf_read"   --->   Operation 73 'sitofp' 'conv1' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_10 : Operation 74 [3/6] (6.18ns)   --->   "%w = sitofp i32 %weight_buf_load"   --->   Operation 74 'sitofp' 'w' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_10 : Operation 75 [3/6] (6.18ns)   --->   "%w_1 = sitofp i32 %weight_buf_load_1"   --->   Operation 75 'sitofp' 'w_1' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_10 : Operation 76 [3/6] (6.18ns)   --->   "%w_2 = sitofp i32 %weight_buf_load_2"   --->   Operation 76 'sitofp' 'w_2' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_10 : Operation 77 [3/6] (6.18ns)   --->   "%w_3 = sitofp i32 %weight_buf_load_3"   --->   Operation 77 'sitofp' 'w_3' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_10 : Operation 78 [3/6] (6.18ns)   --->   "%w_4 = sitofp i32 %weight_buf_load_4"   --->   Operation 78 'sitofp' 'w_4' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_10 : Operation 79 [3/6] (6.18ns)   --->   "%w_5 = sitofp i32 %weight_buf_load_5"   --->   Operation 79 'sitofp' 'w_5' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_10 : Operation 80 [3/6] (6.18ns)   --->   "%w_6 = sitofp i32 %weight_buf_load_6"   --->   Operation 80 'sitofp' 'w_6' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_10 : Operation 81 [3/6] (6.18ns)   --->   "%w_7 = sitofp i32 %weight_buf_load_7"   --->   Operation 81 'sitofp' 'w_7' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_10 : Operation 82 [3/6] (6.18ns)   --->   "%w_8 = sitofp i32 %weight_buf_load_8"   --->   Operation 82 'sitofp' 'w_8' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+
+State 11 <SV = 10> <Delay = 6.18>
+ST_11 : Operation 83 [2/6] (6.18ns)   --->   "%conv1 = sitofp i32 %biases_buf_read"   --->   Operation 83 'sitofp' 'conv1' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_11 : Operation 84 [2/6] (6.18ns)   --->   "%w = sitofp i32 %weight_buf_load"   --->   Operation 84 'sitofp' 'w' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_11 : Operation 85 [2/6] (6.18ns)   --->   "%w_1 = sitofp i32 %weight_buf_load_1"   --->   Operation 85 'sitofp' 'w_1' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_11 : Operation 86 [2/6] (6.18ns)   --->   "%w_2 = sitofp i32 %weight_buf_load_2"   --->   Operation 86 'sitofp' 'w_2' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_11 : Operation 87 [2/6] (6.18ns)   --->   "%w_3 = sitofp i32 %weight_buf_load_3"   --->   Operation 87 'sitofp' 'w_3' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_11 : Operation 88 [2/6] (6.18ns)   --->   "%w_4 = sitofp i32 %weight_buf_load_4"   --->   Operation 88 'sitofp' 'w_4' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_11 : Operation 89 [2/6] (6.18ns)   --->   "%w_5 = sitofp i32 %weight_buf_load_5"   --->   Operation 89 'sitofp' 'w_5' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_11 : Operation 90 [2/6] (6.18ns)   --->   "%w_6 = sitofp i32 %weight_buf_load_6"   --->   Operation 90 'sitofp' 'w_6' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_11 : Operation 91 [2/6] (6.18ns)   --->   "%w_7 = sitofp i32 %weight_buf_load_7"   --->   Operation 91 'sitofp' 'w_7' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_11 : Operation 92 [2/6] (6.18ns)   --->   "%w_8 = sitofp i32 %weight_buf_load_8"   --->   Operation 92 'sitofp' 'w_8' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+
+State 12 <SV = 11> <Delay = 6.18>
+ST_12 : Operation 93 [1/6] (6.18ns)   --->   "%conv1 = sitofp i32 %biases_buf_read"   --->   Operation 93 'sitofp' 'conv1' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_12 : Operation 94 [1/6] (6.18ns)   --->   "%w = sitofp i32 %weight_buf_load"   --->   Operation 94 'sitofp' 'w' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_12 : Operation 95 [1/6] (6.18ns)   --->   "%w_1 = sitofp i32 %weight_buf_load_1"   --->   Operation 95 'sitofp' 'w_1' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_12 : Operation 96 [1/6] (6.18ns)   --->   "%w_2 = sitofp i32 %weight_buf_load_2"   --->   Operation 96 'sitofp' 'w_2' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_12 : Operation 97 [1/6] (6.18ns)   --->   "%w_3 = sitofp i32 %weight_buf_load_3"   --->   Operation 97 'sitofp' 'w_3' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_12 : Operation 98 [1/6] (6.18ns)   --->   "%w_4 = sitofp i32 %weight_buf_load_4"   --->   Operation 98 'sitofp' 'w_4' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_12 : Operation 99 [1/6] (6.18ns)   --->   "%w_5 = sitofp i32 %weight_buf_load_5"   --->   Operation 99 'sitofp' 'w_5' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_12 : Operation 100 [1/6] (6.18ns)   --->   "%w_6 = sitofp i32 %weight_buf_load_6"   --->   Operation 100 'sitofp' 'w_6' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_12 : Operation 101 [1/6] (6.18ns)   --->   "%w_7 = sitofp i32 %weight_buf_load_7"   --->   Operation 101 'sitofp' 'w_7' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_12 : Operation 102 [1/6] (6.18ns)   --->   "%w_8 = sitofp i32 %weight_buf_load_8"   --->   Operation 102 'sitofp' 'w_8' <Predicate = true> <Delay = 6.18> <CoreInst = "Int2Float">   --->   Core 62 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.18> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_12 : Operation 103 [2/2] (0.00ns)   --->   "%call_ln0 = call void @convolution.7_Pipeline_conv_for_rows_win_for_rows_win_for_cols, i32 %pad_img, i32 %w, i32 %w_1, i32 %w_2, i32 %w_3, i32 %w_4, i32 %w_5, i32 %w_6, i32 %w_7, i32 %w_8, i32 %conv1, i32 %conv_to_pool_streams_7"   --->   Operation 103 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 13 <SV = 12> <Delay = 0.00>
+ST_13 : Operation 104 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %conv_to_pool_streams_7, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 104 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 105 [1/2] (0.00ns)   --->   "%call_ln0 = call void @convolution.7_Pipeline_conv_for_rows_win_for_rows_win_for_cols, i32 %pad_img, i32 %w, i32 %w_1, i32 %w_2, i32 %w_3, i32 %w_4, i32 %w_5, i32 %w_6, i32 %w_7, i32 %w_8, i32 %conv1, i32 %conv_to_pool_streams_7"   --->   Operation 105 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_13 : Operation 106 [1/1] (0.00ns)   --->   "%ret_ln81 = ret" [conv.cc:81]   --->   Operation 106 'ret' 'ret_ln81' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -136,29 +214,54 @@ Target clock period: 10ns, clock uncertainty: 2.7ns.
  <State 1>: 2.15ns
 The critical path consists of the following:
 	'getelementptr' operation ('weight_buf_addr_1') [7]  (0 ns)
-	'load' operation ('weight_buf_load') on array 'weight_buf' [16]  (2.15 ns)
+	'load' operation ('weight_buf_load') on array 'weight_buf' [17]  (2.15 ns)
 
  <State 2>: 2.15ns
 The critical path consists of the following:
-	'load' operation ('weight_buf_load') on array 'weight_buf' [16]  (2.15 ns)
+	'load' operation ('weight_buf_load') on array 'weight_buf' [17]  (2.15 ns)
 
  <State 3>: 2.15ns
 The critical path consists of the following:
-	'load' operation ('weight_buf_load_1') on array 'weight_buf' [17]  (2.15 ns)
+	'load' operation ('weight_buf_load_1') on array 'weight_buf' [19]  (2.15 ns)
 
  <State 4>: 2.15ns
 The critical path consists of the following:
-	'load' operation ('weight_buf_load_3') on array 'weight_buf' [19]  (2.15 ns)
+	'load' operation ('weight_buf_load_3') on array 'weight_buf' [23]  (2.15 ns)
 
  <State 5>: 2.15ns
 The critical path consists of the following:
-	'load' operation ('weight_buf_load_5') on array 'weight_buf' [21]  (2.15 ns)
+	'load' operation ('weight_buf_load_5') on array 'weight_buf' [27]  (2.15 ns)
 
  <State 6>: 2.15ns
 The critical path consists of the following:
-	'load' operation ('weight_buf_load_7') on array 'weight_buf' [23]  (2.15 ns)
+	'load' operation ('weight_buf_load_7') on array 'weight_buf' [31]  (2.15 ns)
 
- <State 7>: 0ns
+ <State 7>: 6.18ns
+The critical path consists of the following:
+	wire read operation ('biases_buf_read') on port 'biases_buf' [5]  (0 ns)
+	'sitofp' operation ('conv1') [16]  (6.18 ns)
+
+ <State 8>: 6.18ns
+The critical path consists of the following:
+	'sitofp' operation ('conv1') [16]  (6.18 ns)
+
+ <State 9>: 6.18ns
+The critical path consists of the following:
+	'sitofp' operation ('conv1') [16]  (6.18 ns)
+
+ <State 10>: 6.18ns
+The critical path consists of the following:
+	'sitofp' operation ('conv1') [16]  (6.18 ns)
+
+ <State 11>: 6.18ns
+The critical path consists of the following:
+	'sitofp' operation ('conv1') [16]  (6.18 ns)
+
+ <State 12>: 6.18ns
+The critical path consists of the following:
+	'sitofp' operation ('conv1') [16]  (6.18 ns)
+
+ <State 13>: 0ns
 The critical path consists of the following:
 
 
@@ -177,6 +280,12 @@ N/A
 	State 5
 	State 6
 	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
 
 
 ============================================================

@@ -578,7 +578,7 @@ begin
         ce0 => dense_weights_ce0,
         q0 => dense_weights_q0);
 
-    fadd_32ns_32ns_32_7_full_dsp_1_U305 : component cnn_fadd_32ns_32ns_32_7_full_dsp_1
+    fadd_32ns_32ns_32_7_full_dsp_1_U386 : component cnn_fadd_32ns_32ns_32_7_full_dsp_1
     generic map (
         ID => 1,
         NUM_STAGE => 7,
@@ -593,7 +593,7 @@ begin
         ce => grp_fu_410_ce,
         dout => grp_fu_410_p2);
 
-    fmul_32ns_32ns_32_4_max_dsp_1_U306 : component cnn_fmul_32ns_32ns_32_4_max_dsp_1
+    fmul_32ns_32ns_32_4_max_dsp_1_U387 : component cnn_fmul_32ns_32ns_32_4_max_dsp_1
     generic map (
         ID => 1,
         NUM_STAGE => 4,

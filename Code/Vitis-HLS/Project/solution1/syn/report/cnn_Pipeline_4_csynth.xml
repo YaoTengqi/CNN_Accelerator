@@ -1,7 +1,7 @@
 <profile>
 
 <ReportVersion>
-<Version>2021.2</Version>
+<Version>2022.2</Version>
 </ReportVersion>
 
 <UserAssignments>
@@ -33,6 +33,7 @@
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <Loop1>
+<Slack>7.30</Slack>
 <TripCount>9</TripCount>
 <Latency>10</Latency>
 <AbsoluteTimeLatency>100</AbsoluteTimeLatency>

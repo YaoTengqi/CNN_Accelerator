@@ -6,9 +6,11 @@
 #include <cstdio>
 #include <ctime>
 #include <cmath>
+#include <iostream>
+#include <chrono>
 
-#define N 100
-#define input_buf_num 10
+#define N 10000
+#define input_buf_num 250
 
 int read_images (const char * file, float images [input_buf_num][IMG_ROWS][IMG_COLS])
 {
@@ -55,11 +57,11 @@ int get_max_prediction (float prediction [DIGITS])
   return max_digit;
 }
 
-int16_t quantize_data(float value, float value_scale) {
+int8_t quantize_data(float value, float value_scale) {
     return round(value / value_scale);
 }
 
-float dequantize(int16_t quantized_value, float value_scale) {
+float dequantize(int8_t quantized_value, float value_scale) {
     return quantized_value * value_scale;
 }
 
@@ -73,9 +75,9 @@ int main ()
     return 1;
   }
 
-  // ¶¨ÒåÁ¿»¯²ÎÊı
-  float weight_scale = 0.5; // È¨ÖØÁ¿»¯±ÈÀıÒò×Ó
-  float activation_scale = 0.2; // ¼¤»îÖµÁ¿»¯±ÈÀıÒò×Ó
+  // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+  float weight_scale = 0.5; // È¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+  float activation_scale = 0.2; // ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
   /**** Do N predictions. ****/
   double time = 0;
@@ -84,6 +86,10 @@ int main ()
   float images_buf[input_buf_num][IMG_ROWS][IMG_COLS];
   float weight_buf[FILTERS][KRN_ROWS][KRN_COLS];
   float biases_buf[FILTERS];
+
+  // æ·»åŠ æ€§èƒ½æµ‹è¯„ä»£ç ï¼Œè®°å½•å¼€å§‹æ—¶é—´
+  auto start_time = std::chrono::high_resolution_clock::now();
+
 
   /**** Read the weights to weight_buf ****/
   for (int f = 0; f < FILTERS; ++f)
@@ -94,7 +100,7 @@ int main ()
       for (int kc = 0; kc < KRN_COLS; ++kc)
       {
 //    	printf("conv_weights:%f\n",conv_weights[f][kr][kc]);
-    	int16_t quantized_weight = quantize_data(conv_weights[f][kr][kc], weight_scale);
+    	int8_t quantized_weight = quantize_data(conv_weights[f][kr][kc], weight_scale);
 //    	printf("quantized_weight:%d\n",quantized_weight);
     	weight_buf[f][kr][kc] = dequantize(quantized_weight, weight_scale);
 //    	printf("weight_buf:%f\n\n",weight_buf[f][kr][kc]);
@@ -108,28 +114,28 @@ int main ()
    /**** Read the biases to biases_buf ****/
     for (int f = 0; f < FILTERS; ++f){
 #pragma HLS PIPELINE
-     int16_t quantized_bias = quantize_data(conv_biases[f], activation_scale);
+     int8_t quantized_bias = quantize_data(conv_biases[f], activation_scale);
      biases_buf[f] = dequantize(quantized_bias, activation_scale);
 
-//     biases_buf[f] = conv_biases[f];
+     biases_buf[f] = conv_biases[f];
     }
 
   /**** Read the images to images_buf ****/
 
   for (int i = 0; i < N / input_buf_num; i++){
 #pragma HLS PIPELINE
-    if (0 != read_images("D:\\Codefield\\HLS-CNN\\HLS-CNN\\Code\\Data\\in.dat", images_buf))
+    if (0 != read_images("/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Data/in.dat", images_buf))
     {
-      printf("Error: can't open file ``D:\\Codefield\\HLS-CNN\\HLS-CNN\\Code\\Data\\in.dat''\n");
+      printf("Error: can't open file ``in.dat''\n");
       return 1;
     }
 
 
   /**** Read expected labels. ****/
   int labels[input_buf_num];
-  if (0 != read_labels("D:\\Codefield\\HLS-CNN\\HLS-CNN\\Code\\Data\\out.dat", labels))
+  if (0 != read_labels("/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Data/out.dat", labels))
   {
-    printf("Error: can't open file ``D:\\Codefield\\HLS-CNN\\HLS-CNN\\Code\\Data\\out.dat''\n");
+    printf("Error: can't open file ``out.dat''\n");
     return 1;
   }
 
@@ -160,7 +166,13 @@ int main ()
   }
 
 }
+  // æ·»åŠ æ€§èƒ½æµ‹è¯„ä»£ç ï¼Œè®°å½•ç»“æŸæ—¶é—´
+  auto end_time = std::chrono::high_resolution_clock::now();
+  // è®¡ç®—è¿è¡Œæ—¶é—´ï¼ˆæ—¶é’Ÿå‘¨æœŸæ•°ï¼‰
+  auto run_time = std::chrono::duration_cast<std::chrono::milliseconds>(end_time - start_time);
 
+  // è¾“å‡ºè¿è¡Œæ—¶é—´
+  std::cout << "Run time: " << run_time.count() << " ms" << std::endl;
 
   double
   correct_predictions_perc = (double)correct_predictions * 100.0 / (double)N;

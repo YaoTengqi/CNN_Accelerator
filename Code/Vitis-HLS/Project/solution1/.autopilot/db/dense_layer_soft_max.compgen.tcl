@@ -11,7 +11,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 581 \
+    id 662 \
     name prediction \
     reset_level 1 \
     sync_rst true \
@@ -29,7 +29,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 573 \
+    id 654 \
     name dense_to_softmax_streams_0 \
     type fifo \
     dir I \
@@ -37,14 +37,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_dense_to_softmax_streams_0 \
     op interface \
-    ports { dense_to_softmax_streams_0_dout { I 32 vector } dense_to_softmax_streams_0_empty_n { I 1 bit } dense_to_softmax_streams_0_read { O 1 bit } } \
+    ports { dense_to_softmax_streams_0_dout { I 32 vector } dense_to_softmax_streams_0_num_data_valid { I 5 vector } dense_to_softmax_streams_0_fifo_cap { I 5 vector } dense_to_softmax_streams_0_empty_n { I 1 bit } dense_to_softmax_streams_0_read { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 574 \
+    id 655 \
     name dense_to_softmax_streams_1 \
     type fifo \
     dir I \
@@ -52,14 +52,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_dense_to_softmax_streams_1 \
     op interface \
-    ports { dense_to_softmax_streams_1_dout { I 32 vector } dense_to_softmax_streams_1_empty_n { I 1 bit } dense_to_softmax_streams_1_read { O 1 bit } } \
+    ports { dense_to_softmax_streams_1_dout { I 32 vector } dense_to_softmax_streams_1_num_data_valid { I 5 vector } dense_to_softmax_streams_1_fifo_cap { I 5 vector } dense_to_softmax_streams_1_empty_n { I 1 bit } dense_to_softmax_streams_1_read { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 575 \
+    id 656 \
     name dense_to_softmax_streams_2 \
     type fifo \
     dir I \
@@ -67,14 +67,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_dense_to_softmax_streams_2 \
     op interface \
-    ports { dense_to_softmax_streams_2_dout { I 32 vector } dense_to_softmax_streams_2_empty_n { I 1 bit } dense_to_softmax_streams_2_read { O 1 bit } } \
+    ports { dense_to_softmax_streams_2_dout { I 32 vector } dense_to_softmax_streams_2_num_data_valid { I 5 vector } dense_to_softmax_streams_2_fifo_cap { I 5 vector } dense_to_softmax_streams_2_empty_n { I 1 bit } dense_to_softmax_streams_2_read { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 576 \
+    id 657 \
     name dense_to_softmax_streams_3 \
     type fifo \
     dir I \
@@ -82,14 +82,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_dense_to_softmax_streams_3 \
     op interface \
-    ports { dense_to_softmax_streams_3_dout { I 32 vector } dense_to_softmax_streams_3_empty_n { I 1 bit } dense_to_softmax_streams_3_read { O 1 bit } } \
+    ports { dense_to_softmax_streams_3_dout { I 32 vector } dense_to_softmax_streams_3_num_data_valid { I 5 vector } dense_to_softmax_streams_3_fifo_cap { I 5 vector } dense_to_softmax_streams_3_empty_n { I 1 bit } dense_to_softmax_streams_3_read { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 577 \
+    id 658 \
     name dense_to_softmax_streams_4 \
     type fifo \
     dir I \
@@ -97,14 +97,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_dense_to_softmax_streams_4 \
     op interface \
-    ports { dense_to_softmax_streams_4_dout { I 32 vector } dense_to_softmax_streams_4_empty_n { I 1 bit } dense_to_softmax_streams_4_read { O 1 bit } } \
+    ports { dense_to_softmax_streams_4_dout { I 32 vector } dense_to_softmax_streams_4_num_data_valid { I 5 vector } dense_to_softmax_streams_4_fifo_cap { I 5 vector } dense_to_softmax_streams_4_empty_n { I 1 bit } dense_to_softmax_streams_4_read { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 578 \
+    id 659 \
     name dense_to_softmax_streams_5 \
     type fifo \
     dir I \
@@ -112,14 +112,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_dense_to_softmax_streams_5 \
     op interface \
-    ports { dense_to_softmax_streams_5_dout { I 32 vector } dense_to_softmax_streams_5_empty_n { I 1 bit } dense_to_softmax_streams_5_read { O 1 bit } } \
+    ports { dense_to_softmax_streams_5_dout { I 32 vector } dense_to_softmax_streams_5_num_data_valid { I 5 vector } dense_to_softmax_streams_5_fifo_cap { I 5 vector } dense_to_softmax_streams_5_empty_n { I 1 bit } dense_to_softmax_streams_5_read { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 579 \
+    id 660 \
     name dense_to_softmax_streams_6 \
     type fifo \
     dir I \
@@ -127,14 +127,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_dense_to_softmax_streams_6 \
     op interface \
-    ports { dense_to_softmax_streams_6_dout { I 32 vector } dense_to_softmax_streams_6_empty_n { I 1 bit } dense_to_softmax_streams_6_read { O 1 bit } } \
+    ports { dense_to_softmax_streams_6_dout { I 32 vector } dense_to_softmax_streams_6_num_data_valid { I 5 vector } dense_to_softmax_streams_6_fifo_cap { I 5 vector } dense_to_softmax_streams_6_empty_n { I 1 bit } dense_to_softmax_streams_6_read { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 580 \
+    id 661 \
     name dense_to_softmax_streams_7 \
     type fifo \
     dir I \
@@ -142,7 +142,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_dense_to_softmax_streams_7 \
     op interface \
-    ports { dense_to_softmax_streams_7_dout { I 32 vector } dense_to_softmax_streams_7_empty_n { I 1 bit } dense_to_softmax_streams_7_read { O 1 bit } } \
+    ports { dense_to_softmax_streams_7_dout { I 32 vector } dense_to_softmax_streams_7_num_data_valid { I 5 vector } dense_to_softmax_streams_7_fifo_cap { I 5 vector } dense_to_softmax_streams_7_empty_n { I 1 bit } dense_to_softmax_streams_7_read { O 1 bit } } \
 } "
 }
 

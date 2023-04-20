@@ -1,11 +1,11 @@
 # 1 "flat.cc"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
-# 395 "<built-in>" 3
+# 375 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot\\etc/autopilot_ssdm_op.h" 1
-# 154 "D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot\\etc/autopilot_ssdm_op.h"
+# 1 "/home/ytq/source/vivado/Vitis_HLS/2022.2/common/technology/autopilot/etc/autopilot_ssdm_op.h" 1
+# 108 "/home/ytq/source/vivado/Vitis_HLS/2022.2/common/technology/autopilot/etc/autopilot_ssdm_op.h"
 extern "C" {
 
 
@@ -33,7 +33,9 @@ extern "C" {
     void _ssdm_op_WriteReq(...) __attribute__ ((nothrow)) __attribute__((overloadable));
     void _ssdm_op_Write(...) __attribute__ ((nothrow)) __attribute__((overloadable));
     unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_NbReadReq(...) __attribute__ ((nothrow)) __attribute__((overloadable));
+    unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_CanReadReq(...) __attribute__ ((nothrow)) __attribute__((overloadable));
     unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_NbWriteReq(...) __attribute__ ((nothrow)) __attribute__((overloadable));
+    unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_CanWriteReq(...) __attribute__ ((nothrow)) __attribute__((overloadable));
 
 
 
@@ -94,7 +96,6 @@ extern "C" {
     void _ssdm_op_SpecFUCore(...) __attribute__ ((nothrow)) __attribute__((overloadable));
     void _ssdm_op_SpecIFCore(...) __attribute__ ((nothrow)) __attribute__((overloadable));
     void _ssdm_op_SpecIPCore(...) __attribute__ ((nothrow)) __attribute__((overloadable));
-    void _ssdm_op_SpecKeepValue(...) __attribute__ ((nothrow)) __attribute__((overloadable));
     void _ssdm_op_SpecMemCore(...) __attribute__ ((nothrow)) __attribute__((overloadable));
 
     void _ssdm_op_SpecExt(...) __attribute__ ((nothrow)) __attribute__((overloadable));
@@ -161,12 +162,12 @@ extern "C" {
 # 1 "./../Headers/definitions.h" 1
 # 4 "./flat.hh" 2
 
-# 1 "D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot\\hls_stream.h" 1
-# 61 "D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot\\hls_stream.h"
-# 1 "D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h" 1
-# 72 "D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h"
+# 1 "/home/ytq/source/vivado/Vitis_HLS/2022.2/common/technology/autopilot/hls_stream.h" 1
+# 15 "/home/ytq/source/vivado/Vitis_HLS/2022.2/common/technology/autopilot/hls_stream.h"
+# 1 "/home/ytq/source/vivado/Vitis_HLS/2022.2/common/technology/autopilot/hls_stream_39.h" 1
+# 26 "/home/ytq/source/vivado/Vitis_HLS/2022.2/common/technology/autopilot/hls_stream_39.h"
 namespace hls {
-# 94 "D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h"
+# 52 "/home/ytq/source/vivado/Vitis_HLS/2022.2/common/technology/autopilot/hls_stream_39.h"
 template<typename __STREAM_T__, int DEPTH=0>
 class stream;
 
@@ -174,66 +175,67 @@ template<typename __STREAM_T__>
 class stream<__STREAM_T__, 0>
 {
   public:
+    using value_type = __STREAM_T__;
 
-    inline __attribute__((always_inline)) stream() {
+    inline __attribute__((always_inline)) __attribute__((nodebug)) stream() {
       __fpga_set_stream_depth(&this->V, 0);
     }
 
-    inline __attribute__((always_inline)) stream(const char* name) {
+    inline __attribute__((always_inline)) __attribute__((nodebug)) stream(const char* name) {
       (void)(name);
       __fpga_set_stream_depth(&this->V, 0);
     }
 
 
   private:
-    inline __attribute__((always_inline)) stream(const stream< __STREAM_T__ >& chn):V(chn.V) {
+    inline __attribute__((always_inline)) __attribute__((nodebug)) stream(const stream< __STREAM_T__ >& chn):V(chn.V) {
     }
 
-    inline __attribute__((always_inline)) stream& operator= (const stream< __STREAM_T__ >& chn) {
+    inline __attribute__((always_inline)) __attribute__((nodebug)) stream& operator= (const stream< __STREAM_T__ >& chn) {
         V = chn.V;
         return *this;
     }
 
   public:
 
-    inline __attribute__((always_inline)) void operator >> (__STREAM_T__& rdata) {
+    inline __attribute__((always_inline)) __attribute__((nodebug)) void operator >> (__STREAM_T__& rdata) {
         read(rdata);
     }
 
-    inline __attribute__((always_inline)) void operator << (const __STREAM_T__& wdata) {
+    inline __attribute__((always_inline)) __attribute__((nodebug)) void operator << (const __STREAM_T__& wdata) {
         write(wdata);
     }
 
 
   public:
 
-    inline __attribute__((always_inline)) bool empty() const {
+    inline __attribute__((always_inline)) __attribute__((nodebug)) bool empty() const {
         return !__fpga_fifo_not_empty(&V);
     }
 
-    inline __attribute__((always_inline)) bool full() const {
+    inline __attribute__((always_inline)) __attribute__((nodebug)) bool full() const {
         return !__fpga_fifo_not_full(&V);
     }
 
 
-    inline __attribute__((always_inline)) void read(__STREAM_T__& dout) {
+    inline __attribute__((always_inline)) __attribute__((nodebug)) void read(__STREAM_T__& dout) {
         __fpga_fifo_pop(&V, &dout);
     }
 
 
-    inline __attribute__((noinline)) bool read_dep(__STREAM_T__& dout, volatile bool flag) {
+    inline __attribute__((noinline)) __attribute__((nodebug)) bool read_dep(__STREAM_T__& dout, volatile bool flag) {
         __fpga_fifo_pop(&V, &dout);
         return flag;
     }
 
-    inline __attribute__((always_inline)) __STREAM_T__ read() {
+    inline __attribute__((always_inline)) __attribute__((nodebug)) __STREAM_T__ read() {
         __STREAM_T__ tmp;
         read(tmp);
         return tmp;
     }
 
 
-    inline __attribute__((always_inline)) bool read_nb(__STREAM_T__& dout) {
+    inline __attribute__((always_inline)) __attribute__((nodebug)) bool read_nb(__STREAM_T__& dout) {
         __STREAM_T__ tmp;
 
         if (__fpga_fifo_nb_pop(&V, &tmp)) {
@@ -245,19 +247,29 @@ class stream<__STREAM_T__, 0>
     }
 
 
-    inline __attribute__((always_inline)) void write(const __STREAM_T__& din) {
+    inline __attribute__((always_inline)) __attribute__((nodebug)) void write(const __STREAM_T__& din) {
         __fpga_fifo_push(&V, &din);
     }
 
 
-    inline __attribute__((noinline)) bool write_dep(const __STREAM_T__& din, volatile bool flag) {
+    inline __attribute__((noinline)) __attribute__((nodebug)) bool write_dep(const __STREAM_T__& din, volatile bool flag) {
         __fpga_fifo_push(&V, &din);
         return flag;
     }
 
 
-    inline __attribute__((always_inline)) bool write_nb(const __STREAM_T__& din) {
+    inline __attribute__((always_inline)) __attribute__((nodebug)) bool write_nb(const __STREAM_T__& din) {
         return __fpga_fifo_nb_push(&V, &din);
+    }
+
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) unsigned size() const {
+        return __fpga_fifo_size(&V);
+    }
+
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) unsigned capacity() const {
+        return __fpga_fifo_capacity(&V);
     }
 
 
@@ -270,17 +282,17 @@ class stream<__STREAM_T__, 0>
 template<typename __STREAM_T__, int DEPTH>
 class stream : public stream<__STREAM_T__, 0> {
   public:
-    inline __attribute__((always_inline)) stream() {
+    inline __attribute__((always_inline)) __attribute__((nodebug)) stream() {
       __fpga_set_stream_depth(&this->V, DEPTH);
     }
 
-    inline __attribute__((always_inline)) stream(const char* name) {
+    inline __attribute__((always_inline)) __attribute__((nodebug)) stream(const char* name) {
       (void)(name);
       __fpga_set_stream_depth(&this->V, DEPTH);
     }
 };
 }
-# 62 "D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot\\hls_stream.h" 2
+# 16 "/home/ytq/source/vivado/Vitis_HLS/2022.2/common/technology/autopilot/hls_stream.h" 2
 # 6 "./flat.hh" 2
 
 void
@@ -316,6 +328,7 @@ flattening_layer
   hls::stream<float> flat_to_dense_streams[8]
 )
 {
+#line 9 "/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS/Project/solution1/directives.tcl"
 #pragma HLSDIRECTIVE DATAFLOW
 # 27 "flat.cc"
 

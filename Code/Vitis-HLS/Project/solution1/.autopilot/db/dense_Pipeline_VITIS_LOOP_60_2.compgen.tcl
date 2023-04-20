@@ -11,7 +11,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 338 \
+    id 419 \
     name dense_array \
     reset_level 1 \
     sync_rst true \
@@ -29,7 +29,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 339 \
+    id 420 \
     name dense_to_softmax_streams_0 \
     type fifo \
     dir O \
@@ -37,7 +37,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_dense_to_softmax_streams_0 \
     op interface \
-    ports { dense_to_softmax_streams_0_din { O 32 vector } dense_to_softmax_streams_0_full_n { I 1 bit } dense_to_softmax_streams_0_write { O 1 bit } } \
+    ports { dense_to_softmax_streams_0_din { O 32 vector } dense_to_softmax_streams_0_num_data_valid { I 5 vector } dense_to_softmax_streams_0_fifo_cap { I 5 vector } dense_to_softmax_streams_0_full_n { I 1 bit } dense_to_softmax_streams_0_write { O 1 bit } } \
 } "
 }
 

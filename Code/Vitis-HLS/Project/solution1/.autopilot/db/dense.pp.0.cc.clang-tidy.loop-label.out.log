@@ -1,0 +1,10 @@
+/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS/Project/solution1/.autopilot/db/dense.pp.0.cc:7940:5: warning: Added loop label VITIS_LOOP_53_1:   [xilinx-label-all-loops]
+    for (int d = 0; d < 10; ++d)
+    ^~~
+    VITIS_LOOP_53_1: 
+/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS/Project/solution1/.autopilot/db/dense.pp.0.cc:7940:5: note: FIX-IT applied suggested code changes
+/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS/Project/solution1/.autopilot/db/dense.pp.0.cc:7947:3: warning: Added loop label VITIS_LOOP_60_2:   [xilinx-label-all-loops]
+  for (int j = 0; j < 10; ++j)
+  ^~~
+  VITIS_LOOP_60_2: 
+/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS/Project/solution1/.autopilot/db/dense.pp.0.cc:7947:3: note: FIX-IT applied suggested code changes

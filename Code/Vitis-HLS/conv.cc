@@ -11,11 +11,11 @@ float relu (float x)
 }
 
 //int quantize_data(float value, float value_scale) {
-//    return static_cast<int>(round(value / value_scale * 10));  // ½«¸¡µãÊý³ËÒÔ100£¬±£ÁôÁ½Î»Ð¡Êý
+//    return static_cast<int>(round(value / value_scale * 10));  // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½100ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»Ð¡ï¿½ï¿½
 //}
 //
 //float dequantize(int quantized_value, float value_scale) {
-//    return static_cast<float>(quantized_value) * value_scale / 10;  // ½«ÕûÊý×ª»»Îª¸¡µãÊý£¬È»ºó³ýÒÔ100£¬ºöÂÔÄ©Î²µÄ0
+//    return static_cast<float>(quantized_value) * value_scale / 10;  // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È»ï¿½ï¿½ï¿½ï¿½ï¿½100ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä©Î²ï¿½ï¿½0
 //}
 
 
@@ -29,9 +29,9 @@ convolution
   hls::stream<float> & conv_to_pool_stream
 )
 {
-  // ¶¨ÒåÁ¿»¯²ÎÊý
-  float weight_scale = 0.5; // È¨ÖØÁ¿»¯±ÈÀýÒò×Ó
-  float activation_scale = 0.2; // ¼¤»îÖµÁ¿»¯±ÈÀýÒò×Ó
+  // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+  float weight_scale = 0.5; // È¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+  float activation_scale = 0.2; // ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
   float w_sum = 0.0; // Weighted sum.
 
@@ -56,7 +56,7 @@ convolution
             {
 #pragma HLS PIPELINE
               float w     = weight_buf[kr][kc];
-              //Á¿»¯weight
+              //ï¿½ï¿½ï¿½ï¿½weight
 //              printf("before_weight:%f\n",w);
 //              int quantized_weight = quantize_data(w, weight_scale);
 //              printf("quantized_weight:%d\n",quantized_weight);
@@ -67,7 +67,7 @@ convolution
               	w_sum +=  w * pixel;
             }
           }
-          //Á¿»¯bias
+          //ï¿½ï¿½ï¿½ï¿½bias
 //          printf("before_bias:%f\n",biases_buf);
 //          int quantized_biases = quantize_data(biases_buf, activation_scale);
 //          printf("quantized_biases:%d\n",quantized_biases);

@@ -3,9 +3,9 @@
 ================================================================
 == Vitis HLS Report for 'convolution_7'
 ================================================================
-* Date:           Wed Apr 19 17:49:48 2023
+* Date:           Thu Apr 20 15:59:06 2023
 
-* Version:        2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
 * Project:        Project
 * Solution:       solution1 (Vivado IP Flow Target)
 * Product family: artix7
@@ -29,7 +29,7 @@
     |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
     |   min   |   max   |    min    |    max    |  min |  max |   Type  |
     +---------+---------+-----------+-----------+------+------+---------+
-    |     4003|     4003|  40.030 us|  40.030 us|  4003|  4003|       no|
+    |     4009|     4009|  40.090 us|  40.090 us|  4009|  4009|       no|
     +---------+---------+-----------+-----------+------+------+---------+
 
     + Detail: 
@@ -38,7 +38,7 @@
         |                                                                           |                                                                |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
         |                                  Instance                                 |                             Module                             |   min   |   max   |    min    |    max    |  min |  max |   Type  |
         +---------------------------------------------------------------------------+----------------------------------------------------------------+---------+---------+-----------+-----------+------+------+---------+
-        |grp_convolution_7_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136  |convolution_7_Pipeline_conv_for_rows_win_for_rows_win_for_cols  |     3997|     3997|  39.970 us|  39.970 us|  3997|  3997|       no|
+        |grp_convolution_7_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138  |convolution_7_Pipeline_conv_for_rows_win_for_rows_win_for_cols  |     3997|     3997|  39.970 us|  39.970 us|  3997|  3997|       no|
         +---------------------------------------------------------------------------+----------------------------------------------------------------+---------+---------+-----------+-----------+------+------+---------+
 
         * Loop: 
@@ -58,10 +58,10 @@
 |FIFO             |        -|    -|       -|       -|    -|
 |Instance         |        -|   10|    2572|    2243|    -|
 |Memory           |        -|    -|       -|       -|    -|
-|Multiplexer      |        -|    -|       -|      97|    -|
-|Register         |        -|    -|     297|       -|    -|
+|Multiplexer      |        -|    -|       -|     121|    -|
+|Register         |        -|    -|     623|       -|    -|
 +-----------------+---------+-----+--------+--------+-----+
-|Total            |        0|   10|    2869|    2342|    0|
+|Total            |        0|   10|    3195|    2366|    0|
 +-----------------+---------+-----+--------+--------+-----+
 |Available        |      730|  740|  269200|  134600|    0|
 +-----------------+---------+-----+--------+--------+-----+
@@ -73,7 +73,17 @@
     +---------------------------------------------------------------------------+----------------------------------------------------------------+---------+----+------+------+-----+
     |                                  Instance                                 |                             Module                             | BRAM_18K| DSP|  FF  |  LUT | URAM|
     +---------------------------------------------------------------------------+----------------------------------------------------------------+---------+----+------+------+-----+
-    |grp_convolution_7_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136  |convolution_7_Pipeline_conv_for_rows_win_for_rows_win_for_cols  |        0|  10|  2572|  2243|    0|
+    |grp_convolution_7_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138  |convolution_7_Pipeline_conv_for_rows_win_for_rows_win_for_cols  |        0|  10|  2572|  2243|    0|
+    |sitofp_32ns_32_6_no_dsp_1_U267                                             |sitofp_32ns_32_6_no_dsp_1                                       |        0|   0|     0|     0|    0|
+    |sitofp_32ns_32_6_no_dsp_1_U268                                             |sitofp_32ns_32_6_no_dsp_1                                       |        0|   0|     0|     0|    0|
+    |sitofp_32ns_32_6_no_dsp_1_U269                                             |sitofp_32ns_32_6_no_dsp_1                                       |        0|   0|     0|     0|    0|
+    |sitofp_32ns_32_6_no_dsp_1_U270                                             |sitofp_32ns_32_6_no_dsp_1                                       |        0|   0|     0|     0|    0|
+    |sitofp_32ns_32_6_no_dsp_1_U271                                             |sitofp_32ns_32_6_no_dsp_1                                       |        0|   0|     0|     0|    0|
+    |sitofp_32ns_32_6_no_dsp_1_U272                                             |sitofp_32ns_32_6_no_dsp_1                                       |        0|   0|     0|     0|    0|
+    |sitofp_32ns_32_6_no_dsp_1_U273                                             |sitofp_32ns_32_6_no_dsp_1                                       |        0|   0|     0|     0|    0|
+    |sitofp_32ns_32_6_no_dsp_1_U274                                             |sitofp_32ns_32_6_no_dsp_1                                       |        0|   0|     0|     0|    0|
+    |sitofp_32ns_32_6_no_dsp_1_U275                                             |sitofp_32ns_32_6_no_dsp_1                                       |        0|   0|     0|     0|    0|
+    |sitofp_32ns_32_6_no_dsp_1_U276                                             |sitofp_32ns_32_6_no_dsp_1                                       |        0|   0|     0|     0|    0|
     +---------------------------------------------------------------------------+----------------------------------------------------------------+---------+----+------+------+-----+
     |Total                                                                      |                                                                |        0|  10|  2572|  2243|    0|
     +---------------------------------------------------------------------------+----------------------------------------------------------------+---------+----+------+------+-----+
@@ -100,33 +110,43 @@
     +------------------------------+----+-----------+-----+-----------+
     |             Name             | LUT| Input Size| Bits| Total Bits|
     +------------------------------+----+-----------+-----+-----------+
-    |ap_NS_fsm                     |  33|          8|    1|          8|
+    |ap_NS_fsm                     |  57|         14|    1|         14|
     |ap_done                       |   9|          2|    1|          2|
     |conv_to_pool_streams_7_write  |   9|          2|    1|          2|
     |weight_buf_address0           |  25|          6|    4|         24|
     |weight_buf_address1           |  21|          5|    4|         20|
     +------------------------------+----+-----------+-----+-----------+
-    |Total                         |  97|         23|   11|         56|
+    |Total                         | 121|         29|   11|         62|
     +------------------------------+----+-----------+-----+-----------+
 
     * Register: 
     +----------------------------------------------------------------------------------------+----+----+-----+-----------+
     |                                          Name                                          | FF | LUT| Bits| Const Bits|
     +----------------------------------------------------------------------------------------+----+----+-----+-----------+
-    |ap_CS_fsm                                                                               |   7|   0|    7|          0|
+    |ap_CS_fsm                                                                               |  13|   0|   13|          0|
     |ap_done_reg                                                                             |   1|   0|    1|          0|
-    |grp_convolution_7_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136_ap_start_reg  |   1|   0|    1|          0|
-    |weight_buf_load_1_reg_186                                                               |  32|   0|   32|          0|
-    |weight_buf_load_2_reg_191                                                               |  32|   0|   32|          0|
-    |weight_buf_load_3_reg_206                                                               |  32|   0|   32|          0|
-    |weight_buf_load_4_reg_211                                                               |  32|   0|   32|          0|
-    |weight_buf_load_5_reg_231                                                               |  32|   0|   32|          0|
-    |weight_buf_load_6_reg_236                                                               |  32|   0|   32|          0|
-    |weight_buf_load_7_reg_241                                                               |  32|   0|   32|          0|
-    |weight_buf_load_8_reg_246                                                               |  32|   0|   32|          0|
-    |weight_buf_load_reg_171                                                                 |  32|   0|   32|          0|
+    |conv1_reg_292                                                                           |  32|   0|   32|          0|
+    |grp_convolution_7_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138_ap_start_reg  |   1|   0|    1|          0|
+    |w_1_reg_302                                                                             |  32|   0|   32|          0|
+    |w_2_reg_307                                                                             |  32|   0|   32|          0|
+    |w_3_reg_312                                                                             |  32|   0|   32|          0|
+    |w_4_reg_317                                                                             |  32|   0|   32|          0|
+    |w_5_reg_322                                                                             |  32|   0|   32|          0|
+    |w_6_reg_327                                                                             |  32|   0|   32|          0|
+    |w_7_reg_332                                                                             |  32|   0|   32|          0|
+    |w_8_reg_337                                                                             |  32|   0|   32|          0|
+    |w_reg_297                                                                               |  32|   0|   32|          0|
+    |weight_buf_load_1_reg_227                                                               |  32|   0|   32|          0|
+    |weight_buf_load_2_reg_232                                                               |  32|   0|   32|          0|
+    |weight_buf_load_3_reg_247                                                               |  32|   0|   32|          0|
+    |weight_buf_load_4_reg_252                                                               |  32|   0|   32|          0|
+    |weight_buf_load_5_reg_267                                                               |  32|   0|   32|          0|
+    |weight_buf_load_6_reg_272                                                               |  32|   0|   32|          0|
+    |weight_buf_load_7_reg_277                                                               |  32|   0|   32|          0|
+    |weight_buf_load_8_reg_282                                                               |  32|   0|   32|          0|
+    |weight_buf_load_reg_212                                                                 |  32|   0|   32|          0|
     +----------------------------------------------------------------------------------------+----+----+-----+-----------+
-    |Total                                                                                   | 297|   0|  297|          0|
+    |Total                                                                                   | 623|   0|  623|          0|
     +----------------------------------------------------------------------------------------+----+----+-----+-----------+
 
 
@@ -135,31 +155,33 @@
 == Interface
 ================================================================
 * Summary: 
-+-------------------------------+-----+-----+------------+------------------------+--------------+
-|           RTL Ports           | Dir | Bits|  Protocol  |      Source Object     |    C Type    |
-+-------------------------------+-----+-----+------------+------------------------+--------------+
-|ap_clk                         |   in|    1|  ap_ctrl_hs|           convolution.7|  return value|
-|ap_rst                         |   in|    1|  ap_ctrl_hs|           convolution.7|  return value|
-|ap_start                       |   in|    1|  ap_ctrl_hs|           convolution.7|  return value|
-|ap_done                        |  out|    1|  ap_ctrl_hs|           convolution.7|  return value|
-|ap_continue                    |   in|    1|  ap_ctrl_hs|           convolution.7|  return value|
-|ap_idle                        |  out|    1|  ap_ctrl_hs|           convolution.7|  return value|
-|ap_ready                       |  out|    1|  ap_ctrl_hs|           convolution.7|  return value|
-|pad_img_address0               |  out|   10|   ap_memory|                 pad_img|         array|
-|pad_img_ce0                    |  out|    1|   ap_memory|                 pad_img|         array|
-|pad_img_q0                     |   in|   32|   ap_memory|                 pad_img|         array|
-|pad_img_address1               |  out|   10|   ap_memory|                 pad_img|         array|
-|pad_img_ce1                    |  out|    1|   ap_memory|                 pad_img|         array|
-|pad_img_q1                     |   in|   32|   ap_memory|                 pad_img|         array|
-|weight_buf_address0            |  out|    4|   ap_memory|              weight_buf|         array|
-|weight_buf_ce0                 |  out|    1|   ap_memory|              weight_buf|         array|
-|weight_buf_q0                  |   in|   32|   ap_memory|              weight_buf|         array|
-|weight_buf_address1            |  out|    4|   ap_memory|              weight_buf|         array|
-|weight_buf_ce1                 |  out|    1|   ap_memory|              weight_buf|         array|
-|weight_buf_q1                  |   in|   32|   ap_memory|              weight_buf|         array|
-|biases_buf                     |   in|   32|     ap_none|              biases_buf|        scalar|
-|conv_to_pool_streams_7_din     |  out|   32|     ap_fifo|  conv_to_pool_streams_7|       pointer|
-|conv_to_pool_streams_7_full_n  |   in|    1|     ap_fifo|  conv_to_pool_streams_7|       pointer|
-|conv_to_pool_streams_7_write   |  out|    1|     ap_fifo|  conv_to_pool_streams_7|       pointer|
-+-------------------------------+-----+-----+------------+------------------------+--------------+
++---------------------------------------+-----+-----+------------+------------------------+--------------+
+|               RTL Ports               | Dir | Bits|  Protocol  |      Source Object     |    C Type    |
++---------------------------------------+-----+-----+------------+------------------------+--------------+
+|ap_clk                                 |   in|    1|  ap_ctrl_hs|           convolution.7|  return value|
+|ap_rst                                 |   in|    1|  ap_ctrl_hs|           convolution.7|  return value|
+|ap_start                               |   in|    1|  ap_ctrl_hs|           convolution.7|  return value|
+|ap_done                                |  out|    1|  ap_ctrl_hs|           convolution.7|  return value|
+|ap_continue                            |   in|    1|  ap_ctrl_hs|           convolution.7|  return value|
+|ap_idle                                |  out|    1|  ap_ctrl_hs|           convolution.7|  return value|
+|ap_ready                               |  out|    1|  ap_ctrl_hs|           convolution.7|  return value|
+|pad_img_address0                       |  out|   10|   ap_memory|                 pad_img|         array|
+|pad_img_ce0                            |  out|    1|   ap_memory|                 pad_img|         array|
+|pad_img_q0                             |   in|   32|   ap_memory|                 pad_img|         array|
+|pad_img_address1                       |  out|   10|   ap_memory|                 pad_img|         array|
+|pad_img_ce1                            |  out|    1|   ap_memory|                 pad_img|         array|
+|pad_img_q1                             |   in|   32|   ap_memory|                 pad_img|         array|
+|weight_buf_address0                    |  out|    4|   ap_memory|              weight_buf|         array|
+|weight_buf_ce0                         |  out|    1|   ap_memory|              weight_buf|         array|
+|weight_buf_q0                          |   in|   32|   ap_memory|              weight_buf|         array|
+|weight_buf_address1                    |  out|    4|   ap_memory|              weight_buf|         array|
+|weight_buf_ce1                         |  out|    1|   ap_memory|              weight_buf|         array|
+|weight_buf_q1                          |   in|   32|   ap_memory|              weight_buf|         array|
+|biases_buf                             |   in|   32|     ap_none|              biases_buf|        scalar|
+|conv_to_pool_streams_7_din             |  out|   32|     ap_fifo|  conv_to_pool_streams_7|       pointer|
+|conv_to_pool_streams_7_num_data_valid  |   in|   11|     ap_fifo|  conv_to_pool_streams_7|       pointer|
+|conv_to_pool_streams_7_fifo_cap        |   in|   11|     ap_fifo|  conv_to_pool_streams_7|       pointer|
+|conv_to_pool_streams_7_full_n          |   in|    1|     ap_fifo|  conv_to_pool_streams_7|       pointer|
+|conv_to_pool_streams_7_write           |  out|    1|     ap_fifo|  conv_to_pool_streams_7|       pointer|
++---------------------------------------+-----+-----+------------+------------------------+--------------+
 

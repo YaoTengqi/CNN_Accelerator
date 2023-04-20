@@ -34,7 +34,7 @@
               <coreName>FIFO</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1953391988</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -70,7 +70,7 @@
               <coreName>FIFO</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1953391988</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -110,7 +110,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1819113472</coreId>
+              <coreId>1397508187</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -144,7 +144,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item class_id="11" tracking_level="0" version="0">
-                  <first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
+                  <first>/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS</first>
                   <second class_id="12" tracking_level="0" version="0">
                     <count>1</count>
                     <item_version>0</item_version>
@@ -166,7 +166,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1546749656</coreId>
+              <coreId>1962427648</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -201,7 +201,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
+                  <first>/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -223,7 +223,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1962427648</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -257,7 +257,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
+                  <first>/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -279,7 +279,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1960703232</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -288,7 +288,7 @@
             <count>2</count>
             <item_version>0</item_version>
             <item>32</item>
-            <item>122</item>
+            <item>126</item>
           </oprand_edges>
           <opcode>load</opcode>
           <m_Display>0</m_Display>
@@ -314,7 +314,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
+                  <first>/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -371,7 +371,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
+                  <first>/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -428,7 +428,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
+                  <first>/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -450,7 +450,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1962477312</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -477,25 +477,25 @@
               <type>0</type>
               <id>19</id>
               <name>pool_to_flat_streams_0_read</name>
-              <fileName>D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h</fileName>
+              <fileName>flat.cc</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>144</lineNumber>
-              <contextFuncName>read</contextFuncName>
-              <contextNormFuncName>read</contextNormFuncName>
+              <lineNumber>16</lineNumber>
+              <contextFuncName>flattening</contextFuncName>
+              <contextNormFuncName>flattening</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
+                  <first>/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h</first>
-                        <second>read</second>
+                        <first>flat.cc</first>
+                        <second>flattening</second>
                       </first>
-                      <second>144</second>
+                      <second>16</second>
                     </item>
                   </second>
                 </item>
@@ -533,26 +533,26 @@
             <Obj>
               <type>0</type>
               <id>20</id>
-              <name>flat_to_dense_streams_0_write_ln173</name>
-              <fileName>D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h</fileName>
+              <name>flat_to_dense_streams_0_write_ln16</name>
+              <fileName>flat.cc</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>173</lineNumber>
-              <contextFuncName>write</contextFuncName>
-              <contextNormFuncName>write</contextNormFuncName>
+              <lineNumber>16</lineNumber>
+              <contextFuncName>flattening</contextFuncName>
+              <contextNormFuncName>flattening</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
+                  <first>/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h</first>
-                        <second>write</second>
+                        <first>flat.cc</first>
+                        <second>flattening</second>
                       </first>
-                      <second>173</second>
+                      <second>16</second>
                     </item>
                   </second>
                 </item>
@@ -591,17 +591,17 @@
             <Obj>
               <type>0</type>
               <id>21</id>
-              <name>indvar_flatten_write_ln11</name>
+              <name>indvar_flatten_write_ln14</name>
               <fileName>flat.cc</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>11</lineNumber>
+              <lineNumber>14</lineNumber>
               <contextFuncName>flattening</contextFuncName>
               <contextNormFuncName>flattening</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
+                  <first>/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -610,7 +610,7 @@
                         <first>flat.cc</first>
                         <second>flattening</second>
                       </first>
-                      <second>11</second>
+                      <second>14</second>
                     </item>
                   </second>
                 </item>
@@ -623,7 +623,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1962755328</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -633,8 +633,8 @@
             <item_version>0</item_version>
             <item>49</item>
             <item>50</item>
-            <item>123</item>
-            <item>124</item>
+            <item>127</item>
+            <item>128</item>
           </oprand_edges>
           <opcode>store</opcode>
           <m_Display>0</m_Display>
@@ -650,15 +650,29 @@
             <Obj>
               <type>0</type>
               <id>22</id>
-              <name>br_ln0</name>
-              <fileName/>
-              <fileDirectory/>
-              <lineNumber>0</lineNumber>
-              <contextFuncName/>
-              <contextNormFuncName/>
+              <name>br_ln14</name>
+              <fileName>flat.cc</fileName>
+              <fileDirectory>..</fileDirectory>
+              <lineNumber>14</lineNumber>
+              <contextFuncName>flattening</contextFuncName>
+              <contextNormFuncName>flattening</contextNormFuncName>
               <inlineStackInfo>
-                <count>0</count>
+                <count>1</count>
                 <item_version>0</item_version>
+                <item>
+                  <first>/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS</first>
+                  <second>
+                    <count>1</count>
+                    <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>flat.cc</first>
+                        <second>flattening</second>
+                      </first>
+                      <second>14</second>
+                    </item>
+                  </second>
+                </item>
               </inlineStackInfo>
               <originalName/>
               <rtlName/>
@@ -668,7 +682,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1961790976</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -702,7 +716,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
+                  <first>/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -724,7 +738,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1963273728</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -769,7 +783,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1528853351</coreId>
+              <coreId>1397508187</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -800,7 +814,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1953391988</coreId>
+              <coreId>1397508096</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -831,7 +845,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1953391988</coreId>
+              <coreId>1957528576</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -862,7 +876,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1953391988</coreId>
+              <coreId>1869574144</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -878,7 +892,7 @@
           <Obj>
             <type>3</type>
             <id>8</id>
-            <name/>
+            <name>entry</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -896,7 +910,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>3487177568</coreId>
+            <coreId>1960030112</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -911,7 +925,7 @@
           <Obj>
             <type>3</type>
             <id>14</id>
-            <name/>
+            <name>for.inc</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -929,7 +943,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>0</coreId>
+            <coreId>1963226832</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -945,7 +959,7 @@
           <Obj>
             <type>3</type>
             <id>23</id>
-            <name>.split3</name>
+            <name>for.inc5</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -963,7 +977,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>3487177568</coreId>
+            <coreId>1852138591</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -979,7 +993,7 @@
           <Obj>
             <type>3</type>
             <id>25</id>
-            <name/>
+            <name>for.end7</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -997,7 +1011,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>3487177568</coreId>
+            <coreId>1957111376</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -1137,49 +1151,49 @@
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_41">
-          <id>118</id>
+          <id>122</id>
           <edge_type>2</edge_type>
           <source_obj>8</source_obj>
           <sink_obj>14</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_42">
-          <id>119</id>
+          <id>123</id>
           <edge_type>2</edge_type>
           <source_obj>14</source_obj>
           <sink_obj>25</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_43">
-          <id>120</id>
+          <id>124</id>
           <edge_type>2</edge_type>
           <source_obj>14</source_obj>
           <sink_obj>23</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_44">
-          <id>121</id>
+          <id>125</id>
           <edge_type>2</edge_type>
           <source_obj>23</source_obj>
           <sink_obj>14</sink_obj>
           <is_back_edge>1</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_45">
-          <id>122</id>
+          <id>126</id>
           <edge_type>4</edge_type>
           <source_obj>6</source_obj>
           <sink_obj>9</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_46">
-          <id>123</id>
+          <id>127</id>
           <edge_type>4</edge_type>
           <source_obj>6</source_obj>
           <sink_obj>21</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_47">
-          <id>124</id>
+          <id>128</id>
           <edge_type>4</edge_type>
           <source_obj>9</source_obj>
           <sink_obj>21</sink_obj>
@@ -1505,7 +1519,7 @@
           </second>
         </item>
         <item>
-          <first>ap_condition_94 ( and ) </first>
+          <first>ap_condition_98 ( and ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -2140,7 +2154,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln11_store_fu_77</first>
+        <first>store_ln14_store_fu_77</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2148,7 +2162,7 @@
         </second>
       </item>
       <item>
-        <first>write_ln173_write_fu_50</first>
+        <first>write_ln16_write_fu_50</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2252,14 +2266,14 @@
       <item>
         <first>1</first>
         <second>
-          <first>1150</first>
+          <first>666</first>
           <second>7</second>
         </second>
       </item>
       <item>
         <first>2</first>
         <second>
-          <first>1151</first>
+          <first>666</first>
           <second>7</second>
         </second>
       </item>
@@ -2284,14 +2298,14 @@
       <item>
         <first>19</first>
         <second>
-          <first>1150</first>
+          <first>666</first>
           <second>7</second>
         </second>
       </item>
       <item>
         <first>20</first>
         <second>
-          <first>1151</first>
+          <first>666</first>
           <second>7</second>
         </second>
       </item>

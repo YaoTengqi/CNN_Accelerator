@@ -432,7 +432,7 @@ begin
         ce0 => dense_biases_ce0,
         q0 => dense_biases_q0);
 
-    fadd_32ns_32ns_32_7_full_dsp_1_U555 : component cnn_fadd_32ns_32ns_32_7_full_dsp_1
+    fadd_32ns_32ns_32_7_full_dsp_1_U636 : component cnn_fadd_32ns_32ns_32_7_full_dsp_1
     generic map (
         ID => 1,
         NUM_STAGE => 7,
@@ -447,7 +447,7 @@ begin
         ce => grp_fu_153_ce,
         dout => grp_fu_153_p2);
 
-    fadd_32ns_32ns_32_7_full_dsp_1_U556 : component cnn_fadd_32ns_32ns_32_7_full_dsp_1
+    fadd_32ns_32ns_32_7_full_dsp_1_U637 : component cnn_fadd_32ns_32ns_32_7_full_dsp_1
     generic map (
         ID => 1,
         NUM_STAGE => 7,
@@ -462,7 +462,7 @@ begin
         ce => grp_fu_157_ce,
         dout => grp_fu_157_p2);
 
-    fexp_32ns_32ns_32_10_full_dsp_1_U557 : component cnn_fexp_32ns_32ns_32_10_full_dsp_1
+    fexp_32ns_32ns_32_10_full_dsp_1_U638 : component cnn_fexp_32ns_32ns_32_10_full_dsp_1
     generic map (
         ID => 1,
         NUM_STAGE => 10,

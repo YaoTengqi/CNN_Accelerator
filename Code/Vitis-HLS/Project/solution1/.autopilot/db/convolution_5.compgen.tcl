@@ -11,7 +11,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 154 \
+    id 215 \
     name pad_img \
     reset_level 1 \
     sync_rst true \
@@ -30,7 +30,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 155 \
+    id 216 \
     name weight_buf \
     reset_level 1 \
     sync_rst true \
@@ -48,7 +48,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 156 \
+    id 217 \
     name biases_buf \
     type other \
     dir I \
@@ -63,7 +63,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 157 \
+    id 218 \
     name conv_to_pool_streams_5 \
     type fifo \
     dir O \
@@ -71,7 +71,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_conv_to_pool_streams_5 \
     op interface \
-    ports { conv_to_pool_streams_5_din { O 32 vector } conv_to_pool_streams_5_full_n { I 1 bit } conv_to_pool_streams_5_write { O 1 bit } } \
+    ports { conv_to_pool_streams_5_din { O 32 vector } conv_to_pool_streams_5_num_data_valid { I 11 vector } conv_to_pool_streams_5_fifo_cap { I 11 vector } conv_to_pool_streams_5_full_n { I 1 bit } conv_to_pool_streams_5_write { O 1 bit } } \
 } "
 }
 

@@ -9,6 +9,7 @@ set isOneStateSeq 0
 set ProfileFlag 0
 set StallSigGenFlag 0
 set isEnableWaveformDebug 1
+set hasInterrupt 0
 set C_modelName {max_pooling}
 set C_modelType { void 0 }
 set C_modelArgList {
@@ -19,7 +20,7 @@ set C_modelArgMapList {[
 	{ "Name" : "conv_to_pool_streams_0", "interface" : "fifo", "bitwidth" : 32, "direction" : "READONLY"} , 
  	{ "Name" : "pool_to_flat_streams_0", "interface" : "fifo", "bitwidth" : 32, "direction" : "WRITEONLY"} ]}
 # RTL Port declarations: 
-set portNum 13
+set portNum 17
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
@@ -29,9 +30,13 @@ set portList {
 	{ ap_idle sc_out sc_logic 1 done -1 } 
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
 	{ conv_to_pool_streams_0_dout sc_in sc_lv 32 signal 0 } 
+	{ conv_to_pool_streams_0_num_data_valid sc_in sc_lv 11 signal 0 } 
+	{ conv_to_pool_streams_0_fifo_cap sc_in sc_lv 11 signal 0 } 
 	{ conv_to_pool_streams_0_empty_n sc_in sc_logic 1 signal 0 } 
 	{ conv_to_pool_streams_0_read sc_out sc_logic 1 signal 0 } 
 	{ pool_to_flat_streams_0_din sc_out sc_lv 32 signal 1 } 
+	{ pool_to_flat_streams_0_num_data_valid sc_in sc_lv 9 signal 1 } 
+	{ pool_to_flat_streams_0_fifo_cap sc_in sc_lv 9 signal 1 } 
 	{ pool_to_flat_streams_0_full_n sc_in sc_logic 1 signal 1 } 
 	{ pool_to_flat_streams_0_write sc_out sc_logic 1 signal 1 } 
 }
@@ -44,9 +49,13 @@ set NewPortList {[
  	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
  	{ "name": "conv_to_pool_streams_0_dout", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "conv_to_pool_streams_0", "role": "dout" }} , 
+ 	{ "name": "conv_to_pool_streams_0_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "conv_to_pool_streams_0", "role": "num_data_valid" }} , 
+ 	{ "name": "conv_to_pool_streams_0_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "conv_to_pool_streams_0", "role": "fifo_cap" }} , 
  	{ "name": "conv_to_pool_streams_0_empty_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "conv_to_pool_streams_0", "role": "empty_n" }} , 
  	{ "name": "conv_to_pool_streams_0_read", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "conv_to_pool_streams_0", "role": "read" }} , 
  	{ "name": "pool_to_flat_streams_0_din", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "pool_to_flat_streams_0", "role": "din" }} , 
+ 	{ "name": "pool_to_flat_streams_0_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "pool_to_flat_streams_0", "role": "num_data_valid" }} , 
+ 	{ "name": "pool_to_flat_streams_0_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "pool_to_flat_streams_0", "role": "fifo_cap" }} , 
  	{ "name": "pool_to_flat_streams_0_full_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "pool_to_flat_streams_0", "role": "full_n" }} , 
  	{ "name": "pool_to_flat_streams_0_write", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "pool_to_flat_streams_0", "role": "write" }}  ]}
 
@@ -75,7 +84,7 @@ set RtlHierarchyInfo {[
 		"Loop" : [
 			{"Name" : "pool_for_rows_pool_for_cols", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "4", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage2", "LastStateIter" : "ap_enable_reg_pp0_iter2", "LastStateBlock" : "ap_block_pp0_stage2_subdone", "QuitState" : "ap_ST_fsm_pp0_stage2", "QuitStateIter" : "ap_enable_reg_pp0_iter2", "QuitStateBlock" : "ap_block_pp0_stage2_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "1"}}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fcmp_32ns_32ns_1_2_no_dsp_1_U232", "Parent" : "0"},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fcmp_32ns_32ns_1_2_no_dsp_1_U313", "Parent" : "0"},
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.flow_control_loop_pipe_U", "Parent" : "0"}]}
 
 
@@ -96,6 +105,6 @@ set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	conv_to_pool_streams_0 { ap_fifo {  { conv_to_pool_streams_0_dout fifo_data 0 32 }  { conv_to_pool_streams_0_empty_n fifo_status 0 1 }  { conv_to_pool_streams_0_read fifo_update 1 1 } } }
-	pool_to_flat_streams_0 { ap_fifo {  { pool_to_flat_streams_0_din fifo_data 1 32 }  { pool_to_flat_streams_0_full_n fifo_status 0 1 }  { pool_to_flat_streams_0_write fifo_update 1 1 } } }
+	conv_to_pool_streams_0 { ap_fifo {  { conv_to_pool_streams_0_dout fifo_port_we 0 32 }  { conv_to_pool_streams_0_num_data_valid fifo_status_num_data_valid 0 11 }  { conv_to_pool_streams_0_fifo_cap fifo_update 0 11 }  { conv_to_pool_streams_0_empty_n fifo_status 0 1 }  { conv_to_pool_streams_0_read fifo_data 1 1 } } }
+	pool_to_flat_streams_0 { ap_fifo {  { pool_to_flat_streams_0_din fifo_port_we 1 32 }  { pool_to_flat_streams_0_num_data_valid fifo_status_num_data_valid 0 9 }  { pool_to_flat_streams_0_fifo_cap fifo_update 0 9 }  { pool_to_flat_streams_0_full_n fifo_status 0 1 }  { pool_to_flat_streams_0_write fifo_data 1 1 } } }
 }

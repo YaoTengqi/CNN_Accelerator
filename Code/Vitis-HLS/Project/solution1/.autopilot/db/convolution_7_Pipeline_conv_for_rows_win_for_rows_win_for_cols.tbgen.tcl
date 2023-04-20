@@ -9,6 +9,7 @@ set isOneStateSeq 0
 set ProfileFlag 0
 set StallSigGenFlag 0
 set isEnableWaveformDebug 1
+set hasInterrupt 0
 set C_modelName {convolution.7_Pipeline_conv_for_rows_win_for_rows_win_for_cols}
 set C_modelType { void 0 }
 set C_modelArgList {
@@ -22,7 +23,7 @@ set C_modelArgList {
 	{ w_6 float 32 regular  }
 	{ w_7 float 32 regular  }
 	{ w_8 float 32 regular  }
-	{ biases_buf float 32 regular  }
+	{ conv1 float 32 regular  }
 	{ conv_to_pool_streams_7 int 32 regular {fifo 1 volatile }  }
 }
 set C_modelArgMapList {[ 
@@ -36,10 +37,10 @@ set C_modelArgMapList {[
  	{ "Name" : "w_6", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
  	{ "Name" : "w_7", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
  	{ "Name" : "w_8", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
- 	{ "Name" : "biases_buf", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
+ 	{ "Name" : "conv1", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
  	{ "Name" : "conv_to_pool_streams_7", "interface" : "fifo", "bitwidth" : 32, "direction" : "WRITEONLY"} ]}
 # RTL Port declarations: 
-set portNum 25
+set portNum 27
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
@@ -62,8 +63,10 @@ set portList {
 	{ w_6 sc_in sc_lv 32 signal 7 } 
 	{ w_7 sc_in sc_lv 32 signal 8 } 
 	{ w_8 sc_in sc_lv 32 signal 9 } 
-	{ biases_buf sc_in sc_lv 32 signal 10 } 
+	{ conv1 sc_in sc_lv 32 signal 10 } 
 	{ conv_to_pool_streams_7_din sc_out sc_lv 32 signal 11 } 
+	{ conv_to_pool_streams_7_num_data_valid sc_in sc_lv 11 signal 11 } 
+	{ conv_to_pool_streams_7_fifo_cap sc_in sc_lv 11 signal 11 } 
 	{ conv_to_pool_streams_7_full_n sc_in sc_logic 1 signal 11 } 
 	{ conv_to_pool_streams_7_write sc_out sc_logic 1 signal 11 } 
 }
@@ -89,8 +92,10 @@ set NewPortList {[
  	{ "name": "w_6", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "w_6", "role": "default" }} , 
  	{ "name": "w_7", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "w_7", "role": "default" }} , 
  	{ "name": "w_8", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "w_8", "role": "default" }} , 
- 	{ "name": "biases_buf", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "biases_buf", "role": "default" }} , 
+ 	{ "name": "conv1", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "conv1", "role": "default" }} , 
  	{ "name": "conv_to_pool_streams_7_din", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "conv_to_pool_streams_7", "role": "din" }} , 
+ 	{ "name": "conv_to_pool_streams_7_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "conv_to_pool_streams_7", "role": "num_data_valid" }} , 
+ 	{ "name": "conv_to_pool_streams_7_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "conv_to_pool_streams_7", "role": "fifo_cap" }} , 
  	{ "name": "conv_to_pool_streams_7_full_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "conv_to_pool_streams_7", "role": "full_n" }} , 
  	{ "name": "conv_to_pool_streams_7_write", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "conv_to_pool_streams_7", "role": "write" }}  ]}
 
@@ -120,18 +125,18 @@ set RtlHierarchyInfo {[
 			{"Name" : "w_6", "Type" : "None", "Direction" : "I"},
 			{"Name" : "w_7", "Type" : "None", "Direction" : "I"},
 			{"Name" : "w_8", "Type" : "None", "Direction" : "I"},
-			{"Name" : "biases_buf", "Type" : "None", "Direction" : "I"},
+			{"Name" : "conv1", "Type" : "None", "Direction" : "I"},
 			{"Name" : "conv_to_pool_streams_7", "Type" : "Fifo", "Direction" : "O",
 				"BlockSignal" : [
 					{"Name" : "conv_to_pool_streams_7_blk_n", "Type" : "RtlSignal"}]}],
 		"Loop" : [
 			{"Name" : "conv_for_rows_win_for_rows_win_for_cols", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "5", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter16", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter16", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fadd_32ns_32ns_32_7_full_dsp_1_U179", "Parent" : "0"},
-	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fadd_32ns_32ns_32_7_full_dsp_1_U180", "Parent" : "0"},
-	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fmul_32ns_32ns_32_4_max_dsp_1_U181", "Parent" : "0"},
-	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fmul_32ns_32ns_32_4_max_dsp_1_U182", "Parent" : "0"},
-	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fcmp_32ns_32ns_1_2_no_dsp_1_U183", "Parent" : "0"},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fadd_32ns_32ns_32_7_full_dsp_1_U250", "Parent" : "0"},
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fadd_32ns_32ns_32_7_full_dsp_1_U251", "Parent" : "0"},
+	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fmul_32ns_32ns_32_4_max_dsp_1_U252", "Parent" : "0"},
+	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fmul_32ns_32ns_32_4_max_dsp_1_U253", "Parent" : "0"},
+	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fcmp_32ns_32ns_1_2_no_dsp_1_U254", "Parent" : "0"},
 	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.flow_control_loop_pipe_sequential_init_U", "Parent" : "0"}]}
 
 
@@ -147,7 +152,7 @@ set ArgLastReadFirstWriteLatency {
 		w_6 {Type I LastRead 0 FirstWrite -1}
 		w_7 {Type I LastRead 0 FirstWrite -1}
 		w_8 {Type I LastRead 0 FirstWrite -1}
-		biases_buf {Type I LastRead 0 FirstWrite -1}
+		conv1 {Type I LastRead 0 FirstWrite -1}
 		conv_to_pool_streams_7 {Type O LastRead -1 FirstWrite 80}}}
 
 set hasDtUnsupportedChannel 0
@@ -172,6 +177,6 @@ set Spec2ImplPortList {
 	w_6 { ap_none {  { w_6 in_data 0 32 } } }
 	w_7 { ap_none {  { w_7 in_data 0 32 } } }
 	w_8 { ap_none {  { w_8 in_data 0 32 } } }
-	biases_buf { ap_none {  { biases_buf in_data 0 32 } } }
-	conv_to_pool_streams_7 { ap_fifo {  { conv_to_pool_streams_7_din fifo_data 1 32 }  { conv_to_pool_streams_7_full_n fifo_status 0 1 }  { conv_to_pool_streams_7_write fifo_update 1 1 } } }
+	conv1 { ap_none {  { conv1 in_data 0 32 } } }
+	conv_to_pool_streams_7 { ap_fifo {  { conv_to_pool_streams_7_din fifo_port_we 1 32 }  { conv_to_pool_streams_7_num_data_valid fifo_status_num_data_valid 0 11 }  { conv_to_pool_streams_7_fifo_cap fifo_update 0 11 }  { conv_to_pool_streams_7_full_n fifo_status 0 1 }  { conv_to_pool_streams_7_write fifo_data 1 1 } } }
 }

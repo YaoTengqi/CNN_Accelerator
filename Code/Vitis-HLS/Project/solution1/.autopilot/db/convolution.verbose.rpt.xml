@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'convolution'" level="0">
-<item name = "Date">Wed Apr 19 17:49:36 2023
+<item name = "Date">Thu Apr 20 15:58:59 2023
 </item>
-<item name = "Version">2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)</item>
+<item name = "Version">2022.2 (Build 3670227 on Oct 13 2022)</item>
 <item name = "Project">Project</item>
 <item name = "Solution">solution1 (Vivado IP Flow Target)</item>
 <item name = "Product family">artix7</item>
@@ -24,14 +24,14 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">4003, 4003, 40.030 us, 40.030 us, 4003, 4003, no</column>
+<column name="">4009, 4009, 40.090 us, 40.090 us, 4009, 4009, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_convolution_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136">convolution_Pipeline_conv_for_rows_win_for_rows_win_for_cols, 3997, 3997, 39.970 us, 39.970 us, 3997, 3997, no</column>
+<column name="grp_convolution_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138">convolution_Pipeline_conv_for_rows_win_for_rows_win_for_cols, 3997, 3997, 39.970 us, 39.970 us, 3997, 3997, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -52,8 +52,8 @@
 <column name="FIFO">-, -, -, -, -</column>
 <column name="Instance">-, 10, 2572, 2243, -</column>
 <column name="Memory">-, -, -, -, -</column>
-<column name="Multiplexer">-, -, -, 97, -</column>
-<column name="Register">-, -, 297, -, -</column>
+<column name="Multiplexer">-, -, -, 121, -</column>
+<column name="Register">-, -, 623, -, -</column>
 <specialColumn name="Available">730, 740, 269200, 134600, 0</specialColumn>
 <specialColumn name="Utilization (%)">0, 1, 1, 1, 0</specialColumn>
 </table>
@@ -62,7 +62,17 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="grp_convolution_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136">convolution_Pipeline_conv_for_rows_win_for_rows_win_for_cols, 0, 10, 2572, 2243, 0</column>
+<column name="grp_convolution_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138">convolution_Pipeline_conv_for_rows_win_for_rows_win_for_cols, 0, 10, 2572, 2243, 0</column>
+<column name="sitofp_32ns_32_6_no_dsp_1_U49">sitofp_32ns_32_6_no_dsp_1, 0, 0, 0, 0, 0</column>
+<column name="sitofp_32ns_32_6_no_dsp_1_U50">sitofp_32ns_32_6_no_dsp_1, 0, 0, 0, 0, 0</column>
+<column name="sitofp_32ns_32_6_no_dsp_1_U51">sitofp_32ns_32_6_no_dsp_1, 0, 0, 0, 0, 0</column>
+<column name="sitofp_32ns_32_6_no_dsp_1_U52">sitofp_32ns_32_6_no_dsp_1, 0, 0, 0, 0, 0</column>
+<column name="sitofp_32ns_32_6_no_dsp_1_U53">sitofp_32ns_32_6_no_dsp_1, 0, 0, 0, 0, 0</column>
+<column name="sitofp_32ns_32_6_no_dsp_1_U54">sitofp_32ns_32_6_no_dsp_1, 0, 0, 0, 0, 0</column>
+<column name="sitofp_32ns_32_6_no_dsp_1_U55">sitofp_32ns_32_6_no_dsp_1, 0, 0, 0, 0, 0</column>
+<column name="sitofp_32ns_32_6_no_dsp_1_U56">sitofp_32ns_32_6_no_dsp_1, 0, 0, 0, 0, 0</column>
+<column name="sitofp_32ns_32_6_no_dsp_1_U57">sitofp_32ns_32_6_no_dsp_1, 0, 0, 0, 0, 0</column>
+<column name="sitofp_32ns_32_6_no_dsp_1_U58">sitofp_32ns_32_6_no_dsp_1, 0, 0, 0, 0, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -84,7 +94,7 @@
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="ap_NS_fsm">33, 8, 1, 8</column>
+<column name="ap_NS_fsm">57, 14, 1, 14</column>
 <column name="ap_done">9, 2, 1, 2</column>
 <column name="conv_to_pool_streams_0_write">9, 2, 1, 2</column>
 <column name="weight_buf_address0">25, 6, 4, 24</column>
@@ -93,18 +103,28 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="ap_CS_fsm">7, 0, 7, 0</column>
+<column name="ap_CS_fsm">13, 0, 13, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
-<column name="grp_convolution_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136_ap_start_reg">1, 0, 1, 0</column>
-<column name="weight_buf_load_57_reg_186">32, 0, 32, 0</column>
-<column name="weight_buf_load_58_reg_191">32, 0, 32, 0</column>
-<column name="weight_buf_load_59_reg_206">32, 0, 32, 0</column>
-<column name="weight_buf_load_60_reg_211">32, 0, 32, 0</column>
-<column name="weight_buf_load_61_reg_231">32, 0, 32, 0</column>
-<column name="weight_buf_load_62_reg_236">32, 0, 32, 0</column>
-<column name="weight_buf_load_63_reg_241">32, 0, 32, 0</column>
-<column name="weight_buf_load_64_reg_246">32, 0, 32, 0</column>
-<column name="weight_buf_load_reg_171">32, 0, 32, 0</column>
+<column name="conv8_reg_292">32, 0, 32, 0</column>
+<column name="grp_convolution_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138_ap_start_reg">1, 0, 1, 0</column>
+<column name="w_1_reg_327">32, 0, 32, 0</column>
+<column name="w_2_reg_332">32, 0, 32, 0</column>
+<column name="w_3_reg_337">32, 0, 32, 0</column>
+<column name="w_6_reg_307">32, 0, 32, 0</column>
+<column name="w_7_reg_312">32, 0, 32, 0</column>
+<column name="w_8_reg_317">32, 0, 32, 0</column>
+<column name="w_9_reg_322">32, 0, 32, 0</column>
+<column name="w_reg_297">32, 0, 32, 0</column>
+<column name="w_s_reg_302">32, 0, 32, 0</column>
+<column name="weight_buf_load_57_reg_227">32, 0, 32, 0</column>
+<column name="weight_buf_load_58_reg_232">32, 0, 32, 0</column>
+<column name="weight_buf_load_59_reg_247">32, 0, 32, 0</column>
+<column name="weight_buf_load_60_reg_252">32, 0, 32, 0</column>
+<column name="weight_buf_load_61_reg_267">32, 0, 32, 0</column>
+<column name="weight_buf_load_62_reg_272">32, 0, 32, 0</column>
+<column name="weight_buf_load_63_reg_277">32, 0, 32, 0</column>
+<column name="weight_buf_load_64_reg_282">32, 0, 32, 0</column>
+<column name="weight_buf_load_reg_212">32, 0, 32, 0</column>
 </table>
 </item>
 </section>
@@ -135,6 +155,8 @@
 <column name="weight_buf_q1">in, 32, ap_memory, weight_buf, array</column>
 <column name="biases_buf">in, 32, ap_none, biases_buf, scalar</column>
 <column name="conv_to_pool_streams_0_din">out, 32, ap_fifo, conv_to_pool_streams_0, pointer</column>
+<column name="conv_to_pool_streams_0_num_data_valid">in, 11, ap_fifo, conv_to_pool_streams_0, pointer</column>
+<column name="conv_to_pool_streams_0_fifo_cap">in, 11, ap_fifo, conv_to_pool_streams_0, pointer</column>
 <column name="conv_to_pool_streams_0_full_n">in, 1, ap_fifo, conv_to_pool_streams_0, pointer</column>
 <column name="conv_to_pool_streams_0_write">out, 1, ap_fifo, conv_to_pool_streams_0, pointer</column>
 </table>

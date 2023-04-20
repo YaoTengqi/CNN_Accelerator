@@ -11,7 +11,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 163 \
+    id 224 \
     name pad_img \
     reset_level 1 \
     sync_rst true \
@@ -29,7 +29,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 164 \
+    id 225 \
     name w \
     type other \
     dir I \
@@ -44,7 +44,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 165 \
+    id 226 \
     name w_9 \
     type other \
     dir I \
@@ -59,7 +59,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 166 \
+    id 227 \
     name w_10 \
     type other \
     dir I \
@@ -74,112 +74,112 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 167 \
-    name w_11 \
+    id 228 \
+    name w_1 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_w_11 \
+    corename dc_w_1 \
     op interface \
-    ports { w_11 { I 32 vector } } \
+    ports { w_1 { I 32 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 168 \
-    name w_12 \
+    id 229 \
+    name w_2 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_w_12 \
+    corename dc_w_2 \
     op interface \
-    ports { w_12 { I 32 vector } } \
+    ports { w_2 { I 32 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 169 \
-    name w_13 \
+    id 230 \
+    name w_3 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_w_13 \
+    corename dc_w_3 \
     op interface \
-    ports { w_13 { I 32 vector } } \
+    ports { w_3 { I 32 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 170 \
-    name w_14 \
+    id 231 \
+    name w_4 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_w_14 \
+    corename dc_w_4 \
     op interface \
-    ports { w_14 { I 32 vector } } \
+    ports { w_4 { I 32 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 171 \
-    name w_15 \
+    id 232 \
+    name w_5 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_w_15 \
+    corename dc_w_5 \
     op interface \
-    ports { w_15 { I 32 vector } } \
+    ports { w_5 { I 32 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 172 \
-    name w_16 \
+    id 233 \
+    name w_6 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_w_16 \
+    corename dc_w_6 \
     op interface \
-    ports { w_16 { I 32 vector } } \
+    ports { w_6 { I 32 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 173 \
-    name biases_buf \
+    id 234 \
+    name conv2 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_biases_buf \
+    corename dc_conv2 \
     op interface \
-    ports { biases_buf { I 32 vector } } \
+    ports { conv2 { I 32 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 174 \
+    id 235 \
     name conv_to_pool_streams_6 \
     type fifo \
     dir O \
@@ -187,7 +187,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_conv_to_pool_streams_6 \
     op interface \
-    ports { conv_to_pool_streams_6_din { O 32 vector } conv_to_pool_streams_6_full_n { I 1 bit } conv_to_pool_streams_6_write { O 1 bit } } \
+    ports { conv_to_pool_streams_6_din { O 32 vector } conv_to_pool_streams_6_num_data_valid { I 11 vector } conv_to_pool_streams_6_fifo_cap { I 11 vector } conv_to_pool_streams_6_full_n { I 1 bit } conv_to_pool_streams_6_write { O 1 bit } } \
 } "
 }
 

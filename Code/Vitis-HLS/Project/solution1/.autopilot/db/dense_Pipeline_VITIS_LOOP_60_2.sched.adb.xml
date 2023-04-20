@@ -38,9 +38,9 @@ newFuncRoot:0 %j = alloca i32 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="4" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
+<Node id="4" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
 <![CDATA[
-newFuncRoot:1 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %dense_to_softmax_streams_0, void @empty, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6
+newFuncRoot:1 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %dense_to_softmax_streams_0, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -70,7 +70,7 @@ newFuncRoot:2 %store_ln0 = store i4 0, i4 %j
 
 <Node id="6" bw="0" op_0_bw="0">
 <![CDATA[
-newFuncRoot:3 %br_ln0 = br void
+newFuncRoot:3 %br_ln0 = br void %for.inc20
 
 ]]></Node>
 <StgValue><ssdm name="br_ln0"/></StgValue>
@@ -85,7 +85,7 @@ newFuncRoot:3 %br_ln0 = br void
 
 <Node id="8" bw="4" op_0_bw="4" op_1_bw="0">
 <![CDATA[
-:0 %j_1 = load i4 %j
+for.inc20:0 %j_1 = load i4 %j
 
 ]]></Node>
 <StgValue><ssdm name="j_1"/></StgValue>
@@ -100,7 +100,7 @@ newFuncRoot:3 %br_ln0 = br void
 
 <Node id="9" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-:1 %specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str
+for.inc20:1 %specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln0"/></StgValue>
@@ -115,7 +115,7 @@ newFuncRoot:3 %br_ln0 = br void
 
 <Node id="10" bw="1" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-:2 %icmp_ln60 = icmp_eq  i4 %j_1, i4 10
+for.inc20:2 %icmp_ln60 = icmp_eq  i4 %j_1, i4 10
 
 ]]></Node>
 <StgValue><ssdm name="icmp_ln60"/></StgValue>
@@ -130,7 +130,7 @@ newFuncRoot:3 %br_ln0 = br void
 
 <Node id="11" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-:3 %empty = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 10, i64 10, i64 10
+for.inc20:3 %empty = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 10, i64 10, i64 10
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -145,7 +145,7 @@ newFuncRoot:3 %br_ln0 = br void
 
 <Node id="12" bw="4" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-:4 %add_ln60 = add i4 %j_1, i4 1
+for.inc20:4 %add_ln60 = add i4 %j_1, i4 1
 
 ]]></Node>
 <StgValue><ssdm name="add_ln60"/></StgValue>
@@ -160,7 +160,7 @@ newFuncRoot:3 %br_ln0 = br void
 
 <Node id="13" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-:5 %br_ln60 = br i1 %icmp_ln60, void %.split, void %.exitStub
+for.inc20:5 %br_ln60 = br i1 %icmp_ln60, void %for.inc20.split, void %for.end22.exitStub
 
 ]]></Node>
 <StgValue><ssdm name="br_ln60"/></StgValue>
@@ -176,7 +176,7 @@ newFuncRoot:3 %br_ln0 = br void
 
 <Node id="15" bw="64" op_0_bw="4">
 <![CDATA[
-.split:0 %j_cast = zext i4 %j_1
+for.inc20.split:0 %j_cast = zext i4 %j_1
 
 ]]></Node>
 <StgValue><ssdm name="j_cast"/></StgValue>
@@ -192,7 +192,7 @@ newFuncRoot:3 %br_ln0 = br void
 
 <Node id="17" bw="4" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-.split:2 %dense_array_addr = getelementptr i32 %dense_array, i64 0, i64 %j_cast
+for.inc20.split:2 %dense_array_addr = getelementptr i32 %dense_array, i64 0, i64 %j_cast
 
 ]]></Node>
 <StgValue><ssdm name="dense_array_addr"/></StgValue>
@@ -208,7 +208,7 @@ newFuncRoot:3 %br_ln0 = br void
 
 <Node id="18" bw="32" op_0_bw="4">
 <![CDATA[
-.split:3 %dense_array_load = load i4 %dense_array_addr
+for.inc20.split:3 %dense_array_load = load i4 %dense_array_addr
 
 ]]></Node>
 <StgValue><ssdm name="dense_array_load"/></StgValue>
@@ -224,7 +224,7 @@ newFuncRoot:3 %br_ln0 = br void
 
 <Node id="21" bw="0" op_0_bw="4" op_1_bw="4" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-.split:6 %store_ln60 = store i4 %add_ln60, i4 %j
+for.inc20.split:6 %store_ln60 = store i4 %add_ln60, i4 %j
 
 ]]></Node>
 <StgValue><ssdm name="store_ln60"/></StgValue>
@@ -240,7 +240,7 @@ newFuncRoot:3 %br_ln0 = br void
 
 <Node id="24" bw="0">
 <![CDATA[
-.exitStub:0 %ret_ln0 = ret
+for.end22.exitStub:0 %ret_ln0 = ret
 
 ]]></Node>
 <StgValue><ssdm name="ret_ln0"/></StgValue>
@@ -258,7 +258,7 @@ newFuncRoot:3 %br_ln0 = br void
 
 <Node id="16" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-.split:1 %specloopname_ln60 = specloopname void @_ssdm_op_SpecLoopName, void @empty_7
+for.inc20.split:1 %specloopname_ln60 = specloopname void @_ssdm_op_SpecLoopName, void @empty_9
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln60"/></StgValue>
@@ -273,7 +273,7 @@ newFuncRoot:3 %br_ln0 = br void
 
 <Node id="18" bw="32" op_0_bw="4">
 <![CDATA[
-.split:3 %dense_array_load = load i4 %dense_array_addr
+for.inc20.split:3 %dense_array_load = load i4 %dense_array_addr
 
 ]]></Node>
 <StgValue><ssdm name="dense_array_load"/></StgValue>
@@ -288,10 +288,10 @@ newFuncRoot:3 %br_ln0 = br void
 
 <Node id="19" bw="32" op_0_bw="32">
 <![CDATA[
-.split:4 %bitcast_ln173 = bitcast i32 %dense_array_load
+for.inc20.split:4 %bitcast_ln62 = bitcast i32 %dense_array_load
 
 ]]></Node>
-<StgValue><ssdm name="bitcast_ln173"/></StgValue>
+<StgValue><ssdm name="bitcast_ln62"/></StgValue>
 </operation>
 
 <operation id="22" st_id="2" stage="1" lat="1">
@@ -303,10 +303,10 @@ newFuncRoot:3 %br_ln0 = br void
 
 <Node id="20" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
 <![CDATA[
-.split:5 %write_ln173 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %dense_to_softmax_streams_0, i32 %bitcast_ln173
+for.inc20.split:5 %write_ln62 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %dense_to_softmax_streams_0, i32 %bitcast_ln62
 
 ]]></Node>
-<StgValue><ssdm name="write_ln173"/></StgValue>
+<StgValue><ssdm name="write_ln62"/></StgValue>
 </operation>
 
 <operation id="23" st_id="2" stage="1" lat="1">
@@ -318,10 +318,10 @@ newFuncRoot:3 %br_ln0 = br void
 
 <Node id="22" bw="0" op_0_bw="0">
 <![CDATA[
-.split:7 %br_ln0 = br void
+for.inc20.split:7 %br_ln60 = br void %for.inc20
 
 ]]></Node>
-<StgValue><ssdm name="br_ln0"/></StgValue>
+<StgValue><ssdm name="br_ln60"/></StgValue>
 </operation>
 </state>
 </state_list>

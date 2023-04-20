@@ -29,72 +29,72 @@
 		<link>
 			<name>source</name>
 			<type>2</type>
-			<location>D:/Codefield/HLS-CNN/HLS-CNN/Code/Vitis-HLS/Project/.apc/.src</location>
+			<location>/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS/Project/.apc/.src</location>
 		</link>
 		<link>
 			<name>testbench</name>
 			<type>2</type>
-			<location>D:/Codefield/HLS-CNN/HLS-CNN/Code/Vitis-HLS/Project/.apc/.tb</location>
+			<location>/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS/Project/.apc/.tb</location>
 		</link>
 		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
-			<location>D:/Codefield/HLS-CNN/HLS-CNN/Code/Vitis-HLS/Project/solution1/.tcls</location>
+			<location>/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS/Project/solution1/.tcls</location>
 		</link>
 		<link>
 			<name>source/cnn.cc</name>
 			<type>1</type>
-			<location>D:/Codefield/HLS-CNN/HLS-CNN/Code/Vitis-HLS/cnn.cc</location>
+			<location>/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS/cnn.cc</location>
 		</link>
 		<link>
 			<name>source/conv.cc</name>
 			<type>1</type>
-			<location>D:/Codefield/HLS-CNN/HLS-CNN/Code/Vitis-HLS/conv.cc</location>
+			<location>/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS/conv.cc</location>
 		</link>
 		<link>
 			<name>source/dense.cc</name>
 			<type>1</type>
-			<location>D:/Codefield/HLS-CNN/HLS-CNN/Code/Vitis-HLS/dense.cc</location>
+			<location>/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS/dense.cc</location>
 		</link>
 		<link>
 			<name>source/flat.cc</name>
 			<type>1</type>
-			<location>D:/Codefield/HLS-CNN/HLS-CNN/Code/Vitis-HLS/flat.cc</location>
+			<location>/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS/flat.cc</location>
 		</link>
 		<link>
 			<name>source/pool.cc</name>
 			<type>1</type>
-			<location>D:/Codefield/HLS-CNN/HLS-CNN/Code/Vitis-HLS/pool.cc</location>
+			<location>/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS/pool.cc</location>
 		</link>
 		<link>
 			<name>source/utils.cc</name>
 			<type>1</type>
-			<location>D:/Codefield/HLS-CNN/HLS-CNN/Code/Vitis-HLS/utils.cc</location>
+			<location>/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS/utils.cc</location>
 		</link>
 		<link>
 			<name>testbench/Data</name>
 			<type>2</type>
-			<location>D:/Codefield/HLS-CNN/HLS-CNN/Code/Data</location>
+			<location>/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Data</location>
 		</link>
 		<link>
 			<name>testbench/cnn_tb.cc</name>
 			<type>1</type>
-			<location>D:/Codefield/HLS-CNN/HLS-CNN/Code/Vitis-HLS/cnn_tb.cc</location>
+			<location>/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS/cnn_tb.cc</location>
 		</link>
 		<link>
 			<name>solution1/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>D:/Codefield/HLS-CNN/HLS-CNN/Code/Vitis-HLS/Project/solution1/solution1.directive</location>
+			<location>/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS/Project/solution1/solution1.directive</location>
 		</link>
 		<link>
 			<name>solution1/constraints/directives.tcl</name>
 			<type>1</type>
-			<location>D:/Codefield/HLS-CNN/HLS-CNN/Code/Vitis-HLS/Project/solution1/directives.tcl</location>
+			<location>/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS/Project/solution1/directives.tcl</location>
 		</link>
 		<link>
 			<name>solution1/constraints/script.tcl</name>
 			<type>1</type>
-			<location>D:/Codefield/HLS-CNN/HLS-CNN/Code/Vitis-HLS/Project/solution1/script.tcl</location>
+			<location>/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS/Project/solution1/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

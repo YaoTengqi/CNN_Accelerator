@@ -1,39 +1,18 @@
-# HLS-CNN
-High Level Synthesis of a trained Convolutional Neural Network for handwritten digit recongnition.
+# CNN_Accelerator
 
-## Related work
-This project uses many concepts coming from a previous work that can be found [here](https://www.amiq.com/consulting/2018/12/14/how-to-implement-a-convolutional-neural-network-using-high-level-synthesis).
-The main difference is that our implementation is written for Vitis HLS version 2020.2 instead of Vivado HLS version 2018.3.
+毕设题目：设计一个简单的卷积神经网络加速器
 
-## Summary
+## 进度
 
-Project presentations for the "Embedded Systems" Master course at University of Parma:
-[FS presentation](Paper/HLS-CNN-presentation-FS.pdf) and [GB presentation](Paper/HLS-CNN-presentation-GB.pdf).
+1. 验证HLS-CNN开源项目的加速效果，并在此基础上改进。
 
-## Workflow and code structure
+   效果： 对CNN函数进行综合，报告显示未使用多数据流和使用多数据流加速时延差了两个数量级（E6 -> E4）
 
-### Data:
+2. 增加缓存结构:input_buffer、weight_buffer、bias_buffer，增大数据的吞吐量，提高推理的准确性。
 
-0. Input images.
+   效果：对比未增加缓存的结构可以推理更多的图片，在时延几乎不变的情况下提高了准确率（97% -> 99.5%）
 
-### Python:
-  
-1.  model definition, training and evaluation;
-2.  export of (trained) network weights and architecture through C header files.
+3. 对weight和bias进行量化操作，可是减低传输时间提高计算效率。
 
-### Headers:
+   效果：目前效果不明显，还需要进行改进
 
-3.  C header files containing network architecture and weights.
-
-### C:
-
-4.  replication of the trained network in C (using previously-generated headers).
-
-### Vitis HLS:
-
-5.  translation from C to C++ and code refactoring to take advantage of Vitis HLS pragma and directives.
-
-## Warning
-C/C++ code of this project is designed to generate an RTL description that meets ambitious performance requirements through pipelining and parallelism;
-to achieve this, we wrote specific and non-parametric code,
-meaning that changes to the network architecture are **not automatically** propagated to the rest of the project.

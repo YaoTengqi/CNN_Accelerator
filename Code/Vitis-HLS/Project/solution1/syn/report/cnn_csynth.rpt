@@ -3,9 +3,9 @@
 ================================================================
 == Vitis HLS Report for 'cnn'
 ================================================================
-* Date:           Wed Apr 19 17:50:15 2023
+* Date:           Thu Apr 20 15:59:21 2023
 
-* Version:        2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
 * Project:        Project
 * Solution:       solution1 (Vivado IP Flow Target)
 * Product family: artix7
@@ -29,7 +29,7 @@
     |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
     |   min   |   max   |    min    |    max    |  min |  max |   Type  |
     +---------+---------+-----------+-----------+------+------+---------+
-    |     5914|     5914|  59.140 us|  59.140 us|  5915|  5915|       no|
+    |     5920|     5920|  59.200 us|  59.200 us|  5921|  5921|       no|
     +---------+---------+-----------+-----------+------+------+---------+
 
     + Detail: 
@@ -48,7 +48,7 @@
         |grp_cnn_Pipeline_8_fu_425                              |cnn_Pipeline_8                              |       12|       12|   0.120 us|   0.120 us|    12|    12|        no|
         |grp_cnn_Pipeline_9_fu_432                              |cnn_Pipeline_9                              |       12|       12|   0.120 us|   0.120 us|    12|    12|        no|
         |grp_cnn_Pipeline_10_fu_439                             |cnn_Pipeline_10                             |       12|       12|   0.120 us|   0.120 us|    12|    12|        no|
-        |grp_dataflow_section_fu_446                            |dataflow_section                            |     4003|     4003|  40.030 us|  40.030 us|  4004|  4004|  dataflow|
+        |grp_dataflow_section_fu_446                            |dataflow_section                            |     4009|     4009|  40.090 us|  40.090 us|  4010|  4010|  dataflow|
         +-------------------------------------------------------+--------------------------------------------+---------+---------+-----------+-----------+------+------+----------+
 
         * Loop: 
@@ -66,16 +66,16 @@
 |DSP              |        -|    -|       -|       -|    -|
 |Expression       |        -|    -|       0|       8|    -|
 |FIFO             |        -|    -|       -|       -|    -|
-|Instance         |      368|  131|   50816|   40343|    0|
+|Instance         |      368|  131|   53422|   40526|    0|
 |Memory           |       16|    -|     512|      40|    0|
 |Multiplexer      |        -|    -|       -|     921|    -|
-|Register         |        -|    -|     479|       -|    -|
+|Register         |        -|    -|     287|       -|    -|
 +-----------------+---------+-----+--------+--------+-----+
-|Total            |      384|  131|   51807|   41312|    0|
+|Total            |      384|  131|   54221|   41495|    0|
 +-----------------+---------+-----+--------+--------+-----+
 |Available        |      730|  740|  269200|  134600|    0|
 +-----------------+---------+-----+--------+--------+-----+
-|Utilization (%)  |       52|   17|      19|      30|    0|
+|Utilization (%)  |       52|   17|      20|      30|    0|
 +-----------------+---------+-----+--------+--------+-----+
 
 + Detail: 
@@ -90,12 +90,12 @@
     |grp_cnn_Pipeline_6_fu_411                              |cnn_Pipeline_6                              |        0|    0|     23|    180|    0|
     |grp_cnn_Pipeline_7_fu_418                              |cnn_Pipeline_7                              |        0|    0|     35|    167|    0|
     |grp_cnn_Pipeline_8_fu_425                              |cnn_Pipeline_8                              |        0|    0|     35|    167|    0|
-    |grp_cnn_Pipeline_9_fu_432                              |cnn_Pipeline_9                              |        0|    0|     36|    167|    0|
+    |grp_cnn_Pipeline_9_fu_432                              |cnn_Pipeline_9                              |        0|    0|     34|    158|    0|
     |grp_cnn_Pipeline_clone_for_rows_clone_for_cols_fu_385  |cnn_Pipeline_clone_for_rows_clone_for_cols  |        0|    0|     45|    167|    0|
     |grp_cnn_Pipeline_pad_for_rows_pad_for_cols_fu_369      |cnn_Pipeline_pad_for_rows_pad_for_cols      |        0|    0|   1018|    419|    0|
-    |grp_dataflow_section_fu_446                            |dataflow_section                            |      368|  131|  49497|  38413|    0|
+    |grp_dataflow_section_fu_446                            |dataflow_section                            |      368|  131|  52105|  38605|    0|
     +-------------------------------------------------------+--------------------------------------------+---------+-----+-------+-------+-----+
-    |Total                                                  |                                            |      368|  131|  50816|  40343|    0|
+    |Total                                                  |                                            |      368|  131|  53422|  40526|    0|
     +-------------------------------------------------------+--------------------------------------------+---------+-----+-------+-------+-----+
 
     * DSP: 
@@ -224,20 +224,14 @@
     |ap_CS_fsm                                                           |  18|   0|   18|          0|
     |ap_sync_reg_grp_dataflow_section_fu_446_ap_done                     |   1|   0|    1|          0|
     |ap_sync_reg_grp_dataflow_section_fu_446_ap_ready                    |   1|   0|    1|          0|
-    |biases_buf_0_reg_742                                                |  32|   0|   32|          0|
-    |biases_buf_1_reg_747                                                |  32|   0|   32|          0|
-    |biases_buf_2_reg_752                                                |  32|   0|   32|          0|
-    |biases_buf_3_reg_757                                                |  32|   0|   32|          0|
-    |biases_buf_4_reg_762                                                |  32|   0|   32|          0|
-    |biases_buf_5_reg_767                                                |  32|   0|   32|          0|
-    |biases_buf_6_reg_772                                                |  32|   0|   32|          0|
-    |biases_buf_7_reg_777                                                |  32|   0|   32|          0|
-    |biases_buf_load_1_reg_687                                           |  32|   0|   32|          0|
-    |biases_buf_load_2_reg_702                                           |  32|   0|   32|          0|
-    |biases_buf_load_3_reg_707                                           |  32|   0|   32|          0|
-    |biases_buf_load_4_reg_722                                           |  32|   0|   32|          0|
-    |biases_buf_load_5_reg_727                                           |  32|   0|   32|          0|
-    |biases_buf_load_reg_682                                             |  32|   0|   32|          0|
+    |biases_buf_0_reg_648                                                |  32|   0|   32|          0|
+    |biases_buf_1_reg_653                                                |  32|   0|   32|          0|
+    |biases_buf_2_reg_668                                                |  32|   0|   32|          0|
+    |biases_buf_3_reg_673                                                |  32|   0|   32|          0|
+    |biases_buf_4_reg_688                                                |  32|   0|   32|          0|
+    |biases_buf_5_reg_693                                                |  32|   0|   32|          0|
+    |biases_buf_6_reg_708                                                |  32|   0|   32|          0|
+    |biases_buf_7_reg_713                                                |  32|   0|   32|          0|
     |grp_cnn_Pipeline_10_fu_439_ap_start_reg                             |   1|   0|    1|          0|
     |grp_cnn_Pipeline_3_fu_377_ap_start_reg                              |   1|   0|    1|          0|
     |grp_cnn_Pipeline_4_fu_397_ap_start_reg                              |   1|   0|    1|          0|
@@ -250,7 +244,7 @@
     |grp_cnn_Pipeline_pad_for_rows_pad_for_cols_fu_369_ap_start_reg      |   1|   0|    1|          0|
     |grp_dataflow_section_fu_446_ap_start_reg                            |   1|   0|    1|          0|
     +--------------------------------------------------------------------+----+----+-----+-----------+
-    |Total                                                               | 479|   0|  479|          0|
+    |Total                                                               | 287|   0|  287|          0|
     +--------------------------------------------------------------------+----+----+-----+-----------+
 
 
@@ -262,8 +256,6 @@
 +---------------------+-----+-----+------------+--------------+--------------+
 |      RTL Ports      | Dir | Bits|  Protocol  | Source Object|    C Type    |
 +---------------------+-----+-----+------------+--------------+--------------+
-|ap_local_block       |  out|    1|  ap_ctrl_hs|           cnn|  return value|
-|ap_local_deadlock    |  out|    1|  ap_ctrl_hs|           cnn|  return value|
 |ap_clk               |   in|    1|  ap_ctrl_hs|           cnn|  return value|
 |ap_rst               |   in|    1|  ap_ctrl_hs|           cnn|  return value|
 |ap_start             |   in|    1|  ap_ctrl_hs|           cnn|  return value|

@@ -9,6 +9,7 @@ set isOneStateSeq 0
 set ProfileFlag 0
 set StallSigGenFlag 0
 set isEnableWaveformDebug 1
+set hasInterrupt 0
 set C_modelName {flattening_layer}
 set C_modelType { void 0 }
 set C_modelArgList {
@@ -185,71 +186,71 @@ set RtlHierarchyInfo {[
 		"IsBlackBox" : "0",
 		"InputProcess" : [
 			{"ID" : "1", "Name" : "flattening_U0"},
-			{"ID" : "3", "Name" : "flattening_1_U0"},
-			{"ID" : "5", "Name" : "flattening_2_U0"},
-			{"ID" : "7", "Name" : "flattening_3_U0"},
-			{"ID" : "9", "Name" : "flattening_4_U0"},
-			{"ID" : "11", "Name" : "flattening_5_U0"},
-			{"ID" : "13", "Name" : "flattening_6_U0"},
-			{"ID" : "15", "Name" : "flattening_7_U0"}],
+			{"ID" : "3", "Name" : "flattening_15_U0"},
+			{"ID" : "5", "Name" : "flattening_16_U0"},
+			{"ID" : "7", "Name" : "flattening_17_U0"},
+			{"ID" : "9", "Name" : "flattening_18_U0"},
+			{"ID" : "11", "Name" : "flattening_19_U0"},
+			{"ID" : "13", "Name" : "flattening_20_U0"},
+			{"ID" : "15", "Name" : "flattening_21_U0"}],
 		"OutputProcess" : [
 			{"ID" : "1", "Name" : "flattening_U0"},
-			{"ID" : "3", "Name" : "flattening_1_U0"},
-			{"ID" : "5", "Name" : "flattening_2_U0"},
-			{"ID" : "7", "Name" : "flattening_3_U0"},
-			{"ID" : "9", "Name" : "flattening_4_U0"},
-			{"ID" : "11", "Name" : "flattening_5_U0"},
-			{"ID" : "13", "Name" : "flattening_6_U0"},
-			{"ID" : "15", "Name" : "flattening_7_U0"}],
+			{"ID" : "3", "Name" : "flattening_15_U0"},
+			{"ID" : "5", "Name" : "flattening_16_U0"},
+			{"ID" : "7", "Name" : "flattening_17_U0"},
+			{"ID" : "9", "Name" : "flattening_18_U0"},
+			{"ID" : "11", "Name" : "flattening_19_U0"},
+			{"ID" : "13", "Name" : "flattening_20_U0"},
+			{"ID" : "15", "Name" : "flattening_21_U0"}],
 		"Port" : [
 			{"Name" : "pool_to_flat_streams_0", "Type" : "Fifo", "Direction" : "I", "DependentProc" : ["0","-1"], "DependentChan" : "0", "DependentChanDepth" : "196", "DependentChanType" : "0",
 				"SubConnect" : [
 					{"ID" : "1", "SubInstance" : "flattening_U0", "Port" : "pool_to_flat_streams_0"}]},
 			{"Name" : "pool_to_flat_streams_1", "Type" : "Fifo", "Direction" : "I", "DependentProc" : ["0","-1"], "DependentChan" : "0", "DependentChanDepth" : "196", "DependentChanType" : "0",
 				"SubConnect" : [
-					{"ID" : "3", "SubInstance" : "flattening_1_U0", "Port" : "pool_to_flat_streams_1"}]},
+					{"ID" : "3", "SubInstance" : "flattening_15_U0", "Port" : "pool_to_flat_streams_1"}]},
 			{"Name" : "pool_to_flat_streams_2", "Type" : "Fifo", "Direction" : "I", "DependentProc" : ["0","-1"], "DependentChan" : "0", "DependentChanDepth" : "196", "DependentChanType" : "0",
 				"SubConnect" : [
-					{"ID" : "5", "SubInstance" : "flattening_2_U0", "Port" : "pool_to_flat_streams_2"}]},
+					{"ID" : "5", "SubInstance" : "flattening_16_U0", "Port" : "pool_to_flat_streams_2"}]},
 			{"Name" : "pool_to_flat_streams_3", "Type" : "Fifo", "Direction" : "I", "DependentProc" : ["0","-1"], "DependentChan" : "0", "DependentChanDepth" : "196", "DependentChanType" : "0",
 				"SubConnect" : [
-					{"ID" : "7", "SubInstance" : "flattening_3_U0", "Port" : "pool_to_flat_streams_3"}]},
+					{"ID" : "7", "SubInstance" : "flattening_17_U0", "Port" : "pool_to_flat_streams_3"}]},
 			{"Name" : "pool_to_flat_streams_4", "Type" : "Fifo", "Direction" : "I", "DependentProc" : ["0","-1"], "DependentChan" : "0", "DependentChanDepth" : "196", "DependentChanType" : "0",
 				"SubConnect" : [
-					{"ID" : "9", "SubInstance" : "flattening_4_U0", "Port" : "pool_to_flat_streams_4"}]},
+					{"ID" : "9", "SubInstance" : "flattening_18_U0", "Port" : "pool_to_flat_streams_4"}]},
 			{"Name" : "pool_to_flat_streams_5", "Type" : "Fifo", "Direction" : "I", "DependentProc" : ["0","-1"], "DependentChan" : "0", "DependentChanDepth" : "196", "DependentChanType" : "0",
 				"SubConnect" : [
-					{"ID" : "11", "SubInstance" : "flattening_5_U0", "Port" : "pool_to_flat_streams_5"}]},
+					{"ID" : "11", "SubInstance" : "flattening_19_U0", "Port" : "pool_to_flat_streams_5"}]},
 			{"Name" : "pool_to_flat_streams_6", "Type" : "Fifo", "Direction" : "I", "DependentProc" : ["0","-1"], "DependentChan" : "0", "DependentChanDepth" : "196", "DependentChanType" : "0",
 				"SubConnect" : [
-					{"ID" : "13", "SubInstance" : "flattening_6_U0", "Port" : "pool_to_flat_streams_6"}]},
+					{"ID" : "13", "SubInstance" : "flattening_20_U0", "Port" : "pool_to_flat_streams_6"}]},
 			{"Name" : "pool_to_flat_streams_7", "Type" : "Fifo", "Direction" : "I", "DependentProc" : ["0","-1"], "DependentChan" : "0", "DependentChanDepth" : "196", "DependentChanType" : "0",
 				"SubConnect" : [
-					{"ID" : "15", "SubInstance" : "flattening_7_U0", "Port" : "pool_to_flat_streams_7"}]},
+					{"ID" : "15", "SubInstance" : "flattening_21_U0", "Port" : "pool_to_flat_streams_7"}]},
 			{"Name" : "flat_to_dense_streams_0", "Type" : "Fifo", "Direction" : "O", "DependentProc" : ["0","0"], "DependentChan" : "0", "DependentChanDepth" : "196", "DependentChanType" : "0",
 				"SubConnect" : [
 					{"ID" : "1", "SubInstance" : "flattening_U0", "Port" : "flat_to_dense_streams_0"}]},
 			{"Name" : "flat_to_dense_streams_1", "Type" : "Fifo", "Direction" : "O", "DependentProc" : ["0","0"], "DependentChan" : "0", "DependentChanDepth" : "196", "DependentChanType" : "0",
 				"SubConnect" : [
-					{"ID" : "3", "SubInstance" : "flattening_1_U0", "Port" : "flat_to_dense_streams_1"}]},
+					{"ID" : "3", "SubInstance" : "flattening_15_U0", "Port" : "flat_to_dense_streams_1"}]},
 			{"Name" : "flat_to_dense_streams_2", "Type" : "Fifo", "Direction" : "O", "DependentProc" : ["0","0"], "DependentChan" : "0", "DependentChanDepth" : "196", "DependentChanType" : "0",
 				"SubConnect" : [
-					{"ID" : "5", "SubInstance" : "flattening_2_U0", "Port" : "flat_to_dense_streams_2"}]},
+					{"ID" : "5", "SubInstance" : "flattening_16_U0", "Port" : "flat_to_dense_streams_2"}]},
 			{"Name" : "flat_to_dense_streams_3", "Type" : "Fifo", "Direction" : "O", "DependentProc" : ["0","0"], "DependentChan" : "0", "DependentChanDepth" : "196", "DependentChanType" : "0",
 				"SubConnect" : [
-					{"ID" : "7", "SubInstance" : "flattening_3_U0", "Port" : "flat_to_dense_streams_3"}]},
+					{"ID" : "7", "SubInstance" : "flattening_17_U0", "Port" : "flat_to_dense_streams_3"}]},
 			{"Name" : "flat_to_dense_streams_4", "Type" : "Fifo", "Direction" : "O", "DependentProc" : ["0","0"], "DependentChan" : "0", "DependentChanDepth" : "196", "DependentChanType" : "0",
 				"SubConnect" : [
-					{"ID" : "9", "SubInstance" : "flattening_4_U0", "Port" : "flat_to_dense_streams_4"}]},
+					{"ID" : "9", "SubInstance" : "flattening_18_U0", "Port" : "flat_to_dense_streams_4"}]},
 			{"Name" : "flat_to_dense_streams_5", "Type" : "Fifo", "Direction" : "O", "DependentProc" : ["0","0"], "DependentChan" : "0", "DependentChanDepth" : "196", "DependentChanType" : "0",
 				"SubConnect" : [
-					{"ID" : "11", "SubInstance" : "flattening_5_U0", "Port" : "flat_to_dense_streams_5"}]},
+					{"ID" : "11", "SubInstance" : "flattening_19_U0", "Port" : "flat_to_dense_streams_5"}]},
 			{"Name" : "flat_to_dense_streams_6", "Type" : "Fifo", "Direction" : "O", "DependentProc" : ["0","0"], "DependentChan" : "0", "DependentChanDepth" : "196", "DependentChanType" : "0",
 				"SubConnect" : [
-					{"ID" : "13", "SubInstance" : "flattening_6_U0", "Port" : "flat_to_dense_streams_6"}]},
+					{"ID" : "13", "SubInstance" : "flattening_20_U0", "Port" : "flat_to_dense_streams_6"}]},
 			{"Name" : "flat_to_dense_streams_7", "Type" : "Fifo", "Direction" : "O", "DependentProc" : ["0","0"], "DependentChan" : "0", "DependentChanDepth" : "196", "DependentChanType" : "0",
 				"SubConnect" : [
-					{"ID" : "15", "SubInstance" : "flattening_7_U0", "Port" : "flat_to_dense_streams_7"}]}]},
+					{"ID" : "15", "SubInstance" : "flattening_21_U0", "Port" : "flat_to_dense_streams_7"}]}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.flattening_U0", "Parent" : "0", "Child" : ["2"],
 		"CDFG" : "flattening",
 		"Protocol" : "ap_ctrl_hs",
@@ -275,8 +276,8 @@ set RtlHierarchyInfo {[
 			{"Name" : "flat_for_rows_flat_for_cols", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter1", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter0", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "1"}}]},
 	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.flattening_U0.flow_control_loop_pipe_U", "Parent" : "1"},
-	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.flattening_1_U0", "Parent" : "0", "Child" : ["4"],
-		"CDFG" : "flattening_1",
+	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.flattening_15_U0", "Parent" : "0", "Child" : ["4"],
+		"CDFG" : "flattening_15",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "1", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
@@ -299,9 +300,9 @@ set RtlHierarchyInfo {[
 		"Loop" : [
 			{"Name" : "flat_for_rows_flat_for_cols", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter1", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter0", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "1"}}]},
-	{"ID" : "4", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.flattening_1_U0.flow_control_loop_pipe_U", "Parent" : "3"},
-	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.flattening_2_U0", "Parent" : "0", "Child" : ["6"],
-		"CDFG" : "flattening_2",
+	{"ID" : "4", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.flattening_15_U0.flow_control_loop_pipe_U", "Parent" : "3"},
+	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.flattening_16_U0", "Parent" : "0", "Child" : ["6"],
+		"CDFG" : "flattening_16",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "1", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
@@ -324,9 +325,9 @@ set RtlHierarchyInfo {[
 		"Loop" : [
 			{"Name" : "flat_for_rows_flat_for_cols", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter1", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter0", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "1"}}]},
-	{"ID" : "6", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.flattening_2_U0.flow_control_loop_pipe_U", "Parent" : "5"},
-	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.flattening_3_U0", "Parent" : "0", "Child" : ["8"],
-		"CDFG" : "flattening_3",
+	{"ID" : "6", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.flattening_16_U0.flow_control_loop_pipe_U", "Parent" : "5"},
+	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.flattening_17_U0", "Parent" : "0", "Child" : ["8"],
+		"CDFG" : "flattening_17",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "1", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
@@ -349,9 +350,9 @@ set RtlHierarchyInfo {[
 		"Loop" : [
 			{"Name" : "flat_for_rows_flat_for_cols", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter1", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter0", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "1"}}]},
-	{"ID" : "8", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.flattening_3_U0.flow_control_loop_pipe_U", "Parent" : "7"},
-	{"ID" : "9", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.flattening_4_U0", "Parent" : "0", "Child" : ["10"],
-		"CDFG" : "flattening_4",
+	{"ID" : "8", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.flattening_17_U0.flow_control_loop_pipe_U", "Parent" : "7"},
+	{"ID" : "9", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.flattening_18_U0", "Parent" : "0", "Child" : ["10"],
+		"CDFG" : "flattening_18",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "1", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
@@ -374,9 +375,9 @@ set RtlHierarchyInfo {[
 		"Loop" : [
 			{"Name" : "flat_for_rows_flat_for_cols", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter1", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter0", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "1"}}]},
-	{"ID" : "10", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.flattening_4_U0.flow_control_loop_pipe_U", "Parent" : "9"},
-	{"ID" : "11", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.flattening_5_U0", "Parent" : "0", "Child" : ["12"],
-		"CDFG" : "flattening_5",
+	{"ID" : "10", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.flattening_18_U0.flow_control_loop_pipe_U", "Parent" : "9"},
+	{"ID" : "11", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.flattening_19_U0", "Parent" : "0", "Child" : ["12"],
+		"CDFG" : "flattening_19",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "1", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
@@ -399,9 +400,9 @@ set RtlHierarchyInfo {[
 		"Loop" : [
 			{"Name" : "flat_for_rows_flat_for_cols", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter1", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter0", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "1"}}]},
-	{"ID" : "12", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.flattening_5_U0.flow_control_loop_pipe_U", "Parent" : "11"},
-	{"ID" : "13", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.flattening_6_U0", "Parent" : "0", "Child" : ["14"],
-		"CDFG" : "flattening_6",
+	{"ID" : "12", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.flattening_19_U0.flow_control_loop_pipe_U", "Parent" : "11"},
+	{"ID" : "13", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.flattening_20_U0", "Parent" : "0", "Child" : ["14"],
+		"CDFG" : "flattening_20",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "1", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
@@ -424,9 +425,9 @@ set RtlHierarchyInfo {[
 		"Loop" : [
 			{"Name" : "flat_for_rows_flat_for_cols", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter1", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter0", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "1"}}]},
-	{"ID" : "14", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.flattening_6_U0.flow_control_loop_pipe_U", "Parent" : "13"},
-	{"ID" : "15", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.flattening_7_U0", "Parent" : "0", "Child" : ["16"],
-		"CDFG" : "flattening_7",
+	{"ID" : "14", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.flattening_20_U0.flow_control_loop_pipe_U", "Parent" : "13"},
+	{"ID" : "15", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.flattening_21_U0", "Parent" : "0", "Child" : ["16"],
+		"CDFG" : "flattening_21",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "1", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
@@ -449,7 +450,7 @@ set RtlHierarchyInfo {[
 		"Loop" : [
 			{"Name" : "flat_for_rows_flat_for_cols", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter1", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter0", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "1"}}]},
-	{"ID" : "16", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.flattening_7_U0.flow_control_loop_pipe_U", "Parent" : "15"}]}
+	{"ID" : "16", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.flattening_21_U0.flow_control_loop_pipe_U", "Parent" : "15"}]}
 
 
 set ArgLastReadFirstWriteLatency {
@@ -473,25 +474,25 @@ set ArgLastReadFirstWriteLatency {
 	flattening {
 		pool_to_flat_streams_0 {Type I LastRead 0 FirstWrite -1}
 		flat_to_dense_streams_0 {Type O LastRead -1 FirstWrite 1}}
-	flattening_1 {
+	flattening_15 {
 		pool_to_flat_streams_1 {Type I LastRead 0 FirstWrite -1}
 		flat_to_dense_streams_1 {Type O LastRead -1 FirstWrite 1}}
-	flattening_2 {
+	flattening_16 {
 		pool_to_flat_streams_2 {Type I LastRead 0 FirstWrite -1}
 		flat_to_dense_streams_2 {Type O LastRead -1 FirstWrite 1}}
-	flattening_3 {
+	flattening_17 {
 		pool_to_flat_streams_3 {Type I LastRead 0 FirstWrite -1}
 		flat_to_dense_streams_3 {Type O LastRead -1 FirstWrite 1}}
-	flattening_4 {
+	flattening_18 {
 		pool_to_flat_streams_4 {Type I LastRead 0 FirstWrite -1}
 		flat_to_dense_streams_4 {Type O LastRead -1 FirstWrite 1}}
-	flattening_5 {
+	flattening_19 {
 		pool_to_flat_streams_5 {Type I LastRead 0 FirstWrite -1}
 		flat_to_dense_streams_5 {Type O LastRead -1 FirstWrite 1}}
-	flattening_6 {
+	flattening_20 {
 		pool_to_flat_streams_6 {Type I LastRead 0 FirstWrite -1}
 		flat_to_dense_streams_6 {Type O LastRead -1 FirstWrite 1}}
-	flattening_7 {
+	flattening_21 {
 		pool_to_flat_streams_7 {Type I LastRead 0 FirstWrite -1}
 		flat_to_dense_streams_7 {Type O LastRead -1 FirstWrite 1}}}
 
@@ -506,20 +507,20 @@ set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	pool_to_flat_streams_0 { ap_fifo {  { pool_to_flat_streams_0_dout fifo_data 0 32 }  { pool_to_flat_streams_0_empty_n fifo_status 0 1 }  { pool_to_flat_streams_0_read fifo_update 1 1 } } }
-	pool_to_flat_streams_1 { ap_fifo {  { pool_to_flat_streams_1_dout fifo_data 0 32 }  { pool_to_flat_streams_1_empty_n fifo_status 0 1 }  { pool_to_flat_streams_1_read fifo_update 1 1 } } }
-	pool_to_flat_streams_2 { ap_fifo {  { pool_to_flat_streams_2_dout fifo_data 0 32 }  { pool_to_flat_streams_2_empty_n fifo_status 0 1 }  { pool_to_flat_streams_2_read fifo_update 1 1 } } }
-	pool_to_flat_streams_3 { ap_fifo {  { pool_to_flat_streams_3_dout fifo_data 0 32 }  { pool_to_flat_streams_3_empty_n fifo_status 0 1 }  { pool_to_flat_streams_3_read fifo_update 1 1 } } }
-	pool_to_flat_streams_4 { ap_fifo {  { pool_to_flat_streams_4_dout fifo_data 0 32 }  { pool_to_flat_streams_4_empty_n fifo_status 0 1 }  { pool_to_flat_streams_4_read fifo_update 1 1 } } }
-	pool_to_flat_streams_5 { ap_fifo {  { pool_to_flat_streams_5_dout fifo_data 0 32 }  { pool_to_flat_streams_5_empty_n fifo_status 0 1 }  { pool_to_flat_streams_5_read fifo_update 1 1 } } }
-	pool_to_flat_streams_6 { ap_fifo {  { pool_to_flat_streams_6_dout fifo_data 0 32 }  { pool_to_flat_streams_6_empty_n fifo_status 0 1 }  { pool_to_flat_streams_6_read fifo_update 1 1 } } }
-	pool_to_flat_streams_7 { ap_fifo {  { pool_to_flat_streams_7_dout fifo_data 0 32 }  { pool_to_flat_streams_7_empty_n fifo_status 0 1 }  { pool_to_flat_streams_7_read fifo_update 1 1 } } }
-	flat_to_dense_streams_0 { ap_fifo {  { flat_to_dense_streams_0_din fifo_data 1 32 }  { flat_to_dense_streams_0_full_n fifo_status 0 1 }  { flat_to_dense_streams_0_write fifo_update 1 1 } } }
-	flat_to_dense_streams_1 { ap_fifo {  { flat_to_dense_streams_1_din fifo_data 1 32 }  { flat_to_dense_streams_1_full_n fifo_status 0 1 }  { flat_to_dense_streams_1_write fifo_update 1 1 } } }
-	flat_to_dense_streams_2 { ap_fifo {  { flat_to_dense_streams_2_din fifo_data 1 32 }  { flat_to_dense_streams_2_full_n fifo_status 0 1 }  { flat_to_dense_streams_2_write fifo_update 1 1 } } }
-	flat_to_dense_streams_3 { ap_fifo {  { flat_to_dense_streams_3_din fifo_data 1 32 }  { flat_to_dense_streams_3_full_n fifo_status 0 1 }  { flat_to_dense_streams_3_write fifo_update 1 1 } } }
-	flat_to_dense_streams_4 { ap_fifo {  { flat_to_dense_streams_4_din fifo_data 1 32 }  { flat_to_dense_streams_4_full_n fifo_status 0 1 }  { flat_to_dense_streams_4_write fifo_update 1 1 } } }
-	flat_to_dense_streams_5 { ap_fifo {  { flat_to_dense_streams_5_din fifo_data 1 32 }  { flat_to_dense_streams_5_full_n fifo_status 0 1 }  { flat_to_dense_streams_5_write fifo_update 1 1 } } }
-	flat_to_dense_streams_6 { ap_fifo {  { flat_to_dense_streams_6_din fifo_data 1 32 }  { flat_to_dense_streams_6_full_n fifo_status 0 1 }  { flat_to_dense_streams_6_write fifo_update 1 1 } } }
-	flat_to_dense_streams_7 { ap_fifo {  { flat_to_dense_streams_7_din fifo_data 1 32 }  { flat_to_dense_streams_7_full_n fifo_status 0 1 }  { flat_to_dense_streams_7_write fifo_update 1 1 } } }
+	pool_to_flat_streams_0 { ap_fifo {  { pool_to_flat_streams_0_dout fifo_port_we 0 32 }  { pool_to_flat_streams_0_empty_n fifo_status 0 1 }  { pool_to_flat_streams_0_read fifo_data 1 1 } } }
+	pool_to_flat_streams_1 { ap_fifo {  { pool_to_flat_streams_1_dout fifo_port_we 0 32 }  { pool_to_flat_streams_1_empty_n fifo_status 0 1 }  { pool_to_flat_streams_1_read fifo_data 1 1 } } }
+	pool_to_flat_streams_2 { ap_fifo {  { pool_to_flat_streams_2_dout fifo_port_we 0 32 }  { pool_to_flat_streams_2_empty_n fifo_status 0 1 }  { pool_to_flat_streams_2_read fifo_data 1 1 } } }
+	pool_to_flat_streams_3 { ap_fifo {  { pool_to_flat_streams_3_dout fifo_port_we 0 32 }  { pool_to_flat_streams_3_empty_n fifo_status 0 1 }  { pool_to_flat_streams_3_read fifo_data 1 1 } } }
+	pool_to_flat_streams_4 { ap_fifo {  { pool_to_flat_streams_4_dout fifo_port_we 0 32 }  { pool_to_flat_streams_4_empty_n fifo_status 0 1 }  { pool_to_flat_streams_4_read fifo_data 1 1 } } }
+	pool_to_flat_streams_5 { ap_fifo {  { pool_to_flat_streams_5_dout fifo_port_we 0 32 }  { pool_to_flat_streams_5_empty_n fifo_status 0 1 }  { pool_to_flat_streams_5_read fifo_data 1 1 } } }
+	pool_to_flat_streams_6 { ap_fifo {  { pool_to_flat_streams_6_dout fifo_port_we 0 32 }  { pool_to_flat_streams_6_empty_n fifo_status 0 1 }  { pool_to_flat_streams_6_read fifo_data 1 1 } } }
+	pool_to_flat_streams_7 { ap_fifo {  { pool_to_flat_streams_7_dout fifo_port_we 0 32 }  { pool_to_flat_streams_7_empty_n fifo_status 0 1 }  { pool_to_flat_streams_7_read fifo_data 1 1 } } }
+	flat_to_dense_streams_0 { ap_fifo {  { flat_to_dense_streams_0_din fifo_port_we 1 32 }  { flat_to_dense_streams_0_full_n fifo_status 0 1 }  { flat_to_dense_streams_0_write fifo_data 1 1 } } }
+	flat_to_dense_streams_1 { ap_fifo {  { flat_to_dense_streams_1_din fifo_port_we 1 32 }  { flat_to_dense_streams_1_full_n fifo_status 0 1 }  { flat_to_dense_streams_1_write fifo_data 1 1 } } }
+	flat_to_dense_streams_2 { ap_fifo {  { flat_to_dense_streams_2_din fifo_port_we 1 32 }  { flat_to_dense_streams_2_full_n fifo_status 0 1 }  { flat_to_dense_streams_2_write fifo_data 1 1 } } }
+	flat_to_dense_streams_3 { ap_fifo {  { flat_to_dense_streams_3_din fifo_port_we 1 32 }  { flat_to_dense_streams_3_full_n fifo_status 0 1 }  { flat_to_dense_streams_3_write fifo_data 1 1 } } }
+	flat_to_dense_streams_4 { ap_fifo {  { flat_to_dense_streams_4_din fifo_port_we 1 32 }  { flat_to_dense_streams_4_full_n fifo_status 0 1 }  { flat_to_dense_streams_4_write fifo_data 1 1 } } }
+	flat_to_dense_streams_5 { ap_fifo {  { flat_to_dense_streams_5_din fifo_port_we 1 32 }  { flat_to_dense_streams_5_full_n fifo_status 0 1 }  { flat_to_dense_streams_5_write fifo_data 1 1 } } }
+	flat_to_dense_streams_6 { ap_fifo {  { flat_to_dense_streams_6_din fifo_port_we 1 32 }  { flat_to_dense_streams_6_full_n fifo_status 0 1 }  { flat_to_dense_streams_6_write fifo_data 1 1 } } }
+	flat_to_dense_streams_7 { ap_fifo {  { flat_to_dense_streams_7_din fifo_port_we 1 32 }  { flat_to_dense_streams_7_full_n fifo_status 0 1 }  { flat_to_dense_streams_7_write fifo_data 1 1 } } }
 }

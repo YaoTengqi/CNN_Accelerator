@@ -1,7 +1,7 @@
 <profile>
 
 <ReportVersion>
-<Version>2021.2</Version>
+<Version>2022.2</Version>
 </ReportVersion>
 
 <UserAssignments>
@@ -33,6 +33,7 @@
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <conv_for_rows_win_for_rows_win_for_cols>
+<Slack>7.30</Slack>
 <TripCount>784</TripCount>
 <Latency>3995</Latency>
 <AbsoluteTimeLatency>39950</AbsoluteTimeLatency>
@@ -206,8 +207,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_17</name>
-<Object>w_17</Object>
+<name>w_11</name>
+<Object>w_11</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -217,8 +218,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_18</name>
-<Object>w_18</Object>
+<name>w_7</name>
+<Object>w_7</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -228,8 +229,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_19</name>
-<Object>w_19</Object>
+<name>w_8</name>
+<Object>w_8</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -239,8 +240,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_20</name>
-<Object>w_20</Object>
+<name>w_9</name>
+<Object>w_9</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -250,8 +251,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_21</name>
-<Object>w_21</Object>
+<name>w_1</name>
+<Object>w_1</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -261,8 +262,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_22</name>
-<Object>w_22</Object>
+<name>w_2</name>
+<Object>w_2</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -272,8 +273,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_23</name>
-<Object>w_23</Object>
+<name>w_3</name>
+<Object>w_3</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -283,8 +284,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_24</name>
-<Object>w_24</Object>
+<name>w_4</name>
+<Object>w_4</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -294,8 +295,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>biases_buf</name>
-<Object>biases_buf</Object>
+<name>conv3</name>
+<Object>conv3</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -314,6 +315,28 @@
 <Dir>out</Dir>
 <Bits>32</Bits>
 <Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>conv_to_pool_streams_5_num_data_valid</name>
+<Object>conv_to_pool_streams_5</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>11</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>conv_to_pool_streams_5_fifo_cap</name>
+<Object>conv_to_pool_streams_5</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>11</Bits>
+<Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
 <name>conv_to_pool_streams_5_full_n</name>

@@ -6,85 +6,8 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 }
 
 
-# Memory (RAM/ROM)  definition:
-set ID 559
-set hasByteEnable 0
-set MemName cnn_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_dense_biases_ROM_bkb
-set CoreName ap_simcore_mem
-set PortList { 1 }
-set DataWd 32
-set AddrRange 10
-set AddrWd 4
-set impl_style auto
-set TrueReset 0
-set IsROM 1
-set ROMData { "10111010100101000101101010100100" "00111110101010000010010100110110" "00111101110001001011101101100100" "10111101111100011111001011100101" "00111100100110010011110101010100" "00111110001101100010100010000000" "10111100100010011011111100111011" "00111110100000011111001111111100" "10111111000100000001011111000110" "10111110001101000010100001100000" }
-set HasInitializer 1
-set Initializer $ROMData
-set NumOfStage 2
-set DelayBudget 2.152
-set ClkPeriod 10
-if {${::AESL::PGuard_simmodel_gen}} {
-if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
-    eval "ap_gen_simcore_mem { \
-    id ${ID} \
-    name ${MemName} \
-    corename ${CoreName}  \
-    op mem  \
-    hasByteEnable ${hasByteEnable} \
-    reset_level 1 \
-    sync_rst true \
-    stage_num ${NumOfStage}  \
-    port_num 1 \
-    port_list \{${PortList}\} \
-    data_wd ${DataWd} \
-    addr_wd ${AddrWd} \
-    addr_range ${AddrRange} \
-    style ${impl_style} \
-    true_reset ${TrueReset} \
-    delay_budget ${DelayBudget} \
-    clk_period ${ClkPeriod} \
-    HasInitializer ${HasInitializer} \
-    rom_data \{${ROMData}\} \
- } "
-} else {
-    puts "@W \[IMPL-102\] Cannot find ap_gen_simcore_mem, check your platform lib"
-}
-}
-
-
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $MemName BINDTYPE {storage} TYPE {rom} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
-}
-
-
-set CoreName ROM
-if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
-if {[info proc ::AESL_LIB_VIRTEX::xil_gen_ROM] == "::AESL_LIB_VIRTEX::xil_gen_ROM"} {
-    eval "::AESL_LIB_VIRTEX::xil_gen_ROM { \
-    id ${ID} \
-    name ${MemName} \
-    corename ${CoreName}  \
-    op mem  \
-    hasByteEnable ${hasByteEnable} \
-    reset_level 1 \
-    sync_rst true \
-    stage_num ${NumOfStage}  \
-    port_num 1 \
-    port_list \{${PortList}\} \
-    data_wd ${DataWd} \
-    addr_wd ${AddrWd} \
-    addr_range ${AddrRange} \
-    style ${impl_style} \
-    true_reset ${TrueReset} \
-    delay_budget ${DelayBudget} \
-    clk_period ${ClkPeriod} \
-    HasInitializer ${HasInitializer} \
-    rom_data \{${ROMData}\} \
- } "
-  } else {
-    puts "@W \[IMPL-104\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_ROM, check your platform lib"
-  }
+	::AP::rtl_comp_handler cnn_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_dense_biases_ROM_bkb BINDTYPE {storage} TYPE {rom} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
 }
 
 
@@ -99,7 +22,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 568 \
+    id 649 \
     name prediction \
     reset_level 1 \
     sync_rst true \
@@ -117,7 +40,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 560 \
+    id 641 \
     name dense_to_softmax_streams_0 \
     type fifo \
     dir I \
@@ -125,14 +48,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_dense_to_softmax_streams_0 \
     op interface \
-    ports { dense_to_softmax_streams_0_dout { I 32 vector } dense_to_softmax_streams_0_empty_n { I 1 bit } dense_to_softmax_streams_0_read { O 1 bit } } \
+    ports { dense_to_softmax_streams_0_dout { I 32 vector } dense_to_softmax_streams_0_num_data_valid { I 5 vector } dense_to_softmax_streams_0_fifo_cap { I 5 vector } dense_to_softmax_streams_0_empty_n { I 1 bit } dense_to_softmax_streams_0_read { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 561 \
+    id 642 \
     name dense_to_softmax_streams_1 \
     type fifo \
     dir I \
@@ -140,14 +63,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_dense_to_softmax_streams_1 \
     op interface \
-    ports { dense_to_softmax_streams_1_dout { I 32 vector } dense_to_softmax_streams_1_empty_n { I 1 bit } dense_to_softmax_streams_1_read { O 1 bit } } \
+    ports { dense_to_softmax_streams_1_dout { I 32 vector } dense_to_softmax_streams_1_num_data_valid { I 5 vector } dense_to_softmax_streams_1_fifo_cap { I 5 vector } dense_to_softmax_streams_1_empty_n { I 1 bit } dense_to_softmax_streams_1_read { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 562 \
+    id 643 \
     name dense_to_softmax_streams_2 \
     type fifo \
     dir I \
@@ -155,14 +78,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_dense_to_softmax_streams_2 \
     op interface \
-    ports { dense_to_softmax_streams_2_dout { I 32 vector } dense_to_softmax_streams_2_empty_n { I 1 bit } dense_to_softmax_streams_2_read { O 1 bit } } \
+    ports { dense_to_softmax_streams_2_dout { I 32 vector } dense_to_softmax_streams_2_num_data_valid { I 5 vector } dense_to_softmax_streams_2_fifo_cap { I 5 vector } dense_to_softmax_streams_2_empty_n { I 1 bit } dense_to_softmax_streams_2_read { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 563 \
+    id 644 \
     name dense_to_softmax_streams_3 \
     type fifo \
     dir I \
@@ -170,14 +93,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_dense_to_softmax_streams_3 \
     op interface \
-    ports { dense_to_softmax_streams_3_dout { I 32 vector } dense_to_softmax_streams_3_empty_n { I 1 bit } dense_to_softmax_streams_3_read { O 1 bit } } \
+    ports { dense_to_softmax_streams_3_dout { I 32 vector } dense_to_softmax_streams_3_num_data_valid { I 5 vector } dense_to_softmax_streams_3_fifo_cap { I 5 vector } dense_to_softmax_streams_3_empty_n { I 1 bit } dense_to_softmax_streams_3_read { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 564 \
+    id 645 \
     name dense_to_softmax_streams_4 \
     type fifo \
     dir I \
@@ -185,14 +108,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_dense_to_softmax_streams_4 \
     op interface \
-    ports { dense_to_softmax_streams_4_dout { I 32 vector } dense_to_softmax_streams_4_empty_n { I 1 bit } dense_to_softmax_streams_4_read { O 1 bit } } \
+    ports { dense_to_softmax_streams_4_dout { I 32 vector } dense_to_softmax_streams_4_num_data_valid { I 5 vector } dense_to_softmax_streams_4_fifo_cap { I 5 vector } dense_to_softmax_streams_4_empty_n { I 1 bit } dense_to_softmax_streams_4_read { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 565 \
+    id 646 \
     name dense_to_softmax_streams_5 \
     type fifo \
     dir I \
@@ -200,14 +123,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_dense_to_softmax_streams_5 \
     op interface \
-    ports { dense_to_softmax_streams_5_dout { I 32 vector } dense_to_softmax_streams_5_empty_n { I 1 bit } dense_to_softmax_streams_5_read { O 1 bit } } \
+    ports { dense_to_softmax_streams_5_dout { I 32 vector } dense_to_softmax_streams_5_num_data_valid { I 5 vector } dense_to_softmax_streams_5_fifo_cap { I 5 vector } dense_to_softmax_streams_5_empty_n { I 1 bit } dense_to_softmax_streams_5_read { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 566 \
+    id 647 \
     name dense_to_softmax_streams_6 \
     type fifo \
     dir I \
@@ -215,14 +138,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_dense_to_softmax_streams_6 \
     op interface \
-    ports { dense_to_softmax_streams_6_dout { I 32 vector } dense_to_softmax_streams_6_empty_n { I 1 bit } dense_to_softmax_streams_6_read { O 1 bit } } \
+    ports { dense_to_softmax_streams_6_dout { I 32 vector } dense_to_softmax_streams_6_num_data_valid { I 5 vector } dense_to_softmax_streams_6_fifo_cap { I 5 vector } dense_to_softmax_streams_6_empty_n { I 1 bit } dense_to_softmax_streams_6_read { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 567 \
+    id 648 \
     name dense_to_softmax_streams_7 \
     type fifo \
     dir I \
@@ -230,14 +153,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_dense_to_softmax_streams_7 \
     op interface \
-    ports { dense_to_softmax_streams_7_dout { I 32 vector } dense_to_softmax_streams_7_empty_n { I 1 bit } dense_to_softmax_streams_7_read { O 1 bit } } \
+    ports { dense_to_softmax_streams_7_dout { I 32 vector } dense_to_softmax_streams_7_num_data_valid { I 5 vector } dense_to_softmax_streams_7_fifo_cap { I 5 vector } dense_to_softmax_streams_7_empty_n { I 1 bit } dense_to_softmax_streams_7_read { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 569 \
+    id 650 \
     name exp_sum_out \
     type other \
     dir O \

@@ -3,9 +3,9 @@
 ================================================================
 == Vitis HLS Report for 'dense'
 ================================================================
-* Date:           Wed Apr 19 17:49:59 2023
+* Date:           Thu Apr 20 15:59:13 2023
 
-* Version:        2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
 * Project:        Project
 * Solution:       solution1 (Vivado IP Flow Target)
 * Product family: artix7
@@ -38,9 +38,9 @@
         |                                           |                                |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
         |                  Instance                 |             Module             |   min   |   max   |    min    |    max    |  min |  max |   Type  |
         +-------------------------------------------+--------------------------------+---------+---------+-----------+-----------+------+------+---------+
-        |grp_dense_Pipeline_1_fu_193                |dense_Pipeline_1                |       12|       12|   0.120 us|   0.120 us|    12|    12|       no|
-        |grp_dense_Pipeline_dense_for_flat_fu_199   |dense_Pipeline_dense_for_flat   |     1974|     1974|  19.740 us|  19.740 us|  1974|  1974|       no|
-        |grp_dense_Pipeline_VITIS_LOOP_60_2_fu_247  |dense_Pipeline_VITIS_LOOP_60_2  |       12|       12|   0.120 us|   0.120 us|    12|    12|       no|
+        |grp_dense_Pipeline_1_fu_195                |dense_Pipeline_1                |       12|       12|   0.120 us|   0.120 us|    12|    12|       no|
+        |grp_dense_Pipeline_dense_for_flat_fu_201   |dense_Pipeline_dense_for_flat   |     1974|     1974|  19.740 us|  19.740 us|  1974|  1974|       no|
+        |grp_dense_Pipeline_VITIS_LOOP_60_2_fu_249  |dense_Pipeline_VITIS_LOOP_60_2  |       12|       12|   0.120 us|   0.120 us|    12|    12|       no|
         +-------------------------------------------+--------------------------------+---------+---------+-----------+-----------+------+------+---------+
 
         * Loop: 
@@ -75,9 +75,9 @@
     +-------------------------------------------+--------------------------------+---------+----+------+-----+-----+
     |                  Instance                 |             Module             | BRAM_18K| DSP|  FF  | LUT | URAM|
     +-------------------------------------------+--------------------------------+---------+----+------+-----+-----+
-    |grp_dense_Pipeline_1_fu_193                |dense_Pipeline_1                |        0|   0|     6|   49|    0|
-    |grp_dense_Pipeline_VITIS_LOOP_60_2_fu_247  |dense_Pipeline_VITIS_LOOP_60_2  |        0|   0|     7|   71|    0|
-    |grp_dense_Pipeline_dense_for_flat_fu_199   |dense_Pipeline_dense_for_flat   |       40|   5|  1530|  758|    0|
+    |grp_dense_Pipeline_1_fu_195                |dense_Pipeline_1                |        0|   0|     6|   49|    0|
+    |grp_dense_Pipeline_VITIS_LOOP_60_2_fu_249  |dense_Pipeline_VITIS_LOOP_60_2  |        0|   0|     7|   71|    0|
+    |grp_dense_Pipeline_dense_for_flat_fu_201   |dense_Pipeline_dense_for_flat   |       40|   5|  1530|  758|    0|
     +-------------------------------------------+--------------------------------+---------+----+------+-----+-----+
     |Total                                      |                                |       40|   5|  1543|  878|    0|
     +-------------------------------------------+--------------------------------+---------+----+------+-----+-----+
@@ -130,19 +130,19 @@
     +--------------------------------------------------------+----+----+-----+-----------+
     |ap_CS_fsm                                               |  16|   0|   16|          0|
     |ap_done_reg                                             |   1|   0|    1|          0|
-    |dense_array_load_64_reg_379                             |  32|   0|   32|          0|
-    |dense_array_load_65_reg_394                             |  32|   0|   32|          0|
-    |dense_array_load_66_reg_399                             |  32|   0|   32|          0|
-    |dense_array_load_67_reg_414                             |  32|   0|   32|          0|
-    |dense_array_load_68_reg_419                             |  32|   0|   32|          0|
-    |dense_array_load_69_reg_434                             |  32|   0|   32|          0|
-    |dense_array_load_70_reg_439                             |  32|   0|   32|          0|
-    |dense_array_load_71_reg_444                             |  32|   0|   32|          0|
-    |dense_array_load_72_reg_449                             |  32|   0|   32|          0|
-    |dense_array_load_reg_374                                |  32|   0|   32|          0|
-    |grp_dense_Pipeline_1_fu_193_ap_start_reg                |   1|   0|    1|          0|
-    |grp_dense_Pipeline_VITIS_LOOP_60_2_fu_247_ap_start_reg  |   1|   0|    1|          0|
-    |grp_dense_Pipeline_dense_for_flat_fu_199_ap_start_reg   |   1|   0|    1|          0|
+    |dense_array_load_64_reg_381                             |  32|   0|   32|          0|
+    |dense_array_load_65_reg_396                             |  32|   0|   32|          0|
+    |dense_array_load_66_reg_401                             |  32|   0|   32|          0|
+    |dense_array_load_67_reg_416                             |  32|   0|   32|          0|
+    |dense_array_load_68_reg_421                             |  32|   0|   32|          0|
+    |dense_array_load_69_reg_436                             |  32|   0|   32|          0|
+    |dense_array_load_70_reg_441                             |  32|   0|   32|          0|
+    |dense_array_load_71_reg_446                             |  32|   0|   32|          0|
+    |dense_array_load_72_reg_451                             |  32|   0|   32|          0|
+    |dense_array_load_reg_376                                |  32|   0|   32|          0|
+    |grp_dense_Pipeline_1_fu_195_ap_start_reg                |   1|   0|    1|          0|
+    |grp_dense_Pipeline_VITIS_LOOP_60_2_fu_249_ap_start_reg  |   1|   0|    1|          0|
+    |grp_dense_Pipeline_dense_for_flat_fu_201_ap_start_reg   |   1|   0|    1|          0|
     +--------------------------------------------------------+----+----+-----+-----------+
     |Total                                                   | 340|   0|  340|          0|
     +--------------------------------------------------------+----+----+-----+-----------+
@@ -153,21 +153,25 @@
 == Interface
 ================================================================
 * Summary: 
-+-----------------------------------+-----+-----+------------+----------------------------+--------------+
-|             RTL Ports             | Dir | Bits|  Protocol  |        Source Object       |    C Type    |
-+-----------------------------------+-----+-----+------------+----------------------------+--------------+
-|ap_clk                             |   in|    1|  ap_ctrl_hs|                       dense|  return value|
-|ap_rst                             |   in|    1|  ap_ctrl_hs|                       dense|  return value|
-|ap_start                           |   in|    1|  ap_ctrl_hs|                       dense|  return value|
-|ap_done                            |  out|    1|  ap_ctrl_hs|                       dense|  return value|
-|ap_continue                        |   in|    1|  ap_ctrl_hs|                       dense|  return value|
-|ap_idle                            |  out|    1|  ap_ctrl_hs|                       dense|  return value|
-|ap_ready                           |  out|    1|  ap_ctrl_hs|                       dense|  return value|
-|flat_to_dense_streams_0_dout       |   in|   32|     ap_fifo|     flat_to_dense_streams_0|       pointer|
-|flat_to_dense_streams_0_empty_n    |   in|    1|     ap_fifo|     flat_to_dense_streams_0|       pointer|
-|flat_to_dense_streams_0_read       |  out|    1|     ap_fifo|     flat_to_dense_streams_0|       pointer|
-|dense_to_softmax_streams_0_din     |  out|   32|     ap_fifo|  dense_to_softmax_streams_0|       pointer|
-|dense_to_softmax_streams_0_full_n  |   in|    1|     ap_fifo|  dense_to_softmax_streams_0|       pointer|
-|dense_to_softmax_streams_0_write   |  out|    1|     ap_fifo|  dense_to_softmax_streams_0|       pointer|
-+-----------------------------------+-----+-----+------------+----------------------------+--------------+
++-------------------------------------------+-----+-----+------------+----------------------------+--------------+
+|                 RTL Ports                 | Dir | Bits|  Protocol  |        Source Object       |    C Type    |
++-------------------------------------------+-----+-----+------------+----------------------------+--------------+
+|ap_clk                                     |   in|    1|  ap_ctrl_hs|                       dense|  return value|
+|ap_rst                                     |   in|    1|  ap_ctrl_hs|                       dense|  return value|
+|ap_start                                   |   in|    1|  ap_ctrl_hs|                       dense|  return value|
+|ap_done                                    |  out|    1|  ap_ctrl_hs|                       dense|  return value|
+|ap_continue                                |   in|    1|  ap_ctrl_hs|                       dense|  return value|
+|ap_idle                                    |  out|    1|  ap_ctrl_hs|                       dense|  return value|
+|ap_ready                                   |  out|    1|  ap_ctrl_hs|                       dense|  return value|
+|flat_to_dense_streams_0_dout               |   in|   32|     ap_fifo|     flat_to_dense_streams_0|       pointer|
+|flat_to_dense_streams_0_num_data_valid     |   in|    9|     ap_fifo|     flat_to_dense_streams_0|       pointer|
+|flat_to_dense_streams_0_fifo_cap           |   in|    9|     ap_fifo|     flat_to_dense_streams_0|       pointer|
+|flat_to_dense_streams_0_empty_n            |   in|    1|     ap_fifo|     flat_to_dense_streams_0|       pointer|
+|flat_to_dense_streams_0_read               |  out|    1|     ap_fifo|     flat_to_dense_streams_0|       pointer|
+|dense_to_softmax_streams_0_din             |  out|   32|     ap_fifo|  dense_to_softmax_streams_0|       pointer|
+|dense_to_softmax_streams_0_num_data_valid  |   in|    5|     ap_fifo|  dense_to_softmax_streams_0|       pointer|
+|dense_to_softmax_streams_0_fifo_cap        |   in|    5|     ap_fifo|  dense_to_softmax_streams_0|       pointer|
+|dense_to_softmax_streams_0_full_n          |   in|    1|     ap_fifo|  dense_to_softmax_streams_0|       pointer|
+|dense_to_softmax_streams_0_write           |  out|    1|     ap_fifo|  dense_to_softmax_streams_0|       pointer|
++-------------------------------------------+-----+-----+------------+----------------------------+--------------+
 

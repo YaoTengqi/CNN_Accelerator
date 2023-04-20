@@ -9,6 +9,7 @@ set isOneStateSeq 0
 set ProfileFlag 0
 set StallSigGenFlag 0
 set isEnableWaveformDebug 1
+set hasInterrupt 0
 set C_modelName {dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size}
 set C_modelType { void 0 }
 set C_modelArgList {
@@ -35,7 +36,7 @@ set C_modelArgMapList {[
  	{ "Name" : "prediction", "interface" : "memory", "bitwidth" : 32, "direction" : "WRITEONLY"} , 
  	{ "Name" : "exp_sum_out", "interface" : "wire", "bitwidth" : 32, "direction" : "WRITEONLY"} ]}
 # RTL Port declarations: 
-set portNum 36
+set portNum 52
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
@@ -44,27 +45,43 @@ set portList {
 	{ ap_idle sc_out sc_logic 1 done -1 } 
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
 	{ dense_to_softmax_streams_0_dout sc_in sc_lv 32 signal 0 } 
+	{ dense_to_softmax_streams_0_num_data_valid sc_in sc_lv 5 signal 0 } 
+	{ dense_to_softmax_streams_0_fifo_cap sc_in sc_lv 5 signal 0 } 
 	{ dense_to_softmax_streams_0_empty_n sc_in sc_logic 1 signal 0 } 
 	{ dense_to_softmax_streams_0_read sc_out sc_logic 1 signal 0 } 
 	{ dense_to_softmax_streams_1_dout sc_in sc_lv 32 signal 1 } 
+	{ dense_to_softmax_streams_1_num_data_valid sc_in sc_lv 5 signal 1 } 
+	{ dense_to_softmax_streams_1_fifo_cap sc_in sc_lv 5 signal 1 } 
 	{ dense_to_softmax_streams_1_empty_n sc_in sc_logic 1 signal 1 } 
 	{ dense_to_softmax_streams_1_read sc_out sc_logic 1 signal 1 } 
 	{ dense_to_softmax_streams_2_dout sc_in sc_lv 32 signal 2 } 
+	{ dense_to_softmax_streams_2_num_data_valid sc_in sc_lv 5 signal 2 } 
+	{ dense_to_softmax_streams_2_fifo_cap sc_in sc_lv 5 signal 2 } 
 	{ dense_to_softmax_streams_2_empty_n sc_in sc_logic 1 signal 2 } 
 	{ dense_to_softmax_streams_2_read sc_out sc_logic 1 signal 2 } 
 	{ dense_to_softmax_streams_3_dout sc_in sc_lv 32 signal 3 } 
+	{ dense_to_softmax_streams_3_num_data_valid sc_in sc_lv 5 signal 3 } 
+	{ dense_to_softmax_streams_3_fifo_cap sc_in sc_lv 5 signal 3 } 
 	{ dense_to_softmax_streams_3_empty_n sc_in sc_logic 1 signal 3 } 
 	{ dense_to_softmax_streams_3_read sc_out sc_logic 1 signal 3 } 
 	{ dense_to_softmax_streams_4_dout sc_in sc_lv 32 signal 4 } 
+	{ dense_to_softmax_streams_4_num_data_valid sc_in sc_lv 5 signal 4 } 
+	{ dense_to_softmax_streams_4_fifo_cap sc_in sc_lv 5 signal 4 } 
 	{ dense_to_softmax_streams_4_empty_n sc_in sc_logic 1 signal 4 } 
 	{ dense_to_softmax_streams_4_read sc_out sc_logic 1 signal 4 } 
 	{ dense_to_softmax_streams_5_dout sc_in sc_lv 32 signal 5 } 
+	{ dense_to_softmax_streams_5_num_data_valid sc_in sc_lv 5 signal 5 } 
+	{ dense_to_softmax_streams_5_fifo_cap sc_in sc_lv 5 signal 5 } 
 	{ dense_to_softmax_streams_5_empty_n sc_in sc_logic 1 signal 5 } 
 	{ dense_to_softmax_streams_5_read sc_out sc_logic 1 signal 5 } 
 	{ dense_to_softmax_streams_6_dout sc_in sc_lv 32 signal 6 } 
+	{ dense_to_softmax_streams_6_num_data_valid sc_in sc_lv 5 signal 6 } 
+	{ dense_to_softmax_streams_6_fifo_cap sc_in sc_lv 5 signal 6 } 
 	{ dense_to_softmax_streams_6_empty_n sc_in sc_logic 1 signal 6 } 
 	{ dense_to_softmax_streams_6_read sc_out sc_logic 1 signal 6 } 
 	{ dense_to_softmax_streams_7_dout sc_in sc_lv 32 signal 7 } 
+	{ dense_to_softmax_streams_7_num_data_valid sc_in sc_lv 5 signal 7 } 
+	{ dense_to_softmax_streams_7_fifo_cap sc_in sc_lv 5 signal 7 } 
 	{ dense_to_softmax_streams_7_empty_n sc_in sc_logic 1 signal 7 } 
 	{ dense_to_softmax_streams_7_read sc_out sc_logic 1 signal 7 } 
 	{ prediction_address0 sc_out sc_lv 4 signal 8 } 
@@ -82,27 +99,43 @@ set NewPortList {[
  	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
  	{ "name": "dense_to_softmax_streams_0_dout", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "dense_to_softmax_streams_0", "role": "dout" }} , 
+ 	{ "name": "dense_to_softmax_streams_0_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "dense_to_softmax_streams_0", "role": "num_data_valid" }} , 
+ 	{ "name": "dense_to_softmax_streams_0_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "dense_to_softmax_streams_0", "role": "fifo_cap" }} , 
  	{ "name": "dense_to_softmax_streams_0_empty_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "dense_to_softmax_streams_0", "role": "empty_n" }} , 
  	{ "name": "dense_to_softmax_streams_0_read", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "dense_to_softmax_streams_0", "role": "read" }} , 
  	{ "name": "dense_to_softmax_streams_1_dout", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "dense_to_softmax_streams_1", "role": "dout" }} , 
+ 	{ "name": "dense_to_softmax_streams_1_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "dense_to_softmax_streams_1", "role": "num_data_valid" }} , 
+ 	{ "name": "dense_to_softmax_streams_1_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "dense_to_softmax_streams_1", "role": "fifo_cap" }} , 
  	{ "name": "dense_to_softmax_streams_1_empty_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "dense_to_softmax_streams_1", "role": "empty_n" }} , 
  	{ "name": "dense_to_softmax_streams_1_read", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "dense_to_softmax_streams_1", "role": "read" }} , 
  	{ "name": "dense_to_softmax_streams_2_dout", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "dense_to_softmax_streams_2", "role": "dout" }} , 
+ 	{ "name": "dense_to_softmax_streams_2_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "dense_to_softmax_streams_2", "role": "num_data_valid" }} , 
+ 	{ "name": "dense_to_softmax_streams_2_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "dense_to_softmax_streams_2", "role": "fifo_cap" }} , 
  	{ "name": "dense_to_softmax_streams_2_empty_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "dense_to_softmax_streams_2", "role": "empty_n" }} , 
  	{ "name": "dense_to_softmax_streams_2_read", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "dense_to_softmax_streams_2", "role": "read" }} , 
  	{ "name": "dense_to_softmax_streams_3_dout", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "dense_to_softmax_streams_3", "role": "dout" }} , 
+ 	{ "name": "dense_to_softmax_streams_3_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "dense_to_softmax_streams_3", "role": "num_data_valid" }} , 
+ 	{ "name": "dense_to_softmax_streams_3_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "dense_to_softmax_streams_3", "role": "fifo_cap" }} , 
  	{ "name": "dense_to_softmax_streams_3_empty_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "dense_to_softmax_streams_3", "role": "empty_n" }} , 
  	{ "name": "dense_to_softmax_streams_3_read", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "dense_to_softmax_streams_3", "role": "read" }} , 
  	{ "name": "dense_to_softmax_streams_4_dout", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "dense_to_softmax_streams_4", "role": "dout" }} , 
+ 	{ "name": "dense_to_softmax_streams_4_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "dense_to_softmax_streams_4", "role": "num_data_valid" }} , 
+ 	{ "name": "dense_to_softmax_streams_4_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "dense_to_softmax_streams_4", "role": "fifo_cap" }} , 
  	{ "name": "dense_to_softmax_streams_4_empty_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "dense_to_softmax_streams_4", "role": "empty_n" }} , 
  	{ "name": "dense_to_softmax_streams_4_read", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "dense_to_softmax_streams_4", "role": "read" }} , 
  	{ "name": "dense_to_softmax_streams_5_dout", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "dense_to_softmax_streams_5", "role": "dout" }} , 
+ 	{ "name": "dense_to_softmax_streams_5_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "dense_to_softmax_streams_5", "role": "num_data_valid" }} , 
+ 	{ "name": "dense_to_softmax_streams_5_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "dense_to_softmax_streams_5", "role": "fifo_cap" }} , 
  	{ "name": "dense_to_softmax_streams_5_empty_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "dense_to_softmax_streams_5", "role": "empty_n" }} , 
  	{ "name": "dense_to_softmax_streams_5_read", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "dense_to_softmax_streams_5", "role": "read" }} , 
  	{ "name": "dense_to_softmax_streams_6_dout", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "dense_to_softmax_streams_6", "role": "dout" }} , 
+ 	{ "name": "dense_to_softmax_streams_6_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "dense_to_softmax_streams_6", "role": "num_data_valid" }} , 
+ 	{ "name": "dense_to_softmax_streams_6_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "dense_to_softmax_streams_6", "role": "fifo_cap" }} , 
  	{ "name": "dense_to_softmax_streams_6_empty_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "dense_to_softmax_streams_6", "role": "empty_n" }} , 
  	{ "name": "dense_to_softmax_streams_6_read", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "dense_to_softmax_streams_6", "role": "read" }} , 
  	{ "name": "dense_to_softmax_streams_7_dout", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "dense_to_softmax_streams_7", "role": "dout" }} , 
+ 	{ "name": "dense_to_softmax_streams_7_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "dense_to_softmax_streams_7", "role": "num_data_valid" }} , 
+ 	{ "name": "dense_to_softmax_streams_7_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "dense_to_softmax_streams_7", "role": "fifo_cap" }} , 
  	{ "name": "dense_to_softmax_streams_7_empty_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "dense_to_softmax_streams_7", "role": "empty_n" }} , 
  	{ "name": "dense_to_softmax_streams_7_read", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "dense_to_softmax_streams_7", "role": "read" }} , 
  	{ "name": "prediction_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "prediction", "role": "address0" }} , 
@@ -159,9 +192,9 @@ set RtlHierarchyInfo {[
 			{"Name" : "dense_soft_max_for_dense_size", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "7", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage1", "LastStateIter" : "ap_enable_reg_pp0_iter11", "LastStateBlock" : "ap_block_pp0_stage1_subdone", "QuitState" : "ap_ST_fsm_pp0_stage1", "QuitStateIter" : "ap_enable_reg_pp0_iter11", "QuitStateBlock" : "ap_block_pp0_stage1_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.dense_biases_U", "Parent" : "0"},
-	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fadd_32ns_32ns_32_7_full_dsp_1_U555", "Parent" : "0"},
-	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fadd_32ns_32ns_32_7_full_dsp_1_U556", "Parent" : "0"},
-	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fexp_32ns_32ns_32_10_full_dsp_1_U557", "Parent" : "0"},
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fadd_32ns_32ns_32_7_full_dsp_1_U636", "Parent" : "0"},
+	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fadd_32ns_32ns_32_7_full_dsp_1_U637", "Parent" : "0"},
+	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fexp_32ns_32ns_32_10_full_dsp_1_U638", "Parent" : "0"},
 	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.flow_control_loop_pipe_sequential_init_U", "Parent" : "0"}]}
 
 
@@ -191,14 +224,14 @@ set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	dense_to_softmax_streams_0 { ap_fifo {  { dense_to_softmax_streams_0_dout fifo_data 0 32 }  { dense_to_softmax_streams_0_empty_n fifo_status 0 1 }  { dense_to_softmax_streams_0_read fifo_update 1 1 } } }
-	dense_to_softmax_streams_1 { ap_fifo {  { dense_to_softmax_streams_1_dout fifo_data 0 32 }  { dense_to_softmax_streams_1_empty_n fifo_status 0 1 }  { dense_to_softmax_streams_1_read fifo_update 1 1 } } }
-	dense_to_softmax_streams_2 { ap_fifo {  { dense_to_softmax_streams_2_dout fifo_data 0 32 }  { dense_to_softmax_streams_2_empty_n fifo_status 0 1 }  { dense_to_softmax_streams_2_read fifo_update 1 1 } } }
-	dense_to_softmax_streams_3 { ap_fifo {  { dense_to_softmax_streams_3_dout fifo_data 0 32 }  { dense_to_softmax_streams_3_empty_n fifo_status 0 1 }  { dense_to_softmax_streams_3_read fifo_update 1 1 } } }
-	dense_to_softmax_streams_4 { ap_fifo {  { dense_to_softmax_streams_4_dout fifo_data 0 32 }  { dense_to_softmax_streams_4_empty_n fifo_status 0 1 }  { dense_to_softmax_streams_4_read fifo_update 1 1 } } }
-	dense_to_softmax_streams_5 { ap_fifo {  { dense_to_softmax_streams_5_dout fifo_data 0 32 }  { dense_to_softmax_streams_5_empty_n fifo_status 0 1 }  { dense_to_softmax_streams_5_read fifo_update 1 1 } } }
-	dense_to_softmax_streams_6 { ap_fifo {  { dense_to_softmax_streams_6_dout fifo_data 0 32 }  { dense_to_softmax_streams_6_empty_n fifo_status 0 1 }  { dense_to_softmax_streams_6_read fifo_update 1 1 } } }
-	dense_to_softmax_streams_7 { ap_fifo {  { dense_to_softmax_streams_7_dout fifo_data 0 32 }  { dense_to_softmax_streams_7_empty_n fifo_status 0 1 }  { dense_to_softmax_streams_7_read fifo_update 1 1 } } }
+	dense_to_softmax_streams_0 { ap_fifo {  { dense_to_softmax_streams_0_dout fifo_port_we 0 32 }  { dense_to_softmax_streams_0_num_data_valid fifo_status_num_data_valid 0 5 }  { dense_to_softmax_streams_0_fifo_cap fifo_update 0 5 }  { dense_to_softmax_streams_0_empty_n fifo_status 0 1 }  { dense_to_softmax_streams_0_read fifo_data 1 1 } } }
+	dense_to_softmax_streams_1 { ap_fifo {  { dense_to_softmax_streams_1_dout fifo_port_we 0 32 }  { dense_to_softmax_streams_1_num_data_valid fifo_status_num_data_valid 0 5 }  { dense_to_softmax_streams_1_fifo_cap fifo_update 0 5 }  { dense_to_softmax_streams_1_empty_n fifo_status 0 1 }  { dense_to_softmax_streams_1_read fifo_data 1 1 } } }
+	dense_to_softmax_streams_2 { ap_fifo {  { dense_to_softmax_streams_2_dout fifo_port_we 0 32 }  { dense_to_softmax_streams_2_num_data_valid fifo_status_num_data_valid 0 5 }  { dense_to_softmax_streams_2_fifo_cap fifo_update 0 5 }  { dense_to_softmax_streams_2_empty_n fifo_status 0 1 }  { dense_to_softmax_streams_2_read fifo_data 1 1 } } }
+	dense_to_softmax_streams_3 { ap_fifo {  { dense_to_softmax_streams_3_dout fifo_port_we 0 32 }  { dense_to_softmax_streams_3_num_data_valid fifo_status_num_data_valid 0 5 }  { dense_to_softmax_streams_3_fifo_cap fifo_update 0 5 }  { dense_to_softmax_streams_3_empty_n fifo_status 0 1 }  { dense_to_softmax_streams_3_read fifo_data 1 1 } } }
+	dense_to_softmax_streams_4 { ap_fifo {  { dense_to_softmax_streams_4_dout fifo_port_we 0 32 }  { dense_to_softmax_streams_4_num_data_valid fifo_status_num_data_valid 0 5 }  { dense_to_softmax_streams_4_fifo_cap fifo_update 0 5 }  { dense_to_softmax_streams_4_empty_n fifo_status 0 1 }  { dense_to_softmax_streams_4_read fifo_data 1 1 } } }
+	dense_to_softmax_streams_5 { ap_fifo {  { dense_to_softmax_streams_5_dout fifo_port_we 0 32 }  { dense_to_softmax_streams_5_num_data_valid fifo_status_num_data_valid 0 5 }  { dense_to_softmax_streams_5_fifo_cap fifo_update 0 5 }  { dense_to_softmax_streams_5_empty_n fifo_status 0 1 }  { dense_to_softmax_streams_5_read fifo_data 1 1 } } }
+	dense_to_softmax_streams_6 { ap_fifo {  { dense_to_softmax_streams_6_dout fifo_port_we 0 32 }  { dense_to_softmax_streams_6_num_data_valid fifo_status_num_data_valid 0 5 }  { dense_to_softmax_streams_6_fifo_cap fifo_update 0 5 }  { dense_to_softmax_streams_6_empty_n fifo_status 0 1 }  { dense_to_softmax_streams_6_read fifo_data 1 1 } } }
+	dense_to_softmax_streams_7 { ap_fifo {  { dense_to_softmax_streams_7_dout fifo_port_we 0 32 }  { dense_to_softmax_streams_7_num_data_valid fifo_status_num_data_valid 0 5 }  { dense_to_softmax_streams_7_fifo_cap fifo_update 0 5 }  { dense_to_softmax_streams_7_empty_n fifo_status 0 1 }  { dense_to_softmax_streams_7_read fifo_data 1 1 } } }
 	prediction { ap_memory {  { prediction_address0 mem_address 1 4 }  { prediction_ce0 mem_ce 1 1 }  { prediction_we0 mem_we 1 1 }  { prediction_d0 mem_din 1 32 } } }
 	exp_sum_out { ap_vld {  { exp_sum_out out_data 1 32 }  { exp_sum_out_ap_vld out_vld 1 1 } } }
 }

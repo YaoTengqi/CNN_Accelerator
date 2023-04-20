@@ -25,7 +25,7 @@
 
 <Node id="3" bw="8" op_0_bw="32">
 <![CDATA[
-:0 %indvar_flatten = alloca i32 1
+entry:0 %indvar_flatten = alloca i32 1
 
 ]]></Node>
 <StgValue><ssdm name="indvar_flatten"/></StgValue>
@@ -38,9 +38,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="4" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
+<Node id="4" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
 <![CDATA[
-:1 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %pool_to_flat_streams_0, void @empty, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6
+entry:1 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %pool_to_flat_streams_0, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -53,9 +53,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="5" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
+<Node id="5" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
 <![CDATA[
-:2 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %flat_to_dense_streams_0, void @empty, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6
+entry:2 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %flat_to_dense_streams_0, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -70,7 +70,7 @@
 
 <Node id="6" bw="0" op_0_bw="8" op_1_bw="8">
 <![CDATA[
-:3 %store_ln11 = store i8 0, i8 %indvar_flatten
+entry:3 %store_ln11 = store i8 0, i8 %indvar_flatten
 
 ]]></Node>
 <StgValue><ssdm name="store_ln11"/></StgValue>
@@ -85,7 +85,7 @@
 
 <Node id="7" bw="0" op_0_bw="0">
 <![CDATA[
-:4 %br_ln11 = br void
+entry:4 %br_ln11 = br void %for.inc
 
 ]]></Node>
 <StgValue><ssdm name="br_ln11"/></StgValue>
@@ -100,7 +100,7 @@
 
 <Node id="9" bw="8" op_0_bw="8" op_1_bw="0">
 <![CDATA[
-:0 %indvar_flatten_load = load i8 %indvar_flatten
+for.inc:0 %indvar_flatten_load = load i8 %indvar_flatten
 
 ]]></Node>
 <StgValue><ssdm name="indvar_flatten_load"/></StgValue>
@@ -115,7 +115,7 @@
 
 <Node id="10" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-:1 %specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str
+for.inc:1 %specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln0"/></StgValue>
@@ -130,7 +130,7 @@
 
 <Node id="11" bw="1" op_0_bw="8" op_1_bw="8">
 <![CDATA[
-:2 %icmp_ln11 = icmp_eq  i8 %indvar_flatten_load, i8 196
+for.inc:2 %icmp_ln11 = icmp_eq  i8 %indvar_flatten_load, i8 196
 
 ]]></Node>
 <StgValue><ssdm name="icmp_ln11"/></StgValue>
@@ -145,7 +145,7 @@
 
 <Node id="12" bw="8" op_0_bw="8" op_1_bw="8">
 <![CDATA[
-:3 %add_ln11 = add i8 %indvar_flatten_load, i8 1
+for.inc:3 %add_ln11 = add i8 %indvar_flatten_load, i8 1
 
 ]]></Node>
 <StgValue><ssdm name="add_ln11"/></StgValue>
@@ -160,7 +160,7 @@
 
 <Node id="13" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-:4 %br_ln11 = br i1 %icmp_ln11, void %.split3, void
+for.inc:4 %br_ln11 = br i1 %icmp_ln11, void %for.inc5, void %for.end7
 
 ]]></Node>
 <StgValue><ssdm name="br_ln11"/></StgValue>
@@ -176,7 +176,7 @@
 
 <Node id="19" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-.split3:4 %pool_to_flat_streams_0_read = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %pool_to_flat_streams_0
+for.inc5:4 %pool_to_flat_streams_0_read = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %pool_to_flat_streams_0
 
 ]]></Node>
 <StgValue><ssdm name="pool_to_flat_streams_0_read"/></StgValue>
@@ -192,10 +192,10 @@
 
 <Node id="21" bw="0" op_0_bw="8" op_1_bw="8" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-.split3:6 %store_ln11 = store i8 %add_ln11, i8 %indvar_flatten
+for.inc5:6 %store_ln14 = store i8 %add_ln11, i8 %indvar_flatten
 
 ]]></Node>
-<StgValue><ssdm name="store_ln11"/></StgValue>
+<StgValue><ssdm name="store_ln14"/></StgValue>
 </operation>
 
 <operation id="23" st_id="1" stage="1" lat="1">
@@ -208,7 +208,7 @@
 
 <Node id="24" bw="0">
 <![CDATA[
-:0 %ret_ln19 = ret
+for.end7:0 %ret_ln19 = ret
 
 ]]></Node>
 <StgValue><ssdm name="ret_ln19"/></StgValue>
@@ -226,7 +226,7 @@
 
 <Node id="15" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-.split3:0 %specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @flat_for_rows_flat_for_cols_str
+for.inc5:0 %specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @flat_for_rows_flat_for_cols_str
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln0"/></StgValue>
@@ -241,7 +241,7 @@
 
 <Node id="16" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-.split3:1 %empty = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 196, i64 196, i64 196
+for.inc5:1 %empty = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 196, i64 196, i64 196
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -256,7 +256,7 @@
 
 <Node id="17" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-.split3:2 %specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str
+for.inc5:2 %specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln0"/></StgValue>
@@ -271,7 +271,7 @@
 
 <Node id="18" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-.split3:3 %specloopname_ln14 = specloopname void @_ssdm_op_SpecLoopName, void @empty_3
+for.inc5:3 %specloopname_ln14 = specloopname void @_ssdm_op_SpecLoopName, void @empty_10
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln14"/></StgValue>
@@ -286,10 +286,10 @@
 
 <Node id="20" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
 <![CDATA[
-.split3:5 %write_ln173 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %flat_to_dense_streams_0, i32 %pool_to_flat_streams_0_read
+for.inc5:5 %write_ln16 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %flat_to_dense_streams_0, i32 %pool_to_flat_streams_0_read
 
 ]]></Node>
-<StgValue><ssdm name="write_ln173"/></StgValue>
+<StgValue><ssdm name="write_ln16"/></StgValue>
 </operation>
 
 <operation id="22" st_id="2" stage="1" lat="1">
@@ -301,10 +301,10 @@
 
 <Node id="22" bw="0" op_0_bw="0">
 <![CDATA[
-.split3:7 %br_ln0 = br void
+for.inc5:7 %br_ln14 = br void %for.inc
 
 ]]></Node>
-<StgValue><ssdm name="br_ln0"/></StgValue>
+<StgValue><ssdm name="br_ln14"/></StgValue>
 </operation>
 </state>
 </state_list>

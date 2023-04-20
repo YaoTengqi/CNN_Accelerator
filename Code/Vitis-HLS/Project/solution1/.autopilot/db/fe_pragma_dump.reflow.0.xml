@@ -1,18 +1,18 @@
 <pragmas>
-<pragma file="D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h" line="197" pragmaType="inline" parentfunction="hls::stream<float, 196>::stream()" off="0" region="0" recursive="0"/>
-<pragma file="pool.cc" line="38" pragmaType="dataflow" parentfunction="max_pooling_layer" disable_start_propagation="0"/>
-<pragma file="flat.cc" line="22" pragmaType="dataflow" parentfunction="flattening_layer" disable_start_propagation="0"/>
-<pragma file="D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h" line="197" pragmaType="inline" parentfunction="hls::stream<float, 784>::stream()" off="0" region="0" recursive="0"/>
-<pragma file="conv.cc" line="84" pragmaType="dataflow" parentfunction="convolutional_layer" disable_start_propagation="0"/>
-<pragma file="cnn.cc" line="15" pragmaType="dataflow" parentfunction="dataflow_section" disable_start_propagation="0"/>
-<pragma file="D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h" line="143" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
-<pragma file="dense.cc" line="67" pragmaType="dataflow" parentfunction="dense_layer" disable_start_propagation="0"/>
-<pragma file="pool.cc" line="18" pragmaType="pipeline" parentfunction="max_pooling" off="0" ii="4" rewind="0" style=""/>
-<pragma file="D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h" line="153" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
-<pragma file="D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h" line="197" pragmaType="inline" parentfunction="hls::stream<float, 10>::stream()" off="0" region="0" recursive="0"/>
-<pragma file="dense.cc" line="49" pragmaType="pipeline" parentfunction="dense" off="0" ii="10" rewind="0" style=""/>
-<pragma file="D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h" line="172" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
-<pragma file="D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h" line="102" pragmaType="inline" parentfunction="hls::stream<float, 0>::stream()" off="0" region="0" recursive="0"/>
-<pragma file="conv.cc" line="47" pragmaType="pipeline" parentfunction="convolution" off="0" ii="5" rewind="0" style=""/>
-<pragma file="conv.cc" line="55" pragmaType="pipeline" parentfunction="convolution" off="0" ii="-1" rewind="0" style=""/>
+<pragma file="cnn.cc" line="6" pragmaType="dataflow" parentfunction="dataflow_section" disable_start_propagation="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream<float, 10>::stream()" off="0" region="0" recursive="0"/>
+<pragma file="dense.cc" line="10" pragmaType="dataflow" parentfunction="dense_layer" disable_start_propagation="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="dense.cc" line="12" pragmaType="pipeline" parentfunction="dense" off="0" ii="10" rewind="0" style=""/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream<float, 0>::stream()" off="0" region="0" recursive="0"/>
+<pragma file="pool.cc" line="13" pragmaType="pipeline" parentfunction="max_pooling" off="0" ii="4" rewind="0" style=""/>
+<pragma file="conv.cc" line="7" pragmaType="dataflow" parentfunction="convolutional_layer" disable_start_propagation="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream<float, 196>::stream()" off="0" region="0" recursive="0"/>
+<pragma file="pool.cc" line="8" pragmaType="dataflow" parentfunction="max_pooling_layer" disable_start_propagation="0"/>
+<pragma file="flat.cc" line="9" pragmaType="dataflow" parentfunction="flattening_layer" disable_start_propagation="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream<float, 784>::stream()" off="0" region="0" recursive="0"/>
+<pragma file="conv.cc" line="11" pragmaType="pipeline" parentfunction="convolution" off="0" ii="5" rewind="0" style=""/>
+<pragma file="conv.cc" line="57" pragmaType="pipeline" parentfunction="convolution" off="0" ii="-1" rewind="0" style=""/>
 </pragmas>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1681897799830">
-  <ports id="1" name="dense_array" type="PortType" coreName="RAM" coreId="0" bitwidth="32" iftype="IfTypeRegister" arraysize="10">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1681977553279">
+  <ports id="1" name="dense_array" type="PortType" coreName="RAM" coreId="3621216858" bitwidth="32" iftype="IfTypeRegister" arraysize="10">
     <dataOutputObjs>getelementptr</dataOutputObjs>
   </ports>
-  <ports id="2" name="dense_to_softmax_streams_0" type="PortType" coreName="FIFO_SRL" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
+  <ports id="2" name="dense_to_softmax_streams_0" type="PortType" coreName="FIFO_SRL" coreId="543517801" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
     <dataInputObjs>write</dataInputObjs>
   </ports>
   <edges id="30" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.1"/>
@@ -24,113 +24,111 @@
   <edges id="53" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
   <edges id="54" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
   <edges id="55" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
-  <edges id="96" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
-  <edges id="97" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
-  <edges id="98" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
-  <edges id="99" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
-  <edges id="100" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
-  <edges id="101" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
-  <edges id="102" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="98" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="99" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="100" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="101" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="102" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="103" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="104" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
   <blocks id="7" name="newFuncRoot" type="BlockType">
-    <controlOutputObjs>block_14</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="3" name="j" originalName="j" coreId="657" bitwidth="4" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+    <controlOutputObjs>for.inc20</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="3" name="j" originalName="j" coreId="1962902192" bitwidth="4" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
       <dataOutputObjs>store</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="5" name="j_write_ln0" coreId="1145981184" opcode="store" m_display="0" m_delay="1.61" m_topoIndex="2" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="5" name="j_write_ln0" coreId="1965498384" opcode="store" m_display="0" m_delay="1.61" m_topoIndex="2" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="6" name="br_ln0" coreId="1553270368" opcode="br" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
-      <controlInputObjs>block_14</controlInputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="6" name="br_ln0" coreId="1965778368" opcode="br" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <controlInputObjs>for.inc20</controlInputObjs>
     </node_objs>
   </blocks>
-  <blocks id="25" name=".exitStub" type="BlockType">
-    <controlInputObjs>block_14</controlInputObjs>
+  <blocks id="25" name="for.end22.exitStub" type="BlockType">
+    <controlInputObjs>for.inc20</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="_ln0" coreId="1553182720" opcode="ret" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="_ln0" coreId="1958418080" opcode="ret" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1"/>
   </blocks>
   <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="86" pipe_depth="2" RegionName="VITIS_LOOP_60_2">
-    <basic_blocks id="14" name="block_14" type="BlockType">
+    <basic_blocks id="14" name="for.inc20" type="BlockType">
       <controlInputObjs>newFuncRoot</controlInputObjs>
-      <controlInputObjs>.split</controlInputObjs>
+      <controlInputObjs>for.inc20.split</controlInputObjs>
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>br</controlOutputObjs>
-      <controlOutputObjs>.exitStub</controlOutputObjs>
-      <controlOutputObjs>.split</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="8" name="j_1" lineNumber="60" originalName="j" fileName="dense.cc" fileDirectory=".." coreId="1553275552" contextFuncName="dense" bitwidth="4" opcode="load" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="dense.cc" linenumber="60" fileDirectory="D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS" functionName="dense"/>
+      <controlOutputObjs>for.end22.exitStub</controlOutputObjs>
+      <controlOutputObjs>for.inc20.split</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="8" name="j_1" lineNumber="60" originalName="j" fileName="dense.cc" fileDirectory=".." coreId="1966335248" contextFuncName="dense" bitwidth="4" opcode="load" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dense.cc" linenumber="60" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="dense"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
         <dataOutputObjs>add</dataOutputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
       <node_objs xsi:type="cdfg:CdfgNode" id="10" name="icmp_ln60" lineNumber="60" fileName="dense.cc" fileDirectory=".." rtlName="icmp_ln60_fu_70_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="dense" bitwidth="1" opcode="icmp" m_display="0" m_delay="1.44" m_topoIndex="5" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="dense.cc" linenumber="60" fileDirectory="D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS" functionName="dense"/>
+        <inlineStackInfo fileName="dense.cc" linenumber="60" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="dense"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>br</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
       <node_objs xsi:type="cdfg:CdfgNode" id="12" name="add_ln60" lineNumber="60" fileName="dense.cc" fileDirectory=".." rtlName="add_ln60_fu_76_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="dense" bitwidth="4" opcode="add" m_display="0" m_delay="1.77" m_topoIndex="6" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="dense.cc" linenumber="60" fileDirectory="D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS" functionName="dense"/>
+        <inlineStackInfo fileName="dense.cc" linenumber="60" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="dense"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="13" name="br_ln60" lineNumber="60" fileName="dense.cc" fileDirectory=".." coreId="1552856016" contextFuncName="dense" opcode="br" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="dense.cc" linenumber="60" fileDirectory="D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS" functionName="dense"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="13" name="br_ln60" lineNumber="60" fileName="dense.cc" fileDirectory=".." coreId="1965615280" contextFuncName="dense" opcode="br" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dense.cc" linenumber="60" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="dense"/>
         <dataInputObjs>icmp</dataInputObjs>
-        <controlInputObjs>.split</controlInputObjs>
-        <controlInputObjs>.exitStub</controlInputObjs>
+        <controlInputObjs>for.inc20.split</controlInputObjs>
+        <controlInputObjs>for.end22.exitStub</controlInputObjs>
       </node_objs>
       <fileValidLineNumbers fileName="dense.cc">
         <validLinenumbers>60</validLinenumbers>
       </fileValidLineNumbers>
     </basic_blocks>
-    <basic_blocks id="23" name=".split" type="BlockType">
-      <controlInputObjs>block_14</controlInputObjs>
+    <basic_blocks id="23" name="for.inc20.split" type="BlockType">
+      <controlInputObjs>for.inc20</controlInputObjs>
       <controlOutputObjs>br</controlOutputObjs>
-      <controlOutputObjs>block_14</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="j_cast" lineNumber="60" fileName="dense.cc" fileDirectory=".." rtlName="j_cast_fu_82_p1" coreId="1546643544" contextFuncName="dense" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="dense.cc" linenumber="60" fileDirectory="D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS" functionName="dense"/>
+      <controlOutputObjs>for.inc20</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="j_cast" lineNumber="60" fileName="dense.cc" fileDirectory=".." rtlName="j_cast_fu_82_p1" coreId="1965611840" contextFuncName="dense" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dense.cc" linenumber="60" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="dense"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="dense_array_addr" lineNumber="62" originalName="din" fileName="dense.cc" fileDirectory=".." coreId="1552851504" contextFuncName="dense" bitwidth="4" opcode="getelementptr" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="dense.cc" linenumber="62" fileDirectory="D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS" functionName="dense"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="dense_array_addr" lineNumber="62" fileName="dense.cc" fileDirectory=".." coreId="1965837472" contextFuncName="dense" bitwidth="4" opcode="getelementptr" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dense.cc" linenumber="62" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="dense"/>
         <dataInputObjs>dense_array</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>load</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="18" name="dense_array_load" lineNumber="173" fileName="D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="write" bitwidth="32" opcode="load" nodeLatency="1" m_display="0" m_delay="2.15" m_topoIndex="10" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h" linenumber="173" fileDirectory="D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS" functionName="write"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="18" name="dense_array_load" lineNumber="62" fileName="dense.cc" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="dense" bitwidth="32" opcode="load" nodeLatency="1" m_display="0" m_delay="2.15" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dense.cc" linenumber="62" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="dense"/>
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>bitcast</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="bitcast_ln173" lineNumber="173" fileName="D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." rtlName="dense_to_softmax_streams_0_din" coreId="0" contextFuncName="write" bitwidth="32" opcode="bitcast" nodeLabel="1.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h" linenumber="173" fileDirectory="D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS" functionName="write"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="bitcast_ln62" lineNumber="62" fileName="dense.cc" fileDirectory=".." rtlName="dense_to_softmax_streams_0_din" coreId="1962685360" contextFuncName="dense" bitwidth="32" opcode="bitcast" nodeLabel="1.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dense.cc" linenumber="62" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="dense"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>write</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="dense_to_softmax_streams_0_write_ln173" lineNumber="173" fileName="D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="81" contextFuncName="write" opcode="write" nodeLabel="1.0" m_display="0" m_delay="3.65" m_topoIndex="14" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h" linenumber="173" fileDirectory="D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS" functionName="write"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="dense_to_softmax_streams_0_write_ln62" lineNumber="62" fileName="dense.cc" fileDirectory=".." coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="81" contextFuncName="dense" opcode="write" nodeLabel="1.0" m_display="0" m_delay="3.65" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dense.cc" linenumber="62" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="dense"/>
         <dataInputObjs>bitcast</dataInputObjs>
         <dataOutputObjs>dense_to_softmax_streams_0</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="j_write_ln60" lineNumber="60" fileName="dense.cc" fileDirectory=".." coreId="1546641264" contextFuncName="dense" opcode="store" m_display="0" m_delay="1.61" m_topoIndex="11" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="dense.cc" linenumber="60" fileDirectory="D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS" functionName="dense"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="j_write_ln60" lineNumber="60" fileName="dense.cc" fileDirectory=".." coreId="1965959424" contextFuncName="dense" opcode="store" m_display="0" m_delay="1.61" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dense.cc" linenumber="60" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="dense"/>
         <dataInputObjs>add</dataInputObjs>
         <dataInputObjs>alloca</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="br_ln0" coreId="1546644056" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
-        <controlInputObjs>block_14</controlInputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="br_ln60" lineNumber="60" fileName="dense.cc" fileDirectory=".." coreId="1965958864" contextFuncName="dense" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dense.cc" linenumber="60" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="dense"/>
+        <controlInputObjs>for.inc20</controlInputObjs>
       </node_objs>
-      <fileValidLineNumbers fileName="D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h">
-        <validLinenumbers>173</validLinenumbers>
-      </fileValidLineNumbers>
       <fileValidLineNumbers fileName="dense.cc">
         <validLinenumbers>60</validLinenumbers>
         <validLinenumbers>62</validLinenumbers>
@@ -145,9 +143,6 @@
   <regnodes realName="dense_array_addr_reg_107">
     <nodeIds>17</nodeIds>
   </regnodes>
-  <expressionNodes realName="bitcast_ln173_fu_92">
-    <nodeIds>19</nodeIds>
-  </expressionNodes>
   <expressionNodes realName="add_ln60_fu_76">
     <nodeIds>12</nodeIds>
   </expressionNodes>
@@ -163,14 +158,17 @@
   <expressionNodes realName="dense_array_addr_gep_fu_49">
     <nodeIds>17</nodeIds>
   </expressionNodes>
+  <expressionNodes realName="bitcast_ln62_fu_92">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
   <ioNodes realName="store_ln0_store_fu_62">
     <nodeIds>5</nodeIds>
   </ioNodes>
-  <ioNodes realName="write_ln173_write_fu_42">
-    <nodeIds>20</nodeIds>
-  </ioNodes>
   <ioNodes realName="j_1_load_fu_67">
     <nodeIds>8</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln62_write_fu_42">
+    <nodeIds>20</nodeIds>
   </ioNodes>
   <ioNodes realName="store_ln60_store_fu_87">
     <nodeIds>21</nodeIds>

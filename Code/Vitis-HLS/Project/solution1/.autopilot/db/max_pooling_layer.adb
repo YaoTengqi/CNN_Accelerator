@@ -31,10 +31,10 @@
               <control/>
               <opType/>
               <implIndex/>
-              <coreName>FIFO</coreName>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1919906899</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -67,10 +67,10 @@
               <control/>
               <opType/>
               <implIndex/>
-              <coreName>FIFO</coreName>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1953391988</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -103,10 +103,10 @@
               <control/>
               <opType/>
               <implIndex/>
-              <coreName>FIFO</coreName>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1953391988</coreId>
+              <coreId>4228300630</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -139,10 +139,10 @@
               <control/>
               <opType/>
               <implIndex/>
-              <coreName>FIFO</coreName>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1953391988</coreId>
+              <coreId>4294967295</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -175,7 +175,7 @@
               <control/>
               <opType/>
               <implIndex/>
-              <coreName>FIFO</coreName>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>0</coreId>
@@ -211,10 +211,10 @@
               <control/>
               <opType/>
               <implIndex/>
-              <coreName>FIFO</coreName>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1953391988</coreId>
+              <coreId>66</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -247,10 +247,10 @@
               <control/>
               <opType/>
               <implIndex/>
-              <coreName>FIFO</coreName>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1953391988</coreId>
+              <coreId>46</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -283,10 +283,10 @@
               <control/>
               <opType/>
               <implIndex/>
-              <coreName>FIFO</coreName>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1598970195</coreId>
+              <coreId>448</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -319,10 +319,10 @@
               <control/>
               <opType/>
               <implIndex/>
-              <coreName>FIFO</coreName>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1008746033</coreId>
+              <coreId>1958563920</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -355,10 +355,10 @@
               <control/>
               <opType/>
               <implIndex/>
-              <coreName>FIFO</coreName>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1919906899</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -391,10 +391,10 @@
               <control/>
               <opType/>
               <implIndex/>
-              <coreName>FIFO</coreName>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1953391988</coreId>
+              <coreId>47</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -427,10 +427,10 @@
               <control/>
               <opType/>
               <implIndex/>
-              <coreName>FIFO</coreName>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1528853351</coreId>
+              <coreId>56</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -463,10 +463,10 @@
               <control/>
               <opType/>
               <implIndex/>
-              <coreName>FIFO</coreName>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1953391988</coreId>
+              <coreId>96</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -499,10 +499,10 @@
               <control/>
               <opType/>
               <implIndex/>
-              <coreName>FIFO</coreName>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1953391988</coreId>
+              <coreId>1956091776</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -535,10 +535,10 @@
               <control/>
               <opType/>
               <implIndex/>
-              <coreName>FIFO</coreName>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1958930768</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -571,10 +571,10 @@
               <control/>
               <opType/>
               <implIndex/>
-              <coreName>FIFO</coreName>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1953391988</coreId>
+              <coreId>4294966509</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -600,20 +600,20 @@
               <fileName>pool.cc</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>44</lineNumber>
-              <contextFuncName>max_pooling_layer</contextFuncName>
-              <contextNormFuncName>max_pooling_layer</contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item class_id="10" tracking_level="0" version="0">
-                  <first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
+                  <first>/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS</first>
                   <second class_id="11" tracking_level="0" version="0">
                     <count>1</count>
                     <item_version>0</item_version>
                     <item class_id="12" tracking_level="0" version="0">
                       <first class_id="13" tracking_level="0" version="0">
                         <first>pool.cc</first>
-                        <second>max_pooling_layer</second>
+                        <second/>
                       </first>
                       <second>44</second>
                     </item>
@@ -628,7 +628,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1959968624</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -658,20 +658,20 @@
               <fileName>pool.cc</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>max_pooling_layer</contextFuncName>
-              <contextNormFuncName>max_pooling_layer</contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
+                  <first>/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
                         <first>pool.cc</first>
-                        <second>max_pooling_layer</second>
+                        <second/>
                       </first>
                       <second>45</second>
                     </item>
@@ -679,14 +679,14 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>max_pooling_1_U0</rtlName>
+              <rtlName>max_pooling_8_U0</rtlName>
               <control/>
               <opType/>
               <implIndex/>
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1546778456</coreId>
+              <coreId>1961126592</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -716,20 +716,20 @@
               <fileName>pool.cc</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>46</lineNumber>
-              <contextFuncName>max_pooling_layer</contextFuncName>
-              <contextNormFuncName>max_pooling_layer</contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
+                  <first>/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
                         <first>pool.cc</first>
-                        <second>max_pooling_layer</second>
+                        <second/>
                       </first>
                       <second>46</second>
                     </item>
@@ -737,14 +737,14 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>max_pooling_2_U0</rtlName>
+              <rtlName>max_pooling_9_U0</rtlName>
               <control/>
               <opType/>
               <implIndex/>
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1546777456</coreId>
+              <coreId>1962959600</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -774,20 +774,20 @@
               <fileName>pool.cc</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>47</lineNumber>
-              <contextFuncName>max_pooling_layer</contextFuncName>
-              <contextNormFuncName>max_pooling_layer</contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
+                  <first>/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
                         <first>pool.cc</first>
-                        <second>max_pooling_layer</second>
+                        <second/>
                       </first>
                       <second>47</second>
                     </item>
@@ -795,14 +795,14 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>max_pooling_3_U0</rtlName>
+              <rtlName>max_pooling_10_U0</rtlName>
               <control/>
               <opType/>
               <implIndex/>
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>6775040</coreId>
+              <coreId>58</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -832,20 +832,20 @@
               <fileName>pool.cc</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>48</lineNumber>
-              <contextFuncName>max_pooling_layer</contextFuncName>
-              <contextNormFuncName>max_pooling_layer</contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
+                  <first>/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
                         <first>pool.cc</first>
-                        <second>max_pooling_layer</second>
+                        <second/>
                       </first>
                       <second>48</second>
                     </item>
@@ -853,14 +853,14 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>max_pooling_4_U0</rtlName>
+              <rtlName>max_pooling_11_U0</rtlName>
               <control/>
               <opType/>
               <implIndex/>
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1684957440</coreId>
+              <coreId>57</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -890,20 +890,20 @@
               <fileName>pool.cc</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>49</lineNumber>
-              <contextFuncName>max_pooling_layer</contextFuncName>
-              <contextNormFuncName>max_pooling_layer</contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
+                  <first>/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
                         <first>pool.cc</first>
-                        <second>max_pooling_layer</second>
+                        <second/>
                       </first>
                       <second>49</second>
                     </item>
@@ -911,14 +911,14 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>max_pooling_5_U0</rtlName>
+              <rtlName>max_pooling_12_U0</rtlName>
               <control/>
               <opType/>
               <implIndex/>
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1546761968</coreId>
+              <coreId>70</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -948,20 +948,20 @@
               <fileName>pool.cc</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>50</lineNumber>
-              <contextFuncName>max_pooling_layer</contextFuncName>
-              <contextNormFuncName>max_pooling_layer</contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
+                  <first>/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
                         <first>pool.cc</first>
-                        <second>max_pooling_layer</second>
+                        <second/>
                       </first>
                       <second>50</second>
                     </item>
@@ -969,14 +969,14 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>max_pooling_6_U0</rtlName>
+              <rtlName>max_pooling_13_U0</rtlName>
               <control/>
               <opType/>
               <implIndex/>
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>69</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -1006,20 +1006,20 @@
               <fileName>pool.cc</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>51</lineNumber>
-              <contextFuncName>max_pooling_layer</contextFuncName>
-              <contextNormFuncName>max_pooling_layer</contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
+                  <first>/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
                         <first>pool.cc</first>
-                        <second>max_pooling_layer</second>
+                        <second/>
                       </first>
                       <second>51</second>
                     </item>
@@ -1027,14 +1027,14 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>max_pooling_7_U0</rtlName>
+              <rtlName>max_pooling_14_U0</rtlName>
               <control/>
               <opType/>
               <implIndex/>
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1546760920</coreId>
+              <coreId>63</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -1064,20 +1064,20 @@
               <fileName>pool.cc</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>52</lineNumber>
-              <contextFuncName>max_pooling_layer</contextFuncName>
-              <contextNormFuncName>max_pooling_layer</contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
+                  <first>/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
                         <first>pool.cc</first>
-                        <second>max_pooling_layer</second>
+                        <second/>
                       </first>
                       <second>52</second>
                     </item>
@@ -1092,7 +1092,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1936942336</coreId>
+              <coreId>1959842640</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -1137,7 +1137,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1919906899</coreId>
+              <coreId>1960955648</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -1150,7 +1150,7 @@
             <Obj>
               <type>2</type>
               <id>48</id>
-              <name>max_pooling_1</name>
+              <name>max_pooling_8</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -1168,20 +1168,20 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1958931360</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:max_pooling.1&gt;</content>
+          <content>&lt;constant:max_pooling.8&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_28">
           <Value>
             <Obj>
               <type>2</type>
               <id>52</id>
-              <name>max_pooling_2</name>
+              <name>max_pooling_9</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -1199,20 +1199,20 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1528853351</coreId>
+              <coreId>4294967295</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:max_pooling.2&gt;</content>
+          <content>&lt;constant:max_pooling.9&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_29">
           <Value>
             <Obj>
               <type>2</type>
               <id>56</id>
-              <name>max_pooling_3</name>
+              <name>max_pooling_10</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -1230,20 +1230,20 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1953391988</coreId>
+              <coreId>35</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:max_pooling.3&gt;</content>
+          <content>&lt;constant:max_pooling.10&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_30">
           <Value>
             <Obj>
               <type>2</type>
               <id>60</id>
-              <name>max_pooling_4</name>
+              <name>max_pooling_11</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -1261,20 +1261,20 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1634493764</coreId>
+              <coreId>83</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:max_pooling.4&gt;</content>
+          <content>&lt;constant:max_pooling.11&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_31">
           <Value>
             <Obj>
               <type>2</type>
               <id>64</id>
-              <name>max_pooling_5</name>
+              <name>max_pooling_12</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -1292,20 +1292,20 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1008746033</coreId>
+              <coreId>94</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:max_pooling.5&gt;</content>
+          <content>&lt;constant:max_pooling.12&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_32">
           <Value>
             <Obj>
               <type>2</type>
               <id>68</id>
-              <name>max_pooling_6</name>
+              <name>max_pooling_13</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -1323,20 +1323,20 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1961127536</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:max_pooling.6&gt;</content>
+          <content>&lt;constant:max_pooling.13&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_33">
           <Value>
             <Obj>
               <type>2</type>
               <id>72</id>
-              <name>max_pooling_7</name>
+              <name>max_pooling_14</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -1354,13 +1354,13 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1953391988</coreId>
+              <coreId>1958272720</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:max_pooling.7&gt;</content>
+          <content>&lt;constant:max_pooling.14&gt;</content>
         </item>
       </consts>
       <blocks class_id="17" tracking_level="0" version="0">
@@ -1388,7 +1388,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>3487177568</coreId>
+            <coreId>1957649712</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -1779,7 +1779,7 @@
             </item>
             <item class_id_reference="28" object_id="_83">
               <type>0</type>
-              <name>max_pooling_1_U0</name>
+              <name>max_pooling_8_U0</name>
               <ssdmobj_id>35</ssdmobj_id>
               <pins>
                 <count>2</count>
@@ -1795,7 +1795,7 @@
                   </port>
                   <inst class_id_reference="31" object_id="_86">
                     <type>0</type>
-                    <name>max_pooling_1_U0</name>
+                    <name>max_pooling_8_U0</name>
                     <ssdmobj_id>35</ssdmobj_id>
                   </inst>
                 </item>
@@ -1817,7 +1817,7 @@
             </item>
             <item class_id_reference="28" object_id="_89">
               <type>0</type>
-              <name>max_pooling_2_U0</name>
+              <name>max_pooling_9_U0</name>
               <ssdmobj_id>36</ssdmobj_id>
               <pins>
                 <count>2</count>
@@ -1833,7 +1833,7 @@
                   </port>
                   <inst class_id_reference="31" object_id="_92">
                     <type>0</type>
-                    <name>max_pooling_2_U0</name>
+                    <name>max_pooling_9_U0</name>
                     <ssdmobj_id>36</ssdmobj_id>
                   </inst>
                 </item>
@@ -1855,7 +1855,7 @@
             </item>
             <item class_id_reference="28" object_id="_95">
               <type>0</type>
-              <name>max_pooling_3_U0</name>
+              <name>max_pooling_10_U0</name>
               <ssdmobj_id>37</ssdmobj_id>
               <pins>
                 <count>2</count>
@@ -1871,7 +1871,7 @@
                   </port>
                   <inst class_id_reference="31" object_id="_98">
                     <type>0</type>
-                    <name>max_pooling_3_U0</name>
+                    <name>max_pooling_10_U0</name>
                     <ssdmobj_id>37</ssdmobj_id>
                   </inst>
                 </item>
@@ -1893,7 +1893,7 @@
             </item>
             <item class_id_reference="28" object_id="_101">
               <type>0</type>
-              <name>max_pooling_4_U0</name>
+              <name>max_pooling_11_U0</name>
               <ssdmobj_id>38</ssdmobj_id>
               <pins>
                 <count>2</count>
@@ -1909,7 +1909,7 @@
                   </port>
                   <inst class_id_reference="31" object_id="_104">
                     <type>0</type>
-                    <name>max_pooling_4_U0</name>
+                    <name>max_pooling_11_U0</name>
                     <ssdmobj_id>38</ssdmobj_id>
                   </inst>
                 </item>
@@ -1931,7 +1931,7 @@
             </item>
             <item class_id_reference="28" object_id="_107">
               <type>0</type>
-              <name>max_pooling_5_U0</name>
+              <name>max_pooling_12_U0</name>
               <ssdmobj_id>39</ssdmobj_id>
               <pins>
                 <count>2</count>
@@ -1947,7 +1947,7 @@
                   </port>
                   <inst class_id_reference="31" object_id="_110">
                     <type>0</type>
-                    <name>max_pooling_5_U0</name>
+                    <name>max_pooling_12_U0</name>
                     <ssdmobj_id>39</ssdmobj_id>
                   </inst>
                 </item>
@@ -1969,7 +1969,7 @@
             </item>
             <item class_id_reference="28" object_id="_113">
               <type>0</type>
-              <name>max_pooling_6_U0</name>
+              <name>max_pooling_13_U0</name>
               <ssdmobj_id>40</ssdmobj_id>
               <pins>
                 <count>2</count>
@@ -1985,7 +1985,7 @@
                   </port>
                   <inst class_id_reference="31" object_id="_116">
                     <type>0</type>
-                    <name>max_pooling_6_U0</name>
+                    <name>max_pooling_13_U0</name>
                     <ssdmobj_id>40</ssdmobj_id>
                   </inst>
                 </item>
@@ -2007,7 +2007,7 @@
             </item>
             <item class_id_reference="28" object_id="_119">
               <type>0</type>
-              <name>max_pooling_7_U0</name>
+              <name>max_pooling_14_U0</name>
               <ssdmobj_id>41</ssdmobj_id>
               <pins>
                 <count>2</count>
@@ -2023,7 +2023,7 @@
                   </port>
                   <inst class_id_reference="31" object_id="_122">
                     <type>0</type>
-                    <name>max_pooling_7_U0</name>
+                    <name>max_pooling_14_U0</name>
                     <ssdmobj_id>41</ssdmobj_id>
                   </inst>
                 </item>
@@ -2269,7 +2269,7 @@
         <count>8</count>
         <item_version>0</item_version>
         <item class_id="46" tracking_level="0" version="0">
-          <first>max_pooling_1_U0 (max_pooling_1)</first>
+          <first>max_pooling_10_U0 (max_pooling_10)</first>
           <second class_id="47" tracking_level="0" version="0">
             <count>2</count>
             <item_version>0</item_version>
@@ -2284,7 +2284,7 @@
           </second>
         </item>
         <item>
-          <first>max_pooling_2_U0 (max_pooling_2)</first>
+          <first>max_pooling_11_U0 (max_pooling_11)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -2299,7 +2299,7 @@
           </second>
         </item>
         <item>
-          <first>max_pooling_3_U0 (max_pooling_3)</first>
+          <first>max_pooling_12_U0 (max_pooling_12)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -2314,7 +2314,7 @@
           </second>
         </item>
         <item>
-          <first>max_pooling_4_U0 (max_pooling_4)</first>
+          <first>max_pooling_13_U0 (max_pooling_13)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -2329,7 +2329,7 @@
           </second>
         </item>
         <item>
-          <first>max_pooling_5_U0 (max_pooling_5)</first>
+          <first>max_pooling_14_U0 (max_pooling_14)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -2344,7 +2344,7 @@
           </second>
         </item>
         <item>
-          <first>max_pooling_6_U0 (max_pooling_6)</first>
+          <first>max_pooling_8_U0 (max_pooling_8)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -2359,7 +2359,7 @@
           </second>
         </item>
         <item>
-          <first>max_pooling_7_U0 (max_pooling_7)</first>
+          <first>max_pooling_9_U0 (max_pooling_9)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -2462,7 +2462,7 @@
           </second>
         </item>
         <item>
-          <first>ap_sync_max_pooling_1_U0_ap_ready ( or ) </first>
+          <first>ap_sync_max_pooling_10_U0_ap_ready ( or ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -2485,7 +2485,7 @@
           </second>
         </item>
         <item>
-          <first>ap_sync_max_pooling_2_U0_ap_ready ( or ) </first>
+          <first>ap_sync_max_pooling_11_U0_ap_ready ( or ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -2508,7 +2508,7 @@
           </second>
         </item>
         <item>
-          <first>ap_sync_max_pooling_3_U0_ap_ready ( or ) </first>
+          <first>ap_sync_max_pooling_12_U0_ap_ready ( or ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -2531,7 +2531,7 @@
           </second>
         </item>
         <item>
-          <first>ap_sync_max_pooling_4_U0_ap_ready ( or ) </first>
+          <first>ap_sync_max_pooling_13_U0_ap_ready ( or ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -2554,7 +2554,7 @@
           </second>
         </item>
         <item>
-          <first>ap_sync_max_pooling_5_U0_ap_ready ( or ) </first>
+          <first>ap_sync_max_pooling_14_U0_ap_ready ( or ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -2577,7 +2577,7 @@
           </second>
         </item>
         <item>
-          <first>ap_sync_max_pooling_6_U0_ap_ready ( or ) </first>
+          <first>ap_sync_max_pooling_8_U0_ap_ready ( or ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -2600,7 +2600,7 @@
           </second>
         </item>
         <item>
-          <first>ap_sync_max_pooling_7_U0_ap_ready ( or ) </first>
+          <first>ap_sync_max_pooling_9_U0_ap_ready ( or ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -2669,7 +2669,7 @@
           </second>
         </item>
         <item>
-          <first>max_pooling_1_U0_ap_start ( and ) </first>
+          <first>max_pooling_10_U0_ap_start ( and ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -2692,7 +2692,7 @@
           </second>
         </item>
         <item>
-          <first>max_pooling_2_U0_ap_start ( and ) </first>
+          <first>max_pooling_11_U0_ap_start ( and ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -2715,7 +2715,7 @@
           </second>
         </item>
         <item>
-          <first>max_pooling_3_U0_ap_start ( and ) </first>
+          <first>max_pooling_12_U0_ap_start ( and ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -2738,7 +2738,7 @@
           </second>
         </item>
         <item>
-          <first>max_pooling_4_U0_ap_start ( and ) </first>
+          <first>max_pooling_13_U0_ap_start ( and ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -2761,7 +2761,7 @@
           </second>
         </item>
         <item>
-          <first>max_pooling_5_U0_ap_start ( and ) </first>
+          <first>max_pooling_14_U0_ap_start ( and ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -2784,7 +2784,7 @@
           </second>
         </item>
         <item>
-          <first>max_pooling_6_U0_ap_start ( and ) </first>
+          <first>max_pooling_8_U0_ap_start ( and ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -2807,7 +2807,7 @@
           </second>
         </item>
         <item>
-          <first>max_pooling_7_U0_ap_start ( and ) </first>
+          <first>max_pooling_9_U0_ap_start ( and ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -2865,7 +2865,7 @@
         <count>9</count>
         <item_version>0</item_version>
         <item>
-          <first>ap_sync_reg_max_pooling_1_U0_ap_ready</first>
+          <first>ap_sync_reg_max_pooling_10_U0_ap_ready</first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -2888,7 +2888,7 @@
           </second>
         </item>
         <item>
-          <first>ap_sync_reg_max_pooling_2_U0_ap_ready</first>
+          <first>ap_sync_reg_max_pooling_11_U0_ap_ready</first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -2911,7 +2911,7 @@
           </second>
         </item>
         <item>
-          <first>ap_sync_reg_max_pooling_3_U0_ap_ready</first>
+          <first>ap_sync_reg_max_pooling_12_U0_ap_ready</first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -2934,7 +2934,7 @@
           </second>
         </item>
         <item>
-          <first>ap_sync_reg_max_pooling_4_U0_ap_ready</first>
+          <first>ap_sync_reg_max_pooling_13_U0_ap_ready</first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -2957,7 +2957,7 @@
           </second>
         </item>
         <item>
-          <first>ap_sync_reg_max_pooling_5_U0_ap_ready</first>
+          <first>ap_sync_reg_max_pooling_14_U0_ap_ready</first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -2980,7 +2980,7 @@
           </second>
         </item>
         <item>
-          <first>ap_sync_reg_max_pooling_6_U0_ap_ready</first>
+          <first>ap_sync_reg_max_pooling_8_U0_ap_ready</first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -3003,7 +3003,7 @@
           </second>
         </item>
         <item>
-          <first>ap_sync_reg_max_pooling_7_U0_ap_ready</first>
+          <first>ap_sync_reg_max_pooling_9_U0_ap_ready</first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -3076,7 +3076,7 @@
         <count>9</count>
         <item_version>0</item_version>
         <item>
-          <first>ap_sync_reg_max_pooling_1_U0_ap_ready</first>
+          <first>ap_sync_reg_max_pooling_10_U0_ap_ready</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -3095,7 +3095,7 @@
           </second>
         </item>
         <item>
-          <first>ap_sync_reg_max_pooling_2_U0_ap_ready</first>
+          <first>ap_sync_reg_max_pooling_11_U0_ap_ready</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -3114,7 +3114,7 @@
           </second>
         </item>
         <item>
-          <first>ap_sync_reg_max_pooling_3_U0_ap_ready</first>
+          <first>ap_sync_reg_max_pooling_12_U0_ap_ready</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -3133,7 +3133,7 @@
           </second>
         </item>
         <item>
-          <first>ap_sync_reg_max_pooling_4_U0_ap_ready</first>
+          <first>ap_sync_reg_max_pooling_13_U0_ap_ready</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -3152,7 +3152,7 @@
           </second>
         </item>
         <item>
-          <first>ap_sync_reg_max_pooling_5_U0_ap_ready</first>
+          <first>ap_sync_reg_max_pooling_14_U0_ap_ready</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -3171,7 +3171,7 @@
           </second>
         </item>
         <item>
-          <first>ap_sync_reg_max_pooling_6_U0_ap_ready</first>
+          <first>ap_sync_reg_max_pooling_8_U0_ap_ready</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -3190,7 +3190,7 @@
           </second>
         </item>
         <item>
-          <first>ap_sync_reg_max_pooling_7_U0_ap_ready</first>
+          <first>ap_sync_reg_max_pooling_9_U0_ap_ready</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -3251,49 +3251,49 @@
         <count>8</count>
         <item_version>0</item_version>
         <item>
-          <first>max_pooling_1_U0</first>
+          <first>max_pooling_10_U0</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>max_pooling_2_U0</first>
+          <first>max_pooling_11_U0</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>max_pooling_3_U0</first>
+          <first>max_pooling_12_U0</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>max_pooling_4_U0</first>
+          <first>max_pooling_13_U0</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>max_pooling_5_U0</first>
+          <first>max_pooling_14_U0</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>max_pooling_6_U0</first>
+          <first>max_pooling_8_U0</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>max_pooling_7_U0</first>
+          <first>max_pooling_9_U0</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -3311,23 +3311,7 @@
         <count>8</count>
         <item_version>0</item_version>
         <item class_id="50" tracking_level="0" version="0">
-          <first>max_pooling_1_U0 (max_pooling_1)</first>
-          <second>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item>35</item>
-          </second>
-        </item>
-        <item>
-          <first>max_pooling_2_U0 (max_pooling_2)</first>
-          <second>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item>36</item>
-          </second>
-        </item>
-        <item>
-          <first>max_pooling_3_U0 (max_pooling_3)</first>
+          <first>max_pooling_10_U0 (max_pooling_10)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -3335,7 +3319,7 @@
           </second>
         </item>
         <item>
-          <first>max_pooling_4_U0 (max_pooling_4)</first>
+          <first>max_pooling_11_U0 (max_pooling_11)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -3343,7 +3327,7 @@
           </second>
         </item>
         <item>
-          <first>max_pooling_5_U0 (max_pooling_5)</first>
+          <first>max_pooling_12_U0 (max_pooling_12)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -3351,7 +3335,7 @@
           </second>
         </item>
         <item>
-          <first>max_pooling_6_U0 (max_pooling_6)</first>
+          <first>max_pooling_13_U0 (max_pooling_13)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -3359,11 +3343,27 @@
           </second>
         </item>
         <item>
-          <first>max_pooling_7_U0 (max_pooling_7)</first>
+          <first>max_pooling_14_U0 (max_pooling_14)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
             <item>41</item>
+          </second>
+        </item>
+        <item>
+          <first>max_pooling_8_U0 (max_pooling_8)</first>
+          <second>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>35</item>
+          </second>
+        </item>
+        <item>
+          <first>max_pooling_9_U0 (max_pooling_9)</first>
+          <second>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>36</item>
           </second>
         </item>
         <item>
@@ -3600,25 +3600,7 @@
       <count>8</count>
       <item_version>0</item_version>
       <item class_id="64" tracking_level="0" version="0">
-        <first>grp_max_pooling_1_fu_68</first>
-        <second>
-          <count>2</count>
-          <item_version>0</item_version>
-          <item>35</item>
-          <item>35</item>
-        </second>
-      </item>
-      <item>
-        <first>grp_max_pooling_2_fu_76</first>
-        <second>
-          <count>2</count>
-          <item_version>0</item_version>
-          <item>36</item>
-          <item>36</item>
-        </second>
-      </item>
-      <item>
-        <first>grp_max_pooling_3_fu_84</first>
+        <first>grp_max_pooling_10_fu_84</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -3627,7 +3609,7 @@
         </second>
       </item>
       <item>
-        <first>grp_max_pooling_4_fu_92</first>
+        <first>grp_max_pooling_11_fu_92</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -3636,7 +3618,7 @@
         </second>
       </item>
       <item>
-        <first>grp_max_pooling_5_fu_100</first>
+        <first>grp_max_pooling_12_fu_100</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -3645,7 +3627,7 @@
         </second>
       </item>
       <item>
-        <first>grp_max_pooling_6_fu_108</first>
+        <first>grp_max_pooling_13_fu_108</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -3654,12 +3636,30 @@
         </second>
       </item>
       <item>
-        <first>grp_max_pooling_7_fu_116</first>
+        <first>grp_max_pooling_14_fu_116</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
           <item>41</item>
           <item>41</item>
+        </second>
+      </item>
+      <item>
+        <first>grp_max_pooling_8_fu_68</first>
+        <second>
+          <count>2</count>
+          <item_version>0</item_version>
+          <item>35</item>
+          <item>35</item>
+        </second>
+      </item>
+      <item>
+        <first>grp_max_pooling_9_fu_76</first>
+        <second>
+          <count>2</count>
+          <item_version>0</item_version>
+          <item>36</item>
+          <item>36</item>
         </second>
       </item>
       <item>
@@ -3945,120 +3945,8 @@
       </item>
     </dp_port_io_nodes>
     <port2core>
-      <count>16</count>
+      <count>0</count>
       <item_version>0</item_version>
-      <item>
-        <first>1</first>
-        <second>
-          <first>1150</first>
-          <second>7</second>
-        </second>
-      </item>
-      <item>
-        <first>2</first>
-        <second>
-          <first>1150</first>
-          <second>7</second>
-        </second>
-      </item>
-      <item>
-        <first>3</first>
-        <second>
-          <first>1150</first>
-          <second>7</second>
-        </second>
-      </item>
-      <item>
-        <first>4</first>
-        <second>
-          <first>1150</first>
-          <second>7</second>
-        </second>
-      </item>
-      <item>
-        <first>5</first>
-        <second>
-          <first>1150</first>
-          <second>7</second>
-        </second>
-      </item>
-      <item>
-        <first>6</first>
-        <second>
-          <first>1150</first>
-          <second>7</second>
-        </second>
-      </item>
-      <item>
-        <first>7</first>
-        <second>
-          <first>1150</first>
-          <second>7</second>
-        </second>
-      </item>
-      <item>
-        <first>8</first>
-        <second>
-          <first>1150</first>
-          <second>7</second>
-        </second>
-      </item>
-      <item>
-        <first>9</first>
-        <second>
-          <first>1151</first>
-          <second>7</second>
-        </second>
-      </item>
-      <item>
-        <first>10</first>
-        <second>
-          <first>1151</first>
-          <second>7</second>
-        </second>
-      </item>
-      <item>
-        <first>11</first>
-        <second>
-          <first>1151</first>
-          <second>7</second>
-        </second>
-      </item>
-      <item>
-        <first>12</first>
-        <second>
-          <first>1151</first>
-          <second>7</second>
-        </second>
-      </item>
-      <item>
-        <first>13</first>
-        <second>
-          <first>1151</first>
-          <second>7</second>
-        </second>
-      </item>
-      <item>
-        <first>14</first>
-        <second>
-          <first>1151</first>
-          <second>7</second>
-        </second>
-      </item>
-      <item>
-        <first>15</first>
-        <second>
-          <first>1151</first>
-          <second>7</second>
-        </second>
-      </item>
-      <item>
-        <first>16</first>
-        <second>
-          <first>1151</first>
-          <second>7</second>
-        </second>
-      </item>
     </port2core>
     <node2core>
       <count>8</count>

@@ -63,14 +63,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 39 \
-    name w_57 \
+    name w_16 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_w_57 \
+    corename dc_w_16 \
     op interface \
-    ports { w_57 { I 32 vector } } \
+    ports { w_16 { I 32 vector } } \
 } "
 }
 
@@ -78,14 +78,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 40 \
-    name w_58 \
+    name w_6 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_w_58 \
+    corename dc_w_6 \
     op interface \
-    ports { w_58 { I 32 vector } } \
+    ports { w_6 { I 32 vector } } \
 } "
 }
 
@@ -93,14 +93,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 41 \
-    name w_59 \
+    name w_7 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_w_59 \
+    corename dc_w_7 \
     op interface \
-    ports { w_59 { I 32 vector } } \
+    ports { w_7 { I 32 vector } } \
 } "
 }
 
@@ -108,14 +108,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 42 \
-    name w_60 \
+    name w_8 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_w_60 \
+    corename dc_w_8 \
     op interface \
-    ports { w_60 { I 32 vector } } \
+    ports { w_8 { I 32 vector } } \
 } "
 }
 
@@ -123,14 +123,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 43 \
-    name w_61 \
+    name w_9 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_w_61 \
+    corename dc_w_9 \
     op interface \
-    ports { w_61 { I 32 vector } } \
+    ports { w_9 { I 32 vector } } \
 } "
 }
 
@@ -138,14 +138,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 44 \
-    name w_62 \
+    name w_10 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_w_62 \
+    corename dc_w_10 \
     op interface \
-    ports { w_62 { I 32 vector } } \
+    ports { w_10 { I 32 vector } } \
 } "
 }
 
@@ -153,14 +153,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 45 \
-    name w_63 \
+    name w_11 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_w_63 \
+    corename dc_w_11 \
     op interface \
-    ports { w_63 { I 32 vector } } \
+    ports { w_11 { I 32 vector } } \
 } "
 }
 
@@ -168,14 +168,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 46 \
-    name w_64 \
+    name w_12 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_w_64 \
+    corename dc_w_12 \
     op interface \
-    ports { w_64 { I 32 vector } } \
+    ports { w_12 { I 32 vector } } \
 } "
 }
 
@@ -183,14 +183,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 47 \
-    name biases_buf \
+    name conv8 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_biases_buf \
+    corename dc_conv8 \
     op interface \
-    ports { biases_buf { I 32 vector } } \
+    ports { conv8 { I 32 vector } } \
 } "
 }
 
@@ -205,7 +205,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_conv_to_pool_streams_0 \
     op interface \
-    ports { conv_to_pool_streams_0_din { O 32 vector } conv_to_pool_streams_0_full_n { I 1 bit } conv_to_pool_streams_0_write { O 1 bit } } \
+    ports { conv_to_pool_streams_0_din { O 32 vector } conv_to_pool_streams_0_num_data_valid { I 11 vector } conv_to_pool_streams_0_fifo_cap { I 11 vector } conv_to_pool_streams_0_full_n { I 1 bit } conv_to_pool_streams_0_write { O 1 bit } } \
 } "
 }
 

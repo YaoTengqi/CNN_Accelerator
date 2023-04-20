@@ -1,7 +1,7 @@
 <profile>
 
 <ReportVersion>
-<Version>2021.2</Version>
+<Version>2022.2</Version>
 </ReportVersion>
 
 <UserAssignments>
@@ -22,14 +22,14 @@
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>5914</Best-caseLatency>
-<Average-caseLatency>5914</Average-caseLatency>
-<Worst-caseLatency>5914</Worst-caseLatency>
-<Best-caseRealTimeLatency>59.140 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>59.140 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>59.140 us</Worst-caseRealTimeLatency>
-<Interval-min>5915</Interval-min>
-<Interval-max>5915</Interval-max>
+<Best-caseLatency>5920</Best-caseLatency>
+<Average-caseLatency>5920</Average-caseLatency>
+<Worst-caseLatency>5920</Worst-caseLatency>
+<Best-caseRealTimeLatency>59.200 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>59.200 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>59.200 us</Worst-caseRealTimeLatency>
+<Interval-min>5921</Interval-min>
+<Interval-max>5921</Interval-max>
 </SummaryOfOverallLatency>
 </PerformanceEstimates>
 
@@ -37,8 +37,8 @@
 <Resources>
 <BRAM_18K>384</BRAM_18K>
 <DSP>131</DSP>
-<FF>51807</FF>
-<LUT>41312</LUT>
+<FF>54221</FF>
+<LUT>41495</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>
@@ -51,28 +51,6 @@
 </AreaEstimates>
 
 <InterfaceSummary>
-<RtlPorts>
-<name>ap_local_block</name>
-<Object>cnn</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_local_deadlock</name>
-<Object>cnn</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
 <RtlPorts>
 <name>ap_clk</name>
 <Object>cnn</Object>

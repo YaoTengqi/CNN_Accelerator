@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1681897796527">
-  <ports id="1" name="pool_to_flat_streams_0" type="PortType" coreName="FIFO" coreId="1953391988" bitwidth="32" iftype="IfTypeRom">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1681977551807">
+  <ports id="1" name="pool_to_flat_streams_0" type="PortType" coreName="FIFO" coreId="0" bitwidth="32" iftype="IfTypeRom">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="2" name="flat_to_dense_streams_0" type="PortType" coreName="FIFO" coreId="1953391988" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
+  <ports id="2" name="flat_to_dense_streams_0" type="PortType" coreName="FIFO" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
     <dataInputObjs>write</dataInputObjs>
   </ports>
   <edges id="30" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.1"/>
@@ -20,108 +20,106 @@
   <edges id="49" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
   <edges id="50" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
   <edges id="51" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
-  <edges id="118" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
-  <edges id="119" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
-  <edges id="120" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
-  <edges id="121" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
-  <edges id="122" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
-  <edges id="123" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
-  <edges id="124" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
-  <blocks id="8" name="block_8" type="BlockType">
-    <controlOutputObjs>block_14</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="3" name="indvar_flatten" coreId="1819113472" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+  <edges id="122" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="123" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="124" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="125" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="126" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="127" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="128" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <blocks id="8" name="entry" type="BlockType">
+    <controlOutputObjs>for.inc</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="3" name="indvar_flatten" coreId="1397508187" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
       <dataOutputObjs>store</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="6" name="indvar_flatten_write_ln11" lineNumber="11" fileName="flat.cc" fileDirectory=".." coreId="1546749656" contextFuncName="flattening" opcode="store" m_display="0" m_delay="1.61" m_topoIndex="2" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="flat.cc" linenumber="11" fileDirectory="D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS" functionName="flattening"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="6" name="indvar_flatten_write_ln11" lineNumber="11" fileName="flat.cc" fileDirectory=".." coreId="1962427648" contextFuncName="flattening" opcode="store" m_display="0" m_delay="1.61" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="flat.cc" linenumber="11" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="flattening"/>
       <dataInputObjs>alloca</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="br_ln11" lineNumber="11" fileName="flat.cc" fileDirectory=".." coreId="0" contextFuncName="flattening" opcode="br" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="flat.cc" linenumber="11" fileDirectory="D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS" functionName="flattening"/>
-      <controlInputObjs>block_14</controlInputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="br_ln11" lineNumber="11" fileName="flat.cc" fileDirectory=".." coreId="1962427648" contextFuncName="flattening" opcode="br" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="flat.cc" linenumber="11" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="flattening"/>
+      <controlInputObjs>for.inc</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="flat.cc">
       <validLinenumbers>11</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
-  <blocks id="25" name="block_25" type="BlockType">
-    <controlInputObjs>block_14</controlInputObjs>
+  <blocks id="25" name="for.end7" type="BlockType">
+    <controlInputObjs>for.inc</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="_ln19" lineNumber="19" fileName="flat.cc" fileDirectory=".." coreId="0" contextFuncName="flattening" opcode="ret" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="flat.cc" linenumber="19" fileDirectory="D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS" functionName="flattening"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="_ln19" lineNumber="19" fileName="flat.cc" fileDirectory=".." coreId="1963273728" contextFuncName="flattening" opcode="ret" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="flat.cc" linenumber="19" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="flattening"/>
     </node_objs>
     <fileValidLineNumbers fileName="flat.cc">
       <validLinenumbers>19</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="76" pipe_depth="2" RegionName="flat_for_rows_flat_for_cols">
-    <basic_blocks id="14" name="block_14" type="BlockType">
-      <controlInputObjs>block_8</controlInputObjs>
-      <controlInputObjs>.split3</controlInputObjs>
+    <basic_blocks id="14" name="for.inc" type="BlockType">
+      <controlInputObjs>entry</controlInputObjs>
+      <controlInputObjs>for.inc5</controlInputObjs>
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>br</controlOutputObjs>
-      <controlOutputObjs>block_25</controlOutputObjs>
-      <controlOutputObjs>.split3</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="9" name="indvar_flatten_load" lineNumber="11" fileName="flat.cc" fileDirectory=".." coreId="0" contextFuncName="flattening" bitwidth="8" opcode="load" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="flat.cc" linenumber="11" fileDirectory="D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS" functionName="flattening"/>
+      <controlOutputObjs>for.end7</controlOutputObjs>
+      <controlOutputObjs>for.inc5</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="9" name="indvar_flatten_load" lineNumber="11" fileName="flat.cc" fileDirectory=".." coreId="1960703232" contextFuncName="flattening" bitwidth="8" opcode="load" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="flat.cc" linenumber="11" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="flattening"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
         <dataOutputObjs>add</dataOutputObjs>
       </node_objs>
       <node_objs xsi:type="cdfg:CdfgNode" id="11" name="icmp_ln11" lineNumber="11" fileName="flat.cc" fileDirectory=".." rtlName="icmp_ln11_fu_65_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="flattening" bitwidth="1" opcode="icmp" m_display="0" m_delay="1.47" m_topoIndex="5" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="flat.cc" linenumber="11" fileDirectory="D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS" functionName="flattening"/>
+        <inlineStackInfo fileName="flat.cc" linenumber="11" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="flattening"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>br</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
       <node_objs xsi:type="cdfg:CdfgNode" id="12" name="add_ln11" lineNumber="11" fileName="flat.cc" fileDirectory=".." rtlName="add_ln11_fu_71_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="flattening" bitwidth="8" opcode="add" m_display="0" m_delay="2.11" m_topoIndex="6" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="flat.cc" linenumber="11" fileDirectory="D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS" functionName="flattening"/>
+        <inlineStackInfo fileName="flat.cc" linenumber="11" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="flattening"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="13" name="br_ln11" lineNumber="11" fileName="flat.cc" fileDirectory=".." coreId="0" contextFuncName="flattening" opcode="br" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="flat.cc" linenumber="11" fileDirectory="D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS" functionName="flattening"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="13" name="br_ln11" lineNumber="11" fileName="flat.cc" fileDirectory=".." coreId="1962477312" contextFuncName="flattening" opcode="br" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="flat.cc" linenumber="11" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="flattening"/>
         <dataInputObjs>icmp</dataInputObjs>
-        <controlInputObjs>.split3</controlInputObjs>
-        <controlInputObjs>block_25</controlInputObjs>
+        <controlInputObjs>for.inc5</controlInputObjs>
+        <controlInputObjs>for.end7</controlInputObjs>
       </node_objs>
       <fileValidLineNumbers fileName="flat.cc">
         <validLinenumbers>11</validLinenumbers>
       </fileValidLineNumbers>
     </basic_blocks>
-    <basic_blocks id="23" name=".split3" type="BlockType">
-      <controlInputObjs>block_14</controlInputObjs>
+    <basic_blocks id="23" name="for.inc5" type="BlockType">
+      <controlInputObjs>for.inc</controlInputObjs>
       <controlOutputObjs>br</controlOutputObjs>
-      <controlOutputObjs>block_14</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="pool_to_flat_streams_0_read" lineNumber="144" fileName="D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." coreName="FIFO" implIndex="memory" control="no" opType="fifo" coreId="78" contextFuncName="read" bitwidth="32" opcode="read" m_display="0" m_delay="3.65" m_topoIndex="8" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h" linenumber="144" fileDirectory="D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS" functionName="read"/>
+      <controlOutputObjs>for.inc</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="pool_to_flat_streams_0_read" lineNumber="16" fileName="flat.cc" fileDirectory=".." coreName="FIFO" implIndex="memory" control="no" opType="fifo" coreId="78" contextFuncName="flattening" bitwidth="32" opcode="read" m_display="0" m_delay="3.65" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="flat.cc" linenumber="16" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="flattening"/>
         <dataInputObjs>pool_to_flat_streams_0</dataInputObjs>
         <dataOutputObjs>write</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="flat_to_dense_streams_0_write_ln173" lineNumber="173" fileName="D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." coreName="FIFO" implIndex="memory" control="no" opType="fifo" coreId="78" contextFuncName="write" opcode="write" nodeLabel="1.0" m_display="0" m_delay="3.65" m_topoIndex="11" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h" linenumber="173" fileDirectory="D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS" functionName="write"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="flat_to_dense_streams_0_write_ln16" lineNumber="16" fileName="flat.cc" fileDirectory=".." coreName="FIFO" implIndex="memory" control="no" opType="fifo" coreId="78" contextFuncName="flattening" opcode="write" nodeLabel="1.0" m_display="0" m_delay="3.65" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="flat.cc" linenumber="16" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="flattening"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>flat_to_dense_streams_0</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="indvar_flatten_write_ln11" lineNumber="11" fileName="flat.cc" fileDirectory=".." coreId="0" contextFuncName="flattening" opcode="store" m_display="0" m_delay="1.61" m_topoIndex="9" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="flat.cc" linenumber="11" fileDirectory="D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS" functionName="flattening"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="indvar_flatten_write_ln14" lineNumber="14" fileName="flat.cc" fileDirectory=".." coreId="1962755328" contextFuncName="flattening" opcode="store" m_display="0" m_delay="1.61" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="flat.cc" linenumber="14" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="flattening"/>
         <dataInputObjs>add</dataInputObjs>
         <dataInputObjs>alloca</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="br_ln0" coreId="0" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
-        <controlInputObjs>block_14</controlInputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="br_ln14" lineNumber="14" fileName="flat.cc" fileDirectory=".." coreId="1961790976" contextFuncName="flattening" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="flat.cc" linenumber="14" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="flattening"/>
+        <controlInputObjs>for.inc</controlInputObjs>
       </node_objs>
-      <fileValidLineNumbers fileName="D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h">
-        <validLinenumbers>144</validLinenumbers>
-        <validLinenumbers>173</validLinenumbers>
-      </fileValidLineNumbers>
       <fileValidLineNumbers fileName="flat.cc">
-        <validLinenumbers>11</validLinenumbers>
+        <validLinenumbers>16</validLinenumbers>
+        <validLinenumbers>14</validLinenumbers>
       </fileValidLineNumbers>
     </basic_blocks>
   </regions>
@@ -145,11 +143,11 @@
   <ioNodes realName="store_ln11_store_fu_57">
     <nodeIds>6</nodeIds>
   </ioNodes>
-  <ioNodes realName="store_ln11_store_fu_77">
-    <nodeIds>21</nodeIds>
-  </ioNodes>
-  <ioNodes realName="write_ln173_write_fu_50">
+  <ioNodes realName="write_ln16_write_fu_50">
     <nodeIds>20</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln14_store_fu_77">
+    <nodeIds>21</nodeIds>
   </ioNodes>
   <ioNodes realName="indvar_flatten_load_load_fu_62">
     <nodeIds>9</nodeIds>

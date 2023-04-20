@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'cnn_Pipeline_8'" level="0">
-<item name = "Date">Wed Apr 19 17:49:34 2023
+<item name = "Date">Thu Apr 20 15:58:58 2023
 </item>
-<item name = "Version">2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)</item>
+<item name = "Version">2022.2 (Build 3670227 on Oct 13 2022)</item>
 <item name = "Project">Project</item>
 <item name = "Solution">solution1 (Vivado IP Flow Target)</item>
 <item name = "Product family">artix7</item>
@@ -78,15 +78,15 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="empty_124_fu_120_p2">+, 0, 0, 13, 4, 1</column>
-<column name="empty_128_fu_218_p2">+, 0, 0, 8, 8, 8</column>
-<column name="next_mul63_fu_152_p2">+, 0, 0, 15, 8, 5</column>
-<column name="next_urem65_fu_132_p2">+, 0, 0, 13, 4, 1</column>
-<column name="tmp4_fu_212_p2">+, 0, 0, 8, 8, 8</column>
-<column name="empty_126_fu_192_p2">-, 0, 0, 14, 7, 7</column>
-<column name="empty_125_fu_138_p2">icmp, 0, 0, 9, 4, 2</column>
-<column name="exitcond443_fu_114_p2">icmp, 0, 0, 9, 4, 4</column>
-<column name="idx_urem66_fu_144_p3">select, 0, 0, 4, 1, 4</column>
+<column name="empty_123_fu_121_p2">+, 0, 0, 13, 4, 1</column>
+<column name="empty_127_fu_219_p2">+, 0, 0, 8, 8, 8</column>
+<column name="next_mul63_fu_153_p2">+, 0, 0, 15, 8, 5</column>
+<column name="next_urem65_fu_133_p2">+, 0, 0, 13, 4, 1</column>
+<column name="tmp4_fu_213_p2">+, 0, 0, 8, 8, 8</column>
+<column name="empty_125_fu_193_p2">-, 0, 0, 14, 7, 7</column>
+<column name="empty_124_fu_139_p2">icmp, 0, 0, 9, 4, 2</column>
+<column name="exitcond453_fu_115_p2">icmp, 0, 0, 9, 4, 4</column>
+<column name="idx_urem66_fu_145_p3">select, 0, 0, 4, 1, 4</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
@@ -94,10 +94,10 @@
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_done_int">9, 2, 1, 2</column>
 <column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
-<column name="ap_sig_allocacmp_loop_index22_load">9, 2, 4, 8</column>
+<column name="ap_sig_allocacmp_loop_index23_load">9, 2, 4, 8</column>
 <column name="ap_sig_allocacmp_phi_mul62_load">9, 2, 8, 16</column>
 <column name="ap_sig_allocacmp_phi_urem64_load">9, 2, 4, 8</column>
-<column name="loop_index22_fu_66">9, 2, 4, 8</column>
+<column name="loop_index23_fu_66">9, 2, 4, 8</column>
 <column name="phi_mul62_fu_62">9, 2, 8, 16</column>
 <column name="phi_urem64_fu_58">9, 2, 4, 8</column>
 </table>
@@ -109,12 +109,12 @@
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
 <column name="ap_loop_exit_ready_pp0_iter1_reg">1, 0, 1, 0</column>
-<column name="loop_index22_fu_66">4, 0, 4, 0</column>
-<column name="loop_index22_load_reg_283">4, 0, 4, 0</column>
-<column name="loop_index22_load_reg_283_pp0_iter1_reg">4, 0, 4, 0</column>
+<column name="loop_index23_fu_66">4, 0, 4, 0</column>
+<column name="loop_index23_load_reg_279">4, 0, 4, 0</column>
+<column name="loop_index23_load_reg_279_pp0_iter1_reg">4, 0, 4, 0</column>
 <column name="phi_mul62_fu_62">8, 0, 8, 0</column>
 <column name="phi_urem64_fu_58">4, 0, 4, 0</column>
-<column name="tmp_114_reg_292">6, 0, 6, 0</column>
+<column name="tmp_56_reg_288">6, 0, 6, 0</column>
 </table>
 </item>
 </section>

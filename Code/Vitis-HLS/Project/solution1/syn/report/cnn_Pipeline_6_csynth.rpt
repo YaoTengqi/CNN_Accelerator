@@ -3,9 +3,9 @@
 ================================================================
 == Vitis HLS Report for 'cnn_Pipeline_6'
 ================================================================
-* Date:           Wed Apr 19 17:49:34 2023
+* Date:           Thu Apr 20 15:58:57 2023
 
-* Version:        2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
 * Project:        Project
 * Solution:       solution1 (Vivado IP Flow Target)
 * Product family: artix7
@@ -85,15 +85,15 @@
     +-----------------------+----------+----+---+----+------------+------------+
     |     Variable Name     | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +-----------------------+----------+----+---+----+------------+------------+
-    |empty_136_fu_120_p2    |         +|   0|  0|  13|           4|           1|
-    |empty_140_fu_226_p2    |         +|   0|  0|  15|           8|           8|
-    |next_mul53_fu_152_p2   |         +|   0|  0|  15|           8|           5|
-    |next_urem55_fu_132_p2  |         +|   0|  0|  13|           4|           1|
-    |tmp2_fu_212_p2         |         +|   0|  0|  14|           6|           6|
-    |empty_138_fu_192_p2    |         -|   0|  0|  14|           7|           7|
-    |empty_137_fu_138_p2    |      icmp|   0|  0|   9|           4|           2|
-    |exitcond465_fu_114_p2  |      icmp|   0|  0|   9|           4|           4|
-    |idx_urem56_fu_144_p3   |    select|   0|  0|   4|           1|           4|
+    |empty_133_fu_121_p2    |         +|   0|  0|  13|           4|           1|
+    |empty_137_fu_227_p2    |         +|   0|  0|  15|           8|           8|
+    |next_mul53_fu_153_p2   |         +|   0|  0|  15|           8|           5|
+    |next_urem55_fu_133_p2  |         +|   0|  0|  13|           4|           1|
+    |tmp2_fu_213_p2         |         +|   0|  0|  14|           6|           6|
+    |empty_135_fu_193_p2    |         -|   0|  0|  14|           7|           7|
+    |empty_134_fu_139_p2    |      icmp|   0|  0|   9|           4|           2|
+    |exitcond475_fu_115_p2  |      icmp|   0|  0|   9|           4|           4|
+    |idx_urem56_fu_145_p3   |    select|   0|  0|   4|           1|           4|
     |ap_enable_pp0          |       xor|   0|  0|   2|           1|           2|
     +-----------------------+----------+----+---+----+------------+------------+
     |Total                  |          |   0|  0| 108|          47|          40|
@@ -105,10 +105,10 @@
     +------------------------------------+----+-----------+-----+-----------+
     |ap_done_int                         |   9|          2|    1|          2|
     |ap_enable_reg_pp0_iter1             |   9|          2|    1|          2|
-    |ap_sig_allocacmp_loop_index28_load  |   9|          2|    4|          8|
+    |ap_sig_allocacmp_loop_index29_load  |   9|          2|    4|          8|
     |ap_sig_allocacmp_phi_mul52_load     |   9|          2|    8|         16|
     |ap_sig_allocacmp_phi_urem54_load    |   9|          2|    4|          8|
-    |loop_index28_fu_66                  |   9|          2|    4|          8|
+    |loop_index29_fu_66                  |   9|          2|    4|          8|
     |phi_mul52_fu_62                     |   9|          2|    8|         16|
     |phi_urem54_fu_58                    |   9|          2|    4|          8|
     +------------------------------------+----+-----------+-----+-----------+
@@ -122,8 +122,8 @@
     |ap_CS_fsm                  |  1|   0|    1|          0|
     |ap_done_reg                |  1|   0|    1|          0|
     |ap_enable_reg_pp0_iter1    |  1|   0|    1|          0|
-    |loop_index28_fu_66         |  4|   0|    4|          0|
-    |loop_index28_load_reg_292  |  4|   0|    4|          0|
+    |loop_index29_fu_66         |  4|   0|    4|          0|
+    |loop_index29_load_reg_288  |  4|   0|    4|          0|
     |phi_mul52_fu_62            |  8|   0|    8|          0|
     |phi_urem54_fu_58           |  4|   0|    4|          0|
     +---------------------------+---+----+-----+-----------+

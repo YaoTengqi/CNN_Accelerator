@@ -9,37 +9,38 @@ set isOneStateSeq 0
 set ProfileFlag 0
 set StallSigGenFlag 0
 set isEnableWaveformDebug 1
+set hasInterrupt 0
 set C_modelName {convolution.3_Pipeline_conv_for_rows_win_for_rows_win_for_cols}
 set C_modelType { void 0 }
 set C_modelArgList {
 	{ pad_img float 32 regular {array 900 { 1 1 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 } 1 1 }  }
 	{ w float 32 regular  }
-	{ w_33 float 32 regular  }
-	{ w_34 float 32 regular  }
-	{ w_35 float 32 regular  }
-	{ w_36 float 32 regular  }
-	{ w_37 float 32 regular  }
-	{ w_38 float 32 regular  }
-	{ w_39 float 32 regular  }
-	{ w_40 float 32 regular  }
-	{ biases_buf float 32 regular  }
+	{ w_13 float 32 regular  }
+	{ w_3 float 32 regular  }
+	{ w_4 float 32 regular  }
+	{ w_5 float 32 regular  }
+	{ w_6 float 32 regular  }
+	{ w_7 float 32 regular  }
+	{ w_8 float 32 regular  }
+	{ w_9 float 32 regular  }
+	{ conv5 float 32 regular  }
 	{ conv_to_pool_streams_3 int 32 regular {fifo 1 volatile }  }
 }
 set C_modelArgMapList {[ 
 	{ "Name" : "pad_img", "interface" : "memory", "bitwidth" : 32, "direction" : "READONLY"} , 
  	{ "Name" : "w", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
- 	{ "Name" : "w_33", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
- 	{ "Name" : "w_34", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
- 	{ "Name" : "w_35", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
- 	{ "Name" : "w_36", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
- 	{ "Name" : "w_37", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
- 	{ "Name" : "w_38", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
- 	{ "Name" : "w_39", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
- 	{ "Name" : "w_40", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
- 	{ "Name" : "biases_buf", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
+ 	{ "Name" : "w_13", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
+ 	{ "Name" : "w_3", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
+ 	{ "Name" : "w_4", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
+ 	{ "Name" : "w_5", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
+ 	{ "Name" : "w_6", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
+ 	{ "Name" : "w_7", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
+ 	{ "Name" : "w_8", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
+ 	{ "Name" : "w_9", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
+ 	{ "Name" : "conv5", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
  	{ "Name" : "conv_to_pool_streams_3", "interface" : "fifo", "bitwidth" : 32, "direction" : "WRITEONLY"} ]}
 # RTL Port declarations: 
-set portNum 25
+set portNum 27
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
@@ -54,16 +55,18 @@ set portList {
 	{ pad_img_ce1 sc_out sc_logic 1 signal 0 } 
 	{ pad_img_q1 sc_in sc_lv 32 signal 0 } 
 	{ w sc_in sc_lv 32 signal 1 } 
-	{ w_33 sc_in sc_lv 32 signal 2 } 
-	{ w_34 sc_in sc_lv 32 signal 3 } 
-	{ w_35 sc_in sc_lv 32 signal 4 } 
-	{ w_36 sc_in sc_lv 32 signal 5 } 
-	{ w_37 sc_in sc_lv 32 signal 6 } 
-	{ w_38 sc_in sc_lv 32 signal 7 } 
-	{ w_39 sc_in sc_lv 32 signal 8 } 
-	{ w_40 sc_in sc_lv 32 signal 9 } 
-	{ biases_buf sc_in sc_lv 32 signal 10 } 
+	{ w_13 sc_in sc_lv 32 signal 2 } 
+	{ w_3 sc_in sc_lv 32 signal 3 } 
+	{ w_4 sc_in sc_lv 32 signal 4 } 
+	{ w_5 sc_in sc_lv 32 signal 5 } 
+	{ w_6 sc_in sc_lv 32 signal 6 } 
+	{ w_7 sc_in sc_lv 32 signal 7 } 
+	{ w_8 sc_in sc_lv 32 signal 8 } 
+	{ w_9 sc_in sc_lv 32 signal 9 } 
+	{ conv5 sc_in sc_lv 32 signal 10 } 
 	{ conv_to_pool_streams_3_din sc_out sc_lv 32 signal 11 } 
+	{ conv_to_pool_streams_3_num_data_valid sc_in sc_lv 11 signal 11 } 
+	{ conv_to_pool_streams_3_fifo_cap sc_in sc_lv 11 signal 11 } 
 	{ conv_to_pool_streams_3_full_n sc_in sc_logic 1 signal 11 } 
 	{ conv_to_pool_streams_3_write sc_out sc_logic 1 signal 11 } 
 }
@@ -81,16 +84,18 @@ set NewPortList {[
  	{ "name": "pad_img_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "pad_img", "role": "ce1" }} , 
  	{ "name": "pad_img_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "pad_img", "role": "q1" }} , 
  	{ "name": "w", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "w", "role": "default" }} , 
- 	{ "name": "w_33", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "w_33", "role": "default" }} , 
- 	{ "name": "w_34", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "w_34", "role": "default" }} , 
- 	{ "name": "w_35", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "w_35", "role": "default" }} , 
- 	{ "name": "w_36", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "w_36", "role": "default" }} , 
- 	{ "name": "w_37", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "w_37", "role": "default" }} , 
- 	{ "name": "w_38", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "w_38", "role": "default" }} , 
- 	{ "name": "w_39", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "w_39", "role": "default" }} , 
- 	{ "name": "w_40", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "w_40", "role": "default" }} , 
- 	{ "name": "biases_buf", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "biases_buf", "role": "default" }} , 
+ 	{ "name": "w_13", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "w_13", "role": "default" }} , 
+ 	{ "name": "w_3", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "w_3", "role": "default" }} , 
+ 	{ "name": "w_4", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "w_4", "role": "default" }} , 
+ 	{ "name": "w_5", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "w_5", "role": "default" }} , 
+ 	{ "name": "w_6", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "w_6", "role": "default" }} , 
+ 	{ "name": "w_7", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "w_7", "role": "default" }} , 
+ 	{ "name": "w_8", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "w_8", "role": "default" }} , 
+ 	{ "name": "w_9", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "w_9", "role": "default" }} , 
+ 	{ "name": "conv5", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "conv5", "role": "default" }} , 
  	{ "name": "conv_to_pool_streams_3_din", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "conv_to_pool_streams_3", "role": "din" }} , 
+ 	{ "name": "conv_to_pool_streams_3_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "conv_to_pool_streams_3", "role": "num_data_valid" }} , 
+ 	{ "name": "conv_to_pool_streams_3_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "conv_to_pool_streams_3", "role": "fifo_cap" }} , 
  	{ "name": "conv_to_pool_streams_3_full_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "conv_to_pool_streams_3", "role": "full_n" }} , 
  	{ "name": "conv_to_pool_streams_3_write", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "conv_to_pool_streams_3", "role": "write" }}  ]}
 
@@ -112,26 +117,26 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "pad_img", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "w", "Type" : "None", "Direction" : "I"},
-			{"Name" : "w_33", "Type" : "None", "Direction" : "I"},
-			{"Name" : "w_34", "Type" : "None", "Direction" : "I"},
-			{"Name" : "w_35", "Type" : "None", "Direction" : "I"},
-			{"Name" : "w_36", "Type" : "None", "Direction" : "I"},
-			{"Name" : "w_37", "Type" : "None", "Direction" : "I"},
-			{"Name" : "w_38", "Type" : "None", "Direction" : "I"},
-			{"Name" : "w_39", "Type" : "None", "Direction" : "I"},
-			{"Name" : "w_40", "Type" : "None", "Direction" : "I"},
-			{"Name" : "biases_buf", "Type" : "None", "Direction" : "I"},
+			{"Name" : "w_13", "Type" : "None", "Direction" : "I"},
+			{"Name" : "w_3", "Type" : "None", "Direction" : "I"},
+			{"Name" : "w_4", "Type" : "None", "Direction" : "I"},
+			{"Name" : "w_5", "Type" : "None", "Direction" : "I"},
+			{"Name" : "w_6", "Type" : "None", "Direction" : "I"},
+			{"Name" : "w_7", "Type" : "None", "Direction" : "I"},
+			{"Name" : "w_8", "Type" : "None", "Direction" : "I"},
+			{"Name" : "w_9", "Type" : "None", "Direction" : "I"},
+			{"Name" : "conv5", "Type" : "None", "Direction" : "I"},
 			{"Name" : "conv_to_pool_streams_3", "Type" : "Fifo", "Direction" : "O",
 				"BlockSignal" : [
 					{"Name" : "conv_to_pool_streams_3_blk_n", "Type" : "RtlSignal"}]}],
 		"Loop" : [
 			{"Name" : "conv_for_rows_win_for_rows_win_for_cols", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "5", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter16", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter16", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fadd_32ns_32ns_32_7_full_dsp_1_U95", "Parent" : "0"},
-	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fadd_32ns_32ns_32_7_full_dsp_1_U96", "Parent" : "0"},
-	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fmul_32ns_32ns_32_4_max_dsp_1_U97", "Parent" : "0"},
-	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fmul_32ns_32ns_32_4_max_dsp_1_U98", "Parent" : "0"},
-	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fcmp_32ns_32ns_1_2_no_dsp_1_U99", "Parent" : "0"},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fadd_32ns_32ns_32_7_full_dsp_1_U126", "Parent" : "0"},
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fadd_32ns_32ns_32_7_full_dsp_1_U127", "Parent" : "0"},
+	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fmul_32ns_32ns_32_4_max_dsp_1_U128", "Parent" : "0"},
+	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fmul_32ns_32ns_32_4_max_dsp_1_U129", "Parent" : "0"},
+	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fcmp_32ns_32ns_1_2_no_dsp_1_U130", "Parent" : "0"},
 	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.flow_control_loop_pipe_sequential_init_U", "Parent" : "0"}]}
 
 
@@ -139,15 +144,15 @@ set ArgLastReadFirstWriteLatency {
 	convolution_3_Pipeline_conv_for_rows_win_for_rows_win_for_cols {
 		pad_img {Type I LastRead 7 FirstWrite -1}
 		w {Type I LastRead 0 FirstWrite -1}
-		w_33 {Type I LastRead 0 FirstWrite -1}
-		w_34 {Type I LastRead 0 FirstWrite -1}
-		w_35 {Type I LastRead 0 FirstWrite -1}
-		w_36 {Type I LastRead 0 FirstWrite -1}
-		w_37 {Type I LastRead 0 FirstWrite -1}
-		w_38 {Type I LastRead 0 FirstWrite -1}
-		w_39 {Type I LastRead 0 FirstWrite -1}
-		w_40 {Type I LastRead 0 FirstWrite -1}
-		biases_buf {Type I LastRead 0 FirstWrite -1}
+		w_13 {Type I LastRead 0 FirstWrite -1}
+		w_3 {Type I LastRead 0 FirstWrite -1}
+		w_4 {Type I LastRead 0 FirstWrite -1}
+		w_5 {Type I LastRead 0 FirstWrite -1}
+		w_6 {Type I LastRead 0 FirstWrite -1}
+		w_7 {Type I LastRead 0 FirstWrite -1}
+		w_8 {Type I LastRead 0 FirstWrite -1}
+		w_9 {Type I LastRead 0 FirstWrite -1}
+		conv5 {Type I LastRead 0 FirstWrite -1}
 		conv_to_pool_streams_3 {Type O LastRead -1 FirstWrite 80}}}
 
 set hasDtUnsupportedChannel 0
@@ -164,14 +169,14 @@ set PipelineEnableSignalInfo {[
 set Spec2ImplPortList { 
 	pad_img { ap_memory {  { pad_img_address0 mem_address 1 10 }  { pad_img_ce0 mem_ce 1 1 }  { pad_img_q0 mem_dout 0 32 }  { pad_img_address1 MemPortADDR2 1 10 }  { pad_img_ce1 MemPortCE2 1 1 }  { pad_img_q1 MemPortDOUT2 0 32 } } }
 	w { ap_none {  { w in_data 0 32 } } }
-	w_33 { ap_none {  { w_33 in_data 0 32 } } }
-	w_34 { ap_none {  { w_34 in_data 0 32 } } }
-	w_35 { ap_none {  { w_35 in_data 0 32 } } }
-	w_36 { ap_none {  { w_36 in_data 0 32 } } }
-	w_37 { ap_none {  { w_37 in_data 0 32 } } }
-	w_38 { ap_none {  { w_38 in_data 0 32 } } }
-	w_39 { ap_none {  { w_39 in_data 0 32 } } }
-	w_40 { ap_none {  { w_40 in_data 0 32 } } }
-	biases_buf { ap_none {  { biases_buf in_data 0 32 } } }
-	conv_to_pool_streams_3 { ap_fifo {  { conv_to_pool_streams_3_din fifo_data 1 32 }  { conv_to_pool_streams_3_full_n fifo_status 0 1 }  { conv_to_pool_streams_3_write fifo_update 1 1 } } }
+	w_13 { ap_none {  { w_13 in_data 0 32 } } }
+	w_3 { ap_none {  { w_3 in_data 0 32 } } }
+	w_4 { ap_none {  { w_4 in_data 0 32 } } }
+	w_5 { ap_none {  { w_5 in_data 0 32 } } }
+	w_6 { ap_none {  { w_6 in_data 0 32 } } }
+	w_7 { ap_none {  { w_7 in_data 0 32 } } }
+	w_8 { ap_none {  { w_8 in_data 0 32 } } }
+	w_9 { ap_none {  { w_9 in_data 0 32 } } }
+	conv5 { ap_none {  { conv5 in_data 0 32 } } }
+	conv_to_pool_streams_3 { ap_fifo {  { conv_to_pool_streams_3_din fifo_port_we 1 32 }  { conv_to_pool_streams_3_num_data_valid fifo_status_num_data_valid 0 11 }  { conv_to_pool_streams_3_fifo_cap fifo_update 0 11 }  { conv_to_pool_streams_3_full_n fifo_status 0 1 }  { conv_to_pool_streams_3_write fifo_data 1 1 } } }
 }
