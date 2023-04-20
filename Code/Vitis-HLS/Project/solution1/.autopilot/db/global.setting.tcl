@@ -44,7 +44,7 @@ set SCTraceOption all
 set TargetInfo xc7a200t:-fbg484:-1
 set SourceFiles {sc {} c {../../cnn.cc ../../conv.cc ../../dense.cc ../../flat.cc ../../pool.cc ../../utils.cc}}
 set SourceFlags {sc {} c {{} {} {} {} {} {}}}
-set DirectiveFile /home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS/Project/solution1/solution1.directive
+set DirectiveFile D:/Codefield/HLS-CNN/HLS-CNN/Code/Vitis-HLS/Project/solution1/solution1.directive
 set TBFiles {verilog {../../cnn_tb.cc ../../../Data} bc {../../cnn_tb.cc ../../../Data} sc {../../cnn_tb.cc ../../../Data} vhdl {../../cnn_tb.cc ../../../Data} c {} cas {../../cnn_tb.cc ../../../Data}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}

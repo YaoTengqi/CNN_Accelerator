@@ -5,12 +5,12 @@
 
 #include <cstdio>
 #include <ctime>
+#include <cmath>
 
-#define N 1000
+#define N 100
 #define input_buf_num 10
 
-int
-read_images (const char * file, float images [input_buf_num][IMG_ROWS][IMG_COLS])
+int read_images (const char * file, float images [input_buf_num][IMG_ROWS][IMG_COLS])
 {
   FILE *fp;
 
@@ -28,8 +28,7 @@ read_images (const char * file, float images [input_buf_num][IMG_ROWS][IMG_COLS]
   return fclose(fp);
 }
 
-int
-read_labels(const char * file, int labels[input_buf_num])
+int read_labels(const char * file, int labels[input_buf_num])
 {
   FILE *fp;
 
@@ -45,8 +44,7 @@ read_labels(const char * file, int labels[input_buf_num])
   return fclose(fp);
 }
 
-int
-get_max_prediction (float prediction [DIGITS])
+int get_max_prediction (float prediction [DIGITS])
 {
   int max_digit = 0;
   for (int i = 0; i < DIGITS; ++i)
@@ -55,6 +53,14 @@ get_max_prediction (float prediction [DIGITS])
       max_digit = i;
   }
   return max_digit;
+}
+
+int16_t quantize_data(float value, float value_scale) {
+    return round(value / value_scale);
+}
+
+float dequantize(int16_t quantized_value, float value_scale) {
+    return quantized_value * value_scale;
 }
 
 int main ()
@@ -67,6 +73,10 @@ int main ()
     return 1;
   }
 
+  // 定义量化参数
+  float weight_scale = 0.5; // 权重量化比例因子
+  float activation_scale = 0.2; // 激活值量化比例因子
+
   /**** Do N predictions. ****/
   double time = 0;
   int correct_predictions = 0;
@@ -78,34 +88,48 @@ int main ()
   /**** Read the weights to weight_buf ****/
   for (int f = 0; f < FILTERS; ++f)
   {
+#pragma HLS PIPELINE
     for (int kr = 0; kr < KRN_ROWS; ++kr)
     {
       for (int kc = 0; kc < KRN_COLS; ++kc)
       {
-        weight_buf[f][kr][kc] = conv_weights[f][kr][kc];
+//    	printf("conv_weights:%f\n",conv_weights[f][kr][kc]);
+    	int16_t quantized_weight = quantize_data(conv_weights[f][kr][kc], weight_scale);
+//    	printf("quantized_weight:%d\n",quantized_weight);
+    	weight_buf[f][kr][kc] = dequantize(quantized_weight, weight_scale);
+//    	printf("weight_buf:%f\n\n",weight_buf[f][kr][kc]);
+
+//    	weight_buf[f][kr][kc] = conv_weights[f][kr][kc];
+
       }
     }
   }
 
    /**** Read the biases to biases_buf ****/
     for (int f = 0; f < FILTERS; ++f){
-     biases_buf[f] = conv_biases[f];
+#pragma HLS PIPELINE
+     int16_t quantized_bias = quantize_data(conv_biases[f], activation_scale);
+     biases_buf[f] = dequantize(quantized_bias, activation_scale);
+
+//     biases_buf[f] = conv_biases[f];
     }
 
   /**** Read the images to images_buf ****/
+
   for (int i = 0; i < N / input_buf_num; i++){
-    if (0 != read_images("/home/ytq/codeField/undergraduate/HLS-CNN/Code/Data/in.dat", images_buf))
+#pragma HLS PIPELINE
+    if (0 != read_images("D:\\Codefield\\HLS-CNN\\HLS-CNN\\Code\\Data\\in.dat", images_buf))
     {
-      printf("Error: can't open file ``../Data/in.dat''\n");
+      printf("Error: can't open file ``D:\\Codefield\\HLS-CNN\\HLS-CNN\\Code\\Data\\in.dat''\n");
       return 1;
     }
 
 
   /**** Read expected labels. ****/
   int labels[input_buf_num];
-  if (0 != read_labels("/home/ytq/codeField/undergraduate/HLS-CNN/Code/Data/out.dat", labels))
+  if (0 != read_labels("D:\\Codefield\\HLS-CNN\\HLS-CNN\\Code\\Data\\out.dat", labels))
   {
-    printf("Error: can't open file ``../Data/out.dat''\n");
+    printf("Error: can't open file ``D:\\Codefield\\HLS-CNN\\HLS-CNN\\Code\\Data\\out.dat''\n");
     return 1;
   }
 
@@ -137,6 +161,7 @@ int main ()
 
 }
 
+
   double
   correct_predictions_perc = (double)correct_predictions * 100.0 / (double)N;
   printf("Total predictions: %d\n", N);
@@ -145,4 +170,6 @@ int main ()
 
   return 0;
 }
+
+
 

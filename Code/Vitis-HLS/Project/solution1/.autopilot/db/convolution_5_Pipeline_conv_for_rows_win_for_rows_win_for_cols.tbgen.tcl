@@ -9,7 +9,6 @@ set isOneStateSeq 0
 set ProfileFlag 0
 set StallSigGenFlag 0
 set isEnableWaveformDebug 1
-set hasInterrupt 0
 set C_modelName {convolution.5_Pipeline_conv_for_rows_win_for_rows_win_for_cols}
 set C_modelType { void 0 }
 set C_modelArgList {
@@ -40,7 +39,7 @@ set C_modelArgMapList {[
  	{ "Name" : "biases_buf", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
  	{ "Name" : "conv_to_pool_streams_5", "interface" : "fifo", "bitwidth" : 32, "direction" : "WRITEONLY"} ]}
 # RTL Port declarations: 
-set portNum 27
+set portNum 25
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
@@ -65,8 +64,6 @@ set portList {
 	{ w_24 sc_in sc_lv 32 signal 9 } 
 	{ biases_buf sc_in sc_lv 32 signal 10 } 
 	{ conv_to_pool_streams_5_din sc_out sc_lv 32 signal 11 } 
-	{ conv_to_pool_streams_5_num_data_valid sc_in sc_lv 11 signal 11 } 
-	{ conv_to_pool_streams_5_fifo_cap sc_in sc_lv 11 signal 11 } 
 	{ conv_to_pool_streams_5_full_n sc_in sc_logic 1 signal 11 } 
 	{ conv_to_pool_streams_5_write sc_out sc_logic 1 signal 11 } 
 }
@@ -94,8 +91,6 @@ set NewPortList {[
  	{ "name": "w_24", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "w_24", "role": "default" }} , 
  	{ "name": "biases_buf", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "biases_buf", "role": "default" }} , 
  	{ "name": "conv_to_pool_streams_5_din", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "conv_to_pool_streams_5", "role": "din" }} , 
- 	{ "name": "conv_to_pool_streams_5_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "conv_to_pool_streams_5", "role": "num_data_valid" }} , 
- 	{ "name": "conv_to_pool_streams_5_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "conv_to_pool_streams_5", "role": "fifo_cap" }} , 
  	{ "name": "conv_to_pool_streams_5_full_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "conv_to_pool_streams_5", "role": "full_n" }} , 
  	{ "name": "conv_to_pool_streams_5_write", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "conv_to_pool_streams_5", "role": "write" }}  ]}
 
@@ -178,5 +173,5 @@ set Spec2ImplPortList {
 	w_23 { ap_none {  { w_23 in_data 0 32 } } }
 	w_24 { ap_none {  { w_24 in_data 0 32 } } }
 	biases_buf { ap_none {  { biases_buf in_data 0 32 } } }
-	conv_to_pool_streams_5 { ap_fifo {  { conv_to_pool_streams_5_din fifo_port_we 1 32 }  { conv_to_pool_streams_5_num_data_valid fifo_status_num_data_valid 0 11 }  { conv_to_pool_streams_5_fifo_cap fifo_update 0 11 }  { conv_to_pool_streams_5_full_n fifo_status 0 1 }  { conv_to_pool_streams_5_write fifo_data 1 1 } } }
+	conv_to_pool_streams_5 { ap_fifo {  { conv_to_pool_streams_5_din fifo_data 1 32 }  { conv_to_pool_streams_5_full_n fifo_status 0 1 }  { conv_to_pool_streams_5_write fifo_update 1 1 } } }
 }

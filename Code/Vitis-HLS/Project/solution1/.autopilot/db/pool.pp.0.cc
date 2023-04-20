@@ -1,11 +1,11 @@
 # 1 "pool.cc"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
-# 375 "<built-in>" 3
+# 395 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "/home/ytq/source/vivado/Vitis_HLS/2022.2/common/technology/autopilot/etc/autopilot_ssdm_op.h" 1
-# 108 "/home/ytq/source/vivado/Vitis_HLS/2022.2/common/technology/autopilot/etc/autopilot_ssdm_op.h"
+# 1 "D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot\\etc/autopilot_ssdm_op.h" 1
+# 154 "D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot\\etc/autopilot_ssdm_op.h"
 extern "C" {
 
 
@@ -33,9 +33,7 @@ extern "C" {
     void _ssdm_op_WriteReq(...) __attribute__ ((nothrow)) __attribute__((overloadable));
     void _ssdm_op_Write(...) __attribute__ ((nothrow)) __attribute__((overloadable));
     unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_NbReadReq(...) __attribute__ ((nothrow)) __attribute__((overloadable));
-    unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_CanReadReq(...) __attribute__ ((nothrow)) __attribute__((overloadable));
     unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_NbWriteReq(...) __attribute__ ((nothrow)) __attribute__((overloadable));
-    unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_CanWriteReq(...) __attribute__ ((nothrow)) __attribute__((overloadable));
 
 
 
@@ -96,6 +94,7 @@ extern "C" {
     void _ssdm_op_SpecFUCore(...) __attribute__ ((nothrow)) __attribute__((overloadable));
     void _ssdm_op_SpecIFCore(...) __attribute__ ((nothrow)) __attribute__((overloadable));
     void _ssdm_op_SpecIPCore(...) __attribute__ ((nothrow)) __attribute__((overloadable));
+    void _ssdm_op_SpecKeepValue(...) __attribute__ ((nothrow)) __attribute__((overloadable));
     void _ssdm_op_SpecMemCore(...) __attribute__ ((nothrow)) __attribute__((overloadable));
 
     void _ssdm_op_SpecExt(...) __attribute__ ((nothrow)) __attribute__((overloadable));
@@ -162,12 +161,12 @@ extern "C" {
 # 1 "./../Headers/definitions.h" 1
 # 4 "./pool.hh" 2
 
-# 1 "/home/ytq/source/vivado/Vitis_HLS/2022.2/common/technology/autopilot/hls_stream.h" 1
-# 15 "/home/ytq/source/vivado/Vitis_HLS/2022.2/common/technology/autopilot/hls_stream.h"
-# 1 "/home/ytq/source/vivado/Vitis_HLS/2022.2/common/technology/autopilot/hls_stream_39.h" 1
-# 26 "/home/ytq/source/vivado/Vitis_HLS/2022.2/common/technology/autopilot/hls_stream_39.h"
+# 1 "D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot\\hls_stream.h" 1
+# 61 "D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot\\hls_stream.h"
+# 1 "D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h" 1
+# 72 "D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h"
 namespace hls {
-# 52 "/home/ytq/source/vivado/Vitis_HLS/2022.2/common/technology/autopilot/hls_stream_39.h"
+# 94 "D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h"
 template<typename __STREAM_T__, int DEPTH=0>
 class stream;
 
@@ -175,67 +174,66 @@ template<typename __STREAM_T__>
 class stream<__STREAM_T__, 0>
 {
   public:
-    using value_type = __STREAM_T__;
 
-    inline __attribute__((always_inline)) __attribute__((nodebug)) stream() {
+    inline __attribute__((always_inline)) stream() {
       __fpga_set_stream_depth(&this->V, 0);
     }
 
-    inline __attribute__((always_inline)) __attribute__((nodebug)) stream(const char* name) {
+    inline __attribute__((always_inline)) stream(const char* name) {
       (void)(name);
       __fpga_set_stream_depth(&this->V, 0);
     }
 
 
   private:
-    inline __attribute__((always_inline)) __attribute__((nodebug)) stream(const stream< __STREAM_T__ >& chn):V(chn.V) {
+    inline __attribute__((always_inline)) stream(const stream< __STREAM_T__ >& chn):V(chn.V) {
     }
 
-    inline __attribute__((always_inline)) __attribute__((nodebug)) stream& operator= (const stream< __STREAM_T__ >& chn) {
+    inline __attribute__((always_inline)) stream& operator= (const stream< __STREAM_T__ >& chn) {
         V = chn.V;
         return *this;
     }
 
   public:
 
-    inline __attribute__((always_inline)) __attribute__((nodebug)) void operator >> (__STREAM_T__& rdata) {
+    inline __attribute__((always_inline)) void operator >> (__STREAM_T__& rdata) {
         read(rdata);
     }
 
-    inline __attribute__((always_inline)) __attribute__((nodebug)) void operator << (const __STREAM_T__& wdata) {
+    inline __attribute__((always_inline)) void operator << (const __STREAM_T__& wdata) {
         write(wdata);
     }
 
 
   public:
 
-    inline __attribute__((always_inline)) __attribute__((nodebug)) bool empty() const {
+    inline __attribute__((always_inline)) bool empty() const {
         return !__fpga_fifo_not_empty(&V);
     }
 
-    inline __attribute__((always_inline)) __attribute__((nodebug)) bool full() const {
+    inline __attribute__((always_inline)) bool full() const {
         return !__fpga_fifo_not_full(&V);
     }
 
 
-    inline __attribute__((always_inline)) __attribute__((nodebug)) void read(__STREAM_T__& dout) {
+    inline __attribute__((always_inline)) void read(__STREAM_T__& dout) {
         __fpga_fifo_pop(&V, &dout);
     }
 
 
-    inline __attribute__((noinline)) __attribute__((nodebug)) bool read_dep(__STREAM_T__& dout, volatile bool flag) {
+    inline __attribute__((noinline)) bool read_dep(__STREAM_T__& dout, volatile bool flag) {
         __fpga_fifo_pop(&V, &dout);
         return flag;
     }
 
-    inline __attribute__((always_inline)) __attribute__((nodebug)) __STREAM_T__ read() {
+    inline __attribute__((always_inline)) __STREAM_T__ read() {
         __STREAM_T__ tmp;
         read(tmp);
         return tmp;
     }
 
 
-    inline __attribute__((always_inline)) __attribute__((nodebug)) bool read_nb(__STREAM_T__& dout) {
+    inline __attribute__((always_inline)) bool read_nb(__STREAM_T__& dout) {
         __STREAM_T__ tmp;
 
         if (__fpga_fifo_nb_pop(&V, &tmp)) {
@@ -247,29 +245,19 @@ class stream<__STREAM_T__, 0>
     }
 
 
-    inline __attribute__((always_inline)) __attribute__((nodebug)) void write(const __STREAM_T__& din) {
+    inline __attribute__((always_inline)) void write(const __STREAM_T__& din) {
         __fpga_fifo_push(&V, &din);
     }
 
 
-    inline __attribute__((noinline)) __attribute__((nodebug)) bool write_dep(const __STREAM_T__& din, volatile bool flag) {
+    inline __attribute__((noinline)) bool write_dep(const __STREAM_T__& din, volatile bool flag) {
         __fpga_fifo_push(&V, &din);
         return flag;
     }
 
 
-    inline __attribute__((always_inline)) __attribute__((nodebug)) bool write_nb(const __STREAM_T__& din) {
+    inline __attribute__((always_inline)) bool write_nb(const __STREAM_T__& din) {
         return __fpga_fifo_nb_push(&V, &din);
-    }
-
-
-    inline __attribute__((always_inline)) __attribute__((nodebug)) unsigned size() const {
-        return __fpga_fifo_size(&V);
-    }
-
-
-    inline __attribute__((always_inline)) __attribute__((nodebug)) unsigned capacity() const {
-        return __fpga_fifo_capacity(&V);
     }
 
 
@@ -282,17 +270,17 @@ class stream<__STREAM_T__, 0>
 template<typename __STREAM_T__, int DEPTH>
 class stream : public stream<__STREAM_T__, 0> {
   public:
-    inline __attribute__((always_inline)) __attribute__((nodebug)) stream() {
+    inline __attribute__((always_inline)) stream() {
       __fpga_set_stream_depth(&this->V, DEPTH);
     }
 
-    inline __attribute__((always_inline)) __attribute__((nodebug)) stream(const char* name) {
+    inline __attribute__((always_inline)) stream(const char* name) {
       (void)(name);
       __fpga_set_stream_depth(&this->V, DEPTH);
     }
 };
 }
-# 16 "/home/ytq/source/vivado/Vitis_HLS/2022.2/common/technology/autopilot/hls_stream.h" 2
+# 62 "D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot\\hls_stream.h" 2
 # 6 "./pool.hh" 2
 
 void
@@ -303,11 +291,11 @@ max_pooling_layer
 );
 # 2 "pool.cc" 2
 
-# 1 "/home/ytq/source/vivado/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cfloat" 1 3
-# 40 "/home/ytq/source/vivado/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cfloat" 3
+# 1 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\6.2.0\\include\\c++\\cfloat" 1 3
+# 40 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\6.2.0\\include\\c++\\cfloat" 3
 
-# 1 "/home/ytq/source/vivado/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu/bits/c++config.h" 1 3
-# 236 "/home/ytq/source/vivado/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu/bits/c++config.h" 3
+# 1 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\6.2.0\\include\\c++\\x86_64-w64-mingw32\\bits/c++config.h" 1 3
+# 196 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\6.2.0\\include\\c++\\x86_64-w64-mingw32\\bits/c++config.h" 3
 namespace std
 {
   typedef long unsigned int size_t;
@@ -317,7 +305,7 @@ namespace std
   typedef decltype(nullptr) nullptr_t;
 
 }
-# 258 "/home/ytq/source/vivado/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu/bits/c++config.h" 3
+# 218 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\6.2.0\\include\\c++\\x86_64-w64-mingw32\\bits/c++config.h" 3
 namespace std
 {
   inline namespace __cxx11 __attribute__((__abi_tag__ ("cxx11"))) { }
@@ -326,36 +314,231 @@ namespace __gnu_cxx
 {
   inline namespace __cxx11 __attribute__((__abi_tag__ ("cxx11"))) { }
 }
-# 508 "/home/ytq/source/vivado/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu/bits/c++config.h" 3
-# 1 "/home/ytq/source/vivado/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu/bits/os_defines.h" 1 3
-# 39 "/home/ytq/source/vivado/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu/bits/os_defines.h" 3
-# 1 "/usr/include/features.h" 1 3 4
-# 402 "/usr/include/features.h" 3 4
-# 1 "/usr/include/stdc-predef.h" 1 3 4
-# 403 "/usr/include/features.h" 2 3 4
-# 424 "/usr/include/features.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 1 3 4
-# 427 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
-# 428 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/long-double.h" 1 3 4
-# 429 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 2 3 4
-# 425 "/usr/include/features.h" 2 3 4
-# 448 "/usr/include/features.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 1 3 4
-# 10 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/gnu/stubs-64.h" 1 3 4
-# 11 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 2 3 4
-# 449 "/usr/include/features.h" 2 3 4
-# 40 "/home/ytq/source/vivado/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu/bits/os_defines.h" 2 3
-# 509 "/home/ytq/source/vivado/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu/bits/c++config.h" 2 3
+# 495 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\6.2.0\\include\\c++\\x86_64-w64-mingw32\\bits/c++config.h" 3
+# 1 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\6.2.0\\include\\c++\\x86_64-w64-mingw32\\bits/os_defines.h" 1 3
+# 496 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\6.2.0\\include\\c++\\x86_64-w64-mingw32\\bits/c++config.h" 2 3
 
 
-# 1 "/home/ytq/source/vivado/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu/bits/cpu_defines.h" 1 3
-# 512 "/home/ytq/source/vivado/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu/bits/c++config.h" 2 3
-# 42 "/home/ytq/source/vivado/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cfloat" 2 3
-# 1 "/home/ytq/source/vivado/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/float.h" 1 3
-# 43 "/home/ytq/source/vivado/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cfloat" 2 3
+# 1 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\6.2.0\\include\\c++\\x86_64-w64-mingw32\\bits/cpu_defines.h" 1 3
+# 499 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\6.2.0\\include\\c++\\x86_64-w64-mingw32\\bits/c++config.h" 2 3
+# 42 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\6.2.0\\include\\c++\\cfloat" 2 3
+# 1 "D:\\vivado\\Vitis_HLS\\2021.2\\win64\\tools\\clang-3.9-csynth\\lib\\clang\\7.0.0\\include\\float.h" 1 3
+# 45 "D:\\vivado\\Vitis_HLS\\2021.2\\win64\\tools\\clang-3.9-csynth\\lib\\clang\\7.0.0\\include\\float.h" 3
+# 1 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\float.h" 1 3
+# 122 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\float.h" 3
+# 1 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\crtdefs.h" 1 3
+# 10 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\crtdefs.h" 3
+# 1 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw.h" 1 3
+# 12 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw.h" 3
+# 1 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include/_mingw_mac.h" 1 3
+# 13 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw.h" 2 3
+# 1 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include/_mingw_secapi.h" 1 3
+# 44 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include/_mingw_secapi.h" 3
+extern "C++" {
+template <bool __test, typename __dsttype>
+  struct __if_array;
+template <typename __dsttype>
+  struct __if_array <true, __dsttype> {
+    typedef __dsttype __type;
+};
+}
+# 14 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw.h" 2 3
+# 275 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw.h" 3
+# 1 "D:\\vivado\\Vitis_HLS\\2021.2\\win64\\tools\\clang-3.9-csynth\\lib\\clang\\7.0.0\\include\\vadefs.h" 1 3
+# 26 "D:\\vivado\\Vitis_HLS\\2021.2\\win64\\tools\\clang-3.9-csynth\\lib\\clang\\7.0.0\\include\\vadefs.h" 3
+# 1 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\vadefs.h" 1 3
+
+
+
+
+
+
+
+
+# 1 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw.h" 1 3
+# 565 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw.h" 3
+# 1 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include/sdks/_mingw_directx.h" 1 3
+# 566 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw.h" 2 3
+# 1 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include/sdks/_mingw_ddk.h" 1 3
+# 567 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw.h" 2 3
+# 10 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\vadefs.h" 2 3
+
+
+
+
+#pragma pack(push,_CRT_PACKING)
+
+
+
+extern "C" {
+
+
+
+
+
+  typedef __builtin_va_list __gnuc_va_list;
+
+
+
+
+
+
+  typedef __gnuc_va_list va_list;
+# 99 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\vadefs.h" 3
+}
+
+
+
+#pragma pack(pop)
+# 27 "D:\\vivado\\Vitis_HLS\\2021.2\\win64\\tools\\clang-3.9-csynth\\lib\\clang\\7.0.0\\include\\vadefs.h" 2 3
+# 276 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw.h" 2 3
+# 534 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw.h" 3
+extern "C" {
+# 548 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw.h" 3
+const char *__mingw_get_crt_info (void);
+
+
+}
+# 11 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\crtdefs.h" 2 3
+
+
+
+
+#pragma pack(push,_CRT_PACKING)
+# 35 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\crtdefs.h" 3
+__extension__ typedef unsigned long size_t;
+# 45 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\crtdefs.h" 3
+__extension__ typedef long ssize_t;
+
+
+
+
+
+
+typedef size_t rsize_t;
+# 62 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\crtdefs.h" 3
+__extension__ typedef long intptr_t;
+# 75 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\crtdefs.h" 3
+__extension__ typedef unsigned long uintptr_t;
+# 88 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\crtdefs.h" 3
+__extension__ typedef long ptrdiff_t;
+# 106 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\crtdefs.h" 3
+typedef unsigned short wint_t;
+typedef unsigned short wctype_t;
+
+
+
+
+
+typedef int errno_t;
+
+
+
+
+typedef long __time32_t;
+
+
+
+
+__extension__ typedef long __time64_t;
+# 138 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\crtdefs.h" 3
+typedef __time64_t time_t;
+# 422 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\crtdefs.h" 3
+struct threadlocaleinfostruct;
+struct threadmbcinfostruct;
+typedef struct threadlocaleinfostruct *pthreadlocinfo;
+typedef struct threadmbcinfostruct *pthreadmbcinfo;
+struct __lc_time_data;
+
+typedef struct localeinfo_struct {
+  pthreadlocinfo locinfo;
+  pthreadmbcinfo mbcinfo;
+} _locale_tstruct,*_locale_t;
+
+
+
+typedef struct tagLC_ID {
+  unsigned short wLanguage;
+  unsigned short wCountry;
+  unsigned short wCodePage;
+} LC_ID,*LPLC_ID;
+
+
+
+
+typedef struct threadlocaleinfostruct {
+  int refcount;
+  unsigned int lc_codepage;
+  unsigned int lc_collate_cp;
+  unsigned long lc_handle[6];
+  LC_ID lc_id[6];
+  struct {
+    char *locale;
+    wchar_t *wlocale;
+    int *refcount;
+    int *wrefcount;
+  } lc_category[6];
+  int lc_clike;
+  int mb_cur_max;
+  int *lconv_intl_refcount;
+  int *lconv_num_refcount;
+  int *lconv_mon_refcount;
+  struct lconv *lconv;
+  int *ctype1_refcount;
+  unsigned short *ctype1;
+  const unsigned short *pctype;
+  const unsigned char *pclmap;
+  const unsigned char *pcumap;
+  struct __lc_time_data *lc_time_curr;
+} threadlocinfo;
+
+
+
+
+
+
+
+#pragma pack(pop)
+# 123 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\float.h" 2 3
+# 238 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\float.h" 3
+extern "C" {
+
+
+
+
+
+__attribute__ ((__dllimport__)) unsigned int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _controlfp (unsigned int unNew, unsigned int unMask) ;
+__attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _controlfp_s(unsigned int *_CurrentState, unsigned int _NewValue, unsigned int _Mask);
+__attribute__ ((__dllimport__)) unsigned int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _control87 (unsigned int unNew, unsigned int unMask);
+
+
+__attribute__ ((__dllimport__)) unsigned int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _clearfp (void);
+__attribute__ ((__dllimport__)) unsigned int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _statusfp (void);
+# 264 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\float.h" 3
+void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fpreset (void);
+void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) fpreset (void);
+
+
+__attribute__ ((__dllimport__)) int * __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) __fpecode(void);
+# 278 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\float.h" 3
+__attribute__ ((__dllimport__)) double __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _chgsign (double _X);
+__attribute__ ((__dllimport__)) double __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _copysign (double _Number,double _Sign);
+__attribute__ ((__dllimport__)) double __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _logb (double);
+__attribute__ ((__dllimport__)) double __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _nextafter (double, double);
+__attribute__ ((__dllimport__)) double __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _scalb (double, long);
+
+__attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _finite (double);
+__attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _fpclass (double);
+__attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _isnan (double);
+
+
+extern long double __attribute__((__cdecl__)) _chgsignl (long double);
+
+
+
+}
+# 46 "D:\\vivado\\Vitis_HLS\\2021.2\\win64\\tools\\clang-3.9-csynth\\lib\\clang\\7.0.0\\include\\float.h" 2 3
+# 43 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\6.2.0\\include\\c++\\cfloat" 2 3
 # 4 "pool.cc" 2
 
 void
@@ -373,7 +556,6 @@ max_pooling
     pool_for_cols:
     for(int c = 0; c < 28; c += 2)
     {
-#line 14 "/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS/Project/solution1/directives.tcl"
 #pragma HLSDIRECTIVE PIPELINE II=4
 # 19 "pool.cc"
 
@@ -401,7 +583,6 @@ max_pooling_layer
   hls::stream<float> pool_to_flat_streams[8]
 )
 {
-#line 9 "/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS/Project/solution1/directives.tcl"
 #pragma HLSDIRECTIVE DATAFLOW
 # 43 "pool.cc"
 

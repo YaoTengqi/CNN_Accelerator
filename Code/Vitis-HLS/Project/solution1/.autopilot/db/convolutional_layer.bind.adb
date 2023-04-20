@@ -34,7 +34,7 @@
 						<coreName>RAM_1WnR</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1528853351</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -70,7 +70,7 @@
 						<coreName>RAM_1WnR</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1953391988</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -106,7 +106,7 @@
 						<coreName>RAM_1WnR</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4228300630</coreId>
+						<coreId>1953391988</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -142,7 +142,7 @@
 						<coreName>RAM_1WnR</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
+						<coreId>1953391988</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -178,7 +178,7 @@
 						<coreName>RAM_1WnR</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1953391988</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -214,7 +214,7 @@
 						<coreName>RAM_1WnR</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3091434192</coreId>
+						<coreId>1953391988</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -250,7 +250,7 @@
 						<coreName>RAM_1WnR</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3085310000</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -286,7 +286,7 @@
 						<coreName>RAM_1WnR</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1869832047</coreId>
+						<coreId>4228300630</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -322,7 +322,7 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3094603168</coreId>
+						<coreId>1702125940</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -358,7 +358,7 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3093736240</coreId>
+						<coreId>1953391988</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -394,7 +394,7 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>116</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -430,7 +430,7 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3090131760</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -466,7 +466,7 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3092335136</coreId>
+						<coreId>7</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -502,7 +502,7 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3090132016</coreId>
+						<coreId>1953391988</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -538,7 +538,7 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3079081120</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -574,7 +574,7 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3087586528</coreId>
+						<coreId>1953391988</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -610,7 +610,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3091782480</coreId>
+						<coreId>1953391988</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -646,7 +646,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3995503816</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -682,7 +682,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3086304976</coreId>
+						<coreId>1953391988</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -718,7 +718,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3091782480</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -754,7 +754,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3091782480</coreId>
+						<coreId>1701999731</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -790,7 +790,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3091260032</coreId>
+						<coreId>1547673539</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -826,7 +826,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1330007625</coreId>
+						<coreId>1701999731</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -862,7 +862,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3091344816</coreId>
+						<coreId>1547431200</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -895,10 +895,10 @@
 						<control></control>
 						<opType></opType>
 						<implIndex></implIndex>
-						<coreName></coreName>
+						<coreName>FIFO</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3091344816</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -931,10 +931,10 @@
 						<control></control>
 						<opType></opType>
 						<implIndex></implIndex>
-						<coreName></coreName>
+						<coreName>FIFO</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>172</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -967,10 +967,10 @@
 						<control></control>
 						<opType></opType>
 						<implIndex></implIndex>
-						<coreName></coreName>
+						<coreName>FIFO</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1330007625</coreId>
+						<coreId>1547421640</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1003,10 +1003,10 @@
 						<control></control>
 						<opType></opType>
 						<implIndex></implIndex>
-						<coreName></coreName>
+						<coreName>FIFO</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3091349072</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1039,10 +1039,10 @@
 						<control></control>
 						<opType></opType>
 						<implIndex></implIndex>
-						<coreName></coreName>
+						<coreName>FIFO</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3087465792</coreId>
+						<coreId>1701999731</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1075,10 +1075,10 @@
 						<control></control>
 						<opType></opType>
 						<implIndex></implIndex>
-						<coreName></coreName>
+						<coreName>FIFO</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3091344816</coreId>
+						<coreId>1953391988</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1111,10 +1111,10 @@
 						<control></control>
 						<opType></opType>
 						<implIndex></implIndex>
-						<coreName></coreName>
+						<coreName>FIFO</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3091349072</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1147,10 +1147,10 @@
 						<control></control>
 						<opType></opType>
 						<implIndex></implIndex>
-						<coreName></coreName>
+						<coreName>FIFO</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1330007552</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1174,24 +1174,24 @@
 						<id>42</id>
 						<name>biases_buf_7_read</name>
 						<fileName>conv.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
-						<lineNumber>85</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
+						<lineNumber>113</lineNumber>
+						<contextFuncName>convolutional_layer</contextFuncName>
+						<contextNormFuncName>convolutional_layer</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="10" tracking_level="0" version="0">
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second class_id="11" tracking_level="0" version="0">
 									<count>1</count>
 									<item_version>0</item_version>
 									<item class_id="12" tracking_level="0" version="0">
 										<first class_id="13" tracking_level="0" version="0">
 											<first>conv.cc</first>
-											<second></second>
+											<second>convolutional_layer</second>
 										</first>
-										<second>85</second>
+										<second>113</second>
 									</item>
 								</second>
 							</item>
@@ -1204,7 +1204,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3092153376</coreId>
+						<coreId>1544735936</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1231,24 +1231,24 @@
 						<id>43</id>
 						<name>biases_buf_6_read</name>
 						<fileName>conv.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
-						<lineNumber>85</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
+						<lineNumber>113</lineNumber>
+						<contextFuncName>convolutional_layer</contextFuncName>
+						<contextNormFuncName>convolutional_layer</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>conv.cc</first>
-											<second></second>
+											<second>convolutional_layer</second>
 										</first>
-										<second>85</second>
+										<second>113</second>
 									</item>
 								</second>
 							</item>
@@ -1261,7 +1261,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1414419794</coreId>
+						<coreId>1544742440</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1288,24 +1288,24 @@
 						<id>44</id>
 						<name>biases_buf_5_read</name>
 						<fileName>conv.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
-						<lineNumber>85</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
+						<lineNumber>113</lineNumber>
+						<contextFuncName>convolutional_layer</contextFuncName>
+						<contextNormFuncName>convolutional_layer</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>conv.cc</first>
-											<second></second>
+											<second>convolutional_layer</second>
 										</first>
-										<second>85</second>
+										<second>113</second>
 									</item>
 								</second>
 							</item>
@@ -1318,7 +1318,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3093898640</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1345,24 +1345,24 @@
 						<id>45</id>
 						<name>biases_buf_4_read</name>
 						<fileName>conv.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
-						<lineNumber>85</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
+						<lineNumber>113</lineNumber>
+						<contextFuncName>convolutional_layer</contextFuncName>
+						<contextNormFuncName>convolutional_layer</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>conv.cc</first>
-											<second></second>
+											<second>convolutional_layer</second>
 										</first>
-										<second>85</second>
+										<second>113</second>
 									</item>
 								</second>
 							</item>
@@ -1375,7 +1375,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3087676336</coreId>
+						<coreId>1544738496</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1402,24 +1402,24 @@
 						<id>46</id>
 						<name>biases_buf_3_read</name>
 						<fileName>conv.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
-						<lineNumber>85</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
+						<lineNumber>113</lineNumber>
+						<contextFuncName>convolutional_layer</contextFuncName>
+						<contextNormFuncName>convolutional_layer</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>conv.cc</first>
-											<second></second>
+											<second>convolutional_layer</second>
 										</first>
-										<second>85</second>
+										<second>113</second>
 									</item>
 								</second>
 							</item>
@@ -1432,7 +1432,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3091568752</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1459,24 +1459,24 @@
 						<id>47</id>
 						<name>biases_buf_2_read</name>
 						<fileName>conv.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
-						<lineNumber>85</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
+						<lineNumber>113</lineNumber>
+						<contextFuncName>convolutional_layer</contextFuncName>
+						<contextNormFuncName>convolutional_layer</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>conv.cc</first>
-											<second></second>
+											<second>convolutional_layer</second>
 										</first>
-										<second>85</second>
+										<second>113</second>
 									</item>
 								</second>
 							</item>
@@ -1489,7 +1489,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3089746336</coreId>
+						<coreId>7955712</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1516,24 +1516,24 @@
 						<id>48</id>
 						<name>biases_buf_1_read</name>
 						<fileName>conv.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
-						<lineNumber>85</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
+						<lineNumber>113</lineNumber>
+						<contextFuncName>convolutional_layer</contextFuncName>
+						<contextNormFuncName>convolutional_layer</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>conv.cc</first>
-											<second></second>
+											<second>convolutional_layer</second>
 										</first>
-										<second>85</second>
+										<second>113</second>
 									</item>
 								</second>
 							</item>
@@ -1546,7 +1546,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1634166092</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1573,24 +1573,24 @@
 						<id>49</id>
 						<name>biases_buf_0_read</name>
 						<fileName>conv.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
-						<lineNumber>85</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
+						<lineNumber>113</lineNumber>
+						<contextFuncName>convolutional_layer</contextFuncName>
+						<contextNormFuncName>convolutional_layer</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>conv.cc</first>
-											<second></second>
+											<second>convolutional_layer</second>
 										</first>
-										<second>85</second>
+										<second>113</second>
 									</item>
 								</second>
 							</item>
@@ -1603,7 +1603,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3087663472</coreId>
+						<coreId>1541624064</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1628,26 +1628,26 @@
 					<Obj>
 						<type>0</type>
 						<id>50</id>
-						<name>_ln85</name>
+						<name>_ln113</name>
 						<fileName>conv.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
-						<lineNumber>85</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
+						<lineNumber>113</lineNumber>
+						<contextFuncName>convolutional_layer</contextFuncName>
+						<contextNormFuncName>convolutional_layer</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>conv.cc</first>
-											<second></second>
+											<second>convolutional_layer</second>
 										</first>
-										<second>85</second>
+										<second>113</second>
 									</item>
 								</second>
 							</item>
@@ -1660,7 +1660,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3091761440</coreId>
+						<coreId>1663508592</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1688,26 +1688,26 @@
 					<Obj>
 						<type>0</type>
 						<id>51</id>
-						<name>_ln86</name>
+						<name>_ln114</name>
 						<fileName>conv.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
-						<lineNumber>86</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
+						<lineNumber>114</lineNumber>
+						<contextFuncName>convolutional_layer</contextFuncName>
+						<contextNormFuncName>convolutional_layer</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>conv.cc</first>
-											<second></second>
+											<second>convolutional_layer</second>
 										</first>
-										<second>86</second>
+										<second>114</second>
 									</item>
 								</second>
 							</item>
@@ -1720,7 +1720,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>835</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1748,26 +1748,26 @@
 					<Obj>
 						<type>0</type>
 						<id>52</id>
-						<name>_ln87</name>
+						<name>_ln115</name>
 						<fileName>conv.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
-						<lineNumber>87</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
+						<lineNumber>115</lineNumber>
+						<contextFuncName>convolutional_layer</contextFuncName>
+						<contextNormFuncName>convolutional_layer</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>conv.cc</first>
-											<second></second>
+											<second>convolutional_layer</second>
 										</first>
-										<second>87</second>
+										<second>115</second>
 									</item>
 								</second>
 							</item>
@@ -1780,7 +1780,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3091788752</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1808,26 +1808,26 @@
 					<Obj>
 						<type>0</type>
 						<id>53</id>
-						<name>_ln88</name>
+						<name>_ln116</name>
 						<fileName>conv.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
-						<lineNumber>88</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
+						<lineNumber>116</lineNumber>
+						<contextFuncName>convolutional_layer</contextFuncName>
+						<contextNormFuncName>convolutional_layer</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>conv.cc</first>
-											<second></second>
+											<second>convolutional_layer</second>
 										</first>
-										<second>88</second>
+										<second>116</second>
 									</item>
 								</second>
 							</item>
@@ -1840,7 +1840,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3091788752</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1868,26 +1868,26 @@
 					<Obj>
 						<type>0</type>
 						<id>54</id>
-						<name>_ln89</name>
+						<name>_ln117</name>
 						<fileName>conv.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
-						<lineNumber>89</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
+						<lineNumber>117</lineNumber>
+						<contextFuncName>convolutional_layer</contextFuncName>
+						<contextNormFuncName>convolutional_layer</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>conv.cc</first>
-											<second></second>
+											<second>convolutional_layer</second>
 										</first>
-										<second>89</second>
+										<second>117</second>
 									</item>
 								</second>
 							</item>
@@ -1900,7 +1900,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3087663472</coreId>
+						<coreId>1314013440</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1928,26 +1928,26 @@
 					<Obj>
 						<type>0</type>
 						<id>55</id>
-						<name>_ln90</name>
+						<name>_ln118</name>
 						<fileName>conv.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
-						<lineNumber>90</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
+						<lineNumber>118</lineNumber>
+						<contextFuncName>convolutional_layer</contextFuncName>
+						<contextNormFuncName>convolutional_layer</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>conv.cc</first>
-											<second></second>
+											<second>convolutional_layer</second>
 										</first>
-										<second>90</second>
+										<second>118</second>
 									</item>
 								</second>
 							</item>
@@ -1960,7 +1960,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3091788752</coreId>
+						<coreId>1544756544</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1988,26 +1988,26 @@
 					<Obj>
 						<type>0</type>
 						<id>56</id>
-						<name>_ln91</name>
+						<name>_ln119</name>
 						<fileName>conv.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
-						<lineNumber>91</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
+						<lineNumber>119</lineNumber>
+						<contextFuncName>convolutional_layer</contextFuncName>
+						<contextNormFuncName>convolutional_layer</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>conv.cc</first>
-											<second></second>
+											<second>convolutional_layer</second>
 										</first>
-										<second>91</second>
+										<second>119</second>
 									</item>
 								</second>
 							</item>
@@ -2020,7 +2020,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3091699680</coreId>
+						<coreId>1545841760</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2048,26 +2048,26 @@
 					<Obj>
 						<type>0</type>
 						<id>57</id>
-						<name>_ln92</name>
+						<name>_ln120</name>
 						<fileName>conv.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
-						<lineNumber>92</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
+						<lineNumber>120</lineNumber>
+						<contextFuncName>convolutional_layer</contextFuncName>
+						<contextNormFuncName>convolutional_layer</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>conv.cc</first>
-											<second></second>
+											<second>convolutional_layer</second>
 										</first>
-										<second>92</second>
+										<second>120</second>
 									</item>
 								</second>
 							</item>
@@ -2080,7 +2080,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3091699680</coreId>
+						<coreId>1544756648</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2108,26 +2108,26 @@
 					<Obj>
 						<type>0</type>
 						<id>58</id>
-						<name>_ln93</name>
+						<name>_ln121</name>
 						<fileName>conv.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
-						<lineNumber>93</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
+						<lineNumber>121</lineNumber>
+						<contextFuncName>convolutional_layer</contextFuncName>
+						<contextNormFuncName>convolutional_layer</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>conv.cc</first>
-											<second></second>
+											<second>convolutional_layer</second>
 										</first>
-										<second>93</second>
+										<second>121</second>
 									</item>
 								</second>
 							</item>
@@ -2140,7 +2140,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3091788752</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2185,7 +2185,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3092314672</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2216,7 +2216,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>116</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2247,7 +2247,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1330007625</coreId>
+						<coreId>1547676877</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2278,7 +2278,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3089110240</coreId>
+						<coreId>1547424120</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2309,7 +2309,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3086090320</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2340,7 +2340,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3089110240</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2371,7 +2371,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3092338944</coreId>
+						<coreId>1953391988</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2402,7 +2402,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3089550752</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2436,7 +2436,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>0</coreId>
+					<coreId>3487177568</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -3115,7 +3115,7 @@
 							</item>
 							<item class_id_reference="30" object_id="_145">
 								<port class_id_reference="25" object_id="_146">
-									<name>weight_buf_0</name>
+									<name>weight_buf</name>
 									<dir>0</dir>
 									<type>2</type>
 									<need_hs>1</need_hs>
@@ -3126,7 +3126,7 @@
 							</item>
 							<item class_id_reference="30" object_id="_147">
 								<port class_id_reference="25" object_id="_148">
-									<name>biases_buf_0</name>
+									<name>biases_buf</name>
 									<dir>0</dir>
 									<type>3</type>
 									<need_hs>1</need_hs>
@@ -3160,7 +3160,7 @@
 							<item_version>0</item_version>
 							<item class_id_reference="30" object_id="_152">
 								<port class_id_reference="25" object_id="_153">
-									<name>pad_img1</name>
+									<name>pad_img</name>
 									<dir>0</dir>
 									<type>2</type>
 									<need_hs>1</need_hs>
@@ -3175,7 +3175,7 @@
 							</item>
 							<item class_id_reference="30" object_id="_155">
 								<port class_id_reference="25" object_id="_156">
-									<name>weight_buf_1</name>
+									<name>weight_buf</name>
 									<dir>0</dir>
 									<type>2</type>
 									<need_hs>1</need_hs>
@@ -3186,7 +3186,7 @@
 							</item>
 							<item class_id_reference="30" object_id="_157">
 								<port class_id_reference="25" object_id="_158">
-									<name>biases_buf_1</name>
+									<name>biases_buf</name>
 									<dir>0</dir>
 									<type>3</type>
 									<need_hs>1</need_hs>
@@ -3220,7 +3220,7 @@
 							<item_version>0</item_version>
 							<item class_id_reference="30" object_id="_162">
 								<port class_id_reference="25" object_id="_163">
-									<name>pad_img2</name>
+									<name>pad_img</name>
 									<dir>0</dir>
 									<type>2</type>
 									<need_hs>1</need_hs>
@@ -3235,7 +3235,7 @@
 							</item>
 							<item class_id_reference="30" object_id="_165">
 								<port class_id_reference="25" object_id="_166">
-									<name>weight_buf_2</name>
+									<name>weight_buf</name>
 									<dir>0</dir>
 									<type>2</type>
 									<need_hs>1</need_hs>
@@ -3246,7 +3246,7 @@
 							</item>
 							<item class_id_reference="30" object_id="_167">
 								<port class_id_reference="25" object_id="_168">
-									<name>biases_buf_2</name>
+									<name>biases_buf</name>
 									<dir>0</dir>
 									<type>3</type>
 									<need_hs>1</need_hs>
@@ -3280,7 +3280,7 @@
 							<item_version>0</item_version>
 							<item class_id_reference="30" object_id="_172">
 								<port class_id_reference="25" object_id="_173">
-									<name>pad_img3</name>
+									<name>pad_img</name>
 									<dir>0</dir>
 									<type>2</type>
 									<need_hs>1</need_hs>
@@ -3295,7 +3295,7 @@
 							</item>
 							<item class_id_reference="30" object_id="_175">
 								<port class_id_reference="25" object_id="_176">
-									<name>weight_buf_3</name>
+									<name>weight_buf</name>
 									<dir>0</dir>
 									<type>2</type>
 									<need_hs>1</need_hs>
@@ -3306,7 +3306,7 @@
 							</item>
 							<item class_id_reference="30" object_id="_177">
 								<port class_id_reference="25" object_id="_178">
-									<name>biases_buf_3</name>
+									<name>biases_buf</name>
 									<dir>0</dir>
 									<type>3</type>
 									<need_hs>1</need_hs>
@@ -3340,7 +3340,7 @@
 							<item_version>0</item_version>
 							<item class_id_reference="30" object_id="_182">
 								<port class_id_reference="25" object_id="_183">
-									<name>pad_img4</name>
+									<name>pad_img</name>
 									<dir>0</dir>
 									<type>2</type>
 									<need_hs>1</need_hs>
@@ -3355,7 +3355,7 @@
 							</item>
 							<item class_id_reference="30" object_id="_185">
 								<port class_id_reference="25" object_id="_186">
-									<name>weight_buf_4</name>
+									<name>weight_buf</name>
 									<dir>0</dir>
 									<type>2</type>
 									<need_hs>1</need_hs>
@@ -3366,7 +3366,7 @@
 							</item>
 							<item class_id_reference="30" object_id="_187">
 								<port class_id_reference="25" object_id="_188">
-									<name>biases_buf_4</name>
+									<name>biases_buf</name>
 									<dir>0</dir>
 									<type>3</type>
 									<need_hs>1</need_hs>
@@ -3400,7 +3400,7 @@
 							<item_version>0</item_version>
 							<item class_id_reference="30" object_id="_192">
 								<port class_id_reference="25" object_id="_193">
-									<name>pad_img5</name>
+									<name>pad_img</name>
 									<dir>0</dir>
 									<type>2</type>
 									<need_hs>1</need_hs>
@@ -3415,7 +3415,7 @@
 							</item>
 							<item class_id_reference="30" object_id="_195">
 								<port class_id_reference="25" object_id="_196">
-									<name>weight_buf_5</name>
+									<name>weight_buf</name>
 									<dir>0</dir>
 									<type>2</type>
 									<need_hs>1</need_hs>
@@ -3426,7 +3426,7 @@
 							</item>
 							<item class_id_reference="30" object_id="_197">
 								<port class_id_reference="25" object_id="_198">
-									<name>biases_buf_5</name>
+									<name>biases_buf</name>
 									<dir>0</dir>
 									<type>3</type>
 									<need_hs>1</need_hs>
@@ -3460,7 +3460,7 @@
 							<item_version>0</item_version>
 							<item class_id_reference="30" object_id="_202">
 								<port class_id_reference="25" object_id="_203">
-									<name>pad_img6</name>
+									<name>pad_img</name>
 									<dir>0</dir>
 									<type>2</type>
 									<need_hs>1</need_hs>
@@ -3475,7 +3475,7 @@
 							</item>
 							<item class_id_reference="30" object_id="_205">
 								<port class_id_reference="25" object_id="_206">
-									<name>weight_buf_6</name>
+									<name>weight_buf</name>
 									<dir>0</dir>
 									<type>2</type>
 									<need_hs>1</need_hs>
@@ -3486,7 +3486,7 @@
 							</item>
 							<item class_id_reference="30" object_id="_207">
 								<port class_id_reference="25" object_id="_208">
-									<name>biases_buf_6</name>
+									<name>biases_buf</name>
 									<dir>0</dir>
 									<type>3</type>
 									<need_hs>1</need_hs>
@@ -3520,7 +3520,7 @@
 							<item_version>0</item_version>
 							<item class_id_reference="30" object_id="_212">
 								<port class_id_reference="25" object_id="_213">
-									<name>pad_img7</name>
+									<name>pad_img</name>
 									<dir>0</dir>
 									<type>2</type>
 									<need_hs>1</need_hs>
@@ -3535,7 +3535,7 @@
 							</item>
 							<item class_id_reference="30" object_id="_215">
 								<port class_id_reference="25" object_id="_216">
-									<name>weight_buf_7</name>
+									<name>weight_buf</name>
 									<dir>0</dir>
 									<type>2</type>
 									<need_hs>1</need_hs>
@@ -3546,7 +3546,7 @@
 							</item>
 							<item class_id_reference="30" object_id="_217">
 								<port class_id_reference="25" object_id="_218">
-									<name>biases_buf_7</name>
+									<name>biases_buf</name>
 									<dir>0</dir>
 									<type>3</type>
 									<need_hs>1</need_hs>
@@ -4662,118 +4662,174 @@
 		</item>
 	</dp_port_io_nodes>
 	<port2core>
-		<count>16</count>
+		<count>24</count>
 		<item_version>0</item_version>
 		<item>
 			<first>1</first>
 			<second>
-				<first>666</first>
+				<first>27</first>
 				<second>137</second>
 			</second>
 		</item>
 		<item>
 			<first>2</first>
 			<second>
-				<first>666</first>
+				<first>27</first>
 				<second>137</second>
 			</second>
 		</item>
 		<item>
 			<first>3</first>
 			<second>
-				<first>666</first>
+				<first>27</first>
 				<second>137</second>
 			</second>
 		</item>
 		<item>
 			<first>4</first>
 			<second>
-				<first>666</first>
+				<first>27</first>
 				<second>137</second>
 			</second>
 		</item>
 		<item>
 			<first>5</first>
 			<second>
-				<first>666</first>
+				<first>27</first>
 				<second>137</second>
 			</second>
 		</item>
 		<item>
 			<first>6</first>
 			<second>
-				<first>666</first>
+				<first>27</first>
 				<second>137</second>
 			</second>
 		</item>
 		<item>
 			<first>7</first>
 			<second>
-				<first>666</first>
+				<first>27</first>
 				<second>137</second>
 			</second>
 		</item>
 		<item>
 			<first>8</first>
 			<second>
-				<first>666</first>
+				<first>27</first>
 				<second>137</second>
 			</second>
 		</item>
 		<item>
 			<first>9</first>
 			<second>
-				<first>666</first>
+				<first>27</first>
 				<second>136</second>
 			</second>
 		</item>
 		<item>
 			<first>10</first>
 			<second>
-				<first>666</first>
+				<first>27</first>
 				<second>136</second>
 			</second>
 		</item>
 		<item>
 			<first>11</first>
 			<second>
-				<first>666</first>
+				<first>27</first>
 				<second>136</second>
 			</second>
 		</item>
 		<item>
 			<first>12</first>
 			<second>
-				<first>666</first>
+				<first>27</first>
 				<second>136</second>
 			</second>
 		</item>
 		<item>
 			<first>13</first>
 			<second>
-				<first>666</first>
+				<first>27</first>
 				<second>136</second>
 			</second>
 		</item>
 		<item>
 			<first>14</first>
 			<second>
-				<first>666</first>
+				<first>27</first>
 				<second>136</second>
 			</second>
 		</item>
 		<item>
 			<first>15</first>
 			<second>
-				<first>666</first>
+				<first>27</first>
 				<second>136</second>
 			</second>
 		</item>
 		<item>
 			<first>16</first>
 			<second>
-				<first>666</first>
+				<first>27</first>
 				<second>136</second>
+			</second>
+		</item>
+		<item>
+			<first>25</first>
+			<second>
+				<first>1151</first>
+				<second>7</second>
+			</second>
+		</item>
+		<item>
+			<first>26</first>
+			<second>
+				<first>1151</first>
+				<second>7</second>
+			</second>
+		</item>
+		<item>
+			<first>27</first>
+			<second>
+				<first>1151</first>
+				<second>7</second>
+			</second>
+		</item>
+		<item>
+			<first>28</first>
+			<second>
+				<first>1151</first>
+				<second>7</second>
+			</second>
+		</item>
+		<item>
+			<first>29</first>
+			<second>
+				<first>1151</first>
+				<second>7</second>
+			</second>
+		</item>
+		<item>
+			<first>30</first>
+			<second>
+				<first>1151</first>
+				<second>7</second>
+			</second>
+		</item>
+		<item>
+			<first>31</first>
+			<second>
+				<first>1151</first>
+				<second>7</second>
+			</second>
+		</item>
+		<item>
+			<first>32</first>
+			<second>
+				<first>1151</first>
+				<second>7</second>
 			</second>
 		</item>
 	</port2core>

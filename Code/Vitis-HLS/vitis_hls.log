@@ -1,12 +1,9 @@
-INFO: [HLS 200-10] Running '/home/ytq/source/vivado/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/vitis_hls'
-INFO: [HLS 200-10] For user 'ytq' on host 'ytq' (Linux_x86_64 version 5.4.0-136-generic) on Wed Apr 19 21:42:18 CST 2023
-INFO: [HLS 200-10] On os Ubuntu 18.04.6 LTS
-INFO: [HLS 200-10] In directory '/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS'
-WARNING: [HLS 200-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to /usr/local/cuda/include.
-Sourcing Tcl script '/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS/Project/solution1/csim.tcl'
-INFO: [HLS 200-1510] Running: source /home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS/Project/solution1/csim.tcl
+INFO: [HLS 200-10] Running 'D:/vivado/Vitis_HLS/2021.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'LittleXtarX' on host 'desktop-dddkstd' (Windows NT_amd64 version 6.2) on Wed Apr 19 21:52:32 +0800 2023
+INFO: [HLS 200-10] In directory 'D:/Codefield/HLS-CNN/HLS-CNN/Code/Vitis-HLS'
+Sourcing Tcl script 'D:/Codefield/HLS-CNN/HLS-CNN/Code/Vitis-HLS/Project/solution1/csim.tcl'
 INFO: [HLS 200-1510] Running: open_project Project 
-INFO: [HLS 200-10] Opening project '/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS/Project'.
+INFO: [HLS 200-10] Opening project 'D:/Codefield/HLS-CNN/HLS-CNN/Code/Vitis-HLS/Project'.
 INFO: [HLS 200-1510] Running: set_top cnn 
 INFO: [HLS 200-1510] Running: add_files cnn.cc 
 INFO: [HLS 200-10] Adding design file 'cnn.cc' to the project
@@ -25,17 +22,15 @@ INFO: [HLS 200-10] Adding test bench file 'cnn_tb.cc' to the project
 INFO: [HLS 200-1510] Running: add_files -tb ../Data -cflags -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
 INFO: [HLS 200-10] Adding test bench file '../Data' to the project
 INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
-INFO: [HLS 200-10] Opening solution '/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS/Project/solution1'.
+INFO: [HLS 200-10] Opening solution 'D:/Codefield/HLS-CNN/HLS-CNN/Code/Vitis-HLS/Project/solution1'.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-1611] Setting target device to 'xc7a200t-fbg484-1'
 INFO: [HLS 200-1505] Using flow_target 'vivado'
-Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-1505.html
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.2;t=hls+guidance;d=200-1505.html
 INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=0
 INFO: [HLS 200-1510] Running: set_part xc7a200t-fbg484-1 
 INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
 INFO: [HLS 200-1510] Running: config_interface -m_axi_latency 0 
-INFO: [HLS 200-1510] Running: source ./Project/solution1/directives.tcl
-INFO: [HLS 200-1510] Running: set_directive_top -name cnn cnn 
 INFO: [HLS 200-1510] Running: set_directive_dataflow dataflow_section 
 INFO: [HLS 200-1510] Running: set_directive_dataflow convolutional_layer 
 INFO: [HLS 200-1510] Running: set_directive_dataflow max_pooling_layer 
@@ -45,16 +40,14 @@ INFO: [HLS 200-1510] Running: set_directive_pipeline -II 5 convolution/win_for_c
 INFO: [HLS 200-1510] Running: set_directive_pipeline -II 10 dense/dense_for_flat 
 INFO: [HLS 200-1510] Running: set_directive_pipeline -II 4 max_pooling/pool_for_cols 
 INFO: [HLS 200-1510] Running: csim_design -quiet 
-Running Dispatch Server on port: 45311
 INFO: [SIM 211-2] *************** CSIM start ***************
 INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
    Compiling ../../../../cnn_tb.cc in debug mode
    Generating csim.exe
-Total predictions: 1000
+Total predictions: 100
 Correct predictions: 100.00 %
-Average latency: 4.363704 (ms)
-INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 784
+Average latency: 2.500000 (ms)
 INFO: [SIM 211-1] CSim done with 0 errors.
 INFO: [SIM 211-3] *************** CSIM finish ***************
-INFO: [HLS 200-111] Finished Command csim_design CPU user time: 4.94 seconds. CPU system time: 0.06 seconds. Elapsed time: 5.06 seconds; current allocated memory: 0.000 MB.
-INFO: [HLS 200-112] Total CPU user time: 6.33 seconds. Total CPU system time: 0.18 seconds. Total elapsed time: 16.46 seconds; peak allocated memory: 217.270 MB.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.428 seconds; current allocated memory: 0.270 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 3 seconds; peak allocated memory: 1.084 GB.

@@ -1,0 +1,48 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'dense_6'" level="0">
+<item name = "Date">Wed Apr 19 17:49:19 2023
+</item>
+<item name = "Version">2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)</item>
+<item name = "Project">Project</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">artix7</item>
+<item name = "Target device">xc7a200t-fbg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 6.892 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">2013, 2013, 20.130 us, 20.130 us, 2013, 2013, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_dense_6_Pipeline_1_fu_193">dense_6_Pipeline_1, 12, 12, 0.120 us, 0.120 us, 12, 12, no</column>
+<column name="grp_dense_6_Pipeline_dense_for_flat_fu_199">dense_6_Pipeline_dense_for_flat, 1974, 1974, 19.740 us, 19.740 us, 1974, 1974, no</column>
+<column name="grp_dense_6_Pipeline_VITIS_LOOP_60_2_fu_247">dense_6_Pipeline_VITIS_LOOP_60_2, 12, 12, 0.120 us, 0.120 us, 12, 12, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

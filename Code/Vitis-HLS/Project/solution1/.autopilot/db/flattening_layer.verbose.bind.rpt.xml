@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'flattening_layer'" level="0">
-<item name = "Date">Mon Mar 27 10:48:27 2023
+<item name = "Date">Wed Apr 19 17:49:06 2023
 </item>
-<item name = "Version">2022.2 (Build 3670227 on Oct 13 2022)</item>
+<item name = "Version">2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)</item>
 <item name = "Project">Project</item>
 <item name = "Solution">solution1 (Vivado IP Flow Target)</item>
 <item name = "Product family">artix7</item>
@@ -32,13 +32,13 @@
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
 <column name="grp_flattening_fu_60">flattening, 198, 198, 1.980 us, 1.980 us, 198, 198, no</column>
-<column name="grp_flattening_15_fu_68">flattening_15, 198, 198, 1.980 us, 1.980 us, 198, 198, no</column>
-<column name="grp_flattening_16_fu_76">flattening_16, 198, 198, 1.980 us, 1.980 us, 198, 198, no</column>
-<column name="grp_flattening_17_fu_84">flattening_17, 198, 198, 1.980 us, 1.980 us, 198, 198, no</column>
-<column name="grp_flattening_18_fu_92">flattening_18, 198, 198, 1.980 us, 1.980 us, 198, 198, no</column>
-<column name="grp_flattening_19_fu_100">flattening_19, 198, 198, 1.980 us, 1.980 us, 198, 198, no</column>
-<column name="grp_flattening_20_fu_108">flattening_20, 198, 198, 1.980 us, 1.980 us, 198, 198, no</column>
-<column name="grp_flattening_21_fu_116">flattening_21, 198, 198, 1.980 us, 1.980 us, 198, 198, no</column>
+<column name="grp_flattening_1_fu_68">flattening_1, 198, 198, 1.980 us, 1.980 us, 198, 198, no</column>
+<column name="grp_flattening_2_fu_76">flattening_2, 198, 198, 1.980 us, 1.980 us, 198, 198, no</column>
+<column name="grp_flattening_3_fu_84">flattening_3, 198, 198, 1.980 us, 1.980 us, 198, 198, no</column>
+<column name="grp_flattening_4_fu_92">flattening_4, 198, 198, 1.980 us, 1.980 us, 198, 198, no</column>
+<column name="grp_flattening_5_fu_100">flattening_5, 198, 198, 1.980 us, 1.980 us, 198, 198, no</column>
+<column name="grp_flattening_6_fu_108">flattening_6, 198, 198, 1.980 us, 1.980 us, 198, 198, no</column>
+<column name="grp_flattening_7_fu_116">flattening_7, 198, 198, 1.980 us, 1.980 us, 198, 198, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

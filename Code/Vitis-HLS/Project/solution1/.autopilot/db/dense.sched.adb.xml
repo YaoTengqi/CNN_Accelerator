@@ -109,10 +109,10 @@
 
 <Node id="13" bw="32" op_0_bw="64">
 <![CDATA[
-entry:0 %add105_loc = alloca i64 1
+codeRepl:0 %add75_loc = alloca i64 1
 
 ]]></Node>
-<StgValue><ssdm name="add105_loc"/></StgValue>
+<StgValue><ssdm name="add75_loc"/></StgValue>
 </operation>
 
 <operation id="18" st_id="1" stage="1" lat="1">
@@ -124,10 +124,10 @@ entry:0 %add105_loc = alloca i64 1
 
 <Node id="14" bw="32" op_0_bw="64">
 <![CDATA[
-entry:1 %add10_16_loc = alloca i64 1
+codeRepl:1 %add7_16_loc = alloca i64 1
 
 ]]></Node>
-<StgValue><ssdm name="add10_16_loc"/></StgValue>
+<StgValue><ssdm name="add7_16_loc"/></StgValue>
 </operation>
 
 <operation id="19" st_id="1" stage="1" lat="1">
@@ -139,10 +139,10 @@ entry:1 %add10_16_loc = alloca i64 1
 
 <Node id="15" bw="32" op_0_bw="64">
 <![CDATA[
-entry:2 %add10_27_loc = alloca i64 1
+codeRepl:2 %add7_27_loc = alloca i64 1
 
 ]]></Node>
-<StgValue><ssdm name="add10_27_loc"/></StgValue>
+<StgValue><ssdm name="add7_27_loc"/></StgValue>
 </operation>
 
 <operation id="20" st_id="1" stage="1" lat="1">
@@ -154,10 +154,10 @@ entry:2 %add10_27_loc = alloca i64 1
 
 <Node id="16" bw="32" op_0_bw="64">
 <![CDATA[
-entry:3 %add10_38_loc = alloca i64 1
+codeRepl:3 %add7_38_loc = alloca i64 1
 
 ]]></Node>
-<StgValue><ssdm name="add10_38_loc"/></StgValue>
+<StgValue><ssdm name="add7_38_loc"/></StgValue>
 </operation>
 
 <operation id="21" st_id="1" stage="1" lat="1">
@@ -169,10 +169,10 @@ entry:3 %add10_38_loc = alloca i64 1
 
 <Node id="17" bw="32" op_0_bw="64">
 <![CDATA[
-entry:4 %add10_49_loc = alloca i64 1
+codeRepl:4 %add7_49_loc = alloca i64 1
 
 ]]></Node>
-<StgValue><ssdm name="add10_49_loc"/></StgValue>
+<StgValue><ssdm name="add7_49_loc"/></StgValue>
 </operation>
 
 <operation id="22" st_id="1" stage="1" lat="1">
@@ -184,10 +184,10 @@ entry:4 %add10_49_loc = alloca i64 1
 
 <Node id="18" bw="32" op_0_bw="64">
 <![CDATA[
-entry:5 %add10_510_loc = alloca i64 1
+codeRepl:5 %add7_510_loc = alloca i64 1
 
 ]]></Node>
-<StgValue><ssdm name="add10_510_loc"/></StgValue>
+<StgValue><ssdm name="add7_510_loc"/></StgValue>
 </operation>
 
 <operation id="23" st_id="1" stage="1" lat="1">
@@ -199,10 +199,10 @@ entry:5 %add10_510_loc = alloca i64 1
 
 <Node id="19" bw="32" op_0_bw="64">
 <![CDATA[
-entry:6 %add10_611_loc = alloca i64 1
+codeRepl:6 %add7_611_loc = alloca i64 1
 
 ]]></Node>
-<StgValue><ssdm name="add10_611_loc"/></StgValue>
+<StgValue><ssdm name="add7_611_loc"/></StgValue>
 </operation>
 
 <operation id="24" st_id="1" stage="1" lat="1">
@@ -214,10 +214,10 @@ entry:6 %add10_611_loc = alloca i64 1
 
 <Node id="20" bw="32" op_0_bw="64">
 <![CDATA[
-entry:7 %add10_712_loc = alloca i64 1
+codeRepl:7 %add7_712_loc = alloca i64 1
 
 ]]></Node>
-<StgValue><ssdm name="add10_712_loc"/></StgValue>
+<StgValue><ssdm name="add7_712_loc"/></StgValue>
 </operation>
 
 <operation id="25" st_id="1" stage="1" lat="1">
@@ -229,10 +229,10 @@ entry:7 %add10_712_loc = alloca i64 1
 
 <Node id="21" bw="32" op_0_bw="64">
 <![CDATA[
-entry:8 %add10_813_loc = alloca i64 1
+codeRepl:8 %add7_813_loc = alloca i64 1
 
 ]]></Node>
-<StgValue><ssdm name="add10_813_loc"/></StgValue>
+<StgValue><ssdm name="add7_813_loc"/></StgValue>
 </operation>
 
 <operation id="26" st_id="1" stage="1" lat="1">
@@ -244,10 +244,10 @@ entry:8 %add10_813_loc = alloca i64 1
 
 <Node id="22" bw="32" op_0_bw="64">
 <![CDATA[
-entry:9 %add10_914_loc = alloca i64 1
+codeRepl:9 %add7_914_loc = alloca i64 1
 
 ]]></Node>
-<StgValue><ssdm name="add10_914_loc"/></StgValue>
+<StgValue><ssdm name="add7_914_loc"/></StgValue>
 </operation>
 
 <operation id="27" st_id="1" stage="1" lat="1">
@@ -259,7 +259,7 @@ entry:9 %add10_914_loc = alloca i64 1
 
 <Node id="25" bw="32" op_0_bw="64">
 <![CDATA[
-entry:12 %dense_array = alloca i64 1
+codeRepl:12 %dense_array = alloca i64 1
 
 ]]></Node>
 <StgValue><ssdm name="dense_array"/></StgValue>
@@ -274,7 +274,7 @@ entry:12 %dense_array = alloca i64 1
 
 <Node id="26" bw="0" op_0_bw="0" op_1_bw="32">
 <![CDATA[
-entry:13 %call_ln0 = call void @dense_Pipeline_1, i32 %dense_array
+codeRepl:13 %call_ln0 = call void @dense_Pipeline_1, i32 %dense_array
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -292,7 +292,7 @@ entry:13 %call_ln0 = call void @dense_Pipeline_1, i32 %dense_array
 
 <Node id="26" bw="0" op_0_bw="0" op_1_bw="32">
 <![CDATA[
-entry:13 %call_ln0 = call void @dense_Pipeline_1, i32 %dense_array
+codeRepl:13 %call_ln0 = call void @dense_Pipeline_1, i32 %dense_array
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -310,7 +310,7 @@ entry:13 %call_ln0 = call void @dense_Pipeline_1, i32 %dense_array
 
 <Node id="27" bw="4" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:14 %dense_array_addr = getelementptr i32 %dense_array, i64 0, i64 0
+codeRepl:14 %dense_array_addr = getelementptr i32 %dense_array, i64 0, i64 0
 
 ]]></Node>
 <StgValue><ssdm name="dense_array_addr"/></StgValue>
@@ -325,7 +325,7 @@ entry:14 %dense_array_addr = getelementptr i32 %dense_array, i64 0, i64 0
 
 <Node id="28" bw="4" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:15 %dense_array_addr_64 = getelementptr i32 %dense_array, i64 0, i64 1
+codeRepl:15 %dense_array_addr_64 = getelementptr i32 %dense_array, i64 0, i64 1
 
 ]]></Node>
 <StgValue><ssdm name="dense_array_addr_64"/></StgValue>
@@ -340,7 +340,7 @@ entry:15 %dense_array_addr_64 = getelementptr i32 %dense_array, i64 0, i64 1
 
 <Node id="37" bw="32" op_0_bw="4" op_1_bw="0">
 <![CDATA[
-entry:24 %dense_array_load = load i4 %dense_array_addr
+codeRepl:24 %dense_array_load = load i4 %dense_array_addr
 
 ]]></Node>
 <StgValue><ssdm name="dense_array_load"/></StgValue>
@@ -355,7 +355,7 @@ entry:24 %dense_array_load = load i4 %dense_array_addr
 
 <Node id="38" bw="32" op_0_bw="4" op_1_bw="0">
 <![CDATA[
-entry:25 %dense_array_load_64 = load i4 %dense_array_addr_64
+codeRepl:25 %dense_array_load_64 = load i4 %dense_array_addr_64
 
 ]]></Node>
 <StgValue><ssdm name="dense_array_load_64"/></StgValue>
@@ -370,7 +370,7 @@ entry:25 %dense_array_load_64 = load i4 %dense_array_addr_64
 
 <Node id="47" bw="32" op_0_bw="32" op_1_bw="0">
 <![CDATA[
-entry:34 %empty = wait i32 @_ssdm_op_Wait
+codeRepl:34 %empty = wait i32 @_ssdm_op_Wait
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -388,7 +388,7 @@ entry:34 %empty = wait i32 @_ssdm_op_Wait
 
 <Node id="29" bw="4" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:16 %dense_array_addr_65 = getelementptr i32 %dense_array, i64 0, i64 2
+codeRepl:16 %dense_array_addr_65 = getelementptr i32 %dense_array, i64 0, i64 2
 
 ]]></Node>
 <StgValue><ssdm name="dense_array_addr_65"/></StgValue>
@@ -403,7 +403,7 @@ entry:16 %dense_array_addr_65 = getelementptr i32 %dense_array, i64 0, i64 2
 
 <Node id="30" bw="4" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:17 %dense_array_addr_66 = getelementptr i32 %dense_array, i64 0, i64 3
+codeRepl:17 %dense_array_addr_66 = getelementptr i32 %dense_array, i64 0, i64 3
 
 ]]></Node>
 <StgValue><ssdm name="dense_array_addr_66"/></StgValue>
@@ -418,7 +418,7 @@ entry:17 %dense_array_addr_66 = getelementptr i32 %dense_array, i64 0, i64 3
 
 <Node id="37" bw="32" op_0_bw="4" op_1_bw="0">
 <![CDATA[
-entry:24 %dense_array_load = load i4 %dense_array_addr
+codeRepl:24 %dense_array_load = load i4 %dense_array_addr
 
 ]]></Node>
 <StgValue><ssdm name="dense_array_load"/></StgValue>
@@ -433,7 +433,7 @@ entry:24 %dense_array_load = load i4 %dense_array_addr
 
 <Node id="38" bw="32" op_0_bw="4" op_1_bw="0">
 <![CDATA[
-entry:25 %dense_array_load_64 = load i4 %dense_array_addr_64
+codeRepl:25 %dense_array_load_64 = load i4 %dense_array_addr_64
 
 ]]></Node>
 <StgValue><ssdm name="dense_array_load_64"/></StgValue>
@@ -448,7 +448,7 @@ entry:25 %dense_array_load_64 = load i4 %dense_array_addr_64
 
 <Node id="39" bw="32" op_0_bw="4" op_1_bw="0">
 <![CDATA[
-entry:26 %dense_array_load_65 = load i4 %dense_array_addr_65
+codeRepl:26 %dense_array_load_65 = load i4 %dense_array_addr_65
 
 ]]></Node>
 <StgValue><ssdm name="dense_array_load_65"/></StgValue>
@@ -463,7 +463,7 @@ entry:26 %dense_array_load_65 = load i4 %dense_array_addr_65
 
 <Node id="40" bw="32" op_0_bw="4" op_1_bw="0">
 <![CDATA[
-entry:27 %dense_array_load_66 = load i4 %dense_array_addr_66
+codeRepl:27 %dense_array_load_66 = load i4 %dense_array_addr_66
 
 ]]></Node>
 <StgValue><ssdm name="dense_array_load_66"/></StgValue>
@@ -481,7 +481,7 @@ entry:27 %dense_array_load_66 = load i4 %dense_array_addr_66
 
 <Node id="31" bw="4" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:18 %dense_array_addr_67 = getelementptr i32 %dense_array, i64 0, i64 4
+codeRepl:18 %dense_array_addr_67 = getelementptr i32 %dense_array, i64 0, i64 4
 
 ]]></Node>
 <StgValue><ssdm name="dense_array_addr_67"/></StgValue>
@@ -496,7 +496,7 @@ entry:18 %dense_array_addr_67 = getelementptr i32 %dense_array, i64 0, i64 4
 
 <Node id="32" bw="4" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:19 %dense_array_addr_68 = getelementptr i32 %dense_array, i64 0, i64 5
+codeRepl:19 %dense_array_addr_68 = getelementptr i32 %dense_array, i64 0, i64 5
 
 ]]></Node>
 <StgValue><ssdm name="dense_array_addr_68"/></StgValue>
@@ -511,7 +511,7 @@ entry:19 %dense_array_addr_68 = getelementptr i32 %dense_array, i64 0, i64 5
 
 <Node id="39" bw="32" op_0_bw="4" op_1_bw="0">
 <![CDATA[
-entry:26 %dense_array_load_65 = load i4 %dense_array_addr_65
+codeRepl:26 %dense_array_load_65 = load i4 %dense_array_addr_65
 
 ]]></Node>
 <StgValue><ssdm name="dense_array_load_65"/></StgValue>
@@ -526,7 +526,7 @@ entry:26 %dense_array_load_65 = load i4 %dense_array_addr_65
 
 <Node id="40" bw="32" op_0_bw="4" op_1_bw="0">
 <![CDATA[
-entry:27 %dense_array_load_66 = load i4 %dense_array_addr_66
+codeRepl:27 %dense_array_load_66 = load i4 %dense_array_addr_66
 
 ]]></Node>
 <StgValue><ssdm name="dense_array_load_66"/></StgValue>
@@ -541,7 +541,7 @@ entry:27 %dense_array_load_66 = load i4 %dense_array_addr_66
 
 <Node id="41" bw="32" op_0_bw="4" op_1_bw="0">
 <![CDATA[
-entry:28 %dense_array_load_67 = load i4 %dense_array_addr_67
+codeRepl:28 %dense_array_load_67 = load i4 %dense_array_addr_67
 
 ]]></Node>
 <StgValue><ssdm name="dense_array_load_67"/></StgValue>
@@ -556,7 +556,7 @@ entry:28 %dense_array_load_67 = load i4 %dense_array_addr_67
 
 <Node id="42" bw="32" op_0_bw="4" op_1_bw="0">
 <![CDATA[
-entry:29 %dense_array_load_68 = load i4 %dense_array_addr_68
+codeRepl:29 %dense_array_load_68 = load i4 %dense_array_addr_68
 
 ]]></Node>
 <StgValue><ssdm name="dense_array_load_68"/></StgValue>
@@ -574,7 +574,7 @@ entry:29 %dense_array_load_68 = load i4 %dense_array_addr_68
 
 <Node id="33" bw="4" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:20 %dense_array_addr_69 = getelementptr i32 %dense_array, i64 0, i64 6
+codeRepl:20 %dense_array_addr_69 = getelementptr i32 %dense_array, i64 0, i64 6
 
 ]]></Node>
 <StgValue><ssdm name="dense_array_addr_69"/></StgValue>
@@ -589,7 +589,7 @@ entry:20 %dense_array_addr_69 = getelementptr i32 %dense_array, i64 0, i64 6
 
 <Node id="34" bw="4" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:21 %dense_array_addr_70 = getelementptr i32 %dense_array, i64 0, i64 7
+codeRepl:21 %dense_array_addr_70 = getelementptr i32 %dense_array, i64 0, i64 7
 
 ]]></Node>
 <StgValue><ssdm name="dense_array_addr_70"/></StgValue>
@@ -604,7 +604,7 @@ entry:21 %dense_array_addr_70 = getelementptr i32 %dense_array, i64 0, i64 7
 
 <Node id="41" bw="32" op_0_bw="4" op_1_bw="0">
 <![CDATA[
-entry:28 %dense_array_load_67 = load i4 %dense_array_addr_67
+codeRepl:28 %dense_array_load_67 = load i4 %dense_array_addr_67
 
 ]]></Node>
 <StgValue><ssdm name="dense_array_load_67"/></StgValue>
@@ -619,7 +619,7 @@ entry:28 %dense_array_load_67 = load i4 %dense_array_addr_67
 
 <Node id="42" bw="32" op_0_bw="4" op_1_bw="0">
 <![CDATA[
-entry:29 %dense_array_load_68 = load i4 %dense_array_addr_68
+codeRepl:29 %dense_array_load_68 = load i4 %dense_array_addr_68
 
 ]]></Node>
 <StgValue><ssdm name="dense_array_load_68"/></StgValue>
@@ -634,7 +634,7 @@ entry:29 %dense_array_load_68 = load i4 %dense_array_addr_68
 
 <Node id="43" bw="32" op_0_bw="4" op_1_bw="0">
 <![CDATA[
-entry:30 %dense_array_load_69 = load i4 %dense_array_addr_69
+codeRepl:30 %dense_array_load_69 = load i4 %dense_array_addr_69
 
 ]]></Node>
 <StgValue><ssdm name="dense_array_load_69"/></StgValue>
@@ -649,7 +649,7 @@ entry:30 %dense_array_load_69 = load i4 %dense_array_addr_69
 
 <Node id="44" bw="32" op_0_bw="4" op_1_bw="0">
 <![CDATA[
-entry:31 %dense_array_load_70 = load i4 %dense_array_addr_70
+codeRepl:31 %dense_array_load_70 = load i4 %dense_array_addr_70
 
 ]]></Node>
 <StgValue><ssdm name="dense_array_load_70"/></StgValue>
@@ -667,7 +667,7 @@ entry:31 %dense_array_load_70 = load i4 %dense_array_addr_70
 
 <Node id="35" bw="4" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:22 %dense_array_addr_71 = getelementptr i32 %dense_array, i64 0, i64 8
+codeRepl:22 %dense_array_addr_71 = getelementptr i32 %dense_array, i64 0, i64 8
 
 ]]></Node>
 <StgValue><ssdm name="dense_array_addr_71"/></StgValue>
@@ -682,7 +682,7 @@ entry:22 %dense_array_addr_71 = getelementptr i32 %dense_array, i64 0, i64 8
 
 <Node id="36" bw="4" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:23 %dense_array_addr_72 = getelementptr i32 %dense_array, i64 0, i64 9
+codeRepl:23 %dense_array_addr_72 = getelementptr i32 %dense_array, i64 0, i64 9
 
 ]]></Node>
 <StgValue><ssdm name="dense_array_addr_72"/></StgValue>
@@ -697,7 +697,7 @@ entry:23 %dense_array_addr_72 = getelementptr i32 %dense_array, i64 0, i64 9
 
 <Node id="43" bw="32" op_0_bw="4" op_1_bw="0">
 <![CDATA[
-entry:30 %dense_array_load_69 = load i4 %dense_array_addr_69
+codeRepl:30 %dense_array_load_69 = load i4 %dense_array_addr_69
 
 ]]></Node>
 <StgValue><ssdm name="dense_array_load_69"/></StgValue>
@@ -712,7 +712,7 @@ entry:30 %dense_array_load_69 = load i4 %dense_array_addr_69
 
 <Node id="44" bw="32" op_0_bw="4" op_1_bw="0">
 <![CDATA[
-entry:31 %dense_array_load_70 = load i4 %dense_array_addr_70
+codeRepl:31 %dense_array_load_70 = load i4 %dense_array_addr_70
 
 ]]></Node>
 <StgValue><ssdm name="dense_array_load_70"/></StgValue>
@@ -727,7 +727,7 @@ entry:31 %dense_array_load_70 = load i4 %dense_array_addr_70
 
 <Node id="45" bw="32" op_0_bw="4" op_1_bw="0">
 <![CDATA[
-entry:32 %dense_array_load_71 = load i4 %dense_array_addr_71
+codeRepl:32 %dense_array_load_71 = load i4 %dense_array_addr_71
 
 ]]></Node>
 <StgValue><ssdm name="dense_array_load_71"/></StgValue>
@@ -742,7 +742,7 @@ entry:32 %dense_array_load_71 = load i4 %dense_array_addr_71
 
 <Node id="46" bw="32" op_0_bw="4" op_1_bw="0">
 <![CDATA[
-entry:33 %dense_array_load_72 = load i4 %dense_array_addr_72
+codeRepl:33 %dense_array_load_72 = load i4 %dense_array_addr_72
 
 ]]></Node>
 <StgValue><ssdm name="dense_array_load_72"/></StgValue>
@@ -760,7 +760,7 @@ entry:33 %dense_array_load_72 = load i4 %dense_array_addr_72
 
 <Node id="45" bw="32" op_0_bw="4" op_1_bw="0">
 <![CDATA[
-entry:32 %dense_array_load_71 = load i4 %dense_array_addr_71
+codeRepl:32 %dense_array_load_71 = load i4 %dense_array_addr_71
 
 ]]></Node>
 <StgValue><ssdm name="dense_array_load_71"/></StgValue>
@@ -775,7 +775,7 @@ entry:32 %dense_array_load_71 = load i4 %dense_array_addr_71
 
 <Node id="46" bw="32" op_0_bw="4" op_1_bw="0">
 <![CDATA[
-entry:33 %dense_array_load_72 = load i4 %dense_array_addr_72
+codeRepl:33 %dense_array_load_72 = load i4 %dense_array_addr_72
 
 ]]></Node>
 <StgValue><ssdm name="dense_array_load_72"/></StgValue>
@@ -790,7 +790,7 @@ entry:33 %dense_array_load_72 = load i4 %dense_array_addr_72
 
 <Node id="48" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="32" op_16_bw="32" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32" op_21_bw="32" op_22_bw="32" op_23_bw="32" op_24_bw="32" op_25_bw="32" op_26_bw="32" op_27_bw="32" op_28_bw="32" op_29_bw="32" op_30_bw="32" op_31_bw="32" op_32_bw="0">
 <![CDATA[
-entry:35 %call_ln56 = call void @dense_Pipeline_dense_for_flat, i32 %dense_array_load_72, i32 %dense_array_load_71, i32 %dense_array_load_70, i32 %dense_array_load_69, i32 %dense_array_load_68, i32 %dense_array_load_67, i32 %dense_array_load_66, i32 %dense_array_load_65, i32 %dense_array_load_64, i32 %dense_array_load, i32 %flat_to_dense_streams_0, i32 %add10_914_loc, i32 %add10_813_loc, i32 %add10_712_loc, i32 %add10_611_loc, i32 %add10_510_loc, i32 %add10_49_loc, i32 %add10_38_loc, i32 %add10_27_loc, i32 %add10_16_loc, i32 %add105_loc, i32 %dense_weights_72, i32 %dense_weights_65, i32 %dense_weights_58, i32 %dense_weights_51, i32 %dense_weights_44, i32 %dense_weights_37, i32 %dense_weights_30, i32 %dense_weights_23, i32 %dense_weights_16, i32 %dense_weights
+codeRepl:35 %call_ln56 = call void @dense_Pipeline_dense_for_flat, i32 %dense_array_load_72, i32 %dense_array_load_71, i32 %dense_array_load_70, i32 %dense_array_load_69, i32 %dense_array_load_68, i32 %dense_array_load_67, i32 %dense_array_load_66, i32 %dense_array_load_65, i32 %dense_array_load_64, i32 %dense_array_load, i32 %flat_to_dense_streams_0, i32 %add7_914_loc, i32 %add7_813_loc, i32 %add7_712_loc, i32 %add7_611_loc, i32 %add7_510_loc, i32 %add7_49_loc, i32 %add7_38_loc, i32 %add7_27_loc, i32 %add7_16_loc, i32 %add75_loc, i32 %dense_weights_72, i32 %dense_weights_65, i32 %dense_weights_58, i32 %dense_weights_51, i32 %dense_weights_44, i32 %dense_weights_37, i32 %dense_weights_30, i32 %dense_weights_23, i32 %dense_weights_16, i32 %dense_weights
 
 ]]></Node>
 <StgValue><ssdm name="call_ln56"/></StgValue>
@@ -808,7 +808,7 @@ entry:35 %call_ln56 = call void @dense_Pipeline_dense_for_flat, i32 %dense_array
 
 <Node id="48" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="32" op_16_bw="32" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32" op_21_bw="32" op_22_bw="32" op_23_bw="32" op_24_bw="32" op_25_bw="32" op_26_bw="32" op_27_bw="32" op_28_bw="32" op_29_bw="32" op_30_bw="32" op_31_bw="32" op_32_bw="0">
 <![CDATA[
-entry:35 %call_ln56 = call void @dense_Pipeline_dense_for_flat, i32 %dense_array_load_72, i32 %dense_array_load_71, i32 %dense_array_load_70, i32 %dense_array_load_69, i32 %dense_array_load_68, i32 %dense_array_load_67, i32 %dense_array_load_66, i32 %dense_array_load_65, i32 %dense_array_load_64, i32 %dense_array_load, i32 %flat_to_dense_streams_0, i32 %add10_914_loc, i32 %add10_813_loc, i32 %add10_712_loc, i32 %add10_611_loc, i32 %add10_510_loc, i32 %add10_49_loc, i32 %add10_38_loc, i32 %add10_27_loc, i32 %add10_16_loc, i32 %add105_loc, i32 %dense_weights_72, i32 %dense_weights_65, i32 %dense_weights_58, i32 %dense_weights_51, i32 %dense_weights_44, i32 %dense_weights_37, i32 %dense_weights_30, i32 %dense_weights_23, i32 %dense_weights_16, i32 %dense_weights
+codeRepl:35 %call_ln56 = call void @dense_Pipeline_dense_for_flat, i32 %dense_array_load_72, i32 %dense_array_load_71, i32 %dense_array_load_70, i32 %dense_array_load_69, i32 %dense_array_load_68, i32 %dense_array_load_67, i32 %dense_array_load_66, i32 %dense_array_load_65, i32 %dense_array_load_64, i32 %dense_array_load, i32 %flat_to_dense_streams_0, i32 %add7_914_loc, i32 %add7_813_loc, i32 %add7_712_loc, i32 %add7_611_loc, i32 %add7_510_loc, i32 %add7_49_loc, i32 %add7_38_loc, i32 %add7_27_loc, i32 %add7_16_loc, i32 %add75_loc, i32 %dense_weights_72, i32 %dense_weights_65, i32 %dense_weights_58, i32 %dense_weights_51, i32 %dense_weights_44, i32 %dense_weights_37, i32 %dense_weights_30, i32 %dense_weights_23, i32 %dense_weights_16, i32 %dense_weights
 
 ]]></Node>
 <StgValue><ssdm name="call_ln56"/></StgValue>
@@ -826,10 +826,10 @@ entry:35 %call_ln56 = call void @dense_Pipeline_dense_for_flat, i32 %dense_array
 
 <Node id="57" bw="32" op_0_bw="32" op_1_bw="0">
 <![CDATA[
-entry:44 %add10_16_loc_load = load i32 %add10_16_loc
+codeRepl:44 %add7_16_loc_load = load i32 %add7_16_loc
 
 ]]></Node>
-<StgValue><ssdm name="add10_16_loc_load"/></StgValue>
+<StgValue><ssdm name="add7_16_loc_load"/></StgValue>
 </operation>
 
 <operation id="64" st_id="10" stage="1" lat="1">
@@ -841,10 +841,10 @@ entry:44 %add10_16_loc_load = load i32 %add10_16_loc
 
 <Node id="58" bw="32" op_0_bw="32" op_1_bw="0">
 <![CDATA[
-entry:45 %add105_loc_load = load i32 %add105_loc
+codeRepl:45 %add75_loc_load = load i32 %add75_loc
 
 ]]></Node>
-<StgValue><ssdm name="add105_loc_load"/></StgValue>
+<StgValue><ssdm name="add75_loc_load"/></StgValue>
 </operation>
 
 <operation id="65" st_id="10" stage="1" lat="1">
@@ -856,7 +856,7 @@ entry:45 %add105_loc_load = load i32 %add105_loc
 
 <Node id="60" bw="0" op_0_bw="32" op_1_bw="4" op_2_bw="0">
 <![CDATA[
-entry:47 %store_ln56 = store i32 %add105_loc_load, i4 %dense_array_addr
+codeRepl:47 %store_ln56 = store i32 %add75_loc_load, i4 %dense_array_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln56"/></StgValue>
@@ -871,7 +871,7 @@ entry:47 %store_ln56 = store i32 %add105_loc_load, i4 %dense_array_addr
 
 <Node id="61" bw="0" op_0_bw="32" op_1_bw="4" op_2_bw="0">
 <![CDATA[
-entry:48 %store_ln56 = store i32 %add10_16_loc_load, i4 %dense_array_addr_64
+codeRepl:48 %store_ln56 = store i32 %add7_16_loc_load, i4 %dense_array_addr_64
 
 ]]></Node>
 <StgValue><ssdm name="store_ln56"/></StgValue>
@@ -889,10 +889,10 @@ entry:48 %store_ln56 = store i32 %add10_16_loc_load, i4 %dense_array_addr_64
 
 <Node id="55" bw="32" op_0_bw="32" op_1_bw="0">
 <![CDATA[
-entry:42 %add10_38_loc_load = load i32 %add10_38_loc
+codeRepl:42 %add7_38_loc_load = load i32 %add7_38_loc
 
 ]]></Node>
-<StgValue><ssdm name="add10_38_loc_load"/></StgValue>
+<StgValue><ssdm name="add7_38_loc_load"/></StgValue>
 </operation>
 
 <operation id="68" st_id="11" stage="1" lat="1">
@@ -904,10 +904,10 @@ entry:42 %add10_38_loc_load = load i32 %add10_38_loc
 
 <Node id="56" bw="32" op_0_bw="32" op_1_bw="0">
 <![CDATA[
-entry:43 %add10_27_loc_load = load i32 %add10_27_loc
+codeRepl:43 %add7_27_loc_load = load i32 %add7_27_loc
 
 ]]></Node>
-<StgValue><ssdm name="add10_27_loc_load"/></StgValue>
+<StgValue><ssdm name="add7_27_loc_load"/></StgValue>
 </operation>
 
 <operation id="69" st_id="11" stage="1" lat="1">
@@ -919,7 +919,7 @@ entry:43 %add10_27_loc_load = load i32 %add10_27_loc
 
 <Node id="62" bw="0" op_0_bw="32" op_1_bw="4" op_2_bw="0">
 <![CDATA[
-entry:49 %store_ln56 = store i32 %add10_27_loc_load, i4 %dense_array_addr_65
+codeRepl:49 %store_ln56 = store i32 %add7_27_loc_load, i4 %dense_array_addr_65
 
 ]]></Node>
 <StgValue><ssdm name="store_ln56"/></StgValue>
@@ -934,7 +934,7 @@ entry:49 %store_ln56 = store i32 %add10_27_loc_load, i4 %dense_array_addr_65
 
 <Node id="63" bw="0" op_0_bw="32" op_1_bw="4" op_2_bw="0">
 <![CDATA[
-entry:50 %store_ln56 = store i32 %add10_38_loc_load, i4 %dense_array_addr_66
+codeRepl:50 %store_ln56 = store i32 %add7_38_loc_load, i4 %dense_array_addr_66
 
 ]]></Node>
 <StgValue><ssdm name="store_ln56"/></StgValue>
@@ -952,10 +952,10 @@ entry:50 %store_ln56 = store i32 %add10_38_loc_load, i4 %dense_array_addr_66
 
 <Node id="53" bw="32" op_0_bw="32" op_1_bw="0">
 <![CDATA[
-entry:40 %add10_510_loc_load = load i32 %add10_510_loc
+codeRepl:40 %add7_510_loc_load = load i32 %add7_510_loc
 
 ]]></Node>
-<StgValue><ssdm name="add10_510_loc_load"/></StgValue>
+<StgValue><ssdm name="add7_510_loc_load"/></StgValue>
 </operation>
 
 <operation id="72" st_id="12" stage="1" lat="1">
@@ -967,10 +967,10 @@ entry:40 %add10_510_loc_load = load i32 %add10_510_loc
 
 <Node id="54" bw="32" op_0_bw="32" op_1_bw="0">
 <![CDATA[
-entry:41 %add10_49_loc_load = load i32 %add10_49_loc
+codeRepl:41 %add7_49_loc_load = load i32 %add7_49_loc
 
 ]]></Node>
-<StgValue><ssdm name="add10_49_loc_load"/></StgValue>
+<StgValue><ssdm name="add7_49_loc_load"/></StgValue>
 </operation>
 
 <operation id="73" st_id="12" stage="1" lat="1">
@@ -982,7 +982,7 @@ entry:41 %add10_49_loc_load = load i32 %add10_49_loc
 
 <Node id="64" bw="0" op_0_bw="32" op_1_bw="4" op_2_bw="0">
 <![CDATA[
-entry:51 %store_ln56 = store i32 %add10_49_loc_load, i4 %dense_array_addr_67
+codeRepl:51 %store_ln56 = store i32 %add7_49_loc_load, i4 %dense_array_addr_67
 
 ]]></Node>
 <StgValue><ssdm name="store_ln56"/></StgValue>
@@ -997,7 +997,7 @@ entry:51 %store_ln56 = store i32 %add10_49_loc_load, i4 %dense_array_addr_67
 
 <Node id="65" bw="0" op_0_bw="32" op_1_bw="4" op_2_bw="0">
 <![CDATA[
-entry:52 %store_ln56 = store i32 %add10_510_loc_load, i4 %dense_array_addr_68
+codeRepl:52 %store_ln56 = store i32 %add7_510_loc_load, i4 %dense_array_addr_68
 
 ]]></Node>
 <StgValue><ssdm name="store_ln56"/></StgValue>
@@ -1015,10 +1015,10 @@ entry:52 %store_ln56 = store i32 %add10_510_loc_load, i4 %dense_array_addr_68
 
 <Node id="51" bw="32" op_0_bw="32" op_1_bw="0">
 <![CDATA[
-entry:38 %add10_712_loc_load = load i32 %add10_712_loc
+codeRepl:38 %add7_712_loc_load = load i32 %add7_712_loc
 
 ]]></Node>
-<StgValue><ssdm name="add10_712_loc_load"/></StgValue>
+<StgValue><ssdm name="add7_712_loc_load"/></StgValue>
 </operation>
 
 <operation id="76" st_id="13" stage="1" lat="1">
@@ -1030,10 +1030,10 @@ entry:38 %add10_712_loc_load = load i32 %add10_712_loc
 
 <Node id="52" bw="32" op_0_bw="32" op_1_bw="0">
 <![CDATA[
-entry:39 %add10_611_loc_load = load i32 %add10_611_loc
+codeRepl:39 %add7_611_loc_load = load i32 %add7_611_loc
 
 ]]></Node>
-<StgValue><ssdm name="add10_611_loc_load"/></StgValue>
+<StgValue><ssdm name="add7_611_loc_load"/></StgValue>
 </operation>
 
 <operation id="77" st_id="13" stage="1" lat="1">
@@ -1045,7 +1045,7 @@ entry:39 %add10_611_loc_load = load i32 %add10_611_loc
 
 <Node id="66" bw="0" op_0_bw="32" op_1_bw="4" op_2_bw="0">
 <![CDATA[
-entry:53 %store_ln56 = store i32 %add10_611_loc_load, i4 %dense_array_addr_69
+codeRepl:53 %store_ln56 = store i32 %add7_611_loc_load, i4 %dense_array_addr_69
 
 ]]></Node>
 <StgValue><ssdm name="store_ln56"/></StgValue>
@@ -1060,7 +1060,7 @@ entry:53 %store_ln56 = store i32 %add10_611_loc_load, i4 %dense_array_addr_69
 
 <Node id="67" bw="0" op_0_bw="32" op_1_bw="4" op_2_bw="0">
 <![CDATA[
-entry:54 %store_ln56 = store i32 %add10_712_loc_load, i4 %dense_array_addr_70
+codeRepl:54 %store_ln56 = store i32 %add7_712_loc_load, i4 %dense_array_addr_70
 
 ]]></Node>
 <StgValue><ssdm name="store_ln56"/></StgValue>
@@ -1078,10 +1078,10 @@ entry:54 %store_ln56 = store i32 %add10_712_loc_load, i4 %dense_array_addr_70
 
 <Node id="49" bw="32" op_0_bw="32" op_1_bw="0">
 <![CDATA[
-entry:36 %add10_914_loc_load = load i32 %add10_914_loc
+codeRepl:36 %add7_914_loc_load = load i32 %add7_914_loc
 
 ]]></Node>
-<StgValue><ssdm name="add10_914_loc_load"/></StgValue>
+<StgValue><ssdm name="add7_914_loc_load"/></StgValue>
 </operation>
 
 <operation id="80" st_id="14" stage="1" lat="1">
@@ -1093,10 +1093,10 @@ entry:36 %add10_914_loc_load = load i32 %add10_914_loc
 
 <Node id="50" bw="32" op_0_bw="32" op_1_bw="0">
 <![CDATA[
-entry:37 %add10_813_loc_load = load i32 %add10_813_loc
+codeRepl:37 %add7_813_loc_load = load i32 %add7_813_loc
 
 ]]></Node>
-<StgValue><ssdm name="add10_813_loc_load"/></StgValue>
+<StgValue><ssdm name="add7_813_loc_load"/></StgValue>
 </operation>
 
 <operation id="81" st_id="14" stage="1" lat="1">
@@ -1108,7 +1108,7 @@ entry:37 %add10_813_loc_load = load i32 %add10_813_loc
 
 <Node id="59" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-entry:46 %empty_61 = wait i32 @_ssdm_op_Wait
+codeRepl:46 %empty_61 = wait i32 @_ssdm_op_Wait
 
 ]]></Node>
 <StgValue><ssdm name="empty_61"/></StgValue>
@@ -1123,7 +1123,7 @@ entry:46 %empty_61 = wait i32 @_ssdm_op_Wait
 
 <Node id="68" bw="0" op_0_bw="32" op_1_bw="4" op_2_bw="0">
 <![CDATA[
-entry:55 %store_ln56 = store i32 %add10_813_loc_load, i4 %dense_array_addr_71
+codeRepl:55 %store_ln56 = store i32 %add7_813_loc_load, i4 %dense_array_addr_71
 
 ]]></Node>
 <StgValue><ssdm name="store_ln56"/></StgValue>
@@ -1138,7 +1138,7 @@ entry:55 %store_ln56 = store i32 %add10_813_loc_load, i4 %dense_array_addr_71
 
 <Node id="69" bw="0" op_0_bw="32" op_1_bw="4" op_2_bw="0">
 <![CDATA[
-entry:56 %store_ln56 = store i32 %add10_914_loc_load, i4 %dense_array_addr_72
+codeRepl:56 %store_ln56 = store i32 %add7_914_loc_load, i4 %dense_array_addr_72
 
 ]]></Node>
 <StgValue><ssdm name="store_ln56"/></StgValue>
@@ -1156,7 +1156,7 @@ entry:56 %store_ln56 = store i32 %add10_914_loc_load, i4 %dense_array_addr_72
 
 <Node id="70" bw="32" op_0_bw="32" op_1_bw="0">
 <![CDATA[
-entry:57 %empty_62 = wait i32 @_ssdm_op_Wait
+codeRepl:57 %empty_62 = wait i32 @_ssdm_op_Wait
 
 ]]></Node>
 <StgValue><ssdm name="empty_62"/></StgValue>
@@ -1171,7 +1171,7 @@ entry:57 %empty_62 = wait i32 @_ssdm_op_Wait
 
 <Node id="71" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="0" op_4_bw="0" op_5_bw="0" op_6_bw="0" op_7_bw="0" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="0" op_12_bw="0" op_13_bw="0" op_14_bw="0">
 <![CDATA[
-entry:58 %call_ln0 = call void @dense_Pipeline_VITIS_LOOP_60_2, i32 %dense_array, i32 %dense_to_softmax_streams_0
+codeRepl:58 %call_ln0 = call void @dense_Pipeline_VITIS_LOOP_60_2, i32 %dense_array, i32 %dense_to_softmax_streams_0
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -1187,9 +1187,9 @@ entry:58 %call_ln0 = call void @dense_Pipeline_VITIS_LOOP_60_2, i32 %dense_array
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="23" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
+<Node id="23" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
 <![CDATA[
-entry:10 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %flat_to_dense_streams_0, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0
+codeRepl:10 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %flat_to_dense_streams_0, void @empty, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -1202,9 +1202,9 @@ entry:10 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %f
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="24" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
+<Node id="24" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
 <![CDATA[
-entry:11 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %dense_to_softmax_streams_0, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0
+codeRepl:11 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %dense_to_softmax_streams_0, void @empty, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -1219,7 +1219,7 @@ entry:11 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %d
 
 <Node id="71" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="0" op_4_bw="0" op_5_bw="0" op_6_bw="0" op_7_bw="0" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="0" op_12_bw="0" op_13_bw="0" op_14_bw="0">
 <![CDATA[
-entry:58 %call_ln0 = call void @dense_Pipeline_VITIS_LOOP_60_2, i32 %dense_array, i32 %dense_to_softmax_streams_0
+codeRepl:58 %call_ln0 = call void @dense_Pipeline_VITIS_LOOP_60_2, i32 %dense_array, i32 %dense_to_softmax_streams_0
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -1234,7 +1234,7 @@ entry:58 %call_ln0 = call void @dense_Pipeline_VITIS_LOOP_60_2, i32 %dense_array
 
 <Node id="72" bw="0">
 <![CDATA[
-entry:59 %ret_ln64 = ret
+codeRepl:59 %ret_ln64 = ret
 
 ]]></Node>
 <StgValue><ssdm name="ret_ln64"/></StgValue>

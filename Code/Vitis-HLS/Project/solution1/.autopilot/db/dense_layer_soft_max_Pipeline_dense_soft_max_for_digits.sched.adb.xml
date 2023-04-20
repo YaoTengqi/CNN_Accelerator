@@ -140,9 +140,9 @@ newFuncRoot:0 %p = alloca i32 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="4" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
+<Node id="4" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
 <![CDATA[
-newFuncRoot:1 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %prediction, void @empty_3, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0
+newFuncRoot:1 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %prediction, void @empty_11, i32 0, i32 0, void @empty_6, i32 4294967295, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -187,7 +187,7 @@ newFuncRoot:3 %store_ln0 = store i4 0, i4 %p
 
 <Node id="7" bw="0" op_0_bw="0">
 <![CDATA[
-newFuncRoot:4 %br_ln0 = br void %for.inc21
+newFuncRoot:4 %br_ln0 = br void %.preheader
 
 ]]></Node>
 <StgValue><ssdm name="br_ln0"/></StgValue>
@@ -202,7 +202,7 @@ newFuncRoot:4 %br_ln0 = br void %for.inc21
 
 <Node id="9" bw="4" op_0_bw="4" op_1_bw="0">
 <![CDATA[
-for.inc21:0 %p_1 = load i4 %p
+.preheader:0 %p_1 = load i4 %p
 
 ]]></Node>
 <StgValue><ssdm name="p_1"/></StgValue>
@@ -217,7 +217,7 @@ for.inc21:0 %p_1 = load i4 %p
 
 <Node id="10" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.inc21:1 %specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str
+.preheader:1 %specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln0"/></StgValue>
@@ -232,7 +232,7 @@ for.inc21:1 %specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 42
 
 <Node id="11" bw="1" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-for.inc21:2 %icmp_ln31 = icmp_eq  i4 %p_1, i4 10
+.preheader:2 %icmp_ln31 = icmp_eq  i4 %p_1, i4 10
 
 ]]></Node>
 <StgValue><ssdm name="icmp_ln31"/></StgValue>
@@ -247,7 +247,7 @@ for.inc21:2 %icmp_ln31 = icmp_eq  i4 %p_1, i4 10
 
 <Node id="12" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-for.inc21:3 %empty = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 10, i64 10, i64 10
+.preheader:3 %empty = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 10, i64 10, i64 10
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -262,7 +262,7 @@ for.inc21:3 %empty = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 10, 
 
 <Node id="13" bw="4" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-for.inc21:4 %add_ln31 = add i4 %p_1, i4 1
+.preheader:4 %add_ln31 = add i4 %p_1, i4 1
 
 ]]></Node>
 <StgValue><ssdm name="add_ln31"/></StgValue>
@@ -277,7 +277,7 @@ for.inc21:4 %add_ln31 = add i4 %p_1, i4 1
 
 <Node id="14" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-for.inc21:5 %br_ln31 = br i1 %icmp_ln31, void %for.inc21.split, void %for.end23.exitStub
+.preheader:5 %br_ln31 = br i1 %icmp_ln31, void %.split, void %.exitStub
 
 ]]></Node>
 <StgValue><ssdm name="br_ln31"/></StgValue>
@@ -291,12 +291,12 @@ for.inc21:5 %br_ln31 = br i1 %icmp_ln31, void %for.inc21.split, void %for.end23.
 </and_exp></or_exp>
 </condition>
 
-<Node id="16" bw="64" op_0_bw="4">
+<Node id="17" bw="64" op_0_bw="4">
 <![CDATA[
-for.inc21.split:0 %p_cast = zext i4 %p_1
+.split:1 %zext_ln33 = zext i4 %p_1
 
 ]]></Node>
-<StgValue><ssdm name="p_cast"/></StgValue>
+<StgValue><ssdm name="zext_ln33"/></StgValue>
 </operation>
 
 <operation id="34" st_id="1" stage="1" lat="1">
@@ -309,7 +309,7 @@ for.inc21.split:0 %p_cast = zext i4 %p_1
 
 <Node id="18" bw="4" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc21.split:2 %prediction_addr = getelementptr i32 %prediction, i64 0, i64 %p_cast
+.split:2 %prediction_addr = getelementptr i32 %prediction, i64 0, i64 %zext_ln33
 
 ]]></Node>
 <StgValue><ssdm name="prediction_addr"/></StgValue>
@@ -325,7 +325,7 @@ for.inc21.split:2 %prediction_addr = getelementptr i32 %prediction, i64 0, i64 %
 
 <Node id="19" bw="32" op_0_bw="4">
 <![CDATA[
-for.inc21.split:3 %prediction_load = load i4 %prediction_addr
+.split:3 %prediction_load = load i4 %prediction_addr
 
 ]]></Node>
 <StgValue><ssdm name="prediction_load"/></StgValue>
@@ -341,7 +341,7 @@ for.inc21.split:3 %prediction_load = load i4 %prediction_addr
 
 <Node id="24" bw="0" op_0_bw="4" op_1_bw="4" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-for.inc21.split:8 %store_ln31 = store i4 %add_ln31, i4 %p
+.split:8 %store_ln31 = store i4 %add_ln31, i4 %p
 
 ]]></Node>
 <StgValue><ssdm name="store_ln31"/></StgValue>
@@ -359,7 +359,7 @@ for.inc21.split:8 %store_ln31 = store i4 %add_ln31, i4 %p
 
 <Node id="19" bw="32" op_0_bw="4">
 <![CDATA[
-for.inc21.split:3 %prediction_load = load i4 %prediction_addr
+.split:3 %prediction_load = load i4 %prediction_addr
 
 ]]></Node>
 <StgValue><ssdm name="prediction_load"/></StgValue>
@@ -377,7 +377,7 @@ for.inc21.split:3 %prediction_load = load i4 %prediction_addr
 
 <Node id="20" bw="32" op_0_bw="32">
 <![CDATA[
-for.inc21.split:4 %bitcast_ln33 = bitcast i32 %prediction_load
+.split:4 %bitcast_ln33 = bitcast i32 %prediction_load
 
 ]]></Node>
 <StgValue><ssdm name="bitcast_ln33"/></StgValue>
@@ -392,7 +392,7 @@ for.inc21.split:4 %bitcast_ln33 = bitcast i32 %prediction_load
 
 <Node id="21" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc21.split:5 %div = fdiv i32 %bitcast_ln33, i32 %exp_sum_reload_read
+.split:5 %div = fdiv i32 %bitcast_ln33, i32 %exp_sum_reload_read
 
 ]]></Node>
 <StgValue><ssdm name="div"/></StgValue>
@@ -410,7 +410,7 @@ for.inc21.split:5 %div = fdiv i32 %bitcast_ln33, i32 %exp_sum_reload_read
 
 <Node id="21" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc21.split:5 %div = fdiv i32 %bitcast_ln33, i32 %exp_sum_reload_read
+.split:5 %div = fdiv i32 %bitcast_ln33, i32 %exp_sum_reload_read
 
 ]]></Node>
 <StgValue><ssdm name="div"/></StgValue>
@@ -428,7 +428,7 @@ for.inc21.split:5 %div = fdiv i32 %bitcast_ln33, i32 %exp_sum_reload_read
 
 <Node id="21" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc21.split:5 %div = fdiv i32 %bitcast_ln33, i32 %exp_sum_reload_read
+.split:5 %div = fdiv i32 %bitcast_ln33, i32 %exp_sum_reload_read
 
 ]]></Node>
 <StgValue><ssdm name="div"/></StgValue>
@@ -446,7 +446,7 @@ for.inc21.split:5 %div = fdiv i32 %bitcast_ln33, i32 %exp_sum_reload_read
 
 <Node id="21" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc21.split:5 %div = fdiv i32 %bitcast_ln33, i32 %exp_sum_reload_read
+.split:5 %div = fdiv i32 %bitcast_ln33, i32 %exp_sum_reload_read
 
 ]]></Node>
 <StgValue><ssdm name="div"/></StgValue>
@@ -464,7 +464,7 @@ for.inc21.split:5 %div = fdiv i32 %bitcast_ln33, i32 %exp_sum_reload_read
 
 <Node id="21" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc21.split:5 %div = fdiv i32 %bitcast_ln33, i32 %exp_sum_reload_read
+.split:5 %div = fdiv i32 %bitcast_ln33, i32 %exp_sum_reload_read
 
 ]]></Node>
 <StgValue><ssdm name="div"/></StgValue>
@@ -482,7 +482,7 @@ for.inc21.split:5 %div = fdiv i32 %bitcast_ln33, i32 %exp_sum_reload_read
 
 <Node id="21" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc21.split:5 %div = fdiv i32 %bitcast_ln33, i32 %exp_sum_reload_read
+.split:5 %div = fdiv i32 %bitcast_ln33, i32 %exp_sum_reload_read
 
 ]]></Node>
 <StgValue><ssdm name="div"/></StgValue>
@@ -500,7 +500,7 @@ for.inc21.split:5 %div = fdiv i32 %bitcast_ln33, i32 %exp_sum_reload_read
 
 <Node id="21" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc21.split:5 %div = fdiv i32 %bitcast_ln33, i32 %exp_sum_reload_read
+.split:5 %div = fdiv i32 %bitcast_ln33, i32 %exp_sum_reload_read
 
 ]]></Node>
 <StgValue><ssdm name="div"/></StgValue>
@@ -518,7 +518,7 @@ for.inc21.split:5 %div = fdiv i32 %bitcast_ln33, i32 %exp_sum_reload_read
 
 <Node id="21" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc21.split:5 %div = fdiv i32 %bitcast_ln33, i32 %exp_sum_reload_read
+.split:5 %div = fdiv i32 %bitcast_ln33, i32 %exp_sum_reload_read
 
 ]]></Node>
 <StgValue><ssdm name="div"/></StgValue>
@@ -536,7 +536,7 @@ for.inc21.split:5 %div = fdiv i32 %bitcast_ln33, i32 %exp_sum_reload_read
 
 <Node id="21" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc21.split:5 %div = fdiv i32 %bitcast_ln33, i32 %exp_sum_reload_read
+.split:5 %div = fdiv i32 %bitcast_ln33, i32 %exp_sum_reload_read
 
 ]]></Node>
 <StgValue><ssdm name="div"/></StgValue>
@@ -554,7 +554,7 @@ for.inc21.split:5 %div = fdiv i32 %bitcast_ln33, i32 %exp_sum_reload_read
 
 <Node id="21" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc21.split:5 %div = fdiv i32 %bitcast_ln33, i32 %exp_sum_reload_read
+.split:5 %div = fdiv i32 %bitcast_ln33, i32 %exp_sum_reload_read
 
 ]]></Node>
 <StgValue><ssdm name="div"/></StgValue>
@@ -572,7 +572,7 @@ for.inc21.split:5 %div = fdiv i32 %bitcast_ln33, i32 %exp_sum_reload_read
 
 <Node id="21" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc21.split:5 %div = fdiv i32 %bitcast_ln33, i32 %exp_sum_reload_read
+.split:5 %div = fdiv i32 %bitcast_ln33, i32 %exp_sum_reload_read
 
 ]]></Node>
 <StgValue><ssdm name="div"/></StgValue>
@@ -590,7 +590,7 @@ for.inc21.split:5 %div = fdiv i32 %bitcast_ln33, i32 %exp_sum_reload_read
 
 <Node id="21" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc21.split:5 %div = fdiv i32 %bitcast_ln33, i32 %exp_sum_reload_read
+.split:5 %div = fdiv i32 %bitcast_ln33, i32 %exp_sum_reload_read
 
 ]]></Node>
 <StgValue><ssdm name="div"/></StgValue>
@@ -608,7 +608,7 @@ for.inc21.split:5 %div = fdiv i32 %bitcast_ln33, i32 %exp_sum_reload_read
 
 <Node id="21" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc21.split:5 %div = fdiv i32 %bitcast_ln33, i32 %exp_sum_reload_read
+.split:5 %div = fdiv i32 %bitcast_ln33, i32 %exp_sum_reload_read
 
 ]]></Node>
 <StgValue><ssdm name="div"/></StgValue>
@@ -626,7 +626,7 @@ for.inc21.split:5 %div = fdiv i32 %bitcast_ln33, i32 %exp_sum_reload_read
 
 <Node id="21" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc21.split:5 %div = fdiv i32 %bitcast_ln33, i32 %exp_sum_reload_read
+.split:5 %div = fdiv i32 %bitcast_ln33, i32 %exp_sum_reload_read
 
 ]]></Node>
 <StgValue><ssdm name="div"/></StgValue>
@@ -644,7 +644,7 @@ for.inc21.split:5 %div = fdiv i32 %bitcast_ln33, i32 %exp_sum_reload_read
 
 <Node id="21" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc21.split:5 %div = fdiv i32 %bitcast_ln33, i32 %exp_sum_reload_read
+.split:5 %div = fdiv i32 %bitcast_ln33, i32 %exp_sum_reload_read
 
 ]]></Node>
 <StgValue><ssdm name="div"/></StgValue>
@@ -662,7 +662,7 @@ for.inc21.split:5 %div = fdiv i32 %bitcast_ln33, i32 %exp_sum_reload_read
 
 <Node id="21" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-for.inc21.split:5 %div = fdiv i32 %bitcast_ln33, i32 %exp_sum_reload_read
+.split:5 %div = fdiv i32 %bitcast_ln33, i32 %exp_sum_reload_read
 
 ]]></Node>
 <StgValue><ssdm name="div"/></StgValue>
@@ -678,7 +678,7 @@ for.inc21.split:5 %div = fdiv i32 %bitcast_ln33, i32 %exp_sum_reload_read
 
 <Node id="27" bw="0">
 <![CDATA[
-for.end23.exitStub:0 %ret_ln0 = ret
+.exitStub:0 %ret_ln0 = ret
 
 ]]></Node>
 <StgValue><ssdm name="ret_ln0"/></StgValue>
@@ -694,9 +694,9 @@ for.end23.exitStub:0 %ret_ln0 = ret
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="17" bw="0" op_0_bw="0" op_1_bw="0">
+<Node id="16" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc21.split:1 %specloopname_ln31 = specloopname void @_ssdm_op_SpecLoopName, void @empty_8
+.split:0 %specloopname_ln31 = specloopname void @_ssdm_op_SpecLoopName, void @empty_9
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln31"/></StgValue>
@@ -711,7 +711,7 @@ for.inc21.split:1 %specloopname_ln31 = specloopname void @_ssdm_op_SpecLoopName,
 
 <Node id="22" bw="32" op_0_bw="32">
 <![CDATA[
-for.inc21.split:6 %bitcast_ln33_1 = bitcast i32 %div
+.split:6 %bitcast_ln33_1 = bitcast i32 %div
 
 ]]></Node>
 <StgValue><ssdm name="bitcast_ln33_1"/></StgValue>
@@ -726,7 +726,7 @@ for.inc21.split:6 %bitcast_ln33_1 = bitcast i32 %div
 
 <Node id="23" bw="0" op_0_bw="32" op_1_bw="4" op_2_bw="0">
 <![CDATA[
-for.inc21.split:7 %store_ln33 = store i32 %bitcast_ln33_1, i4 %prediction_addr
+.split:7 %store_ln33 = store i32 %bitcast_ln33_1, i4 %prediction_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln33"/></StgValue>
@@ -741,10 +741,10 @@ for.inc21.split:7 %store_ln33 = store i32 %bitcast_ln33_1, i4 %prediction_addr
 
 <Node id="25" bw="0" op_0_bw="0">
 <![CDATA[
-for.inc21.split:9 %br_ln31 = br void %for.inc21
+.split:9 %br_ln0 = br void %.preheader
 
 ]]></Node>
-<StgValue><ssdm name="br_ln31"/></StgValue>
+<StgValue><ssdm name="br_ln0"/></StgValue>
 </operation>
 </state>
 </state_list>

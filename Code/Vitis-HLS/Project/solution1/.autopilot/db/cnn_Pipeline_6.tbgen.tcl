@@ -9,7 +9,6 @@ set isOneStateSeq 0
 set ProfileFlag 0
 set StallSigGenFlag 0
 set isEnableWaveformDebug 1
-set hasInterrupt 0
 set C_modelName {cnn_Pipeline_6}
 set C_modelType { void 0 }
 set C_modelArgList {

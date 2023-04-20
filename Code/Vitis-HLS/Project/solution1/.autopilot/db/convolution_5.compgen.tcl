@@ -71,7 +71,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_conv_to_pool_streams_5 \
     op interface \
-    ports { conv_to_pool_streams_5_din { O 32 vector } conv_to_pool_streams_5_num_data_valid { I 11 vector } conv_to_pool_streams_5_fifo_cap { I 11 vector } conv_to_pool_streams_5_full_n { I 1 bit } conv_to_pool_streams_5_write { O 1 bit } } \
+    ports { conv_to_pool_streams_5_din { O 32 vector } conv_to_pool_streams_5_full_n { I 1 bit } conv_to_pool_streams_5_write { O 1 bit } } \
 } "
 }
 

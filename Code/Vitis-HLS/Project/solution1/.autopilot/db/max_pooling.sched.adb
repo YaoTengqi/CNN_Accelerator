@@ -34,7 +34,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>543517801</coreId>
+						<coreId>1953391988</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -70,7 +70,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>464</coreId>
+						<coreId>1547686189</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -110,7 +110,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4013408896</coreId>
+						<coreId>644320128</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -136,7 +136,7 @@
 						<id>6</id>
 						<name>indvar_flatten_write_ln15</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>15</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -144,7 +144,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="11" tracking_level="0" version="0">
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second class_id="12" tracking_level="0" version="0">
 									<count>1</count>
 									<item_version>0</item_version>
@@ -166,7 +166,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3095757792</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -193,7 +193,7 @@
 						<id>7</id>
 						<name>br_ln15</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>15</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -201,7 +201,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -223,7 +223,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3092286912</coreId>
+						<coreId>1953394432</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -249,7 +249,7 @@
 						<id>9</id>
 						<name>indvar_flatten_load</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>15</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -257,7 +257,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -279,7 +279,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3093848576</coreId>
+						<coreId>1542501120</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -288,7 +288,7 @@
 					<count>2</count>
 					<item_version>0</item_version>
 					<item>92</item>
-					<item>314</item>
+					<item>309</item>
 				</oprand_edges>
 				<opcode>load</opcode>
 				<m_Display>0</m_Display>
@@ -306,7 +306,7 @@
 						<id>10</id>
 						<name>icmp_ln15</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>15</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -314,7 +314,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -336,7 +336,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3093298800</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -363,7 +363,7 @@
 						<id>11</id>
 						<name>add_ln15</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>15</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -371,7 +371,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -393,7 +393,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3089872384</coreId>
+						<coreId>1313423872</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -420,7 +420,7 @@
 						<id>12</id>
 						<name>br_ln15</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>15</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -428,7 +428,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -450,7 +450,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3090510992</coreId>
+						<coreId>1544796968</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -477,25 +477,25 @@
 						<type>0</type>
 						<id>18</id>
 						<name>conv_to_pool_streams_0_read</name>
-						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
-						<lineNumber>27</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<fileName>D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h</fileName>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
+						<lineNumber>144</lineNumber>
+						<contextFuncName>read</contextFuncName>
+						<contextNormFuncName>read</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>pool.cc</first>
-											<second></second>
+											<first>D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h</first>
+											<second>read</second>
 										</first>
-										<second>27</second>
+										<second>144</second>
 									</item>
 								</second>
 							</item>
@@ -508,7 +508,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3093847872</coreId>
+						<coreId>6775040</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -533,31 +533,31 @@
 					<Obj>
 						<type>0</type>
 						<id>19</id>
-						<name>value</name>
-						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
-						<lineNumber>27</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<name>tmp_77</name>
+						<fileName>D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h</fileName>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
+						<lineNumber>144</lineNumber>
+						<contextFuncName>read</contextFuncName>
+						<contextNormFuncName>read</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>pool.cc</first>
-											<second></second>
+											<first>D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h</first>
+											<second>read</second>
 										</first>
-										<second>27</second>
+										<second>144</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName>value</originalName>
+						<originalName>tmp</originalName>
 						<rtlName></rtlName>
 						<control></control>
 						<opType></opType>
@@ -565,7 +565,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3089151872</coreId>
+						<coreId>1546177776</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -591,22 +591,22 @@
 						<id>20</id>
 						<name>tmp</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -621,7 +621,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3089151264</coreId>
+						<coreId>1545326848</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -650,22 +650,22 @@
 						<id>21</id>
 						<name>trunc_ln28</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -680,7 +680,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3093469568</coreId>
+						<coreId>1544768832</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>23</bitwidth>
@@ -706,22 +706,22 @@
 						<id>22</id>
 						<name>icmp_ln28</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -736,7 +736,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3089872464</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -763,22 +763,22 @@
 						<id>23</id>
 						<name>icmp_ln28_92</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -793,7 +793,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3093339504</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -820,22 +820,22 @@
 						<id>24</id>
 						<name>or_ln28</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -850,7 +850,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3093553600</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -877,22 +877,22 @@
 						<id>25</id>
 						<name>tmp_s</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -907,7 +907,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3091775584</coreId>
+						<coreId>1545848336</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -934,22 +934,22 @@
 						<id>26</id>
 						<name>and_ln28</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -964,7 +964,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3095085296</coreId>
+						<coreId>1544783528</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -991,22 +991,22 @@
 						<id>27</id>
 						<name>pool_50</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -1021,7 +1021,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3091776064</coreId>
+						<coreId>1544776256</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1048,25 +1048,25 @@
 						<type>0</type>
 						<id>28</id>
 						<name>conv_to_pool_streams_0_read_1</name>
-						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
-						<lineNumber>27</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<fileName>D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h</fileName>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
+						<lineNumber>144</lineNumber>
+						<contextFuncName>read</contextFuncName>
+						<contextNormFuncName>read</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>pool.cc</first>
-											<second></second>
+											<first>D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h</first>
+											<second>read</second>
 										</first>
-										<second>27</second>
+										<second>144</second>
 									</item>
 								</second>
 							</item>
@@ -1079,7 +1079,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3091775456</coreId>
+						<coreId>6775040</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1089,7 +1089,7 @@
 					<item_version>0</item_version>
 					<item>130</item>
 					<item>131</item>
-					<item>313</item>
+					<item>308</item>
 				</oprand_edges>
 				<opcode>read</opcode>
 				<m_Display>0</m_Display>
@@ -1105,31 +1105,31 @@
 					<Obj>
 						<type>0</type>
 						<id>29</id>
-						<name>value_22</name>
-						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
-						<lineNumber>27</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<name>tmp_78</name>
+						<fileName>D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h</fileName>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
+						<lineNumber>144</lineNumber>
+						<contextFuncName>read</contextFuncName>
+						<contextNormFuncName>read</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>pool.cc</first>
-											<second></second>
+											<first>D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h</first>
+											<second>read</second>
 										</first>
-										<second>27</second>
+										<second>144</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName>value</originalName>
+						<originalName>tmp</originalName>
 						<rtlName></rtlName>
 						<control></control>
 						<opType></opType>
@@ -1137,7 +1137,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3092312544</coreId>
+						<coreId>1545899904</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1161,24 +1161,24 @@
 					<Obj>
 						<type>0</type>
 						<id>30</id>
-						<name>tmp_46</name>
+						<name>tmp_55</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -1193,7 +1193,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3091749832</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -1222,22 +1222,22 @@
 						<id>31</id>
 						<name>trunc_ln28_43</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -1252,7 +1252,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3091749392</coreId>
+						<coreId>1546173120</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>23</bitwidth>
@@ -1278,22 +1278,22 @@
 						<id>32</id>
 						<name>bitcast_ln28</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -1308,7 +1308,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3082258864</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1332,24 +1332,24 @@
 					<Obj>
 						<type>0</type>
 						<id>33</id>
-						<name>tmp_47</name>
+						<name>tmp_56</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -1364,7 +1364,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3091770224</coreId>
+						<coreId>1544774976</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -1393,22 +1393,22 @@
 						<id>34</id>
 						<name>trunc_ln28_44</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -1423,7 +1423,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3091266144</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>23</bitwidth>
@@ -1449,22 +1449,22 @@
 						<id>35</id>
 						<name>icmp_ln28_93</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -1479,7 +1479,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3091770704</coreId>
+						<coreId>1545281280</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1506,22 +1506,22 @@
 						<id>36</id>
 						<name>icmp_ln28_94</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -1536,7 +1536,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3091770096</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1563,22 +1563,22 @@
 						<id>37</id>
 						<name>or_ln28_43</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -1593,7 +1593,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3093716352</coreId>
+						<coreId>7955712</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1620,22 +1620,22 @@
 						<id>38</id>
 						<name>icmp_ln28_95</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -1650,7 +1650,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3091338496</coreId>
+						<coreId>1545612576</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1677,22 +1677,22 @@
 						<id>39</id>
 						<name>icmp_ln28_96</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -1707,7 +1707,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3086952992</coreId>
+						<coreId>1545847328</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1734,22 +1734,22 @@
 						<id>40</id>
 						<name>or_ln28_44</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -1764,7 +1764,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3089923856</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1791,22 +1791,22 @@
 						<id>41</id>
 						<name>and_ln28_43</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -1821,7 +1821,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3088431872</coreId>
+						<coreId>1544792640</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1846,24 +1846,24 @@
 					<Obj>
 						<type>0</type>
 						<id>42</id>
-						<name>tmp_48</name>
+						<name>tmp_57</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -1878,7 +1878,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3088432080</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1905,22 +1905,22 @@
 						<id>43</id>
 						<name>and_ln28_44</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -1935,7 +1935,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1330007625</coreId>
+						<coreId>1546170288</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1962,22 +1962,22 @@
 						<id>44</id>
 						<name>pool_52</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -1992,7 +1992,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3090543744</coreId>
+						<coreId>1544803648</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -2019,25 +2019,25 @@
 						<type>0</type>
 						<id>45</id>
 						<name>conv_to_pool_streams_0_read_2</name>
-						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
-						<lineNumber>27</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<fileName>D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h</fileName>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
+						<lineNumber>144</lineNumber>
+						<contextFuncName>read</contextFuncName>
+						<contextNormFuncName>read</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>pool.cc</first>
-											<second></second>
+											<first>D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h</first>
+											<second>read</second>
 										</first>
-										<second>27</second>
+										<second>144</second>
 									</item>
 								</second>
 							</item>
@@ -2050,7 +2050,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>542329928</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -2060,7 +2060,7 @@
 					<item_version>0</item_version>
 					<item>165</item>
 					<item>166</item>
-					<item>312</item>
+					<item>307</item>
 				</oprand_edges>
 				<opcode>read</opcode>
 				<m_Display>0</m_Display>
@@ -2076,31 +2076,31 @@
 					<Obj>
 						<type>0</type>
 						<id>46</id>
-						<name>value_23</name>
-						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
-						<lineNumber>27</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<name>tmp_79</name>
+						<fileName>D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h</fileName>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
+						<lineNumber>144</lineNumber>
+						<contextFuncName>read</contextFuncName>
+						<contextNormFuncName>read</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>pool.cc</first>
-											<second></second>
+											<first>D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h</first>
+											<second>read</second>
 										</first>
-										<second>27</second>
+										<second>144</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName>value</originalName>
+						<originalName>tmp</originalName>
 						<rtlName></rtlName>
 						<control></control>
 						<opType></opType>
@@ -2108,7 +2108,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3090544224</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -2132,24 +2132,24 @@
 					<Obj>
 						<type>0</type>
 						<id>47</id>
-						<name>tmp_49</name>
+						<name>tmp_58</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -2164,7 +2164,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>93</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -2193,22 +2193,22 @@
 						<id>48</id>
 						<name>trunc_ln28_45</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -2223,7 +2223,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3087532576</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>23</bitwidth>
@@ -2249,22 +2249,22 @@
 						<id>49</id>
 						<name>bitcast_ln28_15</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -2279,7 +2279,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3087685456</coreId>
+						<coreId>1145981184</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -2303,24 +2303,24 @@
 					<Obj>
 						<type>0</type>
 						<id>50</id>
-						<name>tmp_50</name>
+						<name>tmp_59</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -2335,7 +2335,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3094138528</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -2364,22 +2364,22 @@
 						<id>51</id>
 						<name>trunc_ln28_46</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -2394,7 +2394,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>116</coreId>
+						<coreId>1599294464</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>23</bitwidth>
@@ -2420,22 +2420,22 @@
 						<id>52</id>
 						<name>icmp_ln28_97</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -2450,7 +2450,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3091749520</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2477,22 +2477,22 @@
 						<id>53</id>
 						<name>icmp_ln28_98</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -2507,7 +2507,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3091749520</coreId>
+						<coreId>6775040</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2534,22 +2534,22 @@
 						<id>54</id>
 						<name>or_ln28_45</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -2564,7 +2564,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3092009152</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2591,22 +2591,22 @@
 						<id>55</id>
 						<name>icmp_ln28_99</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -2621,7 +2621,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3094138048</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2648,22 +2648,22 @@
 						<id>56</id>
 						<name>icmp_ln28_100</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -2678,7 +2678,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3092007040</coreId>
+						<coreId>1544778920</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2705,22 +2705,22 @@
 						<id>57</id>
 						<name>or_ln28_46</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -2735,7 +2735,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3095784032</coreId>
+						<coreId>1869833472</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2762,22 +2762,22 @@
 						<id>58</id>
 						<name>and_ln28_45</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -2792,7 +2792,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3091749520</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2817,24 +2817,24 @@
 					<Obj>
 						<type>0</type>
 						<id>59</id>
-						<name>tmp_51</name>
+						<name>tmp_60</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -2849,7 +2849,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>103</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2876,22 +2876,22 @@
 						<id>60</id>
 						<name>and_ln28_46</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -2906,7 +2906,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3092289440</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2933,22 +2933,22 @@
 						<id>61</id>
 						<name>pool_54</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -2963,7 +2963,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3092289440</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -2990,25 +2990,25 @@
 						<type>0</type>
 						<id>62</id>
 						<name>conv_to_pool_streams_0_read_3</name>
-						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
-						<lineNumber>27</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<fileName>D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h</fileName>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
+						<lineNumber>144</lineNumber>
+						<contextFuncName>read</contextFuncName>
+						<contextNormFuncName>read</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>pool.cc</first>
-											<second></second>
+											<first>D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h</first>
+											<second>read</second>
 										</first>
-										<second>27</second>
+										<second>144</second>
 									</item>
 								</second>
 							</item>
@@ -3021,7 +3021,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3091749520</coreId>
+						<coreId>1544767296</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -3031,7 +3031,7 @@
 					<item_version>0</item_version>
 					<item>200</item>
 					<item>201</item>
-					<item>311</item>
+					<item>306</item>
 				</oprand_edges>
 				<opcode>read</opcode>
 				<m_Display>0</m_Display>
@@ -3047,31 +3047,31 @@
 					<Obj>
 						<type>0</type>
 						<id>63</id>
-						<name>value_24</name>
-						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
-						<lineNumber>27</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<name>tmp_80</name>
+						<fileName>D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h</fileName>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
+						<lineNumber>144</lineNumber>
+						<contextFuncName>read</contextFuncName>
+						<contextNormFuncName>read</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>pool.cc</first>
-											<second></second>
+											<first>D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h</first>
+											<second>read</second>
 										</first>
-										<second>27</second>
+										<second>144</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName>value</originalName>
+						<originalName>tmp</originalName>
 						<rtlName></rtlName>
 						<control></control>
 						<opType></opType>
@@ -3079,7 +3079,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3089317376</coreId>
+						<coreId>1717924352</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -3103,24 +3103,24 @@
 					<Obj>
 						<type>0</type>
 						<id>64</id>
-						<name>tmp_52</name>
+						<name>tmp_61</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -3135,7 +3135,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3091758112</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -3164,22 +3164,22 @@
 						<id>65</id>
 						<name>trunc_ln28_47</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -3194,7 +3194,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3094464384</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>23</bitwidth>
@@ -3220,22 +3220,22 @@
 						<id>66</id>
 						<name>bitcast_ln28_16</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -3250,7 +3250,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>116</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -3274,24 +3274,24 @@
 					<Obj>
 						<type>0</type>
 						<id>67</id>
-						<name>tmp_53</name>
+						<name>tmp_62</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -3306,7 +3306,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3093134384</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -3335,22 +3335,22 @@
 						<id>68</id>
 						<name>trunc_ln28_48</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -3365,7 +3365,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3092007648</coreId>
+						<coreId>1547218176</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>23</bitwidth>
@@ -3391,22 +3391,22 @@
 						<id>69</id>
 						<name>icmp_ln28_101</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -3421,7 +3421,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3089367440</coreId>
+						<coreId>624145408</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3448,22 +3448,22 @@
 						<id>70</id>
 						<name>icmp_ln28_102</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -3478,7 +3478,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3089366832</coreId>
+						<coreId>1546130224</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3505,22 +3505,22 @@
 						<id>71</id>
 						<name>or_ln28_47</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -3535,7 +3535,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3095784592</coreId>
+						<coreId>1544789184</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3562,22 +3562,22 @@
 						<id>72</id>
 						<name>icmp_ln28_103</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -3592,7 +3592,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3091749520</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3619,22 +3619,22 @@
 						<id>73</id>
 						<name>icmp_ln28_104</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -3649,7 +3649,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3092007344</coreId>
+						<coreId>1544779048</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3676,22 +3676,22 @@
 						<id>74</id>
 						<name>or_ln28_48</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -3706,7 +3706,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3092267568</coreId>
+						<coreId>1953394432</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3733,22 +3733,22 @@
 						<id>75</id>
 						<name>and_ln28_47</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -3763,7 +3763,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3091749520</coreId>
+						<coreId>1544787648</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3788,24 +3788,24 @@
 					<Obj>
 						<type>0</type>
 						<id>76</id>
-						<name>tmp_54</name>
+						<name>tmp_63</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -3820,7 +3820,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1717924464</coreId>
+						<coreId>1544795048</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3847,22 +3847,22 @@
 						<id>77</id>
 						<name>and_ln28_48</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -3877,7 +3877,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3091793088</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3904,22 +3904,22 @@
 						<id>78</id>
 						<name>pool_56</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -3934,7 +3934,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3091749520</coreId>
+						<coreId>1546178880</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -3960,26 +3960,26 @@
 					<Obj>
 						<type>0</type>
 						<id>79</id>
-						<name>bitcast_ln32</name>
-						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
-						<lineNumber>32</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<name>bitcast_ln173</name>
+						<fileName>D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h</fileName>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
+						<lineNumber>173</lineNumber>
+						<contextFuncName>write</contextFuncName>
+						<contextNormFuncName>write</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>pool.cc</first>
-											<second></second>
+											<first>D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h</first>
+											<second>write</second>
 										</first>
-										<second>32</second>
+										<second>173</second>
 									</item>
 								</second>
 							</item>
@@ -3992,7 +3992,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3089311472</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -4016,26 +4016,26 @@
 					<Obj>
 						<type>0</type>
 						<id>80</id>
-						<name>pool_to_flat_streams_0_write_ln32</name>
-						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
-						<lineNumber>32</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<name>pool_to_flat_streams_0_write_ln173</name>
+						<fileName>D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h</fileName>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
+						<lineNumber>173</lineNumber>
+						<contextFuncName>write</contextFuncName>
+						<contextNormFuncName>write</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>pool.cc</first>
-											<second></second>
+											<first>D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h</first>
+											<second>write</second>
 										</first>
-										<second>32</second>
+										<second>173</second>
 									</item>
 								</second>
 							</item>
@@ -4048,7 +4048,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3091749520</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -4074,26 +4074,26 @@
 					<Obj>
 						<type>0</type>
 						<id>81</id>
-						<name>indvar_flatten_write_ln18</name>
+						<name>indvar_flatten_write_ln15</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
-						<lineNumber>18</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
+						<lineNumber>15</lineNumber>
+						<contextFuncName>max_pooling</contextFuncName>
+						<contextNormFuncName>max_pooling</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>pool.cc</first>
-											<second></second>
+											<second>max_pooling</second>
 										</first>
-										<second>18</second>
+										<second>15</second>
 									</item>
 								</second>
 							</item>
@@ -4106,7 +4106,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3091749520</coreId>
+						<coreId>1936942336</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -4116,8 +4116,8 @@
 					<item_version>0</item_version>
 					<item>240</item>
 					<item>241</item>
-					<item>315</item>
-					<item>316</item>
+					<item>310</item>
+					<item>311</item>
 				</oprand_edges>
 				<opcode>store</opcode>
 				<m_Display>0</m_Display>
@@ -4133,29 +4133,15 @@
 					<Obj>
 						<type>0</type>
 						<id>82</id>
-						<name>br_ln18</name>
-						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
-						<lineNumber>18</lineNumber>
+						<name>br_ln0</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
 						<contextFuncName></contextFuncName>
 						<contextNormFuncName></contextNormFuncName>
 						<inlineStackInfo>
-							<count>1</count>
+							<count>0</count>
 							<item_version>0</item_version>
-							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>pool.cc</first>
-											<second></second>
-										</first>
-										<second>18</second>
-									</item>
-								</second>
-							</item>
 						</inlineStackInfo>
 						<originalName></originalName>
 						<rtlName></rtlName>
@@ -4165,7 +4151,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3089311088</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -4191,7 +4177,7 @@
 						<id>84</id>
 						<name>_ln35</name>
 						<fileName>pool.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>35</lineNumber>
 						<contextFuncName>max_pooling</contextFuncName>
 						<contextNormFuncName>max_pooling</contextNormFuncName>
@@ -4199,7 +4185,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4221,7 +4207,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1546176096</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -4266,7 +4252,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2147483647</coreId>
+						<coreId>1547434432</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -4297,7 +4283,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4013379792</coreId>
+						<coreId>1547435032</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -4328,7 +4314,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4013375312</coreId>
+						<coreId>1547396208</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -4359,7 +4345,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3089421712</coreId>
+						<coreId>14</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -4390,7 +4376,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3092155824</coreId>
+						<coreId>1547386424</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -4421,7 +4407,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3094135032</coreId>
+						<coreId>1547397336</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -4452,7 +4438,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3092155824</coreId>
+						<coreId>1547378384</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -4483,7 +4469,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3094135160</coreId>
+						<coreId>1547667146</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>23</bitwidth>
@@ -4514,7 +4500,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3091749520</coreId>
+						<coreId>7</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -4530,7 +4516,7 @@
 				<Obj>
 					<type>3</type>
 					<id>8</id>
-					<name>entry</name>
+					<name></name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -4548,7 +4534,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>3090512016</coreId>
+					<coreId>0</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -4563,7 +4549,7 @@
 				<Obj>
 					<type>3</type>
 					<id>13</id>
-					<name>for.body12</name>
+					<name></name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -4581,7 +4567,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>3095777168</coreId>
+					<coreId>3487177568</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -4597,7 +4583,7 @@
 				<Obj>
 					<type>3</type>
 					<id>83</id>
-					<name>for.inc19</name>
+					<name>.split2</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -4615,7 +4601,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>3089151392</coreId>
+					<coreId>276</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -4692,7 +4678,7 @@
 				<Obj>
 					<type>3</type>
 					<id>85</id>
-					<name>for.end21</name>
+					<name></name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -4710,7 +4696,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>3094135072</coreId>
+					<coreId>1537829728</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -5655,70 +5641,70 @@
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_222">
-				<id>307</id>
+				<id>302</id>
 				<edge_type>2</edge_type>
 				<source_obj>8</source_obj>
 				<sink_obj>13</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_223">
-				<id>308</id>
+				<id>303</id>
 				<edge_type>2</edge_type>
 				<source_obj>13</source_obj>
 				<sink_obj>85</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_224">
-				<id>309</id>
+				<id>304</id>
 				<edge_type>2</edge_type>
 				<source_obj>13</source_obj>
 				<sink_obj>83</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_225">
-				<id>310</id>
+				<id>305</id>
 				<edge_type>2</edge_type>
 				<source_obj>83</source_obj>
 				<sink_obj>13</sink_obj>
 				<is_back_edge>1</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_226">
-				<id>311</id>
+				<id>306</id>
 				<edge_type>4</edge_type>
 				<source_obj>45</source_obj>
 				<sink_obj>62</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_227">
-				<id>312</id>
+				<id>307</id>
 				<edge_type>4</edge_type>
 				<source_obj>28</source_obj>
 				<sink_obj>45</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_228">
-				<id>313</id>
+				<id>308</id>
 				<edge_type>4</edge_type>
 				<source_obj>18</source_obj>
 				<sink_obj>28</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_229">
-				<id>314</id>
+				<id>309</id>
 				<edge_type>4</edge_type>
 				<source_obj>6</source_obj>
 				<sink_obj>9</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_230">
-				<id>315</id>
+				<id>310</id>
 				<edge_type>4</edge_type>
 				<source_obj>6</source_obj>
 				<sink_obj>81</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_231">
-				<id>316</id>
+				<id>311</id>
 				<edge_type>4</edge_type>
 				<source_obj>9</source_obj>
 				<sink_obj>81</sink_obj>

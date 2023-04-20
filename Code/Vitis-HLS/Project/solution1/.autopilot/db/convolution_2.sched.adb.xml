@@ -55,7 +55,7 @@
 
 <Node id="7" bw="4" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:2 %weight_buf_addr = getelementptr i32 %weight_buf, i64 0, i64 0
+codeRepl:2 %weight_buf_addr = getelementptr i32 %weight_buf, i64 0, i64 0
 
 ]]></Node>
 <StgValue><ssdm name="weight_buf_addr"/></StgValue>
@@ -70,7 +70,7 @@ entry:2 %weight_buf_addr = getelementptr i32 %weight_buf, i64 0, i64 0
 
 <Node id="16" bw="32" op_0_bw="4">
 <![CDATA[
-entry:11 %weight_buf_load = load i4 %weight_buf_addr
+codeRepl:11 %weight_buf_load = load i4 %weight_buf_addr
 
 ]]></Node>
 <StgValue><ssdm name="weight_buf_load"/></StgValue>
@@ -88,7 +88,7 @@ entry:11 %weight_buf_load = load i4 %weight_buf_addr
 
 <Node id="8" bw="4" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:3 %weight_buf_addr_38 = getelementptr i32 %weight_buf, i64 0, i64 1
+codeRepl:3 %weight_buf_addr_38 = getelementptr i32 %weight_buf, i64 0, i64 1
 
 ]]></Node>
 <StgValue><ssdm name="weight_buf_addr_38"/></StgValue>
@@ -103,7 +103,7 @@ entry:3 %weight_buf_addr_38 = getelementptr i32 %weight_buf, i64 0, i64 1
 
 <Node id="9" bw="4" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:4 %weight_buf_addr_39 = getelementptr i32 %weight_buf, i64 0, i64 2
+codeRepl:4 %weight_buf_addr_39 = getelementptr i32 %weight_buf, i64 0, i64 2
 
 ]]></Node>
 <StgValue><ssdm name="weight_buf_addr_39"/></StgValue>
@@ -118,7 +118,7 @@ entry:4 %weight_buf_addr_39 = getelementptr i32 %weight_buf, i64 0, i64 2
 
 <Node id="16" bw="32" op_0_bw="4">
 <![CDATA[
-entry:11 %weight_buf_load = load i4 %weight_buf_addr
+codeRepl:11 %weight_buf_load = load i4 %weight_buf_addr
 
 ]]></Node>
 <StgValue><ssdm name="weight_buf_load"/></StgValue>
@@ -133,7 +133,7 @@ entry:11 %weight_buf_load = load i4 %weight_buf_addr
 
 <Node id="17" bw="32" op_0_bw="4">
 <![CDATA[
-entry:12 %weight_buf_load_41 = load i4 %weight_buf_addr_38
+codeRepl:12 %weight_buf_load_41 = load i4 %weight_buf_addr_38
 
 ]]></Node>
 <StgValue><ssdm name="weight_buf_load_41"/></StgValue>
@@ -148,7 +148,7 @@ entry:12 %weight_buf_load_41 = load i4 %weight_buf_addr_38
 
 <Node id="18" bw="32" op_0_bw="4">
 <![CDATA[
-entry:13 %weight_buf_load_42 = load i4 %weight_buf_addr_39
+codeRepl:13 %weight_buf_load_42 = load i4 %weight_buf_addr_39
 
 ]]></Node>
 <StgValue><ssdm name="weight_buf_load_42"/></StgValue>
@@ -166,7 +166,7 @@ entry:13 %weight_buf_load_42 = load i4 %weight_buf_addr_39
 
 <Node id="10" bw="4" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:5 %weight_buf_addr_40 = getelementptr i32 %weight_buf, i64 0, i64 3
+codeRepl:5 %weight_buf_addr_40 = getelementptr i32 %weight_buf, i64 0, i64 3
 
 ]]></Node>
 <StgValue><ssdm name="weight_buf_addr_40"/></StgValue>
@@ -181,7 +181,7 @@ entry:5 %weight_buf_addr_40 = getelementptr i32 %weight_buf, i64 0, i64 3
 
 <Node id="11" bw="4" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:6 %weight_buf_addr_41 = getelementptr i32 %weight_buf, i64 0, i64 4
+codeRepl:6 %weight_buf_addr_41 = getelementptr i32 %weight_buf, i64 0, i64 4
 
 ]]></Node>
 <StgValue><ssdm name="weight_buf_addr_41"/></StgValue>
@@ -196,7 +196,7 @@ entry:6 %weight_buf_addr_41 = getelementptr i32 %weight_buf, i64 0, i64 4
 
 <Node id="17" bw="32" op_0_bw="4">
 <![CDATA[
-entry:12 %weight_buf_load_41 = load i4 %weight_buf_addr_38
+codeRepl:12 %weight_buf_load_41 = load i4 %weight_buf_addr_38
 
 ]]></Node>
 <StgValue><ssdm name="weight_buf_load_41"/></StgValue>
@@ -211,7 +211,7 @@ entry:12 %weight_buf_load_41 = load i4 %weight_buf_addr_38
 
 <Node id="18" bw="32" op_0_bw="4">
 <![CDATA[
-entry:13 %weight_buf_load_42 = load i4 %weight_buf_addr_39
+codeRepl:13 %weight_buf_load_42 = load i4 %weight_buf_addr_39
 
 ]]></Node>
 <StgValue><ssdm name="weight_buf_load_42"/></StgValue>
@@ -226,7 +226,7 @@ entry:13 %weight_buf_load_42 = load i4 %weight_buf_addr_39
 
 <Node id="19" bw="32" op_0_bw="4">
 <![CDATA[
-entry:14 %weight_buf_load_43 = load i4 %weight_buf_addr_40
+codeRepl:14 %weight_buf_load_43 = load i4 %weight_buf_addr_40
 
 ]]></Node>
 <StgValue><ssdm name="weight_buf_load_43"/></StgValue>
@@ -241,7 +241,7 @@ entry:14 %weight_buf_load_43 = load i4 %weight_buf_addr_40
 
 <Node id="20" bw="32" op_0_bw="4">
 <![CDATA[
-entry:15 %weight_buf_load_44 = load i4 %weight_buf_addr_41
+codeRepl:15 %weight_buf_load_44 = load i4 %weight_buf_addr_41
 
 ]]></Node>
 <StgValue><ssdm name="weight_buf_load_44"/></StgValue>
@@ -259,7 +259,7 @@ entry:15 %weight_buf_load_44 = load i4 %weight_buf_addr_41
 
 <Node id="6" bw="4" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:1 %weight_buf_addr19 = getelementptr i32 %weight_buf, i64 0, i64 6
+codeRepl:1 %weight_buf_addr19 = getelementptr i32 %weight_buf, i64 0, i64 6
 
 ]]></Node>
 <StgValue><ssdm name="weight_buf_addr19"/></StgValue>
@@ -274,7 +274,7 @@ entry:1 %weight_buf_addr19 = getelementptr i32 %weight_buf, i64 0, i64 6
 
 <Node id="12" bw="4" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:7 %weight_buf_addr_42 = getelementptr i32 %weight_buf, i64 0, i64 5
+codeRepl:7 %weight_buf_addr_42 = getelementptr i32 %weight_buf, i64 0, i64 5
 
 ]]></Node>
 <StgValue><ssdm name="weight_buf_addr_42"/></StgValue>
@@ -289,7 +289,7 @@ entry:7 %weight_buf_addr_42 = getelementptr i32 %weight_buf, i64 0, i64 5
 
 <Node id="19" bw="32" op_0_bw="4">
 <![CDATA[
-entry:14 %weight_buf_load_43 = load i4 %weight_buf_addr_40
+codeRepl:14 %weight_buf_load_43 = load i4 %weight_buf_addr_40
 
 ]]></Node>
 <StgValue><ssdm name="weight_buf_load_43"/></StgValue>
@@ -304,7 +304,7 @@ entry:14 %weight_buf_load_43 = load i4 %weight_buf_addr_40
 
 <Node id="20" bw="32" op_0_bw="4">
 <![CDATA[
-entry:15 %weight_buf_load_44 = load i4 %weight_buf_addr_41
+codeRepl:15 %weight_buf_load_44 = load i4 %weight_buf_addr_41
 
 ]]></Node>
 <StgValue><ssdm name="weight_buf_load_44"/></StgValue>
@@ -319,7 +319,7 @@ entry:15 %weight_buf_load_44 = load i4 %weight_buf_addr_41
 
 <Node id="21" bw="32" op_0_bw="4">
 <![CDATA[
-entry:16 %weight_buf_load_45 = load i4 %weight_buf_addr_42
+codeRepl:16 %weight_buf_load_45 = load i4 %weight_buf_addr_42
 
 ]]></Node>
 <StgValue><ssdm name="weight_buf_load_45"/></StgValue>
@@ -334,7 +334,7 @@ entry:16 %weight_buf_load_45 = load i4 %weight_buf_addr_42
 
 <Node id="22" bw="32" op_0_bw="4">
 <![CDATA[
-entry:17 %weight_buf_load_46 = load i4 %weight_buf_addr19
+codeRepl:17 %weight_buf_load_46 = load i4 %weight_buf_addr19
 
 ]]></Node>
 <StgValue><ssdm name="weight_buf_load_46"/></StgValue>
@@ -352,7 +352,7 @@ entry:17 %weight_buf_load_46 = load i4 %weight_buf_addr19
 
 <Node id="5" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-entry:0 %biases_buf_read = read i32 @_ssdm_op_Read.ap_auto.float, i32 %biases_buf
+codeRepl:0 %biases_buf_read = read i32 @_ssdm_op_Read.ap_auto.float, i32 %biases_buf
 
 ]]></Node>
 <StgValue><ssdm name="biases_buf_read"/></StgValue>
@@ -367,7 +367,7 @@ entry:0 %biases_buf_read = read i32 @_ssdm_op_Read.ap_auto.float, i32 %biases_bu
 
 <Node id="13" bw="4" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:8 %weight_buf_addr_43 = getelementptr i32 %weight_buf, i64 0, i64 7
+codeRepl:8 %weight_buf_addr_43 = getelementptr i32 %weight_buf, i64 0, i64 7
 
 ]]></Node>
 <StgValue><ssdm name="weight_buf_addr_43"/></StgValue>
@@ -382,7 +382,7 @@ entry:8 %weight_buf_addr_43 = getelementptr i32 %weight_buf, i64 0, i64 7
 
 <Node id="14" bw="4" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:9 %weight_buf_addr_44 = getelementptr i32 %weight_buf, i64 0, i64 8
+codeRepl:9 %weight_buf_addr_44 = getelementptr i32 %weight_buf, i64 0, i64 8
 
 ]]></Node>
 <StgValue><ssdm name="weight_buf_addr_44"/></StgValue>
@@ -397,7 +397,7 @@ entry:9 %weight_buf_addr_44 = getelementptr i32 %weight_buf, i64 0, i64 8
 
 <Node id="21" bw="32" op_0_bw="4">
 <![CDATA[
-entry:16 %weight_buf_load_45 = load i4 %weight_buf_addr_42
+codeRepl:16 %weight_buf_load_45 = load i4 %weight_buf_addr_42
 
 ]]></Node>
 <StgValue><ssdm name="weight_buf_load_45"/></StgValue>
@@ -412,7 +412,7 @@ entry:16 %weight_buf_load_45 = load i4 %weight_buf_addr_42
 
 <Node id="22" bw="32" op_0_bw="4">
 <![CDATA[
-entry:17 %weight_buf_load_46 = load i4 %weight_buf_addr19
+codeRepl:17 %weight_buf_load_46 = load i4 %weight_buf_addr19
 
 ]]></Node>
 <StgValue><ssdm name="weight_buf_load_46"/></StgValue>
@@ -427,7 +427,7 @@ entry:17 %weight_buf_load_46 = load i4 %weight_buf_addr19
 
 <Node id="23" bw="32" op_0_bw="4">
 <![CDATA[
-entry:18 %weight_buf_load_47 = load i4 %weight_buf_addr_43
+codeRepl:18 %weight_buf_load_47 = load i4 %weight_buf_addr_43
 
 ]]></Node>
 <StgValue><ssdm name="weight_buf_load_47"/></StgValue>
@@ -442,7 +442,7 @@ entry:18 %weight_buf_load_47 = load i4 %weight_buf_addr_43
 
 <Node id="24" bw="32" op_0_bw="4">
 <![CDATA[
-entry:19 %weight_buf_load_48 = load i4 %weight_buf_addr_44
+codeRepl:19 %weight_buf_load_48 = load i4 %weight_buf_addr_44
 
 ]]></Node>
 <StgValue><ssdm name="weight_buf_load_48"/></StgValue>
@@ -460,7 +460,7 @@ entry:19 %weight_buf_load_48 = load i4 %weight_buf_addr_44
 
 <Node id="23" bw="32" op_0_bw="4">
 <![CDATA[
-entry:18 %weight_buf_load_47 = load i4 %weight_buf_addr_43
+codeRepl:18 %weight_buf_load_47 = load i4 %weight_buf_addr_43
 
 ]]></Node>
 <StgValue><ssdm name="weight_buf_load_47"/></StgValue>
@@ -475,7 +475,7 @@ entry:18 %weight_buf_load_47 = load i4 %weight_buf_addr_43
 
 <Node id="24" bw="32" op_0_bw="4">
 <![CDATA[
-entry:19 %weight_buf_load_48 = load i4 %weight_buf_addr_44
+codeRepl:19 %weight_buf_load_48 = load i4 %weight_buf_addr_44
 
 ]]></Node>
 <StgValue><ssdm name="weight_buf_load_48"/></StgValue>
@@ -490,7 +490,7 @@ entry:19 %weight_buf_load_48 = load i4 %weight_buf_addr_44
 
 <Node id="25" bw="32" op_0_bw="32" op_1_bw="0">
 <![CDATA[
-entry:20 %empty = wait i32 @_ssdm_op_Wait
+codeRepl:20 %empty = wait i32 @_ssdm_op_Wait
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -505,7 +505,7 @@ entry:20 %empty = wait i32 @_ssdm_op_Wait
 
 <Node id="26" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32" op_11_bw="32" op_12_bw="32" op_13_bw="0">
 <![CDATA[
-entry:21 %call_ln0 = call void @convolution.2_Pipeline_conv_for_rows_win_for_rows_win_for_cols, i32 %pad_img, i32 %weight_buf_load, i32 %weight_buf_load_41, i32 %weight_buf_load_42, i32 %weight_buf_load_43, i32 %weight_buf_load_44, i32 %weight_buf_load_45, i32 %weight_buf_load_46, i32 %weight_buf_load_47, i32 %weight_buf_load_48, i32 %biases_buf_read, i32 %conv_to_pool_streams_2
+codeRepl:21 %call_ln0 = call void @convolution.2_Pipeline_conv_for_rows_win_for_rows_win_for_cols, i32 %pad_img, i32 %weight_buf_load, i32 %weight_buf_load_41, i32 %weight_buf_load_42, i32 %weight_buf_load_43, i32 %weight_buf_load_44, i32 %weight_buf_load_45, i32 %weight_buf_load_46, i32 %weight_buf_load_47, i32 %weight_buf_load_48, i32 %biases_buf_read, i32 %conv_to_pool_streams_2
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -521,9 +521,9 @@ entry:21 %call_ln0 = call void @convolution.2_Pipeline_conv_for_rows_win_for_row
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="15" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
+<Node id="15" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
 <![CDATA[
-entry:10 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %conv_to_pool_streams_2, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0
+codeRepl:10 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %conv_to_pool_streams_2, void @empty, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -538,7 +538,7 @@ entry:10 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %c
 
 <Node id="26" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32" op_11_bw="32" op_12_bw="32" op_13_bw="0">
 <![CDATA[
-entry:21 %call_ln0 = call void @convolution.2_Pipeline_conv_for_rows_win_for_rows_win_for_cols, i32 %pad_img, i32 %weight_buf_load, i32 %weight_buf_load_41, i32 %weight_buf_load_42, i32 %weight_buf_load_43, i32 %weight_buf_load_44, i32 %weight_buf_load_45, i32 %weight_buf_load_46, i32 %weight_buf_load_47, i32 %weight_buf_load_48, i32 %biases_buf_read, i32 %conv_to_pool_streams_2
+codeRepl:21 %call_ln0 = call void @convolution.2_Pipeline_conv_for_rows_win_for_rows_win_for_cols, i32 %pad_img, i32 %weight_buf_load, i32 %weight_buf_load_41, i32 %weight_buf_load_42, i32 %weight_buf_load_43, i32 %weight_buf_load_44, i32 %weight_buf_load_45, i32 %weight_buf_load_46, i32 %weight_buf_load_47, i32 %weight_buf_load_48, i32 %biases_buf_read, i32 %conv_to_pool_streams_2
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -553,10 +553,10 @@ entry:21 %call_ln0 = call void @convolution.2_Pipeline_conv_for_rows_win_for_row
 
 <Node id="27" bw="0">
 <![CDATA[
-entry:22 %ret_ln53 = ret
+codeRepl:22 %ret_ln81 = ret
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln53"/></StgValue>
+<StgValue><ssdm name="ret_ln81"/></StgValue>
 </operation>
 </state>
 </state_list>

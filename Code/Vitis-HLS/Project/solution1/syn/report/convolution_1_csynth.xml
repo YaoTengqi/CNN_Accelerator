@@ -1,7 +1,7 @@
 <profile>
 
 <ReportVersion>
-<Version>2022.2</Version>
+<Version>2021.2</Version>
 </ReportVersion>
 
 <UserAssignments>
@@ -281,28 +281,6 @@
 <Dir>out</Dir>
 <Bits>32</Bits>
 <Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>conv_to_pool_streams_1_num_data_valid</name>
-<Object>conv_to_pool_streams_1</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_fifo</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>11</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>conv_to_pool_streams_1_fifo_cap</name>
-<Object>conv_to_pool_streams_1</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_fifo</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>11</Bits>
-<Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
 <name>conv_to_pool_streams_1_full_n</name>

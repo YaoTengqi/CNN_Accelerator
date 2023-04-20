@@ -2,9 +2,8 @@ INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch GCC as the compiler.
    Compiling ../../../../cnn_tb.cc in debug mode
    Generating csim.exe
-Total predictions: 1000
+Total predictions: 100
 Correct predictions: 100.00 %
-Average latency: 4.363704 (ms)
-INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 784
+Average latency: 2.500000 (ms)
 INFO: [SIM 1] CSim done with 0 errors.
 INFO: [SIM 3] *************** CSIM finish ***************

@@ -38,9 +38,9 @@ newFuncRoot:0 %j = alloca i32 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="4" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
+<Node id="4" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
 <![CDATA[
-newFuncRoot:1 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %dense_to_softmax_streams_0, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0
+newFuncRoot:1 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %dense_to_softmax_streams_0, void @empty, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -70,7 +70,7 @@ newFuncRoot:2 %store_ln0 = store i4 0, i4 %j
 
 <Node id="6" bw="0" op_0_bw="0">
 <![CDATA[
-newFuncRoot:3 %br_ln0 = br void %for.inc20
+newFuncRoot:3 %br_ln0 = br void
 
 ]]></Node>
 <StgValue><ssdm name="br_ln0"/></StgValue>
@@ -85,7 +85,7 @@ newFuncRoot:3 %br_ln0 = br void %for.inc20
 
 <Node id="8" bw="4" op_0_bw="4" op_1_bw="0">
 <![CDATA[
-for.inc20:0 %j_1 = load i4 %j
+:0 %j_1 = load i4 %j
 
 ]]></Node>
 <StgValue><ssdm name="j_1"/></StgValue>
@@ -100,7 +100,7 @@ for.inc20:0 %j_1 = load i4 %j
 
 <Node id="9" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.inc20:1 %specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str
+:1 %specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln0"/></StgValue>
@@ -115,7 +115,7 @@ for.inc20:1 %specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 42
 
 <Node id="10" bw="1" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-for.inc20:2 %icmp_ln60 = icmp_eq  i4 %j_1, i4 10
+:2 %icmp_ln60 = icmp_eq  i4 %j_1, i4 10
 
 ]]></Node>
 <StgValue><ssdm name="icmp_ln60"/></StgValue>
@@ -130,7 +130,7 @@ for.inc20:2 %icmp_ln60 = icmp_eq  i4 %j_1, i4 10
 
 <Node id="11" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-for.inc20:3 %empty = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 10, i64 10, i64 10
+:3 %empty = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 10, i64 10, i64 10
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -145,7 +145,7 @@ for.inc20:3 %empty = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 10, 
 
 <Node id="12" bw="4" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-for.inc20:4 %add_ln60 = add i4 %j_1, i4 1
+:4 %add_ln60 = add i4 %j_1, i4 1
 
 ]]></Node>
 <StgValue><ssdm name="add_ln60"/></StgValue>
@@ -160,7 +160,7 @@ for.inc20:4 %add_ln60 = add i4 %j_1, i4 1
 
 <Node id="13" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-for.inc20:5 %br_ln60 = br i1 %icmp_ln60, void %for.inc20.split, void %for.end22.exitStub
+:5 %br_ln60 = br i1 %icmp_ln60, void %.split, void %.exitStub
 
 ]]></Node>
 <StgValue><ssdm name="br_ln60"/></StgValue>
@@ -176,7 +176,7 @@ for.inc20:5 %br_ln60 = br i1 %icmp_ln60, void %for.inc20.split, void %for.end22.
 
 <Node id="15" bw="64" op_0_bw="4">
 <![CDATA[
-for.inc20.split:0 %j_cast = zext i4 %j_1
+.split:0 %j_cast = zext i4 %j_1
 
 ]]></Node>
 <StgValue><ssdm name="j_cast"/></StgValue>
@@ -192,7 +192,7 @@ for.inc20.split:0 %j_cast = zext i4 %j_1
 
 <Node id="17" bw="4" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc20.split:2 %dense_array_addr = getelementptr i32 %dense_array, i64 0, i64 %j_cast
+.split:2 %dense_array_addr = getelementptr i32 %dense_array, i64 0, i64 %j_cast
 
 ]]></Node>
 <StgValue><ssdm name="dense_array_addr"/></StgValue>
@@ -208,7 +208,7 @@ for.inc20.split:2 %dense_array_addr = getelementptr i32 %dense_array, i64 0, i64
 
 <Node id="18" bw="32" op_0_bw="4">
 <![CDATA[
-for.inc20.split:3 %dense_array_load = load i4 %dense_array_addr
+.split:3 %dense_array_load = load i4 %dense_array_addr
 
 ]]></Node>
 <StgValue><ssdm name="dense_array_load"/></StgValue>
@@ -224,7 +224,7 @@ for.inc20.split:3 %dense_array_load = load i4 %dense_array_addr
 
 <Node id="21" bw="0" op_0_bw="4" op_1_bw="4" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-for.inc20.split:6 %store_ln60 = store i4 %add_ln60, i4 %j
+.split:6 %store_ln60 = store i4 %add_ln60, i4 %j
 
 ]]></Node>
 <StgValue><ssdm name="store_ln60"/></StgValue>
@@ -240,7 +240,7 @@ for.inc20.split:6 %store_ln60 = store i4 %add_ln60, i4 %j
 
 <Node id="24" bw="0">
 <![CDATA[
-for.end22.exitStub:0 %ret_ln0 = ret
+.exitStub:0 %ret_ln0 = ret
 
 ]]></Node>
 <StgValue><ssdm name="ret_ln0"/></StgValue>
@@ -258,7 +258,7 @@ for.end22.exitStub:0 %ret_ln0 = ret
 
 <Node id="16" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc20.split:1 %specloopname_ln60 = specloopname void @_ssdm_op_SpecLoopName, void @empty_9
+.split:1 %specloopname_ln60 = specloopname void @_ssdm_op_SpecLoopName, void @empty_7
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln60"/></StgValue>
@@ -273,7 +273,7 @@ for.inc20.split:1 %specloopname_ln60 = specloopname void @_ssdm_op_SpecLoopName,
 
 <Node id="18" bw="32" op_0_bw="4">
 <![CDATA[
-for.inc20.split:3 %dense_array_load = load i4 %dense_array_addr
+.split:3 %dense_array_load = load i4 %dense_array_addr
 
 ]]></Node>
 <StgValue><ssdm name="dense_array_load"/></StgValue>
@@ -288,10 +288,10 @@ for.inc20.split:3 %dense_array_load = load i4 %dense_array_addr
 
 <Node id="19" bw="32" op_0_bw="32">
 <![CDATA[
-for.inc20.split:4 %bitcast_ln62 = bitcast i32 %dense_array_load
+.split:4 %bitcast_ln173 = bitcast i32 %dense_array_load
 
 ]]></Node>
-<StgValue><ssdm name="bitcast_ln62"/></StgValue>
+<StgValue><ssdm name="bitcast_ln173"/></StgValue>
 </operation>
 
 <operation id="22" st_id="2" stage="1" lat="1">
@@ -303,10 +303,10 @@ for.inc20.split:4 %bitcast_ln62 = bitcast i32 %dense_array_load
 
 <Node id="20" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
 <![CDATA[
-for.inc20.split:5 %write_ln62 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %dense_to_softmax_streams_0, i32 %bitcast_ln62
+.split:5 %write_ln173 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %dense_to_softmax_streams_0, i32 %bitcast_ln173
 
 ]]></Node>
-<StgValue><ssdm name="write_ln62"/></StgValue>
+<StgValue><ssdm name="write_ln173"/></StgValue>
 </operation>
 
 <operation id="23" st_id="2" stage="1" lat="1">
@@ -318,10 +318,10 @@ for.inc20.split:5 %write_ln62 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P
 
 <Node id="22" bw="0" op_0_bw="0">
 <![CDATA[
-for.inc20.split:7 %br_ln60 = br void %for.inc20
+.split:7 %br_ln0 = br void
 
 ]]></Node>
-<StgValue><ssdm name="br_ln60"/></StgValue>
+<StgValue><ssdm name="br_ln0"/></StgValue>
 </operation>
 </state>
 </state_list>
@@ -351,17 +351,17 @@ for.inc20.split:7 %br_ln60 = br void %for.inc20
 </dataflow>
 <dataflow id="45" from="StgValue_43" to="specinterface_ln0" fromId="43" toId="6">
 </dataflow>
-<dataflow id="47" from="empty_0" to="specinterface_ln0" fromId="46" toId="6">
+<dataflow id="47" from="empty_6" to="specinterface_ln0" fromId="46" toId="6">
 </dataflow>
 <dataflow id="48" from="StgValue_43" to="specinterface_ln0" fromId="43" toId="6">
 </dataflow>
 <dataflow id="49" from="StgValue_43" to="specinterface_ln0" fromId="43" toId="6">
 </dataflow>
-<dataflow id="50" from="empty_0" to="specinterface_ln0" fromId="46" toId="6">
+<dataflow id="50" from="empty_6" to="specinterface_ln0" fromId="46" toId="6">
 </dataflow>
-<dataflow id="51" from="empty_0" to="specinterface_ln0" fromId="46" toId="6">
+<dataflow id="51" from="empty_6" to="specinterface_ln0" fromId="46" toId="6">
 </dataflow>
-<dataflow id="52" from="empty_0" to="specinterface_ln0" fromId="46" toId="6">
+<dataflow id="52" from="empty_6" to="specinterface_ln0" fromId="46" toId="6">
 </dataflow>
 <dataflow id="53" from="StgValue_43" to="specinterface_ln0" fromId="43" toId="6">
 </dataflow>
@@ -371,79 +371,75 @@ for.inc20.split:7 %br_ln60 = br void %for.inc20
 </dataflow>
 <dataflow id="56" from="StgValue_43" to="specinterface_ln0" fromId="43" toId="6">
 </dataflow>
-<dataflow id="57" from="empty_0" to="specinterface_ln0" fromId="46" toId="6">
+<dataflow id="57" from="empty_6" to="specinterface_ln0" fromId="46" toId="6">
 </dataflow>
-<dataflow id="58" from="empty_0" to="specinterface_ln0" fromId="46" toId="6">
+<dataflow id="58" from="empty_6" to="specinterface_ln0" fromId="46" toId="6">
 </dataflow>
-<dataflow id="60" from="StgValue_59" to="specinterface_ln0" fromId="59" toId="6">
+<dataflow id="60" from="StgValue_59" to="store_ln0" fromId="59" toId="7">
 </dataflow>
-<dataflow id="61" from="StgValue_43" to="specinterface_ln0" fromId="43" toId="6">
+<dataflow id="61" from="j" to="store_ln0" fromId="5" toId="7">
 </dataflow>
-<dataflow id="63" from="StgValue_62" to="store_ln0" fromId="62" toId="7">
+<dataflow id="62" from="j" to="j_1" fromId="5" toId="9">
 </dataflow>
-<dataflow id="64" from="j" to="store_ln0" fromId="5" toId="7">
+<dataflow id="64" from="_ssdm_op_SpecPipeline" to="specpipeline_ln0" fromId="63" toId="10">
 </dataflow>
-<dataflow id="65" from="j" to="j_1" fromId="5" toId="9">
+<dataflow id="66" from="StgValue_65" to="specpipeline_ln0" fromId="65" toId="10">
 </dataflow>
-<dataflow id="67" from="_ssdm_op_SpecPipeline" to="specpipeline_ln0" fromId="66" toId="10">
+<dataflow id="67" from="StgValue_43" to="specpipeline_ln0" fromId="43" toId="10">
 </dataflow>
-<dataflow id="68" from="StgValue_59" to="specpipeline_ln0" fromId="59" toId="10">
+<dataflow id="68" from="StgValue_36" to="specpipeline_ln0" fromId="36" toId="10">
 </dataflow>
 <dataflow id="69" from="StgValue_43" to="specpipeline_ln0" fromId="43" toId="10">
 </dataflow>
-<dataflow id="70" from="StgValue_36" to="specpipeline_ln0" fromId="36" toId="10">
+<dataflow id="71" from="p_str" to="specpipeline_ln0" fromId="70" toId="10">
 </dataflow>
-<dataflow id="71" from="StgValue_43" to="specpipeline_ln0" fromId="43" toId="10">
+<dataflow id="72" from="j_1" to="icmp_ln60" fromId="9" toId="11">
 </dataflow>
-<dataflow id="73" from="p_str" to="specpipeline_ln0" fromId="72" toId="10">
+<dataflow id="74" from="StgValue_73" to="icmp_ln60" fromId="73" toId="11">
 </dataflow>
-<dataflow id="74" from="j_1" to="icmp_ln60" fromId="9" toId="11">
+<dataflow id="76" from="_ssdm_op_SpecLoopTripCount" to="empty" fromId="75" toId="12">
 </dataflow>
-<dataflow id="76" from="StgValue_75" to="icmp_ln60" fromId="75" toId="11">
+<dataflow id="78" from="StgValue_77" to="empty" fromId="77" toId="12">
 </dataflow>
-<dataflow id="78" from="_ssdm_op_SpecLoopTripCount" to="empty" fromId="77" toId="12">
+<dataflow id="79" from="StgValue_77" to="empty" fromId="77" toId="12">
 </dataflow>
-<dataflow id="80" from="StgValue_79" to="empty" fromId="79" toId="12">
+<dataflow id="80" from="StgValue_77" to="empty" fromId="77" toId="12">
 </dataflow>
-<dataflow id="81" from="StgValue_79" to="empty" fromId="79" toId="12">
+<dataflow id="81" from="j_1" to="add_ln60" fromId="9" toId="13">
 </dataflow>
-<dataflow id="82" from="StgValue_79" to="empty" fromId="79" toId="12">
+<dataflow id="83" from="StgValue_82" to="add_ln60" fromId="82" toId="13">
 </dataflow>
-<dataflow id="83" from="j_1" to="add_ln60" fromId="9" toId="13">
+<dataflow id="84" from="icmp_ln60" to="br_ln60" fromId="11" toId="14">
 </dataflow>
-<dataflow id="85" from="StgValue_84" to="add_ln60" fromId="84" toId="13">
+<dataflow id="85" from="j_1" to="j_cast" fromId="9" toId="15">
 </dataflow>
-<dataflow id="86" from="icmp_ln60" to="br_ln60" fromId="11" toId="14">
+<dataflow id="86" from="dense_array" to="dense_array_addr" fromId="34" toId="16">
 </dataflow>
-<dataflow id="87" from="j_1" to="j_cast" fromId="9" toId="15">
+<dataflow id="88" from="StgValue_87" to="dense_array_addr" fromId="87" toId="16">
 </dataflow>
-<dataflow id="88" from="dense_array" to="dense_array_addr" fromId="34" toId="16">
+<dataflow id="89" from="j_cast" to="dense_array_addr" fromId="15" toId="16">
 </dataflow>
-<dataflow id="90" from="StgValue_89" to="dense_array_addr" fromId="89" toId="16">
+<dataflow id="90" from="dense_array_addr" to="dense_array_load" fromId="16" toId="17">
 </dataflow>
-<dataflow id="91" from="j_cast" to="dense_array_addr" fromId="15" toId="16">
+<dataflow id="91" from="add_ln60" to="store_ln60" fromId="13" toId="18">
 </dataflow>
-<dataflow id="92" from="dense_array_addr" to="dense_array_load" fromId="16" toId="17">
+<dataflow id="92" from="j" to="store_ln60" fromId="5" toId="18">
 </dataflow>
-<dataflow id="93" from="add_ln60" to="store_ln60" fromId="13" toId="18">
+<dataflow id="94" from="_ssdm_op_SpecLoopName" to="specloopname_ln60" fromId="93" toId="19">
 </dataflow>
-<dataflow id="94" from="j" to="store_ln60" fromId="5" toId="18">
+<dataflow id="96" from="empty_7" to="specloopname_ln60" fromId="95" toId="19">
 </dataflow>
-<dataflow id="96" from="_ssdm_op_SpecLoopName" to="specloopname_ln60" fromId="95" toId="19">
+<dataflow id="97" from="dense_array_addr" to="dense_array_load" fromId="16" toId="20">
 </dataflow>
-<dataflow id="98" from="empty_9" to="specloopname_ln60" fromId="97" toId="19">
+<dataflow id="98" from="dense_array_load" to="bitcast_ln173" fromId="20" toId="21">
 </dataflow>
-<dataflow id="99" from="dense_array_addr" to="dense_array_load" fromId="16" toId="20">
+<dataflow id="100" from="_ssdm_op_Write.ap_fifo.volatile.i32P0A" to="write_ln173" fromId="99" toId="22">
 </dataflow>
-<dataflow id="100" from="dense_array_load" to="bitcast_ln62" fromId="20" toId="21">
+<dataflow id="101" from="dense_to_softmax_streams_0" to="write_ln173" fromId="35" toId="22">
 </dataflow>
-<dataflow id="102" from="_ssdm_op_Write.ap_fifo.volatile.i32P0A" to="write_ln62" fromId="101" toId="22">
+<dataflow id="102" from="bitcast_ln173" to="write_ln173" fromId="21" toId="22">
 </dataflow>
-<dataflow id="103" from="dense_to_softmax_streams_0" to="write_ln62" fromId="35" toId="22">
-</dataflow>
-<dataflow id="104" from="bitcast_ln62" to="write_ln62" fromId="21" toId="22">
-</dataflow>
-<dataflow id="105" from="icmp_ln60" to="StgValue_2" fromId="11" toId="2">
+<dataflow id="103" from="icmp_ln60" to="StgValue_2" fromId="11" toId="2">
 </dataflow>
 </dataflows>
 

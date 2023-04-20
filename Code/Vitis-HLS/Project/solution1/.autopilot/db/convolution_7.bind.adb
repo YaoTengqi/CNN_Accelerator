@@ -34,7 +34,7 @@
 						<coreName>RAM_1WnR</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3621216858</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -70,7 +70,7 @@
 						<coreName>RAM</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3084170912</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -106,7 +106,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3087710128</coreId>
+						<coreId>698385384</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -139,10 +139,10 @@
 						<control></control>
 						<opType></opType>
 						<implIndex></implIndex>
-						<coreName></coreName>
+						<coreName>FIFO</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3094657824</coreId>
+						<coreId>3</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -182,7 +182,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3089206896</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -225,7 +225,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3086179760</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>4</bitwidth>
@@ -269,7 +269,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3092081856</coreId>
+						<coreId>6775040</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>4</bitwidth>
@@ -313,7 +313,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3091597128</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>4</bitwidth>
@@ -357,7 +357,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3092827584</coreId>
+						<coreId>1313423872</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>4</bitwidth>
@@ -401,7 +401,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3092247984</coreId>
+						<coreId>1936942336</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>4</bitwidth>
@@ -445,7 +445,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3091533776</coreId>
+						<coreId>1544744896</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>4</bitwidth>
@@ -489,7 +489,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3089775712</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>4</bitwidth>
@@ -533,7 +533,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3089206336</coreId>
+						<coreId>1546167216</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>4</bitwidth>
@@ -577,7 +577,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3091688704</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>4</bitwidth>
@@ -999,7 +999,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3086299600</coreId>
+						<coreId>1546169184</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1008,7 +1008,7 @@
 					<count>2</count>
 					<item_version>0</item_version>
 					<item>78</item>
-					<item>117</item>
+					<item>114</item>
 				</oprand_edges>
 				<opcode>wait</opcode>
 				<m_Display>0</m_Display>
@@ -1042,7 +1042,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3091700528</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1063,7 +1063,7 @@
 					<item>90</item>
 					<item>91</item>
 					<item>92</item>
-					<item>118</item>
+					<item>115</item>
 				</oprand_edges>
 				<opcode>call</opcode>
 				<m_Display>0</m_Display>
@@ -1079,17 +1079,17 @@
 					<Obj>
 						<type>0</type>
 						<id>27</id>
-						<name>_ln53</name>
+						<name>_ln81</name>
 						<fileName>conv.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
-						<lineNumber>53</lineNumber>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
+						<lineNumber>81</lineNumber>
 						<contextFuncName>convolution</contextFuncName>
 						<contextNormFuncName>convolution</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="11" tracking_level="0" version="0">
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second class_id="12" tracking_level="0" version="0">
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1098,7 +1098,7 @@
 											<first>conv.cc</first>
 											<second>convolution</second>
 										</first>
-										<second>53</second>
+										<second>81</second>
 									</item>
 								</second>
 							</item>
@@ -1111,7 +1111,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3089631632</coreId>
+						<coreId>1546123600</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1156,7 +1156,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3092329184</coreId>
+						<coreId>3</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -1187,7 +1187,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3089473088</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -1218,7 +1218,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3092313936</coreId>
+						<coreId>857750816</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -1249,7 +1249,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>113</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -1280,7 +1280,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3092343184</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -1311,7 +1311,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3082675808</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -1342,7 +1342,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3086939600</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -1373,7 +1373,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3092343440</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -1404,7 +1404,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3087511408</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -1435,7 +1435,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3092329568</coreId>
+						<coreId>40</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1469,7 +1469,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>542329928</coreId>
+					<coreId>3487177568</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -1854,14 +1854,14 @@
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_88">
-				<id>117</id>
+				<id>114</id>
 				<edge_type>4</edge_type>
 				<source_obj>5</source_obj>
 				<sink_obj>25</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_89">
-				<id>118</id>
+				<id>115</id>
 				<edge_type>4</edge_type>
 				<source_obj>25</source_obj>
 				<sink_obj>26</sink_obj>
@@ -2388,7 +2388,7 @@
 		<count>12</count>
 		<item_version>0</item_version>
 		<item class_id="43" tracking_level="0" version="0">
-			<first>42</first>
+			<first>40</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2396,7 +2396,7 @@
 			</second>
 		</item>
 		<item>
-			<first>48</first>
+			<first>46</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2404,7 +2404,7 @@
 			</second>
 		</item>
 		<item>
-			<first>56</first>
+			<first>54</first>
 			<second>
 				<count>18</count>
 				<item_version>0</item_version>
@@ -2429,7 +2429,7 @@
 			</second>
 		</item>
 		<item>
-			<first>62</first>
+			<first>60</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2437,7 +2437,7 @@
 			</second>
 		</item>
 		<item>
-			<first>70</first>
+			<first>68</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2445,7 +2445,7 @@
 			</second>
 		</item>
 		<item>
-			<first>84</first>
+			<first>82</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2453,7 +2453,7 @@
 			</second>
 		</item>
 		<item>
-			<first>92</first>
+			<first>90</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2461,7 +2461,7 @@
 			</second>
 		</item>
 		<item>
-			<first>102</first>
+			<first>100</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2469,7 +2469,7 @@
 			</second>
 		</item>
 		<item>
-			<first>110</first>
+			<first>108</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2477,7 +2477,7 @@
 			</second>
 		</item>
 		<item>
-			<first>120</first>
+			<first>118</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2485,7 +2485,7 @@
 			</second>
 		</item>
 		<item>
-			<first>128</first>
+			<first>126</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2493,7 +2493,7 @@
 			</second>
 		</item>
 		<item>
-			<first>138</first>
+			<first>136</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>
@@ -2506,7 +2506,7 @@
 		<count>9</count>
 		<item_version>0</item_version>
 		<item class_id="46" tracking_level="0" version="0">
-			<first>weight_buf_addr_1_gep_fu_48</first>
+			<first>weight_buf_addr_1_gep_fu_46</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2514,7 +2514,7 @@
 			</second>
 		</item>
 		<item>
-			<first>weight_buf_addr_2_gep_fu_62</first>
+			<first>weight_buf_addr_2_gep_fu_60</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2522,7 +2522,7 @@
 			</second>
 		</item>
 		<item>
-			<first>weight_buf_addr_3_gep_fu_70</first>
+			<first>weight_buf_addr_3_gep_fu_68</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2530,7 +2530,7 @@
 			</second>
 		</item>
 		<item>
-			<first>weight_buf_addr_4_gep_fu_84</first>
+			<first>weight_buf_addr_4_gep_fu_82</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2538,7 +2538,7 @@
 			</second>
 		</item>
 		<item>
-			<first>weight_buf_addr_5_gep_fu_92</first>
+			<first>weight_buf_addr_5_gep_fu_90</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2546,7 +2546,7 @@
 			</second>
 		</item>
 		<item>
-			<first>weight_buf_addr_6_gep_fu_110</first>
+			<first>weight_buf_addr_6_gep_fu_108</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2554,7 +2554,7 @@
 			</second>
 		</item>
 		<item>
-			<first>weight_buf_addr_7_gep_fu_120</first>
+			<first>weight_buf_addr_7_gep_fu_118</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2562,7 +2562,7 @@
 			</second>
 		</item>
 		<item>
-			<first>weight_buf_addr_8_gep_fu_128</first>
+			<first>weight_buf_addr_8_gep_fu_126</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2570,7 +2570,7 @@
 			</second>
 		</item>
 		<item>
-			<first>weight_buf_addr_gep_fu_102</first>
+			<first>weight_buf_addr_gep_fu_100</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2582,7 +2582,7 @@
 		<count>1</count>
 		<item_version>0</item_version>
 		<item>
-			<first>grp_convolution_7_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138</first>
+			<first>grp_convolution_7_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>
@@ -2595,7 +2595,7 @@
 		<count>1</count>
 		<item_version>0</item_version>
 		<item>
-			<first>biases_buf_read_read_fu_42</first>
+			<first>biases_buf_read_read_fu_40</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2653,7 +2653,7 @@
 		<count>19</count>
 		<item_version>0</item_version>
 		<item>
-			<first>158</first>
+			<first>156</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2661,7 +2661,7 @@
 			</second>
 		</item>
 		<item>
-			<first>163</first>
+			<first>161</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2669,7 +2669,7 @@
 			</second>
 		</item>
 		<item>
-			<first>168</first>
+			<first>166</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2677,7 +2677,7 @@
 			</second>
 		</item>
 		<item>
-			<first>173</first>
+			<first>171</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2685,7 +2685,7 @@
 			</second>
 		</item>
 		<item>
-			<first>178</first>
+			<first>176</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2693,7 +2693,7 @@
 			</second>
 		</item>
 		<item>
-			<first>183</first>
+			<first>181</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2701,7 +2701,7 @@
 			</second>
 		</item>
 		<item>
-			<first>188</first>
+			<first>186</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2709,7 +2709,7 @@
 			</second>
 		</item>
 		<item>
-			<first>193</first>
+			<first>191</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2717,7 +2717,7 @@
 			</second>
 		</item>
 		<item>
-			<first>198</first>
+			<first>196</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2725,7 +2725,7 @@
 			</second>
 		</item>
 		<item>
-			<first>203</first>
+			<first>201</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2733,7 +2733,7 @@
 			</second>
 		</item>
 		<item>
-			<first>208</first>
+			<first>206</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2741,7 +2741,7 @@
 			</second>
 		</item>
 		<item>
-			<first>213</first>
+			<first>211</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2749,7 +2749,7 @@
 			</second>
 		</item>
 		<item>
-			<first>218</first>
+			<first>216</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2757,7 +2757,7 @@
 			</second>
 		</item>
 		<item>
-			<first>223</first>
+			<first>221</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2765,7 +2765,7 @@
 			</second>
 		</item>
 		<item>
-			<first>228</first>
+			<first>226</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2773,7 +2773,7 @@
 			</second>
 		</item>
 		<item>
-			<first>233</first>
+			<first>231</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2781,7 +2781,7 @@
 			</second>
 		</item>
 		<item>
-			<first>238</first>
+			<first>236</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2789,7 +2789,7 @@
 			</second>
 		</item>
 		<item>
-			<first>243</first>
+			<first>241</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2797,7 +2797,7 @@
 			</second>
 		</item>
 		<item>
-			<first>248</first>
+			<first>246</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2809,7 +2809,7 @@
 		<count>19</count>
 		<item_version>0</item_version>
 		<item>
-			<first>biases_buf_read_reg_218</first>
+			<first>biases_buf_read_reg_216</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2817,7 +2817,7 @@
 			</second>
 		</item>
 		<item>
-			<first>weight_buf_addr_1_reg_158</first>
+			<first>weight_buf_addr_1_reg_156</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2825,7 +2825,7 @@
 			</second>
 		</item>
 		<item>
-			<first>weight_buf_addr_2_reg_163</first>
+			<first>weight_buf_addr_2_reg_161</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2833,7 +2833,7 @@
 			</second>
 		</item>
 		<item>
-			<first>weight_buf_addr_3_reg_168</first>
+			<first>weight_buf_addr_3_reg_166</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2841,7 +2841,7 @@
 			</second>
 		</item>
 		<item>
-			<first>weight_buf_addr_4_reg_178</first>
+			<first>weight_buf_addr_4_reg_176</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2849,7 +2849,7 @@
 			</second>
 		</item>
 		<item>
-			<first>weight_buf_addr_5_reg_183</first>
+			<first>weight_buf_addr_5_reg_181</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2857,7 +2857,7 @@
 			</second>
 		</item>
 		<item>
-			<first>weight_buf_addr_6_reg_203</first>
+			<first>weight_buf_addr_6_reg_201</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2865,7 +2865,7 @@
 			</second>
 		</item>
 		<item>
-			<first>weight_buf_addr_7_reg_223</first>
+			<first>weight_buf_addr_7_reg_221</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2873,7 +2873,7 @@
 			</second>
 		</item>
 		<item>
-			<first>weight_buf_addr_8_reg_228</first>
+			<first>weight_buf_addr_8_reg_226</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2881,7 +2881,7 @@
 			</second>
 		</item>
 		<item>
-			<first>weight_buf_addr_reg_198</first>
+			<first>weight_buf_addr_reg_196</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2889,7 +2889,7 @@
 			</second>
 		</item>
 		<item>
-			<first>weight_buf_load_1_reg_188</first>
+			<first>weight_buf_load_1_reg_186</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2897,7 +2897,7 @@
 			</second>
 		</item>
 		<item>
-			<first>weight_buf_load_2_reg_193</first>
+			<first>weight_buf_load_2_reg_191</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2905,7 +2905,7 @@
 			</second>
 		</item>
 		<item>
-			<first>weight_buf_load_3_reg_208</first>
+			<first>weight_buf_load_3_reg_206</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2913,7 +2913,7 @@
 			</second>
 		</item>
 		<item>
-			<first>weight_buf_load_4_reg_213</first>
+			<first>weight_buf_load_4_reg_211</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2921,7 +2921,7 @@
 			</second>
 		</item>
 		<item>
-			<first>weight_buf_load_5_reg_233</first>
+			<first>weight_buf_load_5_reg_231</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2929,7 +2929,7 @@
 			</second>
 		</item>
 		<item>
-			<first>weight_buf_load_6_reg_238</first>
+			<first>weight_buf_load_6_reg_236</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2937,7 +2937,7 @@
 			</second>
 		</item>
 		<item>
-			<first>weight_buf_load_7_reg_243</first>
+			<first>weight_buf_load_7_reg_241</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2945,7 +2945,7 @@
 			</second>
 		</item>
 		<item>
-			<first>weight_buf_load_8_reg_248</first>
+			<first>weight_buf_load_8_reg_246</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2953,7 +2953,7 @@
 			</second>
 		</item>
 		<item>
-			<first>weight_buf_load_reg_173</first>
+			<first>weight_buf_load_reg_171</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3050,20 +3050,27 @@
 		</item>
 	</dp_port_io_nodes>
 	<port2core>
-		<count>2</count>
+		<count>3</count>
 		<item_version>0</item_version>
 		<item>
 			<first>1</first>
 			<second>
-				<first>666</first>
+				<first>27</first>
 				<second>137</second>
 			</second>
 		</item>
 		<item>
 			<first>2</first>
 			<second>
-				<first>666</first>
+				<first>27</first>
 				<second>136</second>
+			</second>
+		</item>
+		<item>
+			<first>4</first>
+			<second>
+				<first>1151</first>
+				<second>7</second>
 			</second>
 		</item>
 	</port2core>
@@ -3073,63 +3080,63 @@
 		<item>
 			<first>16</first>
 			<second>
-				<first>666</first>
+				<first>27</first>
 				<second>136</second>
 			</second>
 		</item>
 		<item>
 			<first>17</first>
 			<second>
-				<first>666</first>
+				<first>27</first>
 				<second>136</second>
 			</second>
 		</item>
 		<item>
 			<first>18</first>
 			<second>
-				<first>666</first>
+				<first>27</first>
 				<second>136</second>
 			</second>
 		</item>
 		<item>
 			<first>19</first>
 			<second>
-				<first>666</first>
+				<first>27</first>
 				<second>136</second>
 			</second>
 		</item>
 		<item>
 			<first>20</first>
 			<second>
-				<first>666</first>
+				<first>27</first>
 				<second>136</second>
 			</second>
 		</item>
 		<item>
 			<first>21</first>
 			<second>
-				<first>666</first>
+				<first>27</first>
 				<second>136</second>
 			</second>
 		</item>
 		<item>
 			<first>22</first>
 			<second>
-				<first>666</first>
+				<first>27</first>
 				<second>136</second>
 			</second>
 		</item>
 		<item>
 			<first>23</first>
 			<second>
-				<first>666</first>
+				<first>27</first>
 				<second>136</second>
 			</second>
 		</item>
 		<item>
 			<first>24</first>
 			<second>
-				<first>666</first>
+				<first>27</first>
 				<second>136</second>
 			</second>
 		</item>

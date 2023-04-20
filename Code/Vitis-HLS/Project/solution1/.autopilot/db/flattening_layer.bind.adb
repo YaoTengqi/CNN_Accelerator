@@ -31,7 +31,7 @@
 						<control></control>
 						<opType></opType>
 						<implIndex></implIndex>
-						<coreName></coreName>
+						<coreName>FIFO</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
 						<coreId>0</coreId>
@@ -67,10 +67,10 @@
 						<control></control>
 						<opType></opType>
 						<implIndex></implIndex>
-						<coreName></coreName>
+						<coreName>FIFO</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1953391988</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -103,10 +103,10 @@
 						<control></control>
 						<opType></opType>
 						<implIndex></implIndex>
-						<coreName></coreName>
+						<coreName>FIFO</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4228300630</coreId>
+						<coreId>1953391988</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -139,10 +139,10 @@
 						<control></control>
 						<opType></opType>
 						<implIndex></implIndex>
-						<coreName></coreName>
+						<coreName>FIFO</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
+						<coreId>1953391988</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -175,10 +175,10 @@
 						<control></control>
 						<opType></opType>
 						<implIndex></implIndex>
-						<coreName></coreName>
+						<coreName>FIFO</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1953391988</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -211,10 +211,10 @@
 						<control></control>
 						<opType></opType>
 						<implIndex></implIndex>
-						<coreName></coreName>
+						<coreName>FIFO</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3102362960</coreId>
+						<coreId>1953391988</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -247,10 +247,10 @@
 						<control></control>
 						<opType></opType>
 						<implIndex></implIndex>
-						<coreName></coreName>
+						<coreName>FIFO</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3099544608</coreId>
+						<coreId>1953391988</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -283,10 +283,10 @@
 						<control></control>
 						<opType></opType>
 						<implIndex></implIndex>
-						<coreName></coreName>
+						<coreName>FIFO</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3101961152</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -319,10 +319,10 @@
 						<control></control>
 						<opType></opType>
 						<implIndex></implIndex>
-						<coreName></coreName>
+						<coreName>FIFO</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3103458496</coreId>
+						<coreId>1953391988</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -355,10 +355,10 @@
 						<control></control>
 						<opType></opType>
 						<implIndex></implIndex>
-						<coreName></coreName>
+						<coreName>FIFO</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>2036427877</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -391,10 +391,10 @@
 						<control></control>
 						<opType></opType>
 						<implIndex></implIndex>
-						<coreName></coreName>
+						<coreName>FIFO</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>542329928</coreId>
+						<coreId>1953391988</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -427,10 +427,10 @@
 						<control></control>
 						<opType></opType>
 						<implIndex></implIndex>
-						<coreName></coreName>
+						<coreName>FIFO</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3102663456</coreId>
+						<coreId>1953391988</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -463,10 +463,10 @@
 						<control></control>
 						<opType></opType>
 						<implIndex></implIndex>
-						<coreName></coreName>
+						<coreName>FIFO</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1330007625</coreId>
+						<coreId>1953391988</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -499,10 +499,10 @@
 						<control></control>
 						<opType></opType>
 						<implIndex></implIndex>
-						<coreName></coreName>
+						<coreName>FIFO</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3097974608</coreId>
+						<coreId>1528853351</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -535,10 +535,10 @@
 						<control></control>
 						<opType></opType>
 						<implIndex></implIndex>
-						<coreName></coreName>
+						<coreName>FIFO</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3103063984</coreId>
+						<coreId>1953391988</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -571,10 +571,10 @@
 						<control></control>
 						<opType></opType>
 						<implIndex></implIndex>
-						<coreName></coreName>
+						<coreName>FIFO</coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3095947488</coreId>
+						<coreId>1528853351</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -598,22 +598,22 @@
 						<id>34</id>
 						<name>_ln28</name>
 						<fileName>flat.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>28</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>flattening_layer</contextFuncName>
+						<contextNormFuncName>flattening_layer</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="10" tracking_level="0" version="0">
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second class_id="11" tracking_level="0" version="0">
 									<count>1</count>
 									<item_version>0</item_version>
 									<item class_id="12" tracking_level="0" version="0">
 										<first class_id="13" tracking_level="0" version="0">
 											<first>flat.cc</first>
-											<second></second>
+											<second>flattening_layer</second>
 										</first>
 										<second>28</second>
 									</item>
@@ -628,7 +628,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3094229728</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -656,22 +656,22 @@
 						<id>35</id>
 						<name>_ln29</name>
 						<fileName>flat.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>29</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>flattening_layer</contextFuncName>
+						<contextNormFuncName>flattening_layer</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>flat.cc</first>
-											<second></second>
+											<second>flattening_layer</second>
 										</first>
 										<second>29</second>
 									</item>
@@ -686,7 +686,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>542329928</coreId>
+						<coreId>1936942336</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -714,22 +714,22 @@
 						<id>36</id>
 						<name>_ln30</name>
 						<fileName>flat.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>30</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>flattening_layer</contextFuncName>
+						<contextNormFuncName>flattening_layer</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>flat.cc</first>
-											<second></second>
+											<second>flattening_layer</second>
 										</first>
 										<second>30</second>
 									</item>
@@ -744,7 +744,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3098767248</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -772,22 +772,22 @@
 						<id>37</id>
 						<name>_ln31</name>
 						<fileName>flat.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>31</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>flattening_layer</contextFuncName>
+						<contextNormFuncName>flattening_layer</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>flat.cc</first>
-											<second></second>
+											<second>flattening_layer</second>
 										</first>
 										<second>31</second>
 									</item>
@@ -802,7 +802,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3098450080</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -830,22 +830,22 @@
 						<id>38</id>
 						<name>_ln32</name>
 						<fileName>flat.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>32</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>flattening_layer</contextFuncName>
+						<contextNormFuncName>flattening_layer</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>flat.cc</first>
-											<second></second>
+											<second>flattening_layer</second>
 										</first>
 										<second>32</second>
 									</item>
@@ -860,7 +860,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3098767856</coreId>
+						<coreId>1546848240</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -888,22 +888,22 @@
 						<id>39</id>
 						<name>_ln33</name>
 						<fileName>flat.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>33</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>flattening_layer</contextFuncName>
+						<contextNormFuncName>flattening_layer</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>flat.cc</first>
-											<second></second>
+											<second>flattening_layer</second>
 										</first>
 										<second>33</second>
 									</item>
@@ -918,7 +918,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3098450080</coreId>
+						<coreId>1553165776</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -946,22 +946,22 @@
 						<id>40</id>
 						<name>_ln34</name>
 						<fileName>flat.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>34</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>flattening_layer</contextFuncName>
+						<contextNormFuncName>flattening_layer</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>flat.cc</first>
-											<second></second>
+											<second>flattening_layer</second>
 										</first>
 										<second>34</second>
 									</item>
@@ -976,7 +976,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3100984944</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1004,22 +1004,22 @@
 						<id>41</id>
 						<name>_ln35</name>
 						<fileName>flat.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>35</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>flattening_layer</contextFuncName>
+						<contextNormFuncName>flattening_layer</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>flat.cc</first>
-											<second></second>
+											<second>flattening_layer</second>
 										</first>
 										<second>35</second>
 									</item>
@@ -1034,7 +1034,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3097808560</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1062,22 +1062,22 @@
 						<id>42</id>
 						<name>_ln36</name>
 						<fileName>flat.cc</fileName>
-						<fileDirectory>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</fileDirectory>
+						<fileDirectory>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</fileDirectory>
 						<lineNumber>36</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<contextFuncName>flattening_layer</contextFuncName>
+						<contextNormFuncName>flattening_layer</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS</first>
+								<first>D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>flat.cc</first>
-											<second></second>
+											<second>flattening_layer</second>
 										</first>
 										<second>36</second>
 									</item>
@@ -1092,7 +1092,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3098767248</coreId>
+						<coreId>1546829680</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1137,7 +1137,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3101528336</coreId>
+						<coreId>1953391988</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1150,7 +1150,7 @@
 					<Obj>
 						<type>2</type>
 						<id>48</id>
-						<name>flattening_15</name>
+						<name>flattening_1</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1168,20 +1168,20 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3093120320</coreId>
+						<coreId>2036427877</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:flattening.15&gt;</content>
+				<content>&lt;constant:flattening.1&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_28">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>52</id>
-						<name>flattening_16</name>
+						<name>flattening_2</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1199,20 +1199,20 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3097808560</coreId>
+						<coreId>1953391988</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:flattening.16&gt;</content>
+				<content>&lt;constant:flattening.2&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_29">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>56</id>
-						<name>flattening_17</name>
+						<name>flattening_3</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1230,20 +1230,20 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3096174288</coreId>
+						<coreId>1953391988</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:flattening.17&gt;</content>
+				<content>&lt;constant:flattening.3&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_30">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>60</id>
-						<name>flattening_18</name>
+						<name>flattening_4</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1261,20 +1261,20 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3097566496</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:flattening.18&gt;</content>
+				<content>&lt;constant:flattening.4&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_31">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>64</id>
-						<name>flattening_19</name>
+						<name>flattening_5</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1292,20 +1292,20 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3100736032</coreId>
+						<coreId>1953391988</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:flattening.19&gt;</content>
+				<content>&lt;constant:flattening.5&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_32">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>68</id>
-						<name>flattening_20</name>
+						<name>flattening_6</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1323,20 +1323,20 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3098042368</coreId>
+						<coreId>1953391988</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:flattening.20&gt;</content>
+				<content>&lt;constant:flattening.6&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_33">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>72</id>
-						<name>flattening_21</name>
+						<name>flattening_7</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1354,13 +1354,13 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3099511728</coreId>
+						<coreId>2036427877</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:flattening.21&gt;</content>
+				<content>&lt;constant:flattening.7&gt;</content>
 			</item>
 		</consts>
 		<blocks class_id="17" tracking_level="0" version="0">
@@ -1388,7 +1388,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>3101178032</coreId>
+					<coreId>3487177568</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -1779,7 +1779,7 @@
 					</item>
 					<item class_id_reference="28" object_id="_83">
 						<type>0</type>
-						<name>flattening_15_U0</name>
+						<name>flattening_1_U0</name>
 						<ssdmobj_id>35</ssdmobj_id>
 						<pins>
 							<count>2</count>
@@ -1795,7 +1795,7 @@
 								</port>
 								<inst class_id_reference="31" object_id="_86">
 									<type>0</type>
-									<name>flattening_15_U0</name>
+									<name>flattening_1_U0</name>
 									<ssdmobj_id>35</ssdmobj_id>
 								</inst>
 							</item>
@@ -1817,7 +1817,7 @@
 					</item>
 					<item class_id_reference="28" object_id="_89">
 						<type>0</type>
-						<name>flattening_16_U0</name>
+						<name>flattening_2_U0</name>
 						<ssdmobj_id>36</ssdmobj_id>
 						<pins>
 							<count>2</count>
@@ -1833,7 +1833,7 @@
 								</port>
 								<inst class_id_reference="31" object_id="_92">
 									<type>0</type>
-									<name>flattening_16_U0</name>
+									<name>flattening_2_U0</name>
 									<ssdmobj_id>36</ssdmobj_id>
 								</inst>
 							</item>
@@ -1855,7 +1855,7 @@
 					</item>
 					<item class_id_reference="28" object_id="_95">
 						<type>0</type>
-						<name>flattening_17_U0</name>
+						<name>flattening_3_U0</name>
 						<ssdmobj_id>37</ssdmobj_id>
 						<pins>
 							<count>2</count>
@@ -1871,7 +1871,7 @@
 								</port>
 								<inst class_id_reference="31" object_id="_98">
 									<type>0</type>
-									<name>flattening_17_U0</name>
+									<name>flattening_3_U0</name>
 									<ssdmobj_id>37</ssdmobj_id>
 								</inst>
 							</item>
@@ -1893,7 +1893,7 @@
 					</item>
 					<item class_id_reference="28" object_id="_101">
 						<type>0</type>
-						<name>flattening_18_U0</name>
+						<name>flattening_4_U0</name>
 						<ssdmobj_id>38</ssdmobj_id>
 						<pins>
 							<count>2</count>
@@ -1909,7 +1909,7 @@
 								</port>
 								<inst class_id_reference="31" object_id="_104">
 									<type>0</type>
-									<name>flattening_18_U0</name>
+									<name>flattening_4_U0</name>
 									<ssdmobj_id>38</ssdmobj_id>
 								</inst>
 							</item>
@@ -1931,7 +1931,7 @@
 					</item>
 					<item class_id_reference="28" object_id="_107">
 						<type>0</type>
-						<name>flattening_19_U0</name>
+						<name>flattening_5_U0</name>
 						<ssdmobj_id>39</ssdmobj_id>
 						<pins>
 							<count>2</count>
@@ -1947,7 +1947,7 @@
 								</port>
 								<inst class_id_reference="31" object_id="_110">
 									<type>0</type>
-									<name>flattening_19_U0</name>
+									<name>flattening_5_U0</name>
 									<ssdmobj_id>39</ssdmobj_id>
 								</inst>
 							</item>
@@ -1969,7 +1969,7 @@
 					</item>
 					<item class_id_reference="28" object_id="_113">
 						<type>0</type>
-						<name>flattening_20_U0</name>
+						<name>flattening_6_U0</name>
 						<ssdmobj_id>40</ssdmobj_id>
 						<pins>
 							<count>2</count>
@@ -1985,7 +1985,7 @@
 								</port>
 								<inst class_id_reference="31" object_id="_116">
 									<type>0</type>
-									<name>flattening_20_U0</name>
+									<name>flattening_6_U0</name>
 									<ssdmobj_id>40</ssdmobj_id>
 								</inst>
 							</item>
@@ -2007,7 +2007,7 @@
 					</item>
 					<item class_id_reference="28" object_id="_119">
 						<type>0</type>
-						<name>flattening_21_U0</name>
+						<name>flattening_7_U0</name>
 						<ssdmobj_id>41</ssdmobj_id>
 						<pins>
 							<count>2</count>
@@ -2023,7 +2023,7 @@
 								</port>
 								<inst class_id_reference="31" object_id="_122">
 									<type>0</type>
-									<name>flattening_21_U0</name>
+									<name>flattening_7_U0</name>
 									<ssdmobj_id>41</ssdmobj_id>
 								</inst>
 							</item>
@@ -2477,7 +2477,7 @@
 		<count>8</count>
 		<item_version>0</item_version>
 		<item class_id="58" tracking_level="0" version="0">
-			<first>grp_flattening_15_fu_68</first>
+			<first>grp_flattening_1_fu_68</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>
@@ -2486,7 +2486,7 @@
 			</second>
 		</item>
 		<item>
-			<first>grp_flattening_16_fu_76</first>
+			<first>grp_flattening_2_fu_76</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>
@@ -2495,7 +2495,7 @@
 			</second>
 		</item>
 		<item>
-			<first>grp_flattening_17_fu_84</first>
+			<first>grp_flattening_3_fu_84</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>
@@ -2504,7 +2504,7 @@
 			</second>
 		</item>
 		<item>
-			<first>grp_flattening_18_fu_92</first>
+			<first>grp_flattening_4_fu_92</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>
@@ -2513,7 +2513,7 @@
 			</second>
 		</item>
 		<item>
-			<first>grp_flattening_19_fu_100</first>
+			<first>grp_flattening_5_fu_100</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>
@@ -2522,7 +2522,7 @@
 			</second>
 		</item>
 		<item>
-			<first>grp_flattening_20_fu_108</first>
+			<first>grp_flattening_6_fu_108</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>
@@ -2531,7 +2531,7 @@
 			</second>
 		</item>
 		<item>
-			<first>grp_flattening_21_fu_116</first>
+			<first>grp_flattening_7_fu_116</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>
@@ -2822,8 +2822,120 @@
 		</item>
 	</dp_port_io_nodes>
 	<port2core>
-		<count>0</count>
+		<count>16</count>
 		<item_version>0</item_version>
+		<item>
+			<first>1</first>
+			<second>
+				<first>1150</first>
+				<second>7</second>
+			</second>
+		</item>
+		<item>
+			<first>2</first>
+			<second>
+				<first>1150</first>
+				<second>7</second>
+			</second>
+		</item>
+		<item>
+			<first>3</first>
+			<second>
+				<first>1150</first>
+				<second>7</second>
+			</second>
+		</item>
+		<item>
+			<first>4</first>
+			<second>
+				<first>1150</first>
+				<second>7</second>
+			</second>
+		</item>
+		<item>
+			<first>5</first>
+			<second>
+				<first>1150</first>
+				<second>7</second>
+			</second>
+		</item>
+		<item>
+			<first>6</first>
+			<second>
+				<first>1150</first>
+				<second>7</second>
+			</second>
+		</item>
+		<item>
+			<first>7</first>
+			<second>
+				<first>1150</first>
+				<second>7</second>
+			</second>
+		</item>
+		<item>
+			<first>8</first>
+			<second>
+				<first>1150</first>
+				<second>7</second>
+			</second>
+		</item>
+		<item>
+			<first>9</first>
+			<second>
+				<first>1151</first>
+				<second>7</second>
+			</second>
+		</item>
+		<item>
+			<first>10</first>
+			<second>
+				<first>1151</first>
+				<second>7</second>
+			</second>
+		</item>
+		<item>
+			<first>11</first>
+			<second>
+				<first>1151</first>
+				<second>7</second>
+			</second>
+		</item>
+		<item>
+			<first>12</first>
+			<second>
+				<first>1151</first>
+				<second>7</second>
+			</second>
+		</item>
+		<item>
+			<first>13</first>
+			<second>
+				<first>1151</first>
+				<second>7</second>
+			</second>
+		</item>
+		<item>
+			<first>14</first>
+			<second>
+				<first>1151</first>
+				<second>7</second>
+			</second>
+		</item>
+		<item>
+			<first>15</first>
+			<second>
+				<first>1151</first>
+				<second>7</second>
+			</second>
+		</item>
+		<item>
+			<first>16</first>
+			<second>
+				<first>1151</first>
+				<second>7</second>
+			</second>
+		</item>
 	</port2core>
 	<node2core>
 		<count>8</count>

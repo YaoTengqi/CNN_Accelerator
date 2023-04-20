@@ -3,9 +3,9 @@
 ================================================================
 == Vitis HLS Report for 'cnn'
 ================================================================
-* Date:           Mon Mar 27 10:49:10 2023
+* Date:           Wed Apr 19 17:50:15 2023
 
-* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Version:        2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)
 * Project:        Project
 * Solution:       solution1 (Vivado IP Flow Target)
 * Product family: artix7
@@ -66,12 +66,12 @@
 |DSP              |        -|    -|       -|       -|    -|
 |Expression       |        -|    -|       0|       8|    -|
 |FIFO             |        -|    -|       -|       -|    -|
-|Instance         |      368|  131|   50814|   40334|    0|
+|Instance         |      368|  131|   50816|   40343|    0|
 |Memory           |       16|    -|     512|      40|    0|
 |Multiplexer      |        -|    -|       -|     921|    -|
 |Register         |        -|    -|     479|       -|    -|
 +-----------------+---------+-----+--------+--------+-----+
-|Total            |      384|  131|   51805|   41303|    0|
+|Total            |      384|  131|   51807|   41312|    0|
 +-----------------+---------+-----+--------+--------+-----+
 |Available        |      730|  740|  269200|  134600|    0|
 +-----------------+---------+-----+--------+--------+-----+
@@ -90,12 +90,12 @@
     |grp_cnn_Pipeline_6_fu_411                              |cnn_Pipeline_6                              |        0|    0|     23|    180|    0|
     |grp_cnn_Pipeline_7_fu_418                              |cnn_Pipeline_7                              |        0|    0|     35|    167|    0|
     |grp_cnn_Pipeline_8_fu_425                              |cnn_Pipeline_8                              |        0|    0|     35|    167|    0|
-    |grp_cnn_Pipeline_9_fu_432                              |cnn_Pipeline_9                              |        0|    0|     34|    158|    0|
+    |grp_cnn_Pipeline_9_fu_432                              |cnn_Pipeline_9                              |        0|    0|     36|    167|    0|
     |grp_cnn_Pipeline_clone_for_rows_clone_for_cols_fu_385  |cnn_Pipeline_clone_for_rows_clone_for_cols  |        0|    0|     45|    167|    0|
     |grp_cnn_Pipeline_pad_for_rows_pad_for_cols_fu_369      |cnn_Pipeline_pad_for_rows_pad_for_cols      |        0|    0|   1018|    419|    0|
     |grp_dataflow_section_fu_446                            |dataflow_section                            |      368|  131|  49497|  38413|    0|
     +-------------------------------------------------------+--------------------------------------------+---------+-----+-------+-------+-----+
-    |Total                                                  |                                            |      368|  131|  50814|  40334|    0|
+    |Total                                                  |                                            |      368|  131|  50816|  40343|    0|
     +-------------------------------------------------------+--------------------------------------------+---------+-----+-------+-------+-----+
 
     * DSP: 
@@ -262,6 +262,8 @@
 +---------------------+-----+-----+------------+--------------+--------------+
 |      RTL Ports      | Dir | Bits|  Protocol  | Source Object|    C Type    |
 +---------------------+-----+-----+------------+--------------+--------------+
+|ap_local_block       |  out|    1|  ap_ctrl_hs|           cnn|  return value|
+|ap_local_deadlock    |  out|    1|  ap_ctrl_hs|           cnn|  return value|
 |ap_clk               |   in|    1|  ap_ctrl_hs|           cnn|  return value|
 |ap_rst               |   in|    1|  ap_ctrl_hs|           cnn|  return value|
 |ap_start             |   in|    1|  ap_ctrl_hs|           cnn|  return value|

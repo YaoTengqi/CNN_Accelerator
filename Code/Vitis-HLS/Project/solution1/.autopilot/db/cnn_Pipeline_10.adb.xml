@@ -74,9 +74,9 @@ newFuncRoot:2 %loop_index = alloca i32 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="6" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
+<Node id="6" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
 <![CDATA[
-newFuncRoot:3 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %weight_buf, void @empty_3, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0
+newFuncRoot:3 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %weight_buf, void @empty_11, i32 0, i32 0, void @empty_6, i32 4294967295, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -530,10 +530,10 @@ load-store-loop.split:19 %empty_164 = add i9 %tmp5_cast, i9 252
 
 <Node id="39" bw="7" op_0_bw="7" op_1_bw="9" op_2_bw="32" op_3_bw="32">
 <![CDATA[
-load-store-loop.split:20 %tmp_60 = partselect i7 @_ssdm_op_PartSelect.i7.i9.i32.i32, i9 %empty_164, i32 2, i32 8
+load-store-loop.split:20 %tmp_119 = partselect i7 @_ssdm_op_PartSelect.i7.i9.i32.i32, i9 %empty_164, i32 2, i32 8
 
 ]]></Node>
-<StgValue><ssdm name="tmp_60"/></StgValue>
+<StgValue><ssdm name="tmp_119"/></StgValue>
 </operation>
 
 <operation id="39" st_id="1" stage="1" lat="1">
@@ -596,7 +596,7 @@ load-store-loop.split:28 %store_ln0 = store i4 %idx_urem76, i4 %phi_urem74
 
 <Node id="40" bw="64" op_0_bw="7">
 <![CDATA[
-load-store-loop.split:21 %p_cast63 = zext i7 %tmp_60
+load-store-loop.split:21 %p_cast63 = zext i7 %tmp_119
 
 ]]></Node>
 <StgValue><ssdm name="p_cast63"/></StgValue>
@@ -767,23 +767,23 @@ load-store-loop.split:29 %br_ln0 = br void %load-store-loop
 </dataflow>
 <dataflow id="71" from="weight_buf" to="specinterface_ln0" fromId="64" toId="9">
 </dataflow>
-<dataflow id="73" from="empty_3" to="specinterface_ln0" fromId="72" toId="9">
+<dataflow id="73" from="empty_11" to="specinterface_ln0" fromId="72" toId="9">
 </dataflow>
 <dataflow id="75" from="StgValue_74" to="specinterface_ln0" fromId="74" toId="9">
 </dataflow>
 <dataflow id="76" from="StgValue_74" to="specinterface_ln0" fromId="74" toId="9">
 </dataflow>
-<dataflow id="78" from="empty_0" to="specinterface_ln0" fromId="77" toId="9">
+<dataflow id="78" from="empty_6" to="specinterface_ln0" fromId="77" toId="9">
 </dataflow>
 <dataflow id="80" from="StgValue_79" to="specinterface_ln0" fromId="79" toId="9">
 </dataflow>
 <dataflow id="81" from="StgValue_74" to="specinterface_ln0" fromId="74" toId="9">
 </dataflow>
-<dataflow id="82" from="empty_0" to="specinterface_ln0" fromId="77" toId="9">
+<dataflow id="82" from="empty_6" to="specinterface_ln0" fromId="77" toId="9">
 </dataflow>
-<dataflow id="83" from="empty_0" to="specinterface_ln0" fromId="77" toId="9">
+<dataflow id="83" from="empty_6" to="specinterface_ln0" fromId="77" toId="9">
 </dataflow>
-<dataflow id="84" from="empty_0" to="specinterface_ln0" fromId="77" toId="9">
+<dataflow id="84" from="empty_6" to="specinterface_ln0" fromId="77" toId="9">
 </dataflow>
 <dataflow id="85" from="StgValue_74" to="specinterface_ln0" fromId="74" toId="9">
 </dataflow>
@@ -793,175 +793,171 @@ load-store-loop.split:29 %br_ln0 = br void %load-store-loop
 </dataflow>
 <dataflow id="88" from="StgValue_74" to="specinterface_ln0" fromId="74" toId="9">
 </dataflow>
-<dataflow id="89" from="empty_0" to="specinterface_ln0" fromId="77" toId="9">
+<dataflow id="89" from="empty_6" to="specinterface_ln0" fromId="77" toId="9">
 </dataflow>
-<dataflow id="90" from="empty_0" to="specinterface_ln0" fromId="77" toId="9">
+<dataflow id="90" from="empty_6" to="specinterface_ln0" fromId="77" toId="9">
 </dataflow>
-<dataflow id="91" from="StgValue_79" to="specinterface_ln0" fromId="79" toId="9">
+<dataflow id="92" from="StgValue_91" to="store_ln0" fromId="91" toId="10">
 </dataflow>
-<dataflow id="92" from="StgValue_74" to="specinterface_ln0" fromId="74" toId="9">
+<dataflow id="93" from="loop_index" to="store_ln0" fromId="8" toId="10">
 </dataflow>
-<dataflow id="94" from="StgValue_93" to="store_ln0" fromId="93" toId="10">
+<dataflow id="95" from="StgValue_94" to="store_ln0" fromId="94" toId="11">
 </dataflow>
-<dataflow id="95" from="loop_index" to="store_ln0" fromId="8" toId="10">
+<dataflow id="96" from="phi_mul72" to="store_ln0" fromId="7" toId="11">
 </dataflow>
-<dataflow id="97" from="StgValue_96" to="store_ln0" fromId="96" toId="11">
+<dataflow id="97" from="StgValue_91" to="store_ln0" fromId="91" toId="12">
 </dataflow>
-<dataflow id="98" from="phi_mul72" to="store_ln0" fromId="7" toId="11">
+<dataflow id="98" from="phi_urem74" to="store_ln0" fromId="6" toId="12">
 </dataflow>
-<dataflow id="99" from="StgValue_93" to="store_ln0" fromId="93" toId="12">
+<dataflow id="99" from="loop_index" to="loop_index_load" fromId="8" toId="14">
 </dataflow>
-<dataflow id="100" from="phi_urem74" to="store_ln0" fromId="6" toId="12">
+<dataflow id="101" from="_ssdm_op_SpecPipeline" to="specpipeline_ln0" fromId="100" toId="15">
 </dataflow>
-<dataflow id="101" from="loop_index" to="loop_index_load" fromId="8" toId="14">
+<dataflow id="102" from="StgValue_79" to="specpipeline_ln0" fromId="79" toId="15">
 </dataflow>
-<dataflow id="103" from="_ssdm_op_SpecPipeline" to="specpipeline_ln0" fromId="102" toId="15">
+<dataflow id="103" from="StgValue_74" to="specpipeline_ln0" fromId="74" toId="15">
 </dataflow>
-<dataflow id="104" from="StgValue_79" to="specpipeline_ln0" fromId="79" toId="15">
+<dataflow id="104" from="StgValue_65" to="specpipeline_ln0" fromId="65" toId="15">
 </dataflow>
 <dataflow id="105" from="StgValue_74" to="specpipeline_ln0" fromId="74" toId="15">
 </dataflow>
-<dataflow id="106" from="StgValue_65" to="specpipeline_ln0" fromId="65" toId="15">
+<dataflow id="107" from="p_str" to="specpipeline_ln0" fromId="106" toId="15">
 </dataflow>
-<dataflow id="107" from="StgValue_74" to="specpipeline_ln0" fromId="74" toId="15">
+<dataflow id="108" from="loop_index_load" to="exitcond1" fromId="14" toId="16">
 </dataflow>
-<dataflow id="109" from="p_str" to="specpipeline_ln0" fromId="108" toId="15">
+<dataflow id="110" from="StgValue_109" to="exitcond1" fromId="109" toId="16">
 </dataflow>
-<dataflow id="110" from="loop_index_load" to="exitcond1" fromId="14" toId="16">
+<dataflow id="112" from="_ssdm_op_SpecLoopTripCount" to="empty" fromId="111" toId="17">
 </dataflow>
-<dataflow id="112" from="StgValue_111" to="exitcond1" fromId="111" toId="16">
+<dataflow id="114" from="StgValue_113" to="empty" fromId="113" toId="17">
 </dataflow>
-<dataflow id="114" from="_ssdm_op_SpecLoopTripCount" to="empty" fromId="113" toId="17">
+<dataflow id="115" from="StgValue_113" to="empty" fromId="113" toId="17">
 </dataflow>
-<dataflow id="116" from="StgValue_115" to="empty" fromId="115" toId="17">
+<dataflow id="116" from="StgValue_113" to="empty" fromId="113" toId="17">
 </dataflow>
-<dataflow id="117" from="StgValue_115" to="empty" fromId="115" toId="17">
+<dataflow id="117" from="loop_index_load" to="empty_160" fromId="14" toId="18">
 </dataflow>
-<dataflow id="118" from="StgValue_115" to="empty" fromId="115" toId="17">
+<dataflow id="119" from="StgValue_118" to="empty_160" fromId="118" toId="18">
 </dataflow>
-<dataflow id="119" from="loop_index_load" to="empty_160" fromId="14" toId="18">
+<dataflow id="120" from="exitcond1" to="br_ln0" fromId="16" toId="19">
 </dataflow>
-<dataflow id="121" from="StgValue_120" to="empty_160" fromId="120" toId="18">
+<dataflow id="121" from="phi_urem74" to="phi_urem74_load" fromId="6" toId="20">
 </dataflow>
-<dataflow id="122" from="exitcond1" to="br_ln0" fromId="16" toId="19">
+<dataflow id="122" from="phi_mul72" to="phi_mul72_load" fromId="7" toId="21">
 </dataflow>
-<dataflow id="123" from="phi_urem74" to="phi_urem74_load" fromId="6" toId="20">
+<dataflow id="123" from="phi_urem74_load" to="next_urem75" fromId="20" toId="22">
 </dataflow>
-<dataflow id="124" from="phi_mul72" to="phi_mul72_load" fromId="7" toId="21">
+<dataflow id="124" from="StgValue_118" to="next_urem75" fromId="118" toId="22">
 </dataflow>
-<dataflow id="125" from="phi_urem74_load" to="next_urem75" fromId="20" toId="22">
+<dataflow id="125" from="next_urem75" to="empty_161" fromId="22" toId="23">
 </dataflow>
-<dataflow id="126" from="StgValue_120" to="next_urem75" fromId="120" toId="22">
+<dataflow id="127" from="StgValue_126" to="empty_161" fromId="126" toId="23">
 </dataflow>
-<dataflow id="127" from="next_urem75" to="empty_161" fromId="22" toId="23">
+<dataflow id="128" from="empty_161" to="idx_urem76" fromId="23" toId="24">
 </dataflow>
-<dataflow id="129" from="StgValue_128" to="empty_161" fromId="128" toId="23">
+<dataflow id="129" from="next_urem75" to="idx_urem76" fromId="22" toId="24">
 </dataflow>
-<dataflow id="130" from="empty_161" to="idx_urem76" fromId="23" toId="24">
+<dataflow id="130" from="StgValue_91" to="idx_urem76" fromId="91" toId="24">
 </dataflow>
-<dataflow id="131" from="next_urem75" to="idx_urem76" fromId="22" toId="24">
+<dataflow id="131" from="phi_mul72_load" to="next_mul73" fromId="21" toId="25">
 </dataflow>
-<dataflow id="132" from="StgValue_93" to="idx_urem76" fromId="93" toId="24">
+<dataflow id="133" from="StgValue_132" to="next_mul73" fromId="132" toId="25">
 </dataflow>
-<dataflow id="133" from="phi_mul72_load" to="next_mul73" fromId="21" toId="25">
+<dataflow id="135" from="_ssdm_op_PartSelect.i2.i8.i32.i32" to="tmp_s" fromId="134" toId="26">
 </dataflow>
-<dataflow id="135" from="StgValue_134" to="next_mul73" fromId="134" toId="25">
+<dataflow id="136" from="phi_mul72_load" to="tmp_s" fromId="21" toId="26">
 </dataflow>
-<dataflow id="137" from="_ssdm_op_PartSelect.i2.i8.i32.i32" to="tmp_s" fromId="136" toId="26">
-</dataflow>
-<dataflow id="138" from="phi_mul72_load" to="tmp_s" fromId="21" toId="26">
+<dataflow id="138" from="StgValue_137" to="tmp_s" fromId="137" toId="26">
 </dataflow>
 <dataflow id="140" from="StgValue_139" to="tmp_s" fromId="139" toId="26">
 </dataflow>
-<dataflow id="142" from="StgValue_141" to="tmp_s" fromId="141" toId="26">
+<dataflow id="142" from="_ssdm_op_BitConcatenate.i6.i2.i4" to="p_shl" fromId="141" toId="27">
 </dataflow>
-<dataflow id="144" from="_ssdm_op_BitConcatenate.i6.i2.i4" to="p_shl" fromId="143" toId="27">
+<dataflow id="143" from="tmp_s" to="p_shl" fromId="26" toId="27">
 </dataflow>
-<dataflow id="145" from="tmp_s" to="p_shl" fromId="26" toId="27">
+<dataflow id="144" from="StgValue_91" to="p_shl" fromId="91" toId="27">
 </dataflow>
-<dataflow id="146" from="StgValue_93" to="p_shl" fromId="93" toId="27">
+<dataflow id="145" from="p_shl" to="p_shl14_cast" fromId="27" toId="28">
 </dataflow>
-<dataflow id="147" from="p_shl" to="p_shl14_cast" fromId="27" toId="28">
+<dataflow id="147" from="_ssdm_op_BitConcatenate.i4.i2.i2" to="p_shl3" fromId="146" toId="29">
 </dataflow>
-<dataflow id="149" from="_ssdm_op_BitConcatenate.i4.i2.i2" to="p_shl3" fromId="148" toId="29">
+<dataflow id="148" from="tmp_s" to="p_shl3" fromId="26" toId="29">
 </dataflow>
-<dataflow id="150" from="tmp_s" to="p_shl3" fromId="26" toId="29">
+<dataflow id="150" from="StgValue_149" to="p_shl3" fromId="149" toId="29">
 </dataflow>
-<dataflow id="152" from="StgValue_151" to="p_shl3" fromId="151" toId="29">
+<dataflow id="151" from="p_shl3" to="p_shl15_cast" fromId="29" toId="30">
 </dataflow>
-<dataflow id="153" from="p_shl3" to="p_shl15_cast" fromId="29" toId="30">
+<dataflow id="152" from="p_shl14_cast" to="empty_162" fromId="28" toId="31">
 </dataflow>
-<dataflow id="154" from="p_shl14_cast" to="empty_162" fromId="28" toId="31">
+<dataflow id="153" from="p_shl15_cast" to="empty_162" fromId="30" toId="31">
 </dataflow>
-<dataflow id="155" from="p_shl15_cast" to="empty_162" fromId="30" toId="31">
+<dataflow id="154" from="empty_162" to="p_cast10" fromId="31" toId="32">
 </dataflow>
-<dataflow id="156" from="empty_162" to="p_cast10" fromId="31" toId="32">
+<dataflow id="155" from="phi_urem74_load" to="empty_163" fromId="20" toId="33">
 </dataflow>
-<dataflow id="157" from="phi_urem74_load" to="empty_163" fromId="20" toId="33">
+<dataflow id="157" from="StgValue_156" to="empty_163" fromId="156" toId="33">
 </dataflow>
-<dataflow id="159" from="StgValue_158" to="empty_163" fromId="158" toId="33">
+<dataflow id="158" from="empty_163" to="p_cast11" fromId="33" toId="34">
 </dataflow>
-<dataflow id="160" from="empty_163" to="p_cast11" fromId="33" toId="34">
+<dataflow id="159" from="p_cast10" to="tmp5" fromId="32" toId="35">
 </dataflow>
-<dataflow id="161" from="p_cast10" to="tmp5" fromId="32" toId="35">
+<dataflow id="160" from="p_cast11" to="tmp5" fromId="34" toId="35">
 </dataflow>
-<dataflow id="162" from="p_cast11" to="tmp5" fromId="34" toId="35">
+<dataflow id="161" from="tmp5" to="tmp5_cast" fromId="35" toId="36">
 </dataflow>
-<dataflow id="163" from="tmp5" to="tmp5_cast" fromId="35" toId="36">
+<dataflow id="162" from="tmp5_cast" to="empty_164" fromId="36" toId="37">
 </dataflow>
-<dataflow id="164" from="tmp5_cast" to="empty_164" fromId="36" toId="37">
+<dataflow id="164" from="StgValue_163" to="empty_164" fromId="163" toId="37">
 </dataflow>
-<dataflow id="166" from="StgValue_165" to="empty_164" fromId="165" toId="37">
+<dataflow id="166" from="_ssdm_op_PartSelect.i7.i9.i32.i32" to="tmp_119" fromId="165" toId="38">
 </dataflow>
-<dataflow id="168" from="_ssdm_op_PartSelect.i7.i9.i32.i32" to="tmp_60" fromId="167" toId="38">
+<dataflow id="167" from="empty_164" to="tmp_119" fromId="37" toId="38">
 </dataflow>
-<dataflow id="169" from="empty_164" to="tmp_60" fromId="37" toId="38">
+<dataflow id="169" from="StgValue_168" to="tmp_119" fromId="168" toId="38">
 </dataflow>
-<dataflow id="171" from="StgValue_170" to="tmp_60" fromId="170" toId="38">
+<dataflow id="171" from="StgValue_170" to="tmp_119" fromId="170" toId="38">
 </dataflow>
-<dataflow id="173" from="StgValue_172" to="tmp_60" fromId="172" toId="38">
+<dataflow id="172" from="empty_160" to="store_ln0" fromId="18" toId="39">
 </dataflow>
-<dataflow id="174" from="empty_160" to="store_ln0" fromId="18" toId="39">
+<dataflow id="173" from="loop_index" to="store_ln0" fromId="8" toId="39">
 </dataflow>
-<dataflow id="175" from="loop_index" to="store_ln0" fromId="8" toId="39">
+<dataflow id="174" from="next_mul73" to="store_ln0" fromId="25" toId="40">
 </dataflow>
-<dataflow id="176" from="next_mul73" to="store_ln0" fromId="25" toId="40">
+<dataflow id="175" from="phi_mul72" to="store_ln0" fromId="7" toId="40">
 </dataflow>
-<dataflow id="177" from="phi_mul72" to="store_ln0" fromId="7" toId="40">
+<dataflow id="176" from="idx_urem76" to="store_ln0" fromId="24" toId="41">
 </dataflow>
-<dataflow id="178" from="idx_urem76" to="store_ln0" fromId="24" toId="41">
+<dataflow id="177" from="phi_urem74" to="store_ln0" fromId="6" toId="41">
 </dataflow>
-<dataflow id="179" from="phi_urem74" to="store_ln0" fromId="6" toId="41">
+<dataflow id="178" from="tmp_119" to="p_cast63" fromId="38" toId="42">
 </dataflow>
-<dataflow id="180" from="tmp_60" to="p_cast63" fromId="38" toId="42">
+<dataflow id="179" from="weight_buf" to="weight_buf_addr" fromId="64" toId="43">
 </dataflow>
-<dataflow id="181" from="weight_buf" to="weight_buf_addr" fromId="64" toId="43">
+<dataflow id="181" from="StgValue_180" to="weight_buf_addr" fromId="180" toId="43">
 </dataflow>
-<dataflow id="183" from="StgValue_182" to="weight_buf_addr" fromId="182" toId="43">
+<dataflow id="182" from="p_cast63" to="weight_buf_addr" fromId="42" toId="43">
 </dataflow>
-<dataflow id="184" from="p_cast63" to="weight_buf_addr" fromId="42" toId="43">
+<dataflow id="183" from="weight_buf_addr" to="weight_buf_load" fromId="43" toId="44">
 </dataflow>
-<dataflow id="185" from="weight_buf_addr" to="weight_buf_load" fromId="43" toId="44">
+<dataflow id="184" from="loop_index_load" to="loop_index_cast" fromId="14" toId="45">
 </dataflow>
-<dataflow id="186" from="loop_index_load" to="loop_index_cast" fromId="14" toId="45">
+<dataflow id="185" from="weight_buf_7" to="weight_buf_7_addr" fromId="63" toId="46">
 </dataflow>
-<dataflow id="187" from="weight_buf_7" to="weight_buf_7_addr" fromId="63" toId="46">
+<dataflow id="186" from="StgValue_180" to="weight_buf_7_addr" fromId="180" toId="46">
 </dataflow>
-<dataflow id="188" from="StgValue_182" to="weight_buf_7_addr" fromId="182" toId="46">
+<dataflow id="187" from="loop_index_cast" to="weight_buf_7_addr" fromId="45" toId="46">
 </dataflow>
-<dataflow id="189" from="loop_index_cast" to="weight_buf_7_addr" fromId="45" toId="46">
+<dataflow id="188" from="weight_buf_addr" to="weight_buf_load" fromId="43" toId="47">
 </dataflow>
-<dataflow id="190" from="weight_buf_addr" to="weight_buf_load" fromId="43" toId="47">
+<dataflow id="189" from="weight_buf_load" to="empty_165" fromId="47" toId="48">
 </dataflow>
-<dataflow id="191" from="weight_buf_load" to="empty_165" fromId="47" toId="48">
+<dataflow id="190" from="empty_165" to="store_ln0" fromId="48" toId="49">
 </dataflow>
-<dataflow id="192" from="empty_165" to="store_ln0" fromId="48" toId="49">
+<dataflow id="191" from="weight_buf_7_addr" to="store_ln0" fromId="46" toId="49">
 </dataflow>
-<dataflow id="193" from="weight_buf_7_addr" to="store_ln0" fromId="46" toId="49">
+<dataflow id="192" from="exitcond1" to="StgValue_2" fromId="16" toId="2">
 </dataflow>
-<dataflow id="194" from="exitcond1" to="StgValue_2" fromId="16" toId="2">
-</dataflow>
-<dataflow id="195" from="exitcond1" to="StgValue_3" fromId="16" toId="3">
+<dataflow id="193" from="exitcond1" to="StgValue_3" fromId="16" toId="3">
 </dataflow>
 </dataflows>
 

@@ -42,22 +42,22 @@ set SynModuleInfo {
       {MODELNAME cnn_flow_control_loop_pipe RTLNAME cnn_flow_control_loop_pipe BINDTYPE interface TYPE internal_upc_flow_control INSTNAME cnn_flow_control_loop_pipe_U}
     }
   }
-  {SRCNAME max_pooling.8 MODELNAME max_pooling_8 RTLNAME cnn_max_pooling_8}
-  {SRCNAME max_pooling.9 MODELNAME max_pooling_9 RTLNAME cnn_max_pooling_9}
-  {SRCNAME max_pooling.10 MODELNAME max_pooling_10 RTLNAME cnn_max_pooling_10}
-  {SRCNAME max_pooling.11 MODELNAME max_pooling_11 RTLNAME cnn_max_pooling_11}
-  {SRCNAME max_pooling.12 MODELNAME max_pooling_12 RTLNAME cnn_max_pooling_12}
-  {SRCNAME max_pooling.13 MODELNAME max_pooling_13 RTLNAME cnn_max_pooling_13}
-  {SRCNAME max_pooling.14 MODELNAME max_pooling_14 RTLNAME cnn_max_pooling_14}
+  {SRCNAME max_pooling.1 MODELNAME max_pooling_1 RTLNAME cnn_max_pooling_1}
+  {SRCNAME max_pooling.2 MODELNAME max_pooling_2 RTLNAME cnn_max_pooling_2}
+  {SRCNAME max_pooling.3 MODELNAME max_pooling_3 RTLNAME cnn_max_pooling_3}
+  {SRCNAME max_pooling.4 MODELNAME max_pooling_4 RTLNAME cnn_max_pooling_4}
+  {SRCNAME max_pooling.5 MODELNAME max_pooling_5 RTLNAME cnn_max_pooling_5}
+  {SRCNAME max_pooling.6 MODELNAME max_pooling_6 RTLNAME cnn_max_pooling_6}
+  {SRCNAME max_pooling.7 MODELNAME max_pooling_7 RTLNAME cnn_max_pooling_7}
   {SRCNAME max_pooling_layer MODELNAME max_pooling_layer RTLNAME cnn_max_pooling_layer}
   {SRCNAME flattening MODELNAME flattening RTLNAME cnn_flattening}
-  {SRCNAME flattening.15 MODELNAME flattening_15 RTLNAME cnn_flattening_15}
-  {SRCNAME flattening.16 MODELNAME flattening_16 RTLNAME cnn_flattening_16}
-  {SRCNAME flattening.17 MODELNAME flattening_17 RTLNAME cnn_flattening_17}
-  {SRCNAME flattening.18 MODELNAME flattening_18 RTLNAME cnn_flattening_18}
-  {SRCNAME flattening.19 MODELNAME flattening_19 RTLNAME cnn_flattening_19}
-  {SRCNAME flattening.20 MODELNAME flattening_20 RTLNAME cnn_flattening_20}
-  {SRCNAME flattening.21 MODELNAME flattening_21 RTLNAME cnn_flattening_21}
+  {SRCNAME flattening.1 MODELNAME flattening_1 RTLNAME cnn_flattening_1}
+  {SRCNAME flattening.2 MODELNAME flattening_2 RTLNAME cnn_flattening_2}
+  {SRCNAME flattening.3 MODELNAME flattening_3 RTLNAME cnn_flattening_3}
+  {SRCNAME flattening.4 MODELNAME flattening_4 RTLNAME cnn_flattening_4}
+  {SRCNAME flattening.5 MODELNAME flattening_5 RTLNAME cnn_flattening_5}
+  {SRCNAME flattening.6 MODELNAME flattening_6 RTLNAME cnn_flattening_6}
+  {SRCNAME flattening.7 MODELNAME flattening_7 RTLNAME cnn_flattening_7}
   {SRCNAME flattening_layer MODELNAME flattening_layer RTLNAME cnn_flattening_layer}
   {SRCNAME dense_Pipeline_1 MODELNAME dense_Pipeline_1 RTLNAME cnn_dense_Pipeline_1}
   {SRCNAME dense_Pipeline_dense_for_flat MODELNAME dense_Pipeline_dense_for_flat RTLNAME cnn_dense_Pipeline_dense_for_flat
@@ -80,34 +80,34 @@ set SynModuleInfo {
       {MODELNAME cnn_dense_dense_array_RAM_AUTO_1R1W RTLNAME cnn_dense_dense_array_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
     }
   }
-  {SRCNAME dense.22_Pipeline_1 MODELNAME dense_22_Pipeline_1 RTLNAME cnn_dense_22_Pipeline_1}
-  {SRCNAME dense.22_Pipeline_dense_for_flat MODELNAME dense_22_Pipeline_dense_for_flat RTLNAME cnn_dense_22_Pipeline_dense_for_flat}
-  {SRCNAME dense.22_Pipeline_VITIS_LOOP_60_2 MODELNAME dense_22_Pipeline_VITIS_LOOP_60_2 RTLNAME cnn_dense_22_Pipeline_VITIS_LOOP_60_2}
-  {SRCNAME dense.22 MODELNAME dense_22 RTLNAME cnn_dense_22}
-  {SRCNAME dense.23_Pipeline_1 MODELNAME dense_23_Pipeline_1 RTLNAME cnn_dense_23_Pipeline_1}
-  {SRCNAME dense.23_Pipeline_dense_for_flat MODELNAME dense_23_Pipeline_dense_for_flat RTLNAME cnn_dense_23_Pipeline_dense_for_flat}
-  {SRCNAME dense.23_Pipeline_VITIS_LOOP_60_2 MODELNAME dense_23_Pipeline_VITIS_LOOP_60_2 RTLNAME cnn_dense_23_Pipeline_VITIS_LOOP_60_2}
-  {SRCNAME dense.23 MODELNAME dense_23 RTLNAME cnn_dense_23}
-  {SRCNAME dense.24_Pipeline_1 MODELNAME dense_24_Pipeline_1 RTLNAME cnn_dense_24_Pipeline_1}
-  {SRCNAME dense.24_Pipeline_dense_for_flat MODELNAME dense_24_Pipeline_dense_for_flat RTLNAME cnn_dense_24_Pipeline_dense_for_flat}
-  {SRCNAME dense.24_Pipeline_VITIS_LOOP_60_2 MODELNAME dense_24_Pipeline_VITIS_LOOP_60_2 RTLNAME cnn_dense_24_Pipeline_VITIS_LOOP_60_2}
-  {SRCNAME dense.24 MODELNAME dense_24 RTLNAME cnn_dense_24}
-  {SRCNAME dense.25_Pipeline_1 MODELNAME dense_25_Pipeline_1 RTLNAME cnn_dense_25_Pipeline_1}
-  {SRCNAME dense.25_Pipeline_dense_for_flat MODELNAME dense_25_Pipeline_dense_for_flat RTLNAME cnn_dense_25_Pipeline_dense_for_flat}
-  {SRCNAME dense.25_Pipeline_VITIS_LOOP_60_2 MODELNAME dense_25_Pipeline_VITIS_LOOP_60_2 RTLNAME cnn_dense_25_Pipeline_VITIS_LOOP_60_2}
-  {SRCNAME dense.25 MODELNAME dense_25 RTLNAME cnn_dense_25}
-  {SRCNAME dense.26_Pipeline_1 MODELNAME dense_26_Pipeline_1 RTLNAME cnn_dense_26_Pipeline_1}
-  {SRCNAME dense.26_Pipeline_dense_for_flat MODELNAME dense_26_Pipeline_dense_for_flat RTLNAME cnn_dense_26_Pipeline_dense_for_flat}
-  {SRCNAME dense.26_Pipeline_VITIS_LOOP_60_2 MODELNAME dense_26_Pipeline_VITIS_LOOP_60_2 RTLNAME cnn_dense_26_Pipeline_VITIS_LOOP_60_2}
-  {SRCNAME dense.26 MODELNAME dense_26 RTLNAME cnn_dense_26}
-  {SRCNAME dense.27_Pipeline_1 MODELNAME dense_27_Pipeline_1 RTLNAME cnn_dense_27_Pipeline_1}
-  {SRCNAME dense.27_Pipeline_dense_for_flat MODELNAME dense_27_Pipeline_dense_for_flat RTLNAME cnn_dense_27_Pipeline_dense_for_flat}
-  {SRCNAME dense.27_Pipeline_VITIS_LOOP_60_2 MODELNAME dense_27_Pipeline_VITIS_LOOP_60_2 RTLNAME cnn_dense_27_Pipeline_VITIS_LOOP_60_2}
-  {SRCNAME dense.27 MODELNAME dense_27 RTLNAME cnn_dense_27}
-  {SRCNAME dense.28_Pipeline_1 MODELNAME dense_28_Pipeline_1 RTLNAME cnn_dense_28_Pipeline_1}
-  {SRCNAME dense.28_Pipeline_dense_for_flat MODELNAME dense_28_Pipeline_dense_for_flat RTLNAME cnn_dense_28_Pipeline_dense_for_flat}
-  {SRCNAME dense.28_Pipeline_VITIS_LOOP_60_2 MODELNAME dense_28_Pipeline_VITIS_LOOP_60_2 RTLNAME cnn_dense_28_Pipeline_VITIS_LOOP_60_2}
-  {SRCNAME dense.28 MODELNAME dense_28 RTLNAME cnn_dense_28}
+  {SRCNAME dense.1_Pipeline_1 MODELNAME dense_1_Pipeline_1 RTLNAME cnn_dense_1_Pipeline_1}
+  {SRCNAME dense.1_Pipeline_dense_for_flat MODELNAME dense_1_Pipeline_dense_for_flat RTLNAME cnn_dense_1_Pipeline_dense_for_flat}
+  {SRCNAME dense.1_Pipeline_VITIS_LOOP_60_2 MODELNAME dense_1_Pipeline_VITIS_LOOP_60_2 RTLNAME cnn_dense_1_Pipeline_VITIS_LOOP_60_2}
+  {SRCNAME dense.1 MODELNAME dense_1 RTLNAME cnn_dense_1}
+  {SRCNAME dense.2_Pipeline_1 MODELNAME dense_2_Pipeline_1 RTLNAME cnn_dense_2_Pipeline_1}
+  {SRCNAME dense.2_Pipeline_dense_for_flat MODELNAME dense_2_Pipeline_dense_for_flat RTLNAME cnn_dense_2_Pipeline_dense_for_flat}
+  {SRCNAME dense.2_Pipeline_VITIS_LOOP_60_2 MODELNAME dense_2_Pipeline_VITIS_LOOP_60_2 RTLNAME cnn_dense_2_Pipeline_VITIS_LOOP_60_2}
+  {SRCNAME dense.2 MODELNAME dense_2 RTLNAME cnn_dense_2}
+  {SRCNAME dense.3_Pipeline_1 MODELNAME dense_3_Pipeline_1 RTLNAME cnn_dense_3_Pipeline_1}
+  {SRCNAME dense.3_Pipeline_dense_for_flat MODELNAME dense_3_Pipeline_dense_for_flat RTLNAME cnn_dense_3_Pipeline_dense_for_flat}
+  {SRCNAME dense.3_Pipeline_VITIS_LOOP_60_2 MODELNAME dense_3_Pipeline_VITIS_LOOP_60_2 RTLNAME cnn_dense_3_Pipeline_VITIS_LOOP_60_2}
+  {SRCNAME dense.3 MODELNAME dense_3 RTLNAME cnn_dense_3}
+  {SRCNAME dense.4_Pipeline_1 MODELNAME dense_4_Pipeline_1 RTLNAME cnn_dense_4_Pipeline_1}
+  {SRCNAME dense.4_Pipeline_dense_for_flat MODELNAME dense_4_Pipeline_dense_for_flat RTLNAME cnn_dense_4_Pipeline_dense_for_flat}
+  {SRCNAME dense.4_Pipeline_VITIS_LOOP_60_2 MODELNAME dense_4_Pipeline_VITIS_LOOP_60_2 RTLNAME cnn_dense_4_Pipeline_VITIS_LOOP_60_2}
+  {SRCNAME dense.4 MODELNAME dense_4 RTLNAME cnn_dense_4}
+  {SRCNAME dense.5_Pipeline_1 MODELNAME dense_5_Pipeline_1 RTLNAME cnn_dense_5_Pipeline_1}
+  {SRCNAME dense.5_Pipeline_dense_for_flat MODELNAME dense_5_Pipeline_dense_for_flat RTLNAME cnn_dense_5_Pipeline_dense_for_flat}
+  {SRCNAME dense.5_Pipeline_VITIS_LOOP_60_2 MODELNAME dense_5_Pipeline_VITIS_LOOP_60_2 RTLNAME cnn_dense_5_Pipeline_VITIS_LOOP_60_2}
+  {SRCNAME dense.5 MODELNAME dense_5 RTLNAME cnn_dense_5}
+  {SRCNAME dense.6_Pipeline_1 MODELNAME dense_6_Pipeline_1 RTLNAME cnn_dense_6_Pipeline_1}
+  {SRCNAME dense.6_Pipeline_dense_for_flat MODELNAME dense_6_Pipeline_dense_for_flat RTLNAME cnn_dense_6_Pipeline_dense_for_flat}
+  {SRCNAME dense.6_Pipeline_VITIS_LOOP_60_2 MODELNAME dense_6_Pipeline_VITIS_LOOP_60_2 RTLNAME cnn_dense_6_Pipeline_VITIS_LOOP_60_2}
+  {SRCNAME dense.6 MODELNAME dense_6 RTLNAME cnn_dense_6}
+  {SRCNAME dense.7_Pipeline_1 MODELNAME dense_7_Pipeline_1 RTLNAME cnn_dense_7_Pipeline_1}
+  {SRCNAME dense.7_Pipeline_dense_for_flat MODELNAME dense_7_Pipeline_dense_for_flat RTLNAME cnn_dense_7_Pipeline_dense_for_flat}
+  {SRCNAME dense.7_Pipeline_VITIS_LOOP_60_2 MODELNAME dense_7_Pipeline_VITIS_LOOP_60_2 RTLNAME cnn_dense_7_Pipeline_VITIS_LOOP_60_2}
+  {SRCNAME dense.7 MODELNAME dense_7 RTLNAME cnn_dense_7}
   {SRCNAME dense_layer MODELNAME dense_layer RTLNAME cnn_dense_layer}
   {SRCNAME dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size MODELNAME dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size RTLNAME cnn_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size
     SUBMODULES {
@@ -119,41 +119,12 @@ set SynModuleInfo {
   {SRCNAME dense_layer_soft_max MODELNAME dense_layer_soft_max RTLNAME cnn_dense_layer_soft_max}
   {SRCNAME dataflow_section MODELNAME dataflow_section RTLNAME cnn_dataflow_section
     SUBMODULES {
-      {MODELNAME cnn_fifo_w32_d784_A RTLNAME cnn_fifo_w32_d784_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME conv_to_pool_streams_0_U}
-      {MODELNAME cnn_fifo_w32_d784_A RTLNAME cnn_fifo_w32_d784_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME conv_to_pool_streams_1_U}
-      {MODELNAME cnn_fifo_w32_d784_A RTLNAME cnn_fifo_w32_d784_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME conv_to_pool_streams_2_U}
-      {MODELNAME cnn_fifo_w32_d784_A RTLNAME cnn_fifo_w32_d784_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME conv_to_pool_streams_3_U}
-      {MODELNAME cnn_fifo_w32_d784_A RTLNAME cnn_fifo_w32_d784_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME conv_to_pool_streams_4_U}
-      {MODELNAME cnn_fifo_w32_d784_A RTLNAME cnn_fifo_w32_d784_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME conv_to_pool_streams_5_U}
-      {MODELNAME cnn_fifo_w32_d784_A RTLNAME cnn_fifo_w32_d784_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME conv_to_pool_streams_6_U}
-      {MODELNAME cnn_fifo_w32_d784_A RTLNAME cnn_fifo_w32_d784_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME conv_to_pool_streams_7_U}
-      {MODELNAME cnn_fifo_w32_d196_A RTLNAME cnn_fifo_w32_d196_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME pool_to_flat_streams_0_U}
-      {MODELNAME cnn_fifo_w32_d196_A RTLNAME cnn_fifo_w32_d196_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME pool_to_flat_streams_1_U}
-      {MODELNAME cnn_fifo_w32_d196_A RTLNAME cnn_fifo_w32_d196_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME pool_to_flat_streams_2_U}
-      {MODELNAME cnn_fifo_w32_d196_A RTLNAME cnn_fifo_w32_d196_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME pool_to_flat_streams_3_U}
-      {MODELNAME cnn_fifo_w32_d196_A RTLNAME cnn_fifo_w32_d196_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME pool_to_flat_streams_4_U}
-      {MODELNAME cnn_fifo_w32_d196_A RTLNAME cnn_fifo_w32_d196_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME pool_to_flat_streams_5_U}
-      {MODELNAME cnn_fifo_w32_d196_A RTLNAME cnn_fifo_w32_d196_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME pool_to_flat_streams_6_U}
-      {MODELNAME cnn_fifo_w32_d196_A RTLNAME cnn_fifo_w32_d196_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME pool_to_flat_streams_7_U}
-      {MODELNAME cnn_fifo_w32_d196_A RTLNAME cnn_fifo_w32_d196_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME flat_to_dense_streams_0_U}
-      {MODELNAME cnn_fifo_w32_d196_A RTLNAME cnn_fifo_w32_d196_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME flat_to_dense_streams_1_U}
-      {MODELNAME cnn_fifo_w32_d196_A RTLNAME cnn_fifo_w32_d196_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME flat_to_dense_streams_2_U}
-      {MODELNAME cnn_fifo_w32_d196_A RTLNAME cnn_fifo_w32_d196_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME flat_to_dense_streams_3_U}
-      {MODELNAME cnn_fifo_w32_d196_A RTLNAME cnn_fifo_w32_d196_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME flat_to_dense_streams_4_U}
-      {MODELNAME cnn_fifo_w32_d196_A RTLNAME cnn_fifo_w32_d196_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME flat_to_dense_streams_5_U}
-      {MODELNAME cnn_fifo_w32_d196_A RTLNAME cnn_fifo_w32_d196_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME flat_to_dense_streams_6_U}
-      {MODELNAME cnn_fifo_w32_d196_A RTLNAME cnn_fifo_w32_d196_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME flat_to_dense_streams_7_U}
-      {MODELNAME cnn_fifo_w32_d10_S RTLNAME cnn_fifo_w32_d10_S BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME dense_to_softmax_streams_0_U}
-      {MODELNAME cnn_fifo_w32_d10_S RTLNAME cnn_fifo_w32_d10_S BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME dense_to_softmax_streams_1_U}
-      {MODELNAME cnn_fifo_w32_d10_S RTLNAME cnn_fifo_w32_d10_S BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME dense_to_softmax_streams_2_U}
-      {MODELNAME cnn_fifo_w32_d10_S RTLNAME cnn_fifo_w32_d10_S BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME dense_to_softmax_streams_3_U}
-      {MODELNAME cnn_fifo_w32_d10_S RTLNAME cnn_fifo_w32_d10_S BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME dense_to_softmax_streams_4_U}
-      {MODELNAME cnn_fifo_w32_d10_S RTLNAME cnn_fifo_w32_d10_S BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME dense_to_softmax_streams_5_U}
-      {MODELNAME cnn_fifo_w32_d10_S RTLNAME cnn_fifo_w32_d10_S BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME dense_to_softmax_streams_6_U}
-      {MODELNAME cnn_fifo_w32_d10_S RTLNAME cnn_fifo_w32_d10_S BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME dense_to_softmax_streams_7_U}
-      {MODELNAME cnn_start_for_max_pooling_layer_U0 RTLNAME cnn_start_for_max_pooling_layer_U0 BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME start_for_max_pooling_layer_U0_U}
-      {MODELNAME cnn_start_for_flattening_layer_U0 RTLNAME cnn_start_for_flattening_layer_U0 BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME start_for_flattening_layer_U0_U}
-      {MODELNAME cnn_start_for_dense_layer_U0 RTLNAME cnn_start_for_dense_layer_U0 BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME start_for_dense_layer_U0_U}
+      {MODELNAME cnn_fifo_w32_d784_A RTLNAME cnn_fifo_w32_d784_A BINDTYPE storage TYPE fifo IMPL memory LATENCY -1 ALLOW_PRAGMA 1 INSTNAME {$InstName}}
+      {MODELNAME cnn_fifo_w32_d196_A RTLNAME cnn_fifo_w32_d196_A BINDTYPE storage TYPE fifo IMPL memory LATENCY -1 ALLOW_PRAGMA 1 INSTNAME {$InstName}}
+      {MODELNAME cnn_fifo_w32_d10_S RTLNAME cnn_fifo_w32_d10_S BINDTYPE storage TYPE fifo IMPL srl LATENCY -1 ALLOW_PRAGMA 1 INSTNAME {$InstName}}
+      {MODELNAME cnn_start_for_max_pooling_layer_U0 RTLNAME cnn_start_for_max_pooling_layer_U0 BINDTYPE storage TYPE fifo IMPL srl LATENCY -1 ALLOW_PRAGMA 1 INSTNAME {$InstName}}
+      {MODELNAME cnn_start_for_flattening_layer_U0 RTLNAME cnn_start_for_flattening_layer_U0 BINDTYPE storage TYPE fifo IMPL srl LATENCY -1 ALLOW_PRAGMA 1 INSTNAME {$InstName}}
+      {MODELNAME cnn_start_for_dense_layer_U0 RTLNAME cnn_start_for_dense_layer_U0 BINDTYPE storage TYPE fifo IMPL srl LATENCY -1 ALLOW_PRAGMA 1 INSTNAME {$InstName}}
     }
   }
   {SRCNAME cnn MODELNAME cnn RTLNAME cnn IS_TOP 1

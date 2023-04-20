@@ -1,0 +1,10 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../cnn_tb.cc in debug mode
+   Compiling ../../../../cnn.cc in debug mode
+   Generating csim.exe
+Total predictions: 10000
+Correct predictions: 100.00 %
+Average latency: 2.524900 (ms)
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

@@ -3,9 +3,9 @@
 ================================================================
 == Vitis HLS Report for 'dense_layer'
 ================================================================
-* Date:           Mon Mar 27 10:49:06 2023
+* Date:           Wed Apr 19 17:50:10 2023
 
-* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Version:        2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)
 * Project:        Project
 * Solution:       solution1 (Vivado IP Flow Target)
 * Product family: artix7
@@ -34,19 +34,19 @@
 
     + Detail: 
         * Instance: 
-        +-------------+----------+---------+---------+-----------+-----------+------+------+---------+
-        |             |          |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
-        |   Instance  |  Module  |   min   |   max   |    min    |    max    |  min |  max |   Type  |
-        +-------------+----------+---------+---------+-----------+-----------+------+------+---------+
-        |dense_U0     |dense     |     2013|     2013|  20.130 us|  20.130 us|  2013|  2013|       no|
-        |dense_22_U0  |dense_22  |     2013|     2013|  20.130 us|  20.130 us|  2013|  2013|       no|
-        |dense_23_U0  |dense_23  |     2013|     2013|  20.130 us|  20.130 us|  2013|  2013|       no|
-        |dense_24_U0  |dense_24  |     2013|     2013|  20.130 us|  20.130 us|  2013|  2013|       no|
-        |dense_25_U0  |dense_25  |     2013|     2013|  20.130 us|  20.130 us|  2013|  2013|       no|
-        |dense_26_U0  |dense_26  |     2013|     2013|  20.130 us|  20.130 us|  2013|  2013|       no|
-        |dense_27_U0  |dense_27  |     2013|     2013|  20.130 us|  20.130 us|  2013|  2013|       no|
-        |dense_28_U0  |dense_28  |     2013|     2013|  20.130 us|  20.130 us|  2013|  2013|       no|
-        +-------------+----------+---------+---------+-----------+-----------+------+------+---------+
+        +------------+---------+---------+---------+-----------+-----------+------+------+---------+
+        |            |         |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
+        |  Instance  |  Module |   min   |   max   |    min    |    max    |  min |  max |   Type  |
+        +------------+---------+---------+---------+-----------+-----------+------+------+---------+
+        |dense_U0    |dense    |     2013|     2013|  20.130 us|  20.130 us|  2013|  2013|       no|
+        |dense_1_U0  |dense_1  |     2013|     2013|  20.130 us|  20.130 us|  2013|  2013|       no|
+        |dense_2_U0  |dense_2  |     2013|     2013|  20.130 us|  20.130 us|  2013|  2013|       no|
+        |dense_3_U0  |dense_3  |     2013|     2013|  20.130 us|  20.130 us|  2013|  2013|       no|
+        |dense_4_U0  |dense_4  |     2013|     2013|  20.130 us|  20.130 us|  2013|  2013|       no|
+        |dense_5_U0  |dense_5  |     2013|     2013|  20.130 us|  20.130 us|  2013|  2013|       no|
+        |dense_6_U0  |dense_6  |     2013|     2013|  20.130 us|  20.130 us|  2013|  2013|       no|
+        |dense_7_U0  |dense_7  |     2013|     2013|  20.130 us|  20.130 us|  2013|  2013|       no|
+        +------------+---------+---------+---------+-----------+-----------+------+------+---------+
 
         * Loop: 
         N/A
@@ -77,20 +77,20 @@
 
 + Detail: 
     * Instance: 
-    +-------------+----------+---------+----+------+------+-----+
-    |   Instance  |  Module  | BRAM_18K| DSP|  FF  |  LUT | URAM|
-    +-------------+----------+---------+----+------+------+-----+
-    |dense_U0     |dense     |       40|   5|  1947|  1175|    0|
-    |dense_22_U0  |dense_22  |       40|   5|  1947|  1191|    0|
-    |dense_23_U0  |dense_23  |       40|   5|  1947|  1192|    0|
-    |dense_24_U0  |dense_24  |       40|   5|  1947|  1192|    0|
-    |dense_25_U0  |dense_25  |       40|   5|  1947|  1191|    0|
-    |dense_26_U0  |dense_26  |       40|   5|  1947|  1193|    0|
-    |dense_27_U0  |dense_27  |       40|   5|  1947|  1193|    0|
-    |dense_28_U0  |dense_28  |       40|   5|  1947|  1193|    0|
-    +-------------+----------+---------+----+------+------+-----+
-    |Total        |          |      320|  40| 15576|  9520|    0|
-    +-------------+----------+---------+----+------+------+-----+
+    +------------+---------+---------+----+------+------+-----+
+    |  Instance  |  Module | BRAM_18K| DSP|  FF  |  LUT | URAM|
+    +------------+---------+---------+----+------+------+-----+
+    |dense_U0    |dense    |       40|   5|  1947|  1175|    0|
+    |dense_1_U0  |dense_1  |       40|   5|  1947|  1191|    0|
+    |dense_2_U0  |dense_2  |       40|   5|  1947|  1192|    0|
+    |dense_3_U0  |dense_3  |       40|   5|  1947|  1192|    0|
+    |dense_4_U0  |dense_4  |       40|   5|  1947|  1191|    0|
+    |dense_5_U0  |dense_5  |       40|   5|  1947|  1193|    0|
+    |dense_6_U0  |dense_6  |       40|   5|  1947|  1193|    0|
+    |dense_7_U0  |dense_7  |       40|   5|  1947|  1193|    0|
+    +------------+---------+---------+----+------+------+-----+
+    |Total       |         |      320|  40| 15576|  9520|    0|
+    +------------+---------+---------+----+------+------+-----+
 
     * DSP: 
     N/A
@@ -102,64 +102,64 @@
     N/A
 
     * Expression: 
-    +------------------------------+----------+----+---+----+------------+------------+
-    |         Variable Name        | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
-    +------------------------------+----------+----+---+----+------------+------------+
-    |ap_idle                       |       and|   0|  0|   2|           1|           1|
-    |ap_sync_continue              |       and|   0|  0|   2|           1|           1|
-    |ap_sync_done                  |       and|   0|  0|   2|           1|           1|
-    |ap_sync_ready                 |       and|   0|  0|   2|           1|           1|
-    |dense_22_U0_ap_start          |       and|   0|  0|   2|           1|           1|
-    |dense_23_U0_ap_start          |       and|   0|  0|   2|           1|           1|
-    |dense_24_U0_ap_start          |       and|   0|  0|   2|           1|           1|
-    |dense_25_U0_ap_start          |       and|   0|  0|   2|           1|           1|
-    |dense_26_U0_ap_start          |       and|   0|  0|   2|           1|           1|
-    |dense_27_U0_ap_start          |       and|   0|  0|   2|           1|           1|
-    |dense_28_U0_ap_start          |       and|   0|  0|   2|           1|           1|
-    |dense_U0_ap_start             |       and|   0|  0|   2|           1|           1|
-    |ap_sync_dense_22_U0_ap_ready  |        or|   0|  0|   2|           1|           1|
-    |ap_sync_dense_23_U0_ap_ready  |        or|   0|  0|   2|           1|           1|
-    |ap_sync_dense_24_U0_ap_ready  |        or|   0|  0|   2|           1|           1|
-    |ap_sync_dense_25_U0_ap_ready  |        or|   0|  0|   2|           1|           1|
-    |ap_sync_dense_26_U0_ap_ready  |        or|   0|  0|   2|           1|           1|
-    |ap_sync_dense_27_U0_ap_ready  |        or|   0|  0|   2|           1|           1|
-    |ap_sync_dense_28_U0_ap_ready  |        or|   0|  0|   2|           1|           1|
-    |ap_sync_dense_U0_ap_ready     |        or|   0|  0|   2|           1|           1|
-    +------------------------------+----------+----+---+----+------------+------------+
-    |Total                         |          |   0|  0|  40|          20|          20|
-    +------------------------------+----------+----+---+----+------------+------------+
+    +-----------------------------+----------+----+---+----+------------+------------+
+    |        Variable Name        | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------------+----------+----+---+----+------------+------------+
+    |ap_idle                      |       and|   0|  0|   2|           1|           1|
+    |ap_sync_continue             |       and|   0|  0|   2|           1|           1|
+    |ap_sync_done                 |       and|   0|  0|   2|           1|           1|
+    |ap_sync_ready                |       and|   0|  0|   2|           1|           1|
+    |dense_1_U0_ap_start          |       and|   0|  0|   2|           1|           1|
+    |dense_2_U0_ap_start          |       and|   0|  0|   2|           1|           1|
+    |dense_3_U0_ap_start          |       and|   0|  0|   2|           1|           1|
+    |dense_4_U0_ap_start          |       and|   0|  0|   2|           1|           1|
+    |dense_5_U0_ap_start          |       and|   0|  0|   2|           1|           1|
+    |dense_6_U0_ap_start          |       and|   0|  0|   2|           1|           1|
+    |dense_7_U0_ap_start          |       and|   0|  0|   2|           1|           1|
+    |dense_U0_ap_start            |       and|   0|  0|   2|           1|           1|
+    |ap_sync_dense_1_U0_ap_ready  |        or|   0|  0|   2|           1|           1|
+    |ap_sync_dense_2_U0_ap_ready  |        or|   0|  0|   2|           1|           1|
+    |ap_sync_dense_3_U0_ap_ready  |        or|   0|  0|   2|           1|           1|
+    |ap_sync_dense_4_U0_ap_ready  |        or|   0|  0|   2|           1|           1|
+    |ap_sync_dense_5_U0_ap_ready  |        or|   0|  0|   2|           1|           1|
+    |ap_sync_dense_6_U0_ap_ready  |        or|   0|  0|   2|           1|           1|
+    |ap_sync_dense_7_U0_ap_ready  |        or|   0|  0|   2|           1|           1|
+    |ap_sync_dense_U0_ap_ready    |        or|   0|  0|   2|           1|           1|
+    +-----------------------------+----------+----+---+----+------------+------------+
+    |Total                        |          |   0|  0|  40|          20|          20|
+    +-----------------------------+----------+----+---+----+------------+------------+
 
     * Multiplexer: 
-    +----------------------------------+----+-----------+-----+-----------+
-    |               Name               | LUT| Input Size| Bits| Total Bits|
-    +----------------------------------+----+-----------+-----+-----------+
-    |ap_sync_reg_dense_22_U0_ap_ready  |   9|          2|    1|          2|
-    |ap_sync_reg_dense_23_U0_ap_ready  |   9|          2|    1|          2|
-    |ap_sync_reg_dense_24_U0_ap_ready  |   9|          2|    1|          2|
-    |ap_sync_reg_dense_25_U0_ap_ready  |   9|          2|    1|          2|
-    |ap_sync_reg_dense_26_U0_ap_ready  |   9|          2|    1|          2|
-    |ap_sync_reg_dense_27_U0_ap_ready  |   9|          2|    1|          2|
-    |ap_sync_reg_dense_28_U0_ap_ready  |   9|          2|    1|          2|
-    |ap_sync_reg_dense_U0_ap_ready     |   9|          2|    1|          2|
-    +----------------------------------+----+-----------+-----+-----------+
-    |Total                             |  72|         16|    8|         16|
-    +----------------------------------+----+-----------+-----+-----------+
+    +---------------------------------+----+-----------+-----+-----------+
+    |               Name              | LUT| Input Size| Bits| Total Bits|
+    +---------------------------------+----+-----------+-----+-----------+
+    |ap_sync_reg_dense_1_U0_ap_ready  |   9|          2|    1|          2|
+    |ap_sync_reg_dense_2_U0_ap_ready  |   9|          2|    1|          2|
+    |ap_sync_reg_dense_3_U0_ap_ready  |   9|          2|    1|          2|
+    |ap_sync_reg_dense_4_U0_ap_ready  |   9|          2|    1|          2|
+    |ap_sync_reg_dense_5_U0_ap_ready  |   9|          2|    1|          2|
+    |ap_sync_reg_dense_6_U0_ap_ready  |   9|          2|    1|          2|
+    |ap_sync_reg_dense_7_U0_ap_ready  |   9|          2|    1|          2|
+    |ap_sync_reg_dense_U0_ap_ready    |   9|          2|    1|          2|
+    +---------------------------------+----+-----------+-----+-----------+
+    |Total                            |  72|         16|    8|         16|
+    +---------------------------------+----+-----------+-----+-----------+
 
     * Register: 
-    +----------------------------------+---+----+-----+-----------+
-    |               Name               | FF| LUT| Bits| Const Bits|
-    +----------------------------------+---+----+-----+-----------+
-    |ap_sync_reg_dense_22_U0_ap_ready  |  1|   0|    1|          0|
-    |ap_sync_reg_dense_23_U0_ap_ready  |  1|   0|    1|          0|
-    |ap_sync_reg_dense_24_U0_ap_ready  |  1|   0|    1|          0|
-    |ap_sync_reg_dense_25_U0_ap_ready  |  1|   0|    1|          0|
-    |ap_sync_reg_dense_26_U0_ap_ready  |  1|   0|    1|          0|
-    |ap_sync_reg_dense_27_U0_ap_ready  |  1|   0|    1|          0|
-    |ap_sync_reg_dense_28_U0_ap_ready  |  1|   0|    1|          0|
-    |ap_sync_reg_dense_U0_ap_ready     |  1|   0|    1|          0|
-    +----------------------------------+---+----+-----+-----------+
-    |Total                             |  8|   0|    8|          0|
-    +----------------------------------+---+----+-----+-----------+
+    +---------------------------------+---+----+-----+-----------+
+    |               Name              | FF| LUT| Bits| Const Bits|
+    +---------------------------------+---+----+-----+-----------+
+    |ap_sync_reg_dense_1_U0_ap_ready  |  1|   0|    1|          0|
+    |ap_sync_reg_dense_2_U0_ap_ready  |  1|   0|    1|          0|
+    |ap_sync_reg_dense_3_U0_ap_ready  |  1|   0|    1|          0|
+    |ap_sync_reg_dense_4_U0_ap_ready  |  1|   0|    1|          0|
+    |ap_sync_reg_dense_5_U0_ap_ready  |  1|   0|    1|          0|
+    |ap_sync_reg_dense_6_U0_ap_ready  |  1|   0|    1|          0|
+    |ap_sync_reg_dense_7_U0_ap_ready  |  1|   0|    1|          0|
+    |ap_sync_reg_dense_U0_ap_ready    |  1|   0|    1|          0|
+    +---------------------------------+---+----+-----+-----------+
+    |Total                            |  8|   0|    8|          0|
+    +---------------------------------+---+----+-----+-----------+
 
 
 
@@ -266,40 +266,40 @@ IsGatedGlobalClock: 0
 
 State 1 <SV = 0> <Delay = 0.00>
 ST_1 : Operation 3 [2/2] (0.00ns)   --->   "%call_ln73 = call void @dense, i32 %flat_to_dense_streams_0, i32 %dense_to_softmax_streams_0, i32 %dense_weights_72, i32 %dense_weights_65, i32 %dense_weights_58, i32 %dense_weights_51, i32 %dense_weights_44, i32 %dense_weights_37, i32 %dense_weights_30, i32 %dense_weights_23, i32 %dense_weights_16, i32 %dense_weights" [dense.cc:73]   --->   Operation 3 'call' 'call_ln73' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_1 : Operation 4 [2/2] (0.00ns)   --->   "%call_ln74 = call void @dense.22, i32 %flat_to_dense_streams_1, i32 %dense_to_softmax_streams_1, i32 %dense_weights_73, i32 %dense_weights_66, i32 %dense_weights_59, i32 %dense_weights_52, i32 %dense_weights_45, i32 %dense_weights_38, i32 %dense_weights_31, i32 %dense_weights_24, i32 %dense_weights_17, i32 %dense_weights_10" [dense.cc:74]   --->   Operation 4 'call' 'call_ln74' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_1 : Operation 5 [2/2] (0.00ns)   --->   "%call_ln75 = call void @dense.23, i32 %flat_to_dense_streams_2, i32 %dense_to_softmax_streams_2, i32 %dense_weights_74, i32 %dense_weights_67, i32 %dense_weights_60, i32 %dense_weights_53, i32 %dense_weights_46, i32 %dense_weights_39, i32 %dense_weights_32, i32 %dense_weights_25, i32 %dense_weights_18, i32 %dense_weights_11" [dense.cc:75]   --->   Operation 5 'call' 'call_ln75' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_1 : Operation 6 [2/2] (0.00ns)   --->   "%call_ln76 = call void @dense.24, i32 %flat_to_dense_streams_3, i32 %dense_to_softmax_streams_3, i32 %dense_weights_75, i32 %dense_weights_68, i32 %dense_weights_61, i32 %dense_weights_54, i32 %dense_weights_47, i32 %dense_weights_40, i32 %dense_weights_33, i32 %dense_weights_26, i32 %dense_weights_19, i32 %dense_weights_12" [dense.cc:76]   --->   Operation 6 'call' 'call_ln76' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_1 : Operation 7 [2/2] (0.00ns)   --->   "%call_ln77 = call void @dense.25, i32 %flat_to_dense_streams_4, i32 %dense_to_softmax_streams_4, i32 %dense_weights_76, i32 %dense_weights_69, i32 %dense_weights_62, i32 %dense_weights_55, i32 %dense_weights_48, i32 %dense_weights_41, i32 %dense_weights_34, i32 %dense_weights_27, i32 %dense_weights_20, i32 %dense_weights_13" [dense.cc:77]   --->   Operation 7 'call' 'call_ln77' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_1 : Operation 8 [2/2] (0.00ns)   --->   "%call_ln78 = call void @dense.26, i32 %flat_to_dense_streams_5, i32 %dense_to_softmax_streams_5, i32 %dense_weights_77, i32 %dense_weights_70, i32 %dense_weights_63, i32 %dense_weights_56, i32 %dense_weights_49, i32 %dense_weights_42, i32 %dense_weights_35, i32 %dense_weights_28, i32 %dense_weights_21, i32 %dense_weights_14" [dense.cc:78]   --->   Operation 8 'call' 'call_ln78' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_1 : Operation 9 [2/2] (0.00ns)   --->   "%call_ln79 = call void @dense.27, i32 %flat_to_dense_streams_6, i32 %dense_to_softmax_streams_6, i32 %dense_weights_78, i32 %dense_weights_71, i32 %dense_weights_64, i32 %dense_weights_57, i32 %dense_weights_50, i32 %dense_weights_43, i32 %dense_weights_36, i32 %dense_weights_29, i32 %dense_weights_22, i32 %dense_weights_15" [dense.cc:79]   --->   Operation 9 'call' 'call_ln79' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_1 : Operation 10 [2/2] (0.00ns)   --->   "%call_ln80 = call void @dense.28, i32 %flat_to_dense_streams_7, i32 %dense_to_softmax_streams_7, i32 %dense_weights_0, i32 %dense_weights_1, i32 %dense_weights_2, i32 %dense_weights_3, i32 %dense_weights_4, i32 %dense_weights_5, i32 %dense_weights_6, i32 %dense_weights_7, i32 %dense_weights_8, i32 %dense_weights_9" [dense.cc:80]   --->   Operation 10 'call' 'call_ln80' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 4 [2/2] (0.00ns)   --->   "%call_ln74 = call void @dense.1, i32 %flat_to_dense_streams_1, i32 %dense_to_softmax_streams_1, i32 %dense_weights_73, i32 %dense_weights_66, i32 %dense_weights_59, i32 %dense_weights_52, i32 %dense_weights_45, i32 %dense_weights_38, i32 %dense_weights_31, i32 %dense_weights_24, i32 %dense_weights_17, i32 %dense_weights_10" [dense.cc:74]   --->   Operation 4 'call' 'call_ln74' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 5 [2/2] (0.00ns)   --->   "%call_ln75 = call void @dense.2, i32 %flat_to_dense_streams_2, i32 %dense_to_softmax_streams_2, i32 %dense_weights_74, i32 %dense_weights_67, i32 %dense_weights_60, i32 %dense_weights_53, i32 %dense_weights_46, i32 %dense_weights_39, i32 %dense_weights_32, i32 %dense_weights_25, i32 %dense_weights_18, i32 %dense_weights_11" [dense.cc:75]   --->   Operation 5 'call' 'call_ln75' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 6 [2/2] (0.00ns)   --->   "%call_ln76 = call void @dense.3, i32 %flat_to_dense_streams_3, i32 %dense_to_softmax_streams_3, i32 %dense_weights_75, i32 %dense_weights_68, i32 %dense_weights_61, i32 %dense_weights_54, i32 %dense_weights_47, i32 %dense_weights_40, i32 %dense_weights_33, i32 %dense_weights_26, i32 %dense_weights_19, i32 %dense_weights_12" [dense.cc:76]   --->   Operation 6 'call' 'call_ln76' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 7 [2/2] (0.00ns)   --->   "%call_ln77 = call void @dense.4, i32 %flat_to_dense_streams_4, i32 %dense_to_softmax_streams_4, i32 %dense_weights_76, i32 %dense_weights_69, i32 %dense_weights_62, i32 %dense_weights_55, i32 %dense_weights_48, i32 %dense_weights_41, i32 %dense_weights_34, i32 %dense_weights_27, i32 %dense_weights_20, i32 %dense_weights_13" [dense.cc:77]   --->   Operation 7 'call' 'call_ln77' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 8 [2/2] (0.00ns)   --->   "%call_ln78 = call void @dense.5, i32 %flat_to_dense_streams_5, i32 %dense_to_softmax_streams_5, i32 %dense_weights_77, i32 %dense_weights_70, i32 %dense_weights_63, i32 %dense_weights_56, i32 %dense_weights_49, i32 %dense_weights_42, i32 %dense_weights_35, i32 %dense_weights_28, i32 %dense_weights_21, i32 %dense_weights_14" [dense.cc:78]   --->   Operation 8 'call' 'call_ln78' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 9 [2/2] (0.00ns)   --->   "%call_ln79 = call void @dense.6, i32 %flat_to_dense_streams_6, i32 %dense_to_softmax_streams_6, i32 %dense_weights_78, i32 %dense_weights_71, i32 %dense_weights_64, i32 %dense_weights_57, i32 %dense_weights_50, i32 %dense_weights_43, i32 %dense_weights_36, i32 %dense_weights_29, i32 %dense_weights_22, i32 %dense_weights_15" [dense.cc:79]   --->   Operation 9 'call' 'call_ln79' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 10 [2/2] (0.00ns)   --->   "%call_ln80 = call void @dense.7, i32 %flat_to_dense_streams_7, i32 %dense_to_softmax_streams_7, i32 %dense_weights_0, i32 %dense_weights_1, i32 %dense_weights_2, i32 %dense_weights_3, i32 %dense_weights_4, i32 %dense_weights_5, i32 %dense_weights_6, i32 %dense_weights_7, i32 %dense_weights_8, i32 %dense_weights_9" [dense.cc:80]   --->   Operation 10 'call' 'call_ln80' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 2 <SV = 1> <Delay = 0.00>
-ST_2 : Operation 11 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln11 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty_0" [/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS/Project/solution1/directives.tcl:11]   --->   Operation 11 'specdataflowpipeline' 'specdataflowpipeline_ln11' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %dense_to_softmax_streams_7, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 12 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %dense_to_softmax_streams_6, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 13 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %dense_to_softmax_streams_5, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 14 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %dense_to_softmax_streams_4, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 15 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %dense_to_softmax_streams_3, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 16 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %dense_to_softmax_streams_2, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 17 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %dense_to_softmax_streams_1, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 18 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %dense_to_softmax_streams_0, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 19 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %flat_to_dense_streams_7, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 20 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %flat_to_dense_streams_6, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 21 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %flat_to_dense_streams_5, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 22 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %flat_to_dense_streams_4, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 23 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %flat_to_dense_streams_3, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 24 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %flat_to_dense_streams_2, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 25 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %flat_to_dense_streams_1, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 26 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %flat_to_dense_streams_0, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 27 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 11 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln73 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty_6" [dense.cc:73]   --->   Operation 11 'specdataflowpipeline' 'specdataflowpipeline_ln73' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %dense_to_softmax_streams_7, void @empty, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6"   --->   Operation 12 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %dense_to_softmax_streams_6, void @empty, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6"   --->   Operation 13 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %dense_to_softmax_streams_5, void @empty, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6"   --->   Operation 14 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %dense_to_softmax_streams_4, void @empty, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6"   --->   Operation 15 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %dense_to_softmax_streams_3, void @empty, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6"   --->   Operation 16 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %dense_to_softmax_streams_2, void @empty, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6"   --->   Operation 17 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %dense_to_softmax_streams_1, void @empty, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6"   --->   Operation 18 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %dense_to_softmax_streams_0, void @empty, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6"   --->   Operation 19 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %flat_to_dense_streams_7, void @empty, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6"   --->   Operation 20 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %flat_to_dense_streams_6, void @empty, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6"   --->   Operation 21 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %flat_to_dense_streams_5, void @empty, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6"   --->   Operation 22 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %flat_to_dense_streams_4, void @empty, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6"   --->   Operation 23 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %flat_to_dense_streams_3, void @empty, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6"   --->   Operation 24 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %flat_to_dense_streams_2, void @empty, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6"   --->   Operation 25 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %flat_to_dense_streams_1, void @empty, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6"   --->   Operation 26 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %flat_to_dense_streams_0, void @empty, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6"   --->   Operation 27 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 28 [1/2] (0.00ns)   --->   "%call_ln73 = call void @dense, i32 %flat_to_dense_streams_0, i32 %dense_to_softmax_streams_0, i32 %dense_weights_72, i32 %dense_weights_65, i32 %dense_weights_58, i32 %dense_weights_51, i32 %dense_weights_44, i32 %dense_weights_37, i32 %dense_weights_30, i32 %dense_weights_23, i32 %dense_weights_16, i32 %dense_weights" [dense.cc:73]   --->   Operation 28 'call' 'call_ln73' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_2 : Operation 29 [1/2] (0.00ns)   --->   "%call_ln74 = call void @dense.22, i32 %flat_to_dense_streams_1, i32 %dense_to_softmax_streams_1, i32 %dense_weights_73, i32 %dense_weights_66, i32 %dense_weights_59, i32 %dense_weights_52, i32 %dense_weights_45, i32 %dense_weights_38, i32 %dense_weights_31, i32 %dense_weights_24, i32 %dense_weights_17, i32 %dense_weights_10" [dense.cc:74]   --->   Operation 29 'call' 'call_ln74' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_2 : Operation 30 [1/2] (0.00ns)   --->   "%call_ln75 = call void @dense.23, i32 %flat_to_dense_streams_2, i32 %dense_to_softmax_streams_2, i32 %dense_weights_74, i32 %dense_weights_67, i32 %dense_weights_60, i32 %dense_weights_53, i32 %dense_weights_46, i32 %dense_weights_39, i32 %dense_weights_32, i32 %dense_weights_25, i32 %dense_weights_18, i32 %dense_weights_11" [dense.cc:75]   --->   Operation 30 'call' 'call_ln75' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_2 : Operation 31 [1/2] (0.00ns)   --->   "%call_ln76 = call void @dense.24, i32 %flat_to_dense_streams_3, i32 %dense_to_softmax_streams_3, i32 %dense_weights_75, i32 %dense_weights_68, i32 %dense_weights_61, i32 %dense_weights_54, i32 %dense_weights_47, i32 %dense_weights_40, i32 %dense_weights_33, i32 %dense_weights_26, i32 %dense_weights_19, i32 %dense_weights_12" [dense.cc:76]   --->   Operation 31 'call' 'call_ln76' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_2 : Operation 32 [1/2] (0.00ns)   --->   "%call_ln77 = call void @dense.25, i32 %flat_to_dense_streams_4, i32 %dense_to_softmax_streams_4, i32 %dense_weights_76, i32 %dense_weights_69, i32 %dense_weights_62, i32 %dense_weights_55, i32 %dense_weights_48, i32 %dense_weights_41, i32 %dense_weights_34, i32 %dense_weights_27, i32 %dense_weights_20, i32 %dense_weights_13" [dense.cc:77]   --->   Operation 32 'call' 'call_ln77' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_2 : Operation 33 [1/2] (0.00ns)   --->   "%call_ln78 = call void @dense.26, i32 %flat_to_dense_streams_5, i32 %dense_to_softmax_streams_5, i32 %dense_weights_77, i32 %dense_weights_70, i32 %dense_weights_63, i32 %dense_weights_56, i32 %dense_weights_49, i32 %dense_weights_42, i32 %dense_weights_35, i32 %dense_weights_28, i32 %dense_weights_21, i32 %dense_weights_14" [dense.cc:78]   --->   Operation 33 'call' 'call_ln78' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_2 : Operation 34 [1/2] (0.00ns)   --->   "%call_ln79 = call void @dense.27, i32 %flat_to_dense_streams_6, i32 %dense_to_softmax_streams_6, i32 %dense_weights_78, i32 %dense_weights_71, i32 %dense_weights_64, i32 %dense_weights_57, i32 %dense_weights_50, i32 %dense_weights_43, i32 %dense_weights_36, i32 %dense_weights_29, i32 %dense_weights_22, i32 %dense_weights_15" [dense.cc:79]   --->   Operation 34 'call' 'call_ln79' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_2 : Operation 35 [1/2] (0.00ns)   --->   "%call_ln80 = call void @dense.28, i32 %flat_to_dense_streams_7, i32 %dense_to_softmax_streams_7, i32 %dense_weights_0, i32 %dense_weights_1, i32 %dense_weights_2, i32 %dense_weights_3, i32 %dense_weights_4, i32 %dense_weights_5, i32 %dense_weights_6, i32 %dense_weights_7, i32 %dense_weights_8, i32 %dense_weights_9" [dense.cc:80]   --->   Operation 35 'call' 'call_ln80' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 29 [1/2] (0.00ns)   --->   "%call_ln74 = call void @dense.1, i32 %flat_to_dense_streams_1, i32 %dense_to_softmax_streams_1, i32 %dense_weights_73, i32 %dense_weights_66, i32 %dense_weights_59, i32 %dense_weights_52, i32 %dense_weights_45, i32 %dense_weights_38, i32 %dense_weights_31, i32 %dense_weights_24, i32 %dense_weights_17, i32 %dense_weights_10" [dense.cc:74]   --->   Operation 29 'call' 'call_ln74' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 30 [1/2] (0.00ns)   --->   "%call_ln75 = call void @dense.2, i32 %flat_to_dense_streams_2, i32 %dense_to_softmax_streams_2, i32 %dense_weights_74, i32 %dense_weights_67, i32 %dense_weights_60, i32 %dense_weights_53, i32 %dense_weights_46, i32 %dense_weights_39, i32 %dense_weights_32, i32 %dense_weights_25, i32 %dense_weights_18, i32 %dense_weights_11" [dense.cc:75]   --->   Operation 30 'call' 'call_ln75' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 31 [1/2] (0.00ns)   --->   "%call_ln76 = call void @dense.3, i32 %flat_to_dense_streams_3, i32 %dense_to_softmax_streams_3, i32 %dense_weights_75, i32 %dense_weights_68, i32 %dense_weights_61, i32 %dense_weights_54, i32 %dense_weights_47, i32 %dense_weights_40, i32 %dense_weights_33, i32 %dense_weights_26, i32 %dense_weights_19, i32 %dense_weights_12" [dense.cc:76]   --->   Operation 31 'call' 'call_ln76' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 32 [1/2] (0.00ns)   --->   "%call_ln77 = call void @dense.4, i32 %flat_to_dense_streams_4, i32 %dense_to_softmax_streams_4, i32 %dense_weights_76, i32 %dense_weights_69, i32 %dense_weights_62, i32 %dense_weights_55, i32 %dense_weights_48, i32 %dense_weights_41, i32 %dense_weights_34, i32 %dense_weights_27, i32 %dense_weights_20, i32 %dense_weights_13" [dense.cc:77]   --->   Operation 32 'call' 'call_ln77' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 33 [1/2] (0.00ns)   --->   "%call_ln78 = call void @dense.5, i32 %flat_to_dense_streams_5, i32 %dense_to_softmax_streams_5, i32 %dense_weights_77, i32 %dense_weights_70, i32 %dense_weights_63, i32 %dense_weights_56, i32 %dense_weights_49, i32 %dense_weights_42, i32 %dense_weights_35, i32 %dense_weights_28, i32 %dense_weights_21, i32 %dense_weights_14" [dense.cc:78]   --->   Operation 33 'call' 'call_ln78' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 34 [1/2] (0.00ns)   --->   "%call_ln79 = call void @dense.6, i32 %flat_to_dense_streams_6, i32 %dense_to_softmax_streams_6, i32 %dense_weights_78, i32 %dense_weights_71, i32 %dense_weights_64, i32 %dense_weights_57, i32 %dense_weights_50, i32 %dense_weights_43, i32 %dense_weights_36, i32 %dense_weights_29, i32 %dense_weights_22, i32 %dense_weights_15" [dense.cc:79]   --->   Operation 34 'call' 'call_ln79' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 35 [1/2] (0.00ns)   --->   "%call_ln80 = call void @dense.7, i32 %flat_to_dense_streams_7, i32 %dense_to_softmax_streams_7, i32 %dense_weights_0, i32 %dense_weights_1, i32 %dense_weights_2, i32 %dense_weights_3, i32 %dense_weights_4, i32 %dense_weights_5, i32 %dense_weights_6, i32 %dense_weights_7, i32 %dense_weights_8, i32 %dense_weights_9" [dense.cc:80]   --->   Operation 35 'call' 'call_ln80' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%ret_ln81 = ret" [dense.cc:81]   --->   Operation 36 'ret' 'ret_ln81' <Predicate = true> <Delay = 0.00>
 
 
@@ -416,7 +416,7 @@ Port [ dense_weights_9]:  wired=0; compound=1; hidden=1; nouse=1; global=1; stat
 
 <LifeTime>
 <method=bitvector/>
-specdataflowpipeline_ln11 (specdataflowpipeline) [ 000]
+specdataflowpipeline_ln73 (specdataflowpipeline) [ 000]
 specinterface_ln0         (specinterface       ) [ 000]
 specinterface_ln0         (specinterface       ) [ 000]
 specinterface_ln0         (specinterface       ) [ 000]
@@ -1405,7 +1405,7 @@ ret_ln81                  (ret                 ) [ 000]
 <pin id="195" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="dense.22"/></StgValue>
+<StgValue><ssdm name="dense.1"/></StgValue>
 </bind>
 </comp>
 
@@ -1414,7 +1414,7 @@ ret_ln81                  (ret                 ) [ 000]
 <pin id="197" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="dense.23"/></StgValue>
+<StgValue><ssdm name="dense.2"/></StgValue>
 </bind>
 </comp>
 
@@ -1423,7 +1423,7 @@ ret_ln81                  (ret                 ) [ 000]
 <pin id="199" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="dense.24"/></StgValue>
+<StgValue><ssdm name="dense.3"/></StgValue>
 </bind>
 </comp>
 
@@ -1432,7 +1432,7 @@ ret_ln81                  (ret                 ) [ 000]
 <pin id="201" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="dense.25"/></StgValue>
+<StgValue><ssdm name="dense.4"/></StgValue>
 </bind>
 </comp>
 
@@ -1441,7 +1441,7 @@ ret_ln81                  (ret                 ) [ 000]
 <pin id="203" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="dense.26"/></StgValue>
+<StgValue><ssdm name="dense.5"/></StgValue>
 </bind>
 </comp>
 
@@ -1450,7 +1450,7 @@ ret_ln81                  (ret                 ) [ 000]
 <pin id="205" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="dense.27"/></StgValue>
+<StgValue><ssdm name="dense.6"/></StgValue>
 </bind>
 </comp>
 
@@ -1459,7 +1459,7 @@ ret_ln81                  (ret                 ) [ 000]
 <pin id="207" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="dense.28"/></StgValue>
+<StgValue><ssdm name="dense.7"/></StgValue>
 </bind>
 </comp>
 
@@ -1495,7 +1495,7 @@ ret_ln81                  (ret                 ) [ 000]
 <pin id="215" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_0"/></StgValue>
+<StgValue><ssdm name="empty_6"/></StgValue>
 </bind>
 </comp>
 
@@ -1540,7 +1540,7 @@ ret_ln81                  (ret                 ) [ 000]
 </bind>
 </comp>
 
-<comp id="248" class="1004" name="grp_dense_22_fu_248">
+<comp id="248" class="1004" name="grp_dense_1_fu_248">
 <pin_list>
 <pin id="249" dir="0" index="0" bw="0" slack="0"/>
 <pin id="250" dir="0" index="1" bw="32" slack="0"/>
@@ -1563,7 +1563,7 @@ ret_ln81                  (ret                 ) [ 000]
 </bind>
 </comp>
 
-<comp id="276" class="1004" name="grp_dense_23_fu_276">
+<comp id="276" class="1004" name="grp_dense_2_fu_276">
 <pin_list>
 <pin id="277" dir="0" index="0" bw="0" slack="0"/>
 <pin id="278" dir="0" index="1" bw="32" slack="0"/>
@@ -1586,7 +1586,7 @@ ret_ln81                  (ret                 ) [ 000]
 </bind>
 </comp>
 
-<comp id="304" class="1004" name="grp_dense_24_fu_304">
+<comp id="304" class="1004" name="grp_dense_3_fu_304">
 <pin_list>
 <pin id="305" dir="0" index="0" bw="0" slack="0"/>
 <pin id="306" dir="0" index="1" bw="32" slack="0"/>
@@ -1609,7 +1609,7 @@ ret_ln81                  (ret                 ) [ 000]
 </bind>
 </comp>
 
-<comp id="332" class="1004" name="grp_dense_25_fu_332">
+<comp id="332" class="1004" name="grp_dense_4_fu_332">
 <pin_list>
 <pin id="333" dir="0" index="0" bw="0" slack="0"/>
 <pin id="334" dir="0" index="1" bw="32" slack="0"/>
@@ -1632,7 +1632,7 @@ ret_ln81                  (ret                 ) [ 000]
 </bind>
 </comp>
 
-<comp id="360" class="1004" name="grp_dense_26_fu_360">
+<comp id="360" class="1004" name="grp_dense_5_fu_360">
 <pin_list>
 <pin id="361" dir="0" index="0" bw="0" slack="0"/>
 <pin id="362" dir="0" index="1" bw="32" slack="0"/>
@@ -1655,7 +1655,7 @@ ret_ln81                  (ret                 ) [ 000]
 </bind>
 </comp>
 
-<comp id="388" class="1004" name="grp_dense_27_fu_388">
+<comp id="388" class="1004" name="grp_dense_6_fu_388">
 <pin_list>
 <pin id="389" dir="0" index="0" bw="0" slack="0"/>
 <pin id="390" dir="0" index="1" bw="32" slack="0"/>
@@ -1678,7 +1678,7 @@ ret_ln81                  (ret                 ) [ 000]
 </bind>
 </comp>
 
-<comp id="416" class="1004" name="grp_dense_28_fu_416">
+<comp id="416" class="1004" name="grp_dense_7_fu_416">
 <pin_list>
 <pin id="417" dir="0" index="0" bw="0" slack="0"/>
 <pin id="418" dir="0" index="1" bw="32" slack="0"/>
@@ -2106,20 +2106,20 @@ ret_ln81                  (ret                 ) [ 000]
 ============================================================
 
 * Functional unit list:
-|----------|---------------------|---------|---------|---------|---------|---------|---------|
-| Operation|   Functional Unit   |   BRAM  |   DSP   |  Delay  |    FF   |   LUT   |   URAM  |
-|----------|---------------------|---------|---------|---------|---------|---------|---------|
-|          |   grp_dense_fu_220  |    0    |    5    | 36.3505 |   2700  |   878   |    0    |
-|          | grp_dense_22_fu_248 |    0    |    5    | 36.3505 |   2700  |   894   |    0    |
-|          | grp_dense_23_fu_276 |    0    |    5    | 36.3505 |   2700  |   895   |    0    |
-|   call   | grp_dense_24_fu_304 |    0    |    5    | 36.3505 |   2700  |   895   |    0    |
-|          | grp_dense_25_fu_332 |    0    |    5    | 36.3505 |   2700  |   894   |    0    |
-|          | grp_dense_26_fu_360 |    0    |    5    | 36.3505 |   2700  |   896   |    0    |
-|          | grp_dense_27_fu_388 |    0    |    5    | 36.3505 |   2700  |   896   |    0    |
-|          | grp_dense_28_fu_416 |    0    |    5    | 36.3505 |   2700  |   896   |    0    |
-|----------|---------------------|---------|---------|---------|---------|---------|---------|
-|   Total  |                     |    0    |    40   | 290.804 |  21600  |   7144  |    0    |
-|----------|---------------------|---------|---------|---------|---------|---------|---------|
+|----------|--------------------|---------|---------|---------|---------|---------|---------|
+| Operation|   Functional Unit  |   BRAM  |   DSP   |  Delay  |    FF   |   LUT   |   URAM  |
+|----------|--------------------|---------|---------|---------|---------|---------|---------|
+|          |  grp_dense_fu_220  |    0    |    5    | 36.3505 |   2700  |   878   |    0    |
+|          | grp_dense_1_fu_248 |    0    |    5    | 36.3505 |   2700  |   894   |    0    |
+|          | grp_dense_2_fu_276 |    0    |    5    | 36.3505 |   2700  |   895   |    0    |
+|   call   | grp_dense_3_fu_304 |    0    |    5    | 36.3505 |   2700  |   895   |    0    |
+|          | grp_dense_4_fu_332 |    0    |    5    | 36.3505 |   2700  |   894   |    0    |
+|          | grp_dense_5_fu_360 |    0    |    5    | 36.3505 |   2700  |   896   |    0    |
+|          | grp_dense_6_fu_388 |    0    |    5    | 36.3505 |   2700  |   896   |    0    |
+|          | grp_dense_7_fu_416 |    0    |    5    | 36.3505 |   2700  |   896   |    0    |
+|----------|--------------------|---------|---------|---------|---------|---------|---------|
+|   Total  |                    |    0    |    40   | 290.804 |  21600  |   7144  |    0    |
+|----------|--------------------|---------|---------|---------|---------|---------|---------|
 
 Memories:
 N/A

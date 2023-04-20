@@ -1,11 +1,11 @@
 # 1 "cnn.cc"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
-# 375 "<built-in>" 3
+# 395 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "/home/ytq/source/vivado/Vitis_HLS/2022.2/common/technology/autopilot/etc/autopilot_ssdm_op.h" 1
-# 108 "/home/ytq/source/vivado/Vitis_HLS/2022.2/common/technology/autopilot/etc/autopilot_ssdm_op.h"
+# 1 "D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot\\etc/autopilot_ssdm_op.h" 1
+# 154 "D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot\\etc/autopilot_ssdm_op.h"
 extern "C" {
 
 
@@ -33,9 +33,7 @@ extern "C" {
     void _ssdm_op_WriteReq(...) __attribute__ ((nothrow)) __attribute__((overloadable));
     void _ssdm_op_Write(...) __attribute__ ((nothrow)) __attribute__((overloadable));
     unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_NbReadReq(...) __attribute__ ((nothrow)) __attribute__((overloadable));
-    unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_CanReadReq(...) __attribute__ ((nothrow)) __attribute__((overloadable));
     unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_NbWriteReq(...) __attribute__ ((nothrow)) __attribute__((overloadable));
-    unsigned int __attribute__ ((bitwidth(1))) _ssdm_op_CanWriteReq(...) __attribute__ ((nothrow)) __attribute__((overloadable));
 
 
 
@@ -96,6 +94,7 @@ extern "C" {
     void _ssdm_op_SpecFUCore(...) __attribute__ ((nothrow)) __attribute__((overloadable));
     void _ssdm_op_SpecIFCore(...) __attribute__ ((nothrow)) __attribute__((overloadable));
     void _ssdm_op_SpecIPCore(...) __attribute__ ((nothrow)) __attribute__((overloadable));
+    void _ssdm_op_SpecKeepValue(...) __attribute__ ((nothrow)) __attribute__((overloadable));
     void _ssdm_op_SpecMemCore(...) __attribute__ ((nothrow)) __attribute__((overloadable));
 
     void _ssdm_op_SpecExt(...) __attribute__ ((nothrow)) __attribute__((overloadable));
@@ -175,12 +174,12 @@ __attribute__((sdx_kernel("cnn", 0))) void cnn
 
 
 
-# 1 "/home/ytq/source/vivado/Vitis_HLS/2022.2/common/technology/autopilot/hls_stream.h" 1
-# 15 "/home/ytq/source/vivado/Vitis_HLS/2022.2/common/technology/autopilot/hls_stream.h"
-# 1 "/home/ytq/source/vivado/Vitis_HLS/2022.2/common/technology/autopilot/hls_stream_39.h" 1
-# 26 "/home/ytq/source/vivado/Vitis_HLS/2022.2/common/technology/autopilot/hls_stream_39.h"
+# 1 "D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot\\hls_stream.h" 1
+# 61 "D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot\\hls_stream.h"
+# 1 "D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h" 1
+# 72 "D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h"
 namespace hls {
-# 52 "/home/ytq/source/vivado/Vitis_HLS/2022.2/common/technology/autopilot/hls_stream_39.h"
+# 94 "D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h"
 template<typename __STREAM_T__, int DEPTH=0>
 class stream;
 
@@ -188,67 +187,66 @@ template<typename __STREAM_T__>
 class stream<__STREAM_T__, 0>
 {
   public:
-    using value_type = __STREAM_T__;
 
-    inline __attribute__((always_inline)) __attribute__((nodebug)) stream() {
+    inline __attribute__((always_inline)) stream() {
       __fpga_set_stream_depth(&this->V, 0);
     }
 
-    inline __attribute__((always_inline)) __attribute__((nodebug)) stream(const char* name) {
+    inline __attribute__((always_inline)) stream(const char* name) {
       (void)(name);
       __fpga_set_stream_depth(&this->V, 0);
     }
 
 
   private:
-    inline __attribute__((always_inline)) __attribute__((nodebug)) stream(const stream< __STREAM_T__ >& chn):V(chn.V) {
+    inline __attribute__((always_inline)) stream(const stream< __STREAM_T__ >& chn):V(chn.V) {
     }
 
-    inline __attribute__((always_inline)) __attribute__((nodebug)) stream& operator= (const stream< __STREAM_T__ >& chn) {
+    inline __attribute__((always_inline)) stream& operator= (const stream< __STREAM_T__ >& chn) {
         V = chn.V;
         return *this;
     }
 
   public:
 
-    inline __attribute__((always_inline)) __attribute__((nodebug)) void operator >> (__STREAM_T__& rdata) {
+    inline __attribute__((always_inline)) void operator >> (__STREAM_T__& rdata) {
         read(rdata);
     }
 
-    inline __attribute__((always_inline)) __attribute__((nodebug)) void operator << (const __STREAM_T__& wdata) {
+    inline __attribute__((always_inline)) void operator << (const __STREAM_T__& wdata) {
         write(wdata);
     }
 
 
   public:
 
-    inline __attribute__((always_inline)) __attribute__((nodebug)) bool empty() const {
+    inline __attribute__((always_inline)) bool empty() const {
         return !__fpga_fifo_not_empty(&V);
     }
 
-    inline __attribute__((always_inline)) __attribute__((nodebug)) bool full() const {
+    inline __attribute__((always_inline)) bool full() const {
         return !__fpga_fifo_not_full(&V);
     }
 
 
-    inline __attribute__((always_inline)) __attribute__((nodebug)) void read(__STREAM_T__& dout) {
+    inline __attribute__((always_inline)) void read(__STREAM_T__& dout) {
         __fpga_fifo_pop(&V, &dout);
     }
 
 
-    inline __attribute__((noinline)) __attribute__((nodebug)) bool read_dep(__STREAM_T__& dout, volatile bool flag) {
+    inline __attribute__((noinline)) bool read_dep(__STREAM_T__& dout, volatile bool flag) {
         __fpga_fifo_pop(&V, &dout);
         return flag;
     }
 
-    inline __attribute__((always_inline)) __attribute__((nodebug)) __STREAM_T__ read() {
+    inline __attribute__((always_inline)) __STREAM_T__ read() {
         __STREAM_T__ tmp;
         read(tmp);
         return tmp;
     }
 
 
-    inline __attribute__((always_inline)) __attribute__((nodebug)) bool read_nb(__STREAM_T__& dout) {
+    inline __attribute__((always_inline)) bool read_nb(__STREAM_T__& dout) {
         __STREAM_T__ tmp;
 
         if (__fpga_fifo_nb_pop(&V, &tmp)) {
@@ -260,29 +258,19 @@ class stream<__STREAM_T__, 0>
     }
 
 
-    inline __attribute__((always_inline)) __attribute__((nodebug)) void write(const __STREAM_T__& din) {
+    inline __attribute__((always_inline)) void write(const __STREAM_T__& din) {
         __fpga_fifo_push(&V, &din);
     }
 
 
-    inline __attribute__((noinline)) __attribute__((nodebug)) bool write_dep(const __STREAM_T__& din, volatile bool flag) {
+    inline __attribute__((noinline)) bool write_dep(const __STREAM_T__& din, volatile bool flag) {
         __fpga_fifo_push(&V, &din);
         return flag;
     }
 
 
-    inline __attribute__((always_inline)) __attribute__((nodebug)) bool write_nb(const __STREAM_T__& din) {
+    inline __attribute__((always_inline)) bool write_nb(const __STREAM_T__& din) {
         return __fpga_fifo_nb_push(&V, &din);
-    }
-
-
-    inline __attribute__((always_inline)) __attribute__((nodebug)) unsigned size() const {
-        return __fpga_fifo_size(&V);
-    }
-
-
-    inline __attribute__((always_inline)) __attribute__((nodebug)) unsigned capacity() const {
-        return __fpga_fifo_capacity(&V);
     }
 
 
@@ -295,17 +283,17 @@ class stream<__STREAM_T__, 0>
 template<typename __STREAM_T__, int DEPTH>
 class stream : public stream<__STREAM_T__, 0> {
   public:
-    inline __attribute__((always_inline)) __attribute__((nodebug)) stream() {
+    inline __attribute__((always_inline)) stream() {
       __fpga_set_stream_depth(&this->V, DEPTH);
     }
 
-    inline __attribute__((always_inline)) __attribute__((nodebug)) stream(const char* name) {
+    inline __attribute__((always_inline)) stream(const char* name) {
       (void)(name);
       __fpga_set_stream_depth(&this->V, DEPTH);
     }
 };
 }
-# 16 "/home/ytq/source/vivado/Vitis_HLS/2022.2/common/technology/autopilot/hls_stream.h" 2
+# 62 "D:/vivado/Vitis_HLS/2021.2/common/technology/autopilot\\hls_stream.h" 2
 # 6 "./utils.hh" 2
 
 void
@@ -409,41 +397,7 @@ dense_layer
 );
 # 7 "cnn.cc" 2
 
-# 1 "/usr/include/string.h" 1 3 4
-# 26 "/usr/include/string.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
-# 33 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 3 4
-# 1 "/usr/include/features.h" 1 3 4
-# 402 "/usr/include/features.h" 3 4
-# 1 "/usr/include/stdc-predef.h" 1 3 4
-# 403 "/usr/include/features.h" 2 3 4
-# 424 "/usr/include/features.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 1 3 4
-# 427 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
-# 428 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/long-double.h" 1 3 4
-# 429 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 2 3 4
-# 425 "/usr/include/features.h" 2 3 4
-# 448 "/usr/include/features.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 1 3 4
-# 10 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/gnu/stubs-64.h" 1 3 4
-# 11 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 2 3 4
-# 449 "/usr/include/features.h" 2 3 4
-# 34 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 2 3 4
-# 27 "/usr/include/string.h" 2 3 4
-
-extern "C" {
-
-
-
-
-
-# 1 "/home/ytq/source/vivado/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 1 3 4
-# 62 "/home/ytq/source/vivado/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 3 4
-typedef long unsigned int size_t;
-# 34 "/usr/include/string.h" 2 3 4
+# 1 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\string.h" 1 3
 
 
 
@@ -452,223 +406,47 @@ typedef long unsigned int size_t;
 
 
 
-extern void *memcpy (void *__restrict __dest, const void *__restrict __src,
-       size_t __n) throw () __attribute__ ((__nonnull__ (1, 2)));
-
-
-extern void *memmove (void *__dest, const void *__src, size_t __n)
-     throw () __attribute__ ((__nonnull__ (1, 2)));
-
-
-
-
-
-extern void *memccpy (void *__restrict __dest, const void *__restrict __src,
-        int __c, size_t __n)
-     throw () __attribute__ ((__nonnull__ (1, 2)));
-
-
-
-
-extern void *memset (void *__s, int __c, size_t __n) throw () __attribute__ ((__nonnull__ (1)));
-
-
-extern int memcmp (const void *__s1, const void *__s2, size_t __n)
-     throw () __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
-# 90 "/usr/include/string.h" 3 4
-extern void *memchr (const void *__s, int __c, size_t __n)
-      throw () __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
-# 103 "/usr/include/string.h" 3 4
-extern void *rawmemchr (const void *__s, int __c)
-     throw () __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
-# 114 "/usr/include/string.h" 3 4
-extern void *memrchr (const void *__s, int __c, size_t __n)
-      throw () __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
-
-
-
-
-
-extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
-     throw () __attribute__ ((__nonnull__ (1, 2)));
-
-extern char *strncpy (char *__restrict __dest,
-        const char *__restrict __src, size_t __n)
-     throw () __attribute__ ((__nonnull__ (1, 2)));
-
-
-extern char *strcat (char *__restrict __dest, const char *__restrict __src)
-     throw () __attribute__ ((__nonnull__ (1, 2)));
-
-extern char *strncat (char *__restrict __dest, const char *__restrict __src,
-        size_t __n) throw () __attribute__ ((__nonnull__ (1, 2)));
-
-
-extern int strcmp (const char *__s1, const char *__s2)
-     throw () __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
-
-extern int strncmp (const char *__s1, const char *__s2, size_t __n)
-     throw () __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
-
-
-extern int strcoll (const char *__s1, const char *__s2)
-     throw () __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
-
-extern size_t strxfrm (char *__restrict __dest,
-         const char *__restrict __src, size_t __n)
-     throw () __attribute__ ((__nonnull__ (2)));
-
-
-
-
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/locale_t.h" 1 3 4
-# 22 "/usr/include/x86_64-linux-gnu/bits/types/locale_t.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h" 1 3 4
-# 28 "/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h" 3 4
-struct __locale_struct
-{
-
-  struct __locale_data *__locales[13];
-
-
-  const unsigned short int *__ctype_b;
-  const int *__ctype_tolower;
-  const int *__ctype_toupper;
-
-
-  const char *__names[13];
+# 1 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\crtdefs.h" 1 3
+# 10 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\crtdefs.h" 3
+# 1 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw.h" 1 3
+# 12 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw.h" 3
+# 1 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include/_mingw_mac.h" 1 3
+# 13 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw.h" 2 3
+# 1 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include/_mingw_secapi.h" 1 3
+# 44 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include/_mingw_secapi.h" 3
+extern "C++" {
+template <bool __test, typename __dsttype>
+  struct __if_array;
+template <typename __dsttype>
+  struct __if_array <true, __dsttype> {
+    typedef __dsttype __type;
 };
+}
+# 14 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw.h" 2 3
+# 275 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw.h" 3
+# 1 "D:\\vivado\\Vitis_HLS\\2021.2\\win64\\tools\\clang-3.9-csynth\\lib\\clang\\7.0.0\\include\\vadefs.h" 1 3
+# 26 "D:\\vivado\\Vitis_HLS\\2021.2\\win64\\tools\\clang-3.9-csynth\\lib\\clang\\7.0.0\\include\\vadefs.h" 3
+# 1 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\vadefs.h" 1 3
 
-typedef struct __locale_struct *__locale_t;
-# 23 "/usr/include/x86_64-linux-gnu/bits/types/locale_t.h" 2 3 4
 
-typedef __locale_t locale_t;
-# 153 "/usr/include/string.h" 2 3 4
 
 
-extern int strcoll_l (const char *__s1, const char *__s2, locale_t __l)
-     throw () __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2, 3)));
 
 
-extern size_t strxfrm_l (char *__dest, const char *__src, size_t __n,
-    locale_t __l) throw () __attribute__ ((__nonnull__ (2, 4)));
 
 
+# 1 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw.h" 1 3
+# 565 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw.h" 3
+# 1 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include/sdks/_mingw_directx.h" 1 3
+# 566 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw.h" 2 3
+# 1 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include/sdks/_mingw_ddk.h" 1 3
+# 567 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw.h" 2 3
+# 10 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\vadefs.h" 2 3
 
 
 
-extern char *strdup (const char *__s)
-     throw () __attribute__ ((__malloc__)) __attribute__ ((__nonnull__ (1)));
 
-
-
-
-
-
-extern char *strndup (const char *__string, size_t __n)
-     throw () __attribute__ ((__malloc__)) __attribute__ ((__nonnull__ (1)));
-# 225 "/usr/include/string.h" 3 4
-extern char *strchr (const char *__s, int __c)
-     throw () __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
-# 252 "/usr/include/string.h" 3 4
-extern char *strrchr (const char *__s, int __c)
-     throw () __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
-# 265 "/usr/include/string.h" 3 4
-extern char *strchrnul (const char *__s, int __c)
-     throw () __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
-
-
-
-
-
-extern size_t strcspn (const char *__s, const char *__reject)
-     throw () __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
-
-
-extern size_t strspn (const char *__s, const char *__accept)
-     throw () __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
-# 302 "/usr/include/string.h" 3 4
-extern char *strpbrk (const char *__s, const char *__accept)
-     throw () __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
-# 329 "/usr/include/string.h" 3 4
-extern char *strstr (const char *__haystack, const char *__needle)
-     throw () __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
-
-
-
-
-extern char *strtok (char *__restrict __s, const char *__restrict __delim)
-     throw () __attribute__ ((__nonnull__ (2)));
-
-
-
-extern char *__strtok_r (char *__restrict __s,
-    const char *__restrict __delim,
-    char **__restrict __save_ptr)
-     throw () __attribute__ ((__nonnull__ (2, 3)));
-
-extern char *strtok_r (char *__restrict __s, const char *__restrict __delim,
-         char **__restrict __save_ptr)
-     throw () __attribute__ ((__nonnull__ (2, 3)));
-# 359 "/usr/include/string.h" 3 4
-extern char *strcasestr (const char *__haystack, const char *__needle)
-     throw () __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
-
-
-
-
-
-
-
-extern void *memmem (const void *__haystack, size_t __haystacklen,
-       const void *__needle, size_t __needlelen)
-     throw () __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 3)));
-
-
-
-extern void *__mempcpy (void *__restrict __dest,
-   const void *__restrict __src, size_t __n)
-     throw () __attribute__ ((__nonnull__ (1, 2)));
-extern void *mempcpy (void *__restrict __dest,
-        const void *__restrict __src, size_t __n)
-     throw () __attribute__ ((__nonnull__ (1, 2)));
-
-
-
-
-extern size_t strlen (const char *__s)
-     throw () __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
-
-
-
-
-extern size_t strnlen (const char *__string, size_t __maxlen)
-     throw () __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
-
-
-
-
-extern char *strerror (int __errnum) throw ();
-# 420 "/usr/include/string.h" 3 4
-extern char *strerror_r (int __errnum, char *__buf, size_t __buflen)
-     throw () __attribute__ ((__nonnull__ (2))) ;
-
-
-
-
-
-extern char *strerror_l (int __errnum, locale_t __l) throw ();
-
-
-
-
-# 1 "/usr/include/strings.h" 1 3 4
-# 23 "/usr/include/strings.h" 3 4
-# 1 "/home/ytq/source/vivado/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 1 3 4
-# 24 "/usr/include/strings.h" 2 3 4
-
-
-
+#pragma pack(push,_CRT_PACKING)
 
 
 
@@ -676,109 +454,354 @@ extern "C" {
 
 
 
-extern int bcmp (const void *__s1, const void *__s2, size_t __n)
-     throw () __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
 
 
-extern void bcopy (const void *__src, void *__dest, size_t __n)
-  throw () __attribute__ ((__nonnull__ (1, 2)));
-
-
-extern void bzero (void *__s, size_t __n) throw () __attribute__ ((__nonnull__ (1)));
-# 68 "/usr/include/strings.h" 3 4
-extern char *index (const char *__s, int __c)
-     throw () __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
-# 96 "/usr/include/strings.h" 3 4
-extern char *rindex (const char *__s, int __c)
-     throw () __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+  typedef __builtin_va_list __gnuc_va_list;
 
 
 
 
 
 
-extern int ffs (int __i) throw () __attribute__ ((__const__));
+  typedef __gnuc_va_list va_list;
+# 99 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\vadefs.h" 3
+}
 
 
 
-
-
-extern int ffsl (long int __l) throw () __attribute__ ((__const__));
-__extension__ extern int ffsll (long long int __ll)
-     throw () __attribute__ ((__const__));
-
-
-
-extern int strcasecmp (const char *__s1, const char *__s2)
-     throw () __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
-
-
-extern int strncasecmp (const char *__s1, const char *__s2, size_t __n)
-     throw () __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
-
-
-
-
-
-
-extern int strcasecmp_l (const char *__s1, const char *__s2, locale_t __loc)
-     throw () __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2, 3)));
-
-
-
-extern int strncasecmp_l (const char *__s1, const char *__s2,
-     size_t __n, locale_t __loc)
-     throw () __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2, 4)));
+#pragma pack(pop)
+# 27 "D:\\vivado\\Vitis_HLS\\2021.2\\win64\\tools\\clang-3.9-csynth\\lib\\clang\\7.0.0\\include\\vadefs.h" 2 3
+# 276 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw.h" 2 3
+# 534 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw.h" 3
+extern "C" {
+# 548 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw.h" 3
+const char *__mingw_get_crt_info (void);
 
 
 }
-# 432 "/usr/include/string.h" 2 3 4
-
-
-
-extern void explicit_bzero (void *__s, size_t __n) throw () __attribute__ ((__nonnull__ (1)));
-
-
-
-extern char *strsep (char **__restrict __stringp,
-       const char *__restrict __delim)
-     throw () __attribute__ ((__nonnull__ (1, 2)));
+# 11 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\crtdefs.h" 2 3
 
 
 
 
-extern char *strsignal (int __sig) throw ();
-
-
-extern char *__stpcpy (char *__restrict __dest, const char *__restrict __src)
-     throw () __attribute__ ((__nonnull__ (1, 2)));
-extern char *stpcpy (char *__restrict __dest, const char *__restrict __src)
-     throw () __attribute__ ((__nonnull__ (1, 2)));
-
-
-
-extern char *__stpncpy (char *__restrict __dest,
-   const char *__restrict __src, size_t __n)
-     throw () __attribute__ ((__nonnull__ (1, 2)));
-extern char *stpncpy (char *__restrict __dest,
-        const char *__restrict __src, size_t __n)
-     throw () __attribute__ ((__nonnull__ (1, 2)));
+#pragma pack(push,_CRT_PACKING)
+# 35 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\crtdefs.h" 3
+__extension__ typedef unsigned long size_t;
+# 45 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\crtdefs.h" 3
+__extension__ typedef long ssize_t;
 
 
 
 
-extern int strverscmp (const char *__s1, const char *__s2)
-     throw () __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
 
 
-extern char *strfry (char *__string) throw () __attribute__ ((__nonnull__ (1)));
+typedef size_t rsize_t;
+# 62 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\crtdefs.h" 3
+__extension__ typedef long intptr_t;
+# 75 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\crtdefs.h" 3
+__extension__ typedef unsigned long uintptr_t;
+# 88 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\crtdefs.h" 3
+__extension__ typedef long ptrdiff_t;
+# 106 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\crtdefs.h" 3
+typedef unsigned short wint_t;
+typedef unsigned short wctype_t;
 
 
-extern void *memfrob (void *__s, size_t __n) throw () __attribute__ ((__nonnull__ (1)));
-# 486 "/usr/include/string.h" 3 4
-extern char *basename (const char *__filename) throw () __attribute__ ((__nonnull__ (1)));
-# 498 "/usr/include/string.h" 3 4
+
+
+
+typedef int errno_t;
+
+
+
+
+typedef long __time32_t;
+
+
+
+
+__extension__ typedef long __time64_t;
+# 138 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\crtdefs.h" 3
+typedef __time64_t time_t;
+# 422 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\crtdefs.h" 3
+struct threadlocaleinfostruct;
+struct threadmbcinfostruct;
+typedef struct threadlocaleinfostruct *pthreadlocinfo;
+typedef struct threadmbcinfostruct *pthreadmbcinfo;
+struct __lc_time_data;
+
+typedef struct localeinfo_struct {
+  pthreadlocinfo locinfo;
+  pthreadmbcinfo mbcinfo;
+} _locale_tstruct,*_locale_t;
+
+
+
+typedef struct tagLC_ID {
+  unsigned short wLanguage;
+  unsigned short wCountry;
+  unsigned short wCodePage;
+} LC_ID,*LPLC_ID;
+
+
+
+
+typedef struct threadlocaleinfostruct {
+  int refcount;
+  unsigned int lc_codepage;
+  unsigned int lc_collate_cp;
+  unsigned long lc_handle[6];
+  LC_ID lc_id[6];
+  struct {
+    char *locale;
+    wchar_t *wlocale;
+    int *refcount;
+    int *wrefcount;
+  } lc_category[6];
+  int lc_clike;
+  int mb_cur_max;
+  int *lconv_intl_refcount;
+  int *lconv_num_refcount;
+  int *lconv_mon_refcount;
+  struct lconv *lconv;
+  int *ctype1_refcount;
+  unsigned short *ctype1;
+  const unsigned short *pctype;
+  const unsigned char *pclmap;
+  const unsigned char *pcumap;
+  struct __lc_time_data *lc_time_curr;
+} threadlocinfo;
+
+
+
+
+
+
+
+#pragma pack(pop)
+# 10 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\string.h" 2 3
+
+
+extern "C" {
+# 36 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\string.h" 3
+  __attribute__ ((__dllimport__)) void *__attribute__((__cdecl__)) _memccpy(void *_Dst,const void *_Src,int _Val,size_t _MaxCount);
+                void *__attribute__((__cdecl__)) memchr(const void *_Buf ,int _Val,size_t _MaxCount);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _memicmp(const void *_Buf1,const void *_Buf2,size_t _Size);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _memicmp_l(const void *_Buf1,const void *_Buf2,size_t _Size,_locale_t _Locale);
+  int __attribute__((__cdecl__)) memcmp(const void *_Buf1,const void *_Buf2,size_t _Size);
+  void * __attribute__((__cdecl__)) memcpy(void * __restrict__ _Dst,const void * __restrict__ _Src,size_t _Size) ;
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) memcpy_s (void *_dest,size_t _numberOfElements,const void *_src,size_t _count);
+  void * __attribute__((__cdecl__)) mempcpy (void *_Dst, const void *_Src, size_t _Size);
+  void * __attribute__((__cdecl__)) memset(void *_Dst,int _Val,size_t _Size);
+
+  void * __attribute__((__cdecl__)) memccpy(void *_Dst,const void *_Src,int _Val,size_t _Size) ;
+  int __attribute__((__cdecl__)) memicmp(const void *_Buf1,const void *_Buf2,size_t _Size) ;
+
+
+  char * __attribute__((__cdecl__)) _strset(char *_Str,int _Val) ;
+  char * __attribute__((__cdecl__)) _strset_l(char *_Str,int _Val,_locale_t _Locale) ;
+  char * __attribute__((__cdecl__)) strcpy(char * __restrict__ _Dest,const char * __restrict__ _Source);
+  char * __attribute__((__cdecl__)) strcat(char * __restrict__ _Dest,const char * __restrict__ _Source);
+  int __attribute__((__cdecl__)) strcmp(const char *_Str1,const char *_Str2);
+  size_t __attribute__((__cdecl__)) strlen(const char *_Str);
+  size_t __attribute__((__cdecl__)) strnlen(const char *_Str,size_t _MaxCount);
+  void *__attribute__((__cdecl__)) memmove(void *_Dst,const void *_Src,size_t _Size) ;
+  __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _strdup(const char *_Src);
+                char *__attribute__((__cdecl__)) strchr(const char *_Str,int _Val);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _stricmp(const char *_Str1,const char *_Str2);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _strcmpi(const char *_Str1,const char *_Str2);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _stricmp_l(const char *_Str1,const char *_Str2,_locale_t _Locale);
+  int __attribute__((__cdecl__)) strcoll(const char *_Str1,const char *_Str2);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _strcoll_l(const char *_Str1,const char *_Str2,_locale_t _Locale);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _stricoll(const char *_Str1,const char *_Str2);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _stricoll_l(const char *_Str1,const char *_Str2,_locale_t _Locale);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _strncoll (const char *_Str1,const char *_Str2,size_t _MaxCount);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _strncoll_l(const char *_Str1,const char *_Str2,size_t _MaxCount,_locale_t _Locale);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _strnicoll (const char *_Str1,const char *_Str2,size_t _MaxCount);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _strnicoll_l(const char *_Str1,const char *_Str2,size_t _MaxCount,_locale_t _Locale);
+  size_t __attribute__((__cdecl__)) strcspn(const char *_Str,const char *_Control);
+  __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _strerror(const char *_ErrMsg) ;
+  char *__attribute__((__cdecl__)) strerror(int) ;
+  __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _strlwr(char *_String) ;
+  char *strlwr_l(char *_String,_locale_t _Locale) ;
+  char *__attribute__((__cdecl__)) strncat(char * __restrict__ _Dest,const char * __restrict__ _Source,size_t _Count) ;
+  int __attribute__((__cdecl__)) strncmp(const char *_Str1,const char *_Str2,size_t _MaxCount);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _strnicmp(const char *_Str1,const char *_Str2,size_t _MaxCount);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _strnicmp_l(const char *_Str1,const char *_Str2,size_t _MaxCount,_locale_t _Locale);
+  char *strncpy(char * __restrict__ _Dest,const char * __restrict__ _Source,size_t _Count) ;
+  __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _strnset(char *_Str,int _Val,size_t _MaxCount) ;
+  __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _strnset_l(char *str,int c,size_t count,_locale_t _Locale) ;
+                char *__attribute__((__cdecl__)) strpbrk(const char *_Str,const char *_Control);
+                char *__attribute__((__cdecl__)) strrchr(const char *_Str,int _Ch);
+  __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _strrev(char *_Str);
+  size_t __attribute__((__cdecl__)) strspn(const char *_Str,const char *_Control);
+                char *__attribute__((__cdecl__)) strstr(const char *_Str,const char *_SubStr);
+  char *__attribute__((__cdecl__)) strtok(char * __restrict__ _Str,const char * __restrict__ _Delim) ;
+
+
+  char *strtok_r(char * __restrict__ _Str, const char * __restrict__ _Delim, char ** __restrict__ __last);
+
+  __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _strupr(char *_String) ;
+  __attribute__ ((__dllimport__)) char *_strupr_l(char *_String,_locale_t _Locale) ;
+  size_t __attribute__((__cdecl__)) strxfrm(char * __restrict__ _Dst,const char * __restrict__ _Src,size_t _MaxCount);
+  __attribute__ ((__dllimport__)) size_t __attribute__((__cdecl__)) _strxfrm_l(char * __restrict__ _Dst,const char * __restrict__ _Src,size_t _MaxCount,_locale_t _Locale);
+
+
+  char *__attribute__((__cdecl__)) strdup(const char *_Src) ;
+  int __attribute__((__cdecl__)) strcmpi(const char *_Str1,const char *_Str2) ;
+  int __attribute__((__cdecl__)) stricmp(const char *_Str1,const char *_Str2) ;
+  char *__attribute__((__cdecl__)) strlwr(char *_Str) ;
+  int __attribute__((__cdecl__)) strnicmp(const char *_Str1,const char *_Str,size_t _MaxCount) ;
+  int __attribute__((__cdecl__)) strncasecmp (const char *, const char *, size_t);
+  int __attribute__((__cdecl__)) strcasecmp (const char *, const char *);
+
+
+
+
+
+
+
+  char *__attribute__((__cdecl__)) strnset(char *_Str,int _Val,size_t _MaxCount) ;
+  char *__attribute__((__cdecl__)) strrev(char *_Str) ;
+  char *__attribute__((__cdecl__)) strset(char *_Str,int _Val) ;
+  char *__attribute__((__cdecl__)) strupr(char *_Str) ;
+
+
+
+
+
+  __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _wcsdup(const wchar_t *_Str);
+  wchar_t *__attribute__((__cdecl__)) wcscat(wchar_t * __restrict__ _Dest,const wchar_t * __restrict__ _Source) ;
+                wchar_t *__attribute__((__cdecl__)) wcschr(const wchar_t *_Str,wchar_t _Ch);
+  int __attribute__((__cdecl__)) wcscmp(const wchar_t *_Str1,const wchar_t *_Str2);
+  wchar_t *__attribute__((__cdecl__)) wcscpy(wchar_t * __restrict__ _Dest,const wchar_t * __restrict__ _Source) ;
+  size_t __attribute__((__cdecl__)) wcscspn(const wchar_t *_Str,const wchar_t *_Control);
+  size_t __attribute__((__cdecl__)) wcslen(const wchar_t *_Str);
+  size_t __attribute__((__cdecl__)) wcsnlen(const wchar_t *_Src,size_t _MaxCount);
+  wchar_t *wcsncat(wchar_t * __restrict__ _Dest,const wchar_t * __restrict__ _Source,size_t _Count) ;
+  int __attribute__((__cdecl__)) wcsncmp(const wchar_t *_Str1,const wchar_t *_Str2,size_t _MaxCount);
+  wchar_t *wcsncpy(wchar_t * __restrict__ _Dest,const wchar_t * __restrict__ _Source,size_t _Count) ;
+  wchar_t *__attribute__((__cdecl__)) _wcsncpy_l(wchar_t * __restrict__ _Dest,const wchar_t * __restrict__ _Source,size_t _Count,_locale_t _Locale) ;
+                wchar_t *__attribute__((__cdecl__)) wcspbrk(const wchar_t *_Str,const wchar_t *_Control);
+                wchar_t *__attribute__((__cdecl__)) wcsrchr(const wchar_t *_Str,wchar_t _Ch);
+  size_t __attribute__((__cdecl__)) wcsspn(const wchar_t *_Str,const wchar_t *_Control);
+                wchar_t *__attribute__((__cdecl__)) wcsstr(const wchar_t *_Str,const wchar_t *_SubStr);
+  wchar_t *__attribute__((__cdecl__)) wcstok(wchar_t * __restrict__ _Str,const wchar_t * __restrict__ _Delim) ;
+  __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _wcserror(int _ErrNum) ;
+  __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) __wcserror(const wchar_t *_Str) ;
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _wcsicmp(const wchar_t *_Str1,const wchar_t *_Str2);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _wcsicmp_l(const wchar_t *_Str1,const wchar_t *_Str2,_locale_t _Locale);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _wcsnicmp(const wchar_t *_Str1,const wchar_t *_Str2,size_t _MaxCount);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _wcsnicmp_l(const wchar_t *_Str1,const wchar_t *_Str2,size_t _MaxCount,_locale_t _Locale);
+  __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _wcsnset(wchar_t *_Str,wchar_t _Val,size_t _MaxCount) ;
+  __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _wcsrev(wchar_t *_Str);
+  __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _wcsset(wchar_t *_Str,wchar_t _Val) ;
+  __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _wcslwr(wchar_t *_String) ;
+  __attribute__ ((__dllimport__)) wchar_t *_wcslwr_l(wchar_t *_String,_locale_t _Locale) ;
+  __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _wcsupr(wchar_t *_String) ;
+  __attribute__ ((__dllimport__)) wchar_t *_wcsupr_l(wchar_t *_String,_locale_t _Locale) ;
+  size_t __attribute__((__cdecl__)) wcsxfrm(wchar_t * __restrict__ _Dst,const wchar_t * __restrict__ _Src,size_t _MaxCount);
+  __attribute__ ((__dllimport__)) size_t __attribute__((__cdecl__)) _wcsxfrm_l(wchar_t * __restrict__ _Dst,const wchar_t * __restrict__ _Src,size_t _MaxCount,_locale_t _Locale);
+  int __attribute__((__cdecl__)) wcscoll(const wchar_t *_Str1,const wchar_t *_Str2);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _wcscoll_l(const wchar_t *_Str1,const wchar_t *_Str2,_locale_t _Locale);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _wcsicoll(const wchar_t *_Str1,const wchar_t *_Str2);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _wcsicoll_l(const wchar_t *_Str1,const wchar_t *_Str2,_locale_t _Locale);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _wcsncoll(const wchar_t *_Str1,const wchar_t *_Str2,size_t _MaxCount);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _wcsncoll_l(const wchar_t *_Str1,const wchar_t *_Str2,size_t _MaxCount,_locale_t _Locale);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _wcsnicoll(const wchar_t *_Str1,const wchar_t *_Str2,size_t _MaxCount);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _wcsnicoll_l(const wchar_t *_Str1,const wchar_t *_Str2,size_t _MaxCount,_locale_t _Locale);
+
+
+  wchar_t *__attribute__((__cdecl__)) wcsdup(const wchar_t *_Str) ;
+
+  int __attribute__((__cdecl__)) wcsicmp(const wchar_t *_Str1,const wchar_t *_Str2) ;
+  int __attribute__((__cdecl__)) wcsnicmp(const wchar_t *_Str1,const wchar_t *_Str2,size_t _MaxCount) ;
+  wchar_t *__attribute__((__cdecl__)) wcsnset(wchar_t *_Str,wchar_t _Val,size_t _MaxCount) ;
+  wchar_t *__attribute__((__cdecl__)) wcsrev(wchar_t *_Str) ;
+  wchar_t *__attribute__((__cdecl__)) wcsset(wchar_t *_Str,wchar_t _Val) ;
+  wchar_t *__attribute__((__cdecl__)) wcslwr(wchar_t *_Str) ;
+  wchar_t *__attribute__((__cdecl__)) wcsupr(wchar_t *_Str) ;
+  int __attribute__((__cdecl__)) wcsicoll(const wchar_t *_Str1,const wchar_t *_Str2) ;
+
+
+
+
 }
+
+
+
+# 1 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\sec_api/string_s.h" 1 3
+
+
+
+
+
+
+
+
+# 1 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\string.h" 1 3
+# 10 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\sec_api/string_s.h" 2 3
+
+
+
+
+extern "C" {
+
+
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _strset_s(char *_Dst,size_t _DstSize,int _Value);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _strerror_s(char *_Buf,size_t _SizeInBytes,const char *_ErrMsg);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) strerror_s(char *_Buf,size_t _SizeInBytes,int _ErrNum);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _strlwr_s(char *_Str,size_t _Size);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _strlwr_s_l(char *_Str,size_t _Size,_locale_t _Locale);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _strnset_s(char *_Str,size_t _Size,int _Val,size_t _MaxCount);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _strupr_s(char *_Str,size_t _Size);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _strupr_s_l(char *_Str,size_t _Size,_locale_t _Locale);
+
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) strncat_s(char *_Dst,size_t _DstSizeInChars,const char *_Src,size_t _MaxCount);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _strncat_s_l(char *_Dst,size_t _DstSizeInChars,const char *_Src,size_t _MaxCount,_locale_t _Locale);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) strcpy_s(char *_Dst, rsize_t _SizeInBytes, const char *_Src);
+  extern "C++" { template <size_t __size> inline errno_t __attribute__((__cdecl__)) strcpy_s(char (&_Dest)[__size], const char * _Source) { return strcpy_s(_Dest,__size,_Source); } }
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) strncpy_s(char *_Dst,size_t _DstSizeInChars,const char *_Src,size_t _MaxCount);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _strncpy_s_l(char *_Dst,size_t _DstSizeInChars,const char *_Src,size_t _MaxCount,_locale_t _Locale);
+  __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) strtok_s(char *_Str,const char *_Delim,char **_Context);
+  __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _strtok_s_l(char *_Str,const char *_Delim,char **_Context,_locale_t _Locale);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) strcat_s(char *_Dst, rsize_t _SizeInBytes, const char * _Src);
+  extern "C++" { template <size_t __size> inline errno_t __attribute__((__cdecl__)) strcat_s(char (&_Dest)[__size], const char * _Source) { return strcat_s(_Dest,__size,_Source); } }
+
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) memmove_s(void *_dest,size_t _numberOfElements,const void *_src,size_t _count);
+
+
+  __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) wcstok_s(wchar_t *_Str,const wchar_t *_Delim,wchar_t **_Context);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _wcserror_s(wchar_t *_Buf,size_t _SizeInWords,int _ErrNum);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) __wcserror_s(wchar_t *_Buffer,size_t _SizeInWords,const wchar_t *_ErrMsg);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _wcsnset_s(wchar_t *_Dst,size_t _DstSizeInWords,wchar_t _Val,size_t _MaxCount);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _wcsset_s(wchar_t *_Str,size_t _SizeInWords,wchar_t _Val);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _wcslwr_s(wchar_t *_Str,size_t _SizeInWords);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _wcslwr_s_l(wchar_t *_Str,size_t _SizeInWords,_locale_t _Locale);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _wcsupr_s(wchar_t *_Str,size_t _Size);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _wcsupr_s_l(wchar_t *_Str,size_t _Size,_locale_t _Locale);
+
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) wcscpy_s(wchar_t *_Dst, rsize_t _SizeInWords, const wchar_t *_Src);
+  extern "C++" { template <size_t __size> inline errno_t __attribute__((__cdecl__)) wcscpy_s(wchar_t (&_Dest)[__size], const wchar_t * _Source) { return wcscpy_s(_Dest,__size,_Source); } }
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) wcscat_s(wchar_t * _Dst, rsize_t _SizeInWords, const wchar_t *_Src);
+  extern "C++" { template <size_t __size> inline errno_t __attribute__((__cdecl__)) wcscat_s(wchar_t (&_Dest)[__size], const wchar_t * _Source) { return wcscat_s(_Dest,__size,_Source); } }
+
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) wcsncat_s(wchar_t *_Dst,size_t _DstSizeInChars,const wchar_t *_Src,size_t _MaxCount);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _wcsncat_s_l(wchar_t *_Dst,size_t _DstSizeInChars,const wchar_t *_Src,size_t _MaxCount,_locale_t _Locale);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) wcsncpy_s(wchar_t *_Dst,size_t _DstSizeInChars,const wchar_t *_Src,size_t _MaxCount);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _wcsncpy_s_l(wchar_t *_Dst,size_t _DstSizeInChars,const wchar_t *_Src,size_t _MaxCount,_locale_t _Locale);
+  __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _wcstok_s_l(wchar_t *_Str,const wchar_t *_Delim,wchar_t **_Context,_locale_t _Locale);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _wcsset_s_l(wchar_t *_Str,size_t _SizeInChars,unsigned int _Val,_locale_t _Locale);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _wcsnset_s_l(wchar_t *_Str,size_t _SizeInChars,unsigned int _Val, size_t _Count,_locale_t _Locale);
+
+  inline __attribute__((__always_inline__)) size_t __attribute__((__cdecl__)) wcsnlen_s(const wchar_t * _src, size_t _count) {
+    return _src ? wcsnlen(_src, _count) : 0;
+  }
+
+
+
+}
+# 182 "D:/vivado/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\string.h" 2 3
 # 9 "cnn.cc" 2
 
 
@@ -815,7 +838,6 @@ dataflow_section
   float prediction [10]
 )
 {
-#line 7 "/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS/Project/solution1/directives.tcl"
 #pragma HLSDIRECTIVE DATAFLOW
 # 43 "cnn.cc"
 
@@ -862,12 +884,7 @@ __attribute__((sdx_kernel("cnn", 0))) void cnn
   float weight_buf[8][3][3],
   float biases_buf[8]
 )
-{
-#line 21 "/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS/Project/solution1/csynth.tcl"
-#pragma HLSDIRECTIVE TOP name=cnn
-# 103 "cnn.cc"
-
-#line 6 "/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS/Project/solution1/directives.tcl"
+{_ssdm_SpecArrayDimSize(img_in, 28);_ssdm_SpecArrayDimSize(prediction, 10);_ssdm_SpecArrayDimSize(weight_buf, 8);_ssdm_SpecArrayDimSize(biases_buf, 8);
 #pragma HLSDIRECTIVE TOP name=cnn
 # 103 "cnn.cc"
 

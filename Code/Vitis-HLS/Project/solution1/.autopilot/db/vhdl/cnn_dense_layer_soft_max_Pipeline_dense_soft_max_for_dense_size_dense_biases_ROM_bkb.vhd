@@ -1,7 +1,6 @@
 -- ==============================================================
--- Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
--- Version: 2022.2
--- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-- Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
+-- Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -- ==============================================================
 library ieee; 
 use ieee.std_logic_1164.all; 
@@ -14,33 +13,35 @@ entity cnn_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_dense_bia
              AddressRange    : integer := 10
     ); 
     port (
- 
-          address0        : in std_logic_vector(AddressWidth-1 downto 0); 
-          ce0             : in std_logic; 
-          q0              : out std_logic_vector(DataWidth-1 downto 0);
-
-          reset               : in std_logic;
-          clk                 : in std_logic
+          address0      : in std_logic_vector(AddressWidth-1 downto 0); 
+          ce0       : in std_logic; 
+          q0         : out std_logic_vector(DataWidth-1 downto 0);
+          reset     : in std_logic;
+          clk       : in std_logic
     ); 
 end entity; 
 
 
 architecture rtl of cnn_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_dense_biases_ROM_bkb is 
- 
+
 signal address0_tmp : std_logic_vector(AddressWidth-1 downto 0); 
-
 type mem_array is array (0 to AddressRange-1) of std_logic_vector (DataWidth-1 downto 0); 
-
-signal mem0 : mem_array := (
-    0 => "10111010100101000101101010100100", 1 => "00111110101010000010010100110110", 2 => "00111101110001001011101101100100", 3 => "10111101111100011111001011100101", 
-    4 => "00111100100110010011110101010100", 5 => "00111110001101100010100010000000", 6 => "10111100100010011011111100111011", 7 => "00111110100000011111001111111100", 
-    8 => "10111111000100000001011111000110", 9 => "10111110001101000010100001100000");
-
+signal mem : mem_array := (
+    0 => "10111010100101000101101010100100", 
+    1 => "00111110101010000010010100110110", 
+    2 => "00111101110001001011101101100100", 
+    3 => "10111101111100011111001011100101", 
+    4 => "00111100100110010011110101010100", 
+    5 => "00111110001101100010100010000000", 
+    6 => "10111100100010011011111100111011", 
+    7 => "00111110100000011111001111111100", 
+    8 => "10111111000100000001011111000110", 
+    9 => "10111110001101000010100001100000" );
 
 
 begin 
 
- 
+
 memory_access_guard_0: process (address0) 
 begin
       address0_tmp <= address0;
@@ -56,12 +57,10 @@ end process;
 p_rom_access: process (clk)  
 begin 
     if (clk'event and clk = '1') then
- 
-        if (ce0 = '1') then  
-            q0 <= mem0(CONV_INTEGER(address0_tmp)); 
+        if (ce0 = '1') then 
+            q0 <= mem(CONV_INTEGER(address0_tmp)); 
         end if;
-
-end if;
+    end if;
 end process;
 
 end rtl;

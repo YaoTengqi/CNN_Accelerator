@@ -74,9 +74,9 @@ newFuncRoot:2 %loop_index = alloca i32 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="6" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
+<Node id="6" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
 <![CDATA[
-newFuncRoot:3 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %weight_buf, void @empty_3, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0
+newFuncRoot:3 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %weight_buf, void @empty_11, i32 0, i32 0, void @empty_6, i32 4294967295, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -530,10 +530,10 @@ load-store-loop.split:19 %empty_164 = add i9 %tmp5_cast, i9 252
 
 <Node id="39" bw="7" op_0_bw="7" op_1_bw="9" op_2_bw="32" op_3_bw="32">
 <![CDATA[
-load-store-loop.split:20 %tmp_60 = partselect i7 @_ssdm_op_PartSelect.i7.i9.i32.i32, i9 %empty_164, i32 2, i32 8
+load-store-loop.split:20 %tmp_119 = partselect i7 @_ssdm_op_PartSelect.i7.i9.i32.i32, i9 %empty_164, i32 2, i32 8
 
 ]]></Node>
-<StgValue><ssdm name="tmp_60"/></StgValue>
+<StgValue><ssdm name="tmp_119"/></StgValue>
 </operation>
 
 <operation id="39" st_id="1" stage="1" lat="1">
@@ -596,7 +596,7 @@ load-store-loop.split:28 %store_ln0 = store i4 %idx_urem76, i4 %phi_urem74
 
 <Node id="40" bw="64" op_0_bw="7">
 <![CDATA[
-load-store-loop.split:21 %p_cast63 = zext i7 %tmp_60
+load-store-loop.split:21 %p_cast63 = zext i7 %tmp_119
 
 ]]></Node>
 <StgValue><ssdm name="p_cast63"/></StgValue>

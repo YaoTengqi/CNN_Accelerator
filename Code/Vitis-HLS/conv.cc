@@ -1,4 +1,5 @@
 #include "conv.hh"
+#include <cmath>
 
 
 float relu (float x)
@@ -8,6 +9,15 @@ float relu (float x)
   else
     return 0.0;
 }
+
+//int quantize_data(float value, float value_scale) {
+//    return static_cast<int>(round(value / value_scale * 10));  // 将浮点数乘以100，保留两位小数
+//}
+//
+//float dequantize(int quantized_value, float value_scale) {
+//    return static_cast<float>(quantized_value) * value_scale / 10;  // 将整数转换为浮点数，然后除以100，忽略末尾的0
+//}
+
 
 void
 convolution
@@ -19,6 +29,10 @@ convolution
   hls::stream<float> & conv_to_pool_stream
 )
 {
+  // 定义量化参数
+  float weight_scale = 0.5; // 权重量化比例因子
+  float activation_scale = 0.2; // 激活值量化比例因子
+
   float w_sum = 0.0; // Weighted sum.
 
   conv_for_rows:
@@ -40,12 +54,26 @@ convolution
             krn_for_cols:
             for(int kc = 0; kc < KRN_COLS; ++kc)
             {
+#pragma HLS PIPELINE
               float w     = weight_buf[kr][kc];
+              //量化weight
+//              printf("before_weight:%f\n",w);
+//              int quantized_weight = quantize_data(w, weight_scale);
+//              printf("quantized_weight:%d\n",quantized_weight);
+//              float weight = dequantize(quantized_weight, weight_scale);
+//              printf("quantized_weight:%f\n",weight);
               float pixel = pad_img[r+wr+kr][c+wc+kc];
-              w_sum +=  w * pixel;
+//              w_sum +=  weight * pixel;
+              	w_sum +=  w * pixel;
             }
           }
-
+          //量化bias
+//          printf("before_bias:%f\n",biases_buf);
+//          int quantized_biases = quantize_data(biases_buf, activation_scale);
+//          printf("quantized_biases:%d\n",quantized_biases);
+//          float biases = dequantize(quantized_biases, activation_scale);
+//          printf("quantized_bias:%d\n",biases);
+//          conv_to_pool_stream.write(relu(w_sum + biases));
           conv_to_pool_stream.write(relu(w_sum + biases_buf));
         }
     }

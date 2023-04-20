@@ -1,0 +1,148 @@
+
+
+================================================================
+== Vitis HLS Report for 'flattening_2'
+================================================================
+* Date:           Wed Apr 19 17:49:56 2023
+
+* Version:        2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)
+* Project:        Project
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: artix7
+* Target device:  xc7a200t-fbg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  5.125 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      198|      198|  1.980 us|  1.980 us|  198|  198|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                               |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |           Loop Name           |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- flat_for_rows_flat_for_cols  |      196|      196|         2|          1|          1|   196|       yes|
+        +-------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+--------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |   LUT  | URAM|
++-----------------+---------+-----+--------+--------+-----+
+|DSP              |        -|    -|       -|       -|    -|
+|Expression       |        -|    -|       0|      34|    -|
+|FIFO             |        -|    -|       -|       -|    -|
+|Instance         |        -|    -|       -|       -|    -|
+|Memory           |        -|    -|       -|       -|    -|
+|Multiplexer      |        -|    -|       -|      54|    -|
+|Register         |        -|    -|      43|       -|    -|
++-----------------+---------+-----+--------+--------+-----+
+|Total            |        0|    0|      43|      88|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Available        |      730|  740|  269200|  134600|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Utilization (%)  |        0|    0|      ~0|      ~0|    0|
++-----------------+---------+-----+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |add_ln11_fu_71_p2                 |         +|   0|  0|  15|           8|           1|
+    |ap_condition_94                   |       and|   0|  0|   2|           1|           1|
+    |icmp_ln11_fu_65_p2                |      icmp|   0|  0|  11|           8|           7|
+    |ap_block_pp0_stage0_01001         |        or|   0|  0|   2|           1|           1|
+    |ap_block_state1_pp0_stage0_iter0  |        or|   0|  0|   2|           1|           1|
+    |ap_enable_pp0                     |       xor|   0|  0|   2|           1|           2|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |Total                             |          |   0|  0|  34|          20|          13|
+    +----------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------------------------+----+-----------+-----+-----------+
+    |                 Name                 | LUT| Input Size| Bits| Total Bits|
+    +--------------------------------------+----+-----------+-----+-----------+
+    |ap_done_int                           |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1               |   9|          2|    1|          2|
+    |ap_sig_allocacmp_indvar_flatten_load  |   9|          2|    8|         16|
+    |flat_to_dense_streams_2_blk_n         |   9|          2|    1|          2|
+    |indvar_flatten_fu_40                  |   9|          2|    8|         16|
+    |pool_to_flat_streams_2_blk_n          |   9|          2|    1|          2|
+    +--------------------------------------+----+-----------+-----+-----------+
+    |Total                                 |  54|         12|   20|         40|
+    +--------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +------------------------------------+----+----+-----+-----------+
+    |                Name                | FF | LUT| Bits| Const Bits|
+    +------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                           |   1|   0|    1|          0|
+    |ap_done_reg                         |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1             |   1|   0|    1|          0|
+    |indvar_flatten_fu_40                |   8|   0|    8|          0|
+    |pool_to_flat_streams_2_read_reg_92  |  32|   0|   32|          0|
+    +------------------------------------+----+----+-----+-----------+
+    |Total                               |  43|   0|   43|          0|
+    +------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------------------+-----+-----+------------+-------------------------+--------------+
+|            RTL Ports           | Dir | Bits|  Protocol  |      Source Object      |    C Type    |
++--------------------------------+-----+-----+------------+-------------------------+--------------+
+|ap_clk                          |   in|    1|  ap_ctrl_hs|             flattening.2|  return value|
+|ap_rst                          |   in|    1|  ap_ctrl_hs|             flattening.2|  return value|
+|ap_start                        |   in|    1|  ap_ctrl_hs|             flattening.2|  return value|
+|ap_done                         |  out|    1|  ap_ctrl_hs|             flattening.2|  return value|
+|ap_continue                     |   in|    1|  ap_ctrl_hs|             flattening.2|  return value|
+|ap_idle                         |  out|    1|  ap_ctrl_hs|             flattening.2|  return value|
+|ap_ready                        |  out|    1|  ap_ctrl_hs|             flattening.2|  return value|
+|pool_to_flat_streams_2_dout     |   in|   32|     ap_fifo|   pool_to_flat_streams_2|       pointer|
+|pool_to_flat_streams_2_empty_n  |   in|    1|     ap_fifo|   pool_to_flat_streams_2|       pointer|
+|pool_to_flat_streams_2_read     |  out|    1|     ap_fifo|   pool_to_flat_streams_2|       pointer|
+|flat_to_dense_streams_2_din     |  out|   32|     ap_fifo|  flat_to_dense_streams_2|       pointer|
+|flat_to_dense_streams_2_full_n  |   in|    1|     ap_fifo|  flat_to_dense_streams_2|       pointer|
+|flat_to_dense_streams_2_write   |  out|    1|     ap_fifo|  flat_to_dense_streams_2|       pointer|
++--------------------------------+-----+-----+------------+-------------------------+--------------+
+

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1679885332200">
-  <ports id="1" name="pad_img" type="PortType" coreName="RAM_1WnR" coreId="544108288" bitwidth="32" iftype="IfTypeRegister" arraysize="900">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1681897786802">
+  <ports id="1" name="pad_img" type="PortType" coreName="RAM_1WnR" coreId="0" bitwidth="32" iftype="IfTypeRegister" arraysize="900">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="2" name="weight_buf" type="PortType" coreName="RAM" coreId="3077696656" bitwidth="32" iftype="IfTypeRegister" arraysize="9">
+  <ports id="2" name="weight_buf" type="PortType" coreName="RAM" coreId="4294967295" bitwidth="32" iftype="IfTypeRegister" arraysize="9">
     <dataOutputObjs>getelementptr</dataOutputObjs>
     <dataOutputObjs>getelementptr</dataOutputObjs>
     <dataOutputObjs>getelementptr</dataOutputObjs>
@@ -14,10 +14,10 @@
     <dataOutputObjs>getelementptr</dataOutputObjs>
     <dataOutputObjs>getelementptr</dataOutputObjs>
   </ports>
-  <ports id="3" name="biases_buf" type="PortType" coreId="3080131904" bitwidth="32">
+  <ports id="3" name="biases_buf" type="PortType" coreId="0" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="4" name="conv_to_pool_streams_6" type="PortType" coreId="3089142176" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
+  <ports id="4" name="conv_to_pool_streams_6" type="PortType" coreName="FIFO" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
     <dataInputObjs>call</dataInputObjs>
   </ports>
   <edges id="31" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.0"/>
@@ -51,10 +51,10 @@
   <edges id="90" source_obj="//@blocks.0/@node_objs.18" sink_obj="//@blocks.0/@node_objs.20"/>
   <edges id="91" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.20"/>
   <edges id="92" source_obj="//@blocks.0/@node_objs.20" sink_obj="//@ports.3"/>
-  <edges id="117" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.19"/>
-  <edges id="118" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.19" sink_obj="//@blocks.0/@node_objs.20"/>
+  <edges id="114" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.19"/>
+  <edges id="115" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.19" sink_obj="//@blocks.0/@node_objs.20"/>
   <blocks id="28" name="convolution.6" type="BlockType">
-    <node_objs xsi:type="cdfg:CdfgNode" id="5" name="biases_buf_read" coreId="3088317168" bitwidth="32" opcode="read" nodeLabel="4.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="5" name="biases_buf_read" coreId="778530409" bitwidth="32" opcode="read" nodeLabel="4.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
       <dataInputObjs>biases_buf</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
     </node_objs>
@@ -63,42 +63,42 @@
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="weight_buf_addr_9" coreId="3086157080" bitwidth="4" opcode="getelementptr" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="weight_buf_addr_9" coreId="0" bitwidth="4" opcode="getelementptr" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
       <dataInputObjs>weight_buf</dataInputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="weight_buf_addr_10" coreId="3087720688" bitwidth="4" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="weight_buf_addr_10" coreId="0" bitwidth="4" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
       <dataInputObjs>weight_buf</dataInputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="weight_buf_addr_11" coreId="3087710384" bitwidth="4" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="weight_buf_addr_11" coreId="0" bitwidth="4" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
       <dataInputObjs>weight_buf</dataInputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="weight_buf_addr_12" coreId="3089724880" bitwidth="4" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="weight_buf_addr_12" coreId="0" bitwidth="4" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
       <dataInputObjs>weight_buf</dataInputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="weight_buf_addr_13" coreId="3088317480" bitwidth="4" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="weight_buf_addr_13" coreId="0" bitwidth="4" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
       <dataInputObjs>weight_buf</dataInputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="weight_buf_addr_14" coreId="3089322960" bitwidth="4" opcode="getelementptr" nodeLabel="3.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="weight_buf_addr_14" coreId="895439701" bitwidth="4" opcode="getelementptr" nodeLabel="3.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
       <dataInputObjs>weight_buf</dataInputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="weight_buf_addr_15" coreId="3090509616" bitwidth="4" opcode="getelementptr" nodeLabel="4.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="weight_buf_addr_15" coreId="0" bitwidth="4" opcode="getelementptr" nodeLabel="4.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
       <dataInputObjs>weight_buf</dataInputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="weight_buf_addr_16" coreId="3087720688" bitwidth="4" opcode="getelementptr" nodeLabel="4.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="weight_buf_addr_16" coreId="0" bitwidth="4" opcode="getelementptr" nodeLabel="4.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
       <dataInputObjs>weight_buf</dataInputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
@@ -139,8 +139,8 @@
       <dataInputObjs>getelementptr</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="empty" coreId="3085067952" bitwidth="32" opcode="wait" nodeLabel="5.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1"/>
-    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="_ln0" rtlName="grp_convolution_6_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138" coreId="3085067952" opcode="call" nodeLabel="5.0" nodeLatency="1" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="empty" coreId="0" bitwidth="32" opcode="wait" nodeLabel="5.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="_ln0" rtlName="grp_convolution_6_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136" coreId="0" opcode="call" nodeLabel="5.0" nodeLatency="1" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
       <dataInputObjs>pad_img</dataInputObjs>
       <dataInputObjs>load</dataInputObjs>
       <dataInputObjs>load</dataInputObjs>
@@ -155,11 +155,11 @@
       <dataOutputObjs>conv_to_pool_streams_6</dataOutputObjs>
       <constName>convolution_6_Pipeline_conv_for_rows_win_for_rows_win_for_cols</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="_ln53" lineNumber="53" fileName="conv.cc" fileDirectory=".." coreId="3085067952" contextFuncName="convolution" opcode="ret" nodeLabel="6.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="conv.cc" linenumber="53" fileDirectory="/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS" functionName="convolution"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="_ln81" lineNumber="81" fileName="conv.cc" fileDirectory=".." coreId="0" contextFuncName="convolution" opcode="ret" nodeLabel="6.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="conv.cc" linenumber="81" fileDirectory="D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS" functionName="convolution"/>
     </node_objs>
     <fileValidLineNumbers fileName="conv.cc">
-      <validLinenumbers>53</validLinenumbers>
+      <validLinenumbers>81</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <ScheduleInfo time="0"/>
@@ -169,94 +169,94 @@
   <ScheduleInfo time="4"/>
   <ScheduleInfo time="5"/>
   <ScheduleInfo time="6"/>
-  <regnodes realName="weight_buf_addr_9_reg_158">
-    <nodeIds>7</nodeIds>
-  </regnodes>
-  <regnodes realName="weight_buf_load_9_reg_188">
-    <nodeIds>17</nodeIds>
-  </regnodes>
-  <regnodes realName="weight_buf_load_14_reg_238">
-    <nodeIds>22</nodeIds>
-  </regnodes>
-  <regnodes realName="weight_buf_addr_13_reg_183">
-    <nodeIds>11</nodeIds>
-  </regnodes>
-  <regnodes realName="weight_buf_load_15_reg_243">
-    <nodeIds>23</nodeIds>
-  </regnodes>
-  <regnodes realName="weight_buf_load_10_reg_193">
-    <nodeIds>18</nodeIds>
-  </regnodes>
-  <regnodes realName="weight_buf_addr_16_reg_228">
-    <nodeIds>14</nodeIds>
-  </regnodes>
-  <regnodes realName="weight_buf_addr_15_reg_223">
-    <nodeIds>13</nodeIds>
-  </regnodes>
-  <regnodes realName="weight_buf_load_16_reg_248">
-    <nodeIds>24</nodeIds>
-  </regnodes>
-  <regnodes realName="weight_buf_load_reg_173">
-    <nodeIds>16</nodeIds>
-  </regnodes>
-  <regnodes realName="weight_buf_addr_12_reg_178">
-    <nodeIds>10</nodeIds>
-  </regnodes>
-  <regnodes realName="weight_buf_addr_10_reg_163">
-    <nodeIds>8</nodeIds>
-  </regnodes>
-  <regnodes realName="weight_buf_addr_reg_198">
-    <nodeIds>6</nodeIds>
-  </regnodes>
-  <regnodes realName="weight_buf_load_11_reg_208">
-    <nodeIds>19</nodeIds>
-  </regnodes>
-  <regnodes realName="weight_buf_addr_11_reg_168">
-    <nodeIds>9</nodeIds>
-  </regnodes>
-  <regnodes realName="weight_buf_addr_14_reg_203">
-    <nodeIds>12</nodeIds>
-  </regnodes>
-  <regnodes realName="biases_buf_read_reg_218">
-    <nodeIds>5</nodeIds>
-  </regnodes>
-  <regnodes realName="weight_buf_load_12_reg_213">
-    <nodeIds>20</nodeIds>
-  </regnodes>
-  <regnodes realName="weight_buf_load_13_reg_233">
+  <regnodes realName="weight_buf_load_13_reg_231">
     <nodeIds>21</nodeIds>
   </regnodes>
-  <expressionNodes realName="weight_buf_addr_13_gep_fu_92">
+  <regnodes realName="weight_buf_load_9_reg_186">
+    <nodeIds>17</nodeIds>
+  </regnodes>
+  <regnodes realName="weight_buf_addr_13_reg_181">
     <nodeIds>11</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="weight_buf_addr_10_gep_fu_62">
-    <nodeIds>8</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="weight_buf_addr_9_gep_fu_48">
-    <nodeIds>7</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="weight_buf_addr_14_gep_fu_110">
-    <nodeIds>12</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="weight_buf_addr_15_gep_fu_120">
+  </regnodes>
+  <regnodes realName="weight_buf_addr_15_reg_221">
     <nodeIds>13</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="weight_buf_addr_gep_fu_102">
+  </regnodes>
+  <regnodes realName="weight_buf_load_10_reg_191">
+    <nodeIds>18</nodeIds>
+  </regnodes>
+  <regnodes realName="weight_buf_load_12_reg_211">
+    <nodeIds>20</nodeIds>
+  </regnodes>
+  <regnodes realName="weight_buf_load_14_reg_236">
+    <nodeIds>22</nodeIds>
+  </regnodes>
+  <regnodes realName="weight_buf_load_16_reg_246">
+    <nodeIds>24</nodeIds>
+  </regnodes>
+  <regnodes realName="weight_buf_load_reg_171">
+    <nodeIds>16</nodeIds>
+  </regnodes>
+  <regnodes realName="weight_buf_addr_16_reg_226">
+    <nodeIds>14</nodeIds>
+  </regnodes>
+  <regnodes realName="weight_buf_addr_9_reg_156">
+    <nodeIds>7</nodeIds>
+  </regnodes>
+  <regnodes realName="weight_buf_addr_10_reg_161">
+    <nodeIds>8</nodeIds>
+  </regnodes>
+  <regnodes realName="weight_buf_addr_reg_196">
     <nodeIds>6</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="weight_buf_addr_11_gep_fu_70">
+  </regnodes>
+  <regnodes realName="weight_buf_load_11_reg_206">
+    <nodeIds>19</nodeIds>
+  </regnodes>
+  <regnodes realName="weight_buf_addr_11_reg_166">
+    <nodeIds>9</nodeIds>
+  </regnodes>
+  <regnodes realName="biases_buf_read_reg_216">
+    <nodeIds>5</nodeIds>
+  </regnodes>
+  <regnodes realName="weight_buf_addr_12_reg_176">
+    <nodeIds>10</nodeIds>
+  </regnodes>
+  <regnodes realName="weight_buf_load_15_reg_241">
+    <nodeIds>23</nodeIds>
+  </regnodes>
+  <regnodes realName="weight_buf_addr_14_reg_201">
+    <nodeIds>12</nodeIds>
+  </regnodes>
+  <expressionNodes realName="weight_buf_addr_11_gep_fu_68">
     <nodeIds>9</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="weight_buf_addr_12_gep_fu_84">
-    <nodeIds>10</nodeIds>
+  <expressionNodes realName="weight_buf_addr_13_gep_fu_90">
+    <nodeIds>11</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="weight_buf_addr_16_gep_fu_128">
+  <expressionNodes realName="weight_buf_addr_10_gep_fu_60">
+    <nodeIds>8</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="weight_buf_addr_gep_fu_100">
+    <nodeIds>6</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="weight_buf_addr_9_gep_fu_46">
+    <nodeIds>7</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="weight_buf_addr_16_gep_fu_126">
     <nodeIds>14</nodeIds>
   </expressionNodes>
-  <moduleNodes realName="grp_convolution_6_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138">
+  <expressionNodes realName="weight_buf_addr_12_gep_fu_82">
+    <nodeIds>10</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="weight_buf_addr_14_gep_fu_108">
+    <nodeIds>12</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="weight_buf_addr_15_gep_fu_118">
+    <nodeIds>13</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_convolution_6_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136">
     <nodeIds>26</nodeIds>
   </moduleNodes>
-  <ioNodes realName="biases_buf_read_read_fu_42">
+  <ioNodes realName="biases_buf_read_read_fu_40">
     <nodeIds>5</nodeIds>
   </ioNodes>
   <memoryPorts dataString="weight_buf">

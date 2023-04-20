@@ -9,7 +9,6 @@ set isOneStateSeq 0
 set ProfileFlag 0
 set StallSigGenFlag 0
 set isEnableWaveformDebug 1
-set hasInterrupt 0
 set C_modelName {dense_layer_soft_max_Pipeline_dense_soft_max_for_digits}
 set C_modelType { void 0 }
 set C_modelArgList {

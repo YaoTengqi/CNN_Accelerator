@@ -3,9 +3,9 @@
 ================================================================
 == Vitis HLS Report for 'dense_layer_soft_max'
 ================================================================
-* Date:           Mon Mar 27 10:49:07 2023
+* Date:           Wed Apr 19 17:50:12 2023
 
-* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Version:        2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)
 * Project:        Project
 * Solution:       solution1 (Vivado IP Flow Target)
 * Product family: artix7
@@ -139,64 +139,48 @@
 == Interface
 ================================================================
 * Summary: 
-+-------------------------------------------+-----+-----+------------+----------------------------+--------------+
-|                 RTL Ports                 | Dir | Bits|  Protocol  |        Source Object       |    C Type    |
-+-------------------------------------------+-----+-----+------------+----------------------------+--------------+
-|ap_clk                                     |   in|    1|  ap_ctrl_hs|        dense_layer_soft_max|  return value|
-|ap_rst                                     |   in|    1|  ap_ctrl_hs|        dense_layer_soft_max|  return value|
-|ap_start                                   |   in|    1|  ap_ctrl_hs|        dense_layer_soft_max|  return value|
-|ap_done                                    |  out|    1|  ap_ctrl_hs|        dense_layer_soft_max|  return value|
-|ap_continue                                |   in|    1|  ap_ctrl_hs|        dense_layer_soft_max|  return value|
-|ap_idle                                    |  out|    1|  ap_ctrl_hs|        dense_layer_soft_max|  return value|
-|ap_ready                                   |  out|    1|  ap_ctrl_hs|        dense_layer_soft_max|  return value|
-|dense_to_softmax_streams_0_dout            |   in|   32|     ap_fifo|  dense_to_softmax_streams_0|       pointer|
-|dense_to_softmax_streams_0_num_data_valid  |   in|    5|     ap_fifo|  dense_to_softmax_streams_0|       pointer|
-|dense_to_softmax_streams_0_fifo_cap        |   in|    5|     ap_fifo|  dense_to_softmax_streams_0|       pointer|
-|dense_to_softmax_streams_0_empty_n         |   in|    1|     ap_fifo|  dense_to_softmax_streams_0|       pointer|
-|dense_to_softmax_streams_0_read            |  out|    1|     ap_fifo|  dense_to_softmax_streams_0|       pointer|
-|dense_to_softmax_streams_1_dout            |   in|   32|     ap_fifo|  dense_to_softmax_streams_1|       pointer|
-|dense_to_softmax_streams_1_num_data_valid  |   in|    5|     ap_fifo|  dense_to_softmax_streams_1|       pointer|
-|dense_to_softmax_streams_1_fifo_cap        |   in|    5|     ap_fifo|  dense_to_softmax_streams_1|       pointer|
-|dense_to_softmax_streams_1_empty_n         |   in|    1|     ap_fifo|  dense_to_softmax_streams_1|       pointer|
-|dense_to_softmax_streams_1_read            |  out|    1|     ap_fifo|  dense_to_softmax_streams_1|       pointer|
-|dense_to_softmax_streams_2_dout            |   in|   32|     ap_fifo|  dense_to_softmax_streams_2|       pointer|
-|dense_to_softmax_streams_2_num_data_valid  |   in|    5|     ap_fifo|  dense_to_softmax_streams_2|       pointer|
-|dense_to_softmax_streams_2_fifo_cap        |   in|    5|     ap_fifo|  dense_to_softmax_streams_2|       pointer|
-|dense_to_softmax_streams_2_empty_n         |   in|    1|     ap_fifo|  dense_to_softmax_streams_2|       pointer|
-|dense_to_softmax_streams_2_read            |  out|    1|     ap_fifo|  dense_to_softmax_streams_2|       pointer|
-|dense_to_softmax_streams_3_dout            |   in|   32|     ap_fifo|  dense_to_softmax_streams_3|       pointer|
-|dense_to_softmax_streams_3_num_data_valid  |   in|    5|     ap_fifo|  dense_to_softmax_streams_3|       pointer|
-|dense_to_softmax_streams_3_fifo_cap        |   in|    5|     ap_fifo|  dense_to_softmax_streams_3|       pointer|
-|dense_to_softmax_streams_3_empty_n         |   in|    1|     ap_fifo|  dense_to_softmax_streams_3|       pointer|
-|dense_to_softmax_streams_3_read            |  out|    1|     ap_fifo|  dense_to_softmax_streams_3|       pointer|
-|dense_to_softmax_streams_4_dout            |   in|   32|     ap_fifo|  dense_to_softmax_streams_4|       pointer|
-|dense_to_softmax_streams_4_num_data_valid  |   in|    5|     ap_fifo|  dense_to_softmax_streams_4|       pointer|
-|dense_to_softmax_streams_4_fifo_cap        |   in|    5|     ap_fifo|  dense_to_softmax_streams_4|       pointer|
-|dense_to_softmax_streams_4_empty_n         |   in|    1|     ap_fifo|  dense_to_softmax_streams_4|       pointer|
-|dense_to_softmax_streams_4_read            |  out|    1|     ap_fifo|  dense_to_softmax_streams_4|       pointer|
-|dense_to_softmax_streams_5_dout            |   in|   32|     ap_fifo|  dense_to_softmax_streams_5|       pointer|
-|dense_to_softmax_streams_5_num_data_valid  |   in|    5|     ap_fifo|  dense_to_softmax_streams_5|       pointer|
-|dense_to_softmax_streams_5_fifo_cap        |   in|    5|     ap_fifo|  dense_to_softmax_streams_5|       pointer|
-|dense_to_softmax_streams_5_empty_n         |   in|    1|     ap_fifo|  dense_to_softmax_streams_5|       pointer|
-|dense_to_softmax_streams_5_read            |  out|    1|     ap_fifo|  dense_to_softmax_streams_5|       pointer|
-|dense_to_softmax_streams_6_dout            |   in|   32|     ap_fifo|  dense_to_softmax_streams_6|       pointer|
-|dense_to_softmax_streams_6_num_data_valid  |   in|    5|     ap_fifo|  dense_to_softmax_streams_6|       pointer|
-|dense_to_softmax_streams_6_fifo_cap        |   in|    5|     ap_fifo|  dense_to_softmax_streams_6|       pointer|
-|dense_to_softmax_streams_6_empty_n         |   in|    1|     ap_fifo|  dense_to_softmax_streams_6|       pointer|
-|dense_to_softmax_streams_6_read            |  out|    1|     ap_fifo|  dense_to_softmax_streams_6|       pointer|
-|dense_to_softmax_streams_7_dout            |   in|   32|     ap_fifo|  dense_to_softmax_streams_7|       pointer|
-|dense_to_softmax_streams_7_num_data_valid  |   in|    5|     ap_fifo|  dense_to_softmax_streams_7|       pointer|
-|dense_to_softmax_streams_7_fifo_cap        |   in|    5|     ap_fifo|  dense_to_softmax_streams_7|       pointer|
-|dense_to_softmax_streams_7_empty_n         |   in|    1|     ap_fifo|  dense_to_softmax_streams_7|       pointer|
-|dense_to_softmax_streams_7_read            |  out|    1|     ap_fifo|  dense_to_softmax_streams_7|       pointer|
-|prediction_address0                        |  out|    4|   ap_memory|                  prediction|         array|
-|prediction_ce0                             |  out|    1|   ap_memory|                  prediction|         array|
-|prediction_we0                             |  out|    1|   ap_memory|                  prediction|         array|
-|prediction_d0                              |  out|   32|   ap_memory|                  prediction|         array|
-|prediction_address1                        |  out|    4|   ap_memory|                  prediction|         array|
-|prediction_ce1                             |  out|    1|   ap_memory|                  prediction|         array|
-|prediction_q1                              |   in|   32|   ap_memory|                  prediction|         array|
-+-------------------------------------------+-----+-----+------------+----------------------------+--------------+
++------------------------------------+-----+-----+------------+----------------------------+--------------+
+|              RTL Ports             | Dir | Bits|  Protocol  |        Source Object       |    C Type    |
++------------------------------------+-----+-----+------------+----------------------------+--------------+
+|ap_clk                              |   in|    1|  ap_ctrl_hs|        dense_layer_soft_max|  return value|
+|ap_rst                              |   in|    1|  ap_ctrl_hs|        dense_layer_soft_max|  return value|
+|ap_start                            |   in|    1|  ap_ctrl_hs|        dense_layer_soft_max|  return value|
+|ap_done                             |  out|    1|  ap_ctrl_hs|        dense_layer_soft_max|  return value|
+|ap_continue                         |   in|    1|  ap_ctrl_hs|        dense_layer_soft_max|  return value|
+|ap_idle                             |  out|    1|  ap_ctrl_hs|        dense_layer_soft_max|  return value|
+|ap_ready                            |  out|    1|  ap_ctrl_hs|        dense_layer_soft_max|  return value|
+|dense_to_softmax_streams_0_dout     |   in|   32|     ap_fifo|  dense_to_softmax_streams_0|       pointer|
+|dense_to_softmax_streams_0_empty_n  |   in|    1|     ap_fifo|  dense_to_softmax_streams_0|       pointer|
+|dense_to_softmax_streams_0_read     |  out|    1|     ap_fifo|  dense_to_softmax_streams_0|       pointer|
+|dense_to_softmax_streams_1_dout     |   in|   32|     ap_fifo|  dense_to_softmax_streams_1|       pointer|
+|dense_to_softmax_streams_1_empty_n  |   in|    1|     ap_fifo|  dense_to_softmax_streams_1|       pointer|
+|dense_to_softmax_streams_1_read     |  out|    1|     ap_fifo|  dense_to_softmax_streams_1|       pointer|
+|dense_to_softmax_streams_2_dout     |   in|   32|     ap_fifo|  dense_to_softmax_streams_2|       pointer|
+|dense_to_softmax_streams_2_empty_n  |   in|    1|     ap_fifo|  dense_to_softmax_streams_2|       pointer|
+|dense_to_softmax_streams_2_read     |  out|    1|     ap_fifo|  dense_to_softmax_streams_2|       pointer|
+|dense_to_softmax_streams_3_dout     |   in|   32|     ap_fifo|  dense_to_softmax_streams_3|       pointer|
+|dense_to_softmax_streams_3_empty_n  |   in|    1|     ap_fifo|  dense_to_softmax_streams_3|       pointer|
+|dense_to_softmax_streams_3_read     |  out|    1|     ap_fifo|  dense_to_softmax_streams_3|       pointer|
+|dense_to_softmax_streams_4_dout     |   in|   32|     ap_fifo|  dense_to_softmax_streams_4|       pointer|
+|dense_to_softmax_streams_4_empty_n  |   in|    1|     ap_fifo|  dense_to_softmax_streams_4|       pointer|
+|dense_to_softmax_streams_4_read     |  out|    1|     ap_fifo|  dense_to_softmax_streams_4|       pointer|
+|dense_to_softmax_streams_5_dout     |   in|   32|     ap_fifo|  dense_to_softmax_streams_5|       pointer|
+|dense_to_softmax_streams_5_empty_n  |   in|    1|     ap_fifo|  dense_to_softmax_streams_5|       pointer|
+|dense_to_softmax_streams_5_read     |  out|    1|     ap_fifo|  dense_to_softmax_streams_5|       pointer|
+|dense_to_softmax_streams_6_dout     |   in|   32|     ap_fifo|  dense_to_softmax_streams_6|       pointer|
+|dense_to_softmax_streams_6_empty_n  |   in|    1|     ap_fifo|  dense_to_softmax_streams_6|       pointer|
+|dense_to_softmax_streams_6_read     |  out|    1|     ap_fifo|  dense_to_softmax_streams_6|       pointer|
+|dense_to_softmax_streams_7_dout     |   in|   32|     ap_fifo|  dense_to_softmax_streams_7|       pointer|
+|dense_to_softmax_streams_7_empty_n  |   in|    1|     ap_fifo|  dense_to_softmax_streams_7|       pointer|
+|dense_to_softmax_streams_7_read     |  out|    1|     ap_fifo|  dense_to_softmax_streams_7|       pointer|
+|prediction_address0                 |  out|    4|   ap_memory|                  prediction|         array|
+|prediction_ce0                      |  out|    1|   ap_memory|                  prediction|         array|
+|prediction_we0                      |  out|    1|   ap_memory|                  prediction|         array|
+|prediction_d0                       |  out|   32|   ap_memory|                  prediction|         array|
+|prediction_address1                 |  out|    4|   ap_memory|                  prediction|         array|
+|prediction_ce1                      |  out|    1|   ap_memory|                  prediction|         array|
+|prediction_q1                       |   in|   32|   ap_memory|                  prediction|         array|
++------------------------------------+-----+-----+------------+----------------------------+--------------+
 
 ============================================================
 + Verbose Summary: Synthesis Manager
@@ -249,15 +233,15 @@ ST_3 : Operation 9 [1/1] (0.00ns)   --->   "%exp_sum_loc_load = load i32 %exp_su
 ST_3 : Operation 10 [2/2] (0.00ns)   --->   "%call_ln0 = call void @dense_layer_soft_max_Pipeline_dense_soft_max_for_digits, i32 %prediction, i32 %exp_sum_loc_load"   --->   Operation 10 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 4 <SV = 3> <Delay = 0.00>
-ST_4 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %dense_to_softmax_streams_7, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 11 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 12 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %dense_to_softmax_streams_6, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 12 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 13 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %dense_to_softmax_streams_5, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 13 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 14 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %dense_to_softmax_streams_4, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 14 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 15 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %dense_to_softmax_streams_3, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 15 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 16 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %dense_to_softmax_streams_2, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 16 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 17 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %dense_to_softmax_streams_1, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 17 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 18 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %dense_to_softmax_streams_0, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 18 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 19 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %prediction, void @empty_3, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 19 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %dense_to_softmax_streams_7, void @empty, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6"   --->   Operation 11 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 12 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %dense_to_softmax_streams_6, void @empty, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6"   --->   Operation 12 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 13 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %dense_to_softmax_streams_5, void @empty, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6"   --->   Operation 13 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 14 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %dense_to_softmax_streams_4, void @empty, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6"   --->   Operation 14 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 15 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %dense_to_softmax_streams_3, void @empty, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6"   --->   Operation 15 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 16 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %dense_to_softmax_streams_2, void @empty, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6"   --->   Operation 16 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 17 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %dense_to_softmax_streams_1, void @empty, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6"   --->   Operation 17 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 18 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %dense_to_softmax_streams_0, void @empty, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6"   --->   Operation 18 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 19 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %prediction, void @empty_11, i32 0, i32 0, void @empty_6, i32 4294967295, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6"   --->   Operation 19 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 20 [1/2] (0.00ns)   --->   "%call_ln0 = call void @dense_layer_soft_max_Pipeline_dense_soft_max_for_digits, i32 %prediction, i32 %exp_sum_loc_load"   --->   Operation 20 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 ST_4 : Operation 21 [1/1] (0.00ns)   --->   "%ret_ln35 = ret" [dense.cc:35]   --->   Operation 21 'ret' 'ret_ln35' <Predicate = true> <Delay = 0.00>
 
@@ -469,7 +453,7 @@ ret_ln35          (ret          ) [ 00000]
 <pin id="35" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_0"/></StgValue>
+<StgValue><ssdm name="empty_6"/></StgValue>
 </bind>
 </comp>
 
@@ -478,7 +462,7 @@ ret_ln35          (ret          ) [ 00000]
 <pin id="37" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name=""/></StgValue>
+<StgValue><ssdm name="empty_11"/></StgValue>
 </bind>
 </comp>
 
@@ -487,7 +471,7 @@ ret_ln35          (ret          ) [ 00000]
 <pin id="39" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_3"/></StgValue>
+<StgValue><ssdm name=""/></StgValue>
 </bind>
 </comp>
 

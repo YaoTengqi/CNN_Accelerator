@@ -9,7 +9,6 @@ set isOneStateSeq 0
 set ProfileFlag 0
 set StallSigGenFlag 0
 set isEnableWaveformDebug 1
-set hasInterrupt 0
 set C_modelName {convolutional_layer}
 set C_modelType { void 0 }
 set C_modelArgList {
@@ -1836,13 +1835,13 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "pad_img", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "grp_convolution_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138", "Port" : "pad_img", "Inst_start_state" : "6", "Inst_end_state" : "7"}]},
+					{"ID" : "2", "SubInstance" : "grp_convolution_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136", "Port" : "pad_img", "Inst_start_state" : "6", "Inst_end_state" : "7"}]},
 			{"Name" : "weight_buf", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "biases_buf", "Type" : "None", "Direction" : "I"},
 			{"Name" : "conv_to_pool_streams_0", "Type" : "Fifo", "Direction" : "O", "DependentProc" : ["0","0"], "DependentChan" : "0", "DependentChanDepth" : "784", "DependentChanType" : "0",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "grp_convolution_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138", "Port" : "conv_to_pool_streams_0", "Inst_start_state" : "6", "Inst_end_state" : "7"}]}]},
-	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.convolution_U0.grp_convolution_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138", "Parent" : "1", "Child" : ["3", "4", "5", "6", "7", "8"],
+					{"ID" : "2", "SubInstance" : "grp_convolution_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136", "Port" : "conv_to_pool_streams_0", "Inst_start_state" : "6", "Inst_end_state" : "7"}]}]},
+	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.convolution_U0.grp_convolution_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136", "Parent" : "1", "Child" : ["3", "4", "5", "6", "7", "8"],
 		"CDFG" : "convolution_Pipeline_conv_for_rows_win_for_rows_win_for_cols",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -1874,12 +1873,12 @@ set RtlHierarchyInfo {[
 		"Loop" : [
 			{"Name" : "conv_for_rows_win_for_rows_win_for_cols", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "5", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter16", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter16", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "3", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_U0.grp_convolution_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.fadd_32ns_32ns_32_7_full_dsp_1_U29", "Parent" : "2"},
-	{"ID" : "4", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_U0.grp_convolution_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.fadd_32ns_32ns_32_7_full_dsp_1_U30", "Parent" : "2"},
-	{"ID" : "5", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_U0.grp_convolution_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.fmul_32ns_32ns_32_4_max_dsp_1_U31", "Parent" : "2"},
-	{"ID" : "6", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_U0.grp_convolution_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.fmul_32ns_32ns_32_4_max_dsp_1_U32", "Parent" : "2"},
-	{"ID" : "7", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_U0.grp_convolution_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.fcmp_32ns_32ns_1_2_no_dsp_1_U33", "Parent" : "2"},
-	{"ID" : "8", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_U0.grp_convolution_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.flow_control_loop_pipe_sequential_init_U", "Parent" : "2"},
+	{"ID" : "3", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_U0.grp_convolution_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.fadd_32ns_32ns_32_7_full_dsp_1_U29", "Parent" : "2"},
+	{"ID" : "4", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_U0.grp_convolution_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.fadd_32ns_32ns_32_7_full_dsp_1_U30", "Parent" : "2"},
+	{"ID" : "5", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_U0.grp_convolution_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.fmul_32ns_32ns_32_4_max_dsp_1_U31", "Parent" : "2"},
+	{"ID" : "6", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_U0.grp_convolution_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.fmul_32ns_32ns_32_4_max_dsp_1_U32", "Parent" : "2"},
+	{"ID" : "7", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_U0.grp_convolution_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.fcmp_32ns_32ns_1_2_no_dsp_1_U33", "Parent" : "2"},
+	{"ID" : "8", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_U0.grp_convolution_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.flow_control_loop_pipe_sequential_init_U", "Parent" : "2"},
 	{"ID" : "9", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.convolution_1_U0", "Parent" : "0", "Child" : ["10"],
 		"CDFG" : "convolution_1",
 		"Protocol" : "ap_ctrl_hs",
@@ -1897,13 +1896,13 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "pad_img", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "10", "SubInstance" : "grp_convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138", "Port" : "pad_img", "Inst_start_state" : "6", "Inst_end_state" : "7"}]},
+					{"ID" : "10", "SubInstance" : "grp_convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136", "Port" : "pad_img", "Inst_start_state" : "6", "Inst_end_state" : "7"}]},
 			{"Name" : "weight_buf", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "biases_buf", "Type" : "None", "Direction" : "I"},
 			{"Name" : "conv_to_pool_streams_1", "Type" : "Fifo", "Direction" : "O", "DependentProc" : ["0","0"], "DependentChan" : "0", "DependentChanDepth" : "784", "DependentChanType" : "0",
 				"SubConnect" : [
-					{"ID" : "10", "SubInstance" : "grp_convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138", "Port" : "conv_to_pool_streams_1", "Inst_start_state" : "6", "Inst_end_state" : "7"}]}]},
-	{"ID" : "10", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.convolution_1_U0.grp_convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138", "Parent" : "9", "Child" : ["11", "12", "13", "14", "15", "16"],
+					{"ID" : "10", "SubInstance" : "grp_convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136", "Port" : "conv_to_pool_streams_1", "Inst_start_state" : "6", "Inst_end_state" : "7"}]}]},
+	{"ID" : "10", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.convolution_1_U0.grp_convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136", "Parent" : "9", "Child" : ["11", "12", "13", "14", "15", "16"],
 		"CDFG" : "convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -1935,12 +1934,12 @@ set RtlHierarchyInfo {[
 		"Loop" : [
 			{"Name" : "conv_for_rows_win_for_rows_win_for_cols", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "5", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter16", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter16", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "11", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_1_U0.grp_convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.fadd_32ns_32ns_32_7_full_dsp_1_U53", "Parent" : "10"},
-	{"ID" : "12", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_1_U0.grp_convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.fadd_32ns_32ns_32_7_full_dsp_1_U54", "Parent" : "10"},
-	{"ID" : "13", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_1_U0.grp_convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.fmul_32ns_32ns_32_4_max_dsp_1_U55", "Parent" : "10"},
-	{"ID" : "14", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_1_U0.grp_convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.fmul_32ns_32ns_32_4_max_dsp_1_U56", "Parent" : "10"},
-	{"ID" : "15", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_1_U0.grp_convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.fcmp_32ns_32ns_1_2_no_dsp_1_U57", "Parent" : "10"},
-	{"ID" : "16", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_1_U0.grp_convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.flow_control_loop_pipe_sequential_init_U", "Parent" : "10"},
+	{"ID" : "11", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_1_U0.grp_convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.fadd_32ns_32ns_32_7_full_dsp_1_U53", "Parent" : "10"},
+	{"ID" : "12", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_1_U0.grp_convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.fadd_32ns_32ns_32_7_full_dsp_1_U54", "Parent" : "10"},
+	{"ID" : "13", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_1_U0.grp_convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.fmul_32ns_32ns_32_4_max_dsp_1_U55", "Parent" : "10"},
+	{"ID" : "14", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_1_U0.grp_convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.fmul_32ns_32ns_32_4_max_dsp_1_U56", "Parent" : "10"},
+	{"ID" : "15", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_1_U0.grp_convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.fcmp_32ns_32ns_1_2_no_dsp_1_U57", "Parent" : "10"},
+	{"ID" : "16", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_1_U0.grp_convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.flow_control_loop_pipe_sequential_init_U", "Parent" : "10"},
 	{"ID" : "17", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.convolution_2_U0", "Parent" : "0", "Child" : ["18"],
 		"CDFG" : "convolution_2",
 		"Protocol" : "ap_ctrl_hs",
@@ -1958,13 +1957,13 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "pad_img", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "18", "SubInstance" : "grp_convolution_2_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138", "Port" : "pad_img", "Inst_start_state" : "6", "Inst_end_state" : "7"}]},
+					{"ID" : "18", "SubInstance" : "grp_convolution_2_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136", "Port" : "pad_img", "Inst_start_state" : "6", "Inst_end_state" : "7"}]},
 			{"Name" : "weight_buf", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "biases_buf", "Type" : "None", "Direction" : "I"},
 			{"Name" : "conv_to_pool_streams_2", "Type" : "Fifo", "Direction" : "O", "DependentProc" : ["0","0"], "DependentChan" : "0", "DependentChanDepth" : "784", "DependentChanType" : "0",
 				"SubConnect" : [
-					{"ID" : "18", "SubInstance" : "grp_convolution_2_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138", "Port" : "conv_to_pool_streams_2", "Inst_start_state" : "6", "Inst_end_state" : "7"}]}]},
-	{"ID" : "18", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.convolution_2_U0.grp_convolution_2_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138", "Parent" : "17", "Child" : ["19", "20", "21", "22", "23", "24"],
+					{"ID" : "18", "SubInstance" : "grp_convolution_2_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136", "Port" : "conv_to_pool_streams_2", "Inst_start_state" : "6", "Inst_end_state" : "7"}]}]},
+	{"ID" : "18", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.convolution_2_U0.grp_convolution_2_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136", "Parent" : "17", "Child" : ["19", "20", "21", "22", "23", "24"],
 		"CDFG" : "convolution_2_Pipeline_conv_for_rows_win_for_rows_win_for_cols",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -1996,12 +1995,12 @@ set RtlHierarchyInfo {[
 		"Loop" : [
 			{"Name" : "conv_for_rows_win_for_rows_win_for_cols", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "5", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter16", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter16", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "19", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_2_U0.grp_convolution_2_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.fadd_32ns_32ns_32_7_full_dsp_1_U74", "Parent" : "18"},
-	{"ID" : "20", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_2_U0.grp_convolution_2_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.fadd_32ns_32ns_32_7_full_dsp_1_U75", "Parent" : "18"},
-	{"ID" : "21", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_2_U0.grp_convolution_2_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.fmul_32ns_32ns_32_4_max_dsp_1_U76", "Parent" : "18"},
-	{"ID" : "22", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_2_U0.grp_convolution_2_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.fmul_32ns_32ns_32_4_max_dsp_1_U77", "Parent" : "18"},
-	{"ID" : "23", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_2_U0.grp_convolution_2_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.fcmp_32ns_32ns_1_2_no_dsp_1_U78", "Parent" : "18"},
-	{"ID" : "24", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_2_U0.grp_convolution_2_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.flow_control_loop_pipe_sequential_init_U", "Parent" : "18"},
+	{"ID" : "19", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_2_U0.grp_convolution_2_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.fadd_32ns_32ns_32_7_full_dsp_1_U74", "Parent" : "18"},
+	{"ID" : "20", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_2_U0.grp_convolution_2_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.fadd_32ns_32ns_32_7_full_dsp_1_U75", "Parent" : "18"},
+	{"ID" : "21", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_2_U0.grp_convolution_2_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.fmul_32ns_32ns_32_4_max_dsp_1_U76", "Parent" : "18"},
+	{"ID" : "22", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_2_U0.grp_convolution_2_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.fmul_32ns_32ns_32_4_max_dsp_1_U77", "Parent" : "18"},
+	{"ID" : "23", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_2_U0.grp_convolution_2_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.fcmp_32ns_32ns_1_2_no_dsp_1_U78", "Parent" : "18"},
+	{"ID" : "24", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_2_U0.grp_convolution_2_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.flow_control_loop_pipe_sequential_init_U", "Parent" : "18"},
 	{"ID" : "25", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.convolution_3_U0", "Parent" : "0", "Child" : ["26"],
 		"CDFG" : "convolution_3",
 		"Protocol" : "ap_ctrl_hs",
@@ -2019,13 +2018,13 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "pad_img", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "26", "SubInstance" : "grp_convolution_3_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138", "Port" : "pad_img", "Inst_start_state" : "6", "Inst_end_state" : "7"}]},
+					{"ID" : "26", "SubInstance" : "grp_convolution_3_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136", "Port" : "pad_img", "Inst_start_state" : "6", "Inst_end_state" : "7"}]},
 			{"Name" : "weight_buf", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "biases_buf", "Type" : "None", "Direction" : "I"},
 			{"Name" : "conv_to_pool_streams_3", "Type" : "Fifo", "Direction" : "O", "DependentProc" : ["0","0"], "DependentChan" : "0", "DependentChanDepth" : "784", "DependentChanType" : "0",
 				"SubConnect" : [
-					{"ID" : "26", "SubInstance" : "grp_convolution_3_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138", "Port" : "conv_to_pool_streams_3", "Inst_start_state" : "6", "Inst_end_state" : "7"}]}]},
-	{"ID" : "26", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.convolution_3_U0.grp_convolution_3_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138", "Parent" : "25", "Child" : ["27", "28", "29", "30", "31", "32"],
+					{"ID" : "26", "SubInstance" : "grp_convolution_3_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136", "Port" : "conv_to_pool_streams_3", "Inst_start_state" : "6", "Inst_end_state" : "7"}]}]},
+	{"ID" : "26", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.convolution_3_U0.grp_convolution_3_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136", "Parent" : "25", "Child" : ["27", "28", "29", "30", "31", "32"],
 		"CDFG" : "convolution_3_Pipeline_conv_for_rows_win_for_rows_win_for_cols",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -2057,12 +2056,12 @@ set RtlHierarchyInfo {[
 		"Loop" : [
 			{"Name" : "conv_for_rows_win_for_rows_win_for_cols", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "5", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter16", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter16", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "27", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_3_U0.grp_convolution_3_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.fadd_32ns_32ns_32_7_full_dsp_1_U95", "Parent" : "26"},
-	{"ID" : "28", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_3_U0.grp_convolution_3_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.fadd_32ns_32ns_32_7_full_dsp_1_U96", "Parent" : "26"},
-	{"ID" : "29", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_3_U0.grp_convolution_3_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.fmul_32ns_32ns_32_4_max_dsp_1_U97", "Parent" : "26"},
-	{"ID" : "30", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_3_U0.grp_convolution_3_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.fmul_32ns_32ns_32_4_max_dsp_1_U98", "Parent" : "26"},
-	{"ID" : "31", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_3_U0.grp_convolution_3_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.fcmp_32ns_32ns_1_2_no_dsp_1_U99", "Parent" : "26"},
-	{"ID" : "32", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_3_U0.grp_convolution_3_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.flow_control_loop_pipe_sequential_init_U", "Parent" : "26"},
+	{"ID" : "27", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_3_U0.grp_convolution_3_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.fadd_32ns_32ns_32_7_full_dsp_1_U95", "Parent" : "26"},
+	{"ID" : "28", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_3_U0.grp_convolution_3_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.fadd_32ns_32ns_32_7_full_dsp_1_U96", "Parent" : "26"},
+	{"ID" : "29", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_3_U0.grp_convolution_3_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.fmul_32ns_32ns_32_4_max_dsp_1_U97", "Parent" : "26"},
+	{"ID" : "30", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_3_U0.grp_convolution_3_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.fmul_32ns_32ns_32_4_max_dsp_1_U98", "Parent" : "26"},
+	{"ID" : "31", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_3_U0.grp_convolution_3_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.fcmp_32ns_32ns_1_2_no_dsp_1_U99", "Parent" : "26"},
+	{"ID" : "32", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_3_U0.grp_convolution_3_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.flow_control_loop_pipe_sequential_init_U", "Parent" : "26"},
 	{"ID" : "33", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.convolution_4_U0", "Parent" : "0", "Child" : ["34"],
 		"CDFG" : "convolution_4",
 		"Protocol" : "ap_ctrl_hs",
@@ -2080,13 +2079,13 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "pad_img", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "34", "SubInstance" : "grp_convolution_4_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138", "Port" : "pad_img", "Inst_start_state" : "6", "Inst_end_state" : "7"}]},
+					{"ID" : "34", "SubInstance" : "grp_convolution_4_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136", "Port" : "pad_img", "Inst_start_state" : "6", "Inst_end_state" : "7"}]},
 			{"Name" : "weight_buf", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "biases_buf", "Type" : "None", "Direction" : "I"},
 			{"Name" : "conv_to_pool_streams_4", "Type" : "Fifo", "Direction" : "O", "DependentProc" : ["0","0"], "DependentChan" : "0", "DependentChanDepth" : "784", "DependentChanType" : "0",
 				"SubConnect" : [
-					{"ID" : "34", "SubInstance" : "grp_convolution_4_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138", "Port" : "conv_to_pool_streams_4", "Inst_start_state" : "6", "Inst_end_state" : "7"}]}]},
-	{"ID" : "34", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.convolution_4_U0.grp_convolution_4_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138", "Parent" : "33", "Child" : ["35", "36", "37", "38", "39", "40"],
+					{"ID" : "34", "SubInstance" : "grp_convolution_4_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136", "Port" : "conv_to_pool_streams_4", "Inst_start_state" : "6", "Inst_end_state" : "7"}]}]},
+	{"ID" : "34", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.convolution_4_U0.grp_convolution_4_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136", "Parent" : "33", "Child" : ["35", "36", "37", "38", "39", "40"],
 		"CDFG" : "convolution_4_Pipeline_conv_for_rows_win_for_rows_win_for_cols",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -2118,12 +2117,12 @@ set RtlHierarchyInfo {[
 		"Loop" : [
 			{"Name" : "conv_for_rows_win_for_rows_win_for_cols", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "5", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter16", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter16", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "35", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_4_U0.grp_convolution_4_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.fadd_32ns_32ns_32_7_full_dsp_1_U116", "Parent" : "34"},
-	{"ID" : "36", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_4_U0.grp_convolution_4_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.fadd_32ns_32ns_32_7_full_dsp_1_U117", "Parent" : "34"},
-	{"ID" : "37", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_4_U0.grp_convolution_4_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.fmul_32ns_32ns_32_4_max_dsp_1_U118", "Parent" : "34"},
-	{"ID" : "38", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_4_U0.grp_convolution_4_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.fmul_32ns_32ns_32_4_max_dsp_1_U119", "Parent" : "34"},
-	{"ID" : "39", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_4_U0.grp_convolution_4_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.fcmp_32ns_32ns_1_2_no_dsp_1_U120", "Parent" : "34"},
-	{"ID" : "40", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_4_U0.grp_convolution_4_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.flow_control_loop_pipe_sequential_init_U", "Parent" : "34"},
+	{"ID" : "35", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_4_U0.grp_convolution_4_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.fadd_32ns_32ns_32_7_full_dsp_1_U116", "Parent" : "34"},
+	{"ID" : "36", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_4_U0.grp_convolution_4_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.fadd_32ns_32ns_32_7_full_dsp_1_U117", "Parent" : "34"},
+	{"ID" : "37", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_4_U0.grp_convolution_4_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.fmul_32ns_32ns_32_4_max_dsp_1_U118", "Parent" : "34"},
+	{"ID" : "38", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_4_U0.grp_convolution_4_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.fmul_32ns_32ns_32_4_max_dsp_1_U119", "Parent" : "34"},
+	{"ID" : "39", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_4_U0.grp_convolution_4_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.fcmp_32ns_32ns_1_2_no_dsp_1_U120", "Parent" : "34"},
+	{"ID" : "40", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_4_U0.grp_convolution_4_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.flow_control_loop_pipe_sequential_init_U", "Parent" : "34"},
 	{"ID" : "41", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.convolution_5_U0", "Parent" : "0", "Child" : ["42"],
 		"CDFG" : "convolution_5",
 		"Protocol" : "ap_ctrl_hs",
@@ -2141,13 +2140,13 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "pad_img", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "42", "SubInstance" : "grp_convolution_5_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138", "Port" : "pad_img", "Inst_start_state" : "6", "Inst_end_state" : "7"}]},
+					{"ID" : "42", "SubInstance" : "grp_convolution_5_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136", "Port" : "pad_img", "Inst_start_state" : "6", "Inst_end_state" : "7"}]},
 			{"Name" : "weight_buf", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "biases_buf", "Type" : "None", "Direction" : "I"},
 			{"Name" : "conv_to_pool_streams_5", "Type" : "Fifo", "Direction" : "O", "DependentProc" : ["0","0"], "DependentChan" : "0", "DependentChanDepth" : "784", "DependentChanType" : "0",
 				"SubConnect" : [
-					{"ID" : "42", "SubInstance" : "grp_convolution_5_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138", "Port" : "conv_to_pool_streams_5", "Inst_start_state" : "6", "Inst_end_state" : "7"}]}]},
-	{"ID" : "42", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.convolution_5_U0.grp_convolution_5_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138", "Parent" : "41", "Child" : ["43", "44", "45", "46", "47", "48"],
+					{"ID" : "42", "SubInstance" : "grp_convolution_5_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136", "Port" : "conv_to_pool_streams_5", "Inst_start_state" : "6", "Inst_end_state" : "7"}]}]},
+	{"ID" : "42", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.convolution_5_U0.grp_convolution_5_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136", "Parent" : "41", "Child" : ["43", "44", "45", "46", "47", "48"],
 		"CDFG" : "convolution_5_Pipeline_conv_for_rows_win_for_rows_win_for_cols",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -2179,12 +2178,12 @@ set RtlHierarchyInfo {[
 		"Loop" : [
 			{"Name" : "conv_for_rows_win_for_rows_win_for_cols", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "5", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter16", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter16", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "43", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_5_U0.grp_convolution_5_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.fadd_32ns_32ns_32_7_full_dsp_1_U137", "Parent" : "42"},
-	{"ID" : "44", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_5_U0.grp_convolution_5_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.fadd_32ns_32ns_32_7_full_dsp_1_U138", "Parent" : "42"},
-	{"ID" : "45", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_5_U0.grp_convolution_5_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.fmul_32ns_32ns_32_4_max_dsp_1_U139", "Parent" : "42"},
-	{"ID" : "46", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_5_U0.grp_convolution_5_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.fmul_32ns_32ns_32_4_max_dsp_1_U140", "Parent" : "42"},
-	{"ID" : "47", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_5_U0.grp_convolution_5_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.fcmp_32ns_32ns_1_2_no_dsp_1_U141", "Parent" : "42"},
-	{"ID" : "48", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_5_U0.grp_convolution_5_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.flow_control_loop_pipe_sequential_init_U", "Parent" : "42"},
+	{"ID" : "43", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_5_U0.grp_convolution_5_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.fadd_32ns_32ns_32_7_full_dsp_1_U137", "Parent" : "42"},
+	{"ID" : "44", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_5_U0.grp_convolution_5_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.fadd_32ns_32ns_32_7_full_dsp_1_U138", "Parent" : "42"},
+	{"ID" : "45", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_5_U0.grp_convolution_5_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.fmul_32ns_32ns_32_4_max_dsp_1_U139", "Parent" : "42"},
+	{"ID" : "46", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_5_U0.grp_convolution_5_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.fmul_32ns_32ns_32_4_max_dsp_1_U140", "Parent" : "42"},
+	{"ID" : "47", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_5_U0.grp_convolution_5_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.fcmp_32ns_32ns_1_2_no_dsp_1_U141", "Parent" : "42"},
+	{"ID" : "48", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_5_U0.grp_convolution_5_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.flow_control_loop_pipe_sequential_init_U", "Parent" : "42"},
 	{"ID" : "49", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.convolution_6_U0", "Parent" : "0", "Child" : ["50"],
 		"CDFG" : "convolution_6",
 		"Protocol" : "ap_ctrl_hs",
@@ -2202,13 +2201,13 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "pad_img", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "50", "SubInstance" : "grp_convolution_6_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138", "Port" : "pad_img", "Inst_start_state" : "6", "Inst_end_state" : "7"}]},
+					{"ID" : "50", "SubInstance" : "grp_convolution_6_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136", "Port" : "pad_img", "Inst_start_state" : "6", "Inst_end_state" : "7"}]},
 			{"Name" : "weight_buf", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "biases_buf", "Type" : "None", "Direction" : "I"},
 			{"Name" : "conv_to_pool_streams_6", "Type" : "Fifo", "Direction" : "O", "DependentProc" : ["0","0"], "DependentChan" : "0", "DependentChanDepth" : "784", "DependentChanType" : "0",
 				"SubConnect" : [
-					{"ID" : "50", "SubInstance" : "grp_convolution_6_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138", "Port" : "conv_to_pool_streams_6", "Inst_start_state" : "6", "Inst_end_state" : "7"}]}]},
-	{"ID" : "50", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.convolution_6_U0.grp_convolution_6_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138", "Parent" : "49", "Child" : ["51", "52", "53", "54", "55", "56"],
+					{"ID" : "50", "SubInstance" : "grp_convolution_6_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136", "Port" : "conv_to_pool_streams_6", "Inst_start_state" : "6", "Inst_end_state" : "7"}]}]},
+	{"ID" : "50", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.convolution_6_U0.grp_convolution_6_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136", "Parent" : "49", "Child" : ["51", "52", "53", "54", "55", "56"],
 		"CDFG" : "convolution_6_Pipeline_conv_for_rows_win_for_rows_win_for_cols",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -2240,12 +2239,12 @@ set RtlHierarchyInfo {[
 		"Loop" : [
 			{"Name" : "conv_for_rows_win_for_rows_win_for_cols", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "5", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter16", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter16", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "51", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_6_U0.grp_convolution_6_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.fadd_32ns_32ns_32_7_full_dsp_1_U158", "Parent" : "50"},
-	{"ID" : "52", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_6_U0.grp_convolution_6_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.fadd_32ns_32ns_32_7_full_dsp_1_U159", "Parent" : "50"},
-	{"ID" : "53", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_6_U0.grp_convolution_6_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.fmul_32ns_32ns_32_4_max_dsp_1_U160", "Parent" : "50"},
-	{"ID" : "54", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_6_U0.grp_convolution_6_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.fmul_32ns_32ns_32_4_max_dsp_1_U161", "Parent" : "50"},
-	{"ID" : "55", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_6_U0.grp_convolution_6_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.fcmp_32ns_32ns_1_2_no_dsp_1_U162", "Parent" : "50"},
-	{"ID" : "56", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_6_U0.grp_convolution_6_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.flow_control_loop_pipe_sequential_init_U", "Parent" : "50"},
+	{"ID" : "51", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_6_U0.grp_convolution_6_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.fadd_32ns_32ns_32_7_full_dsp_1_U158", "Parent" : "50"},
+	{"ID" : "52", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_6_U0.grp_convolution_6_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.fadd_32ns_32ns_32_7_full_dsp_1_U159", "Parent" : "50"},
+	{"ID" : "53", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_6_U0.grp_convolution_6_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.fmul_32ns_32ns_32_4_max_dsp_1_U160", "Parent" : "50"},
+	{"ID" : "54", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_6_U0.grp_convolution_6_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.fmul_32ns_32ns_32_4_max_dsp_1_U161", "Parent" : "50"},
+	{"ID" : "55", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_6_U0.grp_convolution_6_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.fcmp_32ns_32ns_1_2_no_dsp_1_U162", "Parent" : "50"},
+	{"ID" : "56", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_6_U0.grp_convolution_6_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.flow_control_loop_pipe_sequential_init_U", "Parent" : "50"},
 	{"ID" : "57", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.convolution_7_U0", "Parent" : "0", "Child" : ["58"],
 		"CDFG" : "convolution_7",
 		"Protocol" : "ap_ctrl_hs",
@@ -2263,13 +2262,13 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "pad_img", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "58", "SubInstance" : "grp_convolution_7_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138", "Port" : "pad_img", "Inst_start_state" : "6", "Inst_end_state" : "7"}]},
+					{"ID" : "58", "SubInstance" : "grp_convolution_7_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136", "Port" : "pad_img", "Inst_start_state" : "6", "Inst_end_state" : "7"}]},
 			{"Name" : "weight_buf", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "biases_buf", "Type" : "None", "Direction" : "I"},
 			{"Name" : "conv_to_pool_streams_7", "Type" : "Fifo", "Direction" : "O", "DependentProc" : ["0","0"], "DependentChan" : "0", "DependentChanDepth" : "784", "DependentChanType" : "0",
 				"SubConnect" : [
-					{"ID" : "58", "SubInstance" : "grp_convolution_7_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138", "Port" : "conv_to_pool_streams_7", "Inst_start_state" : "6", "Inst_end_state" : "7"}]}]},
-	{"ID" : "58", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.convolution_7_U0.grp_convolution_7_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138", "Parent" : "57", "Child" : ["59", "60", "61", "62", "63", "64"],
+					{"ID" : "58", "SubInstance" : "grp_convolution_7_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136", "Port" : "conv_to_pool_streams_7", "Inst_start_state" : "6", "Inst_end_state" : "7"}]}]},
+	{"ID" : "58", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.convolution_7_U0.grp_convolution_7_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136", "Parent" : "57", "Child" : ["59", "60", "61", "62", "63", "64"],
 		"CDFG" : "convolution_7_Pipeline_conv_for_rows_win_for_rows_win_for_cols",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -2301,12 +2300,12 @@ set RtlHierarchyInfo {[
 		"Loop" : [
 			{"Name" : "conv_for_rows_win_for_rows_win_for_cols", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "5", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter16", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter16", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "59", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_7_U0.grp_convolution_7_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.fadd_32ns_32ns_32_7_full_dsp_1_U179", "Parent" : "58"},
-	{"ID" : "60", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_7_U0.grp_convolution_7_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.fadd_32ns_32ns_32_7_full_dsp_1_U180", "Parent" : "58"},
-	{"ID" : "61", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_7_U0.grp_convolution_7_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.fmul_32ns_32ns_32_4_max_dsp_1_U181", "Parent" : "58"},
-	{"ID" : "62", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_7_U0.grp_convolution_7_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.fmul_32ns_32ns_32_4_max_dsp_1_U182", "Parent" : "58"},
-	{"ID" : "63", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_7_U0.grp_convolution_7_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.fcmp_32ns_32ns_1_2_no_dsp_1_U183", "Parent" : "58"},
-	{"ID" : "64", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_7_U0.grp_convolution_7_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.flow_control_loop_pipe_sequential_init_U", "Parent" : "58"}]}
+	{"ID" : "59", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_7_U0.grp_convolution_7_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.fadd_32ns_32ns_32_7_full_dsp_1_U179", "Parent" : "58"},
+	{"ID" : "60", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_7_U0.grp_convolution_7_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.fadd_32ns_32ns_32_7_full_dsp_1_U180", "Parent" : "58"},
+	{"ID" : "61", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_7_U0.grp_convolution_7_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.fmul_32ns_32ns_32_4_max_dsp_1_U181", "Parent" : "58"},
+	{"ID" : "62", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_7_U0.grp_convolution_7_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.fmul_32ns_32ns_32_4_max_dsp_1_U182", "Parent" : "58"},
+	{"ID" : "63", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_7_U0.grp_convolution_7_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.fcmp_32ns_32ns_1_2_no_dsp_1_U183", "Parent" : "58"},
+	{"ID" : "64", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.convolution_7_U0.grp_convolution_7_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.flow_control_loop_pipe_sequential_init_U", "Parent" : "58"}]}
 
 
 set ArgLastReadFirstWriteLatency {
@@ -2523,12 +2522,12 @@ set Spec2ImplPortList {
 	biases_buf_5 { ap_none {  { biases_buf_5 in_data 0 32 }  { biases_buf_5_ap_vld in_vld 0 1 } } }
 	biases_buf_6 { ap_none {  { biases_buf_6 in_data 0 32 }  { biases_buf_6_ap_vld in_vld 0 1 } } }
 	biases_buf_7 { ap_none {  { biases_buf_7 in_data 0 32 }  { biases_buf_7_ap_vld in_vld 0 1 } } }
-	conv_to_pool_streams_0 { ap_fifo {  { conv_to_pool_streams_0_din fifo_port_we 1 32 }  { conv_to_pool_streams_0_full_n fifo_status 0 1 }  { conv_to_pool_streams_0_write fifo_data 1 1 } } }
-	conv_to_pool_streams_1 { ap_fifo {  { conv_to_pool_streams_1_din fifo_port_we 1 32 }  { conv_to_pool_streams_1_full_n fifo_status 0 1 }  { conv_to_pool_streams_1_write fifo_data 1 1 } } }
-	conv_to_pool_streams_2 { ap_fifo {  { conv_to_pool_streams_2_din fifo_port_we 1 32 }  { conv_to_pool_streams_2_full_n fifo_status 0 1 }  { conv_to_pool_streams_2_write fifo_data 1 1 } } }
-	conv_to_pool_streams_3 { ap_fifo {  { conv_to_pool_streams_3_din fifo_port_we 1 32 }  { conv_to_pool_streams_3_full_n fifo_status 0 1 }  { conv_to_pool_streams_3_write fifo_data 1 1 } } }
-	conv_to_pool_streams_4 { ap_fifo {  { conv_to_pool_streams_4_din fifo_port_we 1 32 }  { conv_to_pool_streams_4_full_n fifo_status 0 1 }  { conv_to_pool_streams_4_write fifo_data 1 1 } } }
-	conv_to_pool_streams_5 { ap_fifo {  { conv_to_pool_streams_5_din fifo_port_we 1 32 }  { conv_to_pool_streams_5_full_n fifo_status 0 1 }  { conv_to_pool_streams_5_write fifo_data 1 1 } } }
-	conv_to_pool_streams_6 { ap_fifo {  { conv_to_pool_streams_6_din fifo_port_we 1 32 }  { conv_to_pool_streams_6_full_n fifo_status 0 1 }  { conv_to_pool_streams_6_write fifo_data 1 1 } } }
-	conv_to_pool_streams_7 { ap_fifo {  { conv_to_pool_streams_7_din fifo_port_we 1 32 }  { conv_to_pool_streams_7_full_n fifo_status 0 1 }  { conv_to_pool_streams_7_write fifo_data 1 1 } } }
+	conv_to_pool_streams_0 { ap_fifo {  { conv_to_pool_streams_0_din fifo_data 1 32 }  { conv_to_pool_streams_0_full_n fifo_status 0 1 }  { conv_to_pool_streams_0_write fifo_update 1 1 } } }
+	conv_to_pool_streams_1 { ap_fifo {  { conv_to_pool_streams_1_din fifo_data 1 32 }  { conv_to_pool_streams_1_full_n fifo_status 0 1 }  { conv_to_pool_streams_1_write fifo_update 1 1 } } }
+	conv_to_pool_streams_2 { ap_fifo {  { conv_to_pool_streams_2_din fifo_data 1 32 }  { conv_to_pool_streams_2_full_n fifo_status 0 1 }  { conv_to_pool_streams_2_write fifo_update 1 1 } } }
+	conv_to_pool_streams_3 { ap_fifo {  { conv_to_pool_streams_3_din fifo_data 1 32 }  { conv_to_pool_streams_3_full_n fifo_status 0 1 }  { conv_to_pool_streams_3_write fifo_update 1 1 } } }
+	conv_to_pool_streams_4 { ap_fifo {  { conv_to_pool_streams_4_din fifo_data 1 32 }  { conv_to_pool_streams_4_full_n fifo_status 0 1 }  { conv_to_pool_streams_4_write fifo_update 1 1 } } }
+	conv_to_pool_streams_5 { ap_fifo {  { conv_to_pool_streams_5_din fifo_data 1 32 }  { conv_to_pool_streams_5_full_n fifo_status 0 1 }  { conv_to_pool_streams_5_write fifo_update 1 1 } } }
+	conv_to_pool_streams_6 { ap_fifo {  { conv_to_pool_streams_6_din fifo_data 1 32 }  { conv_to_pool_streams_6_full_n fifo_status 0 1 }  { conv_to_pool_streams_6_write fifo_update 1 1 } } }
+	conv_to_pool_streams_7 { ap_fifo {  { conv_to_pool_streams_7_din fifo_data 1 32 }  { conv_to_pool_streams_7_full_n fifo_status 0 1 }  { conv_to_pool_streams_7_write fifo_update 1 1 } } }
 }

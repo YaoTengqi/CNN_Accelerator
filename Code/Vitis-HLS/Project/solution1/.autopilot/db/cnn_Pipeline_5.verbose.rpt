@@ -3,9 +3,9 @@
 ================================================================
 == Vitis HLS Report for 'cnn_Pipeline_5'
 ================================================================
-* Date:           Mon Mar 27 10:48:44 2023
+* Date:           Wed Apr 19 17:49:33 2023
 
-* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Version:        2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)
 * Project:        Project
 * Solution:       solution1 (Vivado IP Flow Target)
 * Product family: artix7
@@ -92,7 +92,7 @@
     |tmp1_fu_208_p2         |         +|   0|  0|   7|           7|           7|
     |empty_144_fu_192_p2    |         -|   0|  0|  14|           7|           7|
     |empty_143_fu_138_p2    |      icmp|   0|  0|   9|           4|           2|
-    |exitcond486_fu_114_p2  |      icmp|   0|  0|   9|           4|           4|
+    |exitcond476_fu_114_p2  |      icmp|   0|  0|   9|           4|           4|
     |idx_urem51_fu_144_p3   |    select|   0|  0|   4|           1|           4|
     |ap_enable_pp0          |       xor|   0|  0|   2|           1|           2|
     +-----------------------+----------+----+---+----+------------+------------+
@@ -105,10 +105,10 @@
     +------------------------------------+----+-----------+-----+-----------+
     |ap_done_int                         |   9|          2|    1|          2|
     |ap_enable_reg_pp0_iter1             |   9|          2|    1|          2|
-    |ap_sig_allocacmp_loop_index32_load  |   9|          2|    4|          8|
+    |ap_sig_allocacmp_loop_index31_load  |   9|          2|    4|          8|
     |ap_sig_allocacmp_phi_mul47_load     |   9|          2|    8|         16|
     |ap_sig_allocacmp_phi_urem49_load    |   9|          2|    4|          8|
-    |loop_index32_fu_66                  |   9|          2|    4|          8|
+    |loop_index31_fu_66                  |   9|          2|    4|          8|
     |phi_mul47_fu_62                     |   9|          2|    8|         16|
     |phi_urem49_fu_58                    |   9|          2|    4|          8|
     +------------------------------------+----+-----------+-----+-----------+
@@ -124,12 +124,12 @@
     |ap_enable_reg_pp0_iter1                  |  1|   0|    1|          0|
     |ap_enable_reg_pp0_iter2                  |  1|   0|    1|          0|
     |ap_loop_exit_ready_pp0_iter1_reg         |  1|   0|    1|          0|
-    |loop_index32_fu_66                       |  4|   0|    4|          0|
-    |loop_index32_load_reg_279                |  4|   0|    4|          0|
-    |loop_index32_load_reg_279_pp0_iter1_reg  |  4|   0|    4|          0|
+    |loop_index31_fu_66                       |  4|   0|    4|          0|
+    |loop_index31_load_reg_279                |  4|   0|    4|          0|
+    |loop_index31_load_reg_279_pp0_iter1_reg  |  4|   0|    4|          0|
     |phi_mul47_fu_62                          |  8|   0|    8|          0|
     |phi_urem49_fu_58                         |  4|   0|    4|          0|
-    |tmp_59_reg_288                           |  5|   0|    5|          0|
+    |tmp_117_reg_288                          |  5|   0|    5|          0|
     +-----------------------------------------+---+----+-----+-----------+
     |Total                                    | 34|   0|   34|          0|
     +-----------------------------------------+---+----+-----+-----------+
@@ -202,52 +202,52 @@ IsGatedGlobalClock: 0
 State 1 <SV = 0> <Delay = 5.81>
 ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%phi_urem49 = alloca i32 1"   --->   Operation 6 'alloca' 'phi_urem49' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%phi_mul47 = alloca i32 1"   --->   Operation 7 'alloca' 'phi_mul47' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%loop_index32 = alloca i32 1"   --->   Operation 8 'alloca' 'loop_index32' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %weight_buf, void @empty_3, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 9 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 10 [1/1] (1.61ns)   --->   "%store_ln0 = store i4 0, i4 %loop_index32"   --->   Operation 10 'store' 'store_ln0' <Predicate = true> <Delay = 1.61>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%loop_index31 = alloca i32 1"   --->   Operation 8 'alloca' 'loop_index31' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %weight_buf, void @empty_11, i32 0, i32 0, void @empty_6, i32 4294967295, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6"   --->   Operation 9 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (1.61ns)   --->   "%store_ln0 = store i4 0, i4 %loop_index31"   --->   Operation 10 'store' 'store_ln0' <Predicate = true> <Delay = 1.61>
 ST_1 : Operation 11 [1/1] (1.61ns)   --->   "%store_ln0 = store i8 0, i8 %phi_mul47"   --->   Operation 11 'store' 'store_ln0' <Predicate = true> <Delay = 1.61>
 ST_1 : Operation 12 [1/1] (1.61ns)   --->   "%store_ln0 = store i4 0, i4 %phi_urem49"   --->   Operation 12 'store' 'store_ln0' <Predicate = true> <Delay = 1.61>
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%br_ln0 = br void %load-store-loop31"   --->   Operation 13 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%loop_index32_load = load i4 %loop_index32"   --->   Operation 14 'load' 'loop_index32_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%br_ln0 = br void %load-store-loop30"   --->   Operation 13 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%loop_index31_load = load i4 %loop_index31"   --->   Operation 14 'load' 'loop_index31_load' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str"   --->   Operation 15 'specpipeline' 'specpipeline_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 16 [1/1] (1.44ns)   --->   "%exitcond486 = icmp_eq  i4 %loop_index32_load, i4 9"   --->   Operation 16 'icmp' 'exitcond486' <Predicate = true> <Delay = 1.44> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 16 [1/1] (1.44ns)   --->   "%exitcond476 = icmp_eq  i4 %loop_index31_load, i4 9"   --->   Operation 16 'icmp' 'exitcond476' <Predicate = true> <Delay = 1.44> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%empty = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 9, i64 9, i64 9"   --->   Operation 17 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 18 [1/1] (1.77ns)   --->   "%empty_142 = add i4 %loop_index32_load, i4 1"   --->   Operation 18 'add' 'empty_142' <Predicate = true> <Delay = 1.77> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%br_ln0 = br i1 %exitcond486, void %load-store-loop31.split, void %load-store-loop28.preheader.exitStub"   --->   Operation 19 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%phi_urem49_load = load i4 %phi_urem49"   --->   Operation 20 'load' 'phi_urem49_load' <Predicate = (!exitcond486)> <Delay = 0.00>
-ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%phi_mul47_load = load i8 %phi_mul47"   --->   Operation 21 'load' 'phi_mul47_load' <Predicate = (!exitcond486)> <Delay = 0.00>
-ST_1 : Operation 22 [1/1] (1.77ns)   --->   "%next_urem50 = add i4 %phi_urem49_load, i4 1"   --->   Operation 22 'add' 'next_urem50' <Predicate = (!exitcond486)> <Delay = 1.77> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 23 [1/1] (1.44ns)   --->   "%empty_143 = icmp_ult  i4 %next_urem50, i4 3"   --->   Operation 23 'icmp' 'empty_143' <Predicate = (!exitcond486)> <Delay = 1.44> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 24 [1/1] (0.99ns)   --->   "%idx_urem51 = select i1 %empty_143, i4 %next_urem50, i4 0"   --->   Operation 24 'select' 'idx_urem51' <Predicate = (!exitcond486)> <Delay = 0.99> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_1 : Operation 25 [1/1] (2.11ns)   --->   "%next_mul48 = add i8 %phi_mul47_load, i8 22"   --->   Operation 25 'add' 'next_mul48' <Predicate = (!exitcond486)> <Delay = 2.11> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.11> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%tmp_s = partselect i2 @_ssdm_op_PartSelect.i2.i8.i32.i32, i8 %phi_mul47_load, i32 6, i32 7"   --->   Operation 26 'partselect' 'tmp_s' <Predicate = (!exitcond486)> <Delay = 0.00>
-ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%p_shl4 = bitconcatenate i6 @_ssdm_op_BitConcatenate.i6.i2.i4, i2 %tmp_s, i4 0"   --->   Operation 27 'bitconcatenate' 'p_shl4' <Predicate = (!exitcond486)> <Delay = 0.00>
-ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%p_shl4_cast = zext i6 %p_shl4"   --->   Operation 28 'zext' 'p_shl4_cast' <Predicate = (!exitcond486)> <Delay = 0.00>
-ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%p_shl5 = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i2.i2, i2 %tmp_s, i2 0"   --->   Operation 29 'bitconcatenate' 'p_shl5' <Predicate = (!exitcond486)> <Delay = 0.00>
-ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%p_shl5_cast = zext i4 %p_shl5"   --->   Operation 30 'zext' 'p_shl5_cast' <Predicate = (!exitcond486)> <Delay = 0.00>
-ST_1 : Operation 31 [1/1] (1.94ns)   --->   "%empty_144 = sub i7 %p_shl4_cast, i7 %p_shl5_cast"   --->   Operation 31 'sub' 'empty_144' <Predicate = (!exitcond486)> <Delay = 1.94> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.03> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%empty_145 = shl i4 %phi_urem49_load, i4 2"   --->   Operation 32 'shl' 'empty_145' <Predicate = (!exitcond486)> <Delay = 0.00>
-ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%p_cast22 = zext i4 %empty_145"   --->   Operation 33 'zext' 'p_cast22' <Predicate = (!exitcond486)> <Delay = 0.00>
-ST_1 : Operation 34 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%tmp1 = add i7 %p_cast22, i7 72"   --->   Operation 34 'add' 'tmp1' <Predicate = (!exitcond486)> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.77> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
-ST_1 : Operation 35 [1/1] (3.54ns) (root node of TernaryAdder)   --->   "%empty_146 = add i7 %tmp1, i7 %empty_144"   --->   Operation 35 'add' 'empty_146' <Predicate = (!exitcond486)> <Delay = 3.54> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.77> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
-ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%tmp_59 = partselect i5 @_ssdm_op_PartSelect.i5.i7.i32.i32, i7 %empty_146, i32 2, i32 6"   --->   Operation 36 'partselect' 'tmp_59' <Predicate = (!exitcond486)> <Delay = 0.00>
-ST_1 : Operation 37 [1/1] (1.61ns)   --->   "%store_ln0 = store i4 %empty_142, i4 %loop_index32"   --->   Operation 37 'store' 'store_ln0' <Predicate = (!exitcond486)> <Delay = 1.61>
-ST_1 : Operation 38 [1/1] (1.61ns)   --->   "%store_ln0 = store i8 %next_mul48, i8 %phi_mul47"   --->   Operation 38 'store' 'store_ln0' <Predicate = (!exitcond486)> <Delay = 1.61>
-ST_1 : Operation 39 [1/1] (1.61ns)   --->   "%store_ln0 = store i4 %idx_urem51, i4 %phi_urem49"   --->   Operation 39 'store' 'store_ln0' <Predicate = (!exitcond486)> <Delay = 1.61>
+ST_1 : Operation 18 [1/1] (1.77ns)   --->   "%empty_142 = add i4 %loop_index31_load, i4 1"   --->   Operation 18 'add' 'empty_142' <Predicate = true> <Delay = 1.77> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%br_ln0 = br i1 %exitcond476, void %load-store-loop30.split, void %load-store-loop27.preheader.exitStub"   --->   Operation 19 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%phi_urem49_load = load i4 %phi_urem49"   --->   Operation 20 'load' 'phi_urem49_load' <Predicate = (!exitcond476)> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%phi_mul47_load = load i8 %phi_mul47"   --->   Operation 21 'load' 'phi_mul47_load' <Predicate = (!exitcond476)> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (1.77ns)   --->   "%next_urem50 = add i4 %phi_urem49_load, i4 1"   --->   Operation 22 'add' 'next_urem50' <Predicate = (!exitcond476)> <Delay = 1.77> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 23 [1/1] (1.44ns)   --->   "%empty_143 = icmp_ult  i4 %next_urem50, i4 3"   --->   Operation 23 'icmp' 'empty_143' <Predicate = (!exitcond476)> <Delay = 1.44> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 24 [1/1] (0.99ns)   --->   "%idx_urem51 = select i1 %empty_143, i4 %next_urem50, i4 0"   --->   Operation 24 'select' 'idx_urem51' <Predicate = (!exitcond476)> <Delay = 0.99> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 25 [1/1] (2.11ns)   --->   "%next_mul48 = add i8 %phi_mul47_load, i8 22"   --->   Operation 25 'add' 'next_mul48' <Predicate = (!exitcond476)> <Delay = 2.11> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%tmp_s = partselect i2 @_ssdm_op_PartSelect.i2.i8.i32.i32, i8 %phi_mul47_load, i32 6, i32 7"   --->   Operation 26 'partselect' 'tmp_s' <Predicate = (!exitcond476)> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%p_shl4 = bitconcatenate i6 @_ssdm_op_BitConcatenate.i6.i2.i4, i2 %tmp_s, i4 0"   --->   Operation 27 'bitconcatenate' 'p_shl4' <Predicate = (!exitcond476)> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%p_shl4_cast = zext i6 %p_shl4"   --->   Operation 28 'zext' 'p_shl4_cast' <Predicate = (!exitcond476)> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%p_shl5 = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i2.i2, i2 %tmp_s, i2 0"   --->   Operation 29 'bitconcatenate' 'p_shl5' <Predicate = (!exitcond476)> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%p_shl5_cast = zext i4 %p_shl5"   --->   Operation 30 'zext' 'p_shl5_cast' <Predicate = (!exitcond476)> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (1.94ns)   --->   "%empty_144 = sub i7 %p_shl4_cast, i7 %p_shl5_cast"   --->   Operation 31 'sub' 'empty_144' <Predicate = (!exitcond476)> <Delay = 1.94> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%empty_145 = shl i4 %phi_urem49_load, i4 2"   --->   Operation 32 'shl' 'empty_145' <Predicate = (!exitcond476)> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%p_cast22 = zext i4 %empty_145"   --->   Operation 33 'zext' 'p_cast22' <Predicate = (!exitcond476)> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%tmp1 = add i7 %p_cast22, i7 72"   --->   Operation 34 'add' 'tmp1' <Predicate = (!exitcond476)> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.77> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_1 : Operation 35 [1/1] (3.54ns) (root node of TernaryAdder)   --->   "%empty_146 = add i7 %tmp1, i7 %empty_144"   --->   Operation 35 'add' 'empty_146' <Predicate = (!exitcond476)> <Delay = 3.54> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.77> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%tmp_117 = partselect i5 @_ssdm_op_PartSelect.i5.i7.i32.i32, i7 %empty_146, i32 2, i32 6"   --->   Operation 36 'partselect' 'tmp_117' <Predicate = (!exitcond476)> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (1.61ns)   --->   "%store_ln0 = store i4 %empty_142, i4 %loop_index31"   --->   Operation 37 'store' 'store_ln0' <Predicate = (!exitcond476)> <Delay = 1.61>
+ST_1 : Operation 38 [1/1] (1.61ns)   --->   "%store_ln0 = store i8 %next_mul48, i8 %phi_mul47"   --->   Operation 38 'store' 'store_ln0' <Predicate = (!exitcond476)> <Delay = 1.61>
+ST_1 : Operation 39 [1/1] (1.61ns)   --->   "%store_ln0 = store i4 %idx_urem51, i4 %phi_urem49"   --->   Operation 39 'store' 'store_ln0' <Predicate = (!exitcond476)> <Delay = 1.61>
 
 State 2 <SV = 1> <Delay = 3.25>
-ST_2 : Operation 40 [1/1] (0.00ns)   --->   "%p_cast48 = zext i5 %tmp_59"   --->   Operation 40 'zext' 'p_cast48' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 40 [1/1] (0.00ns)   --->   "%p_cast48 = zext i5 %tmp_117"   --->   Operation 40 'zext' 'p_cast48' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 41 [1/1] (0.00ns)   --->   "%weight_buf_addr = getelementptr i32 %weight_buf, i64 0, i64 %p_cast48"   --->   Operation 41 'getelementptr' 'weight_buf_addr' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 42 [2/2] (3.25ns)   --->   "%weight_buf_load = load i7 %weight_buf_addr"   --->   Operation 42 'load' 'weight_buf_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 72> <RAM>
-ST_2 : Operation 49 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 49 'ret' 'ret_ln0' <Predicate = (exitcond486)> <Delay = 0.00>
+ST_2 : Operation 49 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 49 'ret' 'ret_ln0' <Predicate = (exitcond476)> <Delay = 0.00>
 
 State 3 <SV = 2> <Delay = 5.40>
-ST_3 : Operation 43 [1/1] (0.00ns)   --->   "%loop_index32_cast = zext i4 %loop_index32_load"   --->   Operation 43 'zext' 'loop_index32_cast' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 44 [1/1] (0.00ns)   --->   "%weight_buf_2_addr = getelementptr i32 %weight_buf_2, i64 0, i64 %loop_index32_cast"   --->   Operation 44 'getelementptr' 'weight_buf_2_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 43 [1/1] (0.00ns)   --->   "%loop_index31_cast = zext i4 %loop_index31_load"   --->   Operation 43 'zext' 'loop_index31_cast' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 44 [1/1] (0.00ns)   --->   "%weight_buf_2_addr = getelementptr i32 %weight_buf_2, i64 0, i64 %loop_index31_cast"   --->   Operation 44 'getelementptr' 'weight_buf_2_addr' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 45 [1/2] (3.25ns)   --->   "%weight_buf_load = load i7 %weight_buf_addr"   --->   Operation 45 'load' 'weight_buf_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 72> <RAM>
 ST_3 : Operation 46 [1/1] (0.00ns)   --->   "%empty_147 = bitcast i32 %weight_buf_load"   --->   Operation 46 'bitcast' 'empty_147' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 47 [1/1] (2.15ns)   --->   "%store_ln0 = store i32 %empty_147, i4 %weight_buf_2_addr"   --->   Operation 47 'store' 'store_ln0' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
-ST_3 : Operation 48 [1/1] (0.00ns)   --->   "%br_ln0 = br void %load-store-loop31"   --->   Operation 48 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 48 [1/1] (0.00ns)   --->   "%br_ln0 = br void %load-store-loop30"   --->   Operation 48 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -271,15 +271,15 @@ Port [ weight_buf]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0;
 <method=bitvector/>
 phi_urem49        (alloca           ) [ 0100]
 phi_mul47         (alloca           ) [ 0100]
-loop_index32      (alloca           ) [ 0100]
+loop_index31      (alloca           ) [ 0100]
 specinterface_ln0 (specinterface    ) [ 0000]
 store_ln0         (store            ) [ 0000]
 store_ln0         (store            ) [ 0000]
 store_ln0         (store            ) [ 0000]
 br_ln0            (br               ) [ 0000]
-loop_index32_load (load             ) [ 0111]
+loop_index31_load (load             ) [ 0111]
 specpipeline_ln0  (specpipeline     ) [ 0000]
-exitcond486       (icmp             ) [ 0110]
+exitcond476       (icmp             ) [ 0110]
 empty             (speclooptripcount) [ 0000]
 empty_142         (add              ) [ 0000]
 br_ln0            (br               ) [ 0000]
@@ -299,13 +299,13 @@ empty_145         (shl              ) [ 0000]
 p_cast22          (zext             ) [ 0000]
 tmp1              (add              ) [ 0000]
 empty_146         (add              ) [ 0000]
-tmp_59            (partselect       ) [ 0110]
+tmp_117           (partselect       ) [ 0110]
 store_ln0         (store            ) [ 0000]
 store_ln0         (store            ) [ 0000]
 store_ln0         (store            ) [ 0000]
 p_cast48          (zext             ) [ 0000]
 weight_buf_addr   (getelementptr    ) [ 0101]
-loop_index32_cast (zext             ) [ 0000]
+loop_index31_cast (zext             ) [ 0000]
 weight_buf_2_addr (getelementptr    ) [ 0000]
 weight_buf_load   (load             ) [ 0000]
 empty_147         (bitcast          ) [ 0000]
@@ -360,7 +360,7 @@ ret_ln0           (ret              ) [ 0000]
 <pin id="9" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_3"/></StgValue>
+<StgValue><ssdm name="empty_11"/></StgValue>
 </bind>
 </comp>
 
@@ -378,7 +378,7 @@ ret_ln0           (ret              ) [ 0000]
 <pin id="13" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_0"/></StgValue>
+<StgValue><ssdm name="empty_6"/></StgValue>
 </bind>
 </comp>
 
@@ -602,14 +602,14 @@ ret_ln0           (ret              ) [ 0000]
 </bind>
 </comp>
 
-<comp id="66" class="1004" name="loop_index32_fu_66">
+<comp id="66" class="1004" name="loop_index31_fu_66">
 <pin_list>
 <pin id="67" dir="0" index="0" bw="1" slack="0"/>
 <pin id="68" dir="1" index="1" bw="4" slack="0"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
-<opset="loop_index32/1 "/>
+<opset="loop_index31/1 "/>
 </bind>
 </comp>
 
@@ -701,18 +701,18 @@ ret_ln0           (ret              ) [ 0000]
 </bind>
 </comp>
 
-<comp id="111" class="1004" name="loop_index32_load_load_fu_111">
+<comp id="111" class="1004" name="loop_index31_load_load_fu_111">
 <pin_list>
 <pin id="112" dir="0" index="0" bw="4" slack="0"/>
 <pin id="113" dir="1" index="1" bw="4" slack="0"/>
 </pin_list>
 <bind>
 <opcode="load(27) " fcode="load"/>
-<opset="loop_index32_load/1 "/>
+<opset="loop_index31_load/1 "/>
 </bind>
 </comp>
 
-<comp id="114" class="1004" name="exitcond486_fu_114">
+<comp id="114" class="1004" name="exitcond476_fu_114">
 <pin_list>
 <pin id="115" dir="0" index="0" bw="4" slack="0"/>
 <pin id="116" dir="0" index="1" bw="4" slack="0"/>
@@ -720,7 +720,7 @@ ret_ln0           (ret              ) [ 0000]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="exitcond486/1 "/>
+<opset="exitcond476/1 "/>
 </bind>
 </comp>
 
@@ -928,7 +928,7 @@ ret_ln0           (ret              ) [ 0000]
 </bind>
 </comp>
 
-<comp id="220" class="1004" name="tmp_59_fu_220">
+<comp id="220" class="1004" name="tmp_117_fu_220">
 <pin_list>
 <pin id="221" dir="0" index="0" bw="5" slack="0"/>
 <pin id="222" dir="0" index="1" bw="7" slack="0"/>
@@ -938,7 +938,7 @@ ret_ln0           (ret              ) [ 0000]
 </pin_list>
 <bind>
 <opcode="partselect(1002) " fcode="partselect"/>
-<opset="tmp_59/1 "/>
+<opset="tmp_117/1 "/>
 </bind>
 </comp>
 
@@ -989,14 +989,14 @@ ret_ln0           (ret              ) [ 0000]
 </bind>
 </comp>
 
-<comp id="249" class="1004" name="loop_index32_cast_fu_249">
+<comp id="249" class="1004" name="loop_index31_cast_fu_249">
 <pin_list>
 <pin id="250" dir="0" index="0" bw="4" slack="2"/>
 <pin id="251" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="loop_index32_cast/3 "/>
+<opset="loop_index31_cast/3 "/>
 </bind>
 </comp>
 
@@ -1031,43 +1031,43 @@ ret_ln0           (ret              ) [ 0000]
 </bind>
 </comp>
 
-<comp id="272" class="1005" name="loop_index32_reg_272">
+<comp id="272" class="1005" name="loop_index31_reg_272">
 <pin_list>
 <pin id="273" dir="0" index="0" bw="4" slack="0"/>
 <pin id="274" dir="1" index="1" bw="4" slack="0"/>
 </pin_list>
 <bind>
-<opset="loop_index32 "/>
+<opset="loop_index31 "/>
 </bind>
 </comp>
 
-<comp id="279" class="1005" name="loop_index32_load_reg_279">
+<comp id="279" class="1005" name="loop_index31_load_reg_279">
 <pin_list>
 <pin id="280" dir="0" index="0" bw="4" slack="2"/>
 <pin id="281" dir="1" index="1" bw="4" slack="2"/>
 </pin_list>
 <bind>
-<opset="loop_index32_load "/>
+<opset="loop_index31_load "/>
 </bind>
 </comp>
 
-<comp id="284" class="1005" name="exitcond486_reg_284">
+<comp id="284" class="1005" name="exitcond476_reg_284">
 <pin_list>
 <pin id="285" dir="0" index="0" bw="1" slack="1"/>
 <pin id="286" dir="1" index="1" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<opset="exitcond486 "/>
+<opset="exitcond476 "/>
 </bind>
 </comp>
 
-<comp id="288" class="1005" name="tmp_59_reg_288">
+<comp id="288" class="1005" name="tmp_117_reg_288">
 <pin_list>
 <pin id="289" dir="0" index="0" bw="5" slack="1"/>
 <pin id="290" dir="1" index="1" bw="5" slack="1"/>
 </pin_list>
 <bind>
-<opset="tmp_59 "/>
+<opset="tmp_117 "/>
 </bind>
 </comp>
 
@@ -1252,8 +1252,8 @@ ret_ln0           (ret              ) [ 0000]
 		store_ln0 : 1
 		store_ln0 : 1
 		store_ln0 : 1
-		loop_index32_load : 1
-		exitcond486 : 2
+		loop_index31_load : 1
+		exitcond476 : 2
 		empty_142 : 2
 		br_ln0 : 3
 		phi_urem49_load : 1
@@ -1272,7 +1272,7 @@ ret_ln0           (ret              ) [ 0000]
 		p_cast22 : 2
 		tmp1 : 3
 		empty_146 : 6
-		tmp_59 : 7
+		tmp_117 : 7
 		store_ln0 : 3
 		store_ln0 : 3
 		store_ln0 : 5
@@ -1299,7 +1299,7 @@ ret_ln0           (ret              ) [ 0000]
 |          |        tmp1_fu_208       |    0    |    7    |
 |          |     empty_146_fu_214     |    0    |    7    |
 |----------|--------------------------|---------|---------|
-|   icmp   |    exitcond486_fu_114    |    0    |    9    |
+|   icmp   |    exitcond476_fu_114    |    0    |    9    |
 |          |     empty_143_fu_138     |    0    |    9    |
 |----------|--------------------------|---------|---------|
 |    sub   |     empty_144_fu_192     |    0    |    14   |
@@ -1307,7 +1307,7 @@ ret_ln0           (ret              ) [ 0000]
 |  select  |     idx_urem51_fu_144    |    0    |    4    |
 |----------|--------------------------|---------|---------|
 |partselect|       tmp_s_fu_158       |    0    |    0    |
-|          |       tmp_59_fu_220      |    0    |    0    |
+|          |      tmp_117_fu_220      |    0    |    0    |
 |----------|--------------------------|---------|---------|
 |bitconcatenate|       p_shl4_fu_168      |    0    |    0    |
 |          |       p_shl5_fu_180      |    0    |    0    |
@@ -1316,7 +1316,7 @@ ret_ln0           (ret              ) [ 0000]
 |          |    p_shl5_cast_fu_188    |    0    |    0    |
 |   zext   |      p_cast22_fu_204     |    0    |    0    |
 |          |      p_cast48_fu_245     |    0    |    0    |
-|          | loop_index32_cast_fu_249 |    0    |    0    |
+|          | loop_index31_cast_fu_249 |    0    |    0    |
 |----------|--------------------------|---------|---------|
 |    shl   |     empty_145_fu_198     |    0    |    0    |
 |----------|--------------------------|---------|---------|
@@ -1330,12 +1330,12 @@ N/A
 +-------------------------+--------+
 |                         |   FF   |
 +-------------------------+--------+
-|   exitcond486_reg_284   |    1   |
-|loop_index32_load_reg_279|    4   |
-|   loop_index32_reg_272  |    4   |
+|   exitcond476_reg_284   |    1   |
+|loop_index31_load_reg_279|    4   |
+|   loop_index31_reg_272  |    4   |
 |    phi_mul47_reg_265    |    8   |
 |    phi_urem49_reg_258   |    4   |
-|      tmp_59_reg_288     |    5   |
+|     tmp_117_reg_288     |    5   |
 | weight_buf_addr_reg_293 |    7   |
 +-------------------------+--------+
 |          Total          |   33   |

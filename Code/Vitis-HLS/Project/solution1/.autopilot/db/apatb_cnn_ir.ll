@@ -1,10 +1,10 @@
-; ModuleID = '/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS/Project/solution1/.autopilot/db/a.g.ld.5.gdce.bc'
+; ModuleID = 'D:/Codefield/HLS-CNN/HLS-CNN/Code/Vitis-HLS/Project/solution1/.autopilot/db/a.g.ld.5.gdce.bc'
 source_filename = "llvm-link"
 target datalayout = "e-m:e-i64:64-i128:128-i256:256-i512:512-i1024:1024-i2048:2048-i4096:4096-n8:16:32:64-S128-v16:16-v24:32-v32:32-v48:64-v96:128-v192:256-v256:256-v512:512-v1024:1024"
 target triple = "fpga64-xilinx-none"
 
 ; Function Attrs: noinline
-define void @apatb_cnn_ir([28 x float]* noalias nocapture nonnull readonly "fpga.decayed.dim.hint"="28" %img_in, float* noalias nocapture nonnull "fpga.decayed.dim.hint"="10" %prediction, [3 x [3 x float]]* noalias nocapture nonnull readonly "fpga.decayed.dim.hint"="8" %weight_buf, float* noalias nocapture nonnull readonly "fpga.decayed.dim.hint"="8" %biases_buf) local_unnamed_addr #0 {
+define void @apatb_cnn_ir([28 x float]* %img_in, float* %prediction, [3 x [3 x float]]* %weight_buf, float* %biases_buf) local_unnamed_addr #0 {
 entry:
   %img_in_copy = alloca [28 x [28 x float]], align 512
   %prediction_copy = alloca [10 x float], align 512
@@ -14,18 +14,18 @@ entry:
   %1 = bitcast float* %prediction to [10 x float]*
   %2 = bitcast [3 x [3 x float]]* %weight_buf to [8 x [3 x [3 x float]]]*
   %3 = bitcast float* %biases_buf to [8 x float]*
-  call fastcc void @copy_in([28 x [28 x float]]* nonnull %0, [28 x [28 x float]]* nonnull align 512 %img_in_copy, [10 x float]* nonnull %1, [10 x float]* nonnull align 512 %prediction_copy, [8 x [3 x [3 x float]]]* nonnull %2, [8 x [3 x [3 x float]]]* nonnull align 512 %weight_buf_copy, [8 x float]* nonnull %3, [8 x float]* nonnull align 512 %biases_buf_copy)
+  call fastcc void @copy_in([28 x [28 x float]]* %0, [28 x [28 x float]]* nonnull align 512 %img_in_copy, [10 x float]* %1, [10 x float]* nonnull align 512 %prediction_copy, [8 x [3 x [3 x float]]]* %2, [8 x [3 x [3 x float]]]* nonnull align 512 %weight_buf_copy, [8 x float]* %3, [8 x float]* nonnull align 512 %biases_buf_copy)
   %4 = getelementptr inbounds [28 x [28 x float]], [28 x [28 x float]]* %img_in_copy, i32 0, i32 0
   %5 = getelementptr inbounds [10 x float], [10 x float]* %prediction_copy, i32 0, i32 0
   %6 = getelementptr inbounds [8 x [3 x [3 x float]]], [8 x [3 x [3 x float]]]* %weight_buf_copy, i32 0, i32 0
   %7 = getelementptr inbounds [8 x float], [8 x float]* %biases_buf_copy, i32 0, i32 0
   call void @apatb_cnn_hw([28 x float]* %4, float* %5, [3 x [3 x float]]* %6, float* %7)
-  call void @copy_back([28 x [28 x float]]* %0, [28 x [28 x float]]* %img_in_copy, [10 x float]* %1, [10 x float]* %prediction_copy, [8 x [3 x [3 x float]]]* %2, [8 x [3 x [3 x float]]]* %weight_buf_copy, [8 x float]* %3, [8 x float]* %biases_buf_copy)
+  call fastcc void @copy_out([28 x [28 x float]]* %0, [28 x [28 x float]]* nonnull align 512 %img_in_copy, [10 x float]* %1, [10 x float]* nonnull align 512 %prediction_copy, [8 x [3 x [3 x float]]]* %2, [8 x [3 x [3 x float]]]* nonnull align 512 %weight_buf_copy, [8 x float]* %3, [8 x float]* nonnull align 512 %biases_buf_copy)
   ret void
 }
 
 ; Function Attrs: argmemonly noinline norecurse
-define internal fastcc void @copy_in([28 x [28 x float]]* noalias readonly, [28 x [28 x float]]* noalias align 512, [10 x float]* noalias readonly, [10 x float]* noalias align 512, [8 x [3 x [3 x float]]]* noalias readonly, [8 x [3 x [3 x float]]]* noalias align 512, [8 x float]* noalias readonly, [8 x float]* noalias align 512) unnamed_addr #1 {
+define internal fastcc void @copy_in([28 x [28 x float]]* readonly, [28 x [28 x float]]* noalias align 512, [10 x float]* readonly, [10 x float]* noalias align 512, [8 x [3 x [3 x float]]]* readonly, [8 x [3 x [3 x float]]]* noalias align 512, [8 x float]* readonly, [8 x float]* noalias align 512) unnamed_addr #1 {
 entry:
   call fastcc void @onebyonecpy_hls.p0a28a28f32([28 x [28 x float]]* align 512 %1, [28 x [28 x float]]* %0)
   call fastcc void @onebyonecpy_hls.p0a10f32([10 x float]* align 512 %3, [10 x float]* %2)
@@ -162,7 +162,7 @@ ret:                                              ; preds = %for.loop, %entry
 }
 
 ; Function Attrs: argmemonly noinline norecurse
-define internal fastcc void @copy_out([28 x [28 x float]]* noalias, [28 x [28 x float]]* noalias readonly align 512, [10 x float]* noalias, [10 x float]* noalias readonly align 512, [8 x [3 x [3 x float]]]* noalias, [8 x [3 x [3 x float]]]* noalias readonly align 512, [8 x float]* noalias, [8 x float]* noalias readonly align 512) unnamed_addr #3 {
+define internal fastcc void @copy_out([28 x [28 x float]]*, [28 x [28 x float]]* noalias readonly align 512, [10 x float]*, [10 x float]* noalias readonly align 512, [8 x [3 x [3 x float]]]*, [8 x [3 x [3 x float]]]* noalias readonly align 512, [8 x float]*, [8 x float]* noalias readonly align 512) unnamed_addr #3 {
 entry:
   call fastcc void @onebyonecpy_hls.p0a28a28f32([28 x [28 x float]]* %0, [28 x [28 x float]]* align 512 %1)
   call fastcc void @onebyonecpy_hls.p0a10f32([10 x float]* %2, [10 x float]* align 512 %3)
@@ -172,13 +172,6 @@ entry:
 }
 
 declare void @apatb_cnn_hw([28 x float]*, float*, [3 x [3 x float]]*, float*)
-
-; Function Attrs: argmemonly noinline norecurse
-define internal fastcc void @copy_back([28 x [28 x float]]* noalias, [28 x [28 x float]]* noalias readonly align 512, [10 x float]* noalias, [10 x float]* noalias readonly align 512, [8 x [3 x [3 x float]]]* noalias, [8 x [3 x [3 x float]]]* noalias readonly align 512, [8 x float]* noalias, [8 x float]* noalias readonly align 512) unnamed_addr #3 {
-entry:
-  call fastcc void @onebyonecpy_hls.p0a10f32([10 x float]* %2, [10 x float]* align 512 %3)
-  ret void
-}
 
 define void @cnn_hw_stub_wrapper([28 x float]*, float*, [3 x [3 x float]]*, float*) #4 {
 entry:

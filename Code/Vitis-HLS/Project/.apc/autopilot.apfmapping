@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="cnn.cc" path="/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS/cnn.cc"/>
-    <originFiles name="conv.cc" path="/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS/conv.cc"/>
-    <originFiles name="dense.cc" path="/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS/dense.cc"/>
-    <originFiles name="flat.cc" path="/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS/flat.cc"/>
-    <originFiles name="pool.cc" path="/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS/pool.cc"/>
-    <originFiles name="utils.cc" path="/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS/utils.cc"/>
+    <originFiles name="cnn.cc" path="D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS\cnn.cc"/>
+    <originFiles name="conv.cc" path="D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS\conv.cc"/>
+    <originFiles name="dense.cc" path="D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS\dense.cc"/>
+    <originFiles name="flat.cc" path="D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS\flat.cc"/>
+    <originFiles name="pool.cc" path="D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS\pool.cc"/>
+    <originFiles name="utils.cc" path="D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS\utils.cc"/>
   </source>
   <testbench>
-    <originFiles name="cnn_tb.cc" path="/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS/cnn_tb.cc"/>
-    <originFiles name="Data" path="/home/ytq/codeField/undergraduate/HLS-CNN/Code/Data"/>
+    <originFiles name="cnn_tb.cc" path="D:\Codefield\HLS-CNN\HLS-CNN\Code\Vitis-HLS\cnn_tb.cc"/>
+    <originFiles name="Data" path="D:\Codefield\HLS-CNN\HLS-CNN\Code\Data"/>
   </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

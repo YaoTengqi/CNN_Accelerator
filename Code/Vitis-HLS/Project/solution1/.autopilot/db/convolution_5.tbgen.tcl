@@ -9,7 +9,6 @@ set isOneStateSeq 0
 set ProfileFlag 0
 set StallSigGenFlag 0
 set isEnableWaveformDebug 1
-set hasInterrupt 0
 set C_modelName {convolution.5}
 set C_modelType { void 0 }
 set C_modelArgList {
@@ -24,7 +23,7 @@ set C_modelArgMapList {[
  	{ "Name" : "biases_buf", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
  	{ "Name" : "conv_to_pool_streams_5", "interface" : "fifo", "bitwidth" : 32, "direction" : "WRITEONLY"} ]}
 # RTL Port declarations: 
-set portNum 25
+set portNum 23
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
@@ -47,8 +46,6 @@ set portList {
 	{ weight_buf_q1 sc_in sc_lv 32 signal 1 } 
 	{ biases_buf sc_in sc_lv 32 signal 2 } 
 	{ conv_to_pool_streams_5_din sc_out sc_lv 32 signal 3 } 
-	{ conv_to_pool_streams_5_num_data_valid sc_in sc_lv 11 signal 3 } 
-	{ conv_to_pool_streams_5_fifo_cap sc_in sc_lv 11 signal 3 } 
 	{ conv_to_pool_streams_5_full_n sc_in sc_logic 1 signal 3 } 
 	{ conv_to_pool_streams_5_write sc_out sc_logic 1 signal 3 } 
 }
@@ -74,8 +71,6 @@ set NewPortList {[
  	{ "name": "weight_buf_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "weight_buf", "role": "q1" }} , 
  	{ "name": "biases_buf", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "biases_buf", "role": "default" }} , 
  	{ "name": "conv_to_pool_streams_5_din", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "conv_to_pool_streams_5", "role": "din" }} , 
- 	{ "name": "conv_to_pool_streams_5_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "conv_to_pool_streams_5", "role": "num_data_valid" }} , 
- 	{ "name": "conv_to_pool_streams_5_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "conv_to_pool_streams_5", "role": "fifo_cap" }} , 
  	{ "name": "conv_to_pool_streams_5_full_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "conv_to_pool_streams_5", "role": "full_n" }} , 
  	{ "name": "conv_to_pool_streams_5_write", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "conv_to_pool_streams_5", "role": "write" }}  ]}
 
@@ -97,13 +92,13 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "pad_img", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_convolution_5_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138", "Port" : "pad_img", "Inst_start_state" : "6", "Inst_end_state" : "7"}]},
+					{"ID" : "1", "SubInstance" : "grp_convolution_5_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136", "Port" : "pad_img", "Inst_start_state" : "6", "Inst_end_state" : "7"}]},
 			{"Name" : "weight_buf", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "biases_buf", "Type" : "None", "Direction" : "I"},
 			{"Name" : "conv_to_pool_streams_5", "Type" : "Fifo", "Direction" : "O", "DependentProc" : ["0","0"], "DependentChan" : "0", "DependentChanDepth" : "784", "DependentChanType" : "0",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_convolution_5_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138", "Port" : "conv_to_pool_streams_5", "Inst_start_state" : "6", "Inst_end_state" : "7"}]}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_convolution_5_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138", "Parent" : "0", "Child" : ["2", "3", "4", "5", "6", "7"],
+					{"ID" : "1", "SubInstance" : "grp_convolution_5_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136", "Port" : "conv_to_pool_streams_5", "Inst_start_state" : "6", "Inst_end_state" : "7"}]}]},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_convolution_5_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136", "Parent" : "0", "Child" : ["2", "3", "4", "5", "6", "7"],
 		"CDFG" : "convolution_5_Pipeline_conv_for_rows_win_for_rows_win_for_cols",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -135,12 +130,12 @@ set RtlHierarchyInfo {[
 		"Loop" : [
 			{"Name" : "conv_for_rows_win_for_rows_win_for_cols", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "5", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter16", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter16", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_convolution_5_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.fadd_32ns_32ns_32_7_full_dsp_1_U137", "Parent" : "1"},
-	{"ID" : "3", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_convolution_5_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.fadd_32ns_32ns_32_7_full_dsp_1_U138", "Parent" : "1"},
-	{"ID" : "4", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_convolution_5_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.fmul_32ns_32ns_32_4_max_dsp_1_U139", "Parent" : "1"},
-	{"ID" : "5", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_convolution_5_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.fmul_32ns_32ns_32_4_max_dsp_1_U140", "Parent" : "1"},
-	{"ID" : "6", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_convolution_5_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.fcmp_32ns_32ns_1_2_no_dsp_1_U141", "Parent" : "1"},
-	{"ID" : "7", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_convolution_5_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.flow_control_loop_pipe_sequential_init_U", "Parent" : "1"}]}
+	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_convolution_5_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.fadd_32ns_32ns_32_7_full_dsp_1_U137", "Parent" : "1"},
+	{"ID" : "3", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_convolution_5_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.fadd_32ns_32ns_32_7_full_dsp_1_U138", "Parent" : "1"},
+	{"ID" : "4", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_convolution_5_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.fmul_32ns_32ns_32_4_max_dsp_1_U139", "Parent" : "1"},
+	{"ID" : "5", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_convolution_5_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.fmul_32ns_32ns_32_4_max_dsp_1_U140", "Parent" : "1"},
+	{"ID" : "6", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_convolution_5_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.fcmp_32ns_32ns_1_2_no_dsp_1_U141", "Parent" : "1"},
+	{"ID" : "7", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_convolution_5_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136.flow_control_loop_pipe_sequential_init_U", "Parent" : "1"}]}
 
 
 set ArgLastReadFirstWriteLatency {
@@ -177,5 +172,5 @@ set Spec2ImplPortList {
 	pad_img { ap_memory {  { pad_img_address0 mem_address 1 10 }  { pad_img_ce0 mem_ce 1 1 }  { pad_img_q0 mem_dout 0 32 }  { pad_img_address1 MemPortADDR2 1 10 }  { pad_img_ce1 MemPortCE2 1 1 }  { pad_img_q1 MemPortDOUT2 0 32 } } }
 	weight_buf { ap_memory {  { weight_buf_address0 mem_address 1 4 }  { weight_buf_ce0 mem_ce 1 1 }  { weight_buf_q0 mem_dout 0 32 }  { weight_buf_address1 MemPortADDR2 1 4 }  { weight_buf_ce1 MemPortCE2 1 1 }  { weight_buf_q1 MemPortDOUT2 0 32 } } }
 	biases_buf { ap_none {  { biases_buf in_data 0 32 } } }
-	conv_to_pool_streams_5 { ap_fifo {  { conv_to_pool_streams_5_din fifo_port_we 1 32 }  { conv_to_pool_streams_5_num_data_valid fifo_status_num_data_valid 0 11 }  { conv_to_pool_streams_5_fifo_cap fifo_update 0 11 }  { conv_to_pool_streams_5_full_n fifo_status 0 1 }  { conv_to_pool_streams_5_write fifo_data 1 1 } } }
+	conv_to_pool_streams_5 { ap_fifo {  { conv_to_pool_streams_5_din fifo_data 1 32 }  { conv_to_pool_streams_5_full_n fifo_status 0 1 }  { conv_to_pool_streams_5_write fifo_update 1 1 } } }
 }

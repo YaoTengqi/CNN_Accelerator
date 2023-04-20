@@ -2,72 +2,39 @@
       "name": "",
       "directive": [
         {
-          "functionName": "cnn",
-          "label": "",
-          "functionLabel": "",
-          "id": "1",
-          "sourceFile": "\/home\/ytq\/codeField\/undergraduate\/HLS-CNN\/Code\/Vitis-HLS\/Project\/solution1\/directives.tcl",
-          "sourceLine": "6",
-          "pragma": {
-            "name": "TOP",
-            "option": [{
-                "name": "name",
-                "value": "cnn"
-              }]
-          }
-        },
-        {
           "functionName": "dataflow_section",
           "label": "",
           "functionLabel": "",
-          "id": "2",
-          "sourceFile": "\/home\/ytq\/codeField\/undergraduate\/HLS-CNN\/Code\/Vitis-HLS\/Project\/solution1\/directives.tcl",
-          "sourceLine": "7",
           "pragma": {"name": "DATAFLOW"}
         },
         {
           "functionName": "convolutional_layer",
           "label": "",
           "functionLabel": "",
-          "id": "3",
-          "sourceFile": "\/home\/ytq\/codeField\/undergraduate\/HLS-CNN\/Code\/Vitis-HLS\/Project\/solution1\/directives.tcl",
-          "sourceLine": "8",
           "pragma": {"name": "DATAFLOW"}
         },
         {
           "functionName": "max_pooling_layer",
           "label": "",
           "functionLabel": "",
-          "id": "4",
-          "sourceFile": "\/home\/ytq\/codeField\/undergraduate\/HLS-CNN\/Code\/Vitis-HLS\/Project\/solution1\/directives.tcl",
-          "sourceLine": "9",
           "pragma": {"name": "DATAFLOW"}
         },
         {
           "functionName": "flattening_layer",
           "label": "",
           "functionLabel": "",
-          "id": "5",
-          "sourceFile": "\/home\/ytq\/codeField\/undergraduate\/HLS-CNN\/Code\/Vitis-HLS\/Project\/solution1\/directives.tcl",
-          "sourceLine": "10",
           "pragma": {"name": "DATAFLOW"}
         },
         {
           "functionName": "dense_layer",
           "label": "",
           "functionLabel": "",
-          "id": "6",
-          "sourceFile": "\/home\/ytq\/codeField\/undergraduate\/HLS-CNN\/Code\/Vitis-HLS\/Project\/solution1\/directives.tcl",
-          "sourceLine": "11",
           "pragma": {"name": "DATAFLOW"}
         },
         {
           "functionName": "convolution",
           "label": "win_for_cols",
           "functionLabel": "",
-          "id": "7",
-          "sourceFile": "\/home\/ytq\/codeField\/undergraduate\/HLS-CNN\/Code\/Vitis-HLS\/Project\/solution1\/directives.tcl",
-          "sourceLine": "12",
           "pragma": {
             "name": "PIPELINE",
             "option": [{
@@ -80,9 +47,6 @@
           "functionName": "dense",
           "label": "dense_for_flat",
           "functionLabel": "",
-          "id": "8",
-          "sourceFile": "\/home\/ytq\/codeField\/undergraduate\/HLS-CNN\/Code\/Vitis-HLS\/Project\/solution1\/directives.tcl",
-          "sourceLine": "13",
           "pragma": {
             "name": "PIPELINE",
             "option": [{
@@ -95,9 +59,6 @@
           "functionName": "max_pooling",
           "label": "pool_for_cols",
           "functionLabel": "",
-          "id": "9",
-          "sourceFile": "\/home\/ytq\/codeField\/undergraduate\/HLS-CNN\/Code\/Vitis-HLS\/Project\/solution1\/directives.tcl",
-          "sourceLine": "14",
           "pragma": {
             "name": "PIPELINE",
             "option": [{
@@ -110,9 +71,6 @@
           "functionName": "cnn",
           "label": "",
           "functionLabel": "",
-          "id": "10",
-          "sourceFile": "\/home\/ytq\/codeField\/undergraduate\/HLS-CNN\/Code\/Vitis-HLS\/Project\/solution1\/csynth.tcl",
-          "sourceLine": "21",
           "pragma": {
             "name": "TOP",
             "option": [{
@@ -125,9 +83,6 @@
           "functionName": "cnn",
           "label": "",
           "functionLabel": "",
-          "id": "11",
-          "sourceFile": "\/home\/ytq\/codeField\/undergraduate\/HLS-CNN\/Code\/Vitis-HLS\/Project\/solution1\/csynth.tcl",
-          "sourceLine": "21",
           "pragma": {
             "name": "TOP",
             "option": [{
@@ -140,9 +95,6 @@
           "functionName": "cnn",
           "label": "",
           "functionLabel": "",
-          "id": "12",
-          "sourceFile": "\/home\/ytq\/codeField\/undergraduate\/HLS-CNN\/Code\/Vitis-HLS\/Project\/solution1\/csynth.tcl",
-          "sourceLine": "21",
           "pragma": {
             "name": "TOP",
             "option": [{
@@ -155,9 +107,6 @@
           "functionName": "cnn",
           "label": "",
           "functionLabel": "",
-          "id": "13",
-          "sourceFile": "\/home\/ytq\/codeField\/undergraduate\/HLS-CNN\/Code\/Vitis-HLS\/Project\/solution1\/csynth.tcl",
-          "sourceLine": "21",
           "pragma": {
             "name": "TOP",
             "option": [{
@@ -170,9 +119,6 @@
           "functionName": "cnn",
           "label": "",
           "functionLabel": "",
-          "id": "14",
-          "sourceFile": "\/home\/ytq\/codeField\/undergraduate\/HLS-CNN\/Code\/Vitis-HLS\/Project\/solution1\/csynth.tcl",
-          "sourceLine": "21",
           "pragma": {
             "name": "TOP",
             "option": [{
@@ -185,9 +131,6 @@
           "functionName": "cnn",
           "label": "",
           "functionLabel": "",
-          "id": "15",
-          "sourceFile": "\/home\/ytq\/codeField\/undergraduate\/HLS-CNN\/Code\/Vitis-HLS\/Project\/solution1\/csynth.tcl",
-          "sourceLine": "21",
           "pragma": {
             "name": "TOP",
             "option": [{

@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'convolution_2'" level="0">
-<item name = "Date">Mon Mar 27 10:48:47 2023
+<item name = "Date">Wed Apr 19 17:49:39 2023
 </item>
-<item name = "Version">2022.2 (Build 3670227 on Oct 13 2022)</item>
+<item name = "Version">2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)</item>
 <item name = "Project">Project</item>
 <item name = "Solution">solution1 (Vivado IP Flow Target)</item>
 <item name = "Product family">artix7</item>
@@ -31,7 +31,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_convolution_2_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138">convolution_2_Pipeline_conv_for_rows_win_for_rows_win_for_cols, 3997, 3997, 39.970 us, 39.970 us, 3997, 3997, no</column>
+<column name="grp_convolution_2_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136">convolution_2_Pipeline_conv_for_rows_win_for_rows_win_for_cols, 3997, 3997, 39.970 us, 39.970 us, 3997, 3997, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -62,7 +62,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="grp_convolution_2_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138">convolution_2_Pipeline_conv_for_rows_win_for_rows_win_for_cols, 0, 10, 2572, 2243, 0</column>
+<column name="grp_convolution_2_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136">convolution_2_Pipeline_conv_for_rows_win_for_rows_win_for_cols, 0, 10, 2572, 2243, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -95,16 +95,16 @@
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="ap_CS_fsm">7, 0, 7, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
-<column name="grp_convolution_2_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138_ap_start_reg">1, 0, 1, 0</column>
-<column name="weight_buf_load_41_reg_188">32, 0, 32, 0</column>
-<column name="weight_buf_load_42_reg_193">32, 0, 32, 0</column>
-<column name="weight_buf_load_43_reg_208">32, 0, 32, 0</column>
-<column name="weight_buf_load_44_reg_213">32, 0, 32, 0</column>
-<column name="weight_buf_load_45_reg_233">32, 0, 32, 0</column>
-<column name="weight_buf_load_46_reg_238">32, 0, 32, 0</column>
-<column name="weight_buf_load_47_reg_243">32, 0, 32, 0</column>
-<column name="weight_buf_load_48_reg_248">32, 0, 32, 0</column>
-<column name="weight_buf_load_reg_173">32, 0, 32, 0</column>
+<column name="grp_convolution_2_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_136_ap_start_reg">1, 0, 1, 0</column>
+<column name="weight_buf_load_41_reg_186">32, 0, 32, 0</column>
+<column name="weight_buf_load_42_reg_191">32, 0, 32, 0</column>
+<column name="weight_buf_load_43_reg_206">32, 0, 32, 0</column>
+<column name="weight_buf_load_44_reg_211">32, 0, 32, 0</column>
+<column name="weight_buf_load_45_reg_231">32, 0, 32, 0</column>
+<column name="weight_buf_load_46_reg_236">32, 0, 32, 0</column>
+<column name="weight_buf_load_47_reg_241">32, 0, 32, 0</column>
+<column name="weight_buf_load_48_reg_246">32, 0, 32, 0</column>
+<column name="weight_buf_load_reg_171">32, 0, 32, 0</column>
 </table>
 </item>
 </section>
@@ -135,8 +135,6 @@
 <column name="weight_buf_q1">in, 32, ap_memory, weight_buf, array</column>
 <column name="biases_buf">in, 32, ap_none, biases_buf, scalar</column>
 <column name="conv_to_pool_streams_2_din">out, 32, ap_fifo, conv_to_pool_streams_2, pointer</column>
-<column name="conv_to_pool_streams_2_num_data_valid">in, 11, ap_fifo, conv_to_pool_streams_2, pointer</column>
-<column name="conv_to_pool_streams_2_fifo_cap">in, 11, ap_fifo, conv_to_pool_streams_2, pointer</column>
 <column name="conv_to_pool_streams_2_full_n">in, 1, ap_fifo, conv_to_pool_streams_2, pointer</column>
 <column name="conv_to_pool_streams_2_write">out, 1, ap_fifo, conv_to_pool_streams_2, pointer</column>
 </table>
