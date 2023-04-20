@@ -1,0 +1,40 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="cnn" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="cnn"/>
+            </pragma>
+        </directive>
+        <directive functionName="dataflow_section" label="" functionLabel="">
+            <pragma name="DATAFLOW"/>
+        </directive>
+        <directive functionName="convolutional_layer" label="" functionLabel="">
+            <pragma name="DATAFLOW"/>
+        </directive>
+        <directive functionName="max_pooling_layer" label="" functionLabel="">
+            <pragma name="DATAFLOW"/>
+        </directive>
+        <directive functionName="flattening_layer" label="" functionLabel="">
+            <pragma name="DATAFLOW"/>
+        </directive>
+        <directive functionName="dense_layer" label="" functionLabel="">
+            <pragma name="DATAFLOW"/>
+        </directive>
+        <directive functionName="convolution" label="win_for_cols" functionLabel="">
+            <pragma name="PIPELINE">
+                <option name="II" value="5"/>
+            </pragma>
+        </directive>
+        <directive functionName="dense" label="dense_for_flat" functionLabel="">
+            <pragma name="PIPELINE">
+                <option name="II" value="10"/>
+            </pragma>
+        </directive>
+        <directive functionName="max_pooling" label="pool_for_cols" functionLabel="">
+            <pragma name="PIPELINE">
+                <option name="II" value="4"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+
