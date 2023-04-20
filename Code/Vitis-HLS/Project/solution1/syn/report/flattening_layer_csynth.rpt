@@ -1,0 +1,234 @@
+
+
+================================================================
+== Vitis HLS Report for 'flattening_layer'
+================================================================
+* Date:           Mon Mar 27 10:49:01 2023
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        Project
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: artix7
+* Target device:  xc7a200t-fbg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  5.125 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |      198|      198|  1.980 us|  1.980 us|  199|  199|  dataflow|
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        +------------------+---------------+---------+---------+----------+----------+-----+-----+---------+
+        |                  |               |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+        |     Instance     |     Module    |   min   |   max   |    min   |    max   | min | max |   Type  |
+        +------------------+---------------+---------+---------+----------+----------+-----+-----+---------+
+        |flattening_U0     |flattening     |      198|      198|  1.980 us|  1.980 us|  198|  198|       no|
+        |flattening_15_U0  |flattening_15  |      198|      198|  1.980 us|  1.980 us|  198|  198|       no|
+        |flattening_16_U0  |flattening_16  |      198|      198|  1.980 us|  1.980 us|  198|  198|       no|
+        |flattening_17_U0  |flattening_17  |      198|      198|  1.980 us|  1.980 us|  198|  198|       no|
+        |flattening_18_U0  |flattening_18  |      198|      198|  1.980 us|  1.980 us|  198|  198|       no|
+        |flattening_19_U0  |flattening_19  |      198|      198|  1.980 us|  1.980 us|  198|  198|       no|
+        |flattening_20_U0  |flattening_20  |      198|      198|  1.980 us|  1.980 us|  198|  198|       no|
+        |flattening_21_U0  |flattening_21  |      198|      198|  1.980 us|  1.980 us|  198|  198|       no|
+        +------------------+---------------+---------+---------+----------+----------+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+--------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |   LUT  | URAM|
++-----------------+---------+-----+--------+--------+-----+
+|DSP              |        -|    -|       -|       -|    -|
+|Expression       |        -|    -|       0|      40|    -|
+|FIFO             |        -|    -|       -|       -|    -|
+|Instance         |        -|    -|     344|     704|    -|
+|Memory           |        -|    -|       -|       -|    -|
+|Multiplexer      |        -|    -|       -|      81|    -|
+|Register         |        -|    -|       9|       -|    -|
++-----------------+---------+-----+--------+--------+-----+
+|Total            |        0|    0|     353|     825|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Available        |      730|  740|  269200|  134600|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Utilization (%)  |        0|    0|      ~0|      ~0|    0|
++-----------------+---------+-----+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +------------------+---------------+---------+----+----+----+-----+
+    |     Instance     |     Module    | BRAM_18K| DSP| FF | LUT| URAM|
+    +------------------+---------------+---------+----+----+----+-----+
+    |flattening_U0     |flattening     |        0|   0|  43|  88|    0|
+    |flattening_15_U0  |flattening_15  |        0|   0|  43|  88|    0|
+    |flattening_16_U0  |flattening_16  |        0|   0|  43|  88|    0|
+    |flattening_17_U0  |flattening_17  |        0|   0|  43|  88|    0|
+    |flattening_18_U0  |flattening_18  |        0|   0|  43|  88|    0|
+    |flattening_19_U0  |flattening_19  |        0|   0|  43|  88|    0|
+    |flattening_20_U0  |flattening_20  |        0|   0|  43|  88|    0|
+    |flattening_21_U0  |flattening_21  |        0|   0|  43|  88|    0|
+    +------------------+---------------+---------+----+----+----+-----+
+    |Total             |               |        0|   0| 344| 704|    0|
+    +------------------+---------------+---------+----+----+----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------------------------+----------+----+---+----+------------+------------+
+    |           Variable Name           | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------------------+----------+----+---+----+------------+------------+
+    |ap_idle                            |       and|   0|  0|   2|           1|           1|
+    |ap_sync_continue                   |       and|   0|  0|   2|           1|           1|
+    |ap_sync_done                       |       and|   0|  0|   2|           1|           1|
+    |ap_sync_ready                      |       and|   0|  0|   2|           1|           1|
+    |flattening_15_U0_ap_start          |       and|   0|  0|   2|           1|           1|
+    |flattening_16_U0_ap_start          |       and|   0|  0|   2|           1|           1|
+    |flattening_17_U0_ap_start          |       and|   0|  0|   2|           1|           1|
+    |flattening_18_U0_ap_start          |       and|   0|  0|   2|           1|           1|
+    |flattening_19_U0_ap_start          |       and|   0|  0|   2|           1|           1|
+    |flattening_20_U0_ap_start          |       and|   0|  0|   2|           1|           1|
+    |flattening_21_U0_ap_start          |       and|   0|  0|   2|           1|           1|
+    |flattening_U0_ap_start             |       and|   0|  0|   2|           1|           1|
+    |ap_sync_flattening_15_U0_ap_ready  |        or|   0|  0|   2|           1|           1|
+    |ap_sync_flattening_16_U0_ap_ready  |        or|   0|  0|   2|           1|           1|
+    |ap_sync_flattening_17_U0_ap_ready  |        or|   0|  0|   2|           1|           1|
+    |ap_sync_flattening_18_U0_ap_ready  |        or|   0|  0|   2|           1|           1|
+    |ap_sync_flattening_19_U0_ap_ready  |        or|   0|  0|   2|           1|           1|
+    |ap_sync_flattening_20_U0_ap_ready  |        or|   0|  0|   2|           1|           1|
+    |ap_sync_flattening_21_U0_ap_ready  |        or|   0|  0|   2|           1|           1|
+    |ap_sync_flattening_U0_ap_ready     |        or|   0|  0|   2|           1|           1|
+    +-----------------------------------+----------+----+---+----+------------+------------+
+    |Total                              |          |   0|  0|  40|          20|          20|
+    +-----------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +---------------------------------------+----+-----------+-----+-----------+
+    |                  Name                 | LUT| Input Size| Bits| Total Bits|
+    +---------------------------------------+----+-----------+-----+-----------+
+    |ap_sync_reg_flattening_15_U0_ap_ready  |   9|          2|    1|          2|
+    |ap_sync_reg_flattening_16_U0_ap_ready  |   9|          2|    1|          2|
+    |ap_sync_reg_flattening_17_U0_ap_ready  |   9|          2|    1|          2|
+    |ap_sync_reg_flattening_18_U0_ap_ready  |   9|          2|    1|          2|
+    |ap_sync_reg_flattening_19_U0_ap_ready  |   9|          2|    1|          2|
+    |ap_sync_reg_flattening_20_U0_ap_ready  |   9|          2|    1|          2|
+    |ap_sync_reg_flattening_21_U0_ap_ready  |   9|          2|    1|          2|
+    |ap_sync_reg_flattening_U0_ap_ready     |   9|          2|    1|          2|
+    |real_start                             |   9|          2|    1|          2|
+    +---------------------------------------+----+-----------+-----+-----------+
+    |Total                                  |  81|         18|    9|         18|
+    +---------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +---------------------------------------+---+----+-----+-----------+
+    |                  Name                 | FF| LUT| Bits| Const Bits|
+    +---------------------------------------+---+----+-----+-----------+
+    |ap_sync_reg_flattening_15_U0_ap_ready  |  1|   0|    1|          0|
+    |ap_sync_reg_flattening_16_U0_ap_ready  |  1|   0|    1|          0|
+    |ap_sync_reg_flattening_17_U0_ap_ready  |  1|   0|    1|          0|
+    |ap_sync_reg_flattening_18_U0_ap_ready  |  1|   0|    1|          0|
+    |ap_sync_reg_flattening_19_U0_ap_ready  |  1|   0|    1|          0|
+    |ap_sync_reg_flattening_20_U0_ap_ready  |  1|   0|    1|          0|
+    |ap_sync_reg_flattening_21_U0_ap_ready  |  1|   0|    1|          0|
+    |ap_sync_reg_flattening_U0_ap_ready     |  1|   0|    1|          0|
+    |start_once_reg                         |  1|   0|    1|          0|
+    +---------------------------------------+---+----+-----+-----------+
+    |Total                                  |  9|   0|    9|          0|
+    +---------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------------------+-----+-----+------------+-------------------------+--------------+
+|            RTL Ports           | Dir | Bits|  Protocol  |      Source Object      |    C Type    |
++--------------------------------+-----+-----+------------+-------------------------+--------------+
+|ap_start                        |   in|    1|  ap_ctrl_hs|         flattening_layer|  return value|
+|start_full_n                    |   in|    1|  ap_ctrl_hs|         flattening_layer|  return value|
+|start_out                       |  out|    1|  ap_ctrl_hs|         flattening_layer|  return value|
+|start_write                     |  out|    1|  ap_ctrl_hs|         flattening_layer|  return value|
+|ap_clk                          |   in|    1|  ap_ctrl_hs|         flattening_layer|  return value|
+|ap_rst                          |   in|    1|  ap_ctrl_hs|         flattening_layer|  return value|
+|ap_done                         |  out|    1|  ap_ctrl_hs|         flattening_layer|  return value|
+|ap_ready                        |  out|    1|  ap_ctrl_hs|         flattening_layer|  return value|
+|ap_idle                         |  out|    1|  ap_ctrl_hs|         flattening_layer|  return value|
+|ap_continue                     |   in|    1|  ap_ctrl_hs|         flattening_layer|  return value|
+|pool_to_flat_streams_0_dout     |   in|   32|     ap_fifo|   pool_to_flat_streams_0|       pointer|
+|pool_to_flat_streams_0_empty_n  |   in|    1|     ap_fifo|   pool_to_flat_streams_0|       pointer|
+|pool_to_flat_streams_0_read     |  out|    1|     ap_fifo|   pool_to_flat_streams_0|       pointer|
+|pool_to_flat_streams_1_dout     |   in|   32|     ap_fifo|   pool_to_flat_streams_1|       pointer|
+|pool_to_flat_streams_1_empty_n  |   in|    1|     ap_fifo|   pool_to_flat_streams_1|       pointer|
+|pool_to_flat_streams_1_read     |  out|    1|     ap_fifo|   pool_to_flat_streams_1|       pointer|
+|pool_to_flat_streams_2_dout     |   in|   32|     ap_fifo|   pool_to_flat_streams_2|       pointer|
+|pool_to_flat_streams_2_empty_n  |   in|    1|     ap_fifo|   pool_to_flat_streams_2|       pointer|
+|pool_to_flat_streams_2_read     |  out|    1|     ap_fifo|   pool_to_flat_streams_2|       pointer|
+|pool_to_flat_streams_3_dout     |   in|   32|     ap_fifo|   pool_to_flat_streams_3|       pointer|
+|pool_to_flat_streams_3_empty_n  |   in|    1|     ap_fifo|   pool_to_flat_streams_3|       pointer|
+|pool_to_flat_streams_3_read     |  out|    1|     ap_fifo|   pool_to_flat_streams_3|       pointer|
+|pool_to_flat_streams_4_dout     |   in|   32|     ap_fifo|   pool_to_flat_streams_4|       pointer|
+|pool_to_flat_streams_4_empty_n  |   in|    1|     ap_fifo|   pool_to_flat_streams_4|       pointer|
+|pool_to_flat_streams_4_read     |  out|    1|     ap_fifo|   pool_to_flat_streams_4|       pointer|
+|pool_to_flat_streams_5_dout     |   in|   32|     ap_fifo|   pool_to_flat_streams_5|       pointer|
+|pool_to_flat_streams_5_empty_n  |   in|    1|     ap_fifo|   pool_to_flat_streams_5|       pointer|
+|pool_to_flat_streams_5_read     |  out|    1|     ap_fifo|   pool_to_flat_streams_5|       pointer|
+|pool_to_flat_streams_6_dout     |   in|   32|     ap_fifo|   pool_to_flat_streams_6|       pointer|
+|pool_to_flat_streams_6_empty_n  |   in|    1|     ap_fifo|   pool_to_flat_streams_6|       pointer|
+|pool_to_flat_streams_6_read     |  out|    1|     ap_fifo|   pool_to_flat_streams_6|       pointer|
+|pool_to_flat_streams_7_dout     |   in|   32|     ap_fifo|   pool_to_flat_streams_7|       pointer|
+|pool_to_flat_streams_7_empty_n  |   in|    1|     ap_fifo|   pool_to_flat_streams_7|       pointer|
+|pool_to_flat_streams_7_read     |  out|    1|     ap_fifo|   pool_to_flat_streams_7|       pointer|
+|flat_to_dense_streams_0_din     |  out|   32|     ap_fifo|  flat_to_dense_streams_0|       pointer|
+|flat_to_dense_streams_0_full_n  |   in|    1|     ap_fifo|  flat_to_dense_streams_0|       pointer|
+|flat_to_dense_streams_0_write   |  out|    1|     ap_fifo|  flat_to_dense_streams_0|       pointer|
+|flat_to_dense_streams_1_din     |  out|   32|     ap_fifo|  flat_to_dense_streams_1|       pointer|
+|flat_to_dense_streams_1_full_n  |   in|    1|     ap_fifo|  flat_to_dense_streams_1|       pointer|
+|flat_to_dense_streams_1_write   |  out|    1|     ap_fifo|  flat_to_dense_streams_1|       pointer|
+|flat_to_dense_streams_2_din     |  out|   32|     ap_fifo|  flat_to_dense_streams_2|       pointer|
+|flat_to_dense_streams_2_full_n  |   in|    1|     ap_fifo|  flat_to_dense_streams_2|       pointer|
+|flat_to_dense_streams_2_write   |  out|    1|     ap_fifo|  flat_to_dense_streams_2|       pointer|
+|flat_to_dense_streams_3_din     |  out|   32|     ap_fifo|  flat_to_dense_streams_3|       pointer|
+|flat_to_dense_streams_3_full_n  |   in|    1|     ap_fifo|  flat_to_dense_streams_3|       pointer|
+|flat_to_dense_streams_3_write   |  out|    1|     ap_fifo|  flat_to_dense_streams_3|       pointer|
+|flat_to_dense_streams_4_din     |  out|   32|     ap_fifo|  flat_to_dense_streams_4|       pointer|
+|flat_to_dense_streams_4_full_n  |   in|    1|     ap_fifo|  flat_to_dense_streams_4|       pointer|
+|flat_to_dense_streams_4_write   |  out|    1|     ap_fifo|  flat_to_dense_streams_4|       pointer|
+|flat_to_dense_streams_5_din     |  out|   32|     ap_fifo|  flat_to_dense_streams_5|       pointer|
+|flat_to_dense_streams_5_full_n  |   in|    1|     ap_fifo|  flat_to_dense_streams_5|       pointer|
+|flat_to_dense_streams_5_write   |  out|    1|     ap_fifo|  flat_to_dense_streams_5|       pointer|
+|flat_to_dense_streams_6_din     |  out|   32|     ap_fifo|  flat_to_dense_streams_6|       pointer|
+|flat_to_dense_streams_6_full_n  |   in|    1|     ap_fifo|  flat_to_dense_streams_6|       pointer|
+|flat_to_dense_streams_6_write   |  out|    1|     ap_fifo|  flat_to_dense_streams_6|       pointer|
+|flat_to_dense_streams_7_din     |  out|   32|     ap_fifo|  flat_to_dense_streams_7|       pointer|
+|flat_to_dense_streams_7_full_n  |   in|    1|     ap_fifo|  flat_to_dense_streams_7|       pointer|
+|flat_to_dense_streams_7_write   |  out|    1|     ap_fifo|  flat_to_dense_streams_7|       pointer|
++--------------------------------+-----+-----+------------+-------------------------+--------------+
+

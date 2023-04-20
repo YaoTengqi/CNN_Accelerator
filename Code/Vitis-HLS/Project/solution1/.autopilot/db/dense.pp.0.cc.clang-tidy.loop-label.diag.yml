@@ -1,0 +1,22 @@
+---
+MainSourceFile:  /home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS/Project/solution1/.autopilot/db/dense.pp.0.cc
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_53_1:  '
+    FileOffset:      53
+    FilePath:        dense.cc
+    Replacements:    
+      - FilePath:        /home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS/Project/solution1/.autopilot/db/dense.pp.0.cc
+        Offset:          528577
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_53_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_60_2:  '
+    FileOffset:      60
+    FilePath:        dense.cc
+    Replacements:    
+      - FilePath:        /home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS/Project/solution1/.autopilot/db/dense.pp.0.cc
+        Offset:          528753
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_60_2: '
+...

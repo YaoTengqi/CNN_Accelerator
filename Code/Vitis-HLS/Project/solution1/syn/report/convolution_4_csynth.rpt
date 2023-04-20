@@ -1,0 +1,167 @@
+
+
+================================================================
+== Vitis HLS Report for 'convolution_4'
+================================================================
+* Date:           Mon Mar 27 10:48:49 2023
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        Project
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: artix7
+* Target device:  xc7a200t-fbg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.241 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
+    |   min   |   max   |    min    |    max    |  min |  max |   Type  |
+    +---------+---------+-----------+-----------+------+------+---------+
+    |     4003|     4003|  40.030 us|  40.030 us|  4003|  4003|       no|
+    +---------+---------+-----------+-----------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        +---------------------------------------------------------------------------+----------------------------------------------------------------+---------+---------+-----------+-----------+------+------+---------+
+        |                                                                           |                                                                |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
+        |                                  Instance                                 |                             Module                             |   min   |   max   |    min    |    max    |  min |  max |   Type  |
+        +---------------------------------------------------------------------------+----------------------------------------------------------------+---------+---------+-----------+-----------+------+------+---------+
+        |grp_convolution_4_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138  |convolution_4_Pipeline_conv_for_rows_win_for_rows_win_for_cols  |     3997|     3997|  39.970 us|  39.970 us|  3997|  3997|       no|
+        +---------------------------------------------------------------------------+----------------------------------------------------------------+---------+---------+-----------+-----------+------+------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+--------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |   LUT  | URAM|
++-----------------+---------+-----+--------+--------+-----+
+|DSP              |        -|    -|       -|       -|    -|
+|Expression       |        -|    -|       0|       2|    -|
+|FIFO             |        -|    -|       -|       -|    -|
+|Instance         |        -|   10|    2572|    2243|    -|
+|Memory           |        -|    -|       -|       -|    -|
+|Multiplexer      |        -|    -|       -|      97|    -|
+|Register         |        -|    -|     297|       -|    -|
++-----------------+---------+-----+--------+--------+-----+
+|Total            |        0|   10|    2869|    2342|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Available        |      730|  740|  269200|  134600|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Utilization (%)  |        0|    1|       1|       1|    0|
++-----------------+---------+-----+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +---------------------------------------------------------------------------+----------------------------------------------------------------+---------+----+------+------+-----+
+    |                                  Instance                                 |                             Module                             | BRAM_18K| DSP|  FF  |  LUT | URAM|
+    +---------------------------------------------------------------------------+----------------------------------------------------------------+---------+----+------+------+-----+
+    |grp_convolution_4_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138  |convolution_4_Pipeline_conv_for_rows_win_for_rows_win_for_cols  |        0|  10|  2572|  2243|    0|
+    +---------------------------------------------------------------------------+----------------------------------------------------------------+---------+----+------+------+-----+
+    |Total                                                                      |                                                                |        0|  10|  2572|  2243|    0|
+    +---------------------------------------------------------------------------+----------------------------------------------------------------+---------+----+------+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------+----------+----+---+----+------------+------------+
+    |  Variable Name  | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------+----------+----+---+----+------------+------------+
+    |ap_block_state1  |        or|   0|  0|   2|           1|           1|
+    +-----------------+----------+----+---+----+------------+------------+
+    |Total            |          |   0|  0|   2|           1|           1|
+    +-----------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +------------------------------+----+-----------+-----+-----------+
+    |             Name             | LUT| Input Size| Bits| Total Bits|
+    +------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                     |  33|          8|    1|          8|
+    |ap_done                       |   9|          2|    1|          2|
+    |conv_to_pool_streams_4_write  |   9|          2|    1|          2|
+    |weight_buf_address0           |  25|          6|    4|         24|
+    |weight_buf_address1           |  21|          5|    4|         20|
+    +------------------------------+----+-----------+-----+-----------+
+    |Total                         |  97|         23|   11|         56|
+    +------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------------------------------------------------------------+----+----+-----+-----------+
+    |                                          Name                                          | FF | LUT| Bits| Const Bits|
+    +----------------------------------------------------------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                                                                               |   7|   0|    7|          0|
+    |ap_done_reg                                                                             |   1|   0|    1|          0|
+    |grp_convolution_4_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138_ap_start_reg  |   1|   0|    1|          0|
+    |weight_buf_load_25_reg_188                                                              |  32|   0|   32|          0|
+    |weight_buf_load_26_reg_193                                                              |  32|   0|   32|          0|
+    |weight_buf_load_27_reg_208                                                              |  32|   0|   32|          0|
+    |weight_buf_load_28_reg_213                                                              |  32|   0|   32|          0|
+    |weight_buf_load_29_reg_233                                                              |  32|   0|   32|          0|
+    |weight_buf_load_30_reg_238                                                              |  32|   0|   32|          0|
+    |weight_buf_load_31_reg_243                                                              |  32|   0|   32|          0|
+    |weight_buf_load_32_reg_248                                                              |  32|   0|   32|          0|
+    |weight_buf_load_reg_173                                                                 |  32|   0|   32|          0|
+    +----------------------------------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                                                   | 297|   0|  297|          0|
+    +----------------------------------------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------------------------+-----+-----+------------+------------------------+--------------+
+|               RTL Ports               | Dir | Bits|  Protocol  |      Source Object     |    C Type    |
++---------------------------------------+-----+-----+------------+------------------------+--------------+
+|ap_clk                                 |   in|    1|  ap_ctrl_hs|           convolution.4|  return value|
+|ap_rst                                 |   in|    1|  ap_ctrl_hs|           convolution.4|  return value|
+|ap_start                               |   in|    1|  ap_ctrl_hs|           convolution.4|  return value|
+|ap_done                                |  out|    1|  ap_ctrl_hs|           convolution.4|  return value|
+|ap_continue                            |   in|    1|  ap_ctrl_hs|           convolution.4|  return value|
+|ap_idle                                |  out|    1|  ap_ctrl_hs|           convolution.4|  return value|
+|ap_ready                               |  out|    1|  ap_ctrl_hs|           convolution.4|  return value|
+|pad_img_address0                       |  out|   10|   ap_memory|                 pad_img|         array|
+|pad_img_ce0                            |  out|    1|   ap_memory|                 pad_img|         array|
+|pad_img_q0                             |   in|   32|   ap_memory|                 pad_img|         array|
+|pad_img_address1                       |  out|   10|   ap_memory|                 pad_img|         array|
+|pad_img_ce1                            |  out|    1|   ap_memory|                 pad_img|         array|
+|pad_img_q1                             |   in|   32|   ap_memory|                 pad_img|         array|
+|weight_buf_address0                    |  out|    4|   ap_memory|              weight_buf|         array|
+|weight_buf_ce0                         |  out|    1|   ap_memory|              weight_buf|         array|
+|weight_buf_q0                          |   in|   32|   ap_memory|              weight_buf|         array|
+|weight_buf_address1                    |  out|    4|   ap_memory|              weight_buf|         array|
+|weight_buf_ce1                         |  out|    1|   ap_memory|              weight_buf|         array|
+|weight_buf_q1                          |   in|   32|   ap_memory|              weight_buf|         array|
+|biases_buf                             |   in|   32|     ap_none|              biases_buf|        scalar|
+|conv_to_pool_streams_4_din             |  out|   32|     ap_fifo|  conv_to_pool_streams_4|       pointer|
+|conv_to_pool_streams_4_num_data_valid  |   in|   11|     ap_fifo|  conv_to_pool_streams_4|       pointer|
+|conv_to_pool_streams_4_fifo_cap        |   in|   11|     ap_fifo|  conv_to_pool_streams_4|       pointer|
+|conv_to_pool_streams_4_full_n          |   in|    1|     ap_fifo|  conv_to_pool_streams_4|       pointer|
+|conv_to_pool_streams_4_write           |  out|    1|     ap_fifo|  conv_to_pool_streams_4|       pointer|
++---------------------------------------+-----+-----+------------+------------------------+--------------+
+

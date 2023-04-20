@@ -1,0 +1,180 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS/Project/solution1/directives.tcl:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="dataflow_section" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS/Project/solution1/csynth.tcl:21:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="cnn" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=cnn" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS/Project/solution1/directives.tcl:6:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="cnn" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=cnn" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="conv.cc:18:7" msg_body="unused parameter 'filter'">
+        <args ClangWarningOption="unused-parameter"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS/Project/solution1/directives.tcl:12:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="convolution" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=5" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS/Project/solution1/directives.tcl:8:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="convolutional_layer" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS/Project/solution1/directives.tcl:13:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="dense" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=10" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS/Project/solution1/directives.tcl:11:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="dense_layer" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS/Project/solution1/directives.tcl:10:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="flattening_layer" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS/Project/solution1/directives.tcl:14:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="max_pooling" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=4" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ytq/codeField/undergraduate/HLS-CNN/Code/Vitis-HLS/Project/solution1/directives.tcl:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="max_pooling_layer" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="dense.cc:53:22" msg_body="Loop 'VITIS_LOOP_53_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_53_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="pool.cc:23:7" msg_body="Loop 'pool_for_pr' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="pool_for_pr"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="pool.cc:25:9" msg_body="Loop 'pool_for_pc' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="pool_for_pc"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="conv.cc:38:11" msg_body="Loop 'krn_for_rows' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="krn_for_rows"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="conv.cc:41:13" msg_body="Loop 'krn_for_cols' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="krn_for_cols"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="dense.cc:44:0" msg_body="Unrolling loop 'VITIS_LOOP_53_1' (dense.cc:53:22) in function 'dense' completely with a factor of 10">
+        <args Factor="10" LoopLoc="dense.cc:53:22" LoopName="VITIS_LOOP_53_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="pool.cc:11:0" msg_body="Unrolling loop 'pool_for_pr' (pool.cc:23:7) in function 'max_pooling' completely with a factor of 2">
+        <args Factor="2" LoopLoc="pool.cc:23:7" LoopName="pool_for_pr"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="pool.cc:11:0" msg_body="Unrolling loop 'pool_for_pc' (pool.cc:25:9) in function 'max_pooling' completely with a factor of 2">
+        <args Factor="2" LoopLoc="pool.cc:25:9" LoopName="pool_for_pc"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="conv.cc:21:0" msg_body="Unrolling loop 'krn_for_rows' (conv.cc:38:11) in function 'convolution' completely with a factor of 3">
+        <args Factor="3" LoopLoc="conv.cc:38:11" LoopName="krn_for_rows"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="conv.cc:21:0" msg_body="Unrolling loop 'krn_for_cols' (conv.cc:41:13) in function 'convolution' completely with a factor of 3">
+        <args Factor="3" LoopLoc="conv.cc:41:13" LoopName="krn_for_cols"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="conv.cc:21:0" msg_body="Inlining function 'relu(float)' into 'convolution(float (*) [30], float (*) [3], float, int, hls::stream&lt;float, 0&gt;&amp;)'">
+        <args Callee="relu(float)" Caller="convolution(float (*) [30], float (*) [3], float, int, hls::stream&lt;float, 0&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="cnn.cc:103:0" msg_body="Inlining function 'normalization_and_padding(float (*) [28], float (*) [30])' into 'cnn(float (*) [28], float*, float (*) [3][3], float*)'">
+        <args Callee="normalization_and_padding(float (*) [28], float (*) [30])" Caller="cnn(float (*) [28], float*, float (*) [3][3], float*)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="cnn.cc:51:3" msg_body="Applying array_partition to 'conv_to_pool_streams': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="conv_to_pool_streams"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="cnn.cc:74:3" msg_body="Applying array_partition to 'pool_to_flat_streams': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="pool_to_flat_streams"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="cnn.cc:85:53" msg_body="Applying array_partition to 'flat_to_dense_streams': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="flat_to_dense_streams"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="cnn.cc:89:26" msg_body="Applying array_partition to 'dense_to_softmax_streams': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="dense_to_softmax_streams"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="cnn.cc:51:3" msg_body="Aggregating fifo (hls::stream) variable 'conv_to_pool_streams_0' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="fifo (hls::stream)" Name="conv_to_pool_streams_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="cnn.cc:51:3" msg_body="Aggregating fifo (hls::stream) variable 'conv_to_pool_streams_1' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="fifo (hls::stream)" Name="conv_to_pool_streams_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="cnn.cc:51:3" msg_body="Aggregating fifo (hls::stream) variable 'conv_to_pool_streams_2' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="fifo (hls::stream)" Name="conv_to_pool_streams_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="cnn.cc:51:3" msg_body="Aggregating fifo (hls::stream) variable 'conv_to_pool_streams_3' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="fifo (hls::stream)" Name="conv_to_pool_streams_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="cnn.cc:51:3" msg_body="Aggregating fifo (hls::stream) variable 'conv_to_pool_streams_4' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="fifo (hls::stream)" Name="conv_to_pool_streams_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="cnn.cc:51:3" msg_body="Aggregating fifo (hls::stream) variable 'conv_to_pool_streams_5' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="fifo (hls::stream)" Name="conv_to_pool_streams_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="cnn.cc:51:3" msg_body="Aggregating fifo (hls::stream) variable 'conv_to_pool_streams_6' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="fifo (hls::stream)" Name="conv_to_pool_streams_6"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="cnn.cc:51:3" msg_body="Aggregating fifo (hls::stream) variable 'conv_to_pool_streams_7' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="fifo (hls::stream)" Name="conv_to_pool_streams_7"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="cnn.cc:74:3" msg_body="Aggregating fifo (hls::stream) variable 'pool_to_flat_streams_0' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="fifo (hls::stream)" Name="pool_to_flat_streams_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="cnn.cc:74:3" msg_body="Aggregating fifo (hls::stream) variable 'pool_to_flat_streams_1' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="fifo (hls::stream)" Name="pool_to_flat_streams_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="cnn.cc:74:3" msg_body="Aggregating fifo (hls::stream) variable 'pool_to_flat_streams_2' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="fifo (hls::stream)" Name="pool_to_flat_streams_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="cnn.cc:74:3" msg_body="Aggregating fifo (hls::stream) variable 'pool_to_flat_streams_3' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="fifo (hls::stream)" Name="pool_to_flat_streams_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="cnn.cc:74:3" msg_body="Aggregating fifo (hls::stream) variable 'pool_to_flat_streams_4' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="fifo (hls::stream)" Name="pool_to_flat_streams_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="cnn.cc:74:3" msg_body="Aggregating fifo (hls::stream) variable 'pool_to_flat_streams_5' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="fifo (hls::stream)" Name="pool_to_flat_streams_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="cnn.cc:74:3" msg_body="Aggregating fifo (hls::stream) variable 'pool_to_flat_streams_6' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="fifo (hls::stream)" Name="pool_to_flat_streams_6"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="cnn.cc:74:3" msg_body="Aggregating fifo (hls::stream) variable 'pool_to_flat_streams_7' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="fifo (hls::stream)" Name="pool_to_flat_streams_7"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="cnn.cc:85:53" msg_body="Aggregating fifo (hls::stream) variable 'flat_to_dense_streams_0' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="fifo (hls::stream)" Name="flat_to_dense_streams_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="cnn.cc:85:53" msg_body="Aggregating fifo (hls::stream) variable 'flat_to_dense_streams_1' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="fifo (hls::stream)" Name="flat_to_dense_streams_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="cnn.cc:85:53" msg_body="Aggregating fifo (hls::stream) variable 'flat_to_dense_streams_2' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="fifo (hls::stream)" Name="flat_to_dense_streams_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="cnn.cc:85:53" msg_body="Aggregating fifo (hls::stream) variable 'flat_to_dense_streams_3' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="fifo (hls::stream)" Name="flat_to_dense_streams_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="cnn.cc:85:53" msg_body="Aggregating fifo (hls::stream) variable 'flat_to_dense_streams_4' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="fifo (hls::stream)" Name="flat_to_dense_streams_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="cnn.cc:85:53" msg_body="Aggregating fifo (hls::stream) variable 'flat_to_dense_streams_5' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="fifo (hls::stream)" Name="flat_to_dense_streams_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="cnn.cc:85:53" msg_body="Aggregating fifo (hls::stream) variable 'flat_to_dense_streams_6' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="fifo (hls::stream)" Name="flat_to_dense_streams_6"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="cnn.cc:85:53" msg_body="Aggregating fifo (hls::stream) variable 'flat_to_dense_streams_7' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="fifo (hls::stream)" Name="flat_to_dense_streams_7"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="cnn.cc:89:26" msg_body="Aggregating fifo (hls::stream) variable 'dense_to_softmax_streams_0' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="fifo (hls::stream)" Name="dense_to_softmax_streams_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="cnn.cc:89:26" msg_body="Aggregating fifo (hls::stream) variable 'dense_to_softmax_streams_1' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="fifo (hls::stream)" Name="dense_to_softmax_streams_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="cnn.cc:89:26" msg_body="Aggregating fifo (hls::stream) variable 'dense_to_softmax_streams_2' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="fifo (hls::stream)" Name="dense_to_softmax_streams_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="cnn.cc:89:26" msg_body="Aggregating fifo (hls::stream) variable 'dense_to_softmax_streams_3' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="fifo (hls::stream)" Name="dense_to_softmax_streams_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="cnn.cc:89:26" msg_body="Aggregating fifo (hls::stream) variable 'dense_to_softmax_streams_4' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="fifo (hls::stream)" Name="dense_to_softmax_streams_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="cnn.cc:89:26" msg_body="Aggregating fifo (hls::stream) variable 'dense_to_softmax_streams_5' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="fifo (hls::stream)" Name="dense_to_softmax_streams_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="cnn.cc:89:26" msg_body="Aggregating fifo (hls::stream) variable 'dense_to_softmax_streams_6' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="fifo (hls::stream)" Name="dense_to_softmax_streams_6"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="cnn.cc:89:26" msg_body="Aggregating fifo (hls::stream) variable 'dense_to_softmax_streams_7' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="fifo (hls::stream)" Name="dense_to_softmax_streams_7"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

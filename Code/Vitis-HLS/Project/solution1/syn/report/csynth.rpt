@@ -1,0 +1,1188 @@
+
+
+================================================================
+== Synthesis Summary Report of 'cnn'
+================================================================
++ General Information: 
+    * Date:           Mon Mar 27 10:49:14 2023
+    * Version:        2022.2 (Build 3670227 on Oct 13 2022)
+    * Project:        Project
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: artix7
+    * Target device:  xc7a200t-fbg484-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +----------------------------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+-----------+-----------+-------------+-------------+-----+
+    |                                Modules                               | Issue|      | Latency |  Latency  | Iteration|         | Trip |          |           |           |             |             |     |
+    |                                & Loops                               | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|   BRAM    |    DSP    |      FF     |     LUT     | URAM|
+    +----------------------------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+-----------+-----------+-------------+-------------+-----+
+    |+ cnn                                                                 |     -|  0.06|     5914|  5.914e+04|         -|     5915|     -|        no|  384 (52%)|  131 (17%)|  51805 (19%)|  41303 (30%)|    -|
+    | + cnn_Pipeline_pad_for_rows_pad_for_cols                             |     -|  0.06|      920|  9.200e+03|         -|      920|     -|        no|          -|          -|   1018 (~0%)|    419 (~0%)|    -|
+    |  o pad_for_rows_pad_for_cols                                         |     -|  7.30|      918|  9.180e+03|        20|        1|   900|       yes|          -|          -|            -|            -|    -|
+    | + cnn_Pipeline_3                                                     |     -|  0.50|       11|    110.000|         -|       11|     -|        no|          -|          -|     23 (~0%)|    151 (~0%)|    -|
+    |  o Loop 1                                                            |     -|  7.30|        9|     90.000|         2|        1|     9|       yes|          -|          -|            -|            -|    -|
+    | + cnn_Pipeline_clone_for_rows_clone_for_cols                         |     -|  0.45|      903|  9.030e+03|         -|      903|     -|        no|          -|          -|     45 (~0%)|    167 (~0%)|    -|
+    |  o clone_for_rows_clone_for_cols                                     |     -|  7.30|      901|  9.010e+03|         3|        1|   900|       yes|          -|          -|            -|            -|    -|
+    | + cnn_Pipeline_4                                                     |     -|  1.48|       12|    120.000|         -|       12|     -|        no|          -|          -|     34 (~0%)|    165 (~0%)|    -|
+    |  o Loop 1                                                            |     -|  7.30|       10|    100.000|         3|        1|     9|       yes|          -|          -|            -|            -|    -|
+    | + cnn_Pipeline_5                                                     |     -|  1.48|       12|    120.000|         -|       12|     -|        no|          -|          -|     34 (~0%)|    165 (~0%)|    -|
+    |  o Loop 1                                                            |     -|  7.30|       10|    100.000|         3|        1|     9|       yes|          -|          -|            -|            -|    -|
+    | + cnn_Pipeline_6                                                     |     -|  0.07|       11|    110.000|         -|       11|     -|        no|          -|          -|     23 (~0%)|    180 (~0%)|    -|
+    |  o Loop 1                                                            |     -|  7.30|        9|     90.000|         2|        1|     9|       yes|          -|          -|            -|            -|    -|
+    | + cnn_Pipeline_7                                                     |     -|  1.48|       12|    120.000|         -|       12|     -|        no|          -|          -|     35 (~0%)|    167 (~0%)|    -|
+    |  o Loop 1                                                            |     -|  7.30|       10|    100.000|         3|        1|     9|       yes|          -|          -|            -|            -|    -|
+    | + cnn_Pipeline_8                                                     |     -|  1.48|       12|    120.000|         -|       12|     -|        no|          -|          -|     35 (~0%)|    167 (~0%)|    -|
+    |  o Loop 1                                                            |     -|  7.30|       10|    100.000|         3|        1|     9|       yes|          -|          -|            -|            -|    -|
+    | + cnn_Pipeline_9                                                     |     -|  1.48|       12|    120.000|         -|       12|     -|        no|          -|          -|     34 (~0%)|    158 (~0%)|    -|
+    |  o Loop 1                                                            |     -|  7.30|       10|    100.000|         3|        1|     9|       yes|          -|          -|            -|            -|    -|
+    | + cnn_Pipeline_10                                                    |     -|  1.21|       12|    120.000|         -|       12|     -|        no|          -|          -|     36 (~0%)|    182 (~0%)|    -|
+    |  o Loop 1                                                            |     -|  7.30|       10|    100.000|         3|        1|     9|       yes|          -|          -|            -|            -|    -|
+    | + dataflow_section*                                                  |     -|  0.06|     4003|  4.003e+04|         -|     4004|     -|  dataflow|  368 (50%)|  131 (17%)|  49497 (18%)|  38413 (28%)|    -|
+    |  + convolutional_layer*                                              |     -|  0.06|     4003|  4.003e+04|         -|     4004|     -|  dataflow|          -|   80 (10%)|   22961 (8%)|  18857 (14%)|    -|
+    |   + convolution                                                      |     -|  0.06|     4003|  4.003e+04|         -|     4003|     -|        no|          -|    10 (1%)|    2869 (1%)|    2342 (1%)|    -|
+    |    + convolution_Pipeline_conv_for_rows_win_for_rows_win_for_cols    |     -|  0.06|     3997|  3.997e+04|         -|     3997|     -|        no|          -|    10 (1%)|   2572 (~0%)|    2243 (1%)|    -|
+    |     o conv_for_rows_win_for_rows_win_for_cols                        |     -|  7.30|     3995|  3.995e+04|        81|        5|   784|       yes|          -|          -|            -|            -|    -|
+    |   + convolution_1                                                    |     -|  0.06|     4003|  4.003e+04|         -|     4003|     -|        no|          -|    10 (1%)|    2869 (1%)|    2342 (1%)|    -|
+    |    + convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols  |     -|  0.06|     3997|  3.997e+04|         -|     3997|     -|        no|          -|    10 (1%)|   2572 (~0%)|    2243 (1%)|    -|
+    |     o conv_for_rows_win_for_rows_win_for_cols                        |     -|  7.30|     3995|  3.995e+04|        81|        5|   784|       yes|          -|          -|            -|            -|    -|
+    |   + convolution_2                                                    |     -|  0.06|     4003|  4.003e+04|         -|     4003|     -|        no|          -|    10 (1%)|    2869 (1%)|    2342 (1%)|    -|
+    |    + convolution_2_Pipeline_conv_for_rows_win_for_rows_win_for_cols  |     -|  0.06|     3997|  3.997e+04|         -|     3997|     -|        no|          -|    10 (1%)|   2572 (~0%)|    2243 (1%)|    -|
+    |     o conv_for_rows_win_for_rows_win_for_cols                        |     -|  7.30|     3995|  3.995e+04|        81|        5|   784|       yes|          -|          -|            -|            -|    -|
+    |   + convolution_3                                                    |     -|  0.06|     4003|  4.003e+04|         -|     4003|     -|        no|          -|    10 (1%)|    2869 (1%)|    2342 (1%)|    -|
+    |    + convolution_3_Pipeline_conv_for_rows_win_for_rows_win_for_cols  |     -|  0.06|     3997|  3.997e+04|         -|     3997|     -|        no|          -|    10 (1%)|   2572 (~0%)|    2243 (1%)|    -|
+    |     o conv_for_rows_win_for_rows_win_for_cols                        |     -|  7.30|     3995|  3.995e+04|        81|        5|   784|       yes|          -|          -|            -|            -|    -|
+    |   + convolution_4                                                    |     -|  0.06|     4003|  4.003e+04|         -|     4003|     -|        no|          -|    10 (1%)|    2869 (1%)|    2342 (1%)|    -|
+    |    + convolution_4_Pipeline_conv_for_rows_win_for_rows_win_for_cols  |     -|  0.06|     3997|  3.997e+04|         -|     3997|     -|        no|          -|    10 (1%)|   2572 (~0%)|    2243 (1%)|    -|
+    |     o conv_for_rows_win_for_rows_win_for_cols                        |     -|  7.30|     3995|  3.995e+04|        81|        5|   784|       yes|          -|          -|            -|            -|    -|
+    |   + convolution_5                                                    |     -|  0.06|     4003|  4.003e+04|         -|     4003|     -|        no|          -|    10 (1%)|    2869 (1%)|    2342 (1%)|    -|
+    |    + convolution_5_Pipeline_conv_for_rows_win_for_rows_win_for_cols  |     -|  0.06|     3997|  3.997e+04|         -|     3997|     -|        no|          -|    10 (1%)|   2572 (~0%)|    2243 (1%)|    -|
+    |     o conv_for_rows_win_for_rows_win_for_cols                        |     -|  7.30|     3995|  3.995e+04|        81|        5|   784|       yes|          -|          -|            -|            -|    -|
+    |   + convolution_6                                                    |     -|  0.06|     4003|  4.003e+04|         -|     4003|     -|        no|          -|    10 (1%)|    2869 (1%)|    2342 (1%)|    -|
+    |    + convolution_6_Pipeline_conv_for_rows_win_for_rows_win_for_cols  |     -|  0.06|     3997|  3.997e+04|         -|     3997|     -|        no|          -|    10 (1%)|   2572 (~0%)|    2243 (1%)|    -|
+    |     o conv_for_rows_win_for_rows_win_for_cols                        |     -|  7.30|     3995|  3.995e+04|        81|        5|   784|       yes|          -|          -|            -|            -|    -|
+    |   + convolution_7                                                    |     -|  0.06|     4003|  4.003e+04|         -|     4003|     -|        no|          -|    10 (1%)|    2869 (1%)|    2342 (1%)|    -|
+    |    + convolution_7_Pipeline_conv_for_rows_win_for_rows_win_for_cols  |     -|  0.06|     3997|  3.997e+04|         -|     3997|     -|        no|          -|    10 (1%)|   2572 (~0%)|    2243 (1%)|    -|
+    |     o conv_for_rows_win_for_rows_win_for_cols                        |     -|  7.30|     3995|  3.995e+04|        81|        5|   784|       yes|          -|          -|            -|            -|    -|
+    |  + max_pooling_layer*                                                |     -|  0.43|      792|  7.920e+03|         -|      793|     -|  dataflow|          -|          -|    3513 (1%)|    4049 (3%)|    -|
+    |   + max_pooling                                                      |     -|  0.43|      792|  7.920e+03|         -|      792|     -|        no|          -|          -|    438 (~0%)|    491 (~0%)|    -|
+    |    o pool_for_rows_pool_for_cols                                     |     -|  7.30|      790|  7.900e+03|        11|        4|   196|       yes|          -|          -|            -|            -|    -|
+    |   + max_pooling_8                                                    |     -|  0.43|      792|  7.920e+03|         -|      792|     -|        no|          -|          -|    438 (~0%)|    491 (~0%)|    -|
+    |    o pool_for_rows_pool_for_cols                                     |     -|  7.30|      790|  7.900e+03|        11|        4|   196|       yes|          -|          -|            -|            -|    -|
+    |   + max_pooling_9                                                    |     -|  0.43|      792|  7.920e+03|         -|      792|     -|        no|          -|          -|    438 (~0%)|    491 (~0%)|    -|
+    |    o pool_for_rows_pool_for_cols                                     |     -|  7.30|      790|  7.900e+03|        11|        4|   196|       yes|          -|          -|            -|            -|    -|
+    |   + max_pooling_10                                                   |     -|  0.43|      792|  7.920e+03|         -|      792|     -|        no|          -|          -|    438 (~0%)|    491 (~0%)|    -|
+    |    o pool_for_rows_pool_for_cols                                     |     -|  7.30|      790|  7.900e+03|        11|        4|   196|       yes|          -|          -|            -|            -|    -|
+    |   + max_pooling_11                                                   |     -|  0.43|      792|  7.920e+03|         -|      792|     -|        no|          -|          -|    438 (~0%)|    491 (~0%)|    -|
+    |    o pool_for_rows_pool_for_cols                                     |     -|  7.30|      790|  7.900e+03|        11|        4|   196|       yes|          -|          -|            -|            -|    -|
+    |   + max_pooling_12                                                   |     -|  0.43|      792|  7.920e+03|         -|      792|     -|        no|          -|          -|    438 (~0%)|    491 (~0%)|    -|
+    |    o pool_for_rows_pool_for_cols                                     |     -|  7.30|      790|  7.900e+03|        11|        4|   196|       yes|          -|          -|            -|            -|    -|
+    |   + max_pooling_13                                                   |     -|  0.43|      792|  7.920e+03|         -|      792|     -|        no|          -|          -|    438 (~0%)|    491 (~0%)|    -|
+    |    o pool_for_rows_pool_for_cols                                     |     -|  7.30|      790|  7.900e+03|        11|        4|   196|       yes|          -|          -|            -|            -|    -|
+    |   + max_pooling_14                                                   |     -|  0.43|      792|  7.920e+03|         -|      792|     -|        no|          -|          -|    438 (~0%)|    491 (~0%)|    -|
+    |    o pool_for_rows_pool_for_cols                                     |     -|  7.30|      790|  7.900e+03|        11|        4|   196|       yes|          -|          -|            -|            -|    -|
+    |  + flattening_layer*                                                 |     -|  2.17|      198|  1.980e+03|         -|      199|     -|  dataflow|          -|          -|    353 (~0%)|    825 (~0%)|    -|
+    |   + flattening                                                       |     -|  2.17|      198|  1.980e+03|         -|      198|     -|        no|          -|          -|     43 (~0%)|     88 (~0%)|    -|
+    |    o flat_for_rows_flat_for_cols                                     |     -|  7.30|      196|  1.960e+03|         2|        1|   196|       yes|          -|          -|            -|            -|    -|
+    |   + flattening_15                                                    |     -|  2.17|      198|  1.980e+03|         -|      198|     -|        no|          -|          -|     43 (~0%)|     88 (~0%)|    -|
+    |    o flat_for_rows_flat_for_cols                                     |     -|  7.30|      196|  1.960e+03|         2|        1|   196|       yes|          -|          -|            -|            -|    -|
+    |   + flattening_16                                                    |     -|  2.17|      198|  1.980e+03|         -|      198|     -|        no|          -|          -|     43 (~0%)|     88 (~0%)|    -|
+    |    o flat_for_rows_flat_for_cols                                     |     -|  7.30|      196|  1.960e+03|         2|        1|   196|       yes|          -|          -|            -|            -|    -|
+    |   + flattening_17                                                    |     -|  2.17|      198|  1.980e+03|         -|      198|     -|        no|          -|          -|     43 (~0%)|     88 (~0%)|    -|
+    |    o flat_for_rows_flat_for_cols                                     |     -|  7.30|      196|  1.960e+03|         2|        1|   196|       yes|          -|          -|            -|            -|    -|
+    |   + flattening_18                                                    |     -|  2.17|      198|  1.980e+03|         -|      198|     -|        no|          -|          -|     43 (~0%)|     88 (~0%)|    -|
+    |    o flat_for_rows_flat_for_cols                                     |     -|  7.30|      196|  1.960e+03|         2|        1|   196|       yes|          -|          -|            -|            -|    -|
+    |   + flattening_19                                                    |     -|  2.17|      198|  1.980e+03|         -|      198|     -|        no|          -|          -|     43 (~0%)|     88 (~0%)|    -|
+    |    o flat_for_rows_flat_for_cols                                     |     -|  7.30|      196|  1.960e+03|         2|        1|   196|       yes|          -|          -|            -|            -|    -|
+    |   + flattening_20                                                    |     -|  2.17|      198|  1.980e+03|         -|      198|     -|        no|          -|          -|     43 (~0%)|     88 (~0%)|    -|
+    |    o flat_for_rows_flat_for_cols                                     |     -|  7.30|      196|  1.960e+03|         2|        1|   196|       yes|          -|          -|            -|            -|    -|
+    |   + flattening_21                                                    |     -|  2.17|      198|  1.980e+03|         -|      198|     -|        no|          -|          -|     43 (~0%)|     88 (~0%)|    -|
+    |    o flat_for_rows_flat_for_cols                                     |     -|  7.30|      196|  1.960e+03|         2|        1|   196|       yes|          -|          -|            -|            -|    -|
+    |  + dense_layer*                                                      |     -|  0.41|     2013|  2.013e+04|         -|     2014|     -|  dataflow|  320 (43%)|    40 (5%)|   15584 (5%)|    9632 (7%)|    -|
+    |   + dense                                                            |     -|  0.41|     2013|  2.013e+04|         -|     2013|     -|        no|    40 (5%)|    5 (~0%)|   1947 (~0%)|   1175 (~0%)|    -|
+    |    + dense_Pipeline_1                                                |     -|  3.71|       12|    120.000|         -|       12|     -|        no|          -|          -|      6 (~0%)|     49 (~0%)|    -|
+    |     o Loop 1                                                         |     -|  7.30|       10|    100.000|         1|        1|    10|       yes|          -|          -|            -|            -|    -|
+    |    + dense_Pipeline_dense_for_flat                                   |     -|  0.41|     1974|  1.974e+04|         -|     1974|     -|        no|    40 (5%)|    5 (~0%)|   1530 (~0%)|    758 (~0%)|    -|
+    |     o dense_for_flat                                                 |     -|  7.30|     1972|  1.972e+04|        23|       10|   196|       yes|          -|          -|            -|            -|    -|
+    |    + dense_Pipeline_VITIS_LOOP_60_2                                  |     -|  1.50|       12|    120.000|         -|       12|     -|        no|          -|          -|      7 (~0%)|     71 (~0%)|    -|
+    |     o VITIS_LOOP_60_2                                                |     -|  7.30|       10|    100.000|         2|        1|    10|       yes|          -|          -|            -|            -|    -|
+    |   + dense_22                                                         |     -|  0.41|     2013|  2.013e+04|         -|     2013|     -|        no|    40 (5%)|    5 (~0%)|   1947 (~0%)|   1191 (~0%)|    -|
+    |    + dense_22_Pipeline_1                                             |     -|  3.71|       12|    120.000|         -|       12|     -|        no|          -|          -|      6 (~0%)|     49 (~0%)|    -|
+    |     o Loop 1                                                         |     -|  7.30|       10|    100.000|         1|        1|    10|       yes|          -|          -|            -|            -|    -|
+    |    + dense_22_Pipeline_dense_for_flat                                |     -|  0.41|     1974|  1.974e+04|         -|     1974|     -|        no|    40 (5%)|    5 (~0%)|   1530 (~0%)|    774 (~0%)|    -|
+    |     o dense_for_flat                                                 |     -|  7.30|     1972|  1.972e+04|        23|       10|   196|       yes|          -|          -|            -|            -|    -|
+    |    + dense_22_Pipeline_VITIS_LOOP_60_2                               |     -|  1.50|       12|    120.000|         -|       12|     -|        no|          -|          -|      7 (~0%)|     71 (~0%)|    -|
+    |     o VITIS_LOOP_60_2                                                |     -|  7.30|       10|    100.000|         2|        1|    10|       yes|          -|          -|            -|            -|    -|
+    |   + dense_23                                                         |     -|  0.41|     2013|  2.013e+04|         -|     2013|     -|        no|    40 (5%)|    5 (~0%)|   1947 (~0%)|   1192 (~0%)|    -|
+    |    + dense_23_Pipeline_1                                             |     -|  3.71|       12|    120.000|         -|       12|     -|        no|          -|          -|      6 (~0%)|     49 (~0%)|    -|
+    |     o Loop 1                                                         |     -|  7.30|       10|    100.000|         1|        1|    10|       yes|          -|          -|            -|            -|    -|
+    |    + dense_23_Pipeline_dense_for_flat                                |     -|  0.41|     1974|  1.974e+04|         -|     1974|     -|        no|    40 (5%)|    5 (~0%)|   1530 (~0%)|    775 (~0%)|    -|
+    |     o dense_for_flat                                                 |     -|  7.30|     1972|  1.972e+04|        23|       10|   196|       yes|          -|          -|            -|            -|    -|
+    |    + dense_23_Pipeline_VITIS_LOOP_60_2                               |     -|  1.50|       12|    120.000|         -|       12|     -|        no|          -|          -|      7 (~0%)|     71 (~0%)|    -|
+    |     o VITIS_LOOP_60_2                                                |     -|  7.30|       10|    100.000|         2|        1|    10|       yes|          -|          -|            -|            -|    -|
+    |   + dense_24                                                         |     -|  0.41|     2013|  2.013e+04|         -|     2013|     -|        no|    40 (5%)|    5 (~0%)|   1947 (~0%)|   1192 (~0%)|    -|
+    |    + dense_24_Pipeline_1                                             |     -|  3.71|       12|    120.000|         -|       12|     -|        no|          -|          -|      6 (~0%)|     49 (~0%)|    -|
+    |     o Loop 1                                                         |     -|  7.30|       10|    100.000|         1|        1|    10|       yes|          -|          -|            -|            -|    -|
+    |    + dense_24_Pipeline_dense_for_flat                                |     -|  0.41|     1974|  1.974e+04|         -|     1974|     -|        no|    40 (5%)|    5 (~0%)|   1530 (~0%)|    775 (~0%)|    -|
+    |     o dense_for_flat                                                 |     -|  7.30|     1972|  1.972e+04|        23|       10|   196|       yes|          -|          -|            -|            -|    -|
+    |    + dense_24_Pipeline_VITIS_LOOP_60_2                               |     -|  1.50|       12|    120.000|         -|       12|     -|        no|          -|          -|      7 (~0%)|     71 (~0%)|    -|
+    |     o VITIS_LOOP_60_2                                                |     -|  7.30|       10|    100.000|         2|        1|    10|       yes|          -|          -|            -|            -|    -|
+    |   + dense_25                                                         |     -|  0.41|     2013|  2.013e+04|         -|     2013|     -|        no|    40 (5%)|    5 (~0%)|   1947 (~0%)|   1191 (~0%)|    -|
+    |    + dense_25_Pipeline_1                                             |     -|  3.71|       12|    120.000|         -|       12|     -|        no|          -|          -|      6 (~0%)|     49 (~0%)|    -|
+    |     o Loop 1                                                         |     -|  7.30|       10|    100.000|         1|        1|    10|       yes|          -|          -|            -|            -|    -|
+    |    + dense_25_Pipeline_dense_for_flat                                |     -|  0.41|     1974|  1.974e+04|         -|     1974|     -|        no|    40 (5%)|    5 (~0%)|   1530 (~0%)|    774 (~0%)|    -|
+    |     o dense_for_flat                                                 |     -|  7.30|     1972|  1.972e+04|        23|       10|   196|       yes|          -|          -|            -|            -|    -|
+    |    + dense_25_Pipeline_VITIS_LOOP_60_2                               |     -|  1.50|       12|    120.000|         -|       12|     -|        no|          -|          -|      7 (~0%)|     71 (~0%)|    -|
+    |     o VITIS_LOOP_60_2                                                |     -|  7.30|       10|    100.000|         2|        1|    10|       yes|          -|          -|            -|            -|    -|
+    |   + dense_26                                                         |     -|  0.41|     2013|  2.013e+04|         -|     2013|     -|        no|    40 (5%)|    5 (~0%)|   1947 (~0%)|   1193 (~0%)|    -|
+    |    + dense_26_Pipeline_1                                             |     -|  3.71|       12|    120.000|         -|       12|     -|        no|          -|          -|      6 (~0%)|     49 (~0%)|    -|
+    |     o Loop 1                                                         |     -|  7.30|       10|    100.000|         1|        1|    10|       yes|          -|          -|            -|            -|    -|
+    |    + dense_26_Pipeline_dense_for_flat                                |     -|  0.41|     1974|  1.974e+04|         -|     1974|     -|        no|    40 (5%)|    5 (~0%)|   1530 (~0%)|    776 (~0%)|    -|
+    |     o dense_for_flat                                                 |     -|  7.30|     1972|  1.972e+04|        23|       10|   196|       yes|          -|          -|            -|            -|    -|
+    |    + dense_26_Pipeline_VITIS_LOOP_60_2                               |     -|  1.50|       12|    120.000|         -|       12|     -|        no|          -|          -|      7 (~0%)|     71 (~0%)|    -|
+    |     o VITIS_LOOP_60_2                                                |     -|  7.30|       10|    100.000|         2|        1|    10|       yes|          -|          -|            -|            -|    -|
+    |   + dense_27                                                         |     -|  0.41|     2013|  2.013e+04|         -|     2013|     -|        no|    40 (5%)|    5 (~0%)|   1947 (~0%)|   1193 (~0%)|    -|
+    |    + dense_27_Pipeline_1                                             |     -|  3.71|       12|    120.000|         -|       12|     -|        no|          -|          -|      6 (~0%)|     49 (~0%)|    -|
+    |     o Loop 1                                                         |     -|  7.30|       10|    100.000|         1|        1|    10|       yes|          -|          -|            -|            -|    -|
+    |    + dense_27_Pipeline_dense_for_flat                                |     -|  0.41|     1974|  1.974e+04|         -|     1974|     -|        no|    40 (5%)|    5 (~0%)|   1530 (~0%)|    776 (~0%)|    -|
+    |     o dense_for_flat                                                 |     -|  7.30|     1972|  1.972e+04|        23|       10|   196|       yes|          -|          -|            -|            -|    -|
+    |    + dense_27_Pipeline_VITIS_LOOP_60_2                               |     -|  1.50|       12|    120.000|         -|       12|     -|        no|          -|          -|      7 (~0%)|     71 (~0%)|    -|
+    |     o VITIS_LOOP_60_2                                                |     -|  7.30|       10|    100.000|         2|        1|    10|       yes|          -|          -|            -|            -|    -|
+    |   + dense_28                                                         |     -|  0.41|     2013|  2.013e+04|         -|     2013|     -|        no|    40 (5%)|    5 (~0%)|   1947 (~0%)|   1193 (~0%)|    -|
+    |    + dense_28_Pipeline_1                                             |     -|  3.71|       12|    120.000|         -|       12|     -|        no|          -|          -|      6 (~0%)|     49 (~0%)|    -|
+    |     o Loop 1                                                         |     -|  7.30|       10|    100.000|         1|        1|    10|       yes|          -|          -|            -|            -|    -|
+    |    + dense_28_Pipeline_dense_for_flat                                |     -|  0.41|     1974|  1.974e+04|         -|     1974|     -|        no|    40 (5%)|    5 (~0%)|   1530 (~0%)|    776 (~0%)|    -|
+    |     o dense_for_flat                                                 |     -|  7.30|     1972|  1.972e+04|        23|       10|   196|       yes|          -|          -|            -|            -|    -|
+    |    + dense_28_Pipeline_VITIS_LOOP_60_2                               |     -|  1.50|       12|    120.000|         -|       12|     -|        no|          -|          -|      7 (~0%)|     71 (~0%)|    -|
+    |     o VITIS_LOOP_60_2                                                |     -|  7.30|       10|    100.000|         2|        1|    10|       yes|          -|          -|            -|            -|    -|
+    |  + dense_layer_soft_max                                              |     -|  0.22|      175|  1.750e+03|         -|      175|     -|        no|          -|    11 (1%)|   2364 (~0%)|    2284 (1%)|    -|
+    |   + dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size      |     -|  0.22|      143|  1.430e+03|         -|      143|     -|        no|          -|    11 (1%)|   2184 (~0%)|    2027 (1%)|    -|
+    |    o dense_soft_max_for_dense_size                                   |    II|  7.30|      141|  1.410e+03|        79|        7|    10|       yes|          -|          -|            -|            -|    -|
+    |   + dense_layer_soft_max_Pipeline_dense_soft_max_for_digits          |     -|  1.00|       29|    290.000|         -|       29|     -|        no|          -|          -|    173 (~0%)|     92 (~0%)|    -|
+    |    o dense_soft_max_for_digits                                       |     -|  7.30|       27|    270.000|        19|        1|    10|       yes|          -|          -|            -|            -|    -|
+    +----------------------------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+-----------+-----------+-------------+-------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AP_MEMORY
++---------------------+----------+
+| Interface           | Bitwidth |
++---------------------+----------+
+| biases_buf_address0 | 3        |
+| biases_buf_address1 | 3        |
+| biases_buf_q0       | 32       |
+| biases_buf_q1       | 32       |
+| img_in_address0     | 10       |
+| img_in_q0           | 32       |
+| prediction_address0 | 4        |
+| prediction_address1 | 4        |
+| prediction_d0       | 32       |
+| prediction_q1       | 32       |
+| weight_buf_address0 | 7        |
+| weight_buf_q0       | 32       |
++---------------------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++------------+-----------+----------+
+| Argument   | Direction | Datatype |
++------------+-----------+----------+
+| img_in     | in        | float*   |
+| prediction | inout     | float*   |
+| weight_buf | in        | float*   |
+| biases_buf | in        | float*   |
++------------+-----------+----------+
+
+* SW-to-HW Mapping
++------------+---------------------+---------+----------+
+| Argument   | HW Interface        | HW Type | HW Usage |
++------------+---------------------+---------+----------+
+| img_in     | img_in_address0     | port    | offset   |
+| img_in     | img_in_ce0          | port    |          |
+| img_in     | img_in_q0           | port    |          |
+| prediction | prediction_address0 | port    | offset   |
+| prediction | prediction_ce0      | port    |          |
+| prediction | prediction_we0      | port    |          |
+| prediction | prediction_d0       | port    |          |
+| prediction | prediction_address1 | port    | offset   |
+| prediction | prediction_ce1      | port    |          |
+| prediction | prediction_q1       | port    |          |
+| weight_buf | weight_buf_address0 | port    | offset   |
+| weight_buf | weight_buf_ce0      | port    |          |
+| weight_buf | weight_buf_q0       | port    |          |
+| biases_buf | biases_buf_address0 | port    | offset   |
+| biases_buf | biases_buf_ce0      | port    |          |
+| biases_buf | biases_buf_q0       | port    |          |
+| biases_buf | biases_buf_address1 | port    | offset   |
+| biases_buf | biases_buf_ce1      | port    |          |
+| biases_buf | biases_buf_q1       | port    |          |
++------------+---------------------+---------+----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++----------------------------------------------------------------------+-----+--------+--------------+------+---------+---------+
+| Name                                                                 | DSP | Pragma | Variable     | Op   | Impl    | Latency |
++----------------------------------------------------------------------+-----+--------+--------------+------+---------+---------+
+| + cnn                                                                | 131 |        |              |      |         |         |
+|  + cnn_Pipeline_pad_for_rows_pad_for_cols                            | 0   |        |              |      |         |         |
+|    add_ln16_1_fu_145_p2                                              | -   |        | add_ln16_1   | add  | fabric  | 0       |
+|    add_ln16_fu_157_p2                                                | -   |        | add_ln16     | add  | fabric  | 0       |
+|    empty_110_fu_185_p2                                               | -   |        | empty_110    | add  | fabric  | 0       |
+|    sub_ln33_fu_219_p2                                                | -   |        | sub_ln33     | sub  | fabric  | 0       |
+|    add_ln33_fu_323_p2                                                | -   |        | add_ln33     | add  | fabric  | 0       |
+|    add_ln33_1_fu_333_p2                                              | -   |        | add_ln33_1   | add  | fabric  | 0       |
+|    fdiv_32ns_32ns_32_16_no_dsp_1_U1                                  | -   |        | conv23_i     | fdiv | fabric  | 15      |
+|    add_ln18_fu_261_p2                                                | -   |        | add_ln18     | add  | fabric  | 0       |
+|  + cnn_Pipeline_3                                                    | 0   |        |              |      |         |         |
+|    empty_154_fu_118_p2                                               | -   |        | empty_154    | add  | fabric  | 0       |
+|    next_urem_fu_130_p2                                               | -   |        | next_urem    | add  | fabric  | 0       |
+|    next_mul_fu_150_p2                                                | -   |        | next_mul     | add  | fabric  | 0       |
+|  + cnn_Pipeline_clone_for_rows_clone_for_cols                        | 0   |        |              |      |         |         |
+|    add_ln146_1_fu_203_p2                                             | -   |        | add_ln146_1  | add  | fabric  | 0       |
+|    add_ln146_fu_215_p2                                               | -   |        | add_ln146    | add  | fabric  | 0       |
+|    add_ln148_fu_279_p2                                               | -   |        | add_ln148    | add  | fabric  | 0       |
+|  + cnn_Pipeline_4                                                    | 0   |        |              |      |         |         |
+|    empty_148_fu_120_p2                                               | -   |        | empty_148    | add  | fabric  | 0       |
+|    next_urem45_fu_132_p2                                             | -   |        | next_urem45  | add  | fabric  | 0       |
+|    next_mul43_fu_152_p2                                              | -   |        | next_mul43   | add  | fabric  | 0       |
+|    tmp_fu_208_p2                                                     | -   |        | tmp          | add  | fabric  | 0       |
+|  + cnn_Pipeline_5                                                    | 0   |        |              |      |         |         |
+|    empty_142_fu_120_p2                                               | -   |        | empty_142    | add  | fabric  | 0       |
+|    next_urem50_fu_132_p2                                             | -   |        | next_urem50  | add  | fabric  | 0       |
+|    next_mul48_fu_152_p2                                              | -   |        | next_mul48   | add  | fabric  | 0       |
+|    empty_144_fu_192_p2                                               | -   |        | empty_144    | sub  | fabric  | 0       |
+|  + cnn_Pipeline_6                                                    | 0   |        |              |      |         |         |
+|    empty_136_fu_120_p2                                               | -   |        | empty_136    | add  | fabric  | 0       |
+|    next_urem55_fu_132_p2                                             | -   |        | next_urem55  | add  | fabric  | 0       |
+|    next_mul53_fu_152_p2                                              | -   |        | next_mul53   | add  | fabric  | 0       |
+|    empty_138_fu_192_p2                                               | -   |        | empty_138    | sub  | fabric  | 0       |
+|    tmp2_fu_212_p2                                                    | -   |        | tmp2         | add  | fabric  | 0       |
+|    empty_140_fu_226_p2                                               | -   |        | empty_140    | add  | fabric  | 0       |
+|  + cnn_Pipeline_7                                                    | 0   |        |              |      |         |         |
+|    empty_130_fu_120_p2                                               | -   |        | empty_130    | add  | fabric  | 0       |
+|    next_urem60_fu_132_p2                                             | -   |        | next_urem60  | add  | fabric  | 0       |
+|    next_mul58_fu_152_p2                                              | -   |        | next_mul58   | add  | fabric  | 0       |
+|    empty_132_fu_192_p2                                               | -   |        | empty_132    | sub  | fabric  | 0       |
+|  + cnn_Pipeline_8                                                    | 0   |        |              |      |         |         |
+|    empty_124_fu_120_p2                                               | -   |        | empty_124    | add  | fabric  | 0       |
+|    next_urem65_fu_132_p2                                             | -   |        | next_urem65  | add  | fabric  | 0       |
+|    next_mul63_fu_152_p2                                              | -   |        | next_mul63   | add  | fabric  | 0       |
+|    empty_126_fu_192_p2                                               | -   |        | empty_126    | sub  | fabric  | 0       |
+|  + cnn_Pipeline_9                                                    | 0   |        |              |      |         |         |
+|    empty_117_fu_122_p2                                               | -   |        | empty_117    | add  | fabric  | 0       |
+|    next_urem70_fu_196_p2                                             | -   |        | next_urem70  | add  | fabric  | 0       |
+|    next_mul68_fu_131_p2                                              | -   |        | next_mul68   | add  | fabric  | 0       |
+|    empty_122_fu_233_p2                                               | -   |        | empty_122    | add  | fabric  | 0       |
+|  + cnn_Pipeline_10                                                   | 0   |        |              |      |         |         |
+|    empty_160_fu_122_p2                                               | -   |        | empty_160    | add  | fabric  | 0       |
+|    next_urem75_fu_134_p2                                             | -   |        | next_urem75  | add  | fabric  | 0       |
+|    next_mul73_fu_154_p2                                              | -   |        | next_mul73   | add  | fabric  | 0       |
+|    empty_162_fu_194_p2                                               | -   |        | empty_162    | sub  | fabric  | 0       |
+|    tmp5_fu_214_p2                                                    | -   |        | tmp5         | add  | fabric  | 0       |
+|    empty_164_fu_224_p2                                               | -   |        | empty_164    | add  | fabric  | 0       |
+|  + dataflow_section                                                  | 131 |        |              |      |         |         |
+|   + convolutional_layer                                              | 80  |        |              |      |         |         |
+|    + convolution                                                     | 10  |        |              |      |         |         |
+|     + convolution_Pipeline_conv_for_rows_win_for_rows_win_for_cols   | 10  |        |              |      |         |         |
+|       empty_fu_464_p2                                                | -   |        | empty        | add  | fabric  | 0       |
+|       add_ln44_1_fu_469_p2                                           | -   |        | add_ln44_1   | add  | fabric  | 0       |
+|       add_ln44_2_fu_475_p2                                           | -   |        | add_ln44_2   | add  | fabric  | 0       |
+|       add_ln25_1_fu_362_p2                                           | -   |        | add_ln25_1   | add  | fabric  | 0       |
+|       add_ln25_fu_374_p2                                             | -   |        | add_ln25     | add  | fabric  | 0       |
+|       add_ln44_3_fu_500_p2                                           | -   |        | add_ln44_3   | add  | fabric  | 0       |
+|       add_ln44_4_fu_512_p2                                           | -   |        | add_ln44_4   | add  | fabric  | 0       |
+|       add_ln28_fu_540_p2                                             | -   |        | add_ln28     | add  | fabric  | 0       |
+|       add_ln44_5_fu_553_p2                                           | -   |        | add_ln44_5   | add  | fabric  | 0       |
+|       add_ln44_6_fu_566_p2                                           | -   |        | add_ln44_6   | add  | fabric  | 0       |
+|       add_ln31_fu_602_p2                                             | -   |        | add_ln31     | add  | fabric  | 0       |
+|       p_mid1_fu_629_p2                                               | -   |        | p_mid1       | add  | fabric  | 0       |
+|       sub_ln44_fu_663_p2                                             | -   |        | sub_ln44     | sub  | fabric  | 0       |
+|       add_ln44_7_fu_669_p2                                           | -   |        | add_ln44_7   | add  | fabric  | 0       |
+|       sub_ln44_1_fu_758_p2                                           | -   |        | sub_ln44_1   | sub  | fabric  | 0       |
+|       add_ln44_9_fu_683_p2                                           | -   |        | add_ln44_9   | add  | fabric  | 0       |
+|       sub_ln44_2_fu_842_p2                                           | -   |        | sub_ln44_2   | sub  | fabric  | 0       |
+|       empty_95_fu_708_p2                                             | -   |        | empty_95     | add  | fabric  | 0       |
+|       add_ln44_10_fu_767_p2                                          | -   |        | add_ln44_10  | add  | fabric  | 0       |
+|       add_ln44_11_fu_796_p2                                          | -   |        | add_ln44_11  | add  | fabric  | 0       |
+|       add_ln44_12_fu_848_p2                                          | -   |        | add_ln44_12  | add  | fabric  | 0       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U31                              | 3   |        | mul          | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U29                             | 2   |        | w_sum        | fadd | fulldsp | 6       |
+|       add_ln44_fu_777_p2                                             | -   |        | add_ln44     | add  | fabric  | 0       |
+|       add_ln44_13_fu_786_p2                                          | -   |        | add_ln44_13  | add  | fabric  | 0       |
+|       add_ln44_14_fu_853_p2                                          | -   |        | add_ln44_14  | add  | fabric  | 0       |
+|       add_ln44_15_fu_862_p2                                          | -   |        | add_ln44_15  | add  | fabric  | 0       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U32                              | 3   |        | mul_s        | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U29                             | 2   |        | w_sum_1      | fadd | fulldsp | 6       |
+|       add_ln44_8_fu_805_p2                                           | -   |        | add_ln44_8   | add  | fabric  | 0       |
+|       add_ln44_16_fu_814_p2                                          | -   |        | add_ln44_16  | add  | fabric  | 0       |
+|       add_ln44_17_fu_867_p2                                          | -   |        | add_ln44_17  | add  | fabric  | 0       |
+|       add_ln44_18_fu_876_p2                                          | -   |        | add_ln44_18  | add  | fabric  | 0       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U31                              | 3   |        | mul_3        | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U29                             | 2   |        | w_sum_2      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U32                              | 3   |        | mul_1        | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U29                             | 2   |        | w_sum_3      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U31                              | 3   |        | mul_1_1      | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U29                             | 2   |        | w_sum_4      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U32                              | 3   |        | mul_1_2      | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U30                             | 2   |        | w_sum_5      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U31                              | 3   |        | mul_2        | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U30                             | 2   |        | w_sum_6      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U32                              | 3   |        | mul_2_1      | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U30                             | 2   |        | w_sum_7      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U31                              | 3   |        | mul_2_2      | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U30                             | 2   |        | w_sum_8      | fadd | fulldsp | 6       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U30                             | 2   |        | x_assign     | fadd | fulldsp | 6       |
+|       add_ln33_fu_714_p2                                             | -   |        | add_ln33     | add  | fabric  | 0       |
+|       add_ln31_1_fu_418_p2                                           | -   |        | add_ln31_1   | add  | fabric  | 0       |
+|       add_ln28_1_fu_432_p2                                           | -   |        | add_ln28_1   | add  | fabric  | 0       |
+|    + convolution_1                                                   | 10  |        |              |      |         |         |
+|     + convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols | 10  |        |              |      |         |         |
+|       empty_fu_464_p2                                                | -   |        | empty        | add  | fabric  | 0       |
+|       add_ln44_14_fu_469_p2                                          | -   |        | add_ln44_14  | add  | fabric  | 0       |
+|       add_ln44_15_fu_475_p2                                          | -   |        | add_ln44_15  | add  | fabric  | 0       |
+|       add_ln25_7_fu_362_p2                                           | -   |        | add_ln25_7   | add  | fabric  | 0       |
+|       add_ln25_fu_374_p2                                             | -   |        | add_ln25     | add  | fabric  | 0       |
+|       add_ln44_94_fu_500_p2                                          | -   |        | add_ln44_94  | add  | fabric  | 0       |
+|       add_ln44_95_fu_512_p2                                          | -   |        | add_ln44_95  | add  | fabric  | 0       |
+|       add_ln28_fu_540_p2                                             | -   |        | add_ln28     | add  | fabric  | 0       |
+|       add_ln44_96_fu_553_p2                                          | -   |        | add_ln44_96  | add  | fabric  | 0       |
+|       add_ln44_97_fu_566_p2                                          | -   |        | add_ln44_97  | add  | fabric  | 0       |
+|       add_ln31_fu_602_p2                                             | -   |        | add_ln31     | add  | fabric  | 0       |
+|       p_mid1_fu_629_p2                                               | -   |        | p_mid1       | add  | fabric  | 0       |
+|       sub_ln44_fu_663_p2                                             | -   |        | sub_ln44     | sub  | fabric  | 0       |
+|       add_ln44_98_fu_669_p2                                          | -   |        | add_ln44_98  | add  | fabric  | 0       |
+|       sub_ln44_13_fu_758_p2                                          | -   |        | sub_ln44_13  | sub  | fabric  | 0       |
+|       add_ln44_99_fu_683_p2                                          | -   |        | add_ln44_99  | add  | fabric  | 0       |
+|       sub_ln44_14_fu_842_p2                                          | -   |        | sub_ln44_14  | sub  | fabric  | 0       |
+|       empty_109_fu_708_p2                                            | -   |        | empty_109    | add  | fabric  | 0       |
+|       add_ln44_100_fu_767_p2                                         | -   |        | add_ln44_100 | add  | fabric  | 0       |
+|       add_ln44_101_fu_796_p2                                         | -   |        | add_ln44_101 | add  | fabric  | 0       |
+|       add_ln44_102_fu_848_p2                                         | -   |        | add_ln44_102 | add  | fabric  | 0       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U55                              | 3   |        | mul          | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U53                             | 2   |        | w_sum        | fadd | fulldsp | 6       |
+|       add_ln44_fu_777_p2                                             | -   |        | add_ln44     | add  | fabric  | 0       |
+|       add_ln44_103_fu_786_p2                                         | -   |        | add_ln44_103 | add  | fabric  | 0       |
+|       add_ln44_104_fu_853_p2                                         | -   |        | add_ln44_104 | add  | fabric  | 0       |
+|       add_ln44_105_fu_862_p2                                         | -   |        | add_ln44_105 | add  | fabric  | 0       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U56                              | 3   |        | mul_s        | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U53                             | 2   |        | w_sum_49     | fadd | fulldsp | 6       |
+|       add_ln44_7_fu_805_p2                                           | -   |        | add_ln44_7   | add  | fabric  | 0       |
+|       add_ln44_106_fu_814_p2                                         | -   |        | add_ln44_106 | add  | fabric  | 0       |
+|       add_ln44_107_fu_867_p2                                         | -   |        | add_ln44_107 | add  | fabric  | 0       |
+|       add_ln44_108_fu_876_p2                                         | -   |        | add_ln44_108 | add  | fabric  | 0       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U55                              | 3   |        | mul_9        | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U53                             | 2   |        | w_sum_50     | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U56                              | 3   |        | mul_1        | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U53                             | 2   |        | w_sum_51     | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U55                              | 3   |        | mul_1_1      | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U53                             | 2   |        | w_sum_52     | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U56                              | 3   |        | mul_1_2      | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U54                             | 2   |        | w_sum_53     | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U55                              | 3   |        | mul_2        | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U54                             | 2   |        | w_sum_54     | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U56                              | 3   |        | mul_2_1      | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U54                             | 2   |        | w_sum_55     | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U55                              | 3   |        | mul_2_2      | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U54                             | 2   |        | w_sum_56     | fadd | fulldsp | 6       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U54                             | 2   |        | x_assign     | fadd | fulldsp | 6       |
+|       add_ln33_fu_714_p2                                             | -   |        | add_ln33     | add  | fabric  | 0       |
+|       add_ln31_7_fu_418_p2                                           | -   |        | add_ln31_7   | add  | fabric  | 0       |
+|       add_ln28_7_fu_432_p2                                           | -   |        | add_ln28_7   | add  | fabric  | 0       |
+|    + convolution_2                                                   | 10  |        |              |      |         |         |
+|     + convolution_2_Pipeline_conv_for_rows_win_for_rows_win_for_cols | 10  |        |              |      |         |         |
+|       empty_fu_464_p2                                                | -   |        | empty        | add  | fabric  | 0       |
+|       add_ln44_12_fu_469_p2                                          | -   |        | add_ln44_12  | add  | fabric  | 0       |
+|       add_ln44_13_fu_475_p2                                          | -   |        | add_ln44_13  | add  | fabric  | 0       |
+|       add_ln25_6_fu_362_p2                                           | -   |        | add_ln25_6   | add  | fabric  | 0       |
+|       add_ln25_fu_374_p2                                             | -   |        | add_ln25     | add  | fabric  | 0       |
+|       add_ln44_79_fu_500_p2                                          | -   |        | add_ln44_79  | add  | fabric  | 0       |
+|       add_ln44_80_fu_512_p2                                          | -   |        | add_ln44_80  | add  | fabric  | 0       |
+|       add_ln28_fu_540_p2                                             | -   |        | add_ln28     | add  | fabric  | 0       |
+|       add_ln44_81_fu_553_p2                                          | -   |        | add_ln44_81  | add  | fabric  | 0       |
+|       add_ln44_82_fu_566_p2                                          | -   |        | add_ln44_82  | add  | fabric  | 0       |
+|       add_ln31_fu_602_p2                                             | -   |        | add_ln31     | add  | fabric  | 0       |
+|       p_mid1_fu_629_p2                                               | -   |        | p_mid1       | add  | fabric  | 0       |
+|       sub_ln44_fu_663_p2                                             | -   |        | sub_ln44     | sub  | fabric  | 0       |
+|       add_ln44_83_fu_669_p2                                          | -   |        | add_ln44_83  | add  | fabric  | 0       |
+|       sub_ln44_11_fu_758_p2                                          | -   |        | sub_ln44_11  | sub  | fabric  | 0       |
+|       add_ln44_84_fu_683_p2                                          | -   |        | add_ln44_84  | add  | fabric  | 0       |
+|       sub_ln44_12_fu_842_p2                                          | -   |        | sub_ln44_12  | sub  | fabric  | 0       |
+|       empty_107_fu_708_p2                                            | -   |        | empty_107    | add  | fabric  | 0       |
+|       add_ln44_85_fu_767_p2                                          | -   |        | add_ln44_85  | add  | fabric  | 0       |
+|       add_ln44_86_fu_796_p2                                          | -   |        | add_ln44_86  | add  | fabric  | 0       |
+|       add_ln44_87_fu_848_p2                                          | -   |        | add_ln44_87  | add  | fabric  | 0       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U76                              | 3   |        | mul          | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U74                             | 2   |        | w_sum        | fadd | fulldsp | 6       |
+|       add_ln44_fu_777_p2                                             | -   |        | add_ln44     | add  | fabric  | 0       |
+|       add_ln44_88_fu_786_p2                                          | -   |        | add_ln44_88  | add  | fabric  | 0       |
+|       add_ln44_89_fu_853_p2                                          | -   |        | add_ln44_89  | add  | fabric  | 0       |
+|       add_ln44_90_fu_862_p2                                          | -   |        | add_ln44_90  | add  | fabric  | 0       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U77                              | 3   |        | mul_s        | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U74                             | 2   |        | w_sum_41     | fadd | fulldsp | 6       |
+|       add_ln44_6_fu_805_p2                                           | -   |        | add_ln44_6   | add  | fabric  | 0       |
+|       add_ln44_91_fu_814_p2                                          | -   |        | add_ln44_91  | add  | fabric  | 0       |
+|       add_ln44_92_fu_867_p2                                          | -   |        | add_ln44_92  | add  | fabric  | 0       |
+|       add_ln44_93_fu_876_p2                                          | -   |        | add_ln44_93  | add  | fabric  | 0       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U76                              | 3   |        | mul_8        | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U74                             | 2   |        | w_sum_42     | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U77                              | 3   |        | mul_1        | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U74                             | 2   |        | w_sum_43     | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U76                              | 3   |        | mul_1_1      | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U74                             | 2   |        | w_sum_44     | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U77                              | 3   |        | mul_1_2      | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U75                             | 2   |        | w_sum_45     | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U76                              | 3   |        | mul_2        | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U75                             | 2   |        | w_sum_46     | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U77                              | 3   |        | mul_2_1      | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U75                             | 2   |        | w_sum_47     | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U76                              | 3   |        | mul_2_2      | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U75                             | 2   |        | w_sum_48     | fadd | fulldsp | 6       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U75                             | 2   |        | x_assign     | fadd | fulldsp | 6       |
+|       add_ln33_fu_714_p2                                             | -   |        | add_ln33     | add  | fabric  | 0       |
+|       add_ln31_6_fu_418_p2                                           | -   |        | add_ln31_6   | add  | fabric  | 0       |
+|       add_ln28_6_fu_432_p2                                           | -   |        | add_ln28_6   | add  | fabric  | 0       |
+|    + convolution_3                                                   | 10  |        |              |      |         |         |
+|     + convolution_3_Pipeline_conv_for_rows_win_for_rows_win_for_cols | 10  |        |              |      |         |         |
+|       empty_fu_464_p2                                                | -   |        | empty        | add  | fabric  | 0       |
+|       add_ln44_10_fu_469_p2                                          | -   |        | add_ln44_10  | add  | fabric  | 0       |
+|       add_ln44_11_fu_475_p2                                          | -   |        | add_ln44_11  | add  | fabric  | 0       |
+|       add_ln25_5_fu_362_p2                                           | -   |        | add_ln25_5   | add  | fabric  | 0       |
+|       add_ln25_fu_374_p2                                             | -   |        | add_ln25     | add  | fabric  | 0       |
+|       add_ln44_64_fu_500_p2                                          | -   |        | add_ln44_64  | add  | fabric  | 0       |
+|       add_ln44_65_fu_512_p2                                          | -   |        | add_ln44_65  | add  | fabric  | 0       |
+|       add_ln28_fu_540_p2                                             | -   |        | add_ln28     | add  | fabric  | 0       |
+|       add_ln44_66_fu_553_p2                                          | -   |        | add_ln44_66  | add  | fabric  | 0       |
+|       add_ln44_67_fu_566_p2                                          | -   |        | add_ln44_67  | add  | fabric  | 0       |
+|       add_ln31_fu_602_p2                                             | -   |        | add_ln31     | add  | fabric  | 0       |
+|       p_mid1_fu_629_p2                                               | -   |        | p_mid1       | add  | fabric  | 0       |
+|       sub_ln44_fu_663_p2                                             | -   |        | sub_ln44     | sub  | fabric  | 0       |
+|       add_ln44_68_fu_669_p2                                          | -   |        | add_ln44_68  | add  | fabric  | 0       |
+|       sub_ln44_9_fu_758_p2                                           | -   |        | sub_ln44_9   | sub  | fabric  | 0       |
+|       add_ln44_69_fu_683_p2                                          | -   |        | add_ln44_69  | add  | fabric  | 0       |
+|       sub_ln44_10_fu_842_p2                                          | -   |        | sub_ln44_10  | sub  | fabric  | 0       |
+|       empty_105_fu_708_p2                                            | -   |        | empty_105    | add  | fabric  | 0       |
+|       add_ln44_70_fu_767_p2                                          | -   |        | add_ln44_70  | add  | fabric  | 0       |
+|       add_ln44_71_fu_796_p2                                          | -   |        | add_ln44_71  | add  | fabric  | 0       |
+|       add_ln44_72_fu_848_p2                                          | -   |        | add_ln44_72  | add  | fabric  | 0       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U97                              | 3   |        | mul          | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U95                             | 2   |        | w_sum        | fadd | fulldsp | 6       |
+|       add_ln44_fu_777_p2                                             | -   |        | add_ln44     | add  | fabric  | 0       |
+|       add_ln44_73_fu_786_p2                                          | -   |        | add_ln44_73  | add  | fabric  | 0       |
+|       add_ln44_74_fu_853_p2                                          | -   |        | add_ln44_74  | add  | fabric  | 0       |
+|       add_ln44_75_fu_862_p2                                          | -   |        | add_ln44_75  | add  | fabric  | 0       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U98                              | 3   |        | mul_s        | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U95                             | 2   |        | w_sum_33     | fadd | fulldsp | 6       |
+|       add_ln44_5_fu_805_p2                                           | -   |        | add_ln44_5   | add  | fabric  | 0       |
+|       add_ln44_76_fu_814_p2                                          | -   |        | add_ln44_76  | add  | fabric  | 0       |
+|       add_ln44_77_fu_867_p2                                          | -   |        | add_ln44_77  | add  | fabric  | 0       |
+|       add_ln44_78_fu_876_p2                                          | -   |        | add_ln44_78  | add  | fabric  | 0       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U97                              | 3   |        | mul_7        | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U95                             | 2   |        | w_sum_34     | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U98                              | 3   |        | mul_1        | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U95                             | 2   |        | w_sum_35     | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U97                              | 3   |        | mul_1_1      | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U95                             | 2   |        | w_sum_36     | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U98                              | 3   |        | mul_1_2      | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U96                             | 2   |        | w_sum_37     | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U97                              | 3   |        | mul_2        | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U96                             | 2   |        | w_sum_38     | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U98                              | 3   |        | mul_2_1      | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U96                             | 2   |        | w_sum_39     | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U97                              | 3   |        | mul_2_2      | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U96                             | 2   |        | w_sum_40     | fadd | fulldsp | 6       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U96                             | 2   |        | x_assign     | fadd | fulldsp | 6       |
+|       add_ln33_fu_714_p2                                             | -   |        | add_ln33     | add  | fabric  | 0       |
+|       add_ln31_5_fu_418_p2                                           | -   |        | add_ln31_5   | add  | fabric  | 0       |
+|       add_ln28_5_fu_432_p2                                           | -   |        | add_ln28_5   | add  | fabric  | 0       |
+|    + convolution_4                                                   | 10  |        |              |      |         |         |
+|     + convolution_4_Pipeline_conv_for_rows_win_for_rows_win_for_cols | 10  |        |              |      |         |         |
+|       empty_fu_464_p2                                                | -   |        | empty        | add  | fabric  | 0       |
+|       add_ln44_8_fu_469_p2                                           | -   |        | add_ln44_8   | add  | fabric  | 0       |
+|       add_ln44_9_fu_475_p2                                           | -   |        | add_ln44_9   | add  | fabric  | 0       |
+|       add_ln25_4_fu_362_p2                                           | -   |        | add_ln25_4   | add  | fabric  | 0       |
+|       add_ln25_fu_374_p2                                             | -   |        | add_ln25     | add  | fabric  | 0       |
+|       add_ln44_49_fu_500_p2                                          | -   |        | add_ln44_49  | add  | fabric  | 0       |
+|       add_ln44_50_fu_512_p2                                          | -   |        | add_ln44_50  | add  | fabric  | 0       |
+|       add_ln28_fu_540_p2                                             | -   |        | add_ln28     | add  | fabric  | 0       |
+|       add_ln44_51_fu_553_p2                                          | -   |        | add_ln44_51  | add  | fabric  | 0       |
+|       add_ln44_52_fu_566_p2                                          | -   |        | add_ln44_52  | add  | fabric  | 0       |
+|       add_ln31_fu_602_p2                                             | -   |        | add_ln31     | add  | fabric  | 0       |
+|       p_mid1_fu_629_p2                                               | -   |        | p_mid1       | add  | fabric  | 0       |
+|       sub_ln44_fu_663_p2                                             | -   |        | sub_ln44     | sub  | fabric  | 0       |
+|       add_ln44_53_fu_669_p2                                          | -   |        | add_ln44_53  | add  | fabric  | 0       |
+|       sub_ln44_7_fu_758_p2                                           | -   |        | sub_ln44_7   | sub  | fabric  | 0       |
+|       add_ln44_54_fu_683_p2                                          | -   |        | add_ln44_54  | add  | fabric  | 0       |
+|       sub_ln44_8_fu_842_p2                                           | -   |        | sub_ln44_8   | sub  | fabric  | 0       |
+|       empty_103_fu_708_p2                                            | -   |        | empty_103    | add  | fabric  | 0       |
+|       add_ln44_55_fu_767_p2                                          | -   |        | add_ln44_55  | add  | fabric  | 0       |
+|       add_ln44_56_fu_796_p2                                          | -   |        | add_ln44_56  | add  | fabric  | 0       |
+|       add_ln44_57_fu_848_p2                                          | -   |        | add_ln44_57  | add  | fabric  | 0       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U118                             | 3   |        | mul          | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U116                            | 2   |        | w_sum        | fadd | fulldsp | 6       |
+|       add_ln44_fu_777_p2                                             | -   |        | add_ln44     | add  | fabric  | 0       |
+|       add_ln44_58_fu_786_p2                                          | -   |        | add_ln44_58  | add  | fabric  | 0       |
+|       add_ln44_59_fu_853_p2                                          | -   |        | add_ln44_59  | add  | fabric  | 0       |
+|       add_ln44_60_fu_862_p2                                          | -   |        | add_ln44_60  | add  | fabric  | 0       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U119                             | 3   |        | mul_s        | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U116                            | 2   |        | w_sum_25     | fadd | fulldsp | 6       |
+|       add_ln44_4_fu_805_p2                                           | -   |        | add_ln44_4   | add  | fabric  | 0       |
+|       add_ln44_61_fu_814_p2                                          | -   |        | add_ln44_61  | add  | fabric  | 0       |
+|       add_ln44_62_fu_867_p2                                          | -   |        | add_ln44_62  | add  | fabric  | 0       |
+|       add_ln44_63_fu_876_p2                                          | -   |        | add_ln44_63  | add  | fabric  | 0       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U118                             | 3   |        | mul_6        | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U116                            | 2   |        | w_sum_26     | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U119                             | 3   |        | mul_1        | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U116                            | 2   |        | w_sum_27     | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U118                             | 3   |        | mul_1_1      | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U116                            | 2   |        | w_sum_28     | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U119                             | 3   |        | mul_1_2      | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U117                            | 2   |        | w_sum_29     | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U118                             | 3   |        | mul_2        | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U117                            | 2   |        | w_sum_30     | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U119                             | 3   |        | mul_2_1      | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U117                            | 2   |        | w_sum_31     | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U118                             | 3   |        | mul_2_2      | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U117                            | 2   |        | w_sum_32     | fadd | fulldsp | 6       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U117                            | 2   |        | x_assign     | fadd | fulldsp | 6       |
+|       add_ln33_fu_714_p2                                             | -   |        | add_ln33     | add  | fabric  | 0       |
+|       add_ln31_4_fu_418_p2                                           | -   |        | add_ln31_4   | add  | fabric  | 0       |
+|       add_ln28_4_fu_432_p2                                           | -   |        | add_ln28_4   | add  | fabric  | 0       |
+|    + convolution_5                                                   | 10  |        |              |      |         |         |
+|     + convolution_5_Pipeline_conv_for_rows_win_for_rows_win_for_cols | 10  |        |              |      |         |         |
+|       empty_fu_464_p2                                                | -   |        | empty        | add  | fabric  | 0       |
+|       add_ln44_6_fu_469_p2                                           | -   |        | add_ln44_6   | add  | fabric  | 0       |
+|       add_ln44_7_fu_475_p2                                           | -   |        | add_ln44_7   | add  | fabric  | 0       |
+|       add_ln25_3_fu_362_p2                                           | -   |        | add_ln25_3   | add  | fabric  | 0       |
+|       add_ln25_fu_374_p2                                             | -   |        | add_ln25     | add  | fabric  | 0       |
+|       add_ln44_34_fu_500_p2                                          | -   |        | add_ln44_34  | add  | fabric  | 0       |
+|       add_ln44_35_fu_512_p2                                          | -   |        | add_ln44_35  | add  | fabric  | 0       |
+|       add_ln28_fu_540_p2                                             | -   |        | add_ln28     | add  | fabric  | 0       |
+|       add_ln44_36_fu_553_p2                                          | -   |        | add_ln44_36  | add  | fabric  | 0       |
+|       add_ln44_37_fu_566_p2                                          | -   |        | add_ln44_37  | add  | fabric  | 0       |
+|       add_ln31_fu_602_p2                                             | -   |        | add_ln31     | add  | fabric  | 0       |
+|       p_mid1_fu_629_p2                                               | -   |        | p_mid1       | add  | fabric  | 0       |
+|       sub_ln44_fu_663_p2                                             | -   |        | sub_ln44     | sub  | fabric  | 0       |
+|       add_ln44_38_fu_669_p2                                          | -   |        | add_ln44_38  | add  | fabric  | 0       |
+|       sub_ln44_5_fu_758_p2                                           | -   |        | sub_ln44_5   | sub  | fabric  | 0       |
+|       add_ln44_39_fu_683_p2                                          | -   |        | add_ln44_39  | add  | fabric  | 0       |
+|       sub_ln44_6_fu_842_p2                                           | -   |        | sub_ln44_6   | sub  | fabric  | 0       |
+|       empty_101_fu_708_p2                                            | -   |        | empty_101    | add  | fabric  | 0       |
+|       add_ln44_40_fu_767_p2                                          | -   |        | add_ln44_40  | add  | fabric  | 0       |
+|       add_ln44_41_fu_796_p2                                          | -   |        | add_ln44_41  | add  | fabric  | 0       |
+|       add_ln44_42_fu_848_p2                                          | -   |        | add_ln44_42  | add  | fabric  | 0       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U139                             | 3   |        | mul          | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U137                            | 2   |        | w_sum        | fadd | fulldsp | 6       |
+|       add_ln44_fu_777_p2                                             | -   |        | add_ln44     | add  | fabric  | 0       |
+|       add_ln44_43_fu_786_p2                                          | -   |        | add_ln44_43  | add  | fabric  | 0       |
+|       add_ln44_44_fu_853_p2                                          | -   |        | add_ln44_44  | add  | fabric  | 0       |
+|       add_ln44_45_fu_862_p2                                          | -   |        | add_ln44_45  | add  | fabric  | 0       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U140                             | 3   |        | mul_s        | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U137                            | 2   |        | w_sum_17     | fadd | fulldsp | 6       |
+|       add_ln44_3_fu_805_p2                                           | -   |        | add_ln44_3   | add  | fabric  | 0       |
+|       add_ln44_46_fu_814_p2                                          | -   |        | add_ln44_46  | add  | fabric  | 0       |
+|       add_ln44_47_fu_867_p2                                          | -   |        | add_ln44_47  | add  | fabric  | 0       |
+|       add_ln44_48_fu_876_p2                                          | -   |        | add_ln44_48  | add  | fabric  | 0       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U139                             | 3   |        | mul_5        | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U137                            | 2   |        | w_sum_18     | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U140                             | 3   |        | mul_1        | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U137                            | 2   |        | w_sum_19     | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U139                             | 3   |        | mul_1_1      | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U137                            | 2   |        | w_sum_20     | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U140                             | 3   |        | mul_1_2      | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U138                            | 2   |        | w_sum_21     | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U139                             | 3   |        | mul_2        | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U138                            | 2   |        | w_sum_22     | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U140                             | 3   |        | mul_2_1      | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U138                            | 2   |        | w_sum_23     | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U139                             | 3   |        | mul_2_2      | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U138                            | 2   |        | w_sum_24     | fadd | fulldsp | 6       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U138                            | 2   |        | x_assign     | fadd | fulldsp | 6       |
+|       add_ln33_fu_714_p2                                             | -   |        | add_ln33     | add  | fabric  | 0       |
+|       add_ln31_3_fu_418_p2                                           | -   |        | add_ln31_3   | add  | fabric  | 0       |
+|       add_ln28_3_fu_432_p2                                           | -   |        | add_ln28_3   | add  | fabric  | 0       |
+|    + convolution_6                                                   | 10  |        |              |      |         |         |
+|     + convolution_6_Pipeline_conv_for_rows_win_for_rows_win_for_cols | 10  |        |              |      |         |         |
+|       empty_fu_464_p2                                                | -   |        | empty        | add  | fabric  | 0       |
+|       add_ln44_4_fu_469_p2                                           | -   |        | add_ln44_4   | add  | fabric  | 0       |
+|       add_ln44_5_fu_475_p2                                           | -   |        | add_ln44_5   | add  | fabric  | 0       |
+|       add_ln25_2_fu_362_p2                                           | -   |        | add_ln25_2   | add  | fabric  | 0       |
+|       add_ln25_fu_374_p2                                             | -   |        | add_ln25     | add  | fabric  | 0       |
+|       add_ln44_19_fu_500_p2                                          | -   |        | add_ln44_19  | add  | fabric  | 0       |
+|       add_ln44_20_fu_512_p2                                          | -   |        | add_ln44_20  | add  | fabric  | 0       |
+|       add_ln28_fu_540_p2                                             | -   |        | add_ln28     | add  | fabric  | 0       |
+|       add_ln44_21_fu_553_p2                                          | -   |        | add_ln44_21  | add  | fabric  | 0       |
+|       add_ln44_22_fu_566_p2                                          | -   |        | add_ln44_22  | add  | fabric  | 0       |
+|       add_ln31_fu_602_p2                                             | -   |        | add_ln31     | add  | fabric  | 0       |
+|       p_mid1_fu_629_p2                                               | -   |        | p_mid1       | add  | fabric  | 0       |
+|       sub_ln44_fu_663_p2                                             | -   |        | sub_ln44     | sub  | fabric  | 0       |
+|       add_ln44_23_fu_669_p2                                          | -   |        | add_ln44_23  | add  | fabric  | 0       |
+|       sub_ln44_3_fu_758_p2                                           | -   |        | sub_ln44_3   | sub  | fabric  | 0       |
+|       add_ln44_24_fu_683_p2                                          | -   |        | add_ln44_24  | add  | fabric  | 0       |
+|       sub_ln44_4_fu_842_p2                                           | -   |        | sub_ln44_4   | sub  | fabric  | 0       |
+|       empty_99_fu_708_p2                                             | -   |        | empty_99     | add  | fabric  | 0       |
+|       add_ln44_25_fu_767_p2                                          | -   |        | add_ln44_25  | add  | fabric  | 0       |
+|       add_ln44_26_fu_796_p2                                          | -   |        | add_ln44_26  | add  | fabric  | 0       |
+|       add_ln44_27_fu_848_p2                                          | -   |        | add_ln44_27  | add  | fabric  | 0       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U160                             | 3   |        | mul          | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U158                            | 2   |        | w_sum        | fadd | fulldsp | 6       |
+|       add_ln44_fu_777_p2                                             | -   |        | add_ln44     | add  | fabric  | 0       |
+|       add_ln44_28_fu_786_p2                                          | -   |        | add_ln44_28  | add  | fabric  | 0       |
+|       add_ln44_29_fu_853_p2                                          | -   |        | add_ln44_29  | add  | fabric  | 0       |
+|       add_ln44_30_fu_862_p2                                          | -   |        | add_ln44_30  | add  | fabric  | 0       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U161                             | 3   |        | mul_s        | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U158                            | 2   |        | w_sum_9      | fadd | fulldsp | 6       |
+|       add_ln44_2_fu_805_p2                                           | -   |        | add_ln44_2   | add  | fabric  | 0       |
+|       add_ln44_31_fu_814_p2                                          | -   |        | add_ln44_31  | add  | fabric  | 0       |
+|       add_ln44_32_fu_867_p2                                          | -   |        | add_ln44_32  | add  | fabric  | 0       |
+|       add_ln44_33_fu_876_p2                                          | -   |        | add_ln44_33  | add  | fabric  | 0       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U160                             | 3   |        | mul_4        | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U158                            | 2   |        | w_sum_10     | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U161                             | 3   |        | mul_1        | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U158                            | 2   |        | w_sum_11     | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U160                             | 3   |        | mul_1_1      | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U158                            | 2   |        | w_sum_12     | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U161                             | 3   |        | mul_1_2      | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U159                            | 2   |        | w_sum_13     | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U160                             | 3   |        | mul_2        | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U159                            | 2   |        | w_sum_14     | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U161                             | 3   |        | mul_2_1      | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U159                            | 2   |        | w_sum_15     | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U160                             | 3   |        | mul_2_2      | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U159                            | 2   |        | w_sum_16     | fadd | fulldsp | 6       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U159                            | 2   |        | x_assign     | fadd | fulldsp | 6       |
+|       add_ln33_fu_714_p2                                             | -   |        | add_ln33     | add  | fabric  | 0       |
+|       add_ln31_2_fu_418_p2                                           | -   |        | add_ln31_2   | add  | fabric  | 0       |
+|       add_ln28_2_fu_432_p2                                           | -   |        | add_ln28_2   | add  | fabric  | 0       |
+|    + convolution_7                                                   | 10  |        |              |      |         |         |
+|     + convolution_7_Pipeline_conv_for_rows_win_for_rows_win_for_cols | 10  |        |              |      |         |         |
+|       empty_fu_464_p2                                                | -   |        | empty        | add  | fabric  | 0       |
+|       add_ln44_2_fu_469_p2                                           | -   |        | add_ln44_2   | add  | fabric  | 0       |
+|       add_ln44_3_fu_475_p2                                           | -   |        | add_ln44_3   | add  | fabric  | 0       |
+|       add_ln25_1_fu_362_p2                                           | -   |        | add_ln25_1   | add  | fabric  | 0       |
+|       add_ln25_fu_374_p2                                             | -   |        | add_ln25     | add  | fabric  | 0       |
+|       add_ln44_4_fu_500_p2                                           | -   |        | add_ln44_4   | add  | fabric  | 0       |
+|       add_ln44_5_fu_512_p2                                           | -   |        | add_ln44_5   | add  | fabric  | 0       |
+|       add_ln28_fu_540_p2                                             | -   |        | add_ln28     | add  | fabric  | 0       |
+|       add_ln44_6_fu_553_p2                                           | -   |        | add_ln44_6   | add  | fabric  | 0       |
+|       add_ln44_7_fu_566_p2                                           | -   |        | add_ln44_7   | add  | fabric  | 0       |
+|       add_ln31_fu_602_p2                                             | -   |        | add_ln31     | add  | fabric  | 0       |
+|       p_mid1_fu_629_p2                                               | -   |        | p_mid1       | add  | fabric  | 0       |
+|       sub_ln44_fu_663_p2                                             | -   |        | sub_ln44     | sub  | fabric  | 0       |
+|       add_ln44_8_fu_669_p2                                           | -   |        | add_ln44_8   | add  | fabric  | 0       |
+|       sub_ln44_1_fu_758_p2                                           | -   |        | sub_ln44_1   | sub  | fabric  | 0       |
+|       add_ln44_9_fu_683_p2                                           | -   |        | add_ln44_9   | add  | fabric  | 0       |
+|       sub_ln44_2_fu_842_p2                                           | -   |        | sub_ln44_2   | sub  | fabric  | 0       |
+|       empty_97_fu_708_p2                                             | -   |        | empty_97     | add  | fabric  | 0       |
+|       add_ln44_10_fu_767_p2                                          | -   |        | add_ln44_10  | add  | fabric  | 0       |
+|       add_ln44_11_fu_796_p2                                          | -   |        | add_ln44_11  | add  | fabric  | 0       |
+|       add_ln44_12_fu_848_p2                                          | -   |        | add_ln44_12  | add  | fabric  | 0       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U181                             | 3   |        | mul          | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U179                            | 2   |        | w_sum        | fadd | fulldsp | 6       |
+|       add_ln44_fu_777_p2                                             | -   |        | add_ln44     | add  | fabric  | 0       |
+|       add_ln44_13_fu_786_p2                                          | -   |        | add_ln44_13  | add  | fabric  | 0       |
+|       add_ln44_14_fu_853_p2                                          | -   |        | add_ln44_14  | add  | fabric  | 0       |
+|       add_ln44_15_fu_862_p2                                          | -   |        | add_ln44_15  | add  | fabric  | 0       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U182                             | 3   |        | mul_s        | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U179                            | 2   |        | w_sum_1      | fadd | fulldsp | 6       |
+|       add_ln44_1_fu_805_p2                                           | -   |        | add_ln44_1   | add  | fabric  | 0       |
+|       add_ln44_16_fu_814_p2                                          | -   |        | add_ln44_16  | add  | fabric  | 0       |
+|       add_ln44_17_fu_867_p2                                          | -   |        | add_ln44_17  | add  | fabric  | 0       |
+|       add_ln44_18_fu_876_p2                                          | -   |        | add_ln44_18  | add  | fabric  | 0       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U181                             | 3   |        | mul_3        | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U179                            | 2   |        | w_sum_2      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U182                             | 3   |        | mul_1        | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U179                            | 2   |        | w_sum_3      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U181                             | 3   |        | mul_1_1      | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U179                            | 2   |        | w_sum_4      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U182                             | 3   |        | mul_1_2      | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U180                            | 2   |        | w_sum_5      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U181                             | 3   |        | mul_2        | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U180                            | 2   |        | w_sum_6      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U182                             | 3   |        | mul_2_1      | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U180                            | 2   |        | w_sum_7      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U181                             | 3   |        | mul_2_2      | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U180                            | 2   |        | w_sum_8      | fadd | fulldsp | 6       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U180                            | 2   |        | x_assign     | fadd | fulldsp | 6       |
+|       add_ln33_fu_714_p2                                             | -   |        | add_ln33     | add  | fabric  | 0       |
+|       add_ln31_1_fu_418_p2                                           | -   |        | add_ln31_1   | add  | fabric  | 0       |
+|       add_ln28_1_fu_432_p2                                           | -   |        | add_ln28_1   | add  | fabric  | 0       |
+|   + max_pooling_layer                                                | 0   |        |              |      |         |         |
+|    + max_pooling                                                     | 0   |        |              |      |         |         |
+|      add_ln15_fu_108_p2                                              | -   |        | add_ln15     | add  | fabric  | 0       |
+|    + max_pooling_8                                                   | 0   |        |              |      |         |         |
+|      add_ln15_fu_108_p2                                              | -   |        | add_ln15     | add  | fabric  | 0       |
+|    + max_pooling_9                                                   | 0   |        |              |      |         |         |
+|      add_ln15_fu_108_p2                                              | -   |        | add_ln15     | add  | fabric  | 0       |
+|    + max_pooling_10                                                  | 0   |        |              |      |         |         |
+|      add_ln15_fu_108_p2                                              | -   |        | add_ln15     | add  | fabric  | 0       |
+|    + max_pooling_11                                                  | 0   |        |              |      |         |         |
+|      add_ln15_fu_108_p2                                              | -   |        | add_ln15     | add  | fabric  | 0       |
+|    + max_pooling_12                                                  | 0   |        |              |      |         |         |
+|      add_ln15_fu_108_p2                                              | -   |        | add_ln15     | add  | fabric  | 0       |
+|    + max_pooling_13                                                  | 0   |        |              |      |         |         |
+|      add_ln15_fu_108_p2                                              | -   |        | add_ln15     | add  | fabric  | 0       |
+|    + max_pooling_14                                                  | 0   |        |              |      |         |         |
+|      add_ln15_fu_108_p2                                              | -   |        | add_ln15     | add  | fabric  | 0       |
+|   + flattening_layer                                                 | 0   |        |              |      |         |         |
+|    + flattening                                                      | 0   |        |              |      |         |         |
+|      add_ln11_fu_71_p2                                               | -   |        | add_ln11     | add  | fabric  | 0       |
+|    + flattening_15                                                   | 0   |        |              |      |         |         |
+|      add_ln11_fu_71_p2                                               | -   |        | add_ln11     | add  | fabric  | 0       |
+|    + flattening_16                                                   | 0   |        |              |      |         |         |
+|      add_ln11_fu_71_p2                                               | -   |        | add_ln11     | add  | fabric  | 0       |
+|    + flattening_17                                                   | 0   |        |              |      |         |         |
+|      add_ln11_fu_71_p2                                               | -   |        | add_ln11     | add  | fabric  | 0       |
+|    + flattening_18                                                   | 0   |        |              |      |         |         |
+|      add_ln11_fu_71_p2                                               | -   |        | add_ln11     | add  | fabric  | 0       |
+|    + flattening_19                                                   | 0   |        |              |      |         |         |
+|      add_ln11_fu_71_p2                                               | -   |        | add_ln11     | add  | fabric  | 0       |
+|    + flattening_20                                                   | 0   |        |              |      |         |         |
+|      add_ln11_fu_71_p2                                               | -   |        | add_ln11     | add  | fabric  | 0       |
+|    + flattening_21                                                   | 0   |        |              |      |         |         |
+|      add_ln11_fu_71_p2                                               | -   |        | add_ln11     | add  | fabric  | 0       |
+|   + dense_layer                                                      | 40  |        |              |      |         |         |
+|    + dense                                                           | 5   |        |              |      |         |         |
+|     + dense_Pipeline_1                                               | 0   |        |              |      |         |         |
+|       empty_25_fu_58_p2                                              | -   |        | empty_25     | add  | fabric  | 0       |
+|     + dense_Pipeline_dense_for_flat                                  | 5   |        |              |      |         |         |
+|       add_ln49_fu_486_p2                                             | -   |        | add_ln49     | add  | fabric  | 0       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U306                             | 3   |        | mul7         | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U305                            | 2   |        | add          | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U306                             | 3   |        | mul7_1       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U305                            | 2   |        | add10_1      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U306                             | 3   |        | mul7_2       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U305                            | 2   |        | add10_2      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U306                             | 3   |        | mul7_3       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U305                            | 2   |        | add10_3      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U306                             | 3   |        | mul7_4       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U305                            | 2   |        | add10_4      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U306                             | 3   |        | mul7_5       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U305                            | 2   |        | add10_5      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U306                             | 3   |        | mul7_6       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U305                            | 2   |        | add10_6      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U306                             | 3   |        | mul7_7       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U305                            | 2   |        | add10_7      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U306                             | 3   |        | mul7_8       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U305                            | 2   |        | add10_8      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U306                             | 3   |        | mul7_9       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U305                            | 2   |        | add10_9      | fadd | fulldsp | 6       |
+|     + dense_Pipeline_VITIS_LOOP_60_2                                 | 0   |        |              |      |         |         |
+|       add_ln60_fu_76_p2                                              | -   |        | add_ln60     | add  | fabric  | 0       |
+|    + dense_22                                                        | 5   |        |              |      |         |         |
+|     + dense_22_Pipeline_1                                            | 0   |        |              |      |         |         |
+|       empty_58_fu_58_p2                                              | -   |        | empty_58     | add  | fabric  | 0       |
+|     + dense_22_Pipeline_dense_for_flat                               | 5   |        |              |      |         |         |
+|       add_ln49_fu_488_p2                                             | -   |        | add_ln49     | add  | fabric  | 0       |
+|       empty_56_fu_498_p2                                             | -   |        | empty_56     | add  | fabric  | 0       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U345                             | 3   |        | mul7         | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U344                            | 2   |        | add          | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U345                             | 3   |        | mul7_1       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U344                            | 2   |        | add10_1      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U345                             | 3   |        | mul7_2       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U344                            | 2   |        | add10_2      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U345                             | 3   |        | mul7_3       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U344                            | 2   |        | add10_3      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U345                             | 3   |        | mul7_4       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U344                            | 2   |        | add10_4      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U345                             | 3   |        | mul7_5       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U344                            | 2   |        | add10_5      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U345                             | 3   |        | mul7_6       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U344                            | 2   |        | add10_6      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U345                             | 3   |        | mul7_7       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U344                            | 2   |        | add10_7      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U345                             | 3   |        | mul7_8       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U344                            | 2   |        | add10_8      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U345                             | 3   |        | mul7_9       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U344                            | 2   |        | add10_9      | fadd | fulldsp | 6       |
+|     + dense_22_Pipeline_VITIS_LOOP_60_2                              | 0   |        |              |      |         |         |
+|       add_ln60_fu_76_p2                                              | -   |        | add_ln60     | add  | fabric  | 0       |
+|    + dense_23                                                        | 5   |        |              |      |         |         |
+|     + dense_23_Pipeline_1                                            | 0   |        |              |      |         |         |
+|       empty_53_fu_58_p2                                              | -   |        | empty_53     | add  | fabric  | 0       |
+|     + dense_23_Pipeline_dense_for_flat                               | 5   |        |              |      |         |         |
+|       add_ln49_fu_488_p2                                             | -   |        | add_ln49     | add  | fabric  | 0       |
+|       empty_51_fu_498_p2                                             | -   |        | empty_51     | add  | fabric  | 0       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U373                             | 3   |        | mul7         | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U372                            | 2   |        | add          | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U373                             | 3   |        | mul7_1       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U372                            | 2   |        | add10_1      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U373                             | 3   |        | mul7_2       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U372                            | 2   |        | add10_2      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U373                             | 3   |        | mul7_3       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U372                            | 2   |        | add10_3      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U373                             | 3   |        | mul7_4       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U372                            | 2   |        | add10_4      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U373                             | 3   |        | mul7_5       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U372                            | 2   |        | add10_5      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U373                             | 3   |        | mul7_6       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U372                            | 2   |        | add10_6      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U373                             | 3   |        | mul7_7       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U372                            | 2   |        | add10_7      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U373                             | 3   |        | mul7_8       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U372                            | 2   |        | add10_8      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U373                             | 3   |        | mul7_9       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U372                            | 2   |        | add10_9      | fadd | fulldsp | 6       |
+|     + dense_23_Pipeline_VITIS_LOOP_60_2                              | 0   |        |              |      |         |         |
+|       add_ln60_fu_76_p2                                              | -   |        | add_ln60     | add  | fabric  | 0       |
+|    + dense_24                                                        | 5   |        |              |      |         |         |
+|     + dense_24_Pipeline_1                                            | 0   |        |              |      |         |         |
+|       empty_48_fu_58_p2                                              | -   |        | empty_48     | add  | fabric  | 0       |
+|     + dense_24_Pipeline_dense_for_flat                               | 5   |        |              |      |         |         |
+|       add_ln49_fu_488_p2                                             | -   |        | add_ln49     | add  | fabric  | 0       |
+|       empty_46_fu_498_p2                                             | -   |        | empty_46     | add  | fabric  | 0       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U401                             | 3   |        | mul7         | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U400                            | 2   |        | add          | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U401                             | 3   |        | mul7_1       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U400                            | 2   |        | add10_1      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U401                             | 3   |        | mul7_2       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U400                            | 2   |        | add10_2      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U401                             | 3   |        | mul7_3       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U400                            | 2   |        | add10_3      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U401                             | 3   |        | mul7_4       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U400                            | 2   |        | add10_4      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U401                             | 3   |        | mul7_5       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U400                            | 2   |        | add10_5      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U401                             | 3   |        | mul7_6       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U400                            | 2   |        | add10_6      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U401                             | 3   |        | mul7_7       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U400                            | 2   |        | add10_7      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U401                             | 3   |        | mul7_8       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U400                            | 2   |        | add10_8      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U401                             | 3   |        | mul7_9       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U400                            | 2   |        | add10_9      | fadd | fulldsp | 6       |
+|     + dense_24_Pipeline_VITIS_LOOP_60_2                              | 0   |        |              |      |         |         |
+|       add_ln60_fu_76_p2                                              | -   |        | add_ln60     | add  | fabric  | 0       |
+|    + dense_25                                                        | 5   |        |              |      |         |         |
+|     + dense_25_Pipeline_1                                            | 0   |        |              |      |         |         |
+|       empty_43_fu_58_p2                                              | -   |        | empty_43     | add  | fabric  | 0       |
+|     + dense_25_Pipeline_dense_for_flat                               | 5   |        |              |      |         |         |
+|       add_ln49_fu_488_p2                                             | -   |        | add_ln49     | add  | fabric  | 0       |
+|       empty_41_fu_498_p2                                             | -   |        | empty_41     | add  | fabric  | 0       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U429                             | 3   |        | mul7         | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U428                            | 2   |        | add          | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U429                             | 3   |        | mul7_1       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U428                            | 2   |        | add10_1      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U429                             | 3   |        | mul7_2       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U428                            | 2   |        | add10_2      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U429                             | 3   |        | mul7_3       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U428                            | 2   |        | add10_3      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U429                             | 3   |        | mul7_4       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U428                            | 2   |        | add10_4      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U429                             | 3   |        | mul7_5       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U428                            | 2   |        | add10_5      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U429                             | 3   |        | mul7_6       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U428                            | 2   |        | add10_6      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U429                             | 3   |        | mul7_7       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U428                            | 2   |        | add10_7      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U429                             | 3   |        | mul7_8       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U428                            | 2   |        | add10_8      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U429                             | 3   |        | mul7_9       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U428                            | 2   |        | add10_9      | fadd | fulldsp | 6       |
+|     + dense_25_Pipeline_VITIS_LOOP_60_2                              | 0   |        |              |      |         |         |
+|       add_ln60_fu_76_p2                                              | -   |        | add_ln60     | add  | fabric  | 0       |
+|    + dense_26                                                        | 5   |        |              |      |         |         |
+|     + dense_26_Pipeline_1                                            | 0   |        |              |      |         |         |
+|       empty_38_fu_58_p2                                              | -   |        | empty_38     | add  | fabric  | 0       |
+|     + dense_26_Pipeline_dense_for_flat                               | 5   |        |              |      |         |         |
+|       add_ln49_fu_488_p2                                             | -   |        | add_ln49     | add  | fabric  | 0       |
+|       empty_36_fu_498_p2                                             | -   |        | empty_36     | add  | fabric  | 0       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U457                             | 3   |        | mul7         | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U456                            | 2   |        | add          | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U457                             | 3   |        | mul7_1       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U456                            | 2   |        | add10_1      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U457                             | 3   |        | mul7_2       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U456                            | 2   |        | add10_2      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U457                             | 3   |        | mul7_3       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U456                            | 2   |        | add10_3      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U457                             | 3   |        | mul7_4       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U456                            | 2   |        | add10_4      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U457                             | 3   |        | mul7_5       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U456                            | 2   |        | add10_5      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U457                             | 3   |        | mul7_6       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U456                            | 2   |        | add10_6      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U457                             | 3   |        | mul7_7       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U456                            | 2   |        | add10_7      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U457                             | 3   |        | mul7_8       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U456                            | 2   |        | add10_8      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U457                             | 3   |        | mul7_9       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U456                            | 2   |        | add10_9      | fadd | fulldsp | 6       |
+|     + dense_26_Pipeline_VITIS_LOOP_60_2                              | 0   |        |              |      |         |         |
+|       add_ln60_fu_76_p2                                              | -   |        | add_ln60     | add  | fabric  | 0       |
+|    + dense_27                                                        | 5   |        |              |      |         |         |
+|     + dense_27_Pipeline_1                                            | 0   |        |              |      |         |         |
+|       empty_33_fu_58_p2                                              | -   |        | empty_33     | add  | fabric  | 0       |
+|     + dense_27_Pipeline_dense_for_flat                               | 5   |        |              |      |         |         |
+|       add_ln49_fu_488_p2                                             | -   |        | add_ln49     | add  | fabric  | 0       |
+|       empty_31_fu_498_p2                                             | -   |        | empty_31     | add  | fabric  | 0       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U485                             | 3   |        | mul7         | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U484                            | 2   |        | add          | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U485                             | 3   |        | mul7_1       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U484                            | 2   |        | add10_1      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U485                             | 3   |        | mul7_2       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U484                            | 2   |        | add10_2      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U485                             | 3   |        | mul7_3       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U484                            | 2   |        | add10_3      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U485                             | 3   |        | mul7_4       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U484                            | 2   |        | add10_4      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U485                             | 3   |        | mul7_5       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U484                            | 2   |        | add10_5      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U485                             | 3   |        | mul7_6       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U484                            | 2   |        | add10_6      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U485                             | 3   |        | mul7_7       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U484                            | 2   |        | add10_7      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U485                             | 3   |        | mul7_8       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U484                            | 2   |        | add10_8      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U485                             | 3   |        | mul7_9       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U484                            | 2   |        | add10_9      | fadd | fulldsp | 6       |
+|     + dense_27_Pipeline_VITIS_LOOP_60_2                              | 0   |        |              |      |         |         |
+|       add_ln60_fu_76_p2                                              | -   |        | add_ln60     | add  | fabric  | 0       |
+|    + dense_28                                                        | 5   |        |              |      |         |         |
+|     + dense_28_Pipeline_1                                            | 0   |        |              |      |         |         |
+|       empty_28_fu_58_p2                                              | -   |        | empty_28     | add  | fabric  | 0       |
+|     + dense_28_Pipeline_dense_for_flat                               | 5   |        |              |      |         |         |
+|       add_ln49_fu_488_p2                                             | -   |        | add_ln49     | add  | fabric  | 0       |
+|       empty_26_fu_498_p2                                             | -   |        | empty_26     | add  | fabric  | 0       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U513                             | 3   |        | mul7         | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U512                            | 2   |        | add          | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U513                             | 3   |        | mul7_1       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U512                            | 2   |        | add10_1      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U513                             | 3   |        | mul7_2       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U512                            | 2   |        | add10_2      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U513                             | 3   |        | mul7_3       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U512                            | 2   |        | add10_3      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U513                             | 3   |        | mul7_4       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U512                            | 2   |        | add10_4      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U513                             | 3   |        | mul7_5       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U512                            | 2   |        | add10_5      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U513                             | 3   |        | mul7_6       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U512                            | 2   |        | add10_6      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U513                             | 3   |        | mul7_7       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U512                            | 2   |        | add10_7      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U513                             | 3   |        | mul7_8       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U512                            | 2   |        | add10_8      | fadd | fulldsp | 6       |
+|       fmul_32ns_32ns_32_4_max_dsp_1_U513                             | 3   |        | mul7_9       | fmul | maxdsp  | 3       |
+|       fadd_32ns_32ns_32_7_full_dsp_1_U512                            | 2   |        | add10_9      | fadd | fulldsp | 6       |
+|     + dense_28_Pipeline_VITIS_LOOP_60_2                              | 0   |        |              |      |         |         |
+|       add_ln60_fu_76_p2                                              | -   |        | add_ln60     | add  | fabric  | 0       |
+|   + dense_layer_soft_max                                             | 11  |        |              |      |         |         |
+|    + dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size     | 11  |        |              |      |         |         |
+|      add_ln17_fu_185_p2                                              | -   |        | add_ln17     | add  | fabric  | 0       |
+|      fadd_32ns_32ns_32_7_full_dsp_1_U555                             | 2   |        | sum_2        | fadd | fulldsp | 6       |
+|      fadd_32ns_32ns_32_7_full_dsp_1_U556                             | 2   |        | sum_2_1      | fadd | fulldsp | 6       |
+|      fadd_32ns_32ns_32_7_full_dsp_1_U555                             | 2   |        | sum_2_2      | fadd | fulldsp | 6       |
+|      fadd_32ns_32ns_32_7_full_dsp_1_U556                             | 2   |        | sum_2_3      | fadd | fulldsp | 6       |
+|      fadd_32ns_32ns_32_7_full_dsp_1_U555                             | 2   |        | sum_2_4      | fadd | fulldsp | 6       |
+|      fadd_32ns_32ns_32_7_full_dsp_1_U556                             | 2   |        | sum_2_5      | fadd | fulldsp | 6       |
+|      fadd_32ns_32ns_32_7_full_dsp_1_U555                             | 2   |        | sum_2_6      | fadd | fulldsp | 6       |
+|      fadd_32ns_32ns_32_7_full_dsp_1_U556                             | 2   |        | sum_2_7      | fadd | fulldsp | 6       |
+|      fexp_32ns_32ns_32_10_full_dsp_1_U557                            | 7   |        | tmp          | fexp | fulldsp | 9       |
+|      fadd_32ns_32ns_32_7_full_dsp_1_U555                             | 2   |        | exp_sum_1    | fadd | fulldsp | 6       |
+|    + dense_layer_soft_max_Pipeline_dense_soft_max_for_digits         | 0   |        |              |      |         |         |
+|      add_ln31_fu_83_p2                                               | -   |        | add_ln31     | add  | fabric  | 0       |
+|      fdiv_32ns_32ns_32_16_no_dsp_1_U570                              | -   |        | div          | fdiv | fabric  | 15      |
++----------------------------------------------------------------------+-----+--------+--------------+------+---------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
++------------------------------------------------------------------+------+------+--------+----------------------------+---------+--------+---------+
+| Name                                                             | BRAM | URAM | Pragma | Variable                   | Storage | Impl   | Latency |
++------------------------------------------------------------------+------+------+--------+----------------------------+---------+--------+---------+
+| + cnn                                                            | 384  | 0    |        |                            |         |        |         |
+|   pad_img_U                                                      | 2    | -    |        | pad_img                    | rom_np  | auto   | 1       |
+|   pad_img1_U                                                     | 2    | -    |        | pad_img1                   | rom_np  | auto   | 1       |
+|   pad_img2_U                                                     | 2    | -    |        | pad_img2                   | rom_np  | auto   | 1       |
+|   pad_img3_U                                                     | 2    | -    |        | pad_img3                   | rom_np  | auto   | 1       |
+|   pad_img4_U                                                     | 2    | -    |        | pad_img4                   | rom_np  | auto   | 1       |
+|   pad_img5_U                                                     | 2    | -    |        | pad_img5                   | rom_np  | auto   | 1       |
+|   pad_img6_U                                                     | 2    | -    |        | pad_img6                   | rom_np  | auto   | 1       |
+|   pad_img7_U                                                     | 2    | -    |        | pad_img7                   | rom_np  | auto   | 1       |
+|   weight_buf_0_U                                                 | -    | -    |        | weight_buf_0               | ram_s2p | auto   | 1       |
+|   weight_buf_1_U                                                 | -    | -    |        | weight_buf_1               | ram_s2p | auto   | 1       |
+|   weight_buf_2_U                                                 | -    | -    |        | weight_buf_2               | ram_s2p | auto   | 1       |
+|   weight_buf_3_U                                                 | -    | -    |        | weight_buf_3               | ram_s2p | auto   | 1       |
+|   weight_buf_4_U                                                 | -    | -    |        | weight_buf_4               | ram_s2p | auto   | 1       |
+|   weight_buf_5_U                                                 | -    | -    |        | weight_buf_5               | ram_s2p | auto   | 1       |
+|   weight_buf_6_U                                                 | -    | -    |        | weight_buf_6               | ram_s2p | auto   | 1       |
+|   weight_buf_7_U                                                 | -    | -    |        | weight_buf_7               | ram_s2p | auto   | 1       |
+|  + dataflow_section                                              | 368  | 0    |        |                            |         |        |         |
+|    conv_to_pool_streams_0_U                                      | 2    | -    |        | conv_to_pool_streams_0     | fifo    | memory | 0       |
+|    conv_to_pool_streams_1_U                                      | 2    | -    |        | conv_to_pool_streams_1     | fifo    | memory | 0       |
+|    conv_to_pool_streams_2_U                                      | 2    | -    |        | conv_to_pool_streams_2     | fifo    | memory | 0       |
+|    conv_to_pool_streams_3_U                                      | 2    | -    |        | conv_to_pool_streams_3     | fifo    | memory | 0       |
+|    conv_to_pool_streams_4_U                                      | 2    | -    |        | conv_to_pool_streams_4     | fifo    | memory | 0       |
+|    conv_to_pool_streams_5_U                                      | 2    | -    |        | conv_to_pool_streams_5     | fifo    | memory | 0       |
+|    conv_to_pool_streams_6_U                                      | 2    | -    |        | conv_to_pool_streams_6     | fifo    | memory | 0       |
+|    conv_to_pool_streams_7_U                                      | 2    | -    |        | conv_to_pool_streams_7     | fifo    | memory | 0       |
+|    pool_to_flat_streams_0_U                                      | 2    | -    |        | pool_to_flat_streams_0     | fifo    | memory | 0       |
+|    pool_to_flat_streams_1_U                                      | 2    | -    |        | pool_to_flat_streams_1     | fifo    | memory | 0       |
+|    pool_to_flat_streams_2_U                                      | 2    | -    |        | pool_to_flat_streams_2     | fifo    | memory | 0       |
+|    pool_to_flat_streams_3_U                                      | 2    | -    |        | pool_to_flat_streams_3     | fifo    | memory | 0       |
+|    pool_to_flat_streams_4_U                                      | 2    | -    |        | pool_to_flat_streams_4     | fifo    | memory | 0       |
+|    pool_to_flat_streams_5_U                                      | 2    | -    |        | pool_to_flat_streams_5     | fifo    | memory | 0       |
+|    pool_to_flat_streams_6_U                                      | 2    | -    |        | pool_to_flat_streams_6     | fifo    | memory | 0       |
+|    pool_to_flat_streams_7_U                                      | 2    | -    |        | pool_to_flat_streams_7     | fifo    | memory | 0       |
+|    flat_to_dense_streams_0_U                                     | 2    | -    |        | flat_to_dense_streams_0    | fifo    | memory | 0       |
+|    flat_to_dense_streams_1_U                                     | 2    | -    |        | flat_to_dense_streams_1    | fifo    | memory | 0       |
+|    flat_to_dense_streams_2_U                                     | 2    | -    |        | flat_to_dense_streams_2    | fifo    | memory | 0       |
+|    flat_to_dense_streams_3_U                                     | 2    | -    |        | flat_to_dense_streams_3    | fifo    | memory | 0       |
+|    flat_to_dense_streams_4_U                                     | 2    | -    |        | flat_to_dense_streams_4    | fifo    | memory | 0       |
+|    flat_to_dense_streams_5_U                                     | 2    | -    |        | flat_to_dense_streams_5    | fifo    | memory | 0       |
+|    flat_to_dense_streams_6_U                                     | 2    | -    |        | flat_to_dense_streams_6    | fifo    | memory | 0       |
+|    flat_to_dense_streams_7_U                                     | 2    | -    |        | flat_to_dense_streams_7    | fifo    | memory | 0       |
+|    dense_to_softmax_streams_0_U                                  | -    | -    |        | dense_to_softmax_streams_0 | fifo    | srl    | 0       |
+|    dense_to_softmax_streams_1_U                                  | -    | -    |        | dense_to_softmax_streams_1 | fifo    | srl    | 0       |
+|    dense_to_softmax_streams_2_U                                  | -    | -    |        | dense_to_softmax_streams_2 | fifo    | srl    | 0       |
+|    dense_to_softmax_streams_3_U                                  | -    | -    |        | dense_to_softmax_streams_3 | fifo    | srl    | 0       |
+|    dense_to_softmax_streams_4_U                                  | -    | -    |        | dense_to_softmax_streams_4 | fifo    | srl    | 0       |
+|    dense_to_softmax_streams_5_U                                  | -    | -    |        | dense_to_softmax_streams_5 | fifo    | srl    | 0       |
+|    dense_to_softmax_streams_6_U                                  | -    | -    |        | dense_to_softmax_streams_6 | fifo    | srl    | 0       |
+|    dense_to_softmax_streams_7_U                                  | -    | -    |        | dense_to_softmax_streams_7 | fifo    | srl    | 0       |
+|   + dense_layer                                                  | 320  | 0    |        |                            |         |        |         |
+|    + dense                                                       | 40   | 0    |        |                            |         |        |         |
+|      dense_array_U                                               | -    | -    |        | dense_array                | ram_t2p | auto   | 1       |
+|     + dense_Pipeline_dense_for_flat                              | 40   | 0    |        |                            |         |        |         |
+|       dense_weights_72_U                                         | 4    | -    |        | dense_weights_72           | rom_1p  | auto   | 1       |
+|       dense_weights_65_U                                         | 4    | -    |        | dense_weights_65           | rom_1p  | auto   | 1       |
+|       dense_weights_58_U                                         | 4    | -    |        | dense_weights_58           | rom_1p  | auto   | 1       |
+|       dense_weights_51_U                                         | 4    | -    |        | dense_weights_51           | rom_1p  | auto   | 1       |
+|       dense_weights_44_U                                         | 4    | -    |        | dense_weights_44           | rom_1p  | auto   | 1       |
+|       dense_weights_37_U                                         | 4    | -    |        | dense_weights_37           | rom_1p  | auto   | 1       |
+|       dense_weights_30_U                                         | 4    | -    |        | dense_weights_30           | rom_1p  | auto   | 1       |
+|       dense_weights_23_U                                         | 4    | -    |        | dense_weights_23           | rom_1p  | auto   | 1       |
+|       dense_weights_16_U                                         | 4    | -    |        | dense_weights_16           | rom_1p  | auto   | 1       |
+|       dense_weights_U                                            | 4    | -    |        | dense_weights              | rom_1p  | auto   | 1       |
+|    + dense_22                                                    | 40   | 0    |        |                            |         |        |         |
+|      dense_array_U                                               | -    | -    |        | dense_array                | ram_t2p | auto   | 1       |
+|     + dense_22_Pipeline_dense_for_flat                           | 40   | 0    |        |                            |         |        |         |
+|       dense_weights_73_U                                         | 4    | -    |        | dense_weights_73           | rom_1p  | auto   | 1       |
+|       dense_weights_66_U                                         | 4    | -    |        | dense_weights_66           | rom_1p  | auto   | 1       |
+|       dense_weights_59_U                                         | 4    | -    |        | dense_weights_59           | rom_1p  | auto   | 1       |
+|       dense_weights_52_U                                         | 4    | -    |        | dense_weights_52           | rom_1p  | auto   | 1       |
+|       dense_weights_45_U                                         | 4    | -    |        | dense_weights_45           | rom_1p  | auto   | 1       |
+|       dense_weights_38_U                                         | 4    | -    |        | dense_weights_38           | rom_1p  | auto   | 1       |
+|       dense_weights_31_U                                         | 4    | -    |        | dense_weights_31           | rom_1p  | auto   | 1       |
+|       dense_weights_24_U                                         | 4    | -    |        | dense_weights_24           | rom_1p  | auto   | 1       |
+|       dense_weights_17_U                                         | 4    | -    |        | dense_weights_17           | rom_1p  | auto   | 1       |
+|       dense_weights_10_U                                         | 4    | -    |        | dense_weights_10           | rom_1p  | auto   | 1       |
+|    + dense_23                                                    | 40   | 0    |        |                            |         |        |         |
+|      dense_array_U                                               | -    | -    |        | dense_array                | ram_t2p | auto   | 1       |
+|     + dense_23_Pipeline_dense_for_flat                           | 40   | 0    |        |                            |         |        |         |
+|       dense_weights_74_U                                         | 4    | -    |        | dense_weights_74           | rom_1p  | auto   | 1       |
+|       dense_weights_67_U                                         | 4    | -    |        | dense_weights_67           | rom_1p  | auto   | 1       |
+|       dense_weights_60_U                                         | 4    | -    |        | dense_weights_60           | rom_1p  | auto   | 1       |
+|       dense_weights_53_U                                         | 4    | -    |        | dense_weights_53           | rom_1p  | auto   | 1       |
+|       dense_weights_46_U                                         | 4    | -    |        | dense_weights_46           | rom_1p  | auto   | 1       |
+|       dense_weights_39_U                                         | 4    | -    |        | dense_weights_39           | rom_1p  | auto   | 1       |
+|       dense_weights_32_U                                         | 4    | -    |        | dense_weights_32           | rom_1p  | auto   | 1       |
+|       dense_weights_25_U                                         | 4    | -    |        | dense_weights_25           | rom_1p  | auto   | 1       |
+|       dense_weights_18_U                                         | 4    | -    |        | dense_weights_18           | rom_1p  | auto   | 1       |
+|       dense_weights_11_U                                         | 4    | -    |        | dense_weights_11           | rom_1p  | auto   | 1       |
+|    + dense_24                                                    | 40   | 0    |        |                            |         |        |         |
+|      dense_array_U                                               | -    | -    |        | dense_array                | ram_t2p | auto   | 1       |
+|     + dense_24_Pipeline_dense_for_flat                           | 40   | 0    |        |                            |         |        |         |
+|       dense_weights_75_U                                         | 4    | -    |        | dense_weights_75           | rom_1p  | auto   | 1       |
+|       dense_weights_68_U                                         | 4    | -    |        | dense_weights_68           | rom_1p  | auto   | 1       |
+|       dense_weights_61_U                                         | 4    | -    |        | dense_weights_61           | rom_1p  | auto   | 1       |
+|       dense_weights_54_U                                         | 4    | -    |        | dense_weights_54           | rom_1p  | auto   | 1       |
+|       dense_weights_47_U                                         | 4    | -    |        | dense_weights_47           | rom_1p  | auto   | 1       |
+|       dense_weights_40_U                                         | 4    | -    |        | dense_weights_40           | rom_1p  | auto   | 1       |
+|       dense_weights_33_U                                         | 4    | -    |        | dense_weights_33           | rom_1p  | auto   | 1       |
+|       dense_weights_26_U                                         | 4    | -    |        | dense_weights_26           | rom_1p  | auto   | 1       |
+|       dense_weights_19_U                                         | 4    | -    |        | dense_weights_19           | rom_1p  | auto   | 1       |
+|       dense_weights_12_U                                         | 4    | -    |        | dense_weights_12           | rom_1p  | auto   | 1       |
+|    + dense_25                                                    | 40   | 0    |        |                            |         |        |         |
+|      dense_array_U                                               | -    | -    |        | dense_array                | ram_t2p | auto   | 1       |
+|     + dense_25_Pipeline_dense_for_flat                           | 40   | 0    |        |                            |         |        |         |
+|       dense_weights_76_U                                         | 4    | -    |        | dense_weights_76           | rom_1p  | auto   | 1       |
+|       dense_weights_69_U                                         | 4    | -    |        | dense_weights_69           | rom_1p  | auto   | 1       |
+|       dense_weights_62_U                                         | 4    | -    |        | dense_weights_62           | rom_1p  | auto   | 1       |
+|       dense_weights_55_U                                         | 4    | -    |        | dense_weights_55           | rom_1p  | auto   | 1       |
+|       dense_weights_48_U                                         | 4    | -    |        | dense_weights_48           | rom_1p  | auto   | 1       |
+|       dense_weights_41_U                                         | 4    | -    |        | dense_weights_41           | rom_1p  | auto   | 1       |
+|       dense_weights_34_U                                         | 4    | -    |        | dense_weights_34           | rom_1p  | auto   | 1       |
+|       dense_weights_27_U                                         | 4    | -    |        | dense_weights_27           | rom_1p  | auto   | 1       |
+|       dense_weights_20_U                                         | 4    | -    |        | dense_weights_20           | rom_1p  | auto   | 1       |
+|       dense_weights_13_U                                         | 4    | -    |        | dense_weights_13           | rom_1p  | auto   | 1       |
+|    + dense_26                                                    | 40   | 0    |        |                            |         |        |         |
+|      dense_array_U                                               | -    | -    |        | dense_array                | ram_t2p | auto   | 1       |
+|     + dense_26_Pipeline_dense_for_flat                           | 40   | 0    |        |                            |         |        |         |
+|       dense_weights_77_U                                         | 4    | -    |        | dense_weights_77           | rom_1p  | auto   | 1       |
+|       dense_weights_70_U                                         | 4    | -    |        | dense_weights_70           | rom_1p  | auto   | 1       |
+|       dense_weights_63_U                                         | 4    | -    |        | dense_weights_63           | rom_1p  | auto   | 1       |
+|       dense_weights_56_U                                         | 4    | -    |        | dense_weights_56           | rom_1p  | auto   | 1       |
+|       dense_weights_49_U                                         | 4    | -    |        | dense_weights_49           | rom_1p  | auto   | 1       |
+|       dense_weights_42_U                                         | 4    | -    |        | dense_weights_42           | rom_1p  | auto   | 1       |
+|       dense_weights_35_U                                         | 4    | -    |        | dense_weights_35           | rom_1p  | auto   | 1       |
+|       dense_weights_28_U                                         | 4    | -    |        | dense_weights_28           | rom_1p  | auto   | 1       |
+|       dense_weights_21_U                                         | 4    | -    |        | dense_weights_21           | rom_1p  | auto   | 1       |
+|       dense_weights_14_U                                         | 4    | -    |        | dense_weights_14           | rom_1p  | auto   | 1       |
+|    + dense_27                                                    | 40   | 0    |        |                            |         |        |         |
+|      dense_array_U                                               | -    | -    |        | dense_array                | ram_t2p | auto   | 1       |
+|     + dense_27_Pipeline_dense_for_flat                           | 40   | 0    |        |                            |         |        |         |
+|       dense_weights_78_U                                         | 4    | -    |        | dense_weights_78           | rom_1p  | auto   | 1       |
+|       dense_weights_71_U                                         | 4    | -    |        | dense_weights_71           | rom_1p  | auto   | 1       |
+|       dense_weights_64_U                                         | 4    | -    |        | dense_weights_64           | rom_1p  | auto   | 1       |
+|       dense_weights_57_U                                         | 4    | -    |        | dense_weights_57           | rom_1p  | auto   | 1       |
+|       dense_weights_50_U                                         | 4    | -    |        | dense_weights_50           | rom_1p  | auto   | 1       |
+|       dense_weights_43_U                                         | 4    | -    |        | dense_weights_43           | rom_1p  | auto   | 1       |
+|       dense_weights_36_U                                         | 4    | -    |        | dense_weights_36           | rom_1p  | auto   | 1       |
+|       dense_weights_29_U                                         | 4    | -    |        | dense_weights_29           | rom_1p  | auto   | 1       |
+|       dense_weights_22_U                                         | 4    | -    |        | dense_weights_22           | rom_1p  | auto   | 1       |
+|       dense_weights_15_U                                         | 4    | -    |        | dense_weights_15           | rom_1p  | auto   | 1       |
+|    + dense_28                                                    | 40   | 0    |        |                            |         |        |         |
+|      dense_array_U                                               | -    | -    |        | dense_array                | ram_t2p | auto   | 1       |
+|     + dense_28_Pipeline_dense_for_flat                           | 40   | 0    |        |                            |         |        |         |
+|       dense_weights_0_U                                          | 4    | -    |        | dense_weights_0            | rom_1p  | auto   | 1       |
+|       dense_weights_1_U                                          | 4    | -    |        | dense_weights_1            | rom_1p  | auto   | 1       |
+|       dense_weights_2_U                                          | 4    | -    |        | dense_weights_2            | rom_1p  | auto   | 1       |
+|       dense_weights_3_U                                          | 4    | -    |        | dense_weights_3            | rom_1p  | auto   | 1       |
+|       dense_weights_4_U                                          | 4    | -    |        | dense_weights_4            | rom_1p  | auto   | 1       |
+|       dense_weights_5_U                                          | 4    | -    |        | dense_weights_5            | rom_1p  | auto   | 1       |
+|       dense_weights_6_U                                          | 4    | -    |        | dense_weights_6            | rom_1p  | auto   | 1       |
+|       dense_weights_7_U                                          | 4    | -    |        | dense_weights_7            | rom_1p  | auto   | 1       |
+|       dense_weights_8_U                                          | 4    | -    |        | dense_weights_8            | rom_1p  | auto   | 1       |
+|       dense_weights_9_U                                          | 4    | -    |        | dense_weights_9            | rom_1p  | auto   | 1       |
+|   + dense_layer_soft_max                                         | 0    | 0    |        |                            |         |        |         |
+|    + dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size | 0    | 0    |        |                            |         |        |         |
+|      dense_biases_U                                              | -    | -    |        | dense_biases               | rom_1p  | auto   | 1       |
++------------------------------------------------------------------+------+------+--------+----------------------------+---------+--------+---------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++----------+---------+-----------------------------------------------------------+
+| Type     | Options | Location                                                  |
++----------+---------+-----------------------------------------------------------+
+| pipeline | II=5    | Project/solution1/directives.tcl:12 in convolution        |
+| dataflow |         | Project/solution1/directives.tcl:8 in convolutional_layer |
+| dataflow |         | Project/solution1/directives.tcl:7 in dataflow_section    |
+| pipeline | II=10   | Project/solution1/directives.tcl:13 in dense              |
+| dataflow |         | Project/solution1/directives.tcl:11 in dense_layer        |
+| dataflow |         | Project/solution1/directives.tcl:10 in flattening_layer   |
+| pipeline | II=4    | Project/solution1/directives.tcl:14 in max_pooling        |
+| dataflow |         | Project/solution1/directives.tcl:9 in max_pooling_layer   |
++----------+---------+-----------------------------------------------------------+
+
+

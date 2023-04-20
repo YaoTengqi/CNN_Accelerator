@@ -4,8 +4,8 @@
 #include "pool.hh"
 #include "flat.hh"
 #include "dense.hh"
-
 #include "hls_stream.h"
+#include <string.h>
 
 #ifndef __SYNTHESIS__
 # include <cstdio>
@@ -22,6 +22,22 @@ dataflow_section
   float pad_img5 [PAD_IMG_ROWS][PAD_IMG_COLS],
   float pad_img6 [PAD_IMG_ROWS][PAD_IMG_COLS],
   float pad_img7 [PAD_IMG_ROWS][PAD_IMG_COLS],
+  float weight_buf_0[KRN_ROWS][KRN_COLS],
+  float weight_buf_1[KRN_ROWS][KRN_COLS],
+  float weight_buf_2[KRN_ROWS][KRN_COLS],
+  float weight_buf_3[KRN_ROWS][KRN_COLS],
+  float weight_buf_4[KRN_ROWS][KRN_COLS],
+  float weight_buf_5[KRN_ROWS][KRN_COLS],
+  float weight_buf_6[KRN_ROWS][KRN_COLS],
+  float weight_buf_7[KRN_ROWS][KRN_COLS],
+  float biases_buf_0,
+  float biases_buf_1,
+  float biases_buf_2,
+  float biases_buf_3,
+  float biases_buf_4,
+  float biases_buf_5,
+  float biases_buf_6,
+  float biases_buf_7,
   float prediction [DIGITS]
 )
 {
@@ -37,7 +53,13 @@ dataflow_section
   // Convolution with relu as activation function.
   convolutional_layer(pad_img, pad_img1, pad_img2, pad_img3,
                       pad_img4, pad_img5, pad_img6, pad_img7,
-                      conv_to_pool_streams);
+					  weight_buf_0,weight_buf_1,weight_buf_2,
+					  weight_buf_3,weight_buf_4,weight_buf_5,
+					  weight_buf_6,weight_buf_7,
+					  biases_buf_0,biases_buf_1,biases_buf_2,
+					  biases_buf_3,biases_buf_4,biases_buf_5,
+					  biases_buf_6,biases_buf_7,
+					  conv_to_pool_streams);
 
   #if 0
     #ifndef __SYNTHESIS__
@@ -74,7 +96,9 @@ dataflow_section
 void cnn
 (
   float img_in     [IMG_ROWS][IMG_COLS],
-  float prediction [DIGITS]
+  float prediction [DIGITS],
+  float weight_buf[FILTERS][KRN_ROWS][KRN_COLS],
+  float biases_buf[FILTERS]
 )
 {
   /******** Pre-processing data. ********/
@@ -98,6 +122,24 @@ void cnn
   float pad_img6 [PAD_IMG_ROWS][PAD_IMG_COLS];
   float pad_img7 [PAD_IMG_ROWS][PAD_IMG_COLS];
 
+  float weight_buf_0[KRN_ROWS][KRN_COLS];
+  float weight_buf_1[KRN_ROWS][KRN_COLS];
+  float weight_buf_2[KRN_ROWS][KRN_COLS];
+  float weight_buf_3[KRN_ROWS][KRN_COLS];
+  float weight_buf_4[KRN_ROWS][KRN_COLS];
+  float weight_buf_5[KRN_ROWS][KRN_COLS];
+  float weight_buf_6[KRN_ROWS][KRN_COLS];
+  float weight_buf_7[KRN_ROWS][KRN_COLS];
+
+  float biases_buf_0;
+  float biases_buf_1;
+  float biases_buf_2;
+  float biases_buf_3;
+  float biases_buf_4;
+  float biases_buf_5;
+  float biases_buf_6;
+  float biases_buf_7;
+
   float value;
 
   clone_for_rows:
@@ -115,8 +157,32 @@ void cnn
       pad_img7[i][j] = value;
     }
 
+  memcpy(weight_buf_0,weight_buf[0],KRN_ROWS*KRN_COLS*sizeof(float));
+  memcpy(weight_buf_1,weight_buf[1],KRN_ROWS*KRN_COLS*sizeof(float));
+  memcpy(weight_buf_2,weight_buf[2],KRN_ROWS*KRN_COLS*sizeof(float));
+  memcpy(weight_buf_3,weight_buf[3],KRN_ROWS*KRN_COLS*sizeof(float));
+  memcpy(weight_buf_4,weight_buf[4],KRN_ROWS*KRN_COLS*sizeof(float));
+  memcpy(weight_buf_5,weight_buf[5],KRN_ROWS*KRN_COLS*sizeof(float));
+  memcpy(weight_buf_6,weight_buf[6],KRN_ROWS*KRN_COLS*sizeof(float));
+  memcpy(weight_buf_7,weight_buf[7],KRN_ROWS*KRN_COLS*sizeof(float));
+
+  biases_buf_0 = biases_buf[0];
+  biases_buf_1 = biases_buf[1];
+  biases_buf_2 = biases_buf[2];
+  biases_buf_3 = biases_buf[3];
+  biases_buf_4 = biases_buf[4];
+  biases_buf_5 = biases_buf[5];
+  biases_buf_6 = biases_buf[6];
+  biases_buf_7 = biases_buf[7];
+
   /* Parallel executions start here. */
   dataflow_section(pad_img, pad_img1, pad_img2, pad_img3,
                    pad_img4, pad_img5, pad_img6, pad_img7,
-                   prediction);
+				   weight_buf_0,weight_buf_1,weight_buf_2,
+				   weight_buf_3,weight_buf_4,weight_buf_5,
+				   weight_buf_6,weight_buf_7,
+				   biases_buf_0,biases_buf_1,biases_buf_2,
+				   biases_buf_3,biases_buf_4,biases_buf_5,
+				   biases_buf_6,biases_buf_7,
+				   prediction);
 }

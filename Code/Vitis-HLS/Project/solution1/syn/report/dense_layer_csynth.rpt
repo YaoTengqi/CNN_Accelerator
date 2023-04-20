@@ -1,0 +1,229 @@
+
+
+================================================================
+== Vitis HLS Report for 'dense_layer'
+================================================================
+* Date:           Mon Mar 27 10:49:06 2023
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        Project
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: artix7
+* Target device:  xc7a200t-fbg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.892 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+------+----------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline |
+    |   min   |   max   |    min    |    max    |  min |  max |   Type   |
+    +---------+---------+-----------+-----------+------+------+----------+
+    |     2013|     2013|  20.130 us|  20.130 us|  2014|  2014|  dataflow|
+    +---------+---------+-----------+-----------+------+------+----------+
+
+    + Detail: 
+        * Instance: 
+        +-------------+----------+---------+---------+-----------+-----------+------+------+---------+
+        |             |          |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
+        |   Instance  |  Module  |   min   |   max   |    min    |    max    |  min |  max |   Type  |
+        +-------------+----------+---------+---------+-----------+-----------+------+------+---------+
+        |dense_U0     |dense     |     2013|     2013|  20.130 us|  20.130 us|  2013|  2013|       no|
+        |dense_22_U0  |dense_22  |     2013|     2013|  20.130 us|  20.130 us|  2013|  2013|       no|
+        |dense_23_U0  |dense_23  |     2013|     2013|  20.130 us|  20.130 us|  2013|  2013|       no|
+        |dense_24_U0  |dense_24  |     2013|     2013|  20.130 us|  20.130 us|  2013|  2013|       no|
+        |dense_25_U0  |dense_25  |     2013|     2013|  20.130 us|  20.130 us|  2013|  2013|       no|
+        |dense_26_U0  |dense_26  |     2013|     2013|  20.130 us|  20.130 us|  2013|  2013|       no|
+        |dense_27_U0  |dense_27  |     2013|     2013|  20.130 us|  20.130 us|  2013|  2013|       no|
+        |dense_28_U0  |dense_28  |     2013|     2013|  20.130 us|  20.130 us|  2013|  2013|       no|
+        +-------------+----------+---------+---------+-----------+-----------+------+------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+--------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |   LUT  | URAM|
++-----------------+---------+-----+--------+--------+-----+
+|DSP              |        -|    -|       -|       -|    -|
+|Expression       |        -|    -|       0|      40|    -|
+|FIFO             |        -|    -|       -|       -|    -|
+|Instance         |      320|   40|   15576|    9520|    0|
+|Memory           |        -|    -|       -|       -|    -|
+|Multiplexer      |        -|    -|       -|      72|    -|
+|Register         |        -|    -|       8|       -|    -|
++-----------------+---------+-----+--------+--------+-----+
+|Total            |      320|   40|   15584|    9632|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Available        |      730|  740|  269200|  134600|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Utilization (%)  |       43|    5|       5|       7|    0|
++-----------------+---------+-----+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +-------------+----------+---------+----+------+------+-----+
+    |   Instance  |  Module  | BRAM_18K| DSP|  FF  |  LUT | URAM|
+    +-------------+----------+---------+----+------+------+-----+
+    |dense_U0     |dense     |       40|   5|  1947|  1175|    0|
+    |dense_22_U0  |dense_22  |       40|   5|  1947|  1191|    0|
+    |dense_23_U0  |dense_23  |       40|   5|  1947|  1192|    0|
+    |dense_24_U0  |dense_24  |       40|   5|  1947|  1192|    0|
+    |dense_25_U0  |dense_25  |       40|   5|  1947|  1191|    0|
+    |dense_26_U0  |dense_26  |       40|   5|  1947|  1193|    0|
+    |dense_27_U0  |dense_27  |       40|   5|  1947|  1193|    0|
+    |dense_28_U0  |dense_28  |       40|   5|  1947|  1193|    0|
+    +-------------+----------+---------+----+------+------+-----+
+    |Total        |          |      320|  40| 15576|  9520|    0|
+    +-------------+----------+---------+----+------+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +------------------------------+----------+----+---+----+------------+------------+
+    |         Variable Name        | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +------------------------------+----------+----+---+----+------------+------------+
+    |ap_idle                       |       and|   0|  0|   2|           1|           1|
+    |ap_sync_continue              |       and|   0|  0|   2|           1|           1|
+    |ap_sync_done                  |       and|   0|  0|   2|           1|           1|
+    |ap_sync_ready                 |       and|   0|  0|   2|           1|           1|
+    |dense_22_U0_ap_start          |       and|   0|  0|   2|           1|           1|
+    |dense_23_U0_ap_start          |       and|   0|  0|   2|           1|           1|
+    |dense_24_U0_ap_start          |       and|   0|  0|   2|           1|           1|
+    |dense_25_U0_ap_start          |       and|   0|  0|   2|           1|           1|
+    |dense_26_U0_ap_start          |       and|   0|  0|   2|           1|           1|
+    |dense_27_U0_ap_start          |       and|   0|  0|   2|           1|           1|
+    |dense_28_U0_ap_start          |       and|   0|  0|   2|           1|           1|
+    |dense_U0_ap_start             |       and|   0|  0|   2|           1|           1|
+    |ap_sync_dense_22_U0_ap_ready  |        or|   0|  0|   2|           1|           1|
+    |ap_sync_dense_23_U0_ap_ready  |        or|   0|  0|   2|           1|           1|
+    |ap_sync_dense_24_U0_ap_ready  |        or|   0|  0|   2|           1|           1|
+    |ap_sync_dense_25_U0_ap_ready  |        or|   0|  0|   2|           1|           1|
+    |ap_sync_dense_26_U0_ap_ready  |        or|   0|  0|   2|           1|           1|
+    |ap_sync_dense_27_U0_ap_ready  |        or|   0|  0|   2|           1|           1|
+    |ap_sync_dense_28_U0_ap_ready  |        or|   0|  0|   2|           1|           1|
+    |ap_sync_dense_U0_ap_ready     |        or|   0|  0|   2|           1|           1|
+    +------------------------------+----------+----+---+----+------------+------------+
+    |Total                         |          |   0|  0|  40|          20|          20|
+    +------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------------------+----+-----------+-----+-----------+
+    |               Name               | LUT| Input Size| Bits| Total Bits|
+    +----------------------------------+----+-----------+-----+-----------+
+    |ap_sync_reg_dense_22_U0_ap_ready  |   9|          2|    1|          2|
+    |ap_sync_reg_dense_23_U0_ap_ready  |   9|          2|    1|          2|
+    |ap_sync_reg_dense_24_U0_ap_ready  |   9|          2|    1|          2|
+    |ap_sync_reg_dense_25_U0_ap_ready  |   9|          2|    1|          2|
+    |ap_sync_reg_dense_26_U0_ap_ready  |   9|          2|    1|          2|
+    |ap_sync_reg_dense_27_U0_ap_ready  |   9|          2|    1|          2|
+    |ap_sync_reg_dense_28_U0_ap_ready  |   9|          2|    1|          2|
+    |ap_sync_reg_dense_U0_ap_ready     |   9|          2|    1|          2|
+    +----------------------------------+----+-----------+-----+-----------+
+    |Total                             |  72|         16|    8|         16|
+    +----------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------+---+----+-----+-----------+
+    |               Name               | FF| LUT| Bits| Const Bits|
+    +----------------------------------+---+----+-----+-----------+
+    |ap_sync_reg_dense_22_U0_ap_ready  |  1|   0|    1|          0|
+    |ap_sync_reg_dense_23_U0_ap_ready  |  1|   0|    1|          0|
+    |ap_sync_reg_dense_24_U0_ap_ready  |  1|   0|    1|          0|
+    |ap_sync_reg_dense_25_U0_ap_ready  |  1|   0|    1|          0|
+    |ap_sync_reg_dense_26_U0_ap_ready  |  1|   0|    1|          0|
+    |ap_sync_reg_dense_27_U0_ap_ready  |  1|   0|    1|          0|
+    |ap_sync_reg_dense_28_U0_ap_ready  |  1|   0|    1|          0|
+    |ap_sync_reg_dense_U0_ap_ready     |  1|   0|    1|          0|
+    +----------------------------------+---+----+-----+-----------+
+    |Total                             |  8|   0|    8|          0|
+    +----------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------------------+-----+-----+------------+----------------------------+--------------+
+|             RTL Ports             | Dir | Bits|  Protocol  |        Source Object       |    C Type    |
++-----------------------------------+-----+-----+------------+----------------------------+--------------+
+|flat_to_dense_streams_0_dout       |   in|   32|     ap_fifo|     flat_to_dense_streams_0|       pointer|
+|flat_to_dense_streams_0_empty_n    |   in|    1|     ap_fifo|     flat_to_dense_streams_0|       pointer|
+|flat_to_dense_streams_0_read       |  out|    1|     ap_fifo|     flat_to_dense_streams_0|       pointer|
+|flat_to_dense_streams_1_dout       |   in|   32|     ap_fifo|     flat_to_dense_streams_1|       pointer|
+|flat_to_dense_streams_1_empty_n    |   in|    1|     ap_fifo|     flat_to_dense_streams_1|       pointer|
+|flat_to_dense_streams_1_read       |  out|    1|     ap_fifo|     flat_to_dense_streams_1|       pointer|
+|flat_to_dense_streams_2_dout       |   in|   32|     ap_fifo|     flat_to_dense_streams_2|       pointer|
+|flat_to_dense_streams_2_empty_n    |   in|    1|     ap_fifo|     flat_to_dense_streams_2|       pointer|
+|flat_to_dense_streams_2_read       |  out|    1|     ap_fifo|     flat_to_dense_streams_2|       pointer|
+|flat_to_dense_streams_3_dout       |   in|   32|     ap_fifo|     flat_to_dense_streams_3|       pointer|
+|flat_to_dense_streams_3_empty_n    |   in|    1|     ap_fifo|     flat_to_dense_streams_3|       pointer|
+|flat_to_dense_streams_3_read       |  out|    1|     ap_fifo|     flat_to_dense_streams_3|       pointer|
+|flat_to_dense_streams_4_dout       |   in|   32|     ap_fifo|     flat_to_dense_streams_4|       pointer|
+|flat_to_dense_streams_4_empty_n    |   in|    1|     ap_fifo|     flat_to_dense_streams_4|       pointer|
+|flat_to_dense_streams_4_read       |  out|    1|     ap_fifo|     flat_to_dense_streams_4|       pointer|
+|flat_to_dense_streams_5_dout       |   in|   32|     ap_fifo|     flat_to_dense_streams_5|       pointer|
+|flat_to_dense_streams_5_empty_n    |   in|    1|     ap_fifo|     flat_to_dense_streams_5|       pointer|
+|flat_to_dense_streams_5_read       |  out|    1|     ap_fifo|     flat_to_dense_streams_5|       pointer|
+|flat_to_dense_streams_6_dout       |   in|   32|     ap_fifo|     flat_to_dense_streams_6|       pointer|
+|flat_to_dense_streams_6_empty_n    |   in|    1|     ap_fifo|     flat_to_dense_streams_6|       pointer|
+|flat_to_dense_streams_6_read       |  out|    1|     ap_fifo|     flat_to_dense_streams_6|       pointer|
+|flat_to_dense_streams_7_dout       |   in|   32|     ap_fifo|     flat_to_dense_streams_7|       pointer|
+|flat_to_dense_streams_7_empty_n    |   in|    1|     ap_fifo|     flat_to_dense_streams_7|       pointer|
+|flat_to_dense_streams_7_read       |  out|    1|     ap_fifo|     flat_to_dense_streams_7|       pointer|
+|dense_to_softmax_streams_0_din     |  out|   32|     ap_fifo|  dense_to_softmax_streams_0|       pointer|
+|dense_to_softmax_streams_0_full_n  |   in|    1|     ap_fifo|  dense_to_softmax_streams_0|       pointer|
+|dense_to_softmax_streams_0_write   |  out|    1|     ap_fifo|  dense_to_softmax_streams_0|       pointer|
+|dense_to_softmax_streams_1_din     |  out|   32|     ap_fifo|  dense_to_softmax_streams_1|       pointer|
+|dense_to_softmax_streams_1_full_n  |   in|    1|     ap_fifo|  dense_to_softmax_streams_1|       pointer|
+|dense_to_softmax_streams_1_write   |  out|    1|     ap_fifo|  dense_to_softmax_streams_1|       pointer|
+|dense_to_softmax_streams_2_din     |  out|   32|     ap_fifo|  dense_to_softmax_streams_2|       pointer|
+|dense_to_softmax_streams_2_full_n  |   in|    1|     ap_fifo|  dense_to_softmax_streams_2|       pointer|
+|dense_to_softmax_streams_2_write   |  out|    1|     ap_fifo|  dense_to_softmax_streams_2|       pointer|
+|dense_to_softmax_streams_3_din     |  out|   32|     ap_fifo|  dense_to_softmax_streams_3|       pointer|
+|dense_to_softmax_streams_3_full_n  |   in|    1|     ap_fifo|  dense_to_softmax_streams_3|       pointer|
+|dense_to_softmax_streams_3_write   |  out|    1|     ap_fifo|  dense_to_softmax_streams_3|       pointer|
+|dense_to_softmax_streams_4_din     |  out|   32|     ap_fifo|  dense_to_softmax_streams_4|       pointer|
+|dense_to_softmax_streams_4_full_n  |   in|    1|     ap_fifo|  dense_to_softmax_streams_4|       pointer|
+|dense_to_softmax_streams_4_write   |  out|    1|     ap_fifo|  dense_to_softmax_streams_4|       pointer|
+|dense_to_softmax_streams_5_din     |  out|   32|     ap_fifo|  dense_to_softmax_streams_5|       pointer|
+|dense_to_softmax_streams_5_full_n  |   in|    1|     ap_fifo|  dense_to_softmax_streams_5|       pointer|
+|dense_to_softmax_streams_5_write   |  out|    1|     ap_fifo|  dense_to_softmax_streams_5|       pointer|
+|dense_to_softmax_streams_6_din     |  out|   32|     ap_fifo|  dense_to_softmax_streams_6|       pointer|
+|dense_to_softmax_streams_6_full_n  |   in|    1|     ap_fifo|  dense_to_softmax_streams_6|       pointer|
+|dense_to_softmax_streams_6_write   |  out|    1|     ap_fifo|  dense_to_softmax_streams_6|       pointer|
+|dense_to_softmax_streams_7_din     |  out|   32|     ap_fifo|  dense_to_softmax_streams_7|       pointer|
+|dense_to_softmax_streams_7_full_n  |   in|    1|     ap_fifo|  dense_to_softmax_streams_7|       pointer|
+|dense_to_softmax_streams_7_write   |  out|    1|     ap_fifo|  dense_to_softmax_streams_7|       pointer|
+|ap_clk                             |   in|    1|  ap_ctrl_hs|                 dense_layer|  return value|
+|ap_rst                             |   in|    1|  ap_ctrl_hs|                 dense_layer|  return value|
+|ap_start                           |   in|    1|  ap_ctrl_hs|                 dense_layer|  return value|
+|ap_done                            |  out|    1|  ap_ctrl_hs|                 dense_layer|  return value|
+|ap_ready                           |  out|    1|  ap_ctrl_hs|                 dense_layer|  return value|
+|ap_idle                            |  out|    1|  ap_ctrl_hs|                 dense_layer|  return value|
+|ap_continue                        |   in|    1|  ap_ctrl_hs|                 dense_layer|  return value|
++-----------------------------------+-----+-----+------------+----------------------------+--------------+
+

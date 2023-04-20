@@ -1,0 +1,234 @@
+
+
+================================================================
+== Vitis HLS Report for 'max_pooling_layer'
+================================================================
+* Date:           Mon Mar 27 10:48:58 2023
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        Project
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: artix7
+* Target device:  xc7a200t-fbg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.869 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |      792|      792|  7.920 us|  7.920 us|  793|  793|  dataflow|
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        +-------------------+----------------+---------+---------+----------+----------+-----+-----+---------+
+        |                   |                |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+        |      Instance     |     Module     |   min   |   max   |    min   |    max   | min | max |   Type  |
+        +-------------------+----------------+---------+---------+----------+----------+-----+-----+---------+
+        |max_pooling_U0     |max_pooling     |      792|      792|  7.920 us|  7.920 us|  792|  792|       no|
+        |max_pooling_8_U0   |max_pooling_8   |      792|      792|  7.920 us|  7.920 us|  792|  792|       no|
+        |max_pooling_9_U0   |max_pooling_9   |      792|      792|  7.920 us|  7.920 us|  792|  792|       no|
+        |max_pooling_10_U0  |max_pooling_10  |      792|      792|  7.920 us|  7.920 us|  792|  792|       no|
+        |max_pooling_11_U0  |max_pooling_11  |      792|      792|  7.920 us|  7.920 us|  792|  792|       no|
+        |max_pooling_12_U0  |max_pooling_12  |      792|      792|  7.920 us|  7.920 us|  792|  792|       no|
+        |max_pooling_13_U0  |max_pooling_13  |      792|      792|  7.920 us|  7.920 us|  792|  792|       no|
+        |max_pooling_14_U0  |max_pooling_14  |      792|      792|  7.920 us|  7.920 us|  792|  792|       no|
+        +-------------------+----------------+---------+---------+----------+----------+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+--------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |   LUT  | URAM|
++-----------------+---------+-----+--------+--------+-----+
+|DSP              |        -|    -|       -|       -|    -|
+|Expression       |        -|    -|       0|      40|    -|
+|FIFO             |        -|    -|       -|       -|    -|
+|Instance         |        -|    -|    3504|    3928|    -|
+|Memory           |        -|    -|       -|       -|    -|
+|Multiplexer      |        -|    -|       -|      81|    -|
+|Register         |        -|    -|       9|       -|    -|
++-----------------+---------+-----+--------+--------+-----+
+|Total            |        0|    0|    3513|    4049|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Available        |      730|  740|  269200|  134600|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Utilization (%)  |        0|    0|       1|       3|    0|
++-----------------+---------+-----+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +-------------------+----------------+---------+----+-----+-----+-----+
+    |      Instance     |     Module     | BRAM_18K| DSP|  FF | LUT | URAM|
+    +-------------------+----------------+---------+----+-----+-----+-----+
+    |max_pooling_U0     |max_pooling     |        0|   0|  438|  491|    0|
+    |max_pooling_10_U0  |max_pooling_10  |        0|   0|  438|  491|    0|
+    |max_pooling_11_U0  |max_pooling_11  |        0|   0|  438|  491|    0|
+    |max_pooling_12_U0  |max_pooling_12  |        0|   0|  438|  491|    0|
+    |max_pooling_13_U0  |max_pooling_13  |        0|   0|  438|  491|    0|
+    |max_pooling_14_U0  |max_pooling_14  |        0|   0|  438|  491|    0|
+    |max_pooling_8_U0   |max_pooling_8   |        0|   0|  438|  491|    0|
+    |max_pooling_9_U0   |max_pooling_9   |        0|   0|  438|  491|    0|
+    +-------------------+----------------+---------+----+-----+-----+-----+
+    |Total              |                |        0|   0| 3504| 3928|    0|
+    +-------------------+----------------+---------+----+-----+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +------------------------------------+----------+----+---+----+------------+------------+
+    |            Variable Name           | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +------------------------------------+----------+----+---+----+------------+------------+
+    |ap_idle                             |       and|   0|  0|   2|           1|           1|
+    |ap_sync_continue                    |       and|   0|  0|   2|           1|           1|
+    |ap_sync_done                        |       and|   0|  0|   2|           1|           1|
+    |ap_sync_ready                       |       and|   0|  0|   2|           1|           1|
+    |max_pooling_10_U0_ap_start          |       and|   0|  0|   2|           1|           1|
+    |max_pooling_11_U0_ap_start          |       and|   0|  0|   2|           1|           1|
+    |max_pooling_12_U0_ap_start          |       and|   0|  0|   2|           1|           1|
+    |max_pooling_13_U0_ap_start          |       and|   0|  0|   2|           1|           1|
+    |max_pooling_14_U0_ap_start          |       and|   0|  0|   2|           1|           1|
+    |max_pooling_8_U0_ap_start           |       and|   0|  0|   2|           1|           1|
+    |max_pooling_9_U0_ap_start           |       and|   0|  0|   2|           1|           1|
+    |max_pooling_U0_ap_start             |       and|   0|  0|   2|           1|           1|
+    |ap_sync_max_pooling_10_U0_ap_ready  |        or|   0|  0|   2|           1|           1|
+    |ap_sync_max_pooling_11_U0_ap_ready  |        or|   0|  0|   2|           1|           1|
+    |ap_sync_max_pooling_12_U0_ap_ready  |        or|   0|  0|   2|           1|           1|
+    |ap_sync_max_pooling_13_U0_ap_ready  |        or|   0|  0|   2|           1|           1|
+    |ap_sync_max_pooling_14_U0_ap_ready  |        or|   0|  0|   2|           1|           1|
+    |ap_sync_max_pooling_8_U0_ap_ready   |        or|   0|  0|   2|           1|           1|
+    |ap_sync_max_pooling_9_U0_ap_ready   |        or|   0|  0|   2|           1|           1|
+    |ap_sync_max_pooling_U0_ap_ready     |        or|   0|  0|   2|           1|           1|
+    +------------------------------------+----------+----+---+----+------------+------------+
+    |Total                               |          |   0|  0|  40|          20|          20|
+    +------------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------------------------+----+-----------+-----+-----------+
+    |                  Name                  | LUT| Input Size| Bits| Total Bits|
+    +----------------------------------------+----+-----------+-----+-----------+
+    |ap_sync_reg_max_pooling_10_U0_ap_ready  |   9|          2|    1|          2|
+    |ap_sync_reg_max_pooling_11_U0_ap_ready  |   9|          2|    1|          2|
+    |ap_sync_reg_max_pooling_12_U0_ap_ready  |   9|          2|    1|          2|
+    |ap_sync_reg_max_pooling_13_U0_ap_ready  |   9|          2|    1|          2|
+    |ap_sync_reg_max_pooling_14_U0_ap_ready  |   9|          2|    1|          2|
+    |ap_sync_reg_max_pooling_8_U0_ap_ready   |   9|          2|    1|          2|
+    |ap_sync_reg_max_pooling_9_U0_ap_ready   |   9|          2|    1|          2|
+    |ap_sync_reg_max_pooling_U0_ap_ready     |   9|          2|    1|          2|
+    |real_start                              |   9|          2|    1|          2|
+    +----------------------------------------+----+-----------+-----+-----------+
+    |Total                                   |  81|         18|    9|         18|
+    +----------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------------+---+----+-----+-----------+
+    |                  Name                  | FF| LUT| Bits| Const Bits|
+    +----------------------------------------+---+----+-----+-----------+
+    |ap_sync_reg_max_pooling_10_U0_ap_ready  |  1|   0|    1|          0|
+    |ap_sync_reg_max_pooling_11_U0_ap_ready  |  1|   0|    1|          0|
+    |ap_sync_reg_max_pooling_12_U0_ap_ready  |  1|   0|    1|          0|
+    |ap_sync_reg_max_pooling_13_U0_ap_ready  |  1|   0|    1|          0|
+    |ap_sync_reg_max_pooling_14_U0_ap_ready  |  1|   0|    1|          0|
+    |ap_sync_reg_max_pooling_8_U0_ap_ready   |  1|   0|    1|          0|
+    |ap_sync_reg_max_pooling_9_U0_ap_ready   |  1|   0|    1|          0|
+    |ap_sync_reg_max_pooling_U0_ap_ready     |  1|   0|    1|          0|
+    |start_once_reg                          |  1|   0|    1|          0|
+    +----------------------------------------+---+----+-----+-----------+
+    |Total                                   |  9|   0|    9|          0|
+    +----------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------------------+-----+-----+------------+------------------------+--------------+
+|            RTL Ports           | Dir | Bits|  Protocol  |      Source Object     |    C Type    |
++--------------------------------+-----+-----+------------+------------------------+--------------+
+|ap_start                        |   in|    1|  ap_ctrl_hs|       max_pooling_layer|  return value|
+|start_full_n                    |   in|    1|  ap_ctrl_hs|       max_pooling_layer|  return value|
+|start_out                       |  out|    1|  ap_ctrl_hs|       max_pooling_layer|  return value|
+|start_write                     |  out|    1|  ap_ctrl_hs|       max_pooling_layer|  return value|
+|ap_clk                          |   in|    1|  ap_ctrl_hs|       max_pooling_layer|  return value|
+|ap_rst                          |   in|    1|  ap_ctrl_hs|       max_pooling_layer|  return value|
+|ap_done                         |  out|    1|  ap_ctrl_hs|       max_pooling_layer|  return value|
+|ap_ready                        |  out|    1|  ap_ctrl_hs|       max_pooling_layer|  return value|
+|ap_idle                         |  out|    1|  ap_ctrl_hs|       max_pooling_layer|  return value|
+|ap_continue                     |   in|    1|  ap_ctrl_hs|       max_pooling_layer|  return value|
+|conv_to_pool_streams_0_dout     |   in|   32|     ap_fifo|  conv_to_pool_streams_0|       pointer|
+|conv_to_pool_streams_0_empty_n  |   in|    1|     ap_fifo|  conv_to_pool_streams_0|       pointer|
+|conv_to_pool_streams_0_read     |  out|    1|     ap_fifo|  conv_to_pool_streams_0|       pointer|
+|conv_to_pool_streams_1_dout     |   in|   32|     ap_fifo|  conv_to_pool_streams_1|       pointer|
+|conv_to_pool_streams_1_empty_n  |   in|    1|     ap_fifo|  conv_to_pool_streams_1|       pointer|
+|conv_to_pool_streams_1_read     |  out|    1|     ap_fifo|  conv_to_pool_streams_1|       pointer|
+|conv_to_pool_streams_2_dout     |   in|   32|     ap_fifo|  conv_to_pool_streams_2|       pointer|
+|conv_to_pool_streams_2_empty_n  |   in|    1|     ap_fifo|  conv_to_pool_streams_2|       pointer|
+|conv_to_pool_streams_2_read     |  out|    1|     ap_fifo|  conv_to_pool_streams_2|       pointer|
+|conv_to_pool_streams_3_dout     |   in|   32|     ap_fifo|  conv_to_pool_streams_3|       pointer|
+|conv_to_pool_streams_3_empty_n  |   in|    1|     ap_fifo|  conv_to_pool_streams_3|       pointer|
+|conv_to_pool_streams_3_read     |  out|    1|     ap_fifo|  conv_to_pool_streams_3|       pointer|
+|conv_to_pool_streams_4_dout     |   in|   32|     ap_fifo|  conv_to_pool_streams_4|       pointer|
+|conv_to_pool_streams_4_empty_n  |   in|    1|     ap_fifo|  conv_to_pool_streams_4|       pointer|
+|conv_to_pool_streams_4_read     |  out|    1|     ap_fifo|  conv_to_pool_streams_4|       pointer|
+|conv_to_pool_streams_5_dout     |   in|   32|     ap_fifo|  conv_to_pool_streams_5|       pointer|
+|conv_to_pool_streams_5_empty_n  |   in|    1|     ap_fifo|  conv_to_pool_streams_5|       pointer|
+|conv_to_pool_streams_5_read     |  out|    1|     ap_fifo|  conv_to_pool_streams_5|       pointer|
+|conv_to_pool_streams_6_dout     |   in|   32|     ap_fifo|  conv_to_pool_streams_6|       pointer|
+|conv_to_pool_streams_6_empty_n  |   in|    1|     ap_fifo|  conv_to_pool_streams_6|       pointer|
+|conv_to_pool_streams_6_read     |  out|    1|     ap_fifo|  conv_to_pool_streams_6|       pointer|
+|conv_to_pool_streams_7_dout     |   in|   32|     ap_fifo|  conv_to_pool_streams_7|       pointer|
+|conv_to_pool_streams_7_empty_n  |   in|    1|     ap_fifo|  conv_to_pool_streams_7|       pointer|
+|conv_to_pool_streams_7_read     |  out|    1|     ap_fifo|  conv_to_pool_streams_7|       pointer|
+|pool_to_flat_streams_0_din      |  out|   32|     ap_fifo|  pool_to_flat_streams_0|       pointer|
+|pool_to_flat_streams_0_full_n   |   in|    1|     ap_fifo|  pool_to_flat_streams_0|       pointer|
+|pool_to_flat_streams_0_write    |  out|    1|     ap_fifo|  pool_to_flat_streams_0|       pointer|
+|pool_to_flat_streams_1_din      |  out|   32|     ap_fifo|  pool_to_flat_streams_1|       pointer|
+|pool_to_flat_streams_1_full_n   |   in|    1|     ap_fifo|  pool_to_flat_streams_1|       pointer|
+|pool_to_flat_streams_1_write    |  out|    1|     ap_fifo|  pool_to_flat_streams_1|       pointer|
+|pool_to_flat_streams_2_din      |  out|   32|     ap_fifo|  pool_to_flat_streams_2|       pointer|
+|pool_to_flat_streams_2_full_n   |   in|    1|     ap_fifo|  pool_to_flat_streams_2|       pointer|
+|pool_to_flat_streams_2_write    |  out|    1|     ap_fifo|  pool_to_flat_streams_2|       pointer|
+|pool_to_flat_streams_3_din      |  out|   32|     ap_fifo|  pool_to_flat_streams_3|       pointer|
+|pool_to_flat_streams_3_full_n   |   in|    1|     ap_fifo|  pool_to_flat_streams_3|       pointer|
+|pool_to_flat_streams_3_write    |  out|    1|     ap_fifo|  pool_to_flat_streams_3|       pointer|
+|pool_to_flat_streams_4_din      |  out|   32|     ap_fifo|  pool_to_flat_streams_4|       pointer|
+|pool_to_flat_streams_4_full_n   |   in|    1|     ap_fifo|  pool_to_flat_streams_4|       pointer|
+|pool_to_flat_streams_4_write    |  out|    1|     ap_fifo|  pool_to_flat_streams_4|       pointer|
+|pool_to_flat_streams_5_din      |  out|   32|     ap_fifo|  pool_to_flat_streams_5|       pointer|
+|pool_to_flat_streams_5_full_n   |   in|    1|     ap_fifo|  pool_to_flat_streams_5|       pointer|
+|pool_to_flat_streams_5_write    |  out|    1|     ap_fifo|  pool_to_flat_streams_5|       pointer|
+|pool_to_flat_streams_6_din      |  out|   32|     ap_fifo|  pool_to_flat_streams_6|       pointer|
+|pool_to_flat_streams_6_full_n   |   in|    1|     ap_fifo|  pool_to_flat_streams_6|       pointer|
+|pool_to_flat_streams_6_write    |  out|    1|     ap_fifo|  pool_to_flat_streams_6|       pointer|
+|pool_to_flat_streams_7_din      |  out|   32|     ap_fifo|  pool_to_flat_streams_7|       pointer|
+|pool_to_flat_streams_7_full_n   |   in|    1|     ap_fifo|  pool_to_flat_streams_7|       pointer|
+|pool_to_flat_streams_7_write    |  out|    1|     ap_fifo|  pool_to_flat_streams_7|       pointer|
++--------------------------------+-----+-----+------------+------------------------+--------------+
+
