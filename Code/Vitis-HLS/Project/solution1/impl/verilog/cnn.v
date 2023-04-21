@@ -7,7 +7,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="cnn_cnn,hls_ip_2022_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7a200t-fbg484-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=7.241250,HLS_SYN_LAT=5920,HLS_SYN_TPT=none,HLS_SYN_MEM=384,HLS_SYN_DSP=0,HLS_SYN_FF=54221,HLS_SYN_LUT=41495,HLS_VERSION=2022_2}" *)
+(* CORE_GENERATION_INFO="cnn_cnn,hls_ip_2022_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7a200t-fbg484-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=7.241250,HLS_SYN_LAT=5914,HLS_SYN_TPT=none,HLS_SYN_MEM=384,HLS_SYN_DSP=0,HLS_SYN_FF=51805,HLS_SYN_LUT=41303,HLS_VERSION=2022_2}" *)
 
 module cnn (
         ap_clk,
@@ -94,19 +94,33 @@ reg biases_buf_ce1;
 
 (* fsm_encoding = "none" *) reg   [17:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
-wire    ap_CS_fsm_state12;
-reg   [31:0] biases_buf_0_reg_648;
 wire    ap_CS_fsm_state13;
-reg   [31:0] biases_buf_1_reg_653;
-reg   [31:0] biases_buf_2_reg_668;
+reg   [31:0] biases_buf_load_reg_682;
 wire    ap_CS_fsm_state14;
-reg   [31:0] biases_buf_3_reg_673;
-reg   [31:0] biases_buf_4_reg_688;
+reg   [31:0] biases_buf_load_1_reg_687;
+reg   [31:0] biases_buf_load_2_reg_702;
 wire    ap_CS_fsm_state15;
-reg   [31:0] biases_buf_5_reg_693;
-reg   [31:0] biases_buf_6_reg_708;
+reg   [31:0] biases_buf_load_3_reg_707;
+reg   [31:0] biases_buf_load_4_reg_722;
 wire    ap_CS_fsm_state16;
-reg   [31:0] biases_buf_7_reg_713;
+reg   [31:0] biases_buf_load_5_reg_727;
+wire   [31:0] biases_buf_0_fu_638_p1;
+reg   [31:0] biases_buf_0_reg_742;
+wire    ap_CS_fsm_state17;
+wire   [31:0] biases_buf_1_fu_642_p1;
+reg   [31:0] biases_buf_1_reg_747;
+wire   [31:0] biases_buf_2_fu_646_p1;
+reg   [31:0] biases_buf_2_reg_752;
+wire   [31:0] biases_buf_3_fu_650_p1;
+reg   [31:0] biases_buf_3_reg_757;
+wire   [31:0] biases_buf_4_fu_654_p1;
+reg   [31:0] biases_buf_4_reg_762;
+wire   [31:0] biases_buf_5_fu_658_p1;
+reg   [31:0] biases_buf_5_reg_767;
+wire   [31:0] biases_buf_6_fu_662_p1;
+reg   [31:0] biases_buf_6_reg_772;
+wire   [31:0] biases_buf_7_fu_667_p1;
+reg   [31:0] biases_buf_7_reg_777;
 reg   [9:0] pad_img_address0;
 reg    pad_img_ce0;
 reg    pad_img_we0;
@@ -966,10 +980,10 @@ wire    ap_CS_fsm_state9;
 wire    ap_CS_fsm_state10;
 reg    grp_cnn_Pipeline_8_fu_425_ap_start_reg;
 wire    ap_CS_fsm_state11;
+wire    ap_CS_fsm_state12;
 reg    grp_cnn_Pipeline_9_fu_432_ap_start_reg;
 reg    grp_cnn_Pipeline_10_fu_439_ap_start_reg;
 reg    grp_dataflow_section_fu_446_ap_start_reg;
-wire    ap_CS_fsm_state17;
 wire    ap_CS_fsm_state18;
 wire    ap_sync_grp_dataflow_section_fu_446_ap_ready;
 wire    ap_sync_grp_dataflow_section_fu_446_ap_done;
@@ -2234,14 +2248,14 @@ cnn_dataflow_section grp_dataflow_section_fu_446(
     .weight_buf_7_d1(grp_dataflow_section_fu_446_weight_buf_7_d1),
     .weight_buf_7_q1(weight_buf_7_q1),
     .weight_buf_7_we1(grp_dataflow_section_fu_446_weight_buf_7_we1),
-    .biases_buf_0(biases_buf_0_reg_648),
-    .biases_buf_1(biases_buf_1_reg_653),
-    .biases_buf_2(biases_buf_2_reg_668),
-    .biases_buf_3(biases_buf_3_reg_673),
-    .biases_buf_4(biases_buf_4_reg_688),
-    .biases_buf_5(biases_buf_5_reg_693),
-    .biases_buf_6(biases_buf_6_reg_708),
-    .biases_buf_7(biases_buf_7_reg_713),
+    .biases_buf_0(biases_buf_0_reg_742),
+    .biases_buf_1(biases_buf_1_reg_747),
+    .biases_buf_2(biases_buf_2_reg_752),
+    .biases_buf_3(biases_buf_3_reg_757),
+    .biases_buf_4(biases_buf_4_reg_762),
+    .biases_buf_5(biases_buf_5_reg_767),
+    .biases_buf_6(biases_buf_6_reg_772),
+    .biases_buf_7(biases_buf_7_reg_777),
     .prediction_address0(grp_dataflow_section_fu_446_prediction_address0),
     .prediction_ce0(grp_dataflow_section_fu_446_prediction_ce0),
     .prediction_d0(grp_dataflow_section_fu_446_prediction_d0),
@@ -2434,30 +2448,36 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state13)) begin
-        biases_buf_0_reg_648 <= biases_buf_q1;
-        biases_buf_1_reg_653 <= biases_buf_q0;
+    if ((1'b1 == ap_CS_fsm_state17)) begin
+        biases_buf_0_reg_742 <= biases_buf_0_fu_638_p1;
+        biases_buf_1_reg_747 <= biases_buf_1_fu_642_p1;
+        biases_buf_2_reg_752 <= biases_buf_2_fu_646_p1;
+        biases_buf_3_reg_757 <= biases_buf_3_fu_650_p1;
+        biases_buf_4_reg_762 <= biases_buf_4_fu_654_p1;
+        biases_buf_5_reg_767 <= biases_buf_5_fu_658_p1;
+        biases_buf_6_reg_772 <= biases_buf_6_fu_662_p1;
+        biases_buf_7_reg_777 <= biases_buf_7_fu_667_p1;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state14)) begin
-        biases_buf_2_reg_668 <= biases_buf_q1;
-        biases_buf_3_reg_673 <= biases_buf_q0;
+        biases_buf_load_1_reg_687 <= biases_buf_q0;
+        biases_buf_load_reg_682 <= biases_buf_q1;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state15)) begin
-        biases_buf_4_reg_688 <= biases_buf_q1;
-        biases_buf_5_reg_693 <= biases_buf_q0;
+        biases_buf_load_2_reg_702 <= biases_buf_q1;
+        biases_buf_load_3_reg_707 <= biases_buf_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state16)) begin
-        biases_buf_6_reg_708 <= biases_buf_q1;
-        biases_buf_7_reg_713 <= biases_buf_q0;
+        biases_buf_load_4_reg_722 <= biases_buf_q1;
+        biases_buf_load_5_reg_727 <= biases_buf_q0;
     end
 end
 
@@ -2582,13 +2602,13 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state15)) begin
+    if ((1'b1 == ap_CS_fsm_state16)) begin
         biases_buf_address0 = 64'd7;
-    end else if ((1'b1 == ap_CS_fsm_state14)) begin
+    end else if ((1'b1 == ap_CS_fsm_state15)) begin
         biases_buf_address0 = 64'd5;
-    end else if ((1'b1 == ap_CS_fsm_state13)) begin
+    end else if ((1'b1 == ap_CS_fsm_state14)) begin
         biases_buf_address0 = 64'd3;
-    end else if ((1'b1 == ap_CS_fsm_state12)) begin
+    end else if ((1'b1 == ap_CS_fsm_state13)) begin
         biases_buf_address0 = 64'd1;
     end else begin
         biases_buf_address0 = 'bx;
@@ -2596,13 +2616,13 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state15)) begin
+    if ((1'b1 == ap_CS_fsm_state16)) begin
         biases_buf_address1 = 64'd6;
-    end else if ((1'b1 == ap_CS_fsm_state14)) begin
+    end else if ((1'b1 == ap_CS_fsm_state15)) begin
         biases_buf_address1 = 64'd4;
-    end else if ((1'b1 == ap_CS_fsm_state13)) begin
+    end else if ((1'b1 == ap_CS_fsm_state14)) begin
         biases_buf_address1 = 64'd2;
-    end else if ((1'b1 == ap_CS_fsm_state12)) begin
+    end else if ((1'b1 == ap_CS_fsm_state13)) begin
         biases_buf_address1 = 64'd0;
     end else begin
         biases_buf_address1 = 'bx;
@@ -2610,7 +2630,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state15) | ((grp_cnn_Pipeline_9_fu_432_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state14)) | ((grp_cnn_Pipeline_8_fu_425_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state12)))) begin
+    if (((1'b1 == ap_CS_fsm_state15) | (1'b1 == ap_CS_fsm_state13) | ((grp_cnn_Pipeline_10_fu_439_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state16)) | ((grp_cnn_Pipeline_9_fu_432_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state14)))) begin
         biases_buf_ce0 = 1'b1;
     end else begin
         biases_buf_ce0 = 1'b0;
@@ -2618,7 +2638,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state15) | ((grp_cnn_Pipeline_9_fu_432_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state14)) | ((grp_cnn_Pipeline_8_fu_425_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state12)))) begin
+    if (((1'b1 == ap_CS_fsm_state15) | (1'b1 == ap_CS_fsm_state13) | ((grp_cnn_Pipeline_10_fu_439_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state16)) | ((grp_cnn_Pipeline_9_fu_432_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state14)))) begin
         biases_buf_ce1 = 1'b1;
     end else begin
         biases_buf_ce1 = 1'b0;
@@ -3410,6 +3430,22 @@ end
 assign ap_sync_grp_dataflow_section_fu_446_ap_done = (grp_dataflow_section_fu_446_ap_done | ap_sync_reg_grp_dataflow_section_fu_446_ap_done);
 
 assign ap_sync_grp_dataflow_section_fu_446_ap_ready = (grp_dataflow_section_fu_446_ap_ready | ap_sync_reg_grp_dataflow_section_fu_446_ap_ready);
+
+assign biases_buf_0_fu_638_p1 = biases_buf_load_reg_682;
+
+assign biases_buf_1_fu_642_p1 = biases_buf_load_1_reg_687;
+
+assign biases_buf_2_fu_646_p1 = biases_buf_load_2_reg_702;
+
+assign biases_buf_3_fu_650_p1 = biases_buf_load_3_reg_707;
+
+assign biases_buf_4_fu_654_p1 = biases_buf_load_4_reg_722;
+
+assign biases_buf_5_fu_658_p1 = biases_buf_load_5_reg_727;
+
+assign biases_buf_6_fu_662_p1 = biases_buf_q1;
+
+assign biases_buf_7_fu_667_p1 = biases_buf_q0;
 
 assign grp_cnn_Pipeline_10_fu_439_ap_start = grp_cnn_Pipeline_10_fu_439_ap_start_reg;
 

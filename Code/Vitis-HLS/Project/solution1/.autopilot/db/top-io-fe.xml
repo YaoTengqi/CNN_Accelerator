@@ -11,12 +11,12 @@
           <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
         </hw>
       </arg>
-      <arg id="2" access_type="r" src_name="weight_buf" src_type="int*" src_isptr="1" src_bitwidth="32" src_size_or_depth="72">
+      <arg id="2" access_type="r" src_name="weight_buf" src_type="float*" src_isptr="1" src_bitwidth="32" src_size_or_depth="72">
         <hw hw_usage="data" hw_interface="BRAM" hw_name="weight_buf" hw_bitwidth="32" hw_size_or_depth="72" hw_kernel_support="false">
           <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
         </hw>
       </arg>
-      <arg id="3" access_type="r" src_name="biases_buf" src_type="int*" src_isptr="1" src_bitwidth="32" src_size_or_depth="8">
+      <arg id="3" access_type="r" src_name="biases_buf" src_type="float*" src_isptr="1" src_bitwidth="32" src_size_or_depth="8">
         <hw hw_usage="data" hw_interface="BRAM" hw_name="biases_buf" hw_bitwidth="32" hw_size_or_depth="8" hw_kernel_support="false">
           <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
         </hw>

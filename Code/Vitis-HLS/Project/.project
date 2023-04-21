@@ -37,6 +37,16 @@
 			<location>/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS/Project/.apc/.tb</location>
 		</link>
 		<link>
+			<name>.reference/cnn.hh</name>
+			<type>1</type>
+			<location>/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS/cnn.hh</location>
+		</link>
+		<link>
+			<name>.reference/conv.hh</name>
+			<type>1</type>
+			<location>/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS/conv.hh</location>
+		</link>
+		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
 			<location>/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS/Project/solution1/.tcls</location>

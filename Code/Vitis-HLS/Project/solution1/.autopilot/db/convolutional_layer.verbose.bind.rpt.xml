@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'convolutional_layer'" level="0">
-<item name = "Date">Thu Apr 20 15:58:36 2023
+<item name = "Date">Thu Apr 20 17:57:31 2023
 </item>
 <item name = "Version">2022.2 (Build 3670227 on Oct 13 2022)</item>
 <item name = "Project">Project</item>
@@ -24,21 +24,21 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">4009, 4009, 40.090 us, 40.090 us, 4010, 4010, dataflow</column>
+<column name="">4003, 4003, 40.030 us, 40.030 us, 4004, 4004, dataflow</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_convolution_fu_142">convolution, 4009, 4009, 40.090 us, 40.090 us, 4009, 4009, no</column>
-<column name="grp_convolution_1_fu_154">convolution_1, 4009, 4009, 40.090 us, 40.090 us, 4009, 4009, no</column>
-<column name="grp_convolution_2_fu_166">convolution_2, 4009, 4009, 40.090 us, 40.090 us, 4009, 4009, no</column>
-<column name="grp_convolution_3_fu_178">convolution_3, 4009, 4009, 40.090 us, 40.090 us, 4009, 4009, no</column>
-<column name="grp_convolution_4_fu_190">convolution_4, 4009, 4009, 40.090 us, 40.090 us, 4009, 4009, no</column>
-<column name="grp_convolution_5_fu_202">convolution_5, 4009, 4009, 40.090 us, 40.090 us, 4009, 4009, no</column>
-<column name="grp_convolution_6_fu_214">convolution_6, 4009, 4009, 40.090 us, 40.090 us, 4009, 4009, no</column>
-<column name="grp_convolution_7_fu_226">convolution_7, 4009, 4009, 40.090 us, 40.090 us, 4009, 4009, no</column>
+<column name="grp_convolution_fu_142">convolution, 4003, 4003, 40.030 us, 40.030 us, 4003, 4003, no</column>
+<column name="grp_convolution_1_fu_154">convolution_1, 4003, 4003, 40.030 us, 40.030 us, 4003, 4003, no</column>
+<column name="grp_convolution_2_fu_166">convolution_2, 4003, 4003, 40.030 us, 40.030 us, 4003, 4003, no</column>
+<column name="grp_convolution_3_fu_178">convolution_3, 4003, 4003, 40.030 us, 40.030 us, 4003, 4003, no</column>
+<column name="grp_convolution_4_fu_190">convolution_4, 4003, 4003, 40.030 us, 40.030 us, 4003, 4003, no</column>
+<column name="grp_convolution_5_fu_202">convolution_5, 4003, 4003, 40.030 us, 40.030 us, 4003, 4003, no</column>
+<column name="grp_convolution_6_fu_214">convolution_6, 4003, 4003, 40.030 us, 40.030 us, 4003, 4003, no</column>
+<column name="grp_convolution_7_fu_226">convolution_7, 4003, 4003, 40.030 us, 40.030 us, 4003, 4003, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

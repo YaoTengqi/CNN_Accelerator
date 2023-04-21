@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'cnn_Pipeline_9'
 ================================================================
-* Date:           Thu Apr 20 15:58:24 2023
+* Date:           Thu Apr 20 17:57:20 2023
 
 * Version:        2022.2 (Build 3670227 on Oct 13 2022)
 * Project:        Project
@@ -127,14 +127,15 @@ ST_2 : Operation 41 [1/1] (0.00ns)   --->   "%p_cast60 = zext i7 %tmp_55"   --->
 ST_2 : Operation 42 [1/1] (0.00ns)   --->   "%weight_buf_addr = getelementptr i32 %weight_buf, i64 0, i64 %p_cast60"   --->   Operation 42 'getelementptr' 'weight_buf_addr' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 43 [2/2] (3.25ns)   --->   "%weight_buf_load = load i7 %weight_buf_addr"   --->   Operation 43 'load' 'weight_buf_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 72> <RAM>
 ST_2 : Operation 44 [1/1] (1.61ns)   --->   "%store_ln0 = store i4 %idx_urem71, i4 %phi_urem69"   --->   Operation 44 'store' 'store_ln0' <Predicate = true> <Delay = 1.61>
-ST_2 : Operation 50 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 50 'ret' 'ret_ln0' <Predicate = (exitcond442)> <Delay = 0.00>
+ST_2 : Operation 51 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 51 'ret' 'ret_ln0' <Predicate = (exitcond442)> <Delay = 0.00>
 
 State 3 <SV = 2> <Delay = 5.40>
 ST_3 : Operation 45 [1/1] (0.00ns)   --->   "%loop_index20_cast = zext i4 %loop_index20_load"   --->   Operation 45 'zext' 'loop_index20_cast' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 46 [1/1] (0.00ns)   --->   "%weight_buf_6_addr = getelementptr i32 %weight_buf_6, i64 0, i64 %loop_index20_cast"   --->   Operation 46 'getelementptr' 'weight_buf_6_addr' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 47 [1/2] (3.25ns)   --->   "%weight_buf_load = load i7 %weight_buf_addr"   --->   Operation 47 'load' 'weight_buf_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 72> <RAM>
-ST_3 : Operation 48 [1/1] (2.15ns)   --->   "%store_ln0 = store i32 %weight_buf_load, i4 %weight_buf_6_addr"   --->   Operation 48 'store' 'store_ln0' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
-ST_3 : Operation 49 [1/1] (0.00ns)   --->   "%br_ln0 = br void %load-store-loop19"   --->   Operation 49 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 48 [1/1] (0.00ns)   --->   "%empty_123 = bitcast i32 %weight_buf_load"   --->   Operation 48 'bitcast' 'empty_123' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 49 [1/1] (2.15ns)   --->   "%store_ln0 = store i32 %empty_123, i4 %weight_buf_6_addr"   --->   Operation 49 'store' 'store_ln0' <Predicate = true> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
+ST_3 : Operation 50 [1/1] (0.00ns)   --->   "%br_ln0 = br void %load-store-loop19"   --->   Operation 50 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -147,7 +148,7 @@ The critical path consists of the following:
 	'alloca' operation ('phi_mul67') [4]  (0 ns)
 	'load' operation ('phi_mul67_load') on local variable 'phi_mul67' [20]  (0 ns)
 	'add' operation ('next_mul68') [24]  (2.12 ns)
-	'store' operation ('store_ln0') of variable 'next_mul68' on local variable 'phi_mul67' [45]  (1.61 ns)
+	'store' operation ('store_ln0') of variable 'next_mul68' on local variable 'phi_mul67' [46]  (1.61 ns)
 
  <State 2>: 5.82ns
 The critical path consists of the following:
@@ -155,12 +156,12 @@ The critical path consists of the following:
 	'add' operation ('next_urem70') [21]  (1.78 ns)
 	'icmp' operation ('empty_118') [22]  (1.44 ns)
 	'select' operation ('idx_urem71') [23]  (0.99 ns)
-	'store' operation ('store_ln0') of variable 'idx_urem71' on local variable 'phi_urem69' [46]  (1.61 ns)
+	'store' operation ('store_ln0') of variable 'idx_urem71' on local variable 'phi_urem69' [47]  (1.61 ns)
 
  <State 3>: 5.41ns
 The critical path consists of the following:
 	'load' operation ('weight_buf_load') on array 'weight_buf' [42]  (3.26 ns)
-	'store' operation ('store_ln0') of variable 'weight_buf_load' on array 'weight_buf_6' [43]  (2.15 ns)
+	'store' operation ('store_ln0') of variable 'empty_123' on array 'weight_buf_6' [44]  (2.15 ns)
 
 
 ============================================================

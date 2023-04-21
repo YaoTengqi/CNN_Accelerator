@@ -3019,8 +3019,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_16</name>
-<Object>w_16</Object>
+<name>w_57</name>
+<Object>w_57</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3030,8 +3030,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_6</name>
-<Object>w_6</Object>
+<name>w_58</name>
+<Object>w_58</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3041,8 +3041,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_7</name>
-<Object>w_7</Object>
+<name>w_59</name>
+<Object>w_59</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3052,8 +3052,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_8</name>
-<Object>w_8</Object>
+<name>w_60</name>
+<Object>w_60</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3063,8 +3063,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_9</name>
-<Object>w_9</Object>
+<name>w_61</name>
+<Object>w_61</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3074,8 +3074,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_10</name>
-<Object>w_10</Object>
+<name>w_62</name>
+<Object>w_62</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3085,8 +3085,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_11</name>
-<Object>w_11</Object>
+<name>w_63</name>
+<Object>w_63</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3096,8 +3096,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_12</name>
-<Object>w_12</Object>
+<name>w_64</name>
+<Object>w_64</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3107,8 +3107,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>conv8</name>
-<Object>conv8</Object>
+<name>biases_buf</name>
+<Object>biases_buf</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3183,13 +3183,13 @@
 <EstimatedClockPeriod>7.241</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>4009</Best-caseLatency>
-<Average-caseLatency>4009</Average-caseLatency>
-<Worst-caseLatency>4009</Worst-caseLatency>
-<Best-caseRealTimeLatency>40.090 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>40.090 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>40.090 us</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>4009</PipelineInitiationInterval>
+<Best-caseLatency>4003</Best-caseLatency>
+<Average-caseLatency>4003</Average-caseLatency>
+<Worst-caseLatency>4003</Worst-caseLatency>
+<Best-caseRealTimeLatency>40.030 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>40.030 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>40.030 us</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>4003</PipelineInitiationInterval>
 <PipelineType>no</PipelineType>
 </SummaryOfOverallLatency>
 </PerformanceEstimates>
@@ -3198,10 +3198,10 @@
 <DSP>10</DSP>
 <AVAIL_DSP>740</AVAIL_DSP>
 <UTIL_DSP>1</UTIL_DSP>
-<FF>3195</FF>
+<FF>2869</FF>
 <AVAIL_FF>269200</AVAIL_FF>
 <UTIL_FF>1</UTIL_FF>
-<LUT>2366</LUT>
+<LUT>2342</LUT>
 <AVAIL_LUT>134600</AVAIL_LUT>
 <UTIL_LUT>1</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
@@ -3690,8 +3690,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_15</name>
-<Object>w_15</Object>
+<name>w_49</name>
+<Object>w_49</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3701,8 +3701,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_8</name>
-<Object>w_8</Object>
+<name>w_50</name>
+<Object>w_50</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3712,8 +3712,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_9</name>
-<Object>w_9</Object>
+<name>w_51</name>
+<Object>w_51</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3723,8 +3723,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_1</name>
-<Object>w_1</Object>
+<name>w_52</name>
+<Object>w_52</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3734,8 +3734,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_2</name>
-<Object>w_2</Object>
+<name>w_53</name>
+<Object>w_53</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3745,8 +3745,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_3</name>
-<Object>w_3</Object>
+<name>w_54</name>
+<Object>w_54</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3756,8 +3756,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_4</name>
-<Object>w_4</Object>
+<name>w_55</name>
+<Object>w_55</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3767,8 +3767,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_5</name>
-<Object>w_5</Object>
+<name>w_56</name>
+<Object>w_56</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3778,8 +3778,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>conv7</name>
-<Object>conv7</Object>
+<name>biases_buf</name>
+<Object>biases_buf</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3854,13 +3854,13 @@
 <EstimatedClockPeriod>7.241</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>4009</Best-caseLatency>
-<Average-caseLatency>4009</Average-caseLatency>
-<Worst-caseLatency>4009</Worst-caseLatency>
-<Best-caseRealTimeLatency>40.090 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>40.090 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>40.090 us</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>4009</PipelineInitiationInterval>
+<Best-caseLatency>4003</Best-caseLatency>
+<Average-caseLatency>4003</Average-caseLatency>
+<Worst-caseLatency>4003</Worst-caseLatency>
+<Best-caseRealTimeLatency>40.030 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>40.030 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>40.030 us</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>4003</PipelineInitiationInterval>
 <PipelineType>no</PipelineType>
 </SummaryOfOverallLatency>
 </PerformanceEstimates>
@@ -3869,10 +3869,10 @@
 <DSP>10</DSP>
 <AVAIL_DSP>740</AVAIL_DSP>
 <UTIL_DSP>1</UTIL_DSP>
-<FF>3195</FF>
+<FF>2869</FF>
 <AVAIL_FF>269200</AVAIL_FF>
 <UTIL_FF>1</UTIL_FF>
-<LUT>2366</LUT>
+<LUT>2342</LUT>
 <AVAIL_LUT>134600</AVAIL_LUT>
 <UTIL_LUT>1</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
@@ -4361,8 +4361,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_14</name>
-<Object>w_14</Object>
+<name>w_41</name>
+<Object>w_41</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -4372,8 +4372,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_1</name>
-<Object>w_1</Object>
+<name>w_42</name>
+<Object>w_42</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -4383,8 +4383,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_2</name>
-<Object>w_2</Object>
+<name>w_43</name>
+<Object>w_43</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -4394,8 +4394,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_3</name>
-<Object>w_3</Object>
+<name>w_44</name>
+<Object>w_44</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -4405,8 +4405,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_4</name>
-<Object>w_4</Object>
+<name>w_45</name>
+<Object>w_45</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -4416,8 +4416,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_5</name>
-<Object>w_5</Object>
+<name>w_46</name>
+<Object>w_46</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -4427,8 +4427,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_6</name>
-<Object>w_6</Object>
+<name>w_47</name>
+<Object>w_47</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -4438,8 +4438,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_7</name>
-<Object>w_7</Object>
+<name>w_48</name>
+<Object>w_48</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -4449,8 +4449,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>conv6</name>
-<Object>conv6</Object>
+<name>biases_buf</name>
+<Object>biases_buf</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -4525,13 +4525,13 @@
 <EstimatedClockPeriod>7.241</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>4009</Best-caseLatency>
-<Average-caseLatency>4009</Average-caseLatency>
-<Worst-caseLatency>4009</Worst-caseLatency>
-<Best-caseRealTimeLatency>40.090 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>40.090 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>40.090 us</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>4009</PipelineInitiationInterval>
+<Best-caseLatency>4003</Best-caseLatency>
+<Average-caseLatency>4003</Average-caseLatency>
+<Worst-caseLatency>4003</Worst-caseLatency>
+<Best-caseRealTimeLatency>40.030 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>40.030 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>40.030 us</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>4003</PipelineInitiationInterval>
 <PipelineType>no</PipelineType>
 </SummaryOfOverallLatency>
 </PerformanceEstimates>
@@ -4540,10 +4540,10 @@
 <DSP>10</DSP>
 <AVAIL_DSP>740</AVAIL_DSP>
 <UTIL_DSP>1</UTIL_DSP>
-<FF>3195</FF>
+<FF>2869</FF>
 <AVAIL_FF>269200</AVAIL_FF>
 <UTIL_FF>1</UTIL_FF>
-<LUT>2366</LUT>
+<LUT>2342</LUT>
 <AVAIL_LUT>134600</AVAIL_LUT>
 <UTIL_LUT>1</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
@@ -5032,8 +5032,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_13</name>
-<Object>w_13</Object>
+<name>w_33</name>
+<Object>w_33</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -5043,8 +5043,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_3</name>
-<Object>w_3</Object>
+<name>w_34</name>
+<Object>w_34</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -5054,8 +5054,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_4</name>
-<Object>w_4</Object>
+<name>w_35</name>
+<Object>w_35</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -5065,8 +5065,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_5</name>
-<Object>w_5</Object>
+<name>w_36</name>
+<Object>w_36</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -5076,8 +5076,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_6</name>
-<Object>w_6</Object>
+<name>w_37</name>
+<Object>w_37</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -5087,8 +5087,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_7</name>
-<Object>w_7</Object>
+<name>w_38</name>
+<Object>w_38</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -5098,8 +5098,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_8</name>
-<Object>w_8</Object>
+<name>w_39</name>
+<Object>w_39</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -5109,8 +5109,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_9</name>
-<Object>w_9</Object>
+<name>w_40</name>
+<Object>w_40</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -5120,8 +5120,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>conv5</name>
-<Object>conv5</Object>
+<name>biases_buf</name>
+<Object>biases_buf</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -5196,13 +5196,13 @@
 <EstimatedClockPeriod>7.241</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>4009</Best-caseLatency>
-<Average-caseLatency>4009</Average-caseLatency>
-<Worst-caseLatency>4009</Worst-caseLatency>
-<Best-caseRealTimeLatency>40.090 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>40.090 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>40.090 us</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>4009</PipelineInitiationInterval>
+<Best-caseLatency>4003</Best-caseLatency>
+<Average-caseLatency>4003</Average-caseLatency>
+<Worst-caseLatency>4003</Worst-caseLatency>
+<Best-caseRealTimeLatency>40.030 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>40.030 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>40.030 us</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>4003</PipelineInitiationInterval>
 <PipelineType>no</PipelineType>
 </SummaryOfOverallLatency>
 </PerformanceEstimates>
@@ -5211,10 +5211,10 @@
 <DSP>10</DSP>
 <AVAIL_DSP>740</AVAIL_DSP>
 <UTIL_DSP>1</UTIL_DSP>
-<FF>3195</FF>
+<FF>2869</FF>
 <AVAIL_FF>269200</AVAIL_FF>
 <UTIL_FF>1</UTIL_FF>
-<LUT>2366</LUT>
+<LUT>2342</LUT>
 <AVAIL_LUT>134600</AVAIL_LUT>
 <UTIL_LUT>1</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
@@ -5703,8 +5703,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_12</name>
-<Object>w_12</Object>
+<name>w_25</name>
+<Object>w_25</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -5714,8 +5714,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_5</name>
-<Object>w_5</Object>
+<name>w_26</name>
+<Object>w_26</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -5725,8 +5725,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_6</name>
-<Object>w_6</Object>
+<name>w_27</name>
+<Object>w_27</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -5736,8 +5736,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_7</name>
-<Object>w_7</Object>
+<name>w_28</name>
+<Object>w_28</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -5747,8 +5747,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_8</name>
-<Object>w_8</Object>
+<name>w_29</name>
+<Object>w_29</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -5758,8 +5758,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_9</name>
-<Object>w_9</Object>
+<name>w_30</name>
+<Object>w_30</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -5769,8 +5769,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_1</name>
-<Object>w_1</Object>
+<name>w_31</name>
+<Object>w_31</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -5780,8 +5780,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_2</name>
-<Object>w_2</Object>
+<name>w_32</name>
+<Object>w_32</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -5791,8 +5791,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>conv4</name>
-<Object>conv4</Object>
+<name>biases_buf</name>
+<Object>biases_buf</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -5867,13 +5867,13 @@
 <EstimatedClockPeriod>7.241</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>4009</Best-caseLatency>
-<Average-caseLatency>4009</Average-caseLatency>
-<Worst-caseLatency>4009</Worst-caseLatency>
-<Best-caseRealTimeLatency>40.090 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>40.090 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>40.090 us</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>4009</PipelineInitiationInterval>
+<Best-caseLatency>4003</Best-caseLatency>
+<Average-caseLatency>4003</Average-caseLatency>
+<Worst-caseLatency>4003</Worst-caseLatency>
+<Best-caseRealTimeLatency>40.030 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>40.030 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>40.030 us</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>4003</PipelineInitiationInterval>
 <PipelineType>no</PipelineType>
 </SummaryOfOverallLatency>
 </PerformanceEstimates>
@@ -5882,10 +5882,10 @@
 <DSP>10</DSP>
 <AVAIL_DSP>740</AVAIL_DSP>
 <UTIL_DSP>1</UTIL_DSP>
-<FF>3195</FF>
+<FF>2869</FF>
 <AVAIL_FF>269200</AVAIL_FF>
 <UTIL_FF>1</UTIL_FF>
-<LUT>2366</LUT>
+<LUT>2342</LUT>
 <AVAIL_LUT>134600</AVAIL_LUT>
 <UTIL_LUT>1</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
@@ -6374,8 +6374,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_11</name>
-<Object>w_11</Object>
+<name>w_17</name>
+<Object>w_17</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -6385,8 +6385,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_7</name>
-<Object>w_7</Object>
+<name>w_18</name>
+<Object>w_18</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -6396,8 +6396,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_8</name>
-<Object>w_8</Object>
+<name>w_19</name>
+<Object>w_19</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -6407,8 +6407,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_9</name>
-<Object>w_9</Object>
+<name>w_20</name>
+<Object>w_20</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -6418,8 +6418,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_1</name>
-<Object>w_1</Object>
+<name>w_21</name>
+<Object>w_21</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -6429,8 +6429,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_2</name>
-<Object>w_2</Object>
+<name>w_22</name>
+<Object>w_22</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -6440,8 +6440,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_3</name>
-<Object>w_3</Object>
+<name>w_23</name>
+<Object>w_23</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -6451,8 +6451,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_4</name>
-<Object>w_4</Object>
+<name>w_24</name>
+<Object>w_24</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -6462,8 +6462,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>conv3</name>
-<Object>conv3</Object>
+<name>biases_buf</name>
+<Object>biases_buf</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -6538,13 +6538,13 @@
 <EstimatedClockPeriod>7.241</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>4009</Best-caseLatency>
-<Average-caseLatency>4009</Average-caseLatency>
-<Worst-caseLatency>4009</Worst-caseLatency>
-<Best-caseRealTimeLatency>40.090 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>40.090 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>40.090 us</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>4009</PipelineInitiationInterval>
+<Best-caseLatency>4003</Best-caseLatency>
+<Average-caseLatency>4003</Average-caseLatency>
+<Worst-caseLatency>4003</Worst-caseLatency>
+<Best-caseRealTimeLatency>40.030 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>40.030 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>40.030 us</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>4003</PipelineInitiationInterval>
 <PipelineType>no</PipelineType>
 </SummaryOfOverallLatency>
 </PerformanceEstimates>
@@ -6553,10 +6553,10 @@
 <DSP>10</DSP>
 <AVAIL_DSP>740</AVAIL_DSP>
 <UTIL_DSP>1</UTIL_DSP>
-<FF>3195</FF>
+<FF>2869</FF>
 <AVAIL_FF>269200</AVAIL_FF>
 <UTIL_FF>1</UTIL_FF>
-<LUT>2366</LUT>
+<LUT>2342</LUT>
 <AVAIL_LUT>134600</AVAIL_LUT>
 <UTIL_LUT>1</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
@@ -7067,8 +7067,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_1</name>
-<Object>w_1</Object>
+<name>w_11</name>
+<Object>w_11</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -7078,8 +7078,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_2</name>
-<Object>w_2</Object>
+<name>w_12</name>
+<Object>w_12</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -7089,8 +7089,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_3</name>
-<Object>w_3</Object>
+<name>w_13</name>
+<Object>w_13</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -7100,8 +7100,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_4</name>
-<Object>w_4</Object>
+<name>w_14</name>
+<Object>w_14</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -7111,8 +7111,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_5</name>
-<Object>w_5</Object>
+<name>w_15</name>
+<Object>w_15</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -7122,8 +7122,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_6</name>
-<Object>w_6</Object>
+<name>w_16</name>
+<Object>w_16</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -7133,8 +7133,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>conv2</name>
-<Object>conv2</Object>
+<name>biases_buf</name>
+<Object>biases_buf</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -7209,13 +7209,13 @@
 <EstimatedClockPeriod>7.241</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>4009</Best-caseLatency>
-<Average-caseLatency>4009</Average-caseLatency>
-<Worst-caseLatency>4009</Worst-caseLatency>
-<Best-caseRealTimeLatency>40.090 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>40.090 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>40.090 us</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>4009</PipelineInitiationInterval>
+<Best-caseLatency>4003</Best-caseLatency>
+<Average-caseLatency>4003</Average-caseLatency>
+<Worst-caseLatency>4003</Worst-caseLatency>
+<Best-caseRealTimeLatency>40.030 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>40.030 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>40.030 us</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>4003</PipelineInitiationInterval>
 <PipelineType>no</PipelineType>
 </SummaryOfOverallLatency>
 </PerformanceEstimates>
@@ -7224,10 +7224,10 @@
 <DSP>10</DSP>
 <AVAIL_DSP>740</AVAIL_DSP>
 <UTIL_DSP>1</UTIL_DSP>
-<FF>3195</FF>
+<FF>2869</FF>
 <AVAIL_FF>269200</AVAIL_FF>
 <UTIL_FF>1</UTIL_FF>
-<LUT>2366</LUT>
+<LUT>2342</LUT>
 <AVAIL_LUT>134600</AVAIL_LUT>
 <UTIL_LUT>1</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
@@ -7804,8 +7804,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>conv1</name>
-<Object>conv1</Object>
+<name>biases_buf</name>
+<Object>biases_buf</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -7880,13 +7880,13 @@
 <EstimatedClockPeriod>7.241</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>4009</Best-caseLatency>
-<Average-caseLatency>4009</Average-caseLatency>
-<Worst-caseLatency>4009</Worst-caseLatency>
-<Best-caseRealTimeLatency>40.090 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>40.090 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>40.090 us</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>4009</PipelineInitiationInterval>
+<Best-caseLatency>4003</Best-caseLatency>
+<Average-caseLatency>4003</Average-caseLatency>
+<Worst-caseLatency>4003</Worst-caseLatency>
+<Best-caseRealTimeLatency>40.030 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>40.030 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>40.030 us</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>4003</PipelineInitiationInterval>
 <PipelineType>no</PipelineType>
 </SummaryOfOverallLatency>
 </PerformanceEstimates>
@@ -7895,10 +7895,10 @@
 <DSP>10</DSP>
 <AVAIL_DSP>740</AVAIL_DSP>
 <UTIL_DSP>1</UTIL_DSP>
-<FF>3195</FF>
+<FF>2869</FF>
 <AVAIL_FF>269200</AVAIL_FF>
 <UTIL_FF>1</UTIL_FF>
-<LUT>2366</LUT>
+<LUT>2342</LUT>
 <AVAIL_LUT>134600</AVAIL_LUT>
 <UTIL_LUT>1</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
@@ -8196,14 +8196,14 @@
 <EstimatedClockPeriod>7.241</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>4009</Best-caseLatency>
-<Average-caseLatency>4009</Average-caseLatency>
-<Worst-caseLatency>4009</Worst-caseLatency>
-<Best-caseRealTimeLatency>40.090 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>40.090 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>40.090 us</Worst-caseRealTimeLatency>
-<DataflowPipelineThroughput>4010</DataflowPipelineThroughput>
-<PipelineInitiationInterval>4010</PipelineInitiationInterval>
+<Best-caseLatency>4003</Best-caseLatency>
+<Average-caseLatency>4003</Average-caseLatency>
+<Worst-caseLatency>4003</Worst-caseLatency>
+<Best-caseRealTimeLatency>40.030 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>40.030 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>40.030 us</Worst-caseRealTimeLatency>
+<DataflowPipelineThroughput>4004</DataflowPipelineThroughput>
+<PipelineInitiationInterval>4004</PipelineInitiationInterval>
 <PipelineType>dataflow</PipelineType>
 </SummaryOfOverallLatency>
 </PerformanceEstimates>
@@ -8212,10 +8212,10 @@
 <DSP>80</DSP>
 <AVAIL_DSP>740</AVAIL_DSP>
 <UTIL_DSP>10</UTIL_DSP>
-<FF>25569</FF>
+<FF>22961</FF>
 <AVAIL_FF>269200</AVAIL_FF>
-<UTIL_FF>9</UTIL_FF>
-<LUT>19049</LUT>
+<UTIL_FF>8</UTIL_FF>
+<LUT>18857</LUT>
 <AVAIL_LUT>134600</AVAIL_LUT>
 <UTIL_LUT>14</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
@@ -33488,14 +33488,14 @@
 <EstimatedClockPeriod>7.241</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>4009</Best-caseLatency>
-<Average-caseLatency>4009</Average-caseLatency>
-<Worst-caseLatency>4009</Worst-caseLatency>
-<Best-caseRealTimeLatency>40.090 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>40.090 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>40.090 us</Worst-caseRealTimeLatency>
-<DataflowPipelineThroughput>4010</DataflowPipelineThroughput>
-<PipelineInitiationInterval>4010</PipelineInitiationInterval>
+<Best-caseLatency>4003</Best-caseLatency>
+<Average-caseLatency>4003</Average-caseLatency>
+<Worst-caseLatency>4003</Worst-caseLatency>
+<Best-caseRealTimeLatency>40.030 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>40.030 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>40.030 us</Worst-caseRealTimeLatency>
+<DataflowPipelineThroughput>4004</DataflowPipelineThroughput>
+<PipelineInitiationInterval>4004</PipelineInitiationInterval>
 <PipelineType>dataflow</PipelineType>
 </SummaryOfOverallLatency>
 </PerformanceEstimates>
@@ -33507,10 +33507,10 @@
 <DSP>131</DSP>
 <AVAIL_DSP>740</AVAIL_DSP>
 <UTIL_DSP>17</UTIL_DSP>
-<FF>52105</FF>
+<FF>49497</FF>
 <AVAIL_FF>269200</AVAIL_FF>
-<UTIL_FF>19</UTIL_FF>
-<LUT>38605</LUT>
+<UTIL_FF>18</UTIL_FF>
+<LUT>38413</LUT>
 <AVAIL_LUT>134600</AVAIL_LUT>
 <UTIL_LUT>28</UTIL_LUT>
 <URAM>0</URAM>
@@ -42253,13 +42253,13 @@
 <EstimatedClockPeriod>7.241</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>5920</Best-caseLatency>
-<Average-caseLatency>5920</Average-caseLatency>
-<Worst-caseLatency>5920</Worst-caseLatency>
-<Best-caseRealTimeLatency>59.200 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>59.200 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>59.200 us</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>5921</PipelineInitiationInterval>
+<Best-caseLatency>5914</Best-caseLatency>
+<Average-caseLatency>5914</Average-caseLatency>
+<Worst-caseLatency>5914</Worst-caseLatency>
+<Best-caseRealTimeLatency>59.140 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>59.140 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>59.140 us</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>5915</PipelineInitiationInterval>
 <PipelineType>no</PipelineType>
 </SummaryOfOverallLatency>
 </PerformanceEstimates>
@@ -42271,10 +42271,10 @@
 <DSP>131</DSP>
 <AVAIL_DSP>740</AVAIL_DSP>
 <UTIL_DSP>17</UTIL_DSP>
-<FF>54221</FF>
+<FF>51805</FF>
 <AVAIL_FF>269200</AVAIL_FF>
-<UTIL_FF>20</UTIL_FF>
-<LUT>41495</LUT>
+<UTIL_FF>19</UTIL_FF>
+<LUT>41303</LUT>
 <AVAIL_LUT>134600</AVAIL_LUT>
 <UTIL_LUT>30</UTIL_LUT>
 <URAM>0</URAM>

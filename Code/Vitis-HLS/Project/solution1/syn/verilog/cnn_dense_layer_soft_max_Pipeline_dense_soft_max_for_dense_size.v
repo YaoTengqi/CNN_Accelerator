@@ -424,7 +424,7 @@ cnn_fadd_32ns_32ns_32_7_full_dsp_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-fadd_32ns_32ns_32_7_full_dsp_1_U636(
+fadd_32ns_32ns_32_7_full_dsp_1_U555(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_153_p0),
@@ -439,7 +439,7 @@ cnn_fadd_32ns_32ns_32_7_full_dsp_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-fadd_32ns_32ns_32_7_full_dsp_1_U637(
+fadd_32ns_32ns_32_7_full_dsp_1_U556(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_157_p0),
@@ -454,7 +454,7 @@ cnn_fexp_32ns_32ns_32_10_full_dsp_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-fexp_32ns_32ns_32_10_full_dsp_1_U638(
+fexp_32ns_32ns_32_10_full_dsp_1_U557(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(32'd0),

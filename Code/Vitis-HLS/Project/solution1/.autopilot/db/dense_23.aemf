@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1681977554691">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1681984690391">
   <ports id="1" name="flat_to_dense_streams_2" type="PortType" coreId="62" bitwidth="32" iftype="IfTypeRom">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
@@ -138,52 +138,52 @@
   <edges id="297" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.33" sink_obj="//@blocks.0/@node_objs.43"/>
   <edges id="298" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@blocks.0/@node_objs.56"/>
   <blocks id="73" name="dense.23" type="BlockType">
-    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="add105_loc" coreId="1968098144" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="add105_loc" coreId="2638112816" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="add10_16_loc" coreId="1973379792" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="add10_16_loc" coreId="2630629232" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="add10_27_loc" coreId="542329928" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="add10_27_loc" coreId="2636591648" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="add10_38_loc" coreId="542329928" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="add10_38_loc" coreId="2637754176" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="add10_49_loc" coreId="1973379792" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="add10_49_loc" coreId="2637754440" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="add10_510_loc" coreId="1972645456" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="add10_510_loc" coreId="2640772944" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="add10_611_loc" coreId="1973379792" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="add10_611_loc" coreId="2637754000" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="add10_712_loc" coreId="1972646064" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="add10_712_loc" coreId="0" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="add10_813_loc" coreId="1968026808" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="add10_813_loc" coreId="2642809392" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="add10_914_loc" coreId="1970053392" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="add10_914_loc" coreId="2642809392" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
@@ -204,65 +204,65 @@
       <dataOutputObjs>call</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="_ln0" rtlName="grp_dense_23_Pipeline_1_fu_195" coreId="1973379792" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="_ln0" rtlName="grp_dense_23_Pipeline_1_fu_195" coreId="2630629232" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <constName>dense_23_Pipeline_1</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="dense_array_addr" coreId="1964349760" bitwidth="4" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="dense_array_addr" coreId="2639813552" bitwidth="4" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="dense_array_addr_46" coreId="1970053392" bitwidth="4" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="dense_array_addr_46" coreId="2636877760" bitwidth="4" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="dense_array_addr_47" coreId="1970704640" bitwidth="4" opcode="getelementptr" nodeLabel="3.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="dense_array_addr_47" coreId="1314013527" bitwidth="4" opcode="getelementptr" nodeLabel="3.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="dense_array_addr_48" coreId="0" bitwidth="4" opcode="getelementptr" nodeLabel="3.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="dense_array_addr_48" coreId="2638112816" bitwidth="4" opcode="getelementptr" nodeLabel="3.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="dense_array_addr_49" coreId="1973379488" bitwidth="4" opcode="getelementptr" nodeLabel="4.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="dense_array_addr_49" coreId="2641831024" bitwidth="4" opcode="getelementptr" nodeLabel="4.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="dense_array_addr_50" coreId="1971254432" bitwidth="4" opcode="getelementptr" nodeLabel="4.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="dense_array_addr_50" coreId="2638112816" bitwidth="4" opcode="getelementptr" nodeLabel="4.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="dense_array_addr_51" coreId="1967214392" bitwidth="4" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="dense_array_addr_51" coreId="2641844048" bitwidth="4" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="dense_array_addr_52" coreId="1970053088" bitwidth="4" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="dense_array_addr_52" coreId="2638112816" bitwidth="4" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="dense_array_addr_53" coreId="1969498416" bitwidth="4" opcode="getelementptr" nodeLabel="6.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="dense_array_addr_53" coreId="2642898192" bitwidth="4" opcode="getelementptr" nodeLabel="6.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="dense_array_addr_54" coreId="1967214784" bitwidth="4" opcode="getelementptr" nodeLabel="6.0" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="dense_array_addr_54" coreId="2638112816" bitwidth="4" opcode="getelementptr" nodeLabel="6.0" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
@@ -318,8 +318,8 @@
       <dataInputObjs>getelementptr</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="empty" coreId="1973309504" bitwidth="32" opcode="wait" nodeLabel="2.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1"/>
-    <node_objs xsi:type="cdfg:CdfgNode" id="48" name="_ln56" lineNumber="56" fileName="dense.cc" fileDirectory=".." rtlName="grp_dense_23_Pipeline_dense_for_flat_fu_201" coreId="542329928" opcode="call" nodeLabel="7.0" nodeLatency="1" m_display="0" m_delay="1.61" m_topoIndex="34" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="empty" coreId="2641055408" bitwidth="32" opcode="wait" nodeLabel="2.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="48" name="_ln56" lineNumber="56" fileName="dense.cc" fileDirectory=".." rtlName="grp_dense_23_Pipeline_dense_for_flat_fu_201" coreId="2638112816" opcode="call" nodeLabel="7.0" nodeLatency="1" m_display="0" m_delay="1.61" m_topoIndex="34" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="dense.cc" linenumber="56" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
       <dataInputObjs>load</dataInputObjs>
       <dataInputObjs>load</dataInputObjs>
@@ -344,47 +344,47 @@
       <dataInputObjs>alloca</dataInputObjs>
       <constName>dense_23_Pipeline_dense_for_flat</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="add10_914_loc_load" coreId="1968272448" bitwidth="32" opcode="load" nodeLabel="13.0" m_display="0" m_topoIndex="51" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="add10_914_loc_load" coreId="2641954800" bitwidth="32" opcode="load" nodeLabel="13.0" m_display="0" m_topoIndex="51" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataOutputObjs>store</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="50" name="add10_813_loc_load" coreId="1966673152" bitwidth="32" opcode="load" nodeLabel="13.0" m_display="0" m_topoIndex="52" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="50" name="add10_813_loc_load" coreId="2638112816" bitwidth="32" opcode="load" nodeLabel="13.0" m_display="0" m_topoIndex="52" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataOutputObjs>store</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="51" name="add10_712_loc_load" coreId="1955501104" bitwidth="32" opcode="load" nodeLabel="12.0" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="51" name="add10_712_loc_load" coreId="2636878192" bitwidth="32" opcode="load" nodeLabel="12.0" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataOutputObjs>store</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="52" name="add10_611_loc_load" coreId="1958026000" bitwidth="32" opcode="load" nodeLabel="12.0" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="52" name="add10_611_loc_load" coreId="2638112816" bitwidth="32" opcode="load" nodeLabel="12.0" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataOutputObjs>store</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="53" name="add10_510_loc_load" coreId="116" bitwidth="32" opcode="load" nodeLabel="11.0" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="53" name="add10_510_loc_load" coreId="2640994704" bitwidth="32" opcode="load" nodeLabel="11.0" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataOutputObjs>store</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="54" name="add10_49_loc_load" coreId="1962598544" bitwidth="32" opcode="load" nodeLabel="11.0" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="54" name="add10_49_loc_load" coreId="2642914064" bitwidth="32" opcode="load" nodeLabel="11.0" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataOutputObjs>store</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="55" name="add10_38_loc_load" coreId="1955501584" bitwidth="32" opcode="load" nodeLabel="10.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="55" name="add10_38_loc_load" coreId="2636878192" bitwidth="32" opcode="load" nodeLabel="10.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataOutputObjs>store</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="56" name="add10_27_loc_load" coreId="1970108384" bitwidth="32" opcode="load" nodeLabel="10.0" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="56" name="add10_27_loc_load" coreId="2639855520" bitwidth="32" opcode="load" nodeLabel="10.0" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataOutputObjs>store</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="57" name="add10_16_loc_load" coreId="1962822400" bitwidth="32" opcode="load" nodeLabel="9.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="57" name="add10_16_loc_load" coreId="2638112816" bitwidth="32" opcode="load" nodeLabel="9.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataOutputObjs>store</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="58" name="add105_loc_load" coreId="542329928" bitwidth="32" opcode="load" nodeLabel="9.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="58" name="add105_loc_load" coreId="2637168208" bitwidth="32" opcode="load" nodeLabel="9.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataOutputObjs>store</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="59" name="empty_54" coreId="1967158960" bitwidth="32" opcode="wait" nodeLabel="13.0" m_display="0" m_topoIndex="53" m_clusterGroupNumber="-1"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="59" name="empty_54" coreId="2638112816" bitwidth="32" opcode="wait" nodeLabel="13.0" m_display="0" m_topoIndex="53" m_clusterGroupNumber="-1"/>
     <node_objs xsi:type="cdfg:CdfgNode" id="60" name="dense_array_addr_write_ln56" lineNumber="56" fileName="dense.cc" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" opcode="store" nodeLabel="9.0" m_display="0" m_delay="2.15" m_topoIndex="37" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="dense.cc" linenumber="56" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
       <dataInputObjs>load</dataInputObjs>
@@ -435,13 +435,13 @@
       <dataInputObjs>load</dataInputObjs>
       <dataInputObjs>getelementptr</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="70" name="empty_55" coreId="1966101376" bitwidth="32" opcode="wait" nodeLabel="14.0" m_display="0" m_topoIndex="56" m_clusterGroupNumber="-1"/>
-    <node_objs xsi:type="cdfg:CdfgNode" id="71" name="_ln0" rtlName="grp_dense_23_Pipeline_VITIS_LOOP_60_2_fu_249" coreId="1968259680" opcode="call" nodeLabel="14.0" nodeLatency="1" m_display="0" m_topoIndex="57" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="70" name="empty_55" coreId="2638112816" bitwidth="32" opcode="wait" nodeLabel="14.0" m_display="0" m_topoIndex="56" m_clusterGroupNumber="-1"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="71" name="_ln0" rtlName="grp_dense_23_Pipeline_VITIS_LOOP_60_2_fu_249" coreId="1397508187" opcode="call" nodeLabel="14.0" nodeLatency="1" m_display="0" m_topoIndex="57" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataOutputObjs>dense_to_softmax_streams_2</dataOutputObjs>
       <constName>dense_23_Pipeline_VITIS_LOOP_60_2</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="72" name="_ln64" lineNumber="64" fileName="dense.cc" fileDirectory=".." coreId="1330007625" contextFuncName="dense" opcode="ret" nodeLabel="15.0" m_display="0" m_topoIndex="58" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="72" name="_ln64" lineNumber="64" fileName="dense.cc" fileDirectory=".." coreId="2640578368" contextFuncName="dense" opcode="ret" nodeLabel="15.0" m_display="0" m_topoIndex="58" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="dense.cc" linenumber="64" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="dense"/>
     </node_objs>
     <fileValidLineNumbers fileName="dense.cc">

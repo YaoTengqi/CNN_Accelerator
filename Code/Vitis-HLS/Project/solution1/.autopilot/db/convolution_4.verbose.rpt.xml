@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'convolution_4'" level="0">
-<item name = "Date">Thu Apr 20 15:59:03 2023
+<item name = "Date">Thu Apr 20 17:57:59 2023
 </item>
 <item name = "Version">2022.2 (Build 3670227 on Oct 13 2022)</item>
 <item name = "Project">Project</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">4009, 4009, 40.090 us, 40.090 us, 4009, 4009, no</column>
+<column name="">4003, 4003, 40.030 us, 40.030 us, 4003, 4003, no</column>
 </table>
 </item>
 <item name = "Detail">
@@ -52,8 +52,8 @@
 <column name="FIFO">-, -, -, -, -</column>
 <column name="Instance">-, 10, 2572, 2243, -</column>
 <column name="Memory">-, -, -, -, -</column>
-<column name="Multiplexer">-, -, -, 121, -</column>
-<column name="Register">-, -, 623, -, -</column>
+<column name="Multiplexer">-, -, -, 97, -</column>
+<column name="Register">-, -, 297, -, -</column>
 <specialColumn name="Available">730, 740, 269200, 134600, 0</specialColumn>
 <specialColumn name="Utilization (%)">0, 1, 1, 1, 0</specialColumn>
 </table>
@@ -63,16 +63,6 @@
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="grp_convolution_4_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138">convolution_4_Pipeline_conv_for_rows_win_for_rows_win_for_cols, 0, 10, 2572, 2243, 0</column>
-<column name="sitofp_32ns_32_6_no_dsp_1_U174">sitofp_32ns_32_6_no_dsp_1, 0, 0, 0, 0, 0</column>
-<column name="sitofp_32ns_32_6_no_dsp_1_U175">sitofp_32ns_32_6_no_dsp_1, 0, 0, 0, 0, 0</column>
-<column name="sitofp_32ns_32_6_no_dsp_1_U176">sitofp_32ns_32_6_no_dsp_1, 0, 0, 0, 0, 0</column>
-<column name="sitofp_32ns_32_6_no_dsp_1_U177">sitofp_32ns_32_6_no_dsp_1, 0, 0, 0, 0, 0</column>
-<column name="sitofp_32ns_32_6_no_dsp_1_U178">sitofp_32ns_32_6_no_dsp_1, 0, 0, 0, 0, 0</column>
-<column name="sitofp_32ns_32_6_no_dsp_1_U179">sitofp_32ns_32_6_no_dsp_1, 0, 0, 0, 0, 0</column>
-<column name="sitofp_32ns_32_6_no_dsp_1_U180">sitofp_32ns_32_6_no_dsp_1, 0, 0, 0, 0, 0</column>
-<column name="sitofp_32ns_32_6_no_dsp_1_U181">sitofp_32ns_32_6_no_dsp_1, 0, 0, 0, 0, 0</column>
-<column name="sitofp_32ns_32_6_no_dsp_1_U182">sitofp_32ns_32_6_no_dsp_1, 0, 0, 0, 0, 0</column>
-<column name="sitofp_32ns_32_6_no_dsp_1_U183">sitofp_32ns_32_6_no_dsp_1, 0, 0, 0, 0, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -94,7 +84,7 @@
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="ap_NS_fsm">57, 14, 1, 14</column>
+<column name="ap_NS_fsm">33, 8, 1, 8</column>
 <column name="ap_done">9, 2, 1, 2</column>
 <column name="conv_to_pool_streams_4_write">9, 2, 1, 2</column>
 <column name="weight_buf_address0">25, 6, 4, 24</column>
@@ -103,28 +93,18 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="ap_CS_fsm">13, 0, 13, 0</column>
+<column name="ap_CS_fsm">7, 0, 7, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
-<column name="conv4_reg_292">32, 0, 32, 0</column>
 <column name="grp_convolution_4_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138_ap_start_reg">1, 0, 1, 0</column>
-<column name="w_1_reg_332">32, 0, 32, 0</column>
-<column name="w_2_reg_337">32, 0, 32, 0</column>
-<column name="w_5_reg_307">32, 0, 32, 0</column>
-<column name="w_6_reg_312">32, 0, 32, 0</column>
-<column name="w_7_reg_317">32, 0, 32, 0</column>
-<column name="w_8_reg_322">32, 0, 32, 0</column>
-<column name="w_9_reg_327">32, 0, 32, 0</column>
-<column name="w_reg_297">32, 0, 32, 0</column>
-<column name="w_s_reg_302">32, 0, 32, 0</column>
-<column name="weight_buf_load_25_reg_227">32, 0, 32, 0</column>
-<column name="weight_buf_load_26_reg_232">32, 0, 32, 0</column>
-<column name="weight_buf_load_27_reg_247">32, 0, 32, 0</column>
-<column name="weight_buf_load_28_reg_252">32, 0, 32, 0</column>
-<column name="weight_buf_load_29_reg_267">32, 0, 32, 0</column>
-<column name="weight_buf_load_30_reg_272">32, 0, 32, 0</column>
-<column name="weight_buf_load_31_reg_277">32, 0, 32, 0</column>
-<column name="weight_buf_load_32_reg_282">32, 0, 32, 0</column>
-<column name="weight_buf_load_reg_212">32, 0, 32, 0</column>
+<column name="weight_buf_load_25_reg_188">32, 0, 32, 0</column>
+<column name="weight_buf_load_26_reg_193">32, 0, 32, 0</column>
+<column name="weight_buf_load_27_reg_208">32, 0, 32, 0</column>
+<column name="weight_buf_load_28_reg_213">32, 0, 32, 0</column>
+<column name="weight_buf_load_29_reg_233">32, 0, 32, 0</column>
+<column name="weight_buf_load_30_reg_238">32, 0, 32, 0</column>
+<column name="weight_buf_load_31_reg_243">32, 0, 32, 0</column>
+<column name="weight_buf_load_32_reg_248">32, 0, 32, 0</column>
+<column name="weight_buf_load_reg_173">32, 0, 32, 0</column>
 </table>
 </item>
 </section>

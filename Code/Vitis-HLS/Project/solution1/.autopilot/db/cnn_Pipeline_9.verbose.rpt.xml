@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'cnn_Pipeline_9'" level="0">
-<item name = "Date">Thu Apr 20 15:58:58 2023
+<item name = "Date">Thu Apr 20 17:57:53 2023
 </item>
 <item name = "Version">2022.2 (Build 3670227 on Oct 13 2022)</item>
 <item name = "Project">Project</item>
@@ -78,15 +78,15 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="empty_117_fu_123_p2">+, 0, 0, 13, 4, 1</column>
-<column name="empty_121_fu_178_p2">+, 0, 0, 7, 7, 7</column>
-<column name="empty_122_fu_234_p2">+, 0, 0, 16, 9, 9</column>
-<column name="next_mul68_fu_132_p2">+, 0, 0, 15, 8, 5</column>
-<column name="next_urem70_fu_197_p2">+, 0, 0, 13, 4, 1</column>
-<column name="empty_119_fu_172_p2">-, 0, 0, 7, 7, 7</column>
-<column name="empty_118_fu_203_p2">icmp, 0, 0, 9, 4, 2</column>
-<column name="exitcond442_fu_117_p2">icmp, 0, 0, 9, 4, 4</column>
-<column name="idx_urem71_fu_209_p3">select, 0, 0, 4, 1, 4</column>
+<column name="empty_117_fu_122_p2">+, 0, 0, 13, 4, 1</column>
+<column name="empty_121_fu_177_p2">+, 0, 0, 7, 7, 7</column>
+<column name="empty_122_fu_233_p2">+, 0, 0, 16, 9, 9</column>
+<column name="next_mul68_fu_131_p2">+, 0, 0, 15, 8, 5</column>
+<column name="next_urem70_fu_196_p2">+, 0, 0, 13, 4, 1</column>
+<column name="empty_119_fu_171_p2">-, 0, 0, 7, 7, 7</column>
+<column name="empty_118_fu_202_p2">icmp, 0, 0, 9, 4, 2</column>
+<column name="exitcond442_fu_116_p2">icmp, 0, 0, 9, 4, 4</column>
+<column name="idx_urem71_fu_208_p3">select, 0, 0, 4, 1, 4</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
@@ -108,10 +108,10 @@
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
 <column name="ap_loop_exit_ready_pp0_iter1_reg">1, 0, 1, 0</column>
-<column name="empty_121_reg_294">5, 0, 7, 2</column>
+<column name="empty_121_reg_298">5, 0, 7, 2</column>
 <column name="loop_index20_fu_68">4, 0, 4, 0</column>
-<column name="loop_index20_load_reg_285">4, 0, 4, 0</column>
-<column name="loop_index20_load_reg_285_pp0_iter1_reg">4, 0, 4, 0</column>
+<column name="loop_index20_load_reg_289">4, 0, 4, 0</column>
+<column name="loop_index20_load_reg_289_pp0_iter1_reg">4, 0, 4, 0</column>
 <column name="phi_mul67_fu_64">8, 0, 8, 0</column>
 <column name="phi_urem69_fu_60">4, 0, 4, 0</column>
 </table>

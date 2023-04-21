@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1681977558927">
-  <ports id="1" name="dense_to_softmax_streams_0" type="PortType" coreId="1982833296" bitwidth="32" iftype="IfTypeRom">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1681984695000">
+  <ports id="1" name="dense_to_softmax_streams_0" type="PortType" coreId="2648554688" bitwidth="32" iftype="IfTypeRom">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="2" name="dense_to_softmax_streams_1" type="PortType" coreId="1983786592" bitwidth="32" iftype="IfTypeRom">
+  <ports id="2" name="dense_to_softmax_streams_1" type="PortType" coreId="2654906192" bitwidth="32" iftype="IfTypeRom">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="3" name="dense_to_softmax_streams_2" type="PortType" coreId="1988738672" bitwidth="32" iftype="IfTypeRom">
+  <ports id="3" name="dense_to_softmax_streams_2" type="PortType" coreId="2658353344" bitwidth="32" iftype="IfTypeRom">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="4" name="dense_to_softmax_streams_3" type="PortType" coreId="1987291120" bitwidth="32" iftype="IfTypeRom">
+  <ports id="4" name="dense_to_softmax_streams_3" type="PortType" coreId="2656957744" bitwidth="32" iftype="IfTypeRom">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="5" name="dense_to_softmax_streams_4" type="PortType" coreId="1975035808" bitwidth="32" iftype="IfTypeRom">
+  <ports id="5" name="dense_to_softmax_streams_4" type="PortType" coreId="2643071344" bitwidth="32" iftype="IfTypeRom">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="6" name="dense_to_softmax_streams_5" type="PortType" coreId="1974830224" bitwidth="32" iftype="IfTypeRom">
+  <ports id="6" name="dense_to_softmax_streams_5" type="PortType" coreId="2652803568" bitwidth="32" iftype="IfTypeRom">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="7" name="dense_to_softmax_streams_6" type="PortType" coreId="1988119728" bitwidth="32" iftype="IfTypeRom">
+  <ports id="7" name="dense_to_softmax_streams_6" type="PortType" coreId="2648112336" bitwidth="32" iftype="IfTypeRom">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="8" name="dense_to_softmax_streams_7" type="PortType" coreId="1983786592" bitwidth="32" iftype="IfTypeRom">
+  <ports id="8" name="dense_to_softmax_streams_7" type="PortType" coreId="2658216640" bitwidth="32" iftype="IfTypeRom">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="9" name="prediction" type="PortType" coreName="RAM" coreId="1982833296" bitwidth="32" direction="DirInOut" iftype="IfTypeRegister" arraysize="10">
+  <ports id="9" name="prediction" type="PortType" coreName="RAM" coreId="0" bitwidth="32" direction="DirInOut" iftype="IfTypeRegister" arraysize="10">
     <dataInputObjs>call</dataInputObjs>
     <dataInputObjs>call</dataInputObjs>
     <dataOutputObjs>call</dataOutputObjs>
@@ -52,13 +52,13 @@
   <edges id="-41" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@ports.8"/>
   <edges id="-46" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@ports.8"/>
   <blocks id="26" name="dense_layer_soft_max" type="BlockType">
-    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="exp_sum_loc" coreId="25" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="exp_sum_loc" coreId="1330007625" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="empty" coreId="0" bitwidth="32" opcode="wait" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1"/>
-    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="_ln0" rtlName="grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_44" coreId="0" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="empty" coreId="2658353344" bitwidth="32" opcode="wait" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="_ln0" rtlName="grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size_fu_44" coreId="2654906192" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
       <dataInputObjs>dense_to_softmax_streams_0</dataInputObjs>
       <dataInputObjs>dense_to_softmax_streams_1</dataInputObjs>
       <dataInputObjs>dense_to_softmax_streams_2</dataInputObjs>
@@ -72,17 +72,17 @@
       <dataOutputObjs>prediction</dataOutputObjs>
       <constName>dense_layer_soft_max_Pipeline_dense_soft_max_for_dense_size</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="exp_sum_loc_load" coreId="1988501392" bitwidth="32" opcode="load" nodeLabel="2.0" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="exp_sum_loc_load" coreId="2656497568" bitwidth="32" opcode="load" nodeLabel="2.0" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="_ln0" rtlName="grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_digits_fu_69" coreId="1989342872" opcode="call" nodeLabel="2.0" nodeLatency="1" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="_ln0" rtlName="grp_dense_layer_soft_max_Pipeline_dense_soft_max_for_digits_fu_69" coreId="2651243104" opcode="call" nodeLabel="2.0" nodeLatency="1" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
       <dataInputObjs>prediction</dataInputObjs>
       <dataInputObjs>load</dataInputObjs>
       <dataOutputObjs>prediction</dataOutputObjs>
       <constName>dense_layer_soft_max_Pipeline_dense_soft_max_for_digits</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="_ln35" lineNumber="35" fileName="dense.cc" fileDirectory=".." coreId="1989404144" contextFuncName="dense_layer_soft_max" opcode="ret" nodeLabel="3.0" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="_ln35" lineNumber="35" fileName="dense.cc" fileDirectory=".." coreId="25" contextFuncName="dense_layer_soft_max" opcode="ret" nodeLabel="3.0" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="dense.cc" linenumber="35" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="dense_layer_soft_max"/>
     </node_objs>
     <fileValidLineNumbers fileName="dense.cc">

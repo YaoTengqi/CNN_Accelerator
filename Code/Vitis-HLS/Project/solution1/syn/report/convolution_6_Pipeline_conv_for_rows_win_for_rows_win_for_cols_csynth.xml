@@ -229,8 +229,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_1</name>
-<Object>w_1</Object>
+<name>w_11</name>
+<Object>w_11</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -240,8 +240,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_2</name>
-<Object>w_2</Object>
+<name>w_12</name>
+<Object>w_12</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -251,8 +251,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_3</name>
-<Object>w_3</Object>
+<name>w_13</name>
+<Object>w_13</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -262,8 +262,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_4</name>
-<Object>w_4</Object>
+<name>w_14</name>
+<Object>w_14</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -273,8 +273,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_5</name>
-<Object>w_5</Object>
+<name>w_15</name>
+<Object>w_15</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -284,8 +284,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>w_6</name>
-<Object>w_6</Object>
+<name>w_16</name>
+<Object>w_16</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -295,8 +295,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>conv2</name>
-<Object>conv2</Object>
+<name>biases_buf</name>
+<Object>biases_buf</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>

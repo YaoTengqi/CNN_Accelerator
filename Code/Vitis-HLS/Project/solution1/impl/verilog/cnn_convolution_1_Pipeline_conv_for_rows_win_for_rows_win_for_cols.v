@@ -21,15 +21,15 @@ module cnn_convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols (
         pad_img_ce1,
         pad_img_q1,
         w,
-        w_15,
-        w_8,
-        w_9,
-        w_1,
-        w_2,
-        w_3,
-        w_4,
-        w_5,
-        conv7,
+        w_49,
+        w_50,
+        w_51,
+        w_52,
+        w_53,
+        w_54,
+        w_55,
+        w_56,
+        biases_buf,
         conv_to_pool_streams_1_din,
         conv_to_pool_streams_1_num_data_valid,
         conv_to_pool_streams_1_fifo_cap,
@@ -56,15 +56,15 @@ output  [9:0] pad_img_address1;
 output   pad_img_ce1;
 input  [31:0] pad_img_q1;
 input  [31:0] w;
-input  [31:0] w_15;
-input  [31:0] w_8;
-input  [31:0] w_9;
-input  [31:0] w_1;
-input  [31:0] w_2;
-input  [31:0] w_3;
-input  [31:0] w_4;
-input  [31:0] w_5;
-input  [31:0] conv7;
+input  [31:0] w_49;
+input  [31:0] w_50;
+input  [31:0] w_51;
+input  [31:0] w_52;
+input  [31:0] w_53;
+input  [31:0] w_54;
+input  [31:0] w_55;
+input  [31:0] w_56;
+input  [31:0] biases_buf;
 output  [31:0] conv_to_pool_streams_1_din;
 input  [10:0] conv_to_pool_streams_1_num_data_valid;
 input  [10:0] conv_to_pool_streams_1_fifo_cap;
@@ -492,7 +492,7 @@ cnn_fadd_32ns_32ns_32_7_full_dsp_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-fadd_32ns_32ns_32_7_full_dsp_1_U64(
+fadd_32ns_32ns_32_7_full_dsp_1_U53(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_290_p0),
@@ -507,7 +507,7 @@ cnn_fadd_32ns_32ns_32_7_full_dsp_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-fadd_32ns_32ns_32_7_full_dsp_1_U65(
+fadd_32ns_32ns_32_7_full_dsp_1_U54(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_295_p0),
@@ -522,7 +522,7 @@ cnn_fmul_32ns_32ns_32_4_max_dsp_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-fmul_32ns_32ns_32_4_max_dsp_1_U66(
+fmul_32ns_32ns_32_4_max_dsp_1_U55(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_299_p0),
@@ -537,7 +537,7 @@ cnn_fmul_32ns_32ns_32_4_max_dsp_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-fmul_32ns_32ns_32_4_max_dsp_1_U67(
+fmul_32ns_32ns_32_4_max_dsp_1_U56(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_303_p0),
@@ -552,7 +552,7 @@ cnn_fcmp_32ns_32ns_1_2_no_dsp_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 1 ))
-fcmp_32ns_32ns_1_2_no_dsp_1_U68(
+fcmp_32ns_32ns_1_2_no_dsp_1_U57(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(x_assign_reg_1346),
@@ -1399,7 +1399,7 @@ end
 
 always @ (*) begin
     if (((ap_enable_reg_pp0_iter14 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage1) & (1'b0 == ap_block_pp0_stage1))) begin
-        grp_fu_295_p1 = conv7;
+        grp_fu_295_p1 = biases_buf;
     end else if (((ap_enable_reg_pp0_iter12 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage4) & (1'b0 == ap_block_pp0_stage4))) begin
         grp_fu_295_p1 = mul_2_2_reg_1296_pp0_iter12_reg;
     end else if (((ap_enable_reg_pp0_iter11 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage2) & (1'b0 == ap_block_pp0_stage2))) begin
@@ -1423,13 +1423,13 @@ end
 
 always @ (*) begin
     if (((ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage3) & (1'b0 == ap_block_pp0_stage3))) begin
-        grp_fu_299_p0 = w_5;
+        grp_fu_299_p0 = w_56;
     end else if (((ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage2) & (1'b0 == ap_block_pp0_stage2))) begin
-        grp_fu_299_p0 = w_3;
+        grp_fu_299_p0 = w_54;
     end else if (((ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage1) & (1'b0 == ap_block_pp0_stage1))) begin
-        grp_fu_299_p0 = w_1;
+        grp_fu_299_p0 = w_52;
     end else if (((ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0))) begin
-        grp_fu_299_p0 = w_8;
+        grp_fu_299_p0 = w_50;
     end else if (((ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage4) & (1'b0 == ap_block_pp0_stage4))) begin
         grp_fu_299_p0 = w;
     end else begin
@@ -1463,13 +1463,13 @@ end
 
 always @ (*) begin
     if (((ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage2) & (1'b0 == ap_block_pp0_stage2))) begin
-        grp_fu_303_p0 = w_4;
+        grp_fu_303_p0 = w_55;
     end else if (((ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage1) & (1'b0 == ap_block_pp0_stage1))) begin
-        grp_fu_303_p0 = w_2;
+        grp_fu_303_p0 = w_53;
     end else if (((ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0))) begin
-        grp_fu_303_p0 = w_9;
+        grp_fu_303_p0 = w_51;
     end else if (((ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage4) & (1'b0 == ap_block_pp0_stage4))) begin
-        grp_fu_303_p0 = w_15;
+        grp_fu_303_p0 = w_49;
     end else begin
         grp_fu_303_p0 = 'bx;
     end

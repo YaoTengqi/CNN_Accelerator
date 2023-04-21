@@ -14,8 +14,8 @@ set C_modelName {convolution}
 set C_modelType { void 0 }
 set C_modelArgList {
 	{ pad_img float 32 regular {array 900 { 1 1 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 } 1 1 }  }
-	{ weight_buf int 32 regular {array 9 { 1 1 } 1 1 }  }
-	{ biases_buf int 32 regular  }
+	{ weight_buf float 32 regular {array 9 { 1 1 } 1 1 }  }
+	{ biases_buf float 32 regular  }
 	{ conv_to_pool_streams_0 int 32 regular {fifo 1 volatile }  }
 }
 set C_modelArgMapList {[ 
@@ -80,13 +80,13 @@ set NewPortList {[
  	{ "name": "conv_to_pool_streams_0_write", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "conv_to_pool_streams_0", "role": "write" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1"],
 		"CDFG" : "convolution",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "1", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "4009", "EstimateLatencyMax" : "4009",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "4003", "EstimateLatencyMax" : "4003",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -97,12 +97,12 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "pad_img", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_convolution_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138", "Port" : "pad_img", "Inst_start_state" : "12", "Inst_end_state" : "13"}]},
+					{"ID" : "1", "SubInstance" : "grp_convolution_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138", "Port" : "pad_img", "Inst_start_state" : "6", "Inst_end_state" : "7"}]},
 			{"Name" : "weight_buf", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "biases_buf", "Type" : "None", "Direction" : "I"},
 			{"Name" : "conv_to_pool_streams_0", "Type" : "Fifo", "Direction" : "O", "DependentProc" : ["0","0"], "DependentChan" : "0", "DependentChanDepth" : "784", "DependentChanType" : "0",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_convolution_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138", "Port" : "conv_to_pool_streams_0", "Inst_start_state" : "12", "Inst_end_state" : "13"}]}]},
+					{"ID" : "1", "SubInstance" : "grp_convolution_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138", "Port" : "conv_to_pool_streams_0", "Inst_start_state" : "6", "Inst_end_state" : "7"}]}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_convolution_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138", "Parent" : "0", "Child" : ["2", "3", "4", "5", "6", "7"],
 		"CDFG" : "convolution_Pipeline_conv_for_rows_win_for_rows_win_for_cols",
 		"Protocol" : "ap_ctrl_hs",
@@ -120,15 +120,15 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "pad_img", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "w", "Type" : "None", "Direction" : "I"},
-			{"Name" : "w_16", "Type" : "None", "Direction" : "I"},
-			{"Name" : "w_6", "Type" : "None", "Direction" : "I"},
-			{"Name" : "w_7", "Type" : "None", "Direction" : "I"},
-			{"Name" : "w_8", "Type" : "None", "Direction" : "I"},
-			{"Name" : "w_9", "Type" : "None", "Direction" : "I"},
-			{"Name" : "w_10", "Type" : "None", "Direction" : "I"},
-			{"Name" : "w_11", "Type" : "None", "Direction" : "I"},
-			{"Name" : "w_12", "Type" : "None", "Direction" : "I"},
-			{"Name" : "conv8", "Type" : "None", "Direction" : "I"},
+			{"Name" : "w_57", "Type" : "None", "Direction" : "I"},
+			{"Name" : "w_58", "Type" : "None", "Direction" : "I"},
+			{"Name" : "w_59", "Type" : "None", "Direction" : "I"},
+			{"Name" : "w_60", "Type" : "None", "Direction" : "I"},
+			{"Name" : "w_61", "Type" : "None", "Direction" : "I"},
+			{"Name" : "w_62", "Type" : "None", "Direction" : "I"},
+			{"Name" : "w_63", "Type" : "None", "Direction" : "I"},
+			{"Name" : "w_64", "Type" : "None", "Direction" : "I"},
+			{"Name" : "biases_buf", "Type" : "None", "Direction" : "I"},
 			{"Name" : "conv_to_pool_streams_0", "Type" : "Fifo", "Direction" : "O",
 				"BlockSignal" : [
 					{"Name" : "conv_to_pool_streams_0_blk_n", "Type" : "RtlSignal"}]}],
@@ -140,44 +140,34 @@ set RtlHierarchyInfo {[
 	{"ID" : "4", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_convolution_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.fmul_32ns_32ns_32_4_max_dsp_1_U31", "Parent" : "1"},
 	{"ID" : "5", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_convolution_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.fmul_32ns_32ns_32_4_max_dsp_1_U32", "Parent" : "1"},
 	{"ID" : "6", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_convolution_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.fcmp_32ns_32ns_1_2_no_dsp_1_U33", "Parent" : "1"},
-	{"ID" : "7", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_convolution_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.flow_control_loop_pipe_sequential_init_U", "Parent" : "1"},
-	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.sitofp_32ns_32_6_no_dsp_1_U49", "Parent" : "0"},
-	{"ID" : "9", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.sitofp_32ns_32_6_no_dsp_1_U50", "Parent" : "0"},
-	{"ID" : "10", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.sitofp_32ns_32_6_no_dsp_1_U51", "Parent" : "0"},
-	{"ID" : "11", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.sitofp_32ns_32_6_no_dsp_1_U52", "Parent" : "0"},
-	{"ID" : "12", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.sitofp_32ns_32_6_no_dsp_1_U53", "Parent" : "0"},
-	{"ID" : "13", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.sitofp_32ns_32_6_no_dsp_1_U54", "Parent" : "0"},
-	{"ID" : "14", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.sitofp_32ns_32_6_no_dsp_1_U55", "Parent" : "0"},
-	{"ID" : "15", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.sitofp_32ns_32_6_no_dsp_1_U56", "Parent" : "0"},
-	{"ID" : "16", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.sitofp_32ns_32_6_no_dsp_1_U57", "Parent" : "0"},
-	{"ID" : "17", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.sitofp_32ns_32_6_no_dsp_1_U58", "Parent" : "0"}]}
+	{"ID" : "7", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_convolution_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138.flow_control_loop_pipe_sequential_init_U", "Parent" : "1"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	convolution {
 		pad_img {Type I LastRead 7 FirstWrite -1}
 		weight_buf {Type I LastRead 5 FirstWrite -1}
-		biases_buf {Type I LastRead 6 FirstWrite -1}
+		biases_buf {Type I LastRead 4 FirstWrite -1}
 		conv_to_pool_streams_0 {Type O LastRead -1 FirstWrite 80}}
 	convolution_Pipeline_conv_for_rows_win_for_rows_win_for_cols {
 		pad_img {Type I LastRead 7 FirstWrite -1}
 		w {Type I LastRead 0 FirstWrite -1}
-		w_16 {Type I LastRead 0 FirstWrite -1}
-		w_6 {Type I LastRead 0 FirstWrite -1}
-		w_7 {Type I LastRead 0 FirstWrite -1}
-		w_8 {Type I LastRead 0 FirstWrite -1}
-		w_9 {Type I LastRead 0 FirstWrite -1}
-		w_10 {Type I LastRead 0 FirstWrite -1}
-		w_11 {Type I LastRead 0 FirstWrite -1}
-		w_12 {Type I LastRead 0 FirstWrite -1}
-		conv8 {Type I LastRead 0 FirstWrite -1}
+		w_57 {Type I LastRead 0 FirstWrite -1}
+		w_58 {Type I LastRead 0 FirstWrite -1}
+		w_59 {Type I LastRead 0 FirstWrite -1}
+		w_60 {Type I LastRead 0 FirstWrite -1}
+		w_61 {Type I LastRead 0 FirstWrite -1}
+		w_62 {Type I LastRead 0 FirstWrite -1}
+		w_63 {Type I LastRead 0 FirstWrite -1}
+		w_64 {Type I LastRead 0 FirstWrite -1}
+		biases_buf {Type I LastRead 0 FirstWrite -1}
 		conv_to_pool_streams_0 {Type O LastRead -1 FirstWrite 80}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "4009", "Max" : "4009"}
-	, {"Name" : "Interval", "Min" : "4009", "Max" : "4009"}
+	{"Name" : "Latency", "Min" : "4003", "Max" : "4003"}
+	, {"Name" : "Interval", "Min" : "4003", "Max" : "4003"}
 ]}
 
 set PipelineEnableSignalInfo {[

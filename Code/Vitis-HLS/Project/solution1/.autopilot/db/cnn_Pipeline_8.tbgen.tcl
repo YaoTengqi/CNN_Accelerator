@@ -13,7 +13,7 @@ set hasInterrupt 0
 set C_modelName {cnn_Pipeline_8}
 set C_modelType { void 0 }
 set C_modelArgList {
-	{ weight_buf_5 int 32 regular {array 9 { 0 3 } 0 1 }  }
+	{ weight_buf_5 float 32 regular {array 9 { 0 3 } 0 1 }  }
 	{ weight_buf int 32 regular {array 72 { 1 3 } 1 1 }  }
 }
 set C_modelArgMapList {[ 

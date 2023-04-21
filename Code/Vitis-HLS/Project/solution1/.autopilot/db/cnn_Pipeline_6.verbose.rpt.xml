@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'cnn_Pipeline_6'" level="0">
-<item name = "Date">Thu Apr 20 15:58:58 2023
+<item name = "Date">Thu Apr 20 17:57:53 2023
 </item>
 <item name = "Version">2022.2 (Build 3670227 on Oct 13 2022)</item>
 <item name = "Project">Project</item>
@@ -78,15 +78,15 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="empty_133_fu_121_p2">+, 0, 0, 13, 4, 1</column>
-<column name="empty_137_fu_227_p2">+, 0, 0, 15, 8, 8</column>
-<column name="next_mul53_fu_153_p2">+, 0, 0, 15, 8, 5</column>
-<column name="next_urem55_fu_133_p2">+, 0, 0, 13, 4, 1</column>
-<column name="tmp2_fu_213_p2">+, 0, 0, 14, 6, 6</column>
-<column name="empty_135_fu_193_p2">-, 0, 0, 14, 7, 7</column>
-<column name="empty_134_fu_139_p2">icmp, 0, 0, 9, 4, 2</column>
-<column name="exitcond475_fu_115_p2">icmp, 0, 0, 9, 4, 4</column>
-<column name="idx_urem56_fu_145_p3">select, 0, 0, 4, 1, 4</column>
+<column name="empty_136_fu_120_p2">+, 0, 0, 13, 4, 1</column>
+<column name="empty_140_fu_226_p2">+, 0, 0, 15, 8, 8</column>
+<column name="next_mul53_fu_152_p2">+, 0, 0, 15, 8, 5</column>
+<column name="next_urem55_fu_132_p2">+, 0, 0, 13, 4, 1</column>
+<column name="tmp2_fu_212_p2">+, 0, 0, 14, 6, 6</column>
+<column name="empty_138_fu_192_p2">-, 0, 0, 14, 7, 7</column>
+<column name="empty_137_fu_138_p2">icmp, 0, 0, 9, 4, 2</column>
+<column name="exitcond475_fu_114_p2">icmp, 0, 0, 9, 4, 4</column>
+<column name="idx_urem56_fu_144_p3">select, 0, 0, 4, 1, 4</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
@@ -108,7 +108,7 @@
 <column name="ap_done_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
 <column name="loop_index29_fu_66">4, 0, 4, 0</column>
-<column name="loop_index29_load_reg_288">4, 0, 4, 0</column>
+<column name="loop_index29_load_reg_292">4, 0, 4, 0</column>
 <column name="phi_mul52_fu_62">8, 0, 8, 0</column>
 <column name="phi_urem54_fu_58">4, 0, 4, 0</column>
 </table>

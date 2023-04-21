@@ -24,15 +24,15 @@ port (
     pad_img_ce1 : OUT STD_LOGIC;
     pad_img_q1 : IN STD_LOGIC_VECTOR (31 downto 0);
     w : IN STD_LOGIC_VECTOR (31 downto 0);
-    w_16 : IN STD_LOGIC_VECTOR (31 downto 0);
-    w_6 : IN STD_LOGIC_VECTOR (31 downto 0);
-    w_7 : IN STD_LOGIC_VECTOR (31 downto 0);
-    w_8 : IN STD_LOGIC_VECTOR (31 downto 0);
-    w_9 : IN STD_LOGIC_VECTOR (31 downto 0);
-    w_10 : IN STD_LOGIC_VECTOR (31 downto 0);
-    w_11 : IN STD_LOGIC_VECTOR (31 downto 0);
-    w_12 : IN STD_LOGIC_VECTOR (31 downto 0);
-    conv8 : IN STD_LOGIC_VECTOR (31 downto 0);
+    w_57 : IN STD_LOGIC_VECTOR (31 downto 0);
+    w_58 : IN STD_LOGIC_VECTOR (31 downto 0);
+    w_59 : IN STD_LOGIC_VECTOR (31 downto 0);
+    w_60 : IN STD_LOGIC_VECTOR (31 downto 0);
+    w_61 : IN STD_LOGIC_VECTOR (31 downto 0);
+    w_62 : IN STD_LOGIC_VECTOR (31 downto 0);
+    w_63 : IN STD_LOGIC_VECTOR (31 downto 0);
+    w_64 : IN STD_LOGIC_VECTOR (31 downto 0);
+    biases_buf : IN STD_LOGIC_VECTOR (31 downto 0);
     conv_to_pool_streams_0_din : OUT STD_LOGIC_VECTOR (31 downto 0);
     conv_to_pool_streams_0_num_data_valid : IN STD_LOGIC_VECTOR (10 downto 0);
     conv_to_pool_streams_0_fifo_cap : IN STD_LOGIC_VECTOR (10 downto 0);
@@ -1905,10 +1905,10 @@ begin
     end process;
 
 
-    grp_fu_295_p1_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter8, ap_enable_reg_pp0_iter10, ap_enable_reg_pp0_iter11, ap_enable_reg_pp0_iter12, ap_enable_reg_pp0_iter14, ap_CS_fsm_pp0_stage4, conv8, ap_block_pp0_stage0, ap_CS_fsm_pp0_stage1, ap_CS_fsm_pp0_stage2, ap_CS_fsm_pp0_stage3, mul_1_2_reg_1281_pp0_iter7_reg, mul_2_reg_1286_pp0_iter9_reg, mul_2_1_reg_1291_pp0_iter11_reg, mul_2_2_reg_1296_pp0_iter12_reg, ap_block_pp0_stage2, ap_block_pp0_stage3, ap_block_pp0_stage4, ap_block_pp0_stage1)
+    grp_fu_295_p1_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter8, ap_enable_reg_pp0_iter10, ap_enable_reg_pp0_iter11, ap_enable_reg_pp0_iter12, ap_enable_reg_pp0_iter14, ap_CS_fsm_pp0_stage4, biases_buf, ap_block_pp0_stage0, ap_CS_fsm_pp0_stage1, ap_CS_fsm_pp0_stage2, ap_CS_fsm_pp0_stage3, mul_1_2_reg_1281_pp0_iter7_reg, mul_2_reg_1286_pp0_iter9_reg, mul_2_1_reg_1291_pp0_iter11_reg, mul_2_2_reg_1296_pp0_iter12_reg, ap_block_pp0_stage2, ap_block_pp0_stage3, ap_block_pp0_stage4, ap_block_pp0_stage1)
     begin
         if (((ap_enable_reg_pp0_iter14 = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage1) and (ap_const_boolean_0 = ap_block_pp0_stage1))) then 
-            grp_fu_295_p1 <= conv8;
+            grp_fu_295_p1 <= biases_buf;
         elsif (((ap_enable_reg_pp0_iter12 = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage4) and (ap_const_boolean_0 = ap_block_pp0_stage4))) then 
             grp_fu_295_p1 <= mul_2_2_reg_1296_pp0_iter12_reg;
         elsif (((ap_enable_reg_pp0_iter11 = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage2) and (ap_const_boolean_0 = ap_block_pp0_stage2))) then 
@@ -1933,16 +1933,16 @@ begin
     end process;
 
 
-    grp_fu_299_p0_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter0, ap_enable_reg_pp0_iter1, ap_CS_fsm_pp0_stage4, w, w_6, w_8, w_10, w_12, ap_block_pp0_stage0, ap_CS_fsm_pp0_stage1, ap_CS_fsm_pp0_stage2, ap_CS_fsm_pp0_stage3, ap_block_pp0_stage2, ap_block_pp0_stage3, ap_block_pp0_stage4, ap_block_pp0_stage1)
+    grp_fu_299_p0_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter0, ap_enable_reg_pp0_iter1, ap_CS_fsm_pp0_stage4, w, w_58, w_60, w_62, w_64, ap_block_pp0_stage0, ap_CS_fsm_pp0_stage1, ap_CS_fsm_pp0_stage2, ap_CS_fsm_pp0_stage3, ap_block_pp0_stage2, ap_block_pp0_stage3, ap_block_pp0_stage4, ap_block_pp0_stage1)
     begin
         if (((ap_enable_reg_pp0_iter1 = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage3) and (ap_const_boolean_0 = ap_block_pp0_stage3))) then 
-            grp_fu_299_p0 <= w_12;
+            grp_fu_299_p0 <= w_64;
         elsif (((ap_enable_reg_pp0_iter1 = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage2) and (ap_const_boolean_0 = ap_block_pp0_stage2))) then 
-            grp_fu_299_p0 <= w_10;
+            grp_fu_299_p0 <= w_62;
         elsif (((ap_enable_reg_pp0_iter1 = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage1) and (ap_const_boolean_0 = ap_block_pp0_stage1))) then 
-            grp_fu_299_p0 <= w_8;
+            grp_fu_299_p0 <= w_60;
         elsif (((ap_enable_reg_pp0_iter1 = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0) and (ap_const_boolean_0 = ap_block_pp0_stage0))) then 
-            grp_fu_299_p0 <= w_6;
+            grp_fu_299_p0 <= w_58;
         elsif (((ap_enable_reg_pp0_iter0 = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage4) and (ap_const_boolean_0 = ap_block_pp0_stage4))) then 
             grp_fu_299_p0 <= w;
         else 
@@ -1979,16 +1979,16 @@ begin
     end process;
 
 
-    grp_fu_303_p0_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter0, ap_enable_reg_pp0_iter1, ap_CS_fsm_pp0_stage4, w_16, w_7, w_9, w_11, ap_block_pp0_stage0, ap_CS_fsm_pp0_stage1, ap_CS_fsm_pp0_stage2, ap_block_pp0_stage2, ap_block_pp0_stage4, ap_block_pp0_stage1)
+    grp_fu_303_p0_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter0, ap_enable_reg_pp0_iter1, ap_CS_fsm_pp0_stage4, w_57, w_59, w_61, w_63, ap_block_pp0_stage0, ap_CS_fsm_pp0_stage1, ap_CS_fsm_pp0_stage2, ap_block_pp0_stage2, ap_block_pp0_stage4, ap_block_pp0_stage1)
     begin
         if (((ap_enable_reg_pp0_iter1 = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage2) and (ap_const_boolean_0 = ap_block_pp0_stage2))) then 
-            grp_fu_303_p0 <= w_11;
+            grp_fu_303_p0 <= w_63;
         elsif (((ap_enable_reg_pp0_iter1 = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage1) and (ap_const_boolean_0 = ap_block_pp0_stage1))) then 
-            grp_fu_303_p0 <= w_9;
+            grp_fu_303_p0 <= w_61;
         elsif (((ap_enable_reg_pp0_iter1 = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0) and (ap_const_boolean_0 = ap_block_pp0_stage0))) then 
-            grp_fu_303_p0 <= w_7;
+            grp_fu_303_p0 <= w_59;
         elsif (((ap_enable_reg_pp0_iter0 = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage4) and (ap_const_boolean_0 = ap_block_pp0_stage4))) then 
-            grp_fu_303_p0 <= w_16;
+            grp_fu_303_p0 <= w_57;
         else 
             grp_fu_303_p0 <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 

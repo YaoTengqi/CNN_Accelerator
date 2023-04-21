@@ -7,15 +7,15 @@ remark: dense.cc:44:0: Unrolling loop 'VITIS_LOOP_53_1' (dense.cc:53:22) in func
 remark: pool.cc:11:0: Unrolling loop 'pool_for_pr' (pool.cc:23:7) in function 'max_pooling' completely with a factor of 2
 remark: pool.cc:11:0: Unrolling loop 'pool_for_pc' (pool.cc:25:9) in function 'max_pooling' completely with a factor of 2
 remark: pool.cc:11:0: Unrolling loop 'pool_for_pc' (pool.cc:25:9) in function 'max_pooling' completely with a factor of 2
-remark: conv.cc:31:0: Unrolling loop 'krn_for_rows' (conv.cc:52:11) in function 'convolution' completely with a factor of 3
-remark: conv.cc:31:0: Unrolling loop 'krn_for_cols' (conv.cc:55:13) in function 'convolution' completely with a factor of 3
-remark: conv.cc:31:0: Pipeline directive for loop 'krn_for_cols' (conv.cc:55:13) in function 'convolution' has been removed because the loop is unrolled completely
-remark: conv.cc:31:0: Unrolling loop 'krn_for_cols' (conv.cc:55:13) in function 'convolution' completely with a factor of 3
-remark: conv.cc:31:0: Pipeline directive for loop 'krn_for_cols' (conv.cc:55:13) in function 'convolution' has been removed because the loop is unrolled completely
-remark: conv.cc:31:0: Unrolling loop 'krn_for_cols' (conv.cc:55:13) in function 'convolution' completely with a factor of 3
-remark: conv.cc:31:0: Pipeline directive for loop 'krn_for_cols' (conv.cc:55:13) in function 'convolution' has been removed because the loop is unrolled completely
-remark: conv.cc:31:0: Inlining function 'relu(float)' into 'convolution(float (*) [30], int (*) [3], int, int, hls::stream<float, 0>&)'
-remark: cnn.cc:103:0: Inlining function 'normalization_and_padding(float (*) [28], float (*) [30])' into 'cnn(float (*) [28], float*, int (*) [3][3], int*)'
+remark: conv.cc:32:0: Unrolling loop 'krn_for_rows' (conv.cc:52:11) in function 'convolution' completely with a factor of 3
+remark: conv.cc:32:0: Unrolling loop 'krn_for_cols' (conv.cc:55:13) in function 'convolution' completely with a factor of 3
+remark: conv.cc:32:0: Pipeline directive for loop 'krn_for_cols' (conv.cc:55:13) in function 'convolution' has been removed because the loop is unrolled completely
+remark: conv.cc:32:0: Unrolling loop 'krn_for_cols' (conv.cc:55:13) in function 'convolution' completely with a factor of 3
+remark: conv.cc:32:0: Pipeline directive for loop 'krn_for_cols' (conv.cc:55:13) in function 'convolution' has been removed because the loop is unrolled completely
+remark: conv.cc:32:0: Unrolling loop 'krn_for_cols' (conv.cc:55:13) in function 'convolution' completely with a factor of 3
+remark: conv.cc:32:0: Pipeline directive for loop 'krn_for_cols' (conv.cc:55:13) in function 'convolution' has been removed because the loop is unrolled completely
+remark: conv.cc:32:0: Inlining function 'relu(float)' into 'convolution(float (*) [30], float (*) [3], float, int, hls::stream<float, 0>&)'
+remark: cnn.cc:103:0: Inlining function 'normalization_and_padding(float (*) [28], float (*) [30])' into 'cnn(float (*) [28], float*, float (*) [3][3], float*)'
 remark: cnn.cc:51:3: Applying array_partition to 'conv_to_pool_streams': Complete partitioning on dimension 1.
 remark: cnn.cc:74:3: Applying array_partition to 'pool_to_flat_streams': Complete partitioning on dimension 1.
 remark: cnn.cc:85:53: Applying array_partition to 'flat_to_dense_streams': Complete partitioning on dimension 1.

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1681977552695">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1681984688239">
   <ports id="1" name="pool_to_flat_streams_0" type="PortType" coreId="0" bitwidth="32" iftype="IfTypeRom">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
@@ -15,37 +15,37 @@
   <ports id="5" name="pool_to_flat_streams_4" type="PortType" coreId="0" bitwidth="32" iftype="IfTypeRom">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="6" name="pool_to_flat_streams_5" type="PortType" coreId="1964150288" bitwidth="32" iftype="IfTypeRom">
+  <ports id="6" name="pool_to_flat_streams_5" type="PortType" coreId="2634788000" bitwidth="32" iftype="IfTypeRom">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="7" name="pool_to_flat_streams_6" type="PortType" coreId="1959794320" bitwidth="32" iftype="IfTypeRom">
+  <ports id="7" name="pool_to_flat_streams_6" type="PortType" coreId="2634283584" bitwidth="32" iftype="IfTypeRom">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="8" name="pool_to_flat_streams_7" type="PortType" coreId="1959684576" bitwidth="32" iftype="IfTypeRom">
+  <ports id="8" name="pool_to_flat_streams_7" type="PortType" coreId="2632606272" bitwidth="32" iftype="IfTypeRom">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="9" name="flat_to_dense_streams_0" type="PortType" coreId="1962729888" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
+  <ports id="9" name="flat_to_dense_streams_0" type="PortType" coreId="2633477728" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
     <dataInputObjs>call</dataInputObjs>
   </ports>
-  <ports id="10" name="flat_to_dense_streams_1" type="PortType" coreId="1965379104" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
+  <ports id="10" name="flat_to_dense_streams_1" type="PortType" coreId="542329928" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
     <dataInputObjs>call</dataInputObjs>
   </ports>
-  <ports id="11" name="flat_to_dense_streams_2" type="PortType" coreId="1961681392" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
+  <ports id="11" name="flat_to_dense_streams_2" type="PortType" coreId="542329928" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
     <dataInputObjs>call</dataInputObjs>
   </ports>
-  <ports id="12" name="flat_to_dense_streams_3" type="PortType" coreId="1962799376" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
+  <ports id="12" name="flat_to_dense_streams_3" type="PortType" coreId="2629301184" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
     <dataInputObjs>call</dataInputObjs>
   </ports>
-  <ports id="13" name="flat_to_dense_streams_4" type="PortType" coreId="1964150288" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
+  <ports id="13" name="flat_to_dense_streams_4" type="PortType" coreId="2633546400" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
     <dataInputObjs>call</dataInputObjs>
   </ports>
-  <ports id="14" name="flat_to_dense_streams_5" type="PortType" coreId="1961681392" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
+  <ports id="14" name="flat_to_dense_streams_5" type="PortType" coreId="2633550064" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
     <dataInputObjs>call</dataInputObjs>
   </ports>
-  <ports id="15" name="flat_to_dense_streams_6" type="PortType" coreId="1961681392" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
+  <ports id="15" name="flat_to_dense_streams_6" type="PortType" coreId="4294967295" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
     <dataInputObjs>call</dataInputObjs>
   </ports>
-  <ports id="16" name="flat_to_dense_streams_7" type="PortType" coreId="1954282416" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
+  <ports id="16" name="flat_to_dense_streams_7" type="PortType" coreId="2633393784" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
     <dataInputObjs>call</dataInputObjs>
   </ports>
   <edges id="46" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
@@ -66,55 +66,55 @@
   <edges id="75" source_obj="//@regions.0/@basic_blocks.0/@node_objs.7" sink_obj="//@ports.15"/>
   <regions anchor_node="-1" region_type="16" typeName="Dataflow" iiViolation="" id="164" RegionName="flattening_layer">
     <basic_blocks id="43" name="flattening_layer" type="BlockType">
-      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="_ln28" lineNumber="28" fileName="flat.cc" fileDirectory=".." rtlName="flattening_U0" coreId="1961845680" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="_ln28" lineNumber="28" fileName="flat.cc" fileDirectory=".." rtlName="flattening_U0" coreId="4294967295" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="flat.cc" linenumber="28" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
         <dataInputObjs>pool_to_flat_streams_0</dataInputObjs>
         <dataOutputObjs>flat_to_dense_streams_0</dataOutputObjs>
         <constName>flattening</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="_ln29" lineNumber="29" fileName="flat.cc" fileDirectory=".." rtlName="flattening_15_U0" coreId="1961334944" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="_ln29" lineNumber="29" fileName="flat.cc" fileDirectory=".." rtlName="flattening_15_U0" coreId="30" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="flat.cc" linenumber="29" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
         <dataInputObjs>pool_to_flat_streams_1</dataInputObjs>
         <dataOutputObjs>flat_to_dense_streams_1</dataOutputObjs>
         <constName>flattening_15</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="_ln30" lineNumber="30" fileName="flat.cc" fileDirectory=".." rtlName="flattening_16_U0" coreId="1960985744" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="_ln30" lineNumber="30" fileName="flat.cc" fileDirectory=".." rtlName="flattening_16_U0" coreId="2633549456" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="flat.cc" linenumber="30" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
         <dataInputObjs>pool_to_flat_streams_2</dataInputObjs>
         <dataOutputObjs>flat_to_dense_streams_2</dataOutputObjs>
         <constName>flattening_16</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="_ln31" lineNumber="31" fileName="flat.cc" fileDirectory=".." rtlName="flattening_17_U0" coreId="1961444624" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="_ln31" lineNumber="31" fileName="flat.cc" fileDirectory=".." rtlName="flattening_17_U0" coreId="2635136256" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="flat.cc" linenumber="31" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
         <dataInputObjs>pool_to_flat_streams_3</dataInputObjs>
         <dataOutputObjs>flat_to_dense_streams_3</dataOutputObjs>
         <constName>flattening_17</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="_ln32" lineNumber="32" fileName="flat.cc" fileDirectory=".." rtlName="flattening_18_U0" coreId="1959966896" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="_ln32" lineNumber="32" fileName="flat.cc" fileDirectory=".." rtlName="flattening_18_U0" coreId="2635136256" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="flat.cc" linenumber="32" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
         <dataInputObjs>pool_to_flat_streams_4</dataInputObjs>
         <dataOutputObjs>flat_to_dense_streams_4</dataOutputObjs>
         <constName>flattening_18</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="_ln33" lineNumber="33" fileName="flat.cc" fileDirectory=".." rtlName="flattening_19_U0" coreId="1961591248" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="_ln33" lineNumber="33" fileName="flat.cc" fileDirectory=".." rtlName="flattening_19_U0" coreId="2630683296" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="flat.cc" linenumber="33" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
         <dataInputObjs>pool_to_flat_streams_5</dataInputObjs>
         <dataOutputObjs>flat_to_dense_streams_5</dataOutputObjs>
         <constName>flattening_19</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="_ln34" lineNumber="34" fileName="flat.cc" fileDirectory=".." rtlName="flattening_20_U0" coreId="1957883408" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="_ln34" lineNumber="34" fileName="flat.cc" fileDirectory=".." rtlName="flattening_20_U0" coreId="174" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="flat.cc" linenumber="34" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
         <dataInputObjs>pool_to_flat_streams_6</dataInputObjs>
         <dataOutputObjs>flat_to_dense_streams_6</dataOutputObjs>
         <constName>flattening_20</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="_ln35" lineNumber="35" fileName="flat.cc" fileDirectory=".." rtlName="flattening_21_U0" coreId="1961193280" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="_ln35" lineNumber="35" fileName="flat.cc" fileDirectory=".." rtlName="flattening_21_U0" coreId="2631539648" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="flat.cc" linenumber="35" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
         <dataInputObjs>pool_to_flat_streams_7</dataInputObjs>
         <dataOutputObjs>flat_to_dense_streams_7</dataOutputObjs>
         <constName>flattening_21</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="_ln36" lineNumber="36" fileName="flat.cc" fileDirectory=".." coreId="1962689088" opcode="ret" nodeLabel="1.0" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="_ln36" lineNumber="36" fileName="flat.cc" fileDirectory=".." coreId="2633127616" opcode="ret" nodeLabel="1.0" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="flat.cc" linenumber="36" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
       </node_objs>
       <fileValidLineNumbers fileName="flat.cc">

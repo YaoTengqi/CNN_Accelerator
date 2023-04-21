@@ -35,19 +35,13 @@ module cnn_convolution_1 (
         conv_to_pool_streams_1_write
 );
 
-parameter    ap_ST_fsm_state1 = 13'd1;
-parameter    ap_ST_fsm_state2 = 13'd2;
-parameter    ap_ST_fsm_state3 = 13'd4;
-parameter    ap_ST_fsm_state4 = 13'd8;
-parameter    ap_ST_fsm_state5 = 13'd16;
-parameter    ap_ST_fsm_state6 = 13'd32;
-parameter    ap_ST_fsm_state7 = 13'd64;
-parameter    ap_ST_fsm_state8 = 13'd128;
-parameter    ap_ST_fsm_state9 = 13'd256;
-parameter    ap_ST_fsm_state10 = 13'd512;
-parameter    ap_ST_fsm_state11 = 13'd1024;
-parameter    ap_ST_fsm_state12 = 13'd2048;
-parameter    ap_ST_fsm_state13 = 13'd4096;
+parameter    ap_ST_fsm_state1 = 7'd1;
+parameter    ap_ST_fsm_state2 = 7'd2;
+parameter    ap_ST_fsm_state3 = 7'd4;
+parameter    ap_ST_fsm_state4 = 7'd8;
+parameter    ap_ST_fsm_state5 = 7'd16;
+parameter    ap_ST_fsm_state6 = 7'd32;
+parameter    ap_ST_fsm_state7 = 7'd64;
 
 input   ap_clk;
 input   ap_rst;
@@ -85,44 +79,22 @@ reg weight_buf_ce1;
 reg conv_to_pool_streams_1_write;
 
 reg    ap_done_reg;
-(* fsm_encoding = "none" *) reg   [12:0] ap_CS_fsm;
+(* fsm_encoding = "none" *) reg   [6:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
 wire    ap_CS_fsm_state2;
-reg   [31:0] weight_buf_load_reg_212;
+reg   [31:0] weight_buf_load_reg_173;
 wire    ap_CS_fsm_state3;
-reg   [31:0] weight_buf_load_49_reg_227;
-reg   [31:0] weight_buf_load_50_reg_232;
+reg   [31:0] weight_buf_load_49_reg_188;
+reg   [31:0] weight_buf_load_50_reg_193;
 wire    ap_CS_fsm_state4;
-reg   [31:0] weight_buf_load_51_reg_247;
-reg   [31:0] weight_buf_load_52_reg_252;
+reg   [31:0] weight_buf_load_51_reg_208;
+reg   [31:0] weight_buf_load_52_reg_213;
 wire    ap_CS_fsm_state5;
-reg   [31:0] weight_buf_load_53_reg_267;
-reg   [31:0] weight_buf_load_54_reg_272;
-reg   [31:0] weight_buf_load_55_reg_277;
+reg   [31:0] weight_buf_load_53_reg_233;
+reg   [31:0] weight_buf_load_54_reg_238;
+reg   [31:0] weight_buf_load_55_reg_243;
 wire    ap_CS_fsm_state6;
-reg   [31:0] weight_buf_load_56_reg_282;
-wire    ap_CS_fsm_state7;
-wire   [31:0] grp_fu_156_p1;
-reg   [31:0] conv7_reg_292;
-wire    ap_CS_fsm_state12;
-wire   [31:0] grp_fu_161_p1;
-reg   [31:0] w_reg_297;
-wire   [31:0] grp_fu_165_p1;
-reg   [31:0] w_s_reg_302;
-wire   [31:0] grp_fu_169_p1;
-reg   [31:0] w_8_reg_307;
-wire   [31:0] grp_fu_173_p1;
-reg   [31:0] w_9_reg_312;
-wire   [31:0] grp_fu_177_p1;
-reg   [31:0] w_1_reg_317;
-wire   [31:0] grp_fu_181_p1;
-reg   [31:0] w_2_reg_322;
-wire   [31:0] grp_fu_185_p1;
-reg   [31:0] w_3_reg_327;
-wire   [31:0] grp_fu_189_p1;
-reg   [31:0] w_4_reg_332;
-wire   [31:0] grp_fu_193_p1;
-reg   [31:0] w_5_reg_337;
+reg   [31:0] weight_buf_load_56_reg_248;
 wire    grp_convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138_ap_start;
 wire    grp_convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138_ap_done;
 wire    grp_convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138_ap_idle;
@@ -134,28 +106,22 @@ wire    grp_convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_13
 wire   [31:0] grp_convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138_conv_to_pool_streams_1_din;
 wire    grp_convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138_conv_to_pool_streams_1_write;
 reg    grp_convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138_ap_start_reg;
-wire    ap_CS_fsm_state13;
+wire    ap_CS_fsm_state7;
 reg    ap_block_state1;
-reg   [12:0] ap_NS_fsm;
+reg   [6:0] ap_NS_fsm;
 reg    ap_ST_fsm_state1_blk;
 wire    ap_ST_fsm_state2_blk;
 wire    ap_ST_fsm_state3_blk;
 wire    ap_ST_fsm_state4_blk;
 wire    ap_ST_fsm_state5_blk;
 wire    ap_ST_fsm_state6_blk;
-wire    ap_ST_fsm_state7_blk;
-wire    ap_ST_fsm_state8_blk;
-wire    ap_ST_fsm_state9_blk;
-wire    ap_ST_fsm_state10_blk;
-wire    ap_ST_fsm_state11_blk;
-wire    ap_ST_fsm_state12_blk;
-reg    ap_ST_fsm_state13_blk;
+reg    ap_ST_fsm_state7_blk;
 wire    ap_ce_reg;
 
 // power-on initialization
 initial begin
 #0 ap_done_reg = 1'b0;
-#0 ap_CS_fsm = 13'd1;
+#0 ap_CS_fsm = 7'd1;
 #0 grp_convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138_ap_start_reg = 1'b0;
 end
 
@@ -172,151 +138,21 @@ cnn_convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols grp_convoluti
     .pad_img_address1(grp_convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138_pad_img_address1),
     .pad_img_ce1(grp_convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138_pad_img_ce1),
     .pad_img_q1(pad_img_q1),
-    .w(w_reg_297),
-    .w_15(w_s_reg_302),
-    .w_8(w_8_reg_307),
-    .w_9(w_9_reg_312),
-    .w_1(w_1_reg_317),
-    .w_2(w_2_reg_322),
-    .w_3(w_3_reg_327),
-    .w_4(w_4_reg_332),
-    .w_5(w_5_reg_337),
-    .conv7(conv7_reg_292),
+    .w(weight_buf_load_reg_173),
+    .w_49(weight_buf_load_49_reg_188),
+    .w_50(weight_buf_load_50_reg_193),
+    .w_51(weight_buf_load_51_reg_208),
+    .w_52(weight_buf_load_52_reg_213),
+    .w_53(weight_buf_load_53_reg_233),
+    .w_54(weight_buf_load_54_reg_238),
+    .w_55(weight_buf_load_55_reg_243),
+    .w_56(weight_buf_load_56_reg_248),
+    .biases_buf(biases_buf),
     .conv_to_pool_streams_1_din(grp_convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138_conv_to_pool_streams_1_din),
     .conv_to_pool_streams_1_num_data_valid(11'd0),
     .conv_to_pool_streams_1_fifo_cap(11'd0),
     .conv_to_pool_streams_1_full_n(conv_to_pool_streams_1_full_n),
     .conv_to_pool_streams_1_write(grp_convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138_conv_to_pool_streams_1_write)
-);
-
-cnn_sitofp_32ns_32_6_no_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 6 ),
-    .din0_WIDTH( 32 ),
-    .dout_WIDTH( 32 ))
-sitofp_32ns_32_6_no_dsp_1_U81(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(biases_buf),
-    .ce(1'b1),
-    .dout(grp_fu_156_p1)
-);
-
-cnn_sitofp_32ns_32_6_no_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 6 ),
-    .din0_WIDTH( 32 ),
-    .dout_WIDTH( 32 ))
-sitofp_32ns_32_6_no_dsp_1_U82(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(weight_buf_load_reg_212),
-    .ce(1'b1),
-    .dout(grp_fu_161_p1)
-);
-
-cnn_sitofp_32ns_32_6_no_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 6 ),
-    .din0_WIDTH( 32 ),
-    .dout_WIDTH( 32 ))
-sitofp_32ns_32_6_no_dsp_1_U83(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(weight_buf_load_49_reg_227),
-    .ce(1'b1),
-    .dout(grp_fu_165_p1)
-);
-
-cnn_sitofp_32ns_32_6_no_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 6 ),
-    .din0_WIDTH( 32 ),
-    .dout_WIDTH( 32 ))
-sitofp_32ns_32_6_no_dsp_1_U84(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(weight_buf_load_50_reg_232),
-    .ce(1'b1),
-    .dout(grp_fu_169_p1)
-);
-
-cnn_sitofp_32ns_32_6_no_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 6 ),
-    .din0_WIDTH( 32 ),
-    .dout_WIDTH( 32 ))
-sitofp_32ns_32_6_no_dsp_1_U85(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(weight_buf_load_51_reg_247),
-    .ce(1'b1),
-    .dout(grp_fu_173_p1)
-);
-
-cnn_sitofp_32ns_32_6_no_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 6 ),
-    .din0_WIDTH( 32 ),
-    .dout_WIDTH( 32 ))
-sitofp_32ns_32_6_no_dsp_1_U86(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(weight_buf_load_52_reg_252),
-    .ce(1'b1),
-    .dout(grp_fu_177_p1)
-);
-
-cnn_sitofp_32ns_32_6_no_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 6 ),
-    .din0_WIDTH( 32 ),
-    .dout_WIDTH( 32 ))
-sitofp_32ns_32_6_no_dsp_1_U87(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(weight_buf_load_53_reg_267),
-    .ce(1'b1),
-    .dout(grp_fu_181_p1)
-);
-
-cnn_sitofp_32ns_32_6_no_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 6 ),
-    .din0_WIDTH( 32 ),
-    .dout_WIDTH( 32 ))
-sitofp_32ns_32_6_no_dsp_1_U88(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(weight_buf_load_54_reg_272),
-    .ce(1'b1),
-    .dout(grp_fu_185_p1)
-);
-
-cnn_sitofp_32ns_32_6_no_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 6 ),
-    .din0_WIDTH( 32 ),
-    .dout_WIDTH( 32 ))
-sitofp_32ns_32_6_no_dsp_1_U89(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(weight_buf_load_55_reg_277),
-    .ce(1'b1),
-    .dout(grp_fu_189_p1)
-);
-
-cnn_sitofp_32ns_32_6_no_dsp_1 #(
-    .ID( 1 ),
-    .NUM_STAGE( 6 ),
-    .din0_WIDTH( 32 ),
-    .dout_WIDTH( 32 ))
-sitofp_32ns_32_6_no_dsp_1_U90(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .din0(weight_buf_load_56_reg_282),
-    .ce(1'b1),
-    .dout(grp_fu_193_p1)
 );
 
 always @ (posedge ap_clk) begin
@@ -333,7 +169,7 @@ always @ (posedge ap_clk) begin
     end else begin
         if ((ap_continue == 1'b1)) begin
             ap_done_reg <= 1'b0;
-        end else if (((1'b1 == ap_CS_fsm_state13) & (grp_convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138_ap_done == 1'b1))) begin
+        end else if (((1'b1 == ap_CS_fsm_state7) & (grp_convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138_ap_done == 1'b1))) begin
             ap_done_reg <= 1'b1;
         end
     end
@@ -343,7 +179,7 @@ always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
         grp_convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138_ap_start_reg <= 1'b0;
     end else begin
-        if ((1'b1 == ap_CS_fsm_state12)) begin
+        if ((1'b1 == ap_CS_fsm_state6)) begin
             grp_convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138_ap_start_reg <= 1'b1;
         end else if ((grp_convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138_ap_ready == 1'b1)) begin
             grp_convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138_ap_start_reg <= 1'b0;
@@ -352,65 +188,36 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state12)) begin
-        conv7_reg_292 <= grp_fu_156_p1;
-        w_1_reg_317 <= grp_fu_177_p1;
-        w_2_reg_322 <= grp_fu_181_p1;
-        w_3_reg_327 <= grp_fu_185_p1;
-        w_4_reg_332 <= grp_fu_189_p1;
-        w_5_reg_337 <= grp_fu_193_p1;
-        w_8_reg_307 <= grp_fu_169_p1;
-        w_9_reg_312 <= grp_fu_173_p1;
-        w_reg_297 <= grp_fu_161_p1;
-        w_s_reg_302 <= grp_fu_165_p1;
-    end
-end
-
-always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state3)) begin
-        weight_buf_load_49_reg_227 <= weight_buf_q1;
-        weight_buf_load_50_reg_232 <= weight_buf_q0;
+        weight_buf_load_49_reg_188 <= weight_buf_q1;
+        weight_buf_load_50_reg_193 <= weight_buf_q0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        weight_buf_load_51_reg_247 <= weight_buf_q0;
-        weight_buf_load_52_reg_252 <= weight_buf_q1;
+        weight_buf_load_51_reg_208 <= weight_buf_q0;
+        weight_buf_load_52_reg_213 <= weight_buf_q1;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state5)) begin
-        weight_buf_load_53_reg_267 <= weight_buf_q0;
-        weight_buf_load_54_reg_272 <= weight_buf_q1;
+        weight_buf_load_53_reg_233 <= weight_buf_q0;
+        weight_buf_load_54_reg_238 <= weight_buf_q1;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state6)) begin
-        weight_buf_load_55_reg_277 <= weight_buf_q0;
-        weight_buf_load_56_reg_282 <= weight_buf_q1;
+        weight_buf_load_55_reg_243 <= weight_buf_q0;
+        weight_buf_load_56_reg_248 <= weight_buf_q1;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state2)) begin
-        weight_buf_load_reg_212 <= weight_buf_q0;
-    end
-end
-
-assign ap_ST_fsm_state10_blk = 1'b0;
-
-assign ap_ST_fsm_state11_blk = 1'b0;
-
-assign ap_ST_fsm_state12_blk = 1'b0;
-
-always @ (*) begin
-    if ((grp_convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138_ap_done == 1'b0)) begin
-        ap_ST_fsm_state13_blk = 1'b1;
-    end else begin
-        ap_ST_fsm_state13_blk = 1'b0;
+        weight_buf_load_reg_173 <= weight_buf_q0;
     end
 end
 
@@ -432,14 +239,16 @@ assign ap_ST_fsm_state5_blk = 1'b0;
 
 assign ap_ST_fsm_state6_blk = 1'b0;
 
-assign ap_ST_fsm_state7_blk = 1'b0;
-
-assign ap_ST_fsm_state8_blk = 1'b0;
-
-assign ap_ST_fsm_state9_blk = 1'b0;
+always @ (*) begin
+    if ((grp_convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138_ap_done == 1'b0)) begin
+        ap_ST_fsm_state7_blk = 1'b1;
+    end else begin
+        ap_ST_fsm_state7_blk = 1'b0;
+    end
+end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state13) & (grp_convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138_ap_done == 1'b1))) begin
+    if (((1'b1 == ap_CS_fsm_state7) & (grp_convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138_ap_done == 1'b1))) begin
         ap_done = 1'b1;
     end else begin
         ap_done = ap_done_reg;
@@ -455,7 +264,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state13) & (grp_convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138_ap_done == 1'b1))) begin
+    if (((1'b1 == ap_CS_fsm_state7) & (grp_convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138_ap_done == 1'b1))) begin
         ap_ready = 1'b1;
     end else begin
         ap_ready = 1'b0;
@@ -463,7 +272,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state13)) begin
+    if ((1'b1 == ap_CS_fsm_state7)) begin
         conv_to_pool_streams_1_write = grp_convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138_conv_to_pool_streams_1_write;
     end else begin
         conv_to_pool_streams_1_write = 1'b0;
@@ -501,7 +310,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state3) | (1'b1 == ap_CS_fsm_state2) | (1'b1 == ap_CS_fsm_state5) | (1'b1 == ap_CS_fsm_state4) | (~((ap_done_reg == 1'b1) | (ap_start == 1'b0)) & (1'b1 == ap_CS_fsm_state1)))) begin
+    if (((1'b1 == ap_CS_fsm_state4) | (1'b1 == ap_CS_fsm_state3) | (1'b1 == ap_CS_fsm_state2) | (1'b1 == ap_CS_fsm_state5) | (~((ap_done_reg == 1'b1) | (ap_start == 1'b0)) & (1'b1 == ap_CS_fsm_state1)))) begin
         weight_buf_ce0 = 1'b1;
     end else begin
         weight_buf_ce0 = 1'b0;
@@ -509,7 +318,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state3) | (1'b1 == ap_CS_fsm_state2) | (1'b1 == ap_CS_fsm_state5) | (1'b1 == ap_CS_fsm_state4))) begin
+    if (((1'b1 == ap_CS_fsm_state4) | (1'b1 == ap_CS_fsm_state3) | (1'b1 == ap_CS_fsm_state2) | (1'b1 == ap_CS_fsm_state5))) begin
         weight_buf_ce1 = 1'b1;
     end else begin
         weight_buf_ce1 = 1'b0;
@@ -541,28 +350,10 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state7;
         end
         ap_ST_fsm_state7 : begin
-            ap_NS_fsm = ap_ST_fsm_state8;
-        end
-        ap_ST_fsm_state8 : begin
-            ap_NS_fsm = ap_ST_fsm_state9;
-        end
-        ap_ST_fsm_state9 : begin
-            ap_NS_fsm = ap_ST_fsm_state10;
-        end
-        ap_ST_fsm_state10 : begin
-            ap_NS_fsm = ap_ST_fsm_state11;
-        end
-        ap_ST_fsm_state11 : begin
-            ap_NS_fsm = ap_ST_fsm_state12;
-        end
-        ap_ST_fsm_state12 : begin
-            ap_NS_fsm = ap_ST_fsm_state13;
-        end
-        ap_ST_fsm_state13 : begin
-            if (((1'b1 == ap_CS_fsm_state13) & (grp_convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138_ap_done == 1'b1))) begin
+            if (((1'b1 == ap_CS_fsm_state7) & (grp_convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols_fu_138_ap_done == 1'b1))) begin
                 ap_NS_fsm = ap_ST_fsm_state1;
             end else begin
-                ap_NS_fsm = ap_ST_fsm_state13;
+                ap_NS_fsm = ap_ST_fsm_state7;
             end
         end
         default : begin
@@ -572,10 +363,6 @@ always @ (*) begin
 end
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
-
-assign ap_CS_fsm_state12 = ap_CS_fsm[32'd11];
-
-assign ap_CS_fsm_state13 = ap_CS_fsm[32'd12];
 
 assign ap_CS_fsm_state2 = ap_CS_fsm[32'd1];
 

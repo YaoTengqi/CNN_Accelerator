@@ -275,7 +275,7 @@ set RtlHierarchyInfo {[
 		"Loop" : [
 			{"Name" : "pool_for_rows_pool_for_cols", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "4", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage2", "LastStateIter" : "ap_enable_reg_pp0_iter2", "LastStateBlock" : "ap_block_pp0_stage2_subdone", "QuitState" : "ap_ST_fsm_pp0_stage2", "QuitStateIter" : "ap_enable_reg_pp0_iter2", "QuitStateBlock" : "ap_block_pp0_stage2_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "1"}}]},
-	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.max_pooling_U0.fcmp_32ns_32ns_1_2_no_dsp_1_U313", "Parent" : "1"},
+	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.max_pooling_U0.fcmp_32ns_32ns_1_2_no_dsp_1_U232", "Parent" : "1"},
 	{"ID" : "3", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.max_pooling_U0.flow_control_loop_pipe_U", "Parent" : "1"},
 	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.max_pooling_8_U0", "Parent" : "0", "Child" : ["5", "6"],
 		"CDFG" : "max_pooling_8",
@@ -301,7 +301,7 @@ set RtlHierarchyInfo {[
 		"Loop" : [
 			{"Name" : "pool_for_rows_pool_for_cols", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "4", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage2", "LastStateIter" : "ap_enable_reg_pp0_iter2", "LastStateBlock" : "ap_block_pp0_stage2_subdone", "QuitState" : "ap_ST_fsm_pp0_stage2", "QuitStateIter" : "ap_enable_reg_pp0_iter2", "QuitStateBlock" : "ap_block_pp0_stage2_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "1"}}]},
-	{"ID" : "5", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.max_pooling_8_U0.fcmp_32ns_32ns_1_2_no_dsp_1_U316", "Parent" : "4"},
+	{"ID" : "5", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.max_pooling_8_U0.fcmp_32ns_32ns_1_2_no_dsp_1_U235", "Parent" : "4"},
 	{"ID" : "6", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.max_pooling_8_U0.flow_control_loop_pipe_U", "Parent" : "4"},
 	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.max_pooling_9_U0", "Parent" : "0", "Child" : ["8", "9"],
 		"CDFG" : "max_pooling_9",
@@ -327,7 +327,7 @@ set RtlHierarchyInfo {[
 		"Loop" : [
 			{"Name" : "pool_for_rows_pool_for_cols", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "4", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage2", "LastStateIter" : "ap_enable_reg_pp0_iter2", "LastStateBlock" : "ap_block_pp0_stage2_subdone", "QuitState" : "ap_ST_fsm_pp0_stage2", "QuitStateIter" : "ap_enable_reg_pp0_iter2", "QuitStateBlock" : "ap_block_pp0_stage2_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "1"}}]},
-	{"ID" : "8", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.max_pooling_9_U0.fcmp_32ns_32ns_1_2_no_dsp_1_U319", "Parent" : "7"},
+	{"ID" : "8", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.max_pooling_9_U0.fcmp_32ns_32ns_1_2_no_dsp_1_U238", "Parent" : "7"},
 	{"ID" : "9", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.max_pooling_9_U0.flow_control_loop_pipe_U", "Parent" : "7"},
 	{"ID" : "10", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.max_pooling_10_U0", "Parent" : "0", "Child" : ["11", "12"],
 		"CDFG" : "max_pooling_10",
@@ -353,7 +353,7 @@ set RtlHierarchyInfo {[
 		"Loop" : [
 			{"Name" : "pool_for_rows_pool_for_cols", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "4", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage2", "LastStateIter" : "ap_enable_reg_pp0_iter2", "LastStateBlock" : "ap_block_pp0_stage2_subdone", "QuitState" : "ap_ST_fsm_pp0_stage2", "QuitStateIter" : "ap_enable_reg_pp0_iter2", "QuitStateBlock" : "ap_block_pp0_stage2_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "1"}}]},
-	{"ID" : "11", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.max_pooling_10_U0.fcmp_32ns_32ns_1_2_no_dsp_1_U322", "Parent" : "10"},
+	{"ID" : "11", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.max_pooling_10_U0.fcmp_32ns_32ns_1_2_no_dsp_1_U241", "Parent" : "10"},
 	{"ID" : "12", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.max_pooling_10_U0.flow_control_loop_pipe_U", "Parent" : "10"},
 	{"ID" : "13", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.max_pooling_11_U0", "Parent" : "0", "Child" : ["14", "15"],
 		"CDFG" : "max_pooling_11",
@@ -379,7 +379,7 @@ set RtlHierarchyInfo {[
 		"Loop" : [
 			{"Name" : "pool_for_rows_pool_for_cols", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "4", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage2", "LastStateIter" : "ap_enable_reg_pp0_iter2", "LastStateBlock" : "ap_block_pp0_stage2_subdone", "QuitState" : "ap_ST_fsm_pp0_stage2", "QuitStateIter" : "ap_enable_reg_pp0_iter2", "QuitStateBlock" : "ap_block_pp0_stage2_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "1"}}]},
-	{"ID" : "14", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.max_pooling_11_U0.fcmp_32ns_32ns_1_2_no_dsp_1_U325", "Parent" : "13"},
+	{"ID" : "14", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.max_pooling_11_U0.fcmp_32ns_32ns_1_2_no_dsp_1_U244", "Parent" : "13"},
 	{"ID" : "15", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.max_pooling_11_U0.flow_control_loop_pipe_U", "Parent" : "13"},
 	{"ID" : "16", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.max_pooling_12_U0", "Parent" : "0", "Child" : ["17", "18"],
 		"CDFG" : "max_pooling_12",
@@ -405,7 +405,7 @@ set RtlHierarchyInfo {[
 		"Loop" : [
 			{"Name" : "pool_for_rows_pool_for_cols", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "4", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage2", "LastStateIter" : "ap_enable_reg_pp0_iter2", "LastStateBlock" : "ap_block_pp0_stage2_subdone", "QuitState" : "ap_ST_fsm_pp0_stage2", "QuitStateIter" : "ap_enable_reg_pp0_iter2", "QuitStateBlock" : "ap_block_pp0_stage2_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "1"}}]},
-	{"ID" : "17", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.max_pooling_12_U0.fcmp_32ns_32ns_1_2_no_dsp_1_U328", "Parent" : "16"},
+	{"ID" : "17", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.max_pooling_12_U0.fcmp_32ns_32ns_1_2_no_dsp_1_U247", "Parent" : "16"},
 	{"ID" : "18", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.max_pooling_12_U0.flow_control_loop_pipe_U", "Parent" : "16"},
 	{"ID" : "19", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.max_pooling_13_U0", "Parent" : "0", "Child" : ["20", "21"],
 		"CDFG" : "max_pooling_13",
@@ -431,7 +431,7 @@ set RtlHierarchyInfo {[
 		"Loop" : [
 			{"Name" : "pool_for_rows_pool_for_cols", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "4", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage2", "LastStateIter" : "ap_enable_reg_pp0_iter2", "LastStateBlock" : "ap_block_pp0_stage2_subdone", "QuitState" : "ap_ST_fsm_pp0_stage2", "QuitStateIter" : "ap_enable_reg_pp0_iter2", "QuitStateBlock" : "ap_block_pp0_stage2_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "1"}}]},
-	{"ID" : "20", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.max_pooling_13_U0.fcmp_32ns_32ns_1_2_no_dsp_1_U331", "Parent" : "19"},
+	{"ID" : "20", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.max_pooling_13_U0.fcmp_32ns_32ns_1_2_no_dsp_1_U250", "Parent" : "19"},
 	{"ID" : "21", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.max_pooling_13_U0.flow_control_loop_pipe_U", "Parent" : "19"},
 	{"ID" : "22", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.max_pooling_14_U0", "Parent" : "0", "Child" : ["23", "24"],
 		"CDFG" : "max_pooling_14",
@@ -457,7 +457,7 @@ set RtlHierarchyInfo {[
 		"Loop" : [
 			{"Name" : "pool_for_rows_pool_for_cols", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "4", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage2", "LastStateIter" : "ap_enable_reg_pp0_iter2", "LastStateBlock" : "ap_block_pp0_stage2_subdone", "QuitState" : "ap_ST_fsm_pp0_stage2", "QuitStateIter" : "ap_enable_reg_pp0_iter2", "QuitStateBlock" : "ap_block_pp0_stage2_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "1"}}]},
-	{"ID" : "23", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.max_pooling_14_U0.fcmp_32ns_32ns_1_2_no_dsp_1_U334", "Parent" : "22"},
+	{"ID" : "23", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.max_pooling_14_U0.fcmp_32ns_32ns_1_2_no_dsp_1_U253", "Parent" : "22"},
 	{"ID" : "24", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.max_pooling_14_U0.flow_control_loop_pipe_U", "Parent" : "22"}]}
 
 

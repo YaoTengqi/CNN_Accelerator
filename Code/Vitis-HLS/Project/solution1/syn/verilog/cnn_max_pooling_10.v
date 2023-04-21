@@ -208,7 +208,7 @@ cnn_fcmp_32ns_32ns_1_2_no_dsp_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 1 ))
-fcmp_32ns_32ns_1_2_no_dsp_1_U322(
+fcmp_32ns_32ns_1_2_no_dsp_1_U241(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_69_p0),

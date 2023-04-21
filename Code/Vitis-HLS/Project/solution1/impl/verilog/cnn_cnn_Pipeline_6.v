@@ -52,41 +52,41 @@ reg    ap_idle_pp0;
 wire    ap_block_state1_pp0_stage0_iter0;
 wire    ap_block_state2_pp0_stage0_iter1;
 wire    ap_block_pp0_stage0_subdone;
-wire   [0:0] exitcond475_fu_115_p2;
+wire   [0:0] exitcond475_fu_114_p2;
 reg    ap_condition_exit_pp0_iter0_stage0;
 wire    ap_loop_exit_ready;
 reg    ap_ready_int;
-reg   [3:0] loop_index29_load_reg_288;
+reg   [3:0] loop_index29_load_reg_292;
 wire    ap_block_pp0_stage0_11001;
-wire   [63:0] p_cast51_fu_243_p1;
+wire   [63:0] p_cast51_fu_242_p1;
 wire    ap_block_pp0_stage0;
-wire   [63:0] loop_index29_cast_fu_263_p1;
+wire   [63:0] loop_index29_cast_fu_262_p1;
 reg   [3:0] phi_urem54_fu_58;
-wire   [3:0] idx_urem56_fu_145_p3;
+wire   [3:0] idx_urem56_fu_144_p3;
 wire    ap_loop_init;
 reg   [3:0] ap_sig_allocacmp_phi_urem54_load;
 reg   [7:0] phi_mul52_fu_62;
-wire   [7:0] next_mul53_fu_153_p2;
+wire   [7:0] next_mul53_fu_152_p2;
 reg   [7:0] ap_sig_allocacmp_phi_mul52_load;
 reg   [3:0] loop_index29_fu_66;
-wire   [3:0] empty_133_fu_121_p2;
+wire   [3:0] empty_136_fu_120_p2;
 reg   [3:0] ap_sig_allocacmp_loop_index29_load;
-wire   [3:0] next_urem55_fu_133_p2;
-wire   [0:0] empty_134_fu_139_p2;
-wire   [1:0] tmp_s_fu_159_p4;
-wire   [5:0] p_shl6_fu_169_p3;
-wire   [3:0] p_shl7_fu_181_p3;
-wire   [6:0] p_shl6_cast_fu_177_p1;
-wire   [6:0] p_shl7_cast_fu_189_p1;
-wire   [6:0] empty_135_fu_193_p2;
-wire   [3:0] empty_136_fu_203_p2;
-wire   [5:0] p_cast112_fu_209_p1;
-wire   [5:0] tmp2_fu_213_p2;
-wire  signed [6:0] tmp2_cast_cast_cast_fu_219_p1;
-wire   [7:0] tmp2_cast_cast_cast_cast_fu_223_p1;
-wire  signed [7:0] p_cast24_fu_199_p1;
-wire   [7:0] empty_137_fu_227_p2;
-wire   [5:0] tmp_58_fu_233_p4;
+wire   [3:0] next_urem55_fu_132_p2;
+wire   [0:0] empty_137_fu_138_p2;
+wire   [1:0] tmp_s_fu_158_p4;
+wire   [5:0] p_shl6_fu_168_p3;
+wire   [3:0] p_shl7_fu_180_p3;
+wire   [6:0] p_shl6_cast_fu_176_p1;
+wire   [6:0] p_shl7_cast_fu_188_p1;
+wire   [6:0] empty_138_fu_192_p2;
+wire   [3:0] empty_139_fu_202_p2;
+wire   [5:0] p_cast112_fu_208_p1;
+wire   [5:0] tmp2_fu_212_p2;
+wire  signed [6:0] tmp2_cast_cast_cast_fu_218_p1;
+wire   [7:0] tmp2_cast_cast_cast_cast_fu_222_p1;
+wire  signed [7:0] p_cast24_fu_198_p1;
+wire   [7:0] empty_140_fu_226_p2;
+wire   [5:0] tmp_58_fu_232_p4;
 reg    ap_done_reg;
 wire    ap_continue_int;
 reg    ap_done_int;
@@ -151,8 +151,8 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        if (((exitcond475_fu_115_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
-            loop_index29_fu_66 <= empty_133_fu_121_p2;
+        if (((exitcond475_fu_114_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
+            loop_index29_fu_66 <= empty_136_fu_120_p2;
         end else if ((ap_loop_init == 1'b1)) begin
             loop_index29_fu_66 <= 4'd0;
         end
@@ -161,8 +161,8 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        if (((exitcond475_fu_115_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
-            phi_mul52_fu_62 <= next_mul53_fu_153_p2;
+        if (((exitcond475_fu_114_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
+            phi_mul52_fu_62 <= next_mul53_fu_152_p2;
         end else if ((ap_loop_init == 1'b1)) begin
             phi_mul52_fu_62 <= 8'd0;
         end
@@ -171,8 +171,8 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        if (((exitcond475_fu_115_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
-            phi_urem54_fu_58 <= idx_urem56_fu_145_p3;
+        if (((exitcond475_fu_114_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
+            phi_urem54_fu_58 <= idx_urem56_fu_144_p3;
         end else if ((ap_loop_init == 1'b1)) begin
             phi_urem54_fu_58 <= 4'd0;
         end
@@ -181,12 +181,12 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        loop_index29_load_reg_288 <= ap_sig_allocacmp_loop_index29_load;
+        loop_index29_load_reg_292 <= ap_sig_allocacmp_loop_index29_load;
     end
 end
 
 always @ (*) begin
-    if (((exitcond475_fu_115_p2 == 1'd1) & (1'b0 == ap_block_pp0_stage0_subdone) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (((exitcond475_fu_114_p2 == 1'd1) & (1'b0 == ap_block_pp0_stage0_subdone) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b1;
     end else begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b0;
@@ -302,54 +302,54 @@ assign ap_enable_reg_pp0_iter0 = ap_start_int;
 
 assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
-assign empty_133_fu_121_p2 = (ap_sig_allocacmp_loop_index29_load + 4'd1);
+assign empty_136_fu_120_p2 = (ap_sig_allocacmp_loop_index29_load + 4'd1);
 
-assign empty_134_fu_139_p2 = ((next_urem55_fu_133_p2 < 4'd3) ? 1'b1 : 1'b0);
+assign empty_137_fu_138_p2 = ((next_urem55_fu_132_p2 < 4'd3) ? 1'b1 : 1'b0);
 
-assign empty_135_fu_193_p2 = (p_shl6_cast_fu_177_p1 - p_shl7_cast_fu_189_p1);
+assign empty_138_fu_192_p2 = (p_shl6_cast_fu_176_p1 - p_shl7_cast_fu_188_p1);
 
-assign empty_136_fu_203_p2 = ap_sig_allocacmp_phi_urem54_load << 4'd2;
+assign empty_139_fu_202_p2 = ap_sig_allocacmp_phi_urem54_load << 4'd2;
 
-assign empty_137_fu_227_p2 = ($signed(tmp2_cast_cast_cast_cast_fu_223_p1) + $signed(p_cast24_fu_199_p1));
+assign empty_140_fu_226_p2 = ($signed(tmp2_cast_cast_cast_cast_fu_222_p1) + $signed(p_cast24_fu_198_p1));
 
-assign exitcond475_fu_115_p2 = ((ap_sig_allocacmp_loop_index29_load == 4'd9) ? 1'b1 : 1'b0);
+assign exitcond475_fu_114_p2 = ((ap_sig_allocacmp_loop_index29_load == 4'd9) ? 1'b1 : 1'b0);
 
-assign idx_urem56_fu_145_p3 = ((empty_134_fu_139_p2[0:0] == 1'b1) ? next_urem55_fu_133_p2 : 4'd0);
+assign idx_urem56_fu_144_p3 = ((empty_137_fu_138_p2[0:0] == 1'b1) ? next_urem55_fu_132_p2 : 4'd0);
 
-assign loop_index29_cast_fu_263_p1 = loop_index29_load_reg_288;
+assign loop_index29_cast_fu_262_p1 = loop_index29_load_reg_292;
 
-assign next_mul53_fu_153_p2 = (ap_sig_allocacmp_phi_mul52_load + 8'd22);
+assign next_mul53_fu_152_p2 = (ap_sig_allocacmp_phi_mul52_load + 8'd22);
 
-assign next_urem55_fu_133_p2 = (ap_sig_allocacmp_phi_urem54_load + 4'd1);
+assign next_urem55_fu_132_p2 = (ap_sig_allocacmp_phi_urem54_load + 4'd1);
 
-assign p_cast112_fu_209_p1 = empty_136_fu_203_p2;
+assign p_cast112_fu_208_p1 = empty_139_fu_202_p2;
 
-assign p_cast24_fu_199_p1 = $signed(empty_135_fu_193_p2);
+assign p_cast24_fu_198_p1 = $signed(empty_138_fu_192_p2);
 
-assign p_cast51_fu_243_p1 = tmp_58_fu_233_p4;
+assign p_cast51_fu_242_p1 = tmp_58_fu_232_p4;
 
-assign p_shl6_cast_fu_177_p1 = p_shl6_fu_169_p3;
+assign p_shl6_cast_fu_176_p1 = p_shl6_fu_168_p3;
 
-assign p_shl6_fu_169_p3 = {{tmp_s_fu_159_p4}, {4'd0}};
+assign p_shl6_fu_168_p3 = {{tmp_s_fu_158_p4}, {4'd0}};
 
-assign p_shl7_cast_fu_189_p1 = p_shl7_fu_181_p3;
+assign p_shl7_cast_fu_188_p1 = p_shl7_fu_180_p3;
 
-assign p_shl7_fu_181_p3 = {{tmp_s_fu_159_p4}, {2'd0}};
+assign p_shl7_fu_180_p3 = {{tmp_s_fu_158_p4}, {2'd0}};
 
-assign tmp2_cast_cast_cast_cast_fu_223_p1 = $unsigned(tmp2_cast_cast_cast_fu_219_p1);
+assign tmp2_cast_cast_cast_cast_fu_222_p1 = $unsigned(tmp2_cast_cast_cast_fu_218_p1);
 
-assign tmp2_cast_cast_cast_fu_219_p1 = $signed(tmp2_fu_213_p2);
+assign tmp2_cast_cast_cast_fu_218_p1 = $signed(tmp2_fu_212_p2);
 
-assign tmp2_fu_213_p2 = ($signed(p_cast112_fu_209_p1) + $signed(6'd44));
+assign tmp2_fu_212_p2 = ($signed(p_cast112_fu_208_p1) + $signed(6'd44));
 
-assign tmp_58_fu_233_p4 = {{empty_137_fu_227_p2[7:2]}};
+assign tmp_58_fu_232_p4 = {{empty_140_fu_226_p2[7:2]}};
 
-assign tmp_s_fu_159_p4 = {{ap_sig_allocacmp_phi_mul52_load[7:6]}};
+assign tmp_s_fu_158_p4 = {{ap_sig_allocacmp_phi_mul52_load[7:6]}};
 
-assign weight_buf_3_address0 = loop_index29_cast_fu_263_p1;
+assign weight_buf_3_address0 = loop_index29_cast_fu_262_p1;
 
 assign weight_buf_3_d0 = weight_buf_q0;
 
-assign weight_buf_address0 = p_cast51_fu_243_p1;
+assign weight_buf_address0 = p_cast51_fu_242_p1;
 
 endmodule //cnn_cnn_Pipeline_6

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'convolution_4'" level="0">
-<item name = "Date">Thu Apr 20 15:58:31 2023
+<item name = "Date">Thu Apr 20 17:57:27 2023
 </item>
 <item name = "Version">2022.2 (Build 3670227 on Oct 13 2022)</item>
 <item name = "Project">Project</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">4009, 4009, 40.090 us, 40.090 us, 4009, 4009, no</column>
+<column name="">4003, 4003, 40.030 us, 40.030 us, 4003, 4003, no</column>
 </table>
 </item>
 <item name = "Detail">

@@ -63,14 +63,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 39 \
-    name w_16 \
+    name w_57 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_w_16 \
+    corename dc_w_57 \
     op interface \
-    ports { w_16 { I 32 vector } } \
+    ports { w_57 { I 32 vector } } \
 } "
 }
 
@@ -78,14 +78,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 40 \
-    name w_6 \
+    name w_58 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_w_6 \
+    corename dc_w_58 \
     op interface \
-    ports { w_6 { I 32 vector } } \
+    ports { w_58 { I 32 vector } } \
 } "
 }
 
@@ -93,14 +93,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 41 \
-    name w_7 \
+    name w_59 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_w_7 \
+    corename dc_w_59 \
     op interface \
-    ports { w_7 { I 32 vector } } \
+    ports { w_59 { I 32 vector } } \
 } "
 }
 
@@ -108,14 +108,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 42 \
-    name w_8 \
+    name w_60 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_w_8 \
+    corename dc_w_60 \
     op interface \
-    ports { w_8 { I 32 vector } } \
+    ports { w_60 { I 32 vector } } \
 } "
 }
 
@@ -123,14 +123,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 43 \
-    name w_9 \
+    name w_61 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_w_9 \
+    corename dc_w_61 \
     op interface \
-    ports { w_9 { I 32 vector } } \
+    ports { w_61 { I 32 vector } } \
 } "
 }
 
@@ -138,14 +138,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 44 \
-    name w_10 \
+    name w_62 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_w_10 \
+    corename dc_w_62 \
     op interface \
-    ports { w_10 { I 32 vector } } \
+    ports { w_62 { I 32 vector } } \
 } "
 }
 
@@ -153,14 +153,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 45 \
-    name w_11 \
+    name w_63 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_w_11 \
+    corename dc_w_63 \
     op interface \
-    ports { w_11 { I 32 vector } } \
+    ports { w_63 { I 32 vector } } \
 } "
 }
 
@@ -168,14 +168,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 46 \
-    name w_12 \
+    name w_64 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_w_12 \
+    corename dc_w_64 \
     op interface \
-    ports { w_12 { I 32 vector } } \
+    ports { w_64 { I 32 vector } } \
 } "
 }
 
@@ -183,14 +183,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 47 \
-    name conv8 \
+    name biases_buf \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_conv8 \
+    corename dc_biases_buf \
     op interface \
-    ports { conv8 { I 32 vector } } \
+    ports { biases_buf { I 32 vector } } \
 } "
 }
 

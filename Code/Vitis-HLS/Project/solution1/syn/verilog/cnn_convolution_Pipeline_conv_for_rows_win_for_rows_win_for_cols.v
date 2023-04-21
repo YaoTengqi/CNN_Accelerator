@@ -21,15 +21,15 @@ module cnn_convolution_Pipeline_conv_for_rows_win_for_rows_win_for_cols (
         pad_img_ce1,
         pad_img_q1,
         w,
-        w_16,
-        w_6,
-        w_7,
-        w_8,
-        w_9,
-        w_10,
-        w_11,
-        w_12,
-        conv8,
+        w_57,
+        w_58,
+        w_59,
+        w_60,
+        w_61,
+        w_62,
+        w_63,
+        w_64,
+        biases_buf,
         conv_to_pool_streams_0_din,
         conv_to_pool_streams_0_num_data_valid,
         conv_to_pool_streams_0_fifo_cap,
@@ -56,15 +56,15 @@ output  [9:0] pad_img_address1;
 output   pad_img_ce1;
 input  [31:0] pad_img_q1;
 input  [31:0] w;
-input  [31:0] w_16;
-input  [31:0] w_6;
-input  [31:0] w_7;
-input  [31:0] w_8;
-input  [31:0] w_9;
-input  [31:0] w_10;
-input  [31:0] w_11;
-input  [31:0] w_12;
-input  [31:0] conv8;
+input  [31:0] w_57;
+input  [31:0] w_58;
+input  [31:0] w_59;
+input  [31:0] w_60;
+input  [31:0] w_61;
+input  [31:0] w_62;
+input  [31:0] w_63;
+input  [31:0] w_64;
+input  [31:0] biases_buf;
 output  [31:0] conv_to_pool_streams_0_din;
 input  [10:0] conv_to_pool_streams_0_num_data_valid;
 input  [10:0] conv_to_pool_streams_0_fifo_cap;
@@ -1399,7 +1399,7 @@ end
 
 always @ (*) begin
     if (((ap_enable_reg_pp0_iter14 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage1) & (1'b0 == ap_block_pp0_stage1))) begin
-        grp_fu_295_p1 = conv8;
+        grp_fu_295_p1 = biases_buf;
     end else if (((ap_enable_reg_pp0_iter12 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage4) & (1'b0 == ap_block_pp0_stage4))) begin
         grp_fu_295_p1 = mul_2_2_reg_1296_pp0_iter12_reg;
     end else if (((ap_enable_reg_pp0_iter11 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage2) & (1'b0 == ap_block_pp0_stage2))) begin
@@ -1423,13 +1423,13 @@ end
 
 always @ (*) begin
     if (((ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage3) & (1'b0 == ap_block_pp0_stage3))) begin
-        grp_fu_299_p0 = w_12;
+        grp_fu_299_p0 = w_64;
     end else if (((ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage2) & (1'b0 == ap_block_pp0_stage2))) begin
-        grp_fu_299_p0 = w_10;
+        grp_fu_299_p0 = w_62;
     end else if (((ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage1) & (1'b0 == ap_block_pp0_stage1))) begin
-        grp_fu_299_p0 = w_8;
+        grp_fu_299_p0 = w_60;
     end else if (((ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0))) begin
-        grp_fu_299_p0 = w_6;
+        grp_fu_299_p0 = w_58;
     end else if (((ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage4) & (1'b0 == ap_block_pp0_stage4))) begin
         grp_fu_299_p0 = w;
     end else begin
@@ -1463,13 +1463,13 @@ end
 
 always @ (*) begin
     if (((ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage2) & (1'b0 == ap_block_pp0_stage2))) begin
-        grp_fu_303_p0 = w_11;
+        grp_fu_303_p0 = w_63;
     end else if (((ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage1) & (1'b0 == ap_block_pp0_stage1))) begin
-        grp_fu_303_p0 = w_9;
+        grp_fu_303_p0 = w_61;
     end else if (((ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0))) begin
-        grp_fu_303_p0 = w_7;
+        grp_fu_303_p0 = w_59;
     end else if (((ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage4) & (1'b0 == ap_block_pp0_stage4))) begin
-        grp_fu_303_p0 = w_16;
+        grp_fu_303_p0 = w_57;
     end else begin
         grp_fu_303_p0 = 'bx;
     end

@@ -3,103 +3,103 @@
 
 <trans_list>
 
-<trans id="91" from="1" to="2">
+<trans id="99" from="1" to="2">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="92" from="2" to="3">
+<trans id="100" from="2" to="3">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="93" from="3" to="4">
+<trans id="101" from="3" to="4">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="94" from="4" to="5">
+<trans id="102" from="4" to="5">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="95" from="5" to="6">
+<trans id="103" from="5" to="6">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="96" from="6" to="7">
+<trans id="104" from="6" to="7">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="97" from="7" to="8">
+<trans id="105" from="7" to="8">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="98" from="8" to="9">
+<trans id="106" from="8" to="9">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="99" from="9" to="10">
+<trans id="107" from="9" to="10">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="100" from="10" to="11">
+<trans id="108" from="10" to="11">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="101" from="11" to="12">
+<trans id="109" from="11" to="12">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="102" from="12" to="13">
+<trans id="110" from="12" to="13">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="103" from="13" to="14">
+<trans id="111" from="13" to="14">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="104" from="14" to="15">
+<trans id="112" from="14" to="15">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="105" from="15" to="16">
+<trans id="113" from="15" to="16">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="106" from="16" to="17">
+<trans id="114" from="16" to="17">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="107" from="17" to="18">
+<trans id="115" from="17" to="18">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
@@ -624,8 +624,26 @@ entry:32 %call_ln0 = call void @cnn_Pipeline_8, i32 %weight_buf_5, i32 %weight_b
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
 </operation>
+</state>
 
-<operation id="51" st_id="12" stage="1" lat="1">
+<state id="13" st_id="13">
+
+<operation id="51" st_id="13" stage="2" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="119" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="0">
+<![CDATA[
+entry:33 %call_ln0 = call void @cnn_Pipeline_9, i32 %weight_buf_6, i32 %weight_buf
+
+]]></Node>
+<StgValue><ssdm name="call_ln0"/></StgValue>
+</operation>
+
+<operation id="52" st_id="13" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -640,7 +658,7 @@ entry:35 %biases_buf_addr = getelementptr i32 %biases_buf, i64 0, i64 0
 <StgValue><ssdm name="biases_buf_addr"/></StgValue>
 </operation>
 
-<operation id="52" st_id="12" stage="2" lat="2">
+<operation id="53" st_id="13" stage="2" lat="2">
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -649,46 +667,46 @@ entry:35 %biases_buf_addr = getelementptr i32 %biases_buf, i64 0, i64 0
 
 <Node id="122" bw="32" op_0_bw="3">
 <![CDATA[
-entry:36 %biases_buf_0 = load i3 %biases_buf_addr
+entry:36 %biases_buf_load = load i3 %biases_buf_addr
 
 ]]></Node>
-<StgValue><ssdm name="biases_buf_0"/></StgValue>
+<StgValue><ssdm name="biases_buf_load"/></StgValue>
 </operation>
 
-<operation id="53" st_id="12" stage="1" lat="1">
+<operation id="54" st_id="13" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="123" bw="3" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<Node id="124" bw="3" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:37 %biases_buf_addr_1 = getelementptr i32 %biases_buf, i64 0, i64 1
+entry:38 %biases_buf_addr_1 = getelementptr i32 %biases_buf, i64 0, i64 1
 
 ]]></Node>
 <StgValue><ssdm name="biases_buf_addr_1"/></StgValue>
 </operation>
 
-<operation id="54" st_id="12" stage="2" lat="2">
+<operation id="55" st_id="13" stage="2" lat="2">
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="124" bw="32" op_0_bw="3">
+<Node id="125" bw="32" op_0_bw="3">
 <![CDATA[
-entry:38 %biases_buf_1 = load i3 %biases_buf_addr_1
+entry:39 %biases_buf_load_1 = load i3 %biases_buf_addr_1
 
 ]]></Node>
-<StgValue><ssdm name="biases_buf_1"/></StgValue>
+<StgValue><ssdm name="biases_buf_load_1"/></StgValue>
 </operation>
 </state>
 
-<state id="13" st_id="13">
+<state id="14" st_id="14">
 
-<operation id="55" st_id="13" stage="2" lat="2">
+<operation id="56" st_id="14" stage="1" lat="2">
 <core></core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -703,7 +721,7 @@ entry:33 %call_ln0 = call void @cnn_Pipeline_9, i32 %weight_buf_6, i32 %weight_b
 <StgValue><ssdm name="call_ln0"/></StgValue>
 </operation>
 
-<operation id="56" st_id="13" stage="1" lat="2">
+<operation id="57" st_id="14" stage="1" lat="2">
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -712,58 +730,28 @@ entry:33 %call_ln0 = call void @cnn_Pipeline_9, i32 %weight_buf_6, i32 %weight_b
 
 <Node id="122" bw="32" op_0_bw="3">
 <![CDATA[
-entry:36 %biases_buf_0 = load i3 %biases_buf_addr
+entry:36 %biases_buf_load = load i3 %biases_buf_addr
 
 ]]></Node>
-<StgValue><ssdm name="biases_buf_0"/></StgValue>
+<StgValue><ssdm name="biases_buf_load"/></StgValue>
 </operation>
 
-<operation id="57" st_id="13" stage="1" lat="2">
+<operation id="58" st_id="14" stage="1" lat="2">
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="124" bw="32" op_0_bw="3">
+<Node id="125" bw="32" op_0_bw="3">
 <![CDATA[
-entry:38 %biases_buf_1 = load i3 %biases_buf_addr_1
+entry:39 %biases_buf_load_1 = load i3 %biases_buf_addr_1
 
 ]]></Node>
-<StgValue><ssdm name="biases_buf_1"/></StgValue>
+<StgValue><ssdm name="biases_buf_load_1"/></StgValue>
 </operation>
 
-<operation id="58" st_id="13" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="125" bw="3" op_0_bw="32" op_1_bw="64" op_2_bw="64">
-<![CDATA[
-entry:39 %biases_buf_addr_2 = getelementptr i32 %biases_buf, i64 0, i64 2
-
-]]></Node>
-<StgValue><ssdm name="biases_buf_addr_2"/></StgValue>
-</operation>
-
-<operation id="59" st_id="13" stage="2" lat="2">
-<core>RAM</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="126" bw="32" op_0_bw="3">
-<![CDATA[
-entry:40 %biases_buf_2 = load i3 %biases_buf_addr_2
-
-]]></Node>
-<StgValue><ssdm name="biases_buf_2"/></StgValue>
-</operation>
-
-<operation id="60" st_id="13" stage="1" lat="1">
+<operation id="59" st_id="14" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -772,139 +760,61 @@ entry:40 %biases_buf_2 = load i3 %biases_buf_addr_2
 
 <Node id="127" bw="3" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:41 %biases_buf_addr_3 = getelementptr i32 %biases_buf, i64 0, i64 3
+entry:41 %biases_buf_addr_2 = getelementptr i32 %biases_buf, i64 0, i64 2
+
+]]></Node>
+<StgValue><ssdm name="biases_buf_addr_2"/></StgValue>
+</operation>
+
+<operation id="60" st_id="14" stage="2" lat="2">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="128" bw="32" op_0_bw="3">
+<![CDATA[
+entry:42 %biases_buf_load_2 = load i3 %biases_buf_addr_2
+
+]]></Node>
+<StgValue><ssdm name="biases_buf_load_2"/></StgValue>
+</operation>
+
+<operation id="61" st_id="14" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="130" bw="3" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:44 %biases_buf_addr_3 = getelementptr i32 %biases_buf, i64 0, i64 3
 
 ]]></Node>
 <StgValue><ssdm name="biases_buf_addr_3"/></StgValue>
 </operation>
 
-<operation id="61" st_id="13" stage="2" lat="2">
+<operation id="62" st_id="14" stage="2" lat="2">
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="128" bw="32" op_0_bw="3">
+<Node id="131" bw="32" op_0_bw="3">
 <![CDATA[
-entry:42 %biases_buf_3 = load i3 %biases_buf_addr_3
+entry:45 %biases_buf_load_3 = load i3 %biases_buf_addr_3
 
 ]]></Node>
-<StgValue><ssdm name="biases_buf_3"/></StgValue>
-</operation>
-</state>
-
-<state id="14" st_id="14">
-
-<operation id="62" st_id="14" stage="1" lat="2">
-<core></core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="119" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="0">
-<![CDATA[
-entry:33 %call_ln0 = call void @cnn_Pipeline_9, i32 %weight_buf_6, i32 %weight_buf
-
-]]></Node>
-<StgValue><ssdm name="call_ln0"/></StgValue>
-</operation>
-
-<operation id="63" st_id="14" stage="1" lat="2">
-<core>RAM</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="126" bw="32" op_0_bw="3">
-<![CDATA[
-entry:40 %biases_buf_2 = load i3 %biases_buf_addr_2
-
-]]></Node>
-<StgValue><ssdm name="biases_buf_2"/></StgValue>
-</operation>
-
-<operation id="64" st_id="14" stage="1" lat="2">
-<core>RAM</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="128" bw="32" op_0_bw="3">
-<![CDATA[
-entry:42 %biases_buf_3 = load i3 %biases_buf_addr_3
-
-]]></Node>
-<StgValue><ssdm name="biases_buf_3"/></StgValue>
-</operation>
-
-<operation id="65" st_id="14" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="129" bw="3" op_0_bw="32" op_1_bw="64" op_2_bw="64">
-<![CDATA[
-entry:43 %biases_buf_addr_4 = getelementptr i32 %biases_buf, i64 0, i64 4
-
-]]></Node>
-<StgValue><ssdm name="biases_buf_addr_4"/></StgValue>
-</operation>
-
-<operation id="66" st_id="14" stage="2" lat="2">
-<core>RAM</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="130" bw="32" op_0_bw="3">
-<![CDATA[
-entry:44 %biases_buf_4 = load i3 %biases_buf_addr_4
-
-]]></Node>
-<StgValue><ssdm name="biases_buf_4"/></StgValue>
-</operation>
-
-<operation id="67" st_id="14" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="131" bw="3" op_0_bw="32" op_1_bw="64" op_2_bw="64">
-<![CDATA[
-entry:45 %biases_buf_addr_5 = getelementptr i32 %biases_buf, i64 0, i64 5
-
-]]></Node>
-<StgValue><ssdm name="biases_buf_addr_5"/></StgValue>
-</operation>
-
-<operation id="68" st_id="14" stage="2" lat="2">
-<core>RAM</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="132" bw="32" op_0_bw="3">
-<![CDATA[
-entry:46 %biases_buf_5 = load i3 %biases_buf_addr_5
-
-]]></Node>
-<StgValue><ssdm name="biases_buf_5"/></StgValue>
+<StgValue><ssdm name="biases_buf_load_3"/></StgValue>
 </operation>
 </state>
 
 <state id="15" st_id="15">
 
-<operation id="69" st_id="15" stage="2" lat="2">
+<operation id="63" st_id="15" stage="2" lat="2">
 <core></core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -919,37 +829,37 @@ entry:34 %call_ln0 = call void @cnn_Pipeline_10, i32 %weight_buf_7, i32 %weight_
 <StgValue><ssdm name="call_ln0"/></StgValue>
 </operation>
 
-<operation id="70" st_id="15" stage="1" lat="2">
+<operation id="64" st_id="15" stage="1" lat="2">
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="130" bw="32" op_0_bw="3">
+<Node id="128" bw="32" op_0_bw="3">
 <![CDATA[
-entry:44 %biases_buf_4 = load i3 %biases_buf_addr_4
+entry:42 %biases_buf_load_2 = load i3 %biases_buf_addr_2
 
 ]]></Node>
-<StgValue><ssdm name="biases_buf_4"/></StgValue>
+<StgValue><ssdm name="biases_buf_load_2"/></StgValue>
 </operation>
 
-<operation id="71" st_id="15" stage="1" lat="2">
+<operation id="65" st_id="15" stage="1" lat="2">
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="132" bw="32" op_0_bw="3">
+<Node id="131" bw="32" op_0_bw="3">
 <![CDATA[
-entry:46 %biases_buf_5 = load i3 %biases_buf_addr_5
+entry:45 %biases_buf_load_3 = load i3 %biases_buf_addr_3
 
 ]]></Node>
-<StgValue><ssdm name="biases_buf_5"/></StgValue>
+<StgValue><ssdm name="biases_buf_load_3"/></StgValue>
 </operation>
 
-<operation id="72" st_id="15" stage="1" lat="1">
+<operation id="66" st_id="15" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -958,13 +868,13 @@ entry:46 %biases_buf_5 = load i3 %biases_buf_addr_5
 
 <Node id="133" bw="3" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:47 %biases_buf_addr_6 = getelementptr i32 %biases_buf, i64 0, i64 6
+entry:47 %biases_buf_addr_4 = getelementptr i32 %biases_buf, i64 0, i64 4
 
 ]]></Node>
-<StgValue><ssdm name="biases_buf_addr_6"/></StgValue>
+<StgValue><ssdm name="biases_buf_addr_4"/></StgValue>
 </operation>
 
-<operation id="73" st_id="15" stage="2" lat="2">
+<operation id="67" st_id="15" stage="2" lat="2">
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -973,46 +883,46 @@ entry:47 %biases_buf_addr_6 = getelementptr i32 %biases_buf, i64 0, i64 6
 
 <Node id="134" bw="32" op_0_bw="3">
 <![CDATA[
-entry:48 %biases_buf_6 = load i3 %biases_buf_addr_6
+entry:48 %biases_buf_load_4 = load i3 %biases_buf_addr_4
 
 ]]></Node>
-<StgValue><ssdm name="biases_buf_6"/></StgValue>
+<StgValue><ssdm name="biases_buf_load_4"/></StgValue>
 </operation>
 
-<operation id="74" st_id="15" stage="1" lat="1">
+<operation id="68" st_id="15" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="135" bw="3" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<Node id="136" bw="3" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-entry:49 %biases_buf_addr_7 = getelementptr i32 %biases_buf, i64 0, i64 7
+entry:50 %biases_buf_addr_5 = getelementptr i32 %biases_buf, i64 0, i64 5
 
 ]]></Node>
-<StgValue><ssdm name="biases_buf_addr_7"/></StgValue>
+<StgValue><ssdm name="biases_buf_addr_5"/></StgValue>
 </operation>
 
-<operation id="75" st_id="15" stage="2" lat="2">
+<operation id="69" st_id="15" stage="2" lat="2">
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="136" bw="32" op_0_bw="3">
+<Node id="137" bw="32" op_0_bw="3">
 <![CDATA[
-entry:50 %biases_buf_7 = load i3 %biases_buf_addr_7
+entry:51 %biases_buf_load_5 = load i3 %biases_buf_addr_5
 
 ]]></Node>
-<StgValue><ssdm name="biases_buf_7"/></StgValue>
+<StgValue><ssdm name="biases_buf_load_5"/></StgValue>
 </operation>
 </state>
 
 <state id="16" st_id="16">
 
-<operation id="76" st_id="16" stage="1" lat="2">
+<operation id="70" st_id="16" stage="1" lat="2">
 <core></core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1027,7 +937,7 @@ entry:34 %call_ln0 = call void @cnn_Pipeline_10, i32 %weight_buf_7, i32 %weight_
 <StgValue><ssdm name="call_ln0"/></StgValue>
 </operation>
 
-<operation id="77" st_id="16" stage="1" lat="2">
+<operation id="71" st_id="16" stage="1" lat="2">
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1036,40 +946,250 @@ entry:34 %call_ln0 = call void @cnn_Pipeline_10, i32 %weight_buf_7, i32 %weight_
 
 <Node id="134" bw="32" op_0_bw="3">
 <![CDATA[
-entry:48 %biases_buf_6 = load i3 %biases_buf_addr_6
+entry:48 %biases_buf_load_4 = load i3 %biases_buf_addr_4
 
 ]]></Node>
-<StgValue><ssdm name="biases_buf_6"/></StgValue>
+<StgValue><ssdm name="biases_buf_load_4"/></StgValue>
 </operation>
 
-<operation id="78" st_id="16" stage="1" lat="2">
+<operation id="72" st_id="16" stage="1" lat="2">
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="136" bw="32" op_0_bw="3">
+<Node id="137" bw="32" op_0_bw="3">
 <![CDATA[
-entry:50 %biases_buf_7 = load i3 %biases_buf_addr_7
+entry:51 %biases_buf_load_5 = load i3 %biases_buf_addr_5
 
 ]]></Node>
-<StgValue><ssdm name="biases_buf_7"/></StgValue>
+<StgValue><ssdm name="biases_buf_load_5"/></StgValue>
+</operation>
+
+<operation id="73" st_id="16" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="139" bw="3" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:53 %biases_buf_addr_6 = getelementptr i32 %biases_buf, i64 0, i64 6
+
+]]></Node>
+<StgValue><ssdm name="biases_buf_addr_6"/></StgValue>
+</operation>
+
+<operation id="74" st_id="16" stage="2" lat="2">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="140" bw="32" op_0_bw="3">
+<![CDATA[
+entry:54 %biases_buf_load_6 = load i3 %biases_buf_addr_6
+
+]]></Node>
+<StgValue><ssdm name="biases_buf_load_6"/></StgValue>
+</operation>
+
+<operation id="75" st_id="16" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="142" bw="3" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+entry:56 %biases_buf_addr_7 = getelementptr i32 %biases_buf, i64 0, i64 7
+
+]]></Node>
+<StgValue><ssdm name="biases_buf_addr_7"/></StgValue>
+</operation>
+
+<operation id="76" st_id="16" stage="2" lat="2">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="143" bw="32" op_0_bw="3">
+<![CDATA[
+entry:57 %biases_buf_load_7 = load i3 %biases_buf_addr_7
+
+]]></Node>
+<StgValue><ssdm name="biases_buf_load_7"/></StgValue>
 </operation>
 </state>
 
 <state id="17" st_id="17">
 
-<operation id="79" st_id="17" stage="2" lat="2">
+<operation id="77" st_id="17" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="123" bw="32" op_0_bw="32">
+<![CDATA[
+entry:37 %biases_buf_0 = bitcast i32 %biases_buf_load
+
+]]></Node>
+<StgValue><ssdm name="biases_buf_0"/></StgValue>
+</operation>
+
+<operation id="78" st_id="17" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="126" bw="32" op_0_bw="32">
+<![CDATA[
+entry:40 %biases_buf_1 = bitcast i32 %biases_buf_load_1
+
+]]></Node>
+<StgValue><ssdm name="biases_buf_1"/></StgValue>
+</operation>
+
+<operation id="79" st_id="17" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="129" bw="32" op_0_bw="32">
+<![CDATA[
+entry:43 %biases_buf_2 = bitcast i32 %biases_buf_load_2
+
+]]></Node>
+<StgValue><ssdm name="biases_buf_2"/></StgValue>
+</operation>
+
+<operation id="80" st_id="17" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="132" bw="32" op_0_bw="32">
+<![CDATA[
+entry:46 %biases_buf_3 = bitcast i32 %biases_buf_load_3
+
+]]></Node>
+<StgValue><ssdm name="biases_buf_3"/></StgValue>
+</operation>
+
+<operation id="81" st_id="17" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="135" bw="32" op_0_bw="32">
+<![CDATA[
+entry:49 %biases_buf_4 = bitcast i32 %biases_buf_load_4
+
+]]></Node>
+<StgValue><ssdm name="biases_buf_4"/></StgValue>
+</operation>
+
+<operation id="82" st_id="17" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="138" bw="32" op_0_bw="32">
+<![CDATA[
+entry:52 %biases_buf_5 = bitcast i32 %biases_buf_load_5
+
+]]></Node>
+<StgValue><ssdm name="biases_buf_5"/></StgValue>
+</operation>
+
+<operation id="83" st_id="17" stage="1" lat="2">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="140" bw="32" op_0_bw="3">
+<![CDATA[
+entry:54 %biases_buf_load_6 = load i3 %biases_buf_addr_6
+
+]]></Node>
+<StgValue><ssdm name="biases_buf_load_6"/></StgValue>
+</operation>
+
+<operation id="84" st_id="17" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="141" bw="32" op_0_bw="32">
+<![CDATA[
+entry:55 %biases_buf_6 = bitcast i32 %biases_buf_load_6
+
+]]></Node>
+<StgValue><ssdm name="biases_buf_6"/></StgValue>
+</operation>
+
+<operation id="85" st_id="17" stage="1" lat="2">
+<core>RAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="143" bw="32" op_0_bw="3">
+<![CDATA[
+entry:57 %biases_buf_load_7 = load i3 %biases_buf_addr_7
+
+]]></Node>
+<StgValue><ssdm name="biases_buf_load_7"/></StgValue>
+</operation>
+
+<operation id="86" st_id="17" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="144" bw="32" op_0_bw="32">
+<![CDATA[
+entry:58 %biases_buf_7 = bitcast i32 %biases_buf_load_7
+
+]]></Node>
+<StgValue><ssdm name="biases_buf_7"/></StgValue>
+</operation>
+
+<operation id="87" st_id="17" stage="2" lat="2">
 <core></core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="137" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="32" op_16_bw="32" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32" op_21_bw="32" op_22_bw="32" op_23_bw="32" op_24_bw="32" op_25_bw="32" op_26_bw="32" op_27_bw="32" op_28_bw="32" op_29_bw="32" op_30_bw="32" op_31_bw="32" op_32_bw="32" op_33_bw="32" op_34_bw="32" op_35_bw="32" op_36_bw="32" op_37_bw="32" op_38_bw="32" op_39_bw="32" op_40_bw="32" op_41_bw="32" op_42_bw="32" op_43_bw="32" op_44_bw="32" op_45_bw="32" op_46_bw="32" op_47_bw="32" op_48_bw="32" op_49_bw="32" op_50_bw="32" op_51_bw="32" op_52_bw="32" op_53_bw="32" op_54_bw="32" op_55_bw="32" op_56_bw="32" op_57_bw="32" op_58_bw="32" op_59_bw="32" op_60_bw="32" op_61_bw="32" op_62_bw="32" op_63_bw="32" op_64_bw="32" op_65_bw="32" op_66_bw="32" op_67_bw="32" op_68_bw="32" op_69_bw="32" op_70_bw="32" op_71_bw="32" op_72_bw="32" op_73_bw="32" op_74_bw="32" op_75_bw="32" op_76_bw="32" op_77_bw="32" op_78_bw="32" op_79_bw="32" op_80_bw="32" op_81_bw="32" op_82_bw="32" op_83_bw="32" op_84_bw="32" op_85_bw="32" op_86_bw="32" op_87_bw="32" op_88_bw="32" op_89_bw="32" op_90_bw="32" op_91_bw="32" op_92_bw="32" op_93_bw="32" op_94_bw="32" op_95_bw="32" op_96_bw="32" op_97_bw="32" op_98_bw="32" op_99_bw="32" op_100_bw="32" op_101_bw="32" op_102_bw="32" op_103_bw="32" op_104_bw="32" op_105_bw="32" op_106_bw="32" op_107_bw="0" op_108_bw="0" op_109_bw="0">
+<Node id="145" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="32" op_16_bw="32" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32" op_21_bw="32" op_22_bw="32" op_23_bw="32" op_24_bw="32" op_25_bw="32" op_26_bw="32" op_27_bw="32" op_28_bw="32" op_29_bw="32" op_30_bw="32" op_31_bw="32" op_32_bw="32" op_33_bw="32" op_34_bw="32" op_35_bw="32" op_36_bw="32" op_37_bw="32" op_38_bw="32" op_39_bw="32" op_40_bw="32" op_41_bw="32" op_42_bw="32" op_43_bw="32" op_44_bw="32" op_45_bw="32" op_46_bw="32" op_47_bw="32" op_48_bw="32" op_49_bw="32" op_50_bw="32" op_51_bw="32" op_52_bw="32" op_53_bw="32" op_54_bw="32" op_55_bw="32" op_56_bw="32" op_57_bw="32" op_58_bw="32" op_59_bw="32" op_60_bw="32" op_61_bw="32" op_62_bw="32" op_63_bw="32" op_64_bw="32" op_65_bw="32" op_66_bw="32" op_67_bw="32" op_68_bw="32" op_69_bw="32" op_70_bw="32" op_71_bw="32" op_72_bw="32" op_73_bw="32" op_74_bw="32" op_75_bw="32" op_76_bw="32" op_77_bw="32" op_78_bw="32" op_79_bw="32" op_80_bw="32" op_81_bw="32" op_82_bw="32" op_83_bw="32" op_84_bw="32" op_85_bw="32" op_86_bw="32" op_87_bw="32" op_88_bw="32" op_89_bw="32" op_90_bw="32" op_91_bw="32" op_92_bw="32" op_93_bw="32" op_94_bw="32" op_95_bw="32" op_96_bw="32" op_97_bw="32" op_98_bw="32" op_99_bw="32" op_100_bw="32" op_101_bw="32" op_102_bw="32" op_103_bw="32" op_104_bw="32" op_105_bw="32" op_106_bw="32" op_107_bw="0" op_108_bw="0" op_109_bw="0">
 <![CDATA[
-entry:51 %call_ln179 = call void @dataflow_section, i32 %pad_img, i32 %pad_img1, i32 %pad_img2, i32 %pad_img3, i32 %pad_img4, i32 %pad_img5, i32 %pad_img6, i32 %pad_img7, i32 %weight_buf_0, i32 %weight_buf_1, i32 %weight_buf_2, i32 %weight_buf_3, i32 %weight_buf_4, i32 %weight_buf_5, i32 %weight_buf_6, i32 %weight_buf_7, i32 %biases_buf_0, i32 %biases_buf_1, i32 %biases_buf_2, i32 %biases_buf_3, i32 %biases_buf_4, i32 %biases_buf_5, i32 %biases_buf_6, i32 %biases_buf_7, i32 %prediction, i32 %dense_weights_72, i32 %dense_weights_65, i32 %dense_weights_58, i32 %dense_weights_51, i32 %dense_weights_44, i32 %dense_weights_37, i32 %dense_weights_30, i32 %dense_weights_23, i32 %dense_weights_16, i32 %dense_weights, i32 %dense_weights_73, i32 %dense_weights_66, i32 %dense_weights_59, i32 %dense_weights_52, i32 %dense_weights_45, i32 %dense_weights_38, i32 %dense_weights_31, i32 %dense_weights_24, i32 %dense_weights_17, i32 %dense_weights_10, i32 %dense_weights_74, i32 %dense_weights_67, i32 %dense_weights_60, i32 %dense_weights_53, i32 %dense_weights_46, i32 %dense_weights_39, i32 %dense_weights_32, i32 %dense_weights_25, i32 %dense_weights_18, i32 %dense_weights_11, i32 %dense_weights_75, i32 %dense_weights_68, i32 %dense_weights_61, i32 %dense_weights_54, i32 %dense_weights_47, i32 %dense_weights_40, i32 %dense_weights_33, i32 %dense_weights_26, i32 %dense_weights_19, i32 %dense_weights_12, i32 %dense_weights_76, i32 %dense_weights_69, i32 %dense_weights_62, i32 %dense_weights_55, i32 %dense_weights_48, i32 %dense_weights_41, i32 %dense_weights_34, i32 %dense_weights_27, i32 %dense_weights_20, i32 %dense_weights_13, i32 %dense_weights_77, i32 %dense_weights_70, i32 %dense_weights_63, i32 %dense_weights_56, i32 %dense_weights_49, i32 %dense_weights_42, i32 %dense_weights_35, i32 %dense_weights_28, i32 %dense_weights_21, i32 %dense_weights_14, i32 %dense_weights_78, i32 %dense_weights_71, i32 %dense_weights_64, i32 %dense_weights_57, i32 %dense_weights_50, i32 %dense_weights_43, i32 %dense_weights_36, i32 %dense_weights_29, i32 %dense_weights_22, i32 %dense_weights_15, i32 %dense_weights_0, i32 %dense_weights_1, i32 %dense_weights_2, i32 %dense_weights_3, i32 %dense_weights_4, i32 %dense_weights_5, i32 %dense_weights_6, i32 %dense_weights_7, i32 %dense_weights_8, i32 %dense_weights_9, i32 %dense_biases
+entry:59 %call_ln179 = call void @dataflow_section, i32 %pad_img, i32 %pad_img1, i32 %pad_img2, i32 %pad_img3, i32 %pad_img4, i32 %pad_img5, i32 %pad_img6, i32 %pad_img7, i32 %weight_buf_0, i32 %weight_buf_1, i32 %weight_buf_2, i32 %weight_buf_3, i32 %weight_buf_4, i32 %weight_buf_5, i32 %weight_buf_6, i32 %weight_buf_7, i32 %biases_buf_0, i32 %biases_buf_1, i32 %biases_buf_2, i32 %biases_buf_3, i32 %biases_buf_4, i32 %biases_buf_5, i32 %biases_buf_6, i32 %biases_buf_7, i32 %prediction, i32 %dense_weights_72, i32 %dense_weights_65, i32 %dense_weights_58, i32 %dense_weights_51, i32 %dense_weights_44, i32 %dense_weights_37, i32 %dense_weights_30, i32 %dense_weights_23, i32 %dense_weights_16, i32 %dense_weights, i32 %dense_weights_73, i32 %dense_weights_66, i32 %dense_weights_59, i32 %dense_weights_52, i32 %dense_weights_45, i32 %dense_weights_38, i32 %dense_weights_31, i32 %dense_weights_24, i32 %dense_weights_17, i32 %dense_weights_10, i32 %dense_weights_74, i32 %dense_weights_67, i32 %dense_weights_60, i32 %dense_weights_53, i32 %dense_weights_46, i32 %dense_weights_39, i32 %dense_weights_32, i32 %dense_weights_25, i32 %dense_weights_18, i32 %dense_weights_11, i32 %dense_weights_75, i32 %dense_weights_68, i32 %dense_weights_61, i32 %dense_weights_54, i32 %dense_weights_47, i32 %dense_weights_40, i32 %dense_weights_33, i32 %dense_weights_26, i32 %dense_weights_19, i32 %dense_weights_12, i32 %dense_weights_76, i32 %dense_weights_69, i32 %dense_weights_62, i32 %dense_weights_55, i32 %dense_weights_48, i32 %dense_weights_41, i32 %dense_weights_34, i32 %dense_weights_27, i32 %dense_weights_20, i32 %dense_weights_13, i32 %dense_weights_77, i32 %dense_weights_70, i32 %dense_weights_63, i32 %dense_weights_56, i32 %dense_weights_49, i32 %dense_weights_42, i32 %dense_weights_35, i32 %dense_weights_28, i32 %dense_weights_21, i32 %dense_weights_14, i32 %dense_weights_78, i32 %dense_weights_71, i32 %dense_weights_64, i32 %dense_weights_57, i32 %dense_weights_50, i32 %dense_weights_43, i32 %dense_weights_36, i32 %dense_weights_29, i32 %dense_weights_22, i32 %dense_weights_15, i32 %dense_weights_0, i32 %dense_weights_1, i32 %dense_weights_2, i32 %dense_weights_3, i32 %dense_weights_4, i32 %dense_weights_5, i32 %dense_weights_6, i32 %dense_weights_7, i32 %dense_weights_8, i32 %dense_weights_9, i32 %dense_biases
 
 ]]></Node>
 <StgValue><ssdm name="call_ln179"/></StgValue>
@@ -1078,7 +1198,7 @@ entry:51 %call_ln179 = call void @dataflow_section, i32 %pad_img, i32 %pad_img1,
 
 <state id="18" st_id="18">
 
-<operation id="80" st_id="18" stage="1" lat="1">
+<operation id="88" st_id="18" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1093,7 +1213,7 @@ entry:0 %spectopmodule_ln96 = spectopmodule void @_ssdm_op_SpecTopModule, void @
 <StgValue><ssdm name="spectopmodule_ln96"/></StgValue>
 </operation>
 
-<operation id="81" st_id="18" stage="1" lat="1">
+<operation id="89" st_id="18" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1108,7 +1228,7 @@ entry:1 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %im
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
 </operation>
 
-<operation id="82" st_id="18" stage="1" lat="1">
+<operation id="90" st_id="18" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1123,7 +1243,7 @@ entry:2 %specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %img_in
 <StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
 </operation>
 
-<operation id="83" st_id="18" stage="1" lat="1">
+<operation id="91" st_id="18" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1138,7 +1258,7 @@ entry:3 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %pr
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
 </operation>
 
-<operation id="84" st_id="18" stage="1" lat="1">
+<operation id="92" st_id="18" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1153,7 +1273,7 @@ entry:4 %specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %predicti
 <StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
 </operation>
 
-<operation id="85" st_id="18" stage="1" lat="1">
+<operation id="93" st_id="18" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1168,7 +1288,7 @@ entry:5 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %we
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
 </operation>
 
-<operation id="86" st_id="18" stage="1" lat="1">
+<operation id="94" st_id="18" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1183,7 +1303,7 @@ entry:6 %specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %weight_b
 <StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
 </operation>
 
-<operation id="87" st_id="18" stage="1" lat="1">
+<operation id="95" st_id="18" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1198,7 +1318,7 @@ entry:7 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %bi
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
 </operation>
 
-<operation id="88" st_id="18" stage="1" lat="1">
+<operation id="96" st_id="18" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1213,31 +1333,31 @@ entry:8 %specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %biases_b
 <StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
 </operation>
 
-<operation id="89" st_id="18" stage="1" lat="2">
+<operation id="97" st_id="18" stage="1" lat="2">
 <core></core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="137" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="32" op_16_bw="32" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32" op_21_bw="32" op_22_bw="32" op_23_bw="32" op_24_bw="32" op_25_bw="32" op_26_bw="32" op_27_bw="32" op_28_bw="32" op_29_bw="32" op_30_bw="32" op_31_bw="32" op_32_bw="32" op_33_bw="32" op_34_bw="32" op_35_bw="32" op_36_bw="32" op_37_bw="32" op_38_bw="32" op_39_bw="32" op_40_bw="32" op_41_bw="32" op_42_bw="32" op_43_bw="32" op_44_bw="32" op_45_bw="32" op_46_bw="32" op_47_bw="32" op_48_bw="32" op_49_bw="32" op_50_bw="32" op_51_bw="32" op_52_bw="32" op_53_bw="32" op_54_bw="32" op_55_bw="32" op_56_bw="32" op_57_bw="32" op_58_bw="32" op_59_bw="32" op_60_bw="32" op_61_bw="32" op_62_bw="32" op_63_bw="32" op_64_bw="32" op_65_bw="32" op_66_bw="32" op_67_bw="32" op_68_bw="32" op_69_bw="32" op_70_bw="32" op_71_bw="32" op_72_bw="32" op_73_bw="32" op_74_bw="32" op_75_bw="32" op_76_bw="32" op_77_bw="32" op_78_bw="32" op_79_bw="32" op_80_bw="32" op_81_bw="32" op_82_bw="32" op_83_bw="32" op_84_bw="32" op_85_bw="32" op_86_bw="32" op_87_bw="32" op_88_bw="32" op_89_bw="32" op_90_bw="32" op_91_bw="32" op_92_bw="32" op_93_bw="32" op_94_bw="32" op_95_bw="32" op_96_bw="32" op_97_bw="32" op_98_bw="32" op_99_bw="32" op_100_bw="32" op_101_bw="32" op_102_bw="32" op_103_bw="32" op_104_bw="32" op_105_bw="32" op_106_bw="32" op_107_bw="0" op_108_bw="0" op_109_bw="0">
+<Node id="145" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="32" op_16_bw="32" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32" op_21_bw="32" op_22_bw="32" op_23_bw="32" op_24_bw="32" op_25_bw="32" op_26_bw="32" op_27_bw="32" op_28_bw="32" op_29_bw="32" op_30_bw="32" op_31_bw="32" op_32_bw="32" op_33_bw="32" op_34_bw="32" op_35_bw="32" op_36_bw="32" op_37_bw="32" op_38_bw="32" op_39_bw="32" op_40_bw="32" op_41_bw="32" op_42_bw="32" op_43_bw="32" op_44_bw="32" op_45_bw="32" op_46_bw="32" op_47_bw="32" op_48_bw="32" op_49_bw="32" op_50_bw="32" op_51_bw="32" op_52_bw="32" op_53_bw="32" op_54_bw="32" op_55_bw="32" op_56_bw="32" op_57_bw="32" op_58_bw="32" op_59_bw="32" op_60_bw="32" op_61_bw="32" op_62_bw="32" op_63_bw="32" op_64_bw="32" op_65_bw="32" op_66_bw="32" op_67_bw="32" op_68_bw="32" op_69_bw="32" op_70_bw="32" op_71_bw="32" op_72_bw="32" op_73_bw="32" op_74_bw="32" op_75_bw="32" op_76_bw="32" op_77_bw="32" op_78_bw="32" op_79_bw="32" op_80_bw="32" op_81_bw="32" op_82_bw="32" op_83_bw="32" op_84_bw="32" op_85_bw="32" op_86_bw="32" op_87_bw="32" op_88_bw="32" op_89_bw="32" op_90_bw="32" op_91_bw="32" op_92_bw="32" op_93_bw="32" op_94_bw="32" op_95_bw="32" op_96_bw="32" op_97_bw="32" op_98_bw="32" op_99_bw="32" op_100_bw="32" op_101_bw="32" op_102_bw="32" op_103_bw="32" op_104_bw="32" op_105_bw="32" op_106_bw="32" op_107_bw="0" op_108_bw="0" op_109_bw="0">
 <![CDATA[
-entry:51 %call_ln179 = call void @dataflow_section, i32 %pad_img, i32 %pad_img1, i32 %pad_img2, i32 %pad_img3, i32 %pad_img4, i32 %pad_img5, i32 %pad_img6, i32 %pad_img7, i32 %weight_buf_0, i32 %weight_buf_1, i32 %weight_buf_2, i32 %weight_buf_3, i32 %weight_buf_4, i32 %weight_buf_5, i32 %weight_buf_6, i32 %weight_buf_7, i32 %biases_buf_0, i32 %biases_buf_1, i32 %biases_buf_2, i32 %biases_buf_3, i32 %biases_buf_4, i32 %biases_buf_5, i32 %biases_buf_6, i32 %biases_buf_7, i32 %prediction, i32 %dense_weights_72, i32 %dense_weights_65, i32 %dense_weights_58, i32 %dense_weights_51, i32 %dense_weights_44, i32 %dense_weights_37, i32 %dense_weights_30, i32 %dense_weights_23, i32 %dense_weights_16, i32 %dense_weights, i32 %dense_weights_73, i32 %dense_weights_66, i32 %dense_weights_59, i32 %dense_weights_52, i32 %dense_weights_45, i32 %dense_weights_38, i32 %dense_weights_31, i32 %dense_weights_24, i32 %dense_weights_17, i32 %dense_weights_10, i32 %dense_weights_74, i32 %dense_weights_67, i32 %dense_weights_60, i32 %dense_weights_53, i32 %dense_weights_46, i32 %dense_weights_39, i32 %dense_weights_32, i32 %dense_weights_25, i32 %dense_weights_18, i32 %dense_weights_11, i32 %dense_weights_75, i32 %dense_weights_68, i32 %dense_weights_61, i32 %dense_weights_54, i32 %dense_weights_47, i32 %dense_weights_40, i32 %dense_weights_33, i32 %dense_weights_26, i32 %dense_weights_19, i32 %dense_weights_12, i32 %dense_weights_76, i32 %dense_weights_69, i32 %dense_weights_62, i32 %dense_weights_55, i32 %dense_weights_48, i32 %dense_weights_41, i32 %dense_weights_34, i32 %dense_weights_27, i32 %dense_weights_20, i32 %dense_weights_13, i32 %dense_weights_77, i32 %dense_weights_70, i32 %dense_weights_63, i32 %dense_weights_56, i32 %dense_weights_49, i32 %dense_weights_42, i32 %dense_weights_35, i32 %dense_weights_28, i32 %dense_weights_21, i32 %dense_weights_14, i32 %dense_weights_78, i32 %dense_weights_71, i32 %dense_weights_64, i32 %dense_weights_57, i32 %dense_weights_50, i32 %dense_weights_43, i32 %dense_weights_36, i32 %dense_weights_29, i32 %dense_weights_22, i32 %dense_weights_15, i32 %dense_weights_0, i32 %dense_weights_1, i32 %dense_weights_2, i32 %dense_weights_3, i32 %dense_weights_4, i32 %dense_weights_5, i32 %dense_weights_6, i32 %dense_weights_7, i32 %dense_weights_8, i32 %dense_weights_9, i32 %dense_biases
+entry:59 %call_ln179 = call void @dataflow_section, i32 %pad_img, i32 %pad_img1, i32 %pad_img2, i32 %pad_img3, i32 %pad_img4, i32 %pad_img5, i32 %pad_img6, i32 %pad_img7, i32 %weight_buf_0, i32 %weight_buf_1, i32 %weight_buf_2, i32 %weight_buf_3, i32 %weight_buf_4, i32 %weight_buf_5, i32 %weight_buf_6, i32 %weight_buf_7, i32 %biases_buf_0, i32 %biases_buf_1, i32 %biases_buf_2, i32 %biases_buf_3, i32 %biases_buf_4, i32 %biases_buf_5, i32 %biases_buf_6, i32 %biases_buf_7, i32 %prediction, i32 %dense_weights_72, i32 %dense_weights_65, i32 %dense_weights_58, i32 %dense_weights_51, i32 %dense_weights_44, i32 %dense_weights_37, i32 %dense_weights_30, i32 %dense_weights_23, i32 %dense_weights_16, i32 %dense_weights, i32 %dense_weights_73, i32 %dense_weights_66, i32 %dense_weights_59, i32 %dense_weights_52, i32 %dense_weights_45, i32 %dense_weights_38, i32 %dense_weights_31, i32 %dense_weights_24, i32 %dense_weights_17, i32 %dense_weights_10, i32 %dense_weights_74, i32 %dense_weights_67, i32 %dense_weights_60, i32 %dense_weights_53, i32 %dense_weights_46, i32 %dense_weights_39, i32 %dense_weights_32, i32 %dense_weights_25, i32 %dense_weights_18, i32 %dense_weights_11, i32 %dense_weights_75, i32 %dense_weights_68, i32 %dense_weights_61, i32 %dense_weights_54, i32 %dense_weights_47, i32 %dense_weights_40, i32 %dense_weights_33, i32 %dense_weights_26, i32 %dense_weights_19, i32 %dense_weights_12, i32 %dense_weights_76, i32 %dense_weights_69, i32 %dense_weights_62, i32 %dense_weights_55, i32 %dense_weights_48, i32 %dense_weights_41, i32 %dense_weights_34, i32 %dense_weights_27, i32 %dense_weights_20, i32 %dense_weights_13, i32 %dense_weights_77, i32 %dense_weights_70, i32 %dense_weights_63, i32 %dense_weights_56, i32 %dense_weights_49, i32 %dense_weights_42, i32 %dense_weights_35, i32 %dense_weights_28, i32 %dense_weights_21, i32 %dense_weights_14, i32 %dense_weights_78, i32 %dense_weights_71, i32 %dense_weights_64, i32 %dense_weights_57, i32 %dense_weights_50, i32 %dense_weights_43, i32 %dense_weights_36, i32 %dense_weights_29, i32 %dense_weights_22, i32 %dense_weights_15, i32 %dense_weights_0, i32 %dense_weights_1, i32 %dense_weights_2, i32 %dense_weights_3, i32 %dense_weights_4, i32 %dense_weights_5, i32 %dense_weights_6, i32 %dense_weights_7, i32 %dense_weights_8, i32 %dense_weights_9, i32 %dense_biases
 
 ]]></Node>
 <StgValue><ssdm name="call_ln179"/></StgValue>
 </operation>
 
-<operation id="90" st_id="18" stage="1" lat="1">
+<operation id="98" st_id="18" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="138" bw="0">
+<Node id="146" bw="0">
 <![CDATA[
-entry:52 %ret_ln188 = ret
+entry:60 %ret_ln188 = ret
 
 ]]></Node>
 <StgValue><ssdm name="ret_ln188"/></StgValue>

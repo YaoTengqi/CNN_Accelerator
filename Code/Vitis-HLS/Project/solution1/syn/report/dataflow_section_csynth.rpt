@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'dataflow_section'
 ================================================================
-* Date:           Thu Apr 20 15:59:19 2023
+* Date:           Thu Apr 20 17:58:15 2023
 
 * Version:        2022.2 (Build 3670227 on Oct 13 2022)
 * Project:        Project
@@ -29,7 +29,7 @@
     |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline |
     |   min   |   max   |    min    |    max    |  min |  max |   Type   |
     +---------+---------+-----------+-----------+------+------+----------+
-    |     4009|     4009|  40.090 us|  40.090 us|  4010|  4010|  dataflow|
+    |     4003|     4003|  40.030 us|  40.030 us|  4004|  4004|  dataflow|
     +---------+---------+-----------+-----------+------+------+----------+
 
     + Detail: 
@@ -38,7 +38,7 @@
         |                         |                      |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline |
         |         Instance        |        Module        |   min   |   max   |    min    |    max    |  min |  max |   Type   |
         +-------------------------+----------------------+---------+---------+-----------+-----------+------+------+----------+
-        |convolutional_layer_U0   |convolutional_layer   |     4009|     4009|  40.090 us|  40.090 us|  4010|  4010|  dataflow|
+        |convolutional_layer_U0   |convolutional_layer   |     4003|     4003|  40.030 us|  40.030 us|  4004|  4004|  dataflow|
         |max_pooling_layer_U0     |max_pooling_layer     |      792|      792|   7.920 us|   7.920 us|   793|   793|  dataflow|
         |flattening_layer_U0      |flattening_layer      |      198|      198|   1.980 us|   1.980 us|   199|   199|  dataflow|
         |dense_layer_U0           |dense_layer           |     2013|     2013|  20.130 us|  20.130 us|  2014|  2014|  dataflow|
@@ -60,16 +60,16 @@
 |DSP              |        -|    -|       -|       -|    -|
 |Expression       |        -|    -|       0|      12|    -|
 |FIFO             |       48|    -|    4720|    2736|    -|
-|Instance         |      320|  131|   47383|   35839|    0|
+|Instance         |      320|  131|   44775|   35647|    0|
 |Memory           |        -|    -|       -|       -|    -|
 |Multiplexer      |        -|    -|       -|      18|    -|
 |Register         |        -|    -|       2|       -|    -|
 +-----------------+---------+-----+--------+--------+-----+
-|Total            |      368|  131|   52105|   38605|    0|
+|Total            |      368|  131|   49497|   38413|    0|
 +-----------------+---------+-----+--------+--------+-----+
 |Available        |      730|  740|  269200|  134600|    0|
 +-----------------+---------+-----+--------+--------+-----+
-|Utilization (%)  |       50|   17|      19|      28|    0|
+|Utilization (%)  |       50|   17|      18|      28|    0|
 +-----------------+---------+-----+--------+--------+-----+
 
 + Detail: 
@@ -77,13 +77,13 @@
     +-------------------------+----------------------+---------+----+-------+-------+-----+
     |         Instance        |        Module        | BRAM_18K| DSP|   FF  |  LUT  | URAM|
     +-------------------------+----------------------+---------+----+-------+-------+-----+
-    |convolutional_layer_U0   |convolutional_layer   |        0|  80|  25569|  19049|    0|
+    |convolutional_layer_U0   |convolutional_layer   |        0|  80|  22961|  18857|    0|
     |dense_layer_U0           |dense_layer           |      320|  40|  15584|   9632|    0|
     |dense_layer_soft_max_U0  |dense_layer_soft_max  |        0|  11|   2364|   2284|    0|
     |flattening_layer_U0      |flattening_layer      |        0|   0|    353|    825|    0|
     |max_pooling_layer_U0     |max_pooling_layer     |        0|   0|   3513|   4049|    0|
     +-------------------------+----------------------+---------+----+-------+-------+-----+
-    |Total                    |                      |      320| 131|  47383|  35839|    0|
+    |Total                    |                      |      320| 131|  44775|  35647|    0|
     +-------------------------+----------------------+---------+----+-------+-------+-----+
 
     * DSP: 

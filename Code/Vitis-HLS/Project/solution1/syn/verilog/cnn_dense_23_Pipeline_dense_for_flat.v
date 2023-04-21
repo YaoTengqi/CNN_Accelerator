@@ -420,7 +420,7 @@ cnn_fadd_32ns_32ns_32_7_full_dsp_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-fadd_32ns_32ns_32_7_full_dsp_1_U453(
+fadd_32ns_32ns_32_7_full_dsp_1_U372(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_412_p0),
@@ -435,7 +435,7 @@ cnn_fmul_32ns_32ns_32_4_max_dsp_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-fmul_32ns_32ns_32_4_max_dsp_1_U454(
+fmul_32ns_32ns_32_4_max_dsp_1_U373(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_416_p0),

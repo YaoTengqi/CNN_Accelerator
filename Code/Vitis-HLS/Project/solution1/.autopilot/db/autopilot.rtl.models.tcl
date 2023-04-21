@@ -21,11 +21,7 @@ set SynModuleInfo {
       {MODELNAME cnn_fcmp_32ns_32ns_1_2_no_dsp_1 RTLNAME cnn_fcmp_32ns_32ns_1_2_no_dsp_1 BINDTYPE op TYPE fcmp IMPL auto LATENCY 1 ALLOW_PRAGMA 1}
     }
   }
-  {SRCNAME convolution MODELNAME convolution RTLNAME cnn_convolution
-    SUBMODULES {
-      {MODELNAME cnn_sitofp_32ns_32_6_no_dsp_1 RTLNAME cnn_sitofp_32ns_32_6_no_dsp_1 BINDTYPE op TYPE sitofp IMPL auto LATENCY 5 ALLOW_PRAGMA 1}
-    }
-  }
+  {SRCNAME convolution MODELNAME convolution RTLNAME cnn_convolution}
   {SRCNAME convolution.1_Pipeline_conv_for_rows_win_for_rows_win_for_cols MODELNAME convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols RTLNAME cnn_convolution_1_Pipeline_conv_for_rows_win_for_rows_win_for_cols}
   {SRCNAME convolution.1 MODELNAME convolution_1 RTLNAME cnn_convolution_1}
   {SRCNAME convolution.2_Pipeline_conv_for_rows_win_for_rows_win_for_cols MODELNAME convolution_2_Pipeline_conv_for_rows_win_for_rows_win_for_cols RTLNAME cnn_convolution_2_Pipeline_conv_for_rows_win_for_rows_win_for_cols}

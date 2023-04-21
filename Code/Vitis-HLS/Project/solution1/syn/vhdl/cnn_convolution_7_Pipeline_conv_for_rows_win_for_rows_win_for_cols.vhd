@@ -32,7 +32,7 @@ port (
     w_6 : IN STD_LOGIC_VECTOR (31 downto 0);
     w_7 : IN STD_LOGIC_VECTOR (31 downto 0);
     w_8 : IN STD_LOGIC_VECTOR (31 downto 0);
-    conv1 : IN STD_LOGIC_VECTOR (31 downto 0);
+    biases_buf : IN STD_LOGIC_VECTOR (31 downto 0);
     conv_to_pool_streams_7_din : OUT STD_LOGIC_VECTOR (31 downto 0);
     conv_to_pool_streams_7_num_data_valid : IN STD_LOGIC_VECTOR (10 downto 0);
     conv_to_pool_streams_7_fifo_cap : IN STD_LOGIC_VECTOR (10 downto 0);
@@ -544,7 +544,7 @@ attribute shreg_extract : string;
 
 
 begin
-    fadd_32ns_32ns_32_7_full_dsp_1_U250 : component cnn_fadd_32ns_32ns_32_7_full_dsp_1
+    fadd_32ns_32ns_32_7_full_dsp_1_U179 : component cnn_fadd_32ns_32ns_32_7_full_dsp_1
     generic map (
         ID => 1,
         NUM_STAGE => 7,
@@ -559,7 +559,7 @@ begin
         ce => grp_fu_290_ce,
         dout => grp_fu_290_p2);
 
-    fadd_32ns_32ns_32_7_full_dsp_1_U251 : component cnn_fadd_32ns_32ns_32_7_full_dsp_1
+    fadd_32ns_32ns_32_7_full_dsp_1_U180 : component cnn_fadd_32ns_32ns_32_7_full_dsp_1
     generic map (
         ID => 1,
         NUM_STAGE => 7,
@@ -574,7 +574,7 @@ begin
         ce => grp_fu_295_ce,
         dout => grp_fu_295_p2);
 
-    fmul_32ns_32ns_32_4_max_dsp_1_U252 : component cnn_fmul_32ns_32ns_32_4_max_dsp_1
+    fmul_32ns_32ns_32_4_max_dsp_1_U181 : component cnn_fmul_32ns_32ns_32_4_max_dsp_1
     generic map (
         ID => 1,
         NUM_STAGE => 4,
@@ -589,7 +589,7 @@ begin
         ce => grp_fu_299_ce,
         dout => grp_fu_299_p2);
 
-    fmul_32ns_32ns_32_4_max_dsp_1_U253 : component cnn_fmul_32ns_32ns_32_4_max_dsp_1
+    fmul_32ns_32ns_32_4_max_dsp_1_U182 : component cnn_fmul_32ns_32ns_32_4_max_dsp_1
     generic map (
         ID => 1,
         NUM_STAGE => 4,
@@ -604,7 +604,7 @@ begin
         ce => grp_fu_303_ce,
         dout => grp_fu_303_p2);
 
-    fcmp_32ns_32ns_1_2_no_dsp_1_U254 : component cnn_fcmp_32ns_32ns_1_2_no_dsp_1
+    fcmp_32ns_32ns_1_2_no_dsp_1_U183 : component cnn_fcmp_32ns_32ns_1_2_no_dsp_1
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -1905,10 +1905,10 @@ begin
     end process;
 
 
-    grp_fu_295_p1_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter8, ap_enable_reg_pp0_iter10, ap_enable_reg_pp0_iter11, ap_enable_reg_pp0_iter12, ap_enable_reg_pp0_iter14, ap_CS_fsm_pp0_stage4, conv1, ap_block_pp0_stage0, ap_CS_fsm_pp0_stage1, ap_CS_fsm_pp0_stage2, ap_CS_fsm_pp0_stage3, mul_1_2_reg_1281_pp0_iter7_reg, mul_2_reg_1286_pp0_iter9_reg, mul_2_1_reg_1291_pp0_iter11_reg, mul_2_2_reg_1296_pp0_iter12_reg, ap_block_pp0_stage2, ap_block_pp0_stage3, ap_block_pp0_stage4, ap_block_pp0_stage1)
+    grp_fu_295_p1_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter8, ap_enable_reg_pp0_iter10, ap_enable_reg_pp0_iter11, ap_enable_reg_pp0_iter12, ap_enable_reg_pp0_iter14, ap_CS_fsm_pp0_stage4, biases_buf, ap_block_pp0_stage0, ap_CS_fsm_pp0_stage1, ap_CS_fsm_pp0_stage2, ap_CS_fsm_pp0_stage3, mul_1_2_reg_1281_pp0_iter7_reg, mul_2_reg_1286_pp0_iter9_reg, mul_2_1_reg_1291_pp0_iter11_reg, mul_2_2_reg_1296_pp0_iter12_reg, ap_block_pp0_stage2, ap_block_pp0_stage3, ap_block_pp0_stage4, ap_block_pp0_stage1)
     begin
         if (((ap_enable_reg_pp0_iter14 = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage1) and (ap_const_boolean_0 = ap_block_pp0_stage1))) then 
-            grp_fu_295_p1 <= conv1;
+            grp_fu_295_p1 <= biases_buf;
         elsif (((ap_enable_reg_pp0_iter12 = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage4) and (ap_const_boolean_0 = ap_block_pp0_stage4))) then 
             grp_fu_295_p1 <= mul_2_2_reg_1296_pp0_iter12_reg;
         elsif (((ap_enable_reg_pp0_iter11 = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage2) and (ap_const_boolean_0 = ap_block_pp0_stage2))) then 

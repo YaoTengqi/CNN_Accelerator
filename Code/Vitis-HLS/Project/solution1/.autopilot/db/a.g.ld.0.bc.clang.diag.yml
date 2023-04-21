@@ -32,7 +32,7 @@ Args:
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
 DebugLoc:        { File: conv.cc, Line: 52, Column: 11 }
-Function:        _Z11convolutionPA30_fPA3_iiiRN3hls6streamIfLi0EEE
+Function:        _Z11convolutionPA30_fPA3_ffiRN3hls6streamIfLi0EEE
 Args:            
   - String:          'Loop '''
   - LoopName:        krn_for_rows
@@ -42,7 +42,7 @@ Args:
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
 DebugLoc:        { File: conv.cc, Line: 55, Column: 13 }
-Function:        _Z11convolutionPA30_fPA3_iiiRN3hls6streamIfLi0EEE
+Function:        _Z11convolutionPA30_fPA3_ffiRN3hls6streamIfLi0EEE
 Args:            
   - String:          'Loop '''
   - LoopName:        krn_for_cols
@@ -115,8 +115,8 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: conv.cc, Line: 31, Column: 0 }
-Function:        _Z11convolutionPA30_fPA3_iiiRN3hls6streamIfLi0EEE
+DebugLoc:        { File: conv.cc, Line: 32, Column: 0 }
+Function:        _Z11convolutionPA30_fPA3_ffiRN3hls6streamIfLi0EEE
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        krn_for_rows
@@ -131,8 +131,8 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: conv.cc, Line: 31, Column: 0 }
-Function:        _Z11convolutionPA30_fPA3_iiiRN3hls6streamIfLi0EEE
+DebugLoc:        { File: conv.cc, Line: 32, Column: 0 }
+Function:        _Z11convolutionPA30_fPA3_ffiRN3hls6streamIfLi0EEE
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        krn_for_cols
@@ -147,8 +147,8 @@ Args:
 --- !Missed
 Pass:            reflow-pragma-loop-unroll
 Name:            PipelineRemovedByUnroll
-DebugLoc:        { File: conv.cc, Line: 31, Column: 0 }
-Function:        _Z11convolutionPA30_fPA3_iiiRN3hls6streamIfLi0EEE
+DebugLoc:        { File: conv.cc, Line: 32, Column: 0 }
+Function:        _Z11convolutionPA30_fPA3_ffiRN3hls6streamIfLi0EEE
 Args:            
   - String:          'Pipeline directive for loop '''
   - LoopName:        krn_for_cols
@@ -162,8 +162,8 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: conv.cc, Line: 31, Column: 0 }
-Function:        _Z11convolutionPA30_fPA3_iiiRN3hls6streamIfLi0EEE
+DebugLoc:        { File: conv.cc, Line: 32, Column: 0 }
+Function:        _Z11convolutionPA30_fPA3_ffiRN3hls6streamIfLi0EEE
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        krn_for_cols
@@ -178,8 +178,8 @@ Args:
 --- !Missed
 Pass:            reflow-pragma-loop-unroll
 Name:            PipelineRemovedByUnroll
-DebugLoc:        { File: conv.cc, Line: 31, Column: 0 }
-Function:        _Z11convolutionPA30_fPA3_iiiRN3hls6streamIfLi0EEE
+DebugLoc:        { File: conv.cc, Line: 32, Column: 0 }
+Function:        _Z11convolutionPA30_fPA3_ffiRN3hls6streamIfLi0EEE
 Args:            
   - String:          'Pipeline directive for loop '''
   - LoopName:        krn_for_cols
@@ -193,8 +193,8 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: conv.cc, Line: 31, Column: 0 }
-Function:        _Z11convolutionPA30_fPA3_iiiRN3hls6streamIfLi0EEE
+DebugLoc:        { File: conv.cc, Line: 32, Column: 0 }
+Function:        _Z11convolutionPA30_fPA3_ffiRN3hls6streamIfLi0EEE
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        krn_for_cols
@@ -209,8 +209,8 @@ Args:
 --- !Missed
 Pass:            reflow-pragma-loop-unroll
 Name:            PipelineRemovedByUnroll
-DebugLoc:        { File: conv.cc, Line: 31, Column: 0 }
-Function:        _Z11convolutionPA30_fPA3_iiiRN3hls6streamIfLi0EEE
+DebugLoc:        { File: conv.cc, Line: 32, Column: 0 }
+Function:        _Z11convolutionPA30_fPA3_ffiRN3hls6streamIfLi0EEE
 Args:            
   - String:          'Pipeline directive for loop '''
   - LoopName:        krn_for_cols
@@ -224,28 +224,28 @@ Args:
 --- !Passed
 Pass:            reflow-inliner
 Name:            AutoInline
-DebugLoc:        { File: conv.cc, Line: 31, Column: 0 }
-Function:        _Z11convolutionPA30_fPA3_iiiRN3hls6streamIfLi0EEE
+DebugLoc:        { File: conv.cc, Line: 32, Column: 0 }
+Function:        _Z11convolutionPA30_fPA3_ffiRN3hls6streamIfLi0EEE
 Args:            
   - String:          'Inlining function '''
   - Callee:          'relu(float)'
     DebugLoc:        { File: conv.cc, Line: 6, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'convolution(float (*) [30], int (*) [3], int, int, hls::stream<float, 0>&)'
-    DebugLoc:        { File: conv.cc, Line: 31, Column: 0 }
+  - Caller:          'convolution(float (*) [30], float (*) [3], float, int, hls::stream<float, 0>&)'
+    DebugLoc:        { File: conv.cc, Line: 32, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            AutoInline
 DebugLoc:        { File: cnn.cc, Line: 103, Column: 0 }
-Function:        _Z3cnnPA28_fPfPA3_A3_iPi
+Function:        _Z3cnnPA28_fPfPA3_A3_fS1_
 Args:            
   - String:          'Inlining function '''
   - Callee:          'normalization_and_padding(float (*) [28], float (*) [30])'
     DebugLoc:        { File: utils.cc, Line: 14, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'cnn(float (*) [28], float*, int (*) [3][3], int*)'
+  - Caller:          'cnn(float (*) [28], float*, float (*) [3][3], float*)'
     DebugLoc:        { File: cnn.cc, Line: 103, Column: 0 }
   - String:          ''''
 ...
@@ -253,7 +253,7 @@ Args:
 Pass:            reflow-array-partition
 Name:            ArrayXform
 DebugLoc:        { File: cnn.cc, Line: 51, Column: 3 }
-Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_iS2_S2_S2_S2_S2_S2_S2_iiiiiiiiPf
+Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_fS2_S2_S2_S2_S2_S2_S2_ffffffffPf
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -271,7 +271,7 @@ Args:
 Pass:            reflow-array-partition
 Name:            ArrayXform
 DebugLoc:        { File: cnn.cc, Line: 74, Column: 3 }
-Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_iS2_S2_S2_S2_S2_S2_S2_iiiiiiiiPf
+Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_fS2_S2_S2_S2_S2_S2_S2_ffffffffPf
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -289,7 +289,7 @@ Args:
 Pass:            reflow-array-partition
 Name:            ArrayXform
 DebugLoc:        { File: cnn.cc, Line: 85, Column: 53 }
-Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_iS2_S2_S2_S2_S2_S2_S2_iiiiiiiiPf
+Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_fS2_S2_S2_S2_S2_S2_S2_ffffffffPf
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -307,7 +307,7 @@ Args:
 Pass:            reflow-array-partition
 Name:            ArrayXform
 DebugLoc:        { File: cnn.cc, Line: 89, Column: 26 }
-Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_iS2_S2_S2_S2_S2_S2_S2_iiiiiiiiPf
+Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_fS2_S2_S2_S2_S2_S2_S2_ffffffffPf
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -325,7 +325,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: cnn.cc, Line: 51, Column: 3 }
-Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_iS2_S2_S2_S2_S2_S2_S2_iiiiiiiiPf
+Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_fS2_S2_S2_S2_S2_S2_S2_ffffffffPf
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -341,7 +341,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: cnn.cc, Line: 51, Column: 3 }
-Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_iS2_S2_S2_S2_S2_S2_S2_iiiiiiiiPf
+Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_fS2_S2_S2_S2_S2_S2_S2_ffffffffPf
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -357,7 +357,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: cnn.cc, Line: 51, Column: 3 }
-Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_iS2_S2_S2_S2_S2_S2_S2_iiiiiiiiPf
+Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_fS2_S2_S2_S2_S2_S2_S2_ffffffffPf
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -373,7 +373,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: cnn.cc, Line: 51, Column: 3 }
-Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_iS2_S2_S2_S2_S2_S2_S2_iiiiiiiiPf
+Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_fS2_S2_S2_S2_S2_S2_S2_ffffffffPf
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -389,7 +389,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: cnn.cc, Line: 51, Column: 3 }
-Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_iS2_S2_S2_S2_S2_S2_S2_iiiiiiiiPf
+Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_fS2_S2_S2_S2_S2_S2_S2_ffffffffPf
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -405,7 +405,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: cnn.cc, Line: 51, Column: 3 }
-Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_iS2_S2_S2_S2_S2_S2_S2_iiiiiiiiPf
+Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_fS2_S2_S2_S2_S2_S2_S2_ffffffffPf
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -421,7 +421,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: cnn.cc, Line: 51, Column: 3 }
-Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_iS2_S2_S2_S2_S2_S2_S2_iiiiiiiiPf
+Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_fS2_S2_S2_S2_S2_S2_S2_ffffffffPf
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -437,7 +437,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: cnn.cc, Line: 51, Column: 3 }
-Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_iS2_S2_S2_S2_S2_S2_S2_iiiiiiiiPf
+Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_fS2_S2_S2_S2_S2_S2_S2_ffffffffPf
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -453,7 +453,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: cnn.cc, Line: 74, Column: 3 }
-Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_iS2_S2_S2_S2_S2_S2_S2_iiiiiiiiPf
+Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_fS2_S2_S2_S2_S2_S2_S2_ffffffffPf
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -469,7 +469,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: cnn.cc, Line: 74, Column: 3 }
-Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_iS2_S2_S2_S2_S2_S2_S2_iiiiiiiiPf
+Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_fS2_S2_S2_S2_S2_S2_S2_ffffffffPf
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -485,7 +485,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: cnn.cc, Line: 74, Column: 3 }
-Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_iS2_S2_S2_S2_S2_S2_S2_iiiiiiiiPf
+Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_fS2_S2_S2_S2_S2_S2_S2_ffffffffPf
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -501,7 +501,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: cnn.cc, Line: 74, Column: 3 }
-Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_iS2_S2_S2_S2_S2_S2_S2_iiiiiiiiPf
+Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_fS2_S2_S2_S2_S2_S2_S2_ffffffffPf
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -517,7 +517,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: cnn.cc, Line: 74, Column: 3 }
-Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_iS2_S2_S2_S2_S2_S2_S2_iiiiiiiiPf
+Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_fS2_S2_S2_S2_S2_S2_S2_ffffffffPf
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -533,7 +533,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: cnn.cc, Line: 74, Column: 3 }
-Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_iS2_S2_S2_S2_S2_S2_S2_iiiiiiiiPf
+Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_fS2_S2_S2_S2_S2_S2_S2_ffffffffPf
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -549,7 +549,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: cnn.cc, Line: 74, Column: 3 }
-Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_iS2_S2_S2_S2_S2_S2_S2_iiiiiiiiPf
+Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_fS2_S2_S2_S2_S2_S2_S2_ffffffffPf
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -565,7 +565,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: cnn.cc, Line: 74, Column: 3 }
-Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_iS2_S2_S2_S2_S2_S2_S2_iiiiiiiiPf
+Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_fS2_S2_S2_S2_S2_S2_S2_ffffffffPf
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -581,7 +581,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: cnn.cc, Line: 85, Column: 53 }
-Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_iS2_S2_S2_S2_S2_S2_S2_iiiiiiiiPf
+Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_fS2_S2_S2_S2_S2_S2_S2_ffffffffPf
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -597,7 +597,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: cnn.cc, Line: 85, Column: 53 }
-Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_iS2_S2_S2_S2_S2_S2_S2_iiiiiiiiPf
+Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_fS2_S2_S2_S2_S2_S2_S2_ffffffffPf
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -613,7 +613,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: cnn.cc, Line: 85, Column: 53 }
-Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_iS2_S2_S2_S2_S2_S2_S2_iiiiiiiiPf
+Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_fS2_S2_S2_S2_S2_S2_S2_ffffffffPf
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -629,7 +629,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: cnn.cc, Line: 85, Column: 53 }
-Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_iS2_S2_S2_S2_S2_S2_S2_iiiiiiiiPf
+Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_fS2_S2_S2_S2_S2_S2_S2_ffffffffPf
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -645,7 +645,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: cnn.cc, Line: 85, Column: 53 }
-Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_iS2_S2_S2_S2_S2_S2_S2_iiiiiiiiPf
+Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_fS2_S2_S2_S2_S2_S2_S2_ffffffffPf
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -661,7 +661,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: cnn.cc, Line: 85, Column: 53 }
-Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_iS2_S2_S2_S2_S2_S2_S2_iiiiiiiiPf
+Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_fS2_S2_S2_S2_S2_S2_S2_ffffffffPf
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -677,7 +677,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: cnn.cc, Line: 85, Column: 53 }
-Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_iS2_S2_S2_S2_S2_S2_S2_iiiiiiiiPf
+Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_fS2_S2_S2_S2_S2_S2_S2_ffffffffPf
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -693,7 +693,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: cnn.cc, Line: 85, Column: 53 }
-Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_iS2_S2_S2_S2_S2_S2_S2_iiiiiiiiPf
+Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_fS2_S2_S2_S2_S2_S2_S2_ffffffffPf
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -709,7 +709,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: cnn.cc, Line: 89, Column: 26 }
-Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_iS2_S2_S2_S2_S2_S2_S2_iiiiiiiiPf
+Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_fS2_S2_S2_S2_S2_S2_S2_ffffffffPf
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -725,7 +725,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: cnn.cc, Line: 89, Column: 26 }
-Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_iS2_S2_S2_S2_S2_S2_S2_iiiiiiiiPf
+Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_fS2_S2_S2_S2_S2_S2_S2_ffffffffPf
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -741,7 +741,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: cnn.cc, Line: 89, Column: 26 }
-Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_iS2_S2_S2_S2_S2_S2_S2_iiiiiiiiPf
+Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_fS2_S2_S2_S2_S2_S2_S2_ffffffffPf
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -757,7 +757,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: cnn.cc, Line: 89, Column: 26 }
-Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_iS2_S2_S2_S2_S2_S2_S2_iiiiiiiiPf
+Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_fS2_S2_S2_S2_S2_S2_S2_ffffffffPf
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -773,7 +773,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: cnn.cc, Line: 89, Column: 26 }
-Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_iS2_S2_S2_S2_S2_S2_S2_iiiiiiiiPf
+Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_fS2_S2_S2_S2_S2_S2_S2_ffffffffPf
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -789,7 +789,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: cnn.cc, Line: 89, Column: 26 }
-Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_iS2_S2_S2_S2_S2_S2_S2_iiiiiiiiPf
+Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_fS2_S2_S2_S2_S2_S2_S2_ffffffffPf
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -805,7 +805,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: cnn.cc, Line: 89, Column: 26 }
-Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_iS2_S2_S2_S2_S2_S2_S2_iiiiiiiiPf
+Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_fS2_S2_S2_S2_S2_S2_S2_ffffffffPf
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -821,7 +821,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: cnn.cc, Line: 89, Column: 26 }
-Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_iS2_S2_S2_S2_S2_S2_S2_iiiiiiiiPf
+Function:        _Z16dataflow_sectionPA30_fS0_S0_S0_S0_S0_S0_S0_PA3_fS2_S2_S2_S2_S2_S2_S2_ffffffffPf
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'convolution_3_Pipeline_conv_for_rows_win_for_rows_win_for_cols'" level="0">
-<item name = "Date">Thu Apr 20 15:59:02 2023
+<item name = "Date">Thu Apr 20 17:57:57 2023
 </item>
 <item name = "Version">2022.2 (Build 3670227 on Oct 13 2022)</item>
 <item name = "Project">Project</item>
@@ -62,11 +62,11 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="fadd_32ns_32ns_32_7_full_dsp_1_U126">fadd_32ns_32ns_32_7_full_dsp_1, 0, 2, 306, 231, 0</column>
-<column name="fadd_32ns_32ns_32_7_full_dsp_1_U127">fadd_32ns_32ns_32_7_full_dsp_1, 0, 2, 306, 231, 0</column>
-<column name="fcmp_32ns_32ns_1_2_no_dsp_1_U130">fcmp_32ns_32ns_1_2_no_dsp_1, 0, 0, 0, 0, 0</column>
-<column name="fmul_32ns_32ns_32_4_max_dsp_1_U128">fmul_32ns_32ns_32_4_max_dsp_1, 0, 3, 143, 140, 0</column>
-<column name="fmul_32ns_32ns_32_4_max_dsp_1_U129">fmul_32ns_32ns_32_4_max_dsp_1, 0, 3, 143, 140, 0</column>
+<column name="fadd_32ns_32ns_32_7_full_dsp_1_U95">fadd_32ns_32ns_32_7_full_dsp_1, 0, 2, 306, 231, 0</column>
+<column name="fadd_32ns_32ns_32_7_full_dsp_1_U96">fadd_32ns_32ns_32_7_full_dsp_1, 0, 2, 306, 231, 0</column>
+<column name="fcmp_32ns_32ns_1_2_no_dsp_1_U99">fcmp_32ns_32ns_1_2_no_dsp_1, 0, 0, 0, 0, 0</column>
+<column name="fmul_32ns_32ns_32_4_max_dsp_1_U97">fmul_32ns_32ns_32_4_max_dsp_1, 0, 3, 143, 140, 0</column>
+<column name="fmul_32ns_32ns_32_4_max_dsp_1_U98">fmul_32ns_32ns_32_4_max_dsp_1, 0, 3, 143, 140, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -324,15 +324,15 @@
 <column name="pad_img_ce1">out, 1, ap_memory, pad_img, array</column>
 <column name="pad_img_q1">in, 32, ap_memory, pad_img, array</column>
 <column name="w">in, 32, ap_none, w, scalar</column>
-<column name="w_13">in, 32, ap_none, w_13, scalar</column>
-<column name="w_3">in, 32, ap_none, w_3, scalar</column>
-<column name="w_4">in, 32, ap_none, w_4, scalar</column>
-<column name="w_5">in, 32, ap_none, w_5, scalar</column>
-<column name="w_6">in, 32, ap_none, w_6, scalar</column>
-<column name="w_7">in, 32, ap_none, w_7, scalar</column>
-<column name="w_8">in, 32, ap_none, w_8, scalar</column>
-<column name="w_9">in, 32, ap_none, w_9, scalar</column>
-<column name="conv5">in, 32, ap_none, conv5, scalar</column>
+<column name="w_33">in, 32, ap_none, w_33, scalar</column>
+<column name="w_34">in, 32, ap_none, w_34, scalar</column>
+<column name="w_35">in, 32, ap_none, w_35, scalar</column>
+<column name="w_36">in, 32, ap_none, w_36, scalar</column>
+<column name="w_37">in, 32, ap_none, w_37, scalar</column>
+<column name="w_38">in, 32, ap_none, w_38, scalar</column>
+<column name="w_39">in, 32, ap_none, w_39, scalar</column>
+<column name="w_40">in, 32, ap_none, w_40, scalar</column>
+<column name="biases_buf">in, 32, ap_none, biases_buf, scalar</column>
 <column name="conv_to_pool_streams_3_din">out, 32, ap_fifo, conv_to_pool_streams_3, pointer</column>
 <column name="conv_to_pool_streams_3_num_data_valid">in, 11, ap_fifo, conv_to_pool_streams_3, pointer</column>
 <column name="conv_to_pool_streams_3_fifo_cap">in, 11, ap_fifo, conv_to_pool_streams_3, pointer</column>

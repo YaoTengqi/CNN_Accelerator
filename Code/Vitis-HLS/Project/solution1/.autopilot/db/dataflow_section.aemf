@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1681977561415">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1681984697724">
   <ports id="1" name="pad_img" type="PortType" coreName="RAM_1WnR" coreId="24" bitwidth="32" iftype="IfTypeRegister" arraysize="900">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
@@ -18,61 +18,61 @@
   <ports id="6" name="pad_img5" type="PortType" coreName="RAM_1WnR" coreId="94" bitwidth="32" iftype="IfTypeRegister" arraysize="900">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="7" name="pad_img6" type="PortType" coreName="RAM_1WnR" coreId="1974836752" bitwidth="32" iftype="IfTypeRegister" arraysize="900">
+  <ports id="7" name="pad_img6" type="PortType" coreName="RAM_1WnR" coreId="2655882896" bitwidth="32" iftype="IfTypeRegister" arraysize="900">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="8" name="pad_img7" type="PortType" coreName="RAM_1WnR" coreId="38" bitwidth="32" iftype="IfTypeRegister" arraysize="900">
+  <ports id="8" name="pad_img7" type="PortType" coreName="RAM_1WnR" coreId="2655882896" bitwidth="32" iftype="IfTypeRegister" arraysize="900">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="9" name="weight_buf_0" type="PortType" coreName="RAM" coreId="1982260304" bitwidth="32" iftype="IfTypeRegister" arraysize="9">
+  <ports id="9" name="weight_buf_0" type="PortType" coreName="RAM" coreId="28" bitwidth="32" iftype="IfTypeRegister" arraysize="9">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="10" name="weight_buf_1" type="PortType" coreName="RAM" coreId="1985952720" bitwidth="32" iftype="IfTypeRegister" arraysize="9">
+  <ports id="10" name="weight_buf_1" type="PortType" coreName="RAM" coreId="2653058224" bitwidth="32" iftype="IfTypeRegister" arraysize="9">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="11" name="weight_buf_2" type="PortType" coreName="RAM" coreId="74" bitwidth="32" iftype="IfTypeRegister" arraysize="9">
+  <ports id="11" name="weight_buf_2" type="PortType" coreName="RAM" coreId="169" bitwidth="32" iftype="IfTypeRegister" arraysize="9">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="12" name="weight_buf_3" type="PortType" coreName="RAM" coreId="1976532352" bitwidth="32" iftype="IfTypeRegister" arraysize="9">
+  <ports id="12" name="weight_buf_3" type="PortType" coreName="RAM" coreId="2657486352" bitwidth="32" iftype="IfTypeRegister" arraysize="9">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="13" name="weight_buf_4" type="PortType" coreName="RAM" coreId="4294965292" bitwidth="32" iftype="IfTypeRegister" arraysize="9">
+  <ports id="13" name="weight_buf_4" type="PortType" coreName="RAM" coreId="2654033008" bitwidth="32" iftype="IfTypeRegister" arraysize="9">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="14" name="weight_buf_5" type="PortType" coreName="RAM" coreId="1988335424" bitwidth="32" iftype="IfTypeRegister" arraysize="9">
+  <ports id="14" name="weight_buf_5" type="PortType" coreName="RAM" coreId="2655516784" bitwidth="32" iftype="IfTypeRegister" arraysize="9">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="15" name="weight_buf_6" type="PortType" coreName="RAM" coreId="1984409600" bitwidth="32" iftype="IfTypeRegister" arraysize="9">
+  <ports id="15" name="weight_buf_6" type="PortType" coreName="RAM" coreId="2655485392" bitwidth="32" iftype="IfTypeRegister" arraysize="9">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="16" name="weight_buf_7" type="PortType" coreName="RAM" coreId="1982425280" bitwidth="32" iftype="IfTypeRegister" arraysize="9">
+  <ports id="16" name="weight_buf_7" type="PortType" coreName="RAM" coreId="48" bitwidth="32" iftype="IfTypeRegister" arraysize="9">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="17" name="biases_buf_0" type="PortType" coreId="1987367136" bitwidth="32">
+  <ports id="17" name="biases_buf_0" type="PortType" coreId="4294967289" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="18" name="biases_buf_1" type="PortType" coreId="1979982608" bitwidth="32">
+  <ports id="18" name="biases_buf_1" type="PortType" coreId="2653871328" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="19" name="biases_buf_2" type="PortType" coreId="33" bitwidth="32">
+  <ports id="19" name="biases_buf_2" type="PortType" coreId="2655435952" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="20" name="biases_buf_3" type="PortType" coreId="1979846656" bitwidth="32">
+  <ports id="20" name="biases_buf_3" type="PortType" coreId="4026532480" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="21" name="biases_buf_4" type="PortType" coreId="1984409984" bitwidth="32">
+  <ports id="21" name="biases_buf_4" type="PortType" coreId="2658301136" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="22" name="biases_buf_5" type="PortType" coreId="1985274432" bitwidth="32">
+  <ports id="22" name="biases_buf_5" type="PortType" coreId="2656119200" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="23" name="biases_buf_6" type="PortType" coreId="1975655920" bitwidth="32">
+  <ports id="23" name="biases_buf_6" type="PortType" coreId="167" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="24" name="biases_buf_7" type="PortType" coreId="1987909200" bitwidth="32">
+  <ports id="24" name="biases_buf_7" type="PortType" coreId="2647925936" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="25" name="prediction" type="PortType" coreName="RAM" coreId="1986192672" bitwidth="32" direction="DirInOut" iftype="IfTypeRegister" arraysize="10">
+  <ports id="25" name="prediction" type="PortType" coreName="RAM" coreId="2658908544" bitwidth="32" direction="DirInOut" iftype="IfTypeRegister" arraysize="10">
     <dataInputObjs>call</dataInputObjs>
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
@@ -266,35 +266,35 @@
   <edges id="-368" source_obj="//@regions.0/@basic_blocks.0/@node_objs.44" sink_obj="//@ports.24"/>
   <regions anchor_node="-1" region_type="16" typeName="Dataflow" iiViolation="" id="688" RegionName="dataflow_section">
     <basic_blocks id="219" name="dataflow_section" type="BlockType">
-      <node_objs xsi:type="cdfg:CdfgNode" id="109" name="biases_buf_7_read" coreId="1950764880" bitwidth="32" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="109" name="biases_buf_7_read" coreId="2655882896" bitwidth="32" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
         <dataInputObjs>biases_buf_7</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="110" name="biases_buf_6_read" coreId="1989556992" bitwidth="32" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="110" name="biases_buf_6_read" coreId="34" bitwidth="32" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
         <dataInputObjs>biases_buf_6</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="111" name="biases_buf_5_read" coreId="1989288528" bitwidth="32" opcode="read" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="111" name="biases_buf_5_read" coreId="2651186448" bitwidth="32" opcode="read" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
         <dataInputObjs>biases_buf_5</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="112" name="biases_buf_4_read" coreId="1986192336" bitwidth="32" opcode="read" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="112" name="biases_buf_4_read" coreId="2643669152" bitwidth="32" opcode="read" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
         <dataInputObjs>biases_buf_4</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="113" name="biases_buf_3_read" coreId="1989289456" bitwidth="32" opcode="read" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="113" name="biases_buf_3_read" coreId="2655882896" bitwidth="32" opcode="read" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
         <dataInputObjs>biases_buf_3</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="114" name="biases_buf_2_read" coreId="1982979104" bitwidth="32" opcode="read" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="114" name="biases_buf_2_read" coreId="2651186448" bitwidth="32" opcode="read" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
         <dataInputObjs>biases_buf_2</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="115" name="biases_buf_1_read" coreId="1979823360" bitwidth="32" opcode="read" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="115" name="biases_buf_1_read" coreId="2655352336" bitwidth="32" opcode="read" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
         <dataInputObjs>biases_buf_1</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="116" name="biases_buf_0_read" coreId="1988067008" bitwidth="32" opcode="read" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="116" name="biases_buf_0_read" coreId="2650997184" bitwidth="32" opcode="read" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
         <dataInputObjs>biases_buf_0</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
@@ -458,7 +458,7 @@
         <dataOutputObjs>call</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="213" name="_ln54" lineNumber="54" fileName="cnn.cc" fileDirectory=".." rtlName="convolutional_layer_U0" coreId="1978578816" opcode="call" nodeLatency="1" m_display="0" m_delay="6.18" m_topoIndex="41" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="213" name="_ln54" lineNumber="54" fileName="cnn.cc" fileDirectory=".." rtlName="convolutional_layer_U0" coreId="2649423248" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="cnn.cc" linenumber="54" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
         <dataInputObjs>pad_img</dataInputObjs>
         <dataInputObjs>pad_img1</dataInputObjs>
@@ -494,7 +494,7 @@
         <dataInputObjs>alloca</dataInputObjs>
         <constName>convolutional_layer</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="214" name="_ln76" lineNumber="76" fileName="cnn.cc" fileDirectory=".." rtlName="max_pooling_layer_U0" coreId="1978578816" opcode="call" nodeLabel="2.0" nodeLatency="1" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="214" name="_ln76" lineNumber="76" fileName="cnn.cc" fileDirectory=".." rtlName="max_pooling_layer_U0" coreId="116" opcode="call" nodeLabel="2.0" nodeLatency="1" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="cnn.cc" linenumber="76" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>alloca</dataInputObjs>
@@ -514,7 +514,7 @@
         <dataInputObjs>alloca</dataInputObjs>
         <constName>max_pooling_layer</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="215" name="_ln86" lineNumber="86" fileName="cnn.cc" fileDirectory=".." rtlName="flattening_layer_U0" coreId="47" opcode="call" nodeLabel="4.0" nodeLatency="1" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="215" name="_ln86" lineNumber="86" fileName="cnn.cc" fileDirectory=".." rtlName="flattening_layer_U0" coreId="774320735" opcode="call" nodeLabel="4.0" nodeLatency="1" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="cnn.cc" linenumber="86" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>alloca</dataInputObjs>
@@ -534,7 +534,7 @@
         <dataInputObjs>alloca</dataInputObjs>
         <constName>flattening_layer</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="216" name="_ln90" lineNumber="90" fileName="cnn.cc" fileDirectory=".." rtlName="dense_layer_U0" coreId="1978578816" opcode="call" nodeLabel="6.0" nodeLatency="1" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="216" name="_ln90" lineNumber="90" fileName="cnn.cc" fileDirectory=".." rtlName="dense_layer_U0" coreId="1330007625" opcode="call" nodeLabel="6.0" nodeLatency="1" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="cnn.cc" linenumber="90" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>alloca</dataInputObjs>
@@ -554,7 +554,7 @@
         <dataInputObjs>alloca</dataInputObjs>
         <constName>dense_layer</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="217" name="_ln93" lineNumber="93" fileName="cnn.cc" fileDirectory=".." rtlName="dense_layer_soft_max_U0" coreId="1978578816" opcode="call" nodeLabel="8.0" nodeLatency="1" m_display="0" m_topoIndex="45" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="217" name="_ln93" lineNumber="93" fileName="cnn.cc" fileDirectory=".." rtlName="dense_layer_soft_max_U0" coreId="2655712048" opcode="call" nodeLabel="8.0" nodeLatency="1" m_display="0" m_topoIndex="45" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="cnn.cc" linenumber="93" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>alloca</dataInputObjs>
@@ -568,7 +568,7 @@
         <dataOutputObjs>prediction</dataOutputObjs>
         <constName>dense_layer_soft_max</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="218" name="_ln94" lineNumber="94" fileName="cnn.cc" fileDirectory=".." coreId="1969384880" opcode="ret" nodeLabel="9.0" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="218" name="_ln94" lineNumber="94" fileName="cnn.cc" fileDirectory=".." coreId="2655713104" opcode="ret" nodeLabel="9.0" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="cnn.cc" linenumber="94" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
       </node_objs>
       <fileValidLineNumbers fileName="cnn.cc">
@@ -1296,7 +1296,7 @@
     </transitions>
   </fsm>
   <CFGRegionsRoot>
-    <cfgRegions mId="1" mTag="dataflow_section" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="4009" mMaxLatency="4009" mIsDfPipe="true">
+    <cfgRegions mId="1" mTag="dataflow_section" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="4003" mMaxLatency="4003" mIsDfPipe="true">
       <basicBlocks>219</basicBlocks>
       <mDfPipe allPipePinInst="//@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.0/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.4/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@channel_list.0/@sink.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@channel_list.8/@sink.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@channel_list.16/@sink.0/@inst">
         <processe_list name="convolutional_layer_U0" ssdmobj_id="213">

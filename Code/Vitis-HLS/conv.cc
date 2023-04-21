@@ -11,11 +11,12 @@ float relu (float x)
 }
 
 //int quantize_data(float value, float value_scale) {
-//    return static_cast<int>(round(value / value_scale * 10));  // ������������100��������λС��
+////    return static_cast<int>(round(value / value_scale * 10));
+//	return static_cast<int>(round(value));
 //}
 //
 //float dequantize(int quantized_value, float value_scale) {
-//    return static_cast<float>(quantized_value) * value_scale / 10;  // ������ת��Ϊ��������Ȼ�����100������ĩβ��0
+//    return static_cast<float>(quantized_value) * value_scale / 10;  //
 //}
 
 
@@ -29,9 +30,8 @@ convolution
   hls::stream<float> & conv_to_pool_stream
 )
 {
-  // ������������
-  float weight_scale = 0.5; // Ȩ��������������
-  float activation_scale = 0.2; // ����ֵ������������
+  float weight_scale = 0.5;
+  float activation_scale = 0.2;
 
   float w_sum = 0.0; // Weighted sum.
 
@@ -56,24 +56,24 @@ convolution
             {
 #pragma HLS PIPELINE
               float w     = weight_buf[kr][kc];
-              //����weight
+              //量化weight
 //              printf("before_weight:%f\n",w);
 //              int quantized_weight = quantize_data(w, weight_scale);
 //              printf("quantized_weight:%d\n",quantized_weight);
 //              float weight = dequantize(quantized_weight, weight_scale);
 //              printf("quantized_weight:%f\n",weight);
               float pixel = pad_img[r+wr+kr][c+wc+kc];
-//              w_sum +=  weight * pixel;
+//              w_sum +=  quantized_weight * pixel;
               	w_sum +=  w * pixel;
             }
           }
-          //����bias
+          //量化bias
 //          printf("before_bias:%f\n",biases_buf);
 //          int quantized_biases = quantize_data(biases_buf, activation_scale);
 //          printf("quantized_biases:%d\n",quantized_biases);
 //          float biases = dequantize(quantized_biases, activation_scale);
 //          printf("quantized_bias:%d\n",biases);
-//          conv_to_pool_stream.write(relu(w_sum + biases));
+//          conv_to_pool_stream.write(relu(w_sum + quantized_biases));
           conv_to_pool_stream.write(relu(w_sum + biases_buf));
         }
     }

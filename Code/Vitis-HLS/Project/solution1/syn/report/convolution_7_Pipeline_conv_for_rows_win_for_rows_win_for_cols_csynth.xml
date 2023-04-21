@@ -295,8 +295,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>conv1</name>
-<Object>conv1</Object>
+<name>biases_buf</name>
+<Object>biases_buf</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>

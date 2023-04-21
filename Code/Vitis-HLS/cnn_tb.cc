@@ -10,7 +10,7 @@
 #include <chrono>
 
 #define N 10000
-#define input_buf_num 250
+#define input_buf_num 100
 
 int read_images (const char * file, float images [input_buf_num][IMG_ROWS][IMG_COLS])
 {
@@ -57,11 +57,11 @@ int get_max_prediction (float prediction [DIGITS])
   return max_digit;
 }
 
-int8_t quantize_data(float value, float value_scale) {
-    return round(value / value_scale);
+int quantize_data(float value, float value_scale) {
+//    return static_cast<int>(round(value / value_scale * 10));
+	return static_cast<int>(round(value / value_scale));
 }
-
-float dequantize(int8_t quantized_value, float value_scale) {
+float dequantize(int quantized_value, float value_scale) {
     return quantized_value * value_scale;
 }
 
@@ -75,9 +75,8 @@ int main ()
     return 1;
   }
 
-  // ������������
-  float weight_scale = 0.5; // Ȩ��������������
-  float activation_scale = 0.2; // ����ֵ������������
+  float weight_scale = 0.5;
+  float activation_scale = 0.2;
 
   /**** Do N predictions. ****/
   double time = 0;
@@ -100,12 +99,13 @@ int main ()
       for (int kc = 0; kc < KRN_COLS; ++kc)
       {
 //    	printf("conv_weights:%f\n",conv_weights[f][kr][kc]);
-    	int8_t quantized_weight = quantize_data(conv_weights[f][kr][kc], weight_scale);
+    	int quantized_weight = quantize_data(conv_weights[f][kr][kc], weight_scale);
 //    	printf("quantized_weight:%d\n",quantized_weight);
-    	weight_buf[f][kr][kc] = dequantize(quantized_weight, weight_scale);
+    	weight_buf[f][kr][kc] = dequantize(quantized_weight, weight_scale);//进行反量化
 //    	printf("weight_buf:%f\n\n",weight_buf[f][kr][kc]);
 
-//    	weight_buf[f][kr][kc] = conv_weights[f][kr][kc];
+//    	weight_buf[f][kr][kc] = quantized_weight;//量化为INT类型
+//    	weight_buf[f][kr][kc] = conv_weights[f][kr][kc];//直接提取不进行量化
 
       }
     }
@@ -114,10 +114,10 @@ int main ()
    /**** Read the biases to biases_buf ****/
     for (int f = 0; f < FILTERS; ++f){
 #pragma HLS PIPELINE
-     int8_t quantized_bias = quantize_data(conv_biases[f], activation_scale);
-     biases_buf[f] = dequantize(quantized_bias, activation_scale);
-
-     biases_buf[f] = conv_biases[f];
+       int quantized_bias = quantize_data(conv_biases[f], activation_scale);
+       biases_buf[f] = dequantize(quantized_bias, activation_scale);//反量化
+//     biases_buf[f] = quantized_bias;//量化为INT类型
+//     biases_buf[f] = conv_biases[f];//直接提取不进行量化
     }
 
   /**** Read the images to images_buf ****/

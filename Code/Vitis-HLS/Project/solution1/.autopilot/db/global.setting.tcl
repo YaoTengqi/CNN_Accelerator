@@ -42,10 +42,10 @@ set SCTraceFileName mytrace
 set SCTraceFileFormat vcd
 set SCTraceOption all
 set TargetInfo xc7a200t:-fbg484:-1
-set SourceFiles {sc {} c {../../cnn.cc ../../conv.cc ../../dense.cc ../../flat.cc ../../pool.cc ../../utils.cc}}
+set SourceFiles {sc {} c {../../utils.cc ../../pool.cc ../../flat.cc ../../dense.cc ../../conv.cc ../../cnn.cc}}
 set SourceFlags {sc {} c {{} {} {} {} {} {}}}
 set DirectiveFile /home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS/Project/solution1/solution1.directive
-set TBFiles {verilog {../../cnn_tb.cc ../../../Data} bc {../../cnn_tb.cc ../../../Data} sc {../../cnn_tb.cc ../../../Data} vhdl {../../cnn_tb.cc ../../../Data} c {} cas {../../cnn_tb.cc ../../../Data}}
+set TBFiles {verilog {../../../Data ../../cnn_tb.cc} bc {../../../Data ../../cnn_tb.cc} sc {../../../Data ../../cnn_tb.cc} vhdl {../../../Data ../../cnn_tb.cc} c {} cas {../../../Data ../../cnn_tb.cc}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}

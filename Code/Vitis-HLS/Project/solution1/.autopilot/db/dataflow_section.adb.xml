@@ -73,7 +73,7 @@
 
 <Node id="109" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-entry:2 %biases_buf_7_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %biases_buf_7
+entry:2 %biases_buf_7_read = read i32 @_ssdm_op_Read.ap_auto.float, i32 %biases_buf_7
 
 ]]></Node>
 <StgValue><ssdm name="biases_buf_7_read"/></StgValue>
@@ -88,7 +88,7 @@ entry:2 %biases_buf_7_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %biases_bu
 
 <Node id="110" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-entry:3 %biases_buf_6_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %biases_buf_6
+entry:3 %biases_buf_6_read = read i32 @_ssdm_op_Read.ap_auto.float, i32 %biases_buf_6
 
 ]]></Node>
 <StgValue><ssdm name="biases_buf_6_read"/></StgValue>
@@ -103,7 +103,7 @@ entry:3 %biases_buf_6_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %biases_bu
 
 <Node id="111" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-entry:4 %biases_buf_5_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %biases_buf_5
+entry:4 %biases_buf_5_read = read i32 @_ssdm_op_Read.ap_auto.float, i32 %biases_buf_5
 
 ]]></Node>
 <StgValue><ssdm name="biases_buf_5_read"/></StgValue>
@@ -118,7 +118,7 @@ entry:4 %biases_buf_5_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %biases_bu
 
 <Node id="112" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-entry:5 %biases_buf_4_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %biases_buf_4
+entry:5 %biases_buf_4_read = read i32 @_ssdm_op_Read.ap_auto.float, i32 %biases_buf_4
 
 ]]></Node>
 <StgValue><ssdm name="biases_buf_4_read"/></StgValue>
@@ -133,7 +133,7 @@ entry:5 %biases_buf_4_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %biases_bu
 
 <Node id="113" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-entry:6 %biases_buf_3_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %biases_buf_3
+entry:6 %biases_buf_3_read = read i32 @_ssdm_op_Read.ap_auto.float, i32 %biases_buf_3
 
 ]]></Node>
 <StgValue><ssdm name="biases_buf_3_read"/></StgValue>
@@ -148,7 +148,7 @@ entry:6 %biases_buf_3_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %biases_bu
 
 <Node id="114" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-entry:7 %biases_buf_2_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %biases_buf_2
+entry:7 %biases_buf_2_read = read i32 @_ssdm_op_Read.ap_auto.float, i32 %biases_buf_2
 
 ]]></Node>
 <StgValue><ssdm name="biases_buf_2_read"/></StgValue>
@@ -163,7 +163,7 @@ entry:7 %biases_buf_2_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %biases_bu
 
 <Node id="115" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-entry:8 %biases_buf_1_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %biases_buf_1
+entry:8 %biases_buf_1_read = read i32 @_ssdm_op_Read.ap_auto.float, i32 %biases_buf_1
 
 ]]></Node>
 <StgValue><ssdm name="biases_buf_1_read"/></StgValue>
@@ -178,7 +178,7 @@ entry:8 %biases_buf_1_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %biases_bu
 
 <Node id="116" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-entry:9 %biases_buf_0_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %biases_buf_0
+entry:9 %biases_buf_0_read = read i32 @_ssdm_op_Read.ap_auto.float, i32 %biases_buf_0
 
 ]]></Node>
 <StgValue><ssdm name="biases_buf_0_read"/></StgValue>
@@ -2270,35 +2270,35 @@ entry:111 %ret_ln94 = ret
 
 
 <dataflows>
-<dataflow id="245" from="_ssdm_op_Read.ap_auto.i32" to="biases_buf_7_read" fromId="244" toId="11">
+<dataflow id="245" from="_ssdm_op_Read.ap_auto.float" to="biases_buf_7_read" fromId="244" toId="11">
 </dataflow>
 <dataflow id="246" from="biases_buf_7" to="biases_buf_7_read" fromId="161" toId="11">
 </dataflow>
-<dataflow id="247" from="_ssdm_op_Read.ap_auto.i32" to="biases_buf_6_read" fromId="244" toId="12">
+<dataflow id="247" from="_ssdm_op_Read.ap_auto.float" to="biases_buf_6_read" fromId="244" toId="12">
 </dataflow>
 <dataflow id="248" from="biases_buf_6" to="biases_buf_6_read" fromId="160" toId="12">
 </dataflow>
-<dataflow id="249" from="_ssdm_op_Read.ap_auto.i32" to="biases_buf_5_read" fromId="244" toId="13">
+<dataflow id="249" from="_ssdm_op_Read.ap_auto.float" to="biases_buf_5_read" fromId="244" toId="13">
 </dataflow>
 <dataflow id="250" from="biases_buf_5" to="biases_buf_5_read" fromId="159" toId="13">
 </dataflow>
-<dataflow id="251" from="_ssdm_op_Read.ap_auto.i32" to="biases_buf_4_read" fromId="244" toId="14">
+<dataflow id="251" from="_ssdm_op_Read.ap_auto.float" to="biases_buf_4_read" fromId="244" toId="14">
 </dataflow>
 <dataflow id="252" from="biases_buf_4" to="biases_buf_4_read" fromId="158" toId="14">
 </dataflow>
-<dataflow id="253" from="_ssdm_op_Read.ap_auto.i32" to="biases_buf_3_read" fromId="244" toId="15">
+<dataflow id="253" from="_ssdm_op_Read.ap_auto.float" to="biases_buf_3_read" fromId="244" toId="15">
 </dataflow>
 <dataflow id="254" from="biases_buf_3" to="biases_buf_3_read" fromId="157" toId="15">
 </dataflow>
-<dataflow id="255" from="_ssdm_op_Read.ap_auto.i32" to="biases_buf_2_read" fromId="244" toId="16">
+<dataflow id="255" from="_ssdm_op_Read.ap_auto.float" to="biases_buf_2_read" fromId="244" toId="16">
 </dataflow>
 <dataflow id="256" from="biases_buf_2" to="biases_buf_2_read" fromId="156" toId="16">
 </dataflow>
-<dataflow id="257" from="_ssdm_op_Read.ap_auto.i32" to="biases_buf_1_read" fromId="244" toId="17">
+<dataflow id="257" from="_ssdm_op_Read.ap_auto.float" to="biases_buf_1_read" fromId="244" toId="17">
 </dataflow>
 <dataflow id="258" from="biases_buf_1" to="biases_buf_1_read" fromId="155" toId="17">
 </dataflow>
-<dataflow id="259" from="_ssdm_op_Read.ap_auto.i32" to="biases_buf_0_read" fromId="244" toId="18">
+<dataflow id="259" from="_ssdm_op_Read.ap_auto.float" to="biases_buf_0_read" fromId="244" toId="18">
 </dataflow>
 <dataflow id="260" from="biases_buf_0" to="biases_buf_0_read" fromId="154" toId="18">
 </dataflow>

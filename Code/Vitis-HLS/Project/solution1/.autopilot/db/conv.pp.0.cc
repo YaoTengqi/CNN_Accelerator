@@ -299,8 +299,8 @@ void
 convolution
 (
   float pad_img [(28 + (3 - 1))][(28 + (3 - 1))],
-  int weight_buf[3][3],
-  int biases_buf,
+  float weight_buf[3][3],
+  float biases_buf,
   int filter,
   hls::stream<float> & conv_to_pool_stream
 );
@@ -315,22 +315,22 @@ void convolutional_layer
   float pad_img5 [(28 + (3 - 1))][(28 + (3 - 1))],
   float pad_img6 [(28 + (3 - 1))][(28 + (3 - 1))],
   float pad_img7 [(28 + (3 - 1))][(28 + (3 - 1))],
-  int weight_buf_0[3][3],
-  int weight_buf_1[3][3],
-  int weight_buf_2[3][3],
-  int weight_buf_3[3][3],
-  int weight_buf_4[3][3],
-  int weight_buf_5[3][3],
-  int weight_buf_6[3][3],
-  int weight_buf_7[3][3],
-  int biases_buf_0,
-  int biases_buf_1,
-  int biases_buf_2,
-  int biases_buf_3,
-  int biases_buf_4,
-  int biases_buf_5,
-  int biases_buf_6,
-  int biases_buf_7,
+  float weight_buf_0[3][3],
+  float weight_buf_1[3][3],
+  float weight_buf_2[3][3],
+  float weight_buf_3[3][3],
+  float weight_buf_4[3][3],
+  float weight_buf_5[3][3],
+  float weight_buf_6[3][3],
+  float weight_buf_7[3][3],
+  float biases_buf_0,
+  float biases_buf_1,
+  float biases_buf_2,
+  float biases_buf_3,
+  float biases_buf_4,
+  float biases_buf_5,
+  float biases_buf_6,
+  float biases_buf_7,
   hls::stream<float> conv_to_pool_streams [8]
 );
 # 2 "conv.cc" 2
@@ -6342,18 +6342,17 @@ float relu (float x)
   else
     return 0.0;
 }
-# 22 "conv.cc"
+# 23 "conv.cc"
 void
 convolution
 (
   float pad_img [(28 + (3 - 1))][(28 + (3 - 1))],
-  int weight_buf[3][3],
-  int biases_buf,
+  float weight_buf[3][3],
+  float biases_buf,
   int filter,
   hls::stream<float> & conv_to_pool_stream
 )
 {
-
   float weight_scale = 0.5;
   float activation_scale = 0.2;
 
@@ -6419,22 +6418,22 @@ convolutional_layer
   float pad_img5 [(28 + (3 - 1))][(28 + (3 - 1))],
   float pad_img6 [(28 + (3 - 1))][(28 + (3 - 1))],
   float pad_img7 [(28 + (3 - 1))][(28 + (3 - 1))],
-  int weight_buf_0[3][3],
-  int weight_buf_1[3][3],
-  int weight_buf_2[3][3],
-  int weight_buf_3[3][3],
-  int weight_buf_4[3][3],
-  int weight_buf_5[3][3],
-  int weight_buf_6[3][3],
-  int weight_buf_7[3][3],
-  int biases_buf_0,
-  int biases_buf_1,
-  int biases_buf_2,
-  int biases_buf_3,
-  int biases_buf_4,
-  int biases_buf_5,
-  int biases_buf_6,
-  int biases_buf_7,
+  float weight_buf_0[3][3],
+  float weight_buf_1[3][3],
+  float weight_buf_2[3][3],
+  float weight_buf_3[3][3],
+  float weight_buf_4[3][3],
+  float weight_buf_5[3][3],
+  float weight_buf_6[3][3],
+  float weight_buf_7[3][3],
+  float biases_buf_0,
+  float biases_buf_1,
+  float biases_buf_2,
+  float biases_buf_3,
+  float biases_buf_4,
+  float biases_buf_5,
+  float biases_buf_6,
+  float biases_buf_7,
   hls::stream<float> conv_to_pool_streams [8]
 )
 {
