@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1681984684611">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1682070415217">
   <ports id="1" name="conv_to_pool_streams_1" type="PortType" coreName="FIFO" coreId="464" bitwidth="32" iftype="IfTypeRom">
     <dataOutputObjs>read</dataOutputObjs>
     <dataOutputObjs>read</dataOutputObjs>
@@ -120,18 +120,18 @@
   <edges id="316" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.63"/>
   <blocks id="8" name="entry" type="BlockType">
     <controlOutputObjs>for.body12</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="3" name="indvar_flatten" coreId="3746878720" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="3" name="indvar_flatten" coreId="614706976" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
       <dataOutputObjs>store</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="6" name="indvar_flatten_write_ln15" lineNumber="15" fileName="pool.cc" fileDirectory=".." coreId="2627470480" contextFuncName="max_pooling" opcode="store" m_display="0" m_delay="1.61" m_topoIndex="2" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="6" name="indvar_flatten_write_ln15" lineNumber="15" fileName="pool.cc" fileDirectory=".." coreId="614667552" contextFuncName="max_pooling" opcode="store" m_display="0" m_delay="1.61" m_topoIndex="2" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pool.cc" linenumber="15" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="max_pooling"/>
       <dataInputObjs>alloca</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="br_ln15" lineNumber="15" fileName="pool.cc" fileDirectory=".." coreId="2628018560" contextFuncName="max_pooling" opcode="br" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="br_ln15" lineNumber="15" fileName="pool.cc" fileDirectory=".." coreId="609222816" contextFuncName="max_pooling" opcode="br" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pool.cc" linenumber="15" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="max_pooling"/>
       <controlInputObjs>for.body12</controlInputObjs>
     </node_objs>
@@ -142,7 +142,7 @@
   <blocks id="85" name="for.end21" type="BlockType">
     <controlInputObjs>for.body12</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="84" name="_ln35" lineNumber="35" fileName="pool.cc" fileDirectory=".." coreId="0" contextFuncName="max_pooling" opcode="ret" nodeLabel="6.0" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="84" name="_ln35" lineNumber="35" fileName="pool.cc" fileDirectory=".." coreId="607091856" contextFuncName="max_pooling" opcode="ret" nodeLabel="6.0" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="pool.cc" linenumber="35" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="max_pooling"/>
     </node_objs>
     <fileValidLineNumbers fileName="pool.cc">
@@ -157,7 +157,7 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>for.end21</controlOutputObjs>
       <controlOutputObjs>for.inc19</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="9" name="indvar_flatten_load" lineNumber="15" fileName="pool.cc" fileDirectory=".." coreId="2618372960" contextFuncName="max_pooling" bitwidth="8" opcode="load" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="9" name="indvar_flatten_load" lineNumber="15" fileName="pool.cc" fileDirectory=".." coreId="1733243904" contextFuncName="max_pooling" bitwidth="8" opcode="load" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="pool.cc" linenumber="15" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="max_pooling"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
@@ -175,7 +175,7 @@
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="12" name="br_ln15" lineNumber="15" fileName="pool.cc" fileDirectory=".." coreId="0" contextFuncName="max_pooling" opcode="br" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="12" name="br_ln15" lineNumber="15" fileName="pool.cc" fileDirectory=".." coreId="612533808" contextFuncName="max_pooling" opcode="br" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="pool.cc" linenumber="15" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="max_pooling"/>
         <dataInputObjs>icmp</dataInputObjs>
         <controlInputObjs>for.inc19</controlInputObjs>
@@ -196,19 +196,19 @@
         <dataOutputObjs>partselect</dataOutputObjs>
         <dataOutputObjs>trunc</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="value" lineNumber="27" originalName="value" fileName="pool.cc" fileDirectory=".." rtlName="value_fu_123_p1" coreId="2627133184" bitwidth="32" opcode="bitcast" nodeLabel="1.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="value" lineNumber="27" originalName="value" fileName="pool.cc" fileDirectory=".." rtlName="value_fu_123_p1" coreId="612034224" bitwidth="32" opcode="bitcast" nodeLabel="1.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="pool.cc" linenumber="27" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>fcmp</dataOutputObjs>
         <dataOutputObjs>select</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="tmp" lineNumber="28" fileName="pool.cc" fileDirectory=".." rtlName="grp_fu_74_p4" coreId="2626019168" bitwidth="8" opcode="partselect" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="tmp" lineNumber="28" fileName="pool.cc" fileDirectory=".." rtlName="grp_fu_74_p4" coreId="1936942413" bitwidth="8" opcode="partselect" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="pool.cc" linenumber="28" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="trunc_ln28" lineNumber="28" fileName="pool.cc" fileDirectory=".." rtlName="trunc_ln28_fu_114_p1" coreId="2626020048" bitwidth="23" opcode="trunc" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="trunc_ln28" lineNumber="28" fileName="pool.cc" fileDirectory=".." rtlName="trunc_ln28_fu_114_p1" coreId="613704096" bitwidth="23" opcode="trunc" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="pool.cc" linenumber="28" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
@@ -259,36 +259,36 @@
         <dataOutputObjs>partselect</dataOutputObjs>
         <dataOutputObjs>trunc</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="value_4" lineNumber="27" originalName="value" fileName="pool.cc" fileDirectory=".." rtlName="value_4_fu_170_p1" coreId="2625961992" bitwidth="32" opcode="bitcast" nodeLabel="3.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="value_4" lineNumber="27" originalName="value" fileName="pool.cc" fileDirectory=".." rtlName="value_4_fu_170_p1" coreId="605228176" bitwidth="32" opcode="bitcast" nodeLabel="3.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="pool.cc" linenumber="27" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>fcmp</dataOutputObjs>
         <dataOutputObjs>select</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="tmp_1" lineNumber="28" fileName="pool.cc" fileDirectory=".." rtlName="grp_fu_74_p4" coreId="2625047600" bitwidth="8" opcode="partselect" nodeLabel="1.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="tmp_1" lineNumber="28" fileName="pool.cc" fileDirectory=".." rtlName="grp_fu_74_p4" coreId="605229056" bitwidth="8" opcode="partselect" nodeLabel="1.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="pool.cc" linenumber="28" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="trunc_ln28_7" lineNumber="28" fileName="pool.cc" fileDirectory=".." rtlName="trunc_ln28_7_fu_133_p1" coreId="2622821392" bitwidth="23" opcode="trunc" nodeLabel="1.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="trunc_ln28_7" lineNumber="28" fileName="pool.cc" fileDirectory=".." rtlName="trunc_ln28_7_fu_133_p1" coreId="609990560" bitwidth="23" opcode="trunc" nodeLabel="1.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="pool.cc" linenumber="28" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="bitcast_ln28" lineNumber="28" fileName="pool.cc" fileDirectory=".." rtlName="bitcast_ln28_fu_185_p1" coreId="2625048080" bitwidth="32" opcode="bitcast" nodeLabel="4.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="bitcast_ln28" lineNumber="28" fileName="pool.cc" fileDirectory=".." rtlName="bitcast_ln28_fu_185_p1" coreId="610798880" bitwidth="32" opcode="bitcast" nodeLabel="4.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="pool.cc" linenumber="28" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>partselect</dataOutputObjs>
         <dataOutputObjs>trunc</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="tmp_2" lineNumber="28" fileName="pool.cc" fileDirectory=".." rtlName="tmp_2_fu_188_p4" coreId="2625048960" bitwidth="8" opcode="partselect" nodeLabel="4.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="tmp_2" lineNumber="28" fileName="pool.cc" fileDirectory=".." rtlName="tmp_2_fu_188_p4" coreId="607136256" bitwidth="8" opcode="partselect" nodeLabel="4.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="pool.cc" linenumber="28" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
         <dataInputObjs>bitcast</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="trunc_ln28_8" lineNumber="28" fileName="pool.cc" fileDirectory=".." rtlName="trunc_ln28_8_fu_198_p1" coreId="2625448768" bitwidth="23" opcode="trunc" nodeLabel="4.0" m_display="0" m_topoIndex="38" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="trunc_ln28_8" lineNumber="28" fileName="pool.cc" fileDirectory=".." rtlName="trunc_ln28_8_fu_198_p1" coreId="609991008" bitwidth="23" opcode="trunc" nodeLabel="4.0" m_display="0" m_topoIndex="38" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="pool.cc" linenumber="28" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
         <dataInputObjs>bitcast</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
@@ -363,36 +363,36 @@
         <dataOutputObjs>partselect</dataOutputObjs>
         <dataOutputObjs>trunc</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="value_5" lineNumber="27" originalName="value" fileName="pool.cc" fileDirectory=".." rtlName="value_5_fu_242_p1" coreId="2626876880" bitwidth="32" opcode="bitcast" nodeLabel="6.0" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="value_5" lineNumber="27" originalName="value" fileName="pool.cc" fileDirectory=".." rtlName="value_5_fu_242_p1" coreId="612515536" bitwidth="32" opcode="bitcast" nodeLabel="6.0" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="pool.cc" linenumber="27" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>fcmp</dataOutputObjs>
         <dataOutputObjs>select</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="tmp_4" lineNumber="28" fileName="pool.cc" fileDirectory=".." rtlName="grp_fu_74_p4" coreId="6775156" bitwidth="8" opcode="partselect" nodeLabel="2.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="tmp_4" lineNumber="28" fileName="pool.cc" fileDirectory=".." rtlName="grp_fu_74_p4" coreId="613703744" bitwidth="8" opcode="partselect" nodeLabel="2.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="pool.cc" linenumber="28" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="trunc_ln28_9" lineNumber="28" fileName="pool.cc" fileDirectory=".." rtlName="trunc_ln28_9_fu_160_p1" coreId="2625049120" bitwidth="23" opcode="trunc" nodeLabel="2.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="trunc_ln28_9" lineNumber="28" fileName="pool.cc" fileDirectory=".." rtlName="trunc_ln28_9_fu_160_p1" coreId="544108393" bitwidth="23" opcode="trunc" nodeLabel="2.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="pool.cc" linenumber="28" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="bitcast_ln28_3" lineNumber="28" fileName="pool.cc" fileDirectory=".." rtlName="bitcast_ln28_3_fu_246_p1" coreId="1869833586" bitwidth="32" opcode="bitcast" nodeLabel="7.0" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="bitcast_ln28_3" lineNumber="28" fileName="pool.cc" fileDirectory=".." rtlName="bitcast_ln28_3_fu_246_p1" coreId="613504944" bitwidth="32" opcode="bitcast" nodeLabel="7.0" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="pool.cc" linenumber="28" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>partselect</dataOutputObjs>
         <dataOutputObjs>trunc</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="50" name="tmp_5" lineNumber="28" fileName="pool.cc" fileDirectory=".." rtlName="tmp_5_fu_249_p4" coreId="2625371040" bitwidth="8" opcode="partselect" nodeLabel="7.0" m_display="0" m_topoIndex="50" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="50" name="tmp_5" lineNumber="28" fileName="pool.cc" fileDirectory=".." rtlName="tmp_5_fu_249_p4" coreId="614432160" bitwidth="8" opcode="partselect" nodeLabel="7.0" m_display="0" m_topoIndex="50" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="pool.cc" linenumber="28" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
         <dataInputObjs>bitcast</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="51" name="trunc_ln28_10" lineNumber="28" fileName="pool.cc" fileDirectory=".." rtlName="trunc_ln28_10_fu_259_p1" coreId="2624103328" bitwidth="23" opcode="trunc" nodeLabel="7.0" m_display="0" m_topoIndex="51" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="51" name="trunc_ln28_10" lineNumber="28" fileName="pool.cc" fileDirectory=".." rtlName="trunc_ln28_10_fu_259_p1" coreId="1936942413" bitwidth="23" opcode="trunc" nodeLabel="7.0" m_display="0" m_topoIndex="51" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="pool.cc" linenumber="28" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
         <dataInputObjs>bitcast</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
@@ -467,36 +467,36 @@
         <dataOutputObjs>partselect</dataOutputObjs>
         <dataOutputObjs>trunc</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="63" name="value_6" lineNumber="27" originalName="value" fileName="pool.cc" fileDirectory=".." rtlName="value_6_fu_303_p1" coreId="2626876752" bitwidth="32" opcode="bitcast" nodeLabel="8.0" m_display="0" m_topoIndex="59" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="63" name="value_6" lineNumber="27" originalName="value" fileName="pool.cc" fileDirectory=".." rtlName="value_6_fu_303_p1" coreId="610039024" bitwidth="32" opcode="bitcast" nodeLabel="8.0" m_display="0" m_topoIndex="59" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="pool.cc" linenumber="27" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>fcmp</dataOutputObjs>
         <dataOutputObjs>select</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="64" name="tmp_7" lineNumber="28" fileName="pool.cc" fileDirectory=".." rtlName="grp_fu_74_p4" coreId="1819113532" bitwidth="8" opcode="partselect" nodeLabel="3.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="64" name="tmp_7" lineNumber="28" fileName="pool.cc" fileDirectory=".." rtlName="grp_fu_74_p4" coreId="613703744" bitwidth="8" opcode="partselect" nodeLabel="3.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="pool.cc" linenumber="28" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="65" name="trunc_ln28_11" lineNumber="28" fileName="pool.cc" fileDirectory=".." rtlName="trunc_ln28_11_fu_175_p1" coreId="2625387024" bitwidth="23" opcode="trunc" nodeLabel="3.0" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="65" name="trunc_ln28_11" lineNumber="28" fileName="pool.cc" fileDirectory=".." rtlName="trunc_ln28_11_fu_175_p1" coreId="0" bitwidth="23" opcode="trunc" nodeLabel="3.0" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="pool.cc" linenumber="28" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="66" name="bitcast_ln28_4" lineNumber="28" fileName="pool.cc" fileDirectory=".." rtlName="bitcast_ln28_4_fu_307_p1" coreId="2625388512" bitwidth="32" opcode="bitcast" nodeLabel="9.0" m_display="0" m_topoIndex="61" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="66" name="bitcast_ln28_4" lineNumber="28" fileName="pool.cc" fileDirectory=".." rtlName="bitcast_ln28_4_fu_307_p1" coreId="611521808" bitwidth="32" opcode="bitcast" nodeLabel="9.0" m_display="0" m_topoIndex="61" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="pool.cc" linenumber="28" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>partselect</dataOutputObjs>
         <dataOutputObjs>trunc</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="67" name="tmp_8" lineNumber="28" fileName="pool.cc" fileDirectory=".." rtlName="tmp_8_fu_310_p4" coreId="2623423888" bitwidth="8" opcode="partselect" nodeLabel="9.0" m_display="0" m_topoIndex="62" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="67" name="tmp_8" lineNumber="28" fileName="pool.cc" fileDirectory=".." rtlName="tmp_8_fu_310_p4" coreId="1717924464" bitwidth="8" opcode="partselect" nodeLabel="9.0" m_display="0" m_topoIndex="62" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="pool.cc" linenumber="28" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
         <dataInputObjs>bitcast</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="68" name="trunc_ln28_12" lineNumber="28" fileName="pool.cc" fileDirectory=".." rtlName="trunc_ln28_12_fu_320_p1" coreId="2622003472" bitwidth="23" opcode="trunc" nodeLabel="9.0" m_display="0" m_topoIndex="63" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="68" name="trunc_ln28_12" lineNumber="28" fileName="pool.cc" fileDirectory=".." rtlName="trunc_ln28_12_fu_320_p1" coreId="613703744" bitwidth="23" opcode="trunc" nodeLabel="9.0" m_display="0" m_topoIndex="63" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="pool.cc" linenumber="28" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
         <dataInputObjs>bitcast</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
@@ -562,7 +562,7 @@
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>bitcast</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="79" name="bitcast_ln32" lineNumber="32" fileName="pool.cc" fileDirectory=".." rtlName="pool_to_flat_streams_1_din" coreId="111" bitwidth="32" opcode="bitcast" nodeLabel="10.0" m_display="0" m_topoIndex="71" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="79" name="bitcast_ln32" lineNumber="32" fileName="pool.cc" fileDirectory=".." rtlName="pool_to_flat_streams_1_din" coreId="613703744" bitwidth="32" opcode="bitcast" nodeLabel="10.0" m_display="0" m_topoIndex="71" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="pool.cc" linenumber="32" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>write</dataOutputObjs>
@@ -572,12 +572,12 @@
         <dataInputObjs>bitcast</dataInputObjs>
         <dataOutputObjs>pool_to_flat_streams_1</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="81" name="indvar_flatten_write_ln18" lineNumber="18" fileName="pool.cc" fileDirectory=".." coreId="2627593232" opcode="store" m_display="0" m_delay="1.61" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="81" name="indvar_flatten_write_ln18" lineNumber="18" fileName="pool.cc" fileDirectory=".." coreId="610793664" opcode="store" m_display="0" m_delay="1.61" m_topoIndex="12" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="pool.cc" linenumber="18" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
         <dataInputObjs>add</dataInputObjs>
         <dataInputObjs>alloca</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="82" name="br_ln18" lineNumber="18" fileName="pool.cc" fileDirectory=".." coreId="0" opcode="br" nodeLabel="10.0" m_display="0" m_topoIndex="73" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="82" name="br_ln18" lineNumber="18" fileName="pool.cc" fileDirectory=".." coreId="610795352" opcode="br" nodeLabel="10.0" m_display="0" m_topoIndex="73" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="pool.cc" linenumber="18" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
         <controlInputObjs>for.body12</controlInputObjs>
       </node_objs>

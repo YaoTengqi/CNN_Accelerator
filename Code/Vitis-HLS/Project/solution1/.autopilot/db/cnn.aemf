@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1681984702564">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1682070432617">
   <ports id="1" name="img_in" type="PortType" originalName="img_in" coreName="RAM" coreId="126" bitwidth="32" iftype="IfTypeRegister" arraysize="784">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
@@ -294,12 +294,12 @@
       <dataOutputObjs>call</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="111" name="_ln0" rtlName="grp_cnn_Pipeline_pad_for_rows_pad_for_cols_fu_369" coreId="2660492808" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="111" name="_ln0" rtlName="grp_cnn_Pipeline_pad_for_rows_pad_for_cols_fu_369" coreId="641462432" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>img_in</dataInputObjs>
       <constName>cnn_Pipeline_pad_for_rows_pad_for_cols</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="112" name="_ln0" rtlName="grp_cnn_Pipeline_clone_for_rows_clone_for_cols_fu_385" coreId="2658911512" opcode="call" nodeLabel="2.0" nodeLatency="1" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="112" name="_ln0" rtlName="grp_cnn_Pipeline_clone_for_rows_clone_for_cols_fu_385" coreId="636307056" opcode="call" nodeLabel="2.0" nodeLatency="1" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
@@ -310,47 +310,47 @@
       <dataInputObjs>alloca</dataInputObjs>
       <constName>cnn_Pipeline_clone_for_rows_clone_for_cols</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="113" name="_ln0" rtlName="grp_cnn_Pipeline_3_fu_377" coreId="2658607000" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="113" name="_ln0" rtlName="grp_cnn_Pipeline_3_fu_377" coreId="641826928" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>weight_buf</dataInputObjs>
       <constName>cnn_Pipeline_3</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="114" name="_ln0" rtlName="grp_cnn_Pipeline_4_fu_397" coreId="2650373952" opcode="call" nodeLabel="2.0" nodeLatency="1" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="114" name="_ln0" rtlName="grp_cnn_Pipeline_4_fu_397" coreId="634193728" opcode="call" nodeLabel="2.0" nodeLatency="1" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>weight_buf</dataInputObjs>
       <constName>cnn_Pipeline_4</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="115" name="_ln0" rtlName="grp_cnn_Pipeline_5_fu_404" coreId="2658141312" opcode="call" nodeLabel="4.0" nodeLatency="1" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="115" name="_ln0" rtlName="grp_cnn_Pipeline_5_fu_404" coreId="643373216" opcode="call" nodeLabel="4.0" nodeLatency="1" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>weight_buf</dataInputObjs>
       <constName>cnn_Pipeline_5</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="116" name="_ln0" rtlName="grp_cnn_Pipeline_6_fu_411" coreId="2656097360" opcode="call" nodeLabel="6.0" nodeLatency="1" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="116" name="_ln0" rtlName="grp_cnn_Pipeline_6_fu_411" coreId="643372872" opcode="call" nodeLabel="6.0" nodeLatency="1" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>weight_buf</dataInputObjs>
       <constName>cnn_Pipeline_6</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="117" name="_ln0" rtlName="grp_cnn_Pipeline_7_fu_418" coreId="2656097360" opcode="call" nodeLabel="8.0" nodeLatency="1" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="117" name="_ln0" rtlName="grp_cnn_Pipeline_7_fu_418" coreId="643373304" opcode="call" nodeLabel="8.0" nodeLatency="1" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>weight_buf</dataInputObjs>
       <constName>cnn_Pipeline_7</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="118" name="_ln0" rtlName="grp_cnn_Pipeline_8_fu_425" coreId="0" opcode="call" nodeLabel="10.0" nodeLatency="1" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="118" name="_ln0" rtlName="grp_cnn_Pipeline_8_fu_425" coreId="1851992096" opcode="call" nodeLabel="10.0" nodeLatency="1" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>weight_buf</dataInputObjs>
       <constName>cnn_Pipeline_8</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="119" name="_ln0" rtlName="grp_cnn_Pipeline_9_fu_432" coreId="2658911200" opcode="call" nodeLabel="12.0" nodeLatency="1" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="119" name="_ln0" rtlName="grp_cnn_Pipeline_9_fu_432" coreId="542329928" opcode="call" nodeLabel="12.0" nodeLatency="1" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>weight_buf</dataInputObjs>
       <constName>cnn_Pipeline_9</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="120" name="_ln0" rtlName="grp_cnn_Pipeline_10_fu_439" coreId="2657706240" opcode="call" nodeLabel="14.0" nodeLatency="1" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="120" name="_ln0" rtlName="grp_cnn_Pipeline_10_fu_439" coreId="633011456" opcode="call" nodeLabel="14.0" nodeLatency="1" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>weight_buf</dataInputObjs>
       <constName>cnn_Pipeline_10</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="121" name="biases_buf_addr" lineNumber="169" fileName="cnn.cc" fileDirectory=".." coreId="2658141312" contextFuncName="cnn" bitwidth="3" opcode="getelementptr" nodeLabel="12.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="121" name="biases_buf_addr" lineNumber="169" fileName="cnn.cc" fileDirectory=".." coreId="640290512" contextFuncName="cnn" bitwidth="3" opcode="getelementptr" nodeLabel="12.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="cnn.cc" linenumber="169" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="cnn"/>
       <dataInputObjs>biases_buf</dataInputObjs>
       <dataOutputObjs>load</dataOutputObjs>
@@ -361,12 +361,12 @@
       <dataInputObjs>getelementptr</dataInputObjs>
       <dataOutputObjs>bitcast</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="123" name="biases_buf_0" lineNumber="169" originalName="biases_buf_0" fileName="cnn.cc" fileDirectory=".." rtlName="biases_buf_0_fu_638_p1" coreId="2656097360" contextFuncName="cnn" bitwidth="32" opcode="bitcast" nodeLabel="16.0" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="123" name="biases_buf_0" lineNumber="169" originalName="biases_buf_0" fileName="cnn.cc" fileDirectory=".." rtlName="biases_buf_0_fu_638_p1" coreId="640290512" contextFuncName="cnn" bitwidth="32" opcode="bitcast" nodeLabel="16.0" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="cnn.cc" linenumber="169" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="cnn"/>
       <dataInputObjs>load</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="124" name="biases_buf_addr_1" lineNumber="170" fileName="cnn.cc" fileDirectory=".." coreId="2653852768" contextFuncName="cnn" bitwidth="3" opcode="getelementptr" nodeLabel="12.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="124" name="biases_buf_addr_1" lineNumber="170" fileName="cnn.cc" fileDirectory=".." coreId="645952392" contextFuncName="cnn" bitwidth="3" opcode="getelementptr" nodeLabel="12.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="cnn.cc" linenumber="170" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="cnn"/>
       <dataInputObjs>biases_buf</dataInputObjs>
       <dataOutputObjs>load</dataOutputObjs>
@@ -377,12 +377,12 @@
       <dataInputObjs>getelementptr</dataInputObjs>
       <dataOutputObjs>bitcast</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="126" name="biases_buf_1" lineNumber="170" originalName="biases_buf_1" fileName="cnn.cc" fileDirectory=".." rtlName="biases_buf_1_fu_642_p1" coreId="2650343152" contextFuncName="cnn" bitwidth="32" opcode="bitcast" nodeLabel="16.0" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="126" name="biases_buf_1" lineNumber="170" originalName="biases_buf_1" fileName="cnn.cc" fileDirectory=".." rtlName="biases_buf_1_fu_642_p1" coreId="640290512" contextFuncName="cnn" bitwidth="32" opcode="bitcast" nodeLabel="16.0" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="cnn.cc" linenumber="170" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="cnn"/>
       <dataInputObjs>load</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="127" name="biases_buf_addr_2" lineNumber="171" fileName="cnn.cc" fileDirectory=".." coreId="2655398600" contextFuncName="cnn" bitwidth="3" opcode="getelementptr" nodeLabel="13.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="127" name="biases_buf_addr_2" lineNumber="171" fileName="cnn.cc" fileDirectory=".." coreId="627442464" contextFuncName="cnn" bitwidth="3" opcode="getelementptr" nodeLabel="13.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="cnn.cc" linenumber="171" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="cnn"/>
       <dataInputObjs>biases_buf</dataInputObjs>
       <dataOutputObjs>load</dataOutputObjs>
@@ -393,12 +393,12 @@
       <dataInputObjs>getelementptr</dataInputObjs>
       <dataOutputObjs>bitcast</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="129" name="biases_buf_2" lineNumber="171" originalName="biases_buf_2" fileName="cnn.cc" fileDirectory=".." rtlName="biases_buf_2_fu_646_p1" coreId="2658077936" contextFuncName="cnn" bitwidth="32" opcode="bitcast" nodeLabel="16.0" m_display="0" m_topoIndex="45" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="129" name="biases_buf_2" lineNumber="171" originalName="biases_buf_2" fileName="cnn.cc" fileDirectory=".." rtlName="biases_buf_2_fu_646_p1" coreId="647183616" contextFuncName="cnn" bitwidth="32" opcode="bitcast" nodeLabel="16.0" m_display="0" m_topoIndex="45" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="cnn.cc" linenumber="171" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="cnn"/>
       <dataInputObjs>load</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="130" name="biases_buf_addr_3" lineNumber="172" fileName="cnn.cc" fileDirectory=".." coreId="2651578240" contextFuncName="cnn" bitwidth="3" opcode="getelementptr" nodeLabel="13.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="130" name="biases_buf_addr_3" lineNumber="172" fileName="cnn.cc" fileDirectory=".." coreId="647183616" contextFuncName="cnn" bitwidth="3" opcode="getelementptr" nodeLabel="13.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="cnn.cc" linenumber="172" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="cnn"/>
       <dataInputObjs>biases_buf</dataInputObjs>
       <dataOutputObjs>load</dataOutputObjs>
@@ -409,12 +409,12 @@
       <dataInputObjs>getelementptr</dataInputObjs>
       <dataOutputObjs>bitcast</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="132" name="biases_buf_3" lineNumber="172" originalName="biases_buf_3" fileName="cnn.cc" fileDirectory=".." rtlName="biases_buf_3_fu_650_p1" coreId="2648588672" contextFuncName="cnn" bitwidth="32" opcode="bitcast" nodeLabel="16.0" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="132" name="biases_buf_3" lineNumber="172" originalName="biases_buf_3" fileName="cnn.cc" fileDirectory=".." rtlName="biases_buf_3_fu_650_p1" coreId="647183616" contextFuncName="cnn" bitwidth="32" opcode="bitcast" nodeLabel="16.0" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="cnn.cc" linenumber="172" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="cnn"/>
       <dataInputObjs>load</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="133" name="biases_buf_addr_4" lineNumber="173" fileName="cnn.cc" fileDirectory=".." coreId="2655115632" contextFuncName="cnn" bitwidth="3" opcode="getelementptr" nodeLabel="14.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="133" name="biases_buf_addr_4" lineNumber="173" fileName="cnn.cc" fileDirectory=".." coreId="647183616" contextFuncName="cnn" bitwidth="3" opcode="getelementptr" nodeLabel="14.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="cnn.cc" linenumber="173" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="cnn"/>
       <dataInputObjs>biases_buf</dataInputObjs>
       <dataOutputObjs>load</dataOutputObjs>
@@ -425,12 +425,12 @@
       <dataInputObjs>getelementptr</dataInputObjs>
       <dataOutputObjs>bitcast</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="135" name="biases_buf_4" lineNumber="173" originalName="biases_buf_4" fileName="cnn.cc" fileDirectory=".." rtlName="biases_buf_4_fu_654_p1" coreId="2656061696" contextFuncName="cnn" bitwidth="32" opcode="bitcast" nodeLabel="16.0" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="135" name="biases_buf_4" lineNumber="173" originalName="biases_buf_4" fileName="cnn.cc" fileDirectory=".." rtlName="biases_buf_4_fu_654_p1" coreId="647183616" contextFuncName="cnn" bitwidth="32" opcode="bitcast" nodeLabel="16.0" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="cnn.cc" linenumber="173" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="cnn"/>
       <dataInputObjs>load</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="136" name="biases_buf_addr_5" lineNumber="174" fileName="cnn.cc" fileDirectory=".." coreId="0" contextFuncName="cnn" bitwidth="3" opcode="getelementptr" nodeLabel="14.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="136" name="biases_buf_addr_5" lineNumber="174" fileName="cnn.cc" fileDirectory=".." coreId="647183616" contextFuncName="cnn" bitwidth="3" opcode="getelementptr" nodeLabel="14.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="cnn.cc" linenumber="174" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="cnn"/>
       <dataInputObjs>biases_buf</dataInputObjs>
       <dataOutputObjs>load</dataOutputObjs>
@@ -441,12 +441,12 @@
       <dataInputObjs>getelementptr</dataInputObjs>
       <dataOutputObjs>bitcast</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="138" name="biases_buf_5" lineNumber="174" originalName="biases_buf_5" fileName="cnn.cc" fileDirectory=".." rtlName="biases_buf_5_fu_658_p1" coreId="0" contextFuncName="cnn" bitwidth="32" opcode="bitcast" nodeLabel="16.0" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="138" name="biases_buf_5" lineNumber="174" originalName="biases_buf_5" fileName="cnn.cc" fileDirectory=".." rtlName="biases_buf_5_fu_658_p1" coreId="640290512" contextFuncName="cnn" bitwidth="32" opcode="bitcast" nodeLabel="16.0" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="cnn.cc" linenumber="174" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="cnn"/>
       <dataInputObjs>load</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="139" name="biases_buf_addr_6" lineNumber="175" fileName="cnn.cc" fileDirectory=".." coreId="2651606928" contextFuncName="cnn" bitwidth="3" opcode="getelementptr" nodeLabel="15.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="139" name="biases_buf_addr_6" lineNumber="175" fileName="cnn.cc" fileDirectory=".." coreId="647183616" contextFuncName="cnn" bitwidth="3" opcode="getelementptr" nodeLabel="15.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="cnn.cc" linenumber="175" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="cnn"/>
       <dataInputObjs>biases_buf</dataInputObjs>
       <dataOutputObjs>load</dataOutputObjs>
@@ -457,12 +457,12 @@
       <dataInputObjs>getelementptr</dataInputObjs>
       <dataOutputObjs>bitcast</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="141" name="biases_buf_6" lineNumber="175" originalName="biases_buf_6" fileName="cnn.cc" fileDirectory=".." rtlName="biases_buf_6_fu_662_p1" coreId="2643115576" contextFuncName="cnn" bitwidth="32" opcode="bitcast" nodeLabel="16.0" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="141" name="biases_buf_6" lineNumber="175" originalName="biases_buf_6" fileName="cnn.cc" fileDirectory=".." rtlName="biases_buf_6_fu_662_p1" coreId="647183616" contextFuncName="cnn" bitwidth="32" opcode="bitcast" nodeLabel="16.0" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="cnn.cc" linenumber="175" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="cnn"/>
       <dataInputObjs>load</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="142" name="biases_buf_addr_7" lineNumber="176" fileName="cnn.cc" fileDirectory=".." coreId="0" contextFuncName="cnn" bitwidth="3" opcode="getelementptr" nodeLabel="15.0" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="142" name="biases_buf_addr_7" lineNumber="176" fileName="cnn.cc" fileDirectory=".." coreId="647183616" contextFuncName="cnn" bitwidth="3" opcode="getelementptr" nodeLabel="15.0" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="cnn.cc" linenumber="176" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="cnn"/>
       <dataInputObjs>biases_buf</dataInputObjs>
       <dataOutputObjs>load</dataOutputObjs>
@@ -473,12 +473,12 @@
       <dataInputObjs>getelementptr</dataInputObjs>
       <dataOutputObjs>bitcast</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="144" name="biases_buf_7" lineNumber="176" originalName="biases_buf_7" fileName="cnn.cc" fileDirectory=".." rtlName="biases_buf_7_fu_667_p1" coreId="2657438288" contextFuncName="cnn" bitwidth="32" opcode="bitcast" nodeLabel="16.0" m_display="0" m_topoIndex="50" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="144" name="biases_buf_7" lineNumber="176" originalName="biases_buf_7" fileName="cnn.cc" fileDirectory=".." rtlName="biases_buf_7_fu_667_p1" coreId="647183616" contextFuncName="cnn" bitwidth="32" opcode="bitcast" nodeLabel="16.0" m_display="0" m_topoIndex="50" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="cnn.cc" linenumber="176" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="cnn"/>
       <dataInputObjs>load</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="145" name="_ln179" lineNumber="179" fileName="cnn.cc" fileDirectory=".." rtlName="grp_dataflow_section_fu_446" coreId="2655778176" contextFuncName="cnn" opcode="call" nodeLabel="16.0" nodeLatency="1" m_display="0" m_topoIndex="51" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="145" name="_ln179" lineNumber="179" fileName="cnn.cc" fileDirectory=".." rtlName="grp_dataflow_section_fu_446" coreId="640290512" contextFuncName="cnn" opcode="call" nodeLabel="16.0" nodeLatency="1" m_display="0" m_topoIndex="51" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="cnn.cc" linenumber="179" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="cnn"/>
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
@@ -508,7 +508,7 @@
       <dataOutputObjs>prediction</dataOutputObjs>
       <constName>dataflow_section</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="146" name="_ln188" lineNumber="188" fileName="cnn.cc" fileDirectory=".." coreId="2655778176" contextFuncName="cnn" opcode="ret" nodeLabel="17.0" m_display="0" m_topoIndex="52" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="146" name="_ln188" lineNumber="188" fileName="cnn.cc" fileDirectory=".." coreId="1314476891" contextFuncName="cnn" opcode="ret" nodeLabel="17.0" m_display="0" m_topoIndex="52" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="cnn.cc" linenumber="188" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="cnn"/>
     </node_objs>
     <fileValidLineNumbers fileName="cnn.cc">

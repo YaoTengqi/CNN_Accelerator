@@ -103,11 +103,11 @@ set RtlHierarchyInfo {[
 					{"ID" : "38", "SubInstance" : "grp_dataflow_section_fu_446", "Port" : "prediction", "Inst_start_state" : "17", "Inst_end_state" : "18"}]},
 			{"Name" : "weight_buf", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
+					{"ID" : "24", "SubInstance" : "grp_cnn_Pipeline_4_fu_397", "Port" : "weight_buf", "Inst_start_state" : "3", "Inst_end_state" : "4"},
+					{"ID" : "26", "SubInstance" : "grp_cnn_Pipeline_5_fu_404", "Port" : "weight_buf", "Inst_start_state" : "5", "Inst_end_state" : "6"},
 					{"ID" : "20", "SubInstance" : "grp_cnn_Pipeline_3_fu_377", "Port" : "weight_buf", "Inst_start_state" : "1", "Inst_end_state" : "2"},
 					{"ID" : "28", "SubInstance" : "grp_cnn_Pipeline_6_fu_411", "Port" : "weight_buf", "Inst_start_state" : "7", "Inst_end_state" : "8"},
 					{"ID" : "30", "SubInstance" : "grp_cnn_Pipeline_7_fu_418", "Port" : "weight_buf", "Inst_start_state" : "9", "Inst_end_state" : "10"},
-					{"ID" : "24", "SubInstance" : "grp_cnn_Pipeline_4_fu_397", "Port" : "weight_buf", "Inst_start_state" : "3", "Inst_end_state" : "4"},
-					{"ID" : "26", "SubInstance" : "grp_cnn_Pipeline_5_fu_404", "Port" : "weight_buf", "Inst_start_state" : "5", "Inst_end_state" : "6"},
 					{"ID" : "32", "SubInstance" : "grp_cnn_Pipeline_8_fu_425", "Port" : "weight_buf", "Inst_start_state" : "11", "Inst_end_state" : "12"},
 					{"ID" : "34", "SubInstance" : "grp_cnn_Pipeline_9_fu_432", "Port" : "weight_buf", "Inst_start_state" : "13", "Inst_end_state" : "14"},
 					{"ID" : "36", "SubInstance" : "grp_cnn_Pipeline_10_fu_439", "Port" : "weight_buf", "Inst_start_state" : "15", "Inst_end_state" : "16"}]},

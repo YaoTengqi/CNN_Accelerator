@@ -299,8 +299,8 @@ void
 convolution
 (
   float pad_img [(28 + (3 - 1))][(28 + (3 - 1))],
-  float weight_buf[3][3],
-  float biases_buf,
+  int weight_buf[3][3],
+  int biases_buf,
   int filter,
   hls::stream<float> & conv_to_pool_stream
 );

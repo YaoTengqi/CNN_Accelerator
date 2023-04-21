@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="cnn.cc" path="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS/cnn.cc"/>
-    <originFiles name="conv.cc" path="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS/conv.cc"/>
-    <originFiles name="dense.cc" path="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS/dense.cc"/>
-    <originFiles name="flat.cc" path="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS/flat.cc"/>
-    <originFiles name="pool.cc" path="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS/pool.cc"/>
     <originFiles name="utils.cc" path="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS/utils.cc"/>
+    <originFiles name="pool.cc" path="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS/pool.cc"/>
+    <originFiles name="flat.cc" path="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS/flat.cc"/>
+    <originFiles name="dense.cc" path="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS/dense.cc"/>
+    <originFiles name="conv.cc" path="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS/conv.cc"/>
+    <originFiles name="cnn.cc" path="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS/cnn.cc"/>
   </source>
   <testbench>
-    <originFiles name="cnn_tb.cc" path="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS/cnn_tb.cc"/>
     <originFiles name="Data" path="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Data"/>
+    <originFiles name="cnn_tb.cc" path="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS/cnn_tb.cc"/>
   </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1681984673426">
-  <ports id="1" name="weight_buf_1" type="PortType" coreName="RAM" coreId="1885414944" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="9">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1682070403917">
+  <ports id="1" name="weight_buf_1" type="PortType" coreName="RAM" coreId="543517801" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="9">
     <dataInputObjs>getelementptr</dataInputObjs>
   </ports>
-  <ports id="2" name="weight_buf" type="PortType" coreName="RAM" coreId="1702258035" bitwidth="32" iftype="IfTypeRegister" arraysize="72">
+  <ports id="2" name="weight_buf" type="PortType" coreName="RAM" coreId="792236560" bitwidth="32" iftype="IfTypeRegister" arraysize="72">
     <dataOutputObjs>getelementptr</dataOutputObjs>
   </ports>
   <edges id="57" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.3"/>
@@ -69,44 +69,44 @@
   <edges id="193" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.25"/>
   <blocks id="11" name="newFuncRoot" type="BlockType">
     <controlOutputObjs>load-store-loop34</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="3" name="phi_urem44" coreId="1601071479" bitwidth="4" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="3" name="phi_urem44" coreId="792520560" bitwidth="4" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
       <dataOutputObjs>store</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="4" name="phi_mul42" coreId="2805451392" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="4" name="phi_mul42" coreId="790749136" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
       <dataOutputObjs>store</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="5" name="loop_index35" coreId="2804052752" bitwidth="4" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="5" name="loop_index35" coreId="791102080" bitwidth="4" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
       <dataOutputObjs>store</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="loop_index35_write_ln0" coreId="2804471392" opcode="store" m_display="0" m_delay="1.61" m_topoIndex="4" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="loop_index35_write_ln0" coreId="791102080" opcode="store" m_display="0" m_delay="1.61" m_topoIndex="4" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="phi_mul42_write_ln0" coreId="2805557424" opcode="store" m_display="0" m_delay="1.61" m_topoIndex="5" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="phi_mul42_write_ln0" coreId="792985904" opcode="store" m_display="0" m_delay="1.61" m_topoIndex="5" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="phi_urem44_write_ln0" coreId="2805400016" opcode="store" m_display="0" m_delay="1.61" m_topoIndex="6" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="phi_urem44_write_ln0" coreId="790747488" opcode="store" m_display="0" m_delay="1.61" m_topoIndex="6" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="br_ln0" coreId="2805557248" opcode="br" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="br_ln0" coreId="542329856" opcode="br" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
       <controlInputObjs>load-store-loop34</controlInputObjs>
     </node_objs>
   </blocks>
   <blocks id="50" name="load-store-loop31.preheader.exitStub" type="BlockType">
     <controlInputObjs>load-store-loop34</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="_ln0" coreId="975663981" opcode="ret" nodeLabel="1.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="_ln0" coreId="791260496" opcode="ret" nodeLabel="1.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1"/>
   </blocks>
   <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="201" pipe_depth="3" RegionName="Loop 1">
     <basic_blocks id="18" name="load-store-loop34" type="BlockType">
@@ -116,7 +116,7 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>load-store-loop31.preheader.exitStub</controlOutputObjs>
       <controlOutputObjs>load-store-loop34.split</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="12" name="loop_index35_load" coreId="2805355008" bitwidth="4" opcode="load" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="12" name="loop_index35_load" coreId="790747392" bitwidth="4" opcode="load" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
         <dataInputObjs>alloca</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
         <dataOutputObjs>add</dataOutputObjs>
@@ -132,7 +132,7 @@
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="br_ln0" coreId="2805451264" opcode="br" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="br_ln0" coreId="791111504" opcode="br" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
         <dataInputObjs>icmp</dataInputObjs>
         <controlInputObjs>load-store-loop34.split</controlInputObjs>
         <controlInputObjs>load-store-loop31.preheader.exitStub</controlInputObjs>
@@ -142,12 +142,12 @@
       <controlInputObjs>load-store-loop34</controlInputObjs>
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>load-store-loop34</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="phi_urem44_load" coreId="3729133856" bitwidth="4" opcode="load" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="phi_urem44_load" coreId="1713742032" bitwidth="4" opcode="load" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
         <dataInputObjs>alloca</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
         <dataOutputObjs>shl</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="phi_mul42_load" coreId="2803932272" bitwidth="8" opcode="load" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="phi_mul42_load" coreId="791169584" bitwidth="8" opcode="load" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
         <dataInputObjs>alloca</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
         <dataOutputObjs>partselect</dataOutputObjs>
@@ -174,37 +174,37 @@
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="loop_index35_cast" rtlName="loop_index35_cast_fu_253_p1" coreId="2804331520" bitwidth="64" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="loop_index35_cast" rtlName="loop_index35_cast_fu_253_p1" coreId="792313712" bitwidth="64" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="weight_buf_1_addr" coreId="2804939184" bitwidth="4" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="38" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="weight_buf_1_addr" coreId="791260496" bitwidth="4" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="38" m_clusterGroupNumber="-1">
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>weight_buf_1</dataOutputObjs>
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="tmp_59" rtlName="tmp_59_fu_158_p4" coreId="2804332128" bitwidth="2" opcode="partselect" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="tmp_59" rtlName="tmp_59_fu_158_p4" coreId="792433840" bitwidth="2" opcode="partselect" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>bitconcatenate</dataOutputObjs>
         <dataOutputObjs>bitconcatenate</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="p_shl2" rtlName="p_shl2_fu_168_p3" coreId="2804939184" bitwidth="6" opcode="bitconcatenate" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="p_shl2" rtlName="p_shl2_fu_168_p3" coreId="791260496" bitwidth="6" opcode="bitconcatenate" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
         <dataInputObjs>partselect</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="p_shl2_cast" rtlName="p_shl2_cast_fu_176_p1" coreId="2803745424" bitwidth="7" opcode="zext" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="p_shl2_cast" rtlName="p_shl2_cast_fu_176_p1" coreId="790810000" bitwidth="7" opcode="zext" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>sub</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="p_shl3" rtlName="p_shl3_fu_180_p3" coreId="2804939184" bitwidth="4" opcode="bitconcatenate" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="p_shl3" rtlName="p_shl3_fu_180_p3" coreId="791260496" bitwidth="4" opcode="bitconcatenate" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
         <dataInputObjs>partselect</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="p_shl3_cast" rtlName="p_shl3_cast_fu_188_p1" coreId="2804331520" bitwidth="7" opcode="zext" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="p_shl3_cast" rtlName="p_shl3_cast_fu_188_p1" coreId="1707237936" bitwidth="7" opcode="zext" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>sub</dataOutputObjs>
       </node_objs>
@@ -213,12 +213,12 @@
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="empty_151" rtlName="empty_151_fu_198_p2" coreId="2804939184" bitwidth="4" opcode="shl" m_display="0" m_topoIndex="24" m_clusterGroupNumber="1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="empty_151" rtlName="empty_151_fu_198_p2" coreId="791748240" bitwidth="4" opcode="shl" m_display="0" m_topoIndex="24" m_clusterGroupNumber="1">
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="p_cast7" rtlName="p_cast7_fu_204_p1" coreId="2804939184" bitwidth="6" opcode="zext" m_display="0" m_topoIndex="25" m_clusterGroupNumber="1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="p_cast7" rtlName="p_cast7_fu_204_p1" coreId="791260496" bitwidth="6" opcode="zext" m_display="0" m_topoIndex="25" m_clusterGroupNumber="1">
         <dataInputObjs>shl</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
       </node_objs>
@@ -227,7 +227,7 @@
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="tmp_cast" rtlName="tmp_cast_fu_214_p1" coreId="2804939184" bitwidth="7" opcode="zext" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="tmp_cast" rtlName="tmp_cast_fu_214_p1" coreId="791260496" bitwidth="7" opcode="zext" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
       </node_objs>
@@ -236,16 +236,16 @@
         <dataInputObjs>sub</dataInputObjs>
         <dataOutputObjs>partselect</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="tmp_s" rtlName="tmp_s_reg_292" coreId="2804217520" bitwidth="5" opcode="partselect" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="tmp_s" rtlName="tmp_s_reg_292" coreId="791198848" bitwidth="5" opcode="partselect" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="p_cast45" rtlName="p_cast45_fu_249_p1" coreId="2805078768" bitwidth="64" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="p_cast45" rtlName="p_cast45_fu_249_p1" coreId="791144528" bitwidth="64" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
         <dataInputObjs>partselect</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="weight_buf_addr" coreId="2804264928" bitwidth="7" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="weight_buf_addr" coreId="116" bitwidth="7" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
         <dataInputObjs>weight_buf</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>load</dataOutputObjs>
@@ -255,7 +255,7 @@
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>bitcast</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="empty_153" rtlName="weight_buf_1_d0" coreId="2804264800" bitwidth="32" opcode="bitcast" nodeLabel="2.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="empty_153" rtlName="weight_buf_1_d0" coreId="1835099506" bitwidth="32" opcode="bitcast" nodeLabel="2.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
       </node_objs>
@@ -263,19 +263,19 @@
         <dataInputObjs>bitcast</dataInputObjs>
         <dataInputObjs>getelementptr</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="loop_index35_write_ln0" coreId="2804229520" opcode="store" m_display="0" m_delay="1.61" m_topoIndex="30" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="loop_index35_write_ln0" coreId="1715871216" opcode="store" m_display="0" m_delay="1.61" m_topoIndex="30" m_clusterGroupNumber="-1">
         <dataInputObjs>add</dataInputObjs>
         <dataInputObjs>alloca</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="45" name="phi_mul42_write_ln0" coreId="2805208048" opcode="store" m_display="0" m_delay="1.61" m_topoIndex="31" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="45" name="phi_mul42_write_ln0" coreId="2078180192" opcode="store" m_display="0" m_delay="1.61" m_topoIndex="31" m_clusterGroupNumber="-1">
         <dataInputObjs>add</dataInputObjs>
         <dataInputObjs>alloca</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="phi_urem44_write_ln0" coreId="116" opcode="store" m_display="0" m_delay="1.61" m_topoIndex="32" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="phi_urem44_write_ln0" coreId="792533808" opcode="store" m_display="0" m_delay="1.61" m_topoIndex="32" m_clusterGroupNumber="-1">
         <dataInputObjs>select</dataInputObjs>
         <dataInputObjs>alloca</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="br_ln0" coreId="2804429824" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="br_ln0" coreId="792533808" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
         <controlInputObjs>load-store-loop34</controlInputObjs>
       </node_objs>
     </basic_blocks>

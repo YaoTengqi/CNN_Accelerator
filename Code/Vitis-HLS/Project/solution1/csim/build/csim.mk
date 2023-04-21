@@ -17,7 +17,7 @@ __SIM_DDS__ = 1
 
 ObjDir = obj
 
-HLS_SOURCES = ../../../../cnn_tb.cc ../../../../utils.cc ../../../../pool.cc ../../../../flat.cc ../../../../dense.cc ../../../../conv.cc ../../../../cnn.cc
+HLS_SOURCES = ../../../../cnn_tb.cc ../../../../cnn.cc ../../../../conv.cc ../../../../dense.cc ../../../../flat.cc ../../../../pool.cc ../../../../utils.cc
 
 override TARGET := csim.exe
 
@@ -75,33 +75,15 @@ all: $(TARGET)
 
 $(ObjDir)/cnn_tb.o: ../../../../cnn_tb.cc $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../../cnn_tb.cc in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/cnn_tb.d
 
-$(ObjDir)/utils.o: ../../../../utils.cc $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../utils.cc in $(BuildMode) mode" $(AVE_DIR_DLOG)
+$(ObjDir)/cnn.o: ../../../../cnn.cc $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../../cnn.cc in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
--include $(ObjDir)/utils.d
-
-$(ObjDir)/pool.o: ../../../../pool.cc $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../pool.cc in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
-
--include $(ObjDir)/pool.d
-
-$(ObjDir)/flat.o: ../../../../flat.cc $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../flat.cc in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
-
--include $(ObjDir)/flat.d
-
-$(ObjDir)/dense.o: ../../../../dense.cc $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../dense.cc in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
-
--include $(ObjDir)/dense.d
+-include $(ObjDir)/cnn.d
 
 $(ObjDir)/conv.o: ../../../../conv.cc $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../../conv.cc in $(BuildMode) mode" $(AVE_DIR_DLOG)
@@ -109,8 +91,26 @@ $(ObjDir)/conv.o: ../../../../conv.cc $(ObjDir)/.dir
 
 -include $(ObjDir)/conv.d
 
-$(ObjDir)/cnn.o: ../../../../cnn.cc $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../cnn.cc in $(BuildMode) mode" $(AVE_DIR_DLOG)
+$(ObjDir)/dense.o: ../../../../dense.cc $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../../dense.cc in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
--include $(ObjDir)/cnn.d
+-include $(ObjDir)/dense.d
+
+$(ObjDir)/flat.o: ../../../../flat.cc $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../../flat.cc in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/flat.d
+
+$(ObjDir)/pool.o: ../../../../pool.cc $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../../pool.cc in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/pool.d
+
+$(ObjDir)/utils.o: ../../../../utils.cc $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../../utils.cc in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/utils.d

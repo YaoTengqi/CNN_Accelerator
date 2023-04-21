@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1681984694748">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1682070425005">
   <ports id="1" name="dense_to_softmax_streams_0" type="PortType" coreName="FIFO_SRL" coreId="62" bitwidth="32" iftype="IfTypeRom">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="2" name="dense_to_softmax_streams_1" type="PortType" coreName="FIFO_SRL" coreId="2656210256" bitwidth="32" iftype="IfTypeRom">
+  <ports id="2" name="dense_to_softmax_streams_1" type="PortType" coreName="FIFO_SRL" coreId="639038160" bitwidth="32" iftype="IfTypeRom">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="3" name="dense_to_softmax_streams_2" type="PortType" coreName="FIFO_SRL" coreId="2656197312" bitwidth="32" iftype="IfTypeRom">
+  <ports id="3" name="dense_to_softmax_streams_2" type="PortType" coreName="FIFO_SRL" coreId="642779376" bitwidth="32" iftype="IfTypeRom">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="4" name="dense_to_softmax_streams_3" type="PortType" coreName="FIFO_SRL" coreId="1885414944" bitwidth="32" iftype="IfTypeRom">
+  <ports id="4" name="dense_to_softmax_streams_3" type="PortType" coreName="FIFO_SRL" coreId="543517801" bitwidth="32" iftype="IfTypeRom">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="5" name="dense_to_softmax_streams_4" type="PortType" coreName="FIFO_SRL" coreId="2656524864" bitwidth="32" iftype="IfTypeRom">
+  <ports id="5" name="dense_to_softmax_streams_4" type="PortType" coreName="FIFO_SRL" coreId="643565584" bitwidth="32" iftype="IfTypeRom">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="6" name="dense_to_softmax_streams_5" type="PortType" coreName="FIFO_SRL" coreId="544108393" bitwidth="32" iftype="IfTypeRom">
+  <ports id="6" name="dense_to_softmax_streams_5" type="PortType" coreName="FIFO_SRL" coreId="27" bitwidth="32" iftype="IfTypeRom">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="7" name="dense_to_softmax_streams_6" type="PortType" coreName="FIFO_SRL" coreId="1314013527" bitwidth="32" iftype="IfTypeRom">
+  <ports id="7" name="dense_to_softmax_streams_6" type="PortType" coreName="FIFO_SRL" coreId="631384560" bitwidth="32" iftype="IfTypeRom">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="8" name="dense_to_softmax_streams_7" type="PortType" coreName="FIFO_SRL" coreId="2657646672" bitwidth="32" iftype="IfTypeRom">
+  <ports id="8" name="dense_to_softmax_streams_7" type="PortType" coreName="FIFO_SRL" coreId="635941072" bitwidth="32" iftype="IfTypeRom">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="9" name="prediction" type="PortType" coreName="RAM" coreId="2647804624" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="10">
+  <ports id="9" name="prediction" type="PortType" coreName="RAM" coreId="644401408" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="10">
     <dataInputObjs>getelementptr</dataInputObjs>
   </ports>
-  <ports id="10" name="exp_sum_out" type="PortType" coreId="2652048784" bitwidth="32" direction="DirOut">
+  <ports id="10" name="exp_sum_out" type="PortType" coreId="635988896" bitwidth="32" direction="DirOut">
     <dataInputObjs>write</dataInputObjs>
   </ports>
   <edges id="81" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.2"/>
@@ -106,43 +106,43 @@
   <edges id="2147483647" source_obj="//@regions.0/@basic_blocks.1/@node_objs.34" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0" is_back_edge="1"/>
   <blocks id="26" name="newFuncRoot" type="BlockType">
     <controlOutputObjs>dense_soft_max_for_filters</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="exp_sum" originalName="exp_sum" coreId="2656210256" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="exp_sum" originalName="exp_sum" coreId="639038160" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
       <dataOutputObjs>store</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="d" originalName="d" coreId="2656210256" bitwidth="4" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="d" originalName="d" coreId="639038160" bitwidth="4" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
       <dataOutputObjs>store</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="d_write_ln0" coreId="2654675104" opcode="store" m_display="0" m_delay="1.61" m_topoIndex="3" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="d_write_ln0" coreId="643188000" opcode="store" m_display="0" m_delay="1.61" m_topoIndex="3" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="exp_sum_write_ln0" coreId="0" opcode="store" m_display="0" m_delay="1.61" m_topoIndex="4" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="exp_sum_write_ln0" coreId="638509760" opcode="store" m_display="0" m_delay="1.61" m_topoIndex="4" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="br_ln0" coreId="2653306848" opcode="br" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="br_ln0" coreId="643169584" opcode="br" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
       <controlInputObjs>dense_soft_max_for_filters</controlInputObjs>
     </node_objs>
   </blocks>
   <blocks id="75" name="for.inc21.preheader.exitStub" type="BlockType">
     <controlInputObjs>dense_soft_max_for_filters</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="72" name="exp_sum_load_1" coreId="2654496400" bitwidth="32" opcode="load" nodeLabel="71.0" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="72" name="exp_sum_load_1" coreId="633882256" bitwidth="32" opcode="load" nodeLabel="71.0" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataOutputObjs>write</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="73" name="exp_sum_out_write_ln0" coreId="2654525616" opcode="write" nodeLabel="71.0" m_display="0" m_topoIndex="45" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="73" name="exp_sum_out_write_ln0" coreId="639557536" opcode="write" nodeLabel="71.0" m_display="0" m_topoIndex="45" m_clusterGroupNumber="-1">
       <dataInputObjs>load</dataInputObjs>
       <dataOutputObjs>exp_sum_out</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="74" name="_ln0" coreId="2655747632" opcode="ret" nodeLabel="71.0" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="74" name="_ln0" coreId="639573464" opcode="ret" nodeLabel="71.0" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1"/>
   </blocks>
   <regions anchor_node="-1" region_type="8" interval="7" typeName="Pipeline" iiViolation="Memory Dependency;mFailedII=6;mDependenceDistancedII=1;mLimitedResource=0;nodes=69__,34__;" id="439" pipe_depth="79" RegionName="dense_soft_max_for_dense_size">
     <basic_blocks id="33" name="dense_soft_max_for_filters" type="BlockType">
@@ -152,7 +152,7 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>for.inc21.preheader.exitStub</controlOutputObjs>
       <controlOutputObjs>dense_soft_max_for_filters.split</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="d_1" lineNumber="17" originalName="d" fileName="dense.cc" fileDirectory=".." coreId="2654719392" contextFuncName="dense_layer_soft_max" bitwidth="4" opcode="load" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="d_1" lineNumber="17" originalName="d" fileName="dense.cc" fileDirectory=".." coreId="638509760" contextFuncName="dense_layer_soft_max" bitwidth="4" opcode="load" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="dense.cc" linenumber="17" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="dense_layer_soft_max"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
@@ -171,7 +171,7 @@
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="br_ln17" lineNumber="17" fileName="dense.cc" fileDirectory=".." coreId="2652634048" contextFuncName="dense_layer_soft_max" opcode="br" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="br_ln17" lineNumber="17" fileName="dense.cc" fileDirectory=".." coreId="640387456" contextFuncName="dense_layer_soft_max" opcode="br" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="dense.cc" linenumber="17" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="dense_layer_soft_max"/>
         <dataInputObjs>icmp</dataInputObjs>
         <controlInputObjs>dense_soft_max_for_filters.split</controlInputObjs>
@@ -185,19 +185,19 @@
       <controlInputObjs>dense_soft_max_for_filters</controlInputObjs>
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>dense_soft_max_for_filters</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="exp_sum_load" lineNumber="27" fileName="dense.cc" fileDirectory=".." coreId="2652792576" contextFuncName="dense_layer_soft_max" bitwidth="32" opcode="load" nodeLabel="71.0" m_display="1" m_isLCDNode="true" m_isStartOfPath="true" m_topoIndex="39" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="exp_sum_load" lineNumber="27" fileName="dense.cc" fileDirectory=".." coreId="642354688" contextFuncName="dense_layer_soft_max" bitwidth="32" opcode="load" nodeLabel="71.0" m_display="1" m_isLCDNode="true" m_isStartOfPath="true" m_topoIndex="39" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="dense.cc" linenumber="27" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="dense_layer_soft_max"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataInputObjs>store</dataInputObjs>
         <dataOutputObjs>fadd</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="d_cast" lineNumber="17" fileName="dense.cc" fileDirectory=".." rtlName="d_cast_fu_191_p1" coreId="2647448688" contextFuncName="dense_layer_soft_max" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="d_cast" lineNumber="17" fileName="dense.cc" fileDirectory=".." rtlName="d_cast_fu_191_p1" coreId="638509760" contextFuncName="dense_layer_soft_max" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="dense.cc" linenumber="17" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="dense_layer_soft_max"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="dense_biases_addr" lineNumber="19" fileName="dense.cc" fileDirectory=".." coreId="2657801536" contextFuncName="dense_layer_soft_max" bitwidth="4" opcode="getelementptr" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="dense_biases_addr" lineNumber="19" fileName="dense.cc" fileDirectory=".." coreId="638383792" contextFuncName="dense_layer_soft_max" bitwidth="4" opcode="getelementptr" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="dense.cc" linenumber="19" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="dense_layer_soft_max"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>load</dataOutputObjs>
@@ -213,7 +213,7 @@
         <dataInputObjs>dense_to_softmax_streams_0</dataInputObjs>
         <dataOutputObjs>bitcast</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="bitcast_ln24" lineNumber="24" fileName="dense.cc" fileDirectory=".." rtlName="bitcast_ln24_fu_201_p1" coreId="2651932584" contextFuncName="dense_layer_soft_max" bitwidth="32" opcode="bitcast" nodeLabel="2.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="bitcast_ln24" lineNumber="24" fileName="dense.cc" fileDirectory=".." rtlName="bitcast_ln24_fu_201_p1" coreId="638656864" contextFuncName="dense_layer_soft_max" bitwidth="32" opcode="bitcast" nodeLabel="2.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="dense.cc" linenumber="24" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="dense_layer_soft_max"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>fadd</dataOutputObjs>
@@ -229,7 +229,7 @@
         <dataInputObjs>dense_to_softmax_streams_1</dataInputObjs>
         <dataOutputObjs>bitcast</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="bitcast_ln24_1" lineNumber="24" fileName="dense.cc" fileDirectory=".." rtlName="bitcast_ln24_1_fu_205_p1" coreId="2645624304" contextFuncName="dense_layer_soft_max" bitwidth="32" opcode="bitcast" nodeLabel="9.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="bitcast_ln24_1" lineNumber="24" fileName="dense.cc" fileDirectory=".." rtlName="bitcast_ln24_1_fu_205_p1" coreId="637061232" contextFuncName="dense_layer_soft_max" bitwidth="32" opcode="bitcast" nodeLabel="9.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="dense.cc" linenumber="24" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="dense_layer_soft_max"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>fadd</dataOutputObjs>
@@ -245,7 +245,7 @@
         <dataInputObjs>dense_to_softmax_streams_2</dataInputObjs>
         <dataOutputObjs>bitcast</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="bitcast_ln24_2" lineNumber="24" fileName="dense.cc" fileDirectory=".." rtlName="bitcast_ln24_2_fu_209_p1" coreId="2654237904" contextFuncName="dense_layer_soft_max" bitwidth="32" opcode="bitcast" nodeLabel="17.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="bitcast_ln24_2" lineNumber="24" fileName="dense.cc" fileDirectory=".." rtlName="bitcast_ln24_2_fu_209_p1" coreId="643671424" contextFuncName="dense_layer_soft_max" bitwidth="32" opcode="bitcast" nodeLabel="17.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="dense.cc" linenumber="24" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="dense_layer_soft_max"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>fadd</dataOutputObjs>
@@ -261,7 +261,7 @@
         <dataInputObjs>dense_to_softmax_streams_3</dataInputObjs>
         <dataOutputObjs>bitcast</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="bitcast_ln24_3" lineNumber="24" fileName="dense.cc" fileDirectory=".." rtlName="bitcast_ln24_3_fu_213_p1" coreId="2652172928" contextFuncName="dense_layer_soft_max" bitwidth="32" opcode="bitcast" nodeLabel="24.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="bitcast_ln24_3" lineNumber="24" fileName="dense.cc" fileDirectory=".." rtlName="bitcast_ln24_3_fu_213_p1" coreId="643671424" contextFuncName="dense_layer_soft_max" bitwidth="32" opcode="bitcast" nodeLabel="24.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="dense.cc" linenumber="24" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="dense_layer_soft_max"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>fadd</dataOutputObjs>
@@ -277,7 +277,7 @@
         <dataInputObjs>dense_to_softmax_streams_4</dataInputObjs>
         <dataOutputObjs>bitcast</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="52" name="bitcast_ln24_4" lineNumber="24" fileName="dense.cc" fileDirectory=".." rtlName="bitcast_ln24_4_fu_217_p1" coreId="2650052928" contextFuncName="dense_layer_soft_max" bitwidth="32" opcode="bitcast" nodeLabel="32.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="52" name="bitcast_ln24_4" lineNumber="24" fileName="dense.cc" fileDirectory=".." rtlName="bitcast_ln24_4_fu_217_p1" coreId="642567600" contextFuncName="dense_layer_soft_max" bitwidth="32" opcode="bitcast" nodeLabel="32.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="dense.cc" linenumber="24" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="dense_layer_soft_max"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>fadd</dataOutputObjs>
@@ -293,7 +293,7 @@
         <dataInputObjs>dense_to_softmax_streams_5</dataInputObjs>
         <dataOutputObjs>bitcast</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="55" name="bitcast_ln24_5" lineNumber="24" fileName="dense.cc" fileDirectory=".." rtlName="bitcast_ln24_5_fu_221_p1" coreId="2648397936" contextFuncName="dense_layer_soft_max" bitwidth="32" opcode="bitcast" nodeLabel="39.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="55" name="bitcast_ln24_5" lineNumber="24" fileName="dense.cc" fileDirectory=".." rtlName="bitcast_ln24_5_fu_221_p1" coreId="641452112" contextFuncName="dense_layer_soft_max" bitwidth="32" opcode="bitcast" nodeLabel="39.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="dense.cc" linenumber="24" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="dense_layer_soft_max"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>fadd</dataOutputObjs>
@@ -309,7 +309,7 @@
         <dataInputObjs>dense_to_softmax_streams_6</dataInputObjs>
         <dataOutputObjs>bitcast</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="58" name="bitcast_ln24_6" lineNumber="24" fileName="dense.cc" fileDirectory=".." rtlName="bitcast_ln24_6_fu_225_p1" coreId="2656102224" contextFuncName="dense_layer_soft_max" bitwidth="32" opcode="bitcast" nodeLabel="47.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="58" name="bitcast_ln24_6" lineNumber="24" fileName="dense.cc" fileDirectory=".." rtlName="bitcast_ln24_6_fu_225_p1" coreId="634652608" contextFuncName="dense_layer_soft_max" bitwidth="32" opcode="bitcast" nodeLabel="47.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="dense.cc" linenumber="24" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="dense_layer_soft_max"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>fadd</dataOutputObjs>
@@ -325,7 +325,7 @@
         <dataInputObjs>dense_to_softmax_streams_7</dataInputObjs>
         <dataOutputObjs>bitcast</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="61" name="bitcast_ln24_7" lineNumber="24" fileName="dense.cc" fileDirectory=".." rtlName="bitcast_ln24_7_fu_229_p1" coreId="2654497568" contextFuncName="dense_layer_soft_max" bitwidth="32" opcode="bitcast" nodeLabel="54.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="61" name="bitcast_ln24_7" lineNumber="24" fileName="dense.cc" fileDirectory=".." rtlName="bitcast_ln24_7_fu_229_p1" coreId="643251824" contextFuncName="dense_layer_soft_max" bitwidth="32" opcode="bitcast" nodeLabel="54.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="dense.cc" linenumber="24" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="dense_layer_soft_max"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>fadd</dataOutputObjs>
@@ -342,12 +342,12 @@
         <dataOutputObjs>bitcast</dataOutputObjs>
         <dataOutputObjs>fadd</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="64" name="bitcast_ln27" lineNumber="27" fileName="dense.cc" fileDirectory=".." rtlName="prediction_d0" coreId="2649943168" contextFuncName="dense_layer_soft_max" bitwidth="32" opcode="bitcast" nodeLabel="71.0" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="64" name="bitcast_ln27" lineNumber="27" fileName="dense.cc" fileDirectory=".." rtlName="prediction_d0" coreId="638105504" contextFuncName="dense_layer_soft_max" bitwidth="32" opcode="bitcast" nodeLabel="71.0" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="dense.cc" linenumber="27" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="dense_layer_soft_max"/>
         <dataInputObjs>fexp</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="65" name="prediction_addr" lineNumber="27" fileName="dense.cc" fileDirectory=".." coreId="2654129024" contextFuncName="dense_layer_soft_max" bitwidth="4" opcode="getelementptr" nodeLabel="71.0" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="65" name="prediction_addr" lineNumber="27" fileName="dense.cc" fileDirectory=".." coreId="638104960" contextFuncName="dense_layer_soft_max" bitwidth="4" opcode="getelementptr" nodeLabel="71.0" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="dense.cc" linenumber="27" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="dense_layer_soft_max"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>prediction</dataOutputObjs>
@@ -365,18 +365,18 @@
         <dataInputObjs>fexp</dataInputObjs>
         <dataOutputObjs>store</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="68" name="d_write_ln17" lineNumber="17" fileName="dense.cc" fileDirectory=".." coreId="2649489632" contextFuncName="dense_layer_soft_max" opcode="store" m_display="0" m_delay="1.61" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="68" name="d_write_ln17" lineNumber="17" fileName="dense.cc" fileDirectory=".." coreId="640387888" contextFuncName="dense_layer_soft_max" opcode="store" m_display="0" m_delay="1.61" m_topoIndex="13" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="dense.cc" linenumber="17" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="dense_layer_soft_max"/>
         <dataInputObjs>add</dataInputObjs>
         <dataInputObjs>alloca</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="69" name="exp_sum_write_ln17" lineNumber="17" fileName="dense.cc" fileDirectory=".." coreId="2650956272" contextFuncName="dense_layer_soft_max" opcode="store" nodeLabel="78.0" m_display="1" m_delay="1.61" m_isLCDNode="true" m_topoIndex="47" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="69" name="exp_sum_write_ln17" lineNumber="17" fileName="dense.cc" fileDirectory=".." coreId="1330010203" contextFuncName="dense_layer_soft_max" opcode="store" nodeLabel="78.0" m_display="1" m_delay="1.61" m_isLCDNode="true" m_topoIndex="47" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="dense.cc" linenumber="17" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="dense_layer_soft_max"/>
         <dataInputObjs>fadd</dataInputObjs>
         <dataInputObjs>alloca</dataInputObjs>
         <dataOutputObjs>load</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="70" name="br_ln17" lineNumber="17" fileName="dense.cc" fileDirectory=".." coreId="2649490112" contextFuncName="dense_layer_soft_max" opcode="br" nodeLabel="78.0" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="70" name="br_ln17" lineNumber="17" fileName="dense.cc" fileDirectory=".." coreId="633883168" contextFuncName="dense_layer_soft_max" opcode="br" nodeLabel="78.0" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="dense.cc" linenumber="17" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS" functionName="dense_layer_soft_max"/>
         <controlInputObjs>dense_soft_max_for_filters</controlInputObjs>
       </node_objs>

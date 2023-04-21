@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1681984694388">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1682070424665">
   <ports id="1" name="flat_to_dense_streams_0" type="PortType" coreId="0" bitwidth="32" iftype="IfTypeRom">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
@@ -15,37 +15,37 @@
   <ports id="5" name="flat_to_dense_streams_4" type="PortType" coreId="0" bitwidth="32" iftype="IfTypeRom">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="6" name="flat_to_dense_streams_5" type="PortType" coreId="2643107840" bitwidth="32" iftype="IfTypeRom">
+  <ports id="6" name="flat_to_dense_streams_5" type="PortType" coreId="642731248" bitwidth="32" iftype="IfTypeRom">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="7" name="flat_to_dense_streams_6" type="PortType" coreId="2646648184" bitwidth="32" iftype="IfTypeRom">
+  <ports id="7" name="flat_to_dense_streams_6" type="PortType" coreId="642481360" bitwidth="32" iftype="IfTypeRom">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="8" name="flat_to_dense_streams_7" type="PortType" coreId="2650513832" bitwidth="32" iftype="IfTypeRom">
+  <ports id="8" name="flat_to_dense_streams_7" type="PortType" coreId="639994048" bitwidth="32" iftype="IfTypeRom">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="9" name="dense_to_softmax_streams_0" type="PortType" coreId="2655631624" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
+  <ports id="9" name="dense_to_softmax_streams_0" type="PortType" coreId="643215792" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
     <dataInputObjs>call</dataInputObjs>
   </ports>
-  <ports id="10" name="dense_to_softmax_streams_1" type="PortType" coreId="2655631752" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
+  <ports id="10" name="dense_to_softmax_streams_1" type="PortType" coreId="642456736" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
     <dataInputObjs>call</dataInputObjs>
   </ports>
-  <ports id="11" name="dense_to_softmax_streams_2" type="PortType" coreId="2654479192" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
+  <ports id="11" name="dense_to_softmax_streams_2" type="PortType" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
     <dataInputObjs>call</dataInputObjs>
   </ports>
-  <ports id="12" name="dense_to_softmax_streams_3" type="PortType" coreId="2656644152" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
+  <ports id="12" name="dense_to_softmax_streams_3" type="PortType" coreId="639993488" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
     <dataInputObjs>call</dataInputObjs>
   </ports>
-  <ports id="13" name="dense_to_softmax_streams_4" type="PortType" coreId="2652156088" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
+  <ports id="13" name="dense_to_softmax_streams_4" type="PortType" coreId="792318352" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
     <dataInputObjs>call</dataInputObjs>
   </ports>
-  <ports id="14" name="dense_to_softmax_streams_5" type="PortType" coreId="2656215872" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
+  <ports id="14" name="dense_to_softmax_streams_5" type="PortType" coreId="619067616" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
     <dataInputObjs>call</dataInputObjs>
   </ports>
-  <ports id="15" name="dense_to_softmax_streams_6" type="PortType" coreId="2656643712" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
+  <ports id="15" name="dense_to_softmax_streams_6" type="PortType" coreId="638564544" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
     <dataInputObjs>call</dataInputObjs>
   </ports>
-  <ports id="16" name="dense_to_softmax_streams_7" type="PortType" coreId="2654478752" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
+  <ports id="16" name="dense_to_softmax_streams_7" type="PortType" coreId="4228300544" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
     <dataInputObjs>call</dataInputObjs>
   </ports>
   <edges id="126" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
@@ -146,55 +146,55 @@
   <edges id="235" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
   <regions anchor_node="-1" region_type="16" typeName="Dataflow" iiViolation="" id="244" RegionName="dense_layer">
     <basic_blocks id="123" name="dense_layer" type="BlockType">
-      <node_objs xsi:type="cdfg:CdfgNode" id="114" name="_ln73" lineNumber="73" fileName="dense.cc" fileDirectory=".." rtlName="dense_U0" coreId="0" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="114" name="_ln73" lineNumber="73" fileName="dense.cc" fileDirectory=".." rtlName="dense_U0" coreId="639565104" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="dense.cc" linenumber="73" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
         <dataInputObjs>flat_to_dense_streams_0</dataInputObjs>
         <dataOutputObjs>dense_to_softmax_streams_0</dataOutputObjs>
         <constName>dense</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="115" name="_ln74" lineNumber="74" fileName="dense.cc" fileDirectory=".." rtlName="dense_22_U0" coreId="2655065248" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="115" name="_ln74" lineNumber="74" fileName="dense.cc" fileDirectory=".." rtlName="dense_22_U0" coreId="641881152" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="dense.cc" linenumber="74" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
         <dataInputObjs>flat_to_dense_streams_1</dataInputObjs>
         <dataOutputObjs>dense_to_softmax_streams_1</dataOutputObjs>
         <constName>dense_22</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="116" name="_ln75" lineNumber="75" fileName="dense.cc" fileDirectory=".." rtlName="dense_23_U0" coreId="2655065248" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="116" name="_ln75" lineNumber="75" fileName="dense.cc" fileDirectory=".." rtlName="dense_23_U0" coreId="640146576" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="dense.cc" linenumber="75" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
         <dataInputObjs>flat_to_dense_streams_2</dataInputObjs>
         <dataOutputObjs>dense_to_softmax_streams_2</dataOutputObjs>
         <constName>dense_23</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="117" name="_ln76" lineNumber="76" fileName="dense.cc" fileDirectory=".." rtlName="dense_24_U0" coreId="2655065248" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="117" name="_ln76" lineNumber="76" fileName="dense.cc" fileDirectory=".." rtlName="dense_24_U0" coreId="643463464" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="dense.cc" linenumber="76" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
         <dataInputObjs>flat_to_dense_streams_3</dataInputObjs>
         <dataOutputObjs>dense_to_softmax_streams_3</dataOutputObjs>
         <constName>dense_24</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="118" name="_ln77" lineNumber="77" fileName="dense.cc" fileDirectory=".." rtlName="dense_25_U0" coreId="2656281984" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="118" name="_ln77" lineNumber="77" fileName="dense.cc" fileDirectory=".." rtlName="dense_25_U0" coreId="640798336" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="dense.cc" linenumber="77" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
         <dataInputObjs>flat_to_dense_streams_4</dataInputObjs>
         <dataOutputObjs>dense_to_softmax_streams_4</dataOutputObjs>
         <constName>dense_25</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="119" name="_ln78" lineNumber="78" fileName="dense.cc" fileDirectory=".." rtlName="dense_26_U0" coreId="2656281984" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="119" name="_ln78" lineNumber="78" fileName="dense.cc" fileDirectory=".." rtlName="dense_26_U0" coreId="638308368" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="dense.cc" linenumber="78" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
         <dataInputObjs>flat_to_dense_streams_5</dataInputObjs>
         <dataOutputObjs>dense_to_softmax_streams_5</dataOutputObjs>
         <constName>dense_26</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="120" name="_ln79" lineNumber="79" fileName="dense.cc" fileDirectory=".." rtlName="dense_27_U0" coreId="2655065248" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="120" name="_ln79" lineNumber="79" fileName="dense.cc" fileDirectory=".." rtlName="dense_27_U0" coreId="642390576" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="dense.cc" linenumber="79" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
         <dataInputObjs>flat_to_dense_streams_6</dataInputObjs>
         <dataOutputObjs>dense_to_softmax_streams_6</dataOutputObjs>
         <constName>dense_27</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="121" name="_ln80" lineNumber="80" fileName="dense.cc" fileDirectory=".." rtlName="dense_28_U0" coreId="2656281984" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="121" name="_ln80" lineNumber="80" fileName="dense.cc" fileDirectory=".." rtlName="dense_28_U0" coreId="642390576" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="dense.cc" linenumber="80" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
         <dataInputObjs>flat_to_dense_streams_7</dataInputObjs>
         <dataOutputObjs>dense_to_softmax_streams_7</dataOutputObjs>
         <constName>dense_28</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="122" name="_ln81" lineNumber="81" fileName="dense.cc" fileDirectory=".." coreId="2655064688" opcode="ret" nodeLabel="1.0" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="122" name="_ln81" lineNumber="81" fileName="dense.cc" fileDirectory=".." coreId="631363856" opcode="ret" nodeLabel="1.0" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="dense.cc" linenumber="81" fileDirectory="/home/ytq/codeField/undergraduate/CNN_Accelerator/Code/Vitis-HLS"/>
       </node_objs>
       <fileValidLineNumbers fileName="dense.cc">
